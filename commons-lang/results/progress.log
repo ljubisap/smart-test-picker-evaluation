@@ -1,0 +1,48 @@
+[09:43:52] === PIT Evaluation Run Started — 20 classes ===
+[09:43:52] Timeout per class: 600s, threads: 4, fullMutationMatrix: true
+[09:43:52] [1/20] Starting: org.apache.commons.lang3.arch.Processor (LOC=253, tests=org.apache.commons.lang3.arch.*)
+[09:44:01] [1/20] DONE: org.apache.commons.lang3.arch.Processor (9s, 17 mutations)
+[09:44:01] [2/20] Starting: org.apache.commons.lang3.compare.ComparableUtils (LOC=246, tests=org.apache.commons.lang3.compare.*)
+[09:44:05] [2/20] DONE: org.apache.commons.lang3.compare.ComparableUtils (4s, 25 mutations)
+[09:44:05] [3/20] Starting: org.apache.commons.lang3.concurrent.locks.LockingVisitors (LOC=760, tests=org.apache.commons.lang3.concurrent.locks.*)
+[09:46:46] [3/20] DONE: org.apache.commons.lang3.concurrent.locks.LockingVisitors (161s, 5 mutations)
+[09:46:46] [4/20] Starting: org.apache.commons.lang3.event.EventListenerSupport (LOC=362, tests=org.apache.commons.lang3.event.*)
+[09:46:51] [4/20] DONE: org.apache.commons.lang3.event.EventListenerSupport (5s, 14 mutations)
+[09:46:51] [5/20] Starting: org.apache.commons.lang3.event.EventUtils (LOC=134, tests=org.apache.commons.lang3.event.*)
+[09:46:55] [5/20] DONE: org.apache.commons.lang3.event.EventUtils (3s, 1 mutations)
+[09:46:55] --- CHECKPOINT 5/20: OK=5, FAILED=0, TIMEOUT=0, elapsed=183s ---
+[09:46:55] [6/20] Starting: org.apache.commons.lang3.math.Fraction (LOC=923, tests=org.apache.commons.lang3.math.*)
+[09:47:52] [6/20] DONE: org.apache.commons.lang3.math.Fraction (57s, 262 mutations)
+[09:47:52] [7/20] Starting: org.apache.commons.lang3.math.IEEE754rUtils (LOC=261, tests=org.apache.commons.lang3.math.*)
+[09:47:57] [7/20] DONE: org.apache.commons.lang3.math.IEEE754rUtils (4s, 44 mutations)
+[09:47:57] [8/20] Starting: org.apache.commons.lang3.mutable.MutableFloat (LOC=416, tests=org.apache.commons.lang3.mutable.*)
+[09:48:01] [8/20] DONE: org.apache.commons.lang3.mutable.MutableFloat (4s, 38 mutations)
+[09:48:01] [9/20] Starting: org.apache.commons.lang3.mutable.MutableObject (LOC=128, tests=org.apache.commons.lang3.mutable.*)
+[09:48:04] [9/20] DONE: org.apache.commons.lang3.mutable.MutableObject (3s, 10 mutations)
+[09:48:04] [10/20] Starting: org.apache.commons.lang3.reflect.MethodUtils (LOC=1090, tests=org.apache.commons.lang3.reflect.*)
+[09:48:14] [10/20] DONE: org.apache.commons.lang3.reflect.MethodUtils (10s, 142 mutations)
+[09:48:14] --- CHECKPOINT 10/20: OK=10, FAILED=0, TIMEOUT=0, elapsed=262s ---
+[09:48:14] [11/20] Starting: org.apache.commons.lang3.reflect.FieldUtils (LOC=943, tests=org.apache.commons.lang3.reflect.*)
+[09:48:20] [11/20] DONE: org.apache.commons.lang3.reflect.FieldUtils (6s, 72 mutations)
+[09:48:20] [12/20] Starting: org.apache.commons.lang3.stream.Streams (LOC=854, tests=org.apache.commons.lang3.stream.*)
+[09:48:24] [12/20] DONE: org.apache.commons.lang3.stream.Streams (4s, 26 mutations)
+[09:48:24] [13/20] Starting: org.apache.commons.lang3.stream.LangCollectors (LOC=218, tests=org.apache.commons.lang3.stream.*)
+[09:48:28] [13/20] DONE: org.apache.commons.lang3.stream.LangCollectors (3s, 6 mutations)
+[09:48:28] [14/20] Starting: org.apache.commons.lang3.text.FormattableUtils (LOC=151, tests=org.apache.commons.lang3.text.*)
+[09:48:37] [14/20] DONE: org.apache.commons.lang3.text.FormattableUtils (9s, 21 mutations)
+[09:48:37] [15/20] Starting: org.apache.commons.lang3.text.translate.EntityArrays (LOC=479, tests=org.apache.commons.lang3.text.translate.*)
+[09:48:40] [15/20] DONE: org.apache.commons.lang3.text.translate.EntityArrays (4s, 13 mutations)
+[09:48:40] --- CHECKPOINT 15/20: OK=15, FAILED=0, TIMEOUT=0, elapsed=288s ---
+[09:48:40] [16/20] Starting: org.apache.commons.lang3.text.translate.NumericEntityEscaper (LOC=122, tests=org.apache.commons.lang3.text.translate.*)
+[09:48:44] [16/20] DONE: org.apache.commons.lang3.text.translate.NumericEntityEscaper (4s, 19 mutations)
+[09:48:44] [17/20] Starting: org.apache.commons.lang3.tuple.Pair (LOC=264, tests=org.apache.commons.lang3.tuple.*)
+[09:48:48] [17/20] DONE: org.apache.commons.lang3.tuple.Pair (4s, 19 mutations)
+[09:48:48] [18/20] Starting: org.apache.commons.lang3.tuple.ImmutablePair (LOC=197, tests=org.apache.commons.lang3.tuple.*)
+[09:48:53] [18/20] DONE: org.apache.commons.lang3.tuple.ImmutablePair (4s, 12 mutations)
+[09:48:53] [19/20] Starting: org.apache.commons.lang3.util.FluentBitSet (LOC=610, tests=org.apache.commons.lang3.util.*)
+[09:48:58] [19/20] DONE: org.apache.commons.lang3.util.FluentBitSet (5s, 71 mutations)
+[09:48:58] [20/20] Starting: org.apache.commons.lang3.util.IterableStringTokenizer (LOC=114, tests=org.apache.commons.lang3.util.*)
+[09:49:01] [20/20] DONE: org.apache.commons.lang3.util.IterableStringTokenizer (4s, 5 mutations)
+[09:49:01] --- CHECKPOINT 20/20: OK=20, FAILED=0, TIMEOUT=0, elapsed=309s ---
+[09:49:01] === DONE: OK=20, FAILED=0, TIMEOUT=0, mutations=822, elapsed=309s ===
+[09:49:01] Summary: /Users/D061177/work/moje/commons-lang/results/aggregated/summary.json

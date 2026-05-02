@@ -1,0 +1,131 @@
+{
+  "timestamp": "2026-05-02T09:49:01.934518",
+  "total_classes": 20,
+  "ok": 20,
+  "failed": 0,
+  "timeout": 0,
+  "total_mutations": 822,
+  "total_elapsed_s": 308.7403874397278,
+  "results": [
+    {
+      "fqn": "org.apache.commons.lang3.arch.Processor",
+      "status": "OK",
+      "mutations": 17,
+      "elapsed_s": 8.537290096282959
+    },
+    {
+      "fqn": "org.apache.commons.lang3.compare.ComparableUtils",
+      "status": "OK",
+      "mutations": 25,
+      "elapsed_s": 4.477556943893433
+    },
+    {
+      "fqn": "org.apache.commons.lang3.concurrent.locks.LockingVisitors",
+      "status": "OK",
+      "mutations": 5,
+      "elapsed_s": 161.08051013946533
+    },
+    {
+      "fqn": "org.apache.commons.lang3.event.EventListenerSupport",
+      "status": "OK",
+      "mutations": 14,
+      "elapsed_s": 5.052967071533203
+    },
+    {
+      "fqn": "org.apache.commons.lang3.event.EventUtils",
+      "status": "OK",
+      "mutations": 1,
+      "elapsed_s": 3.4028239250183105
+    },
+    {
+      "fqn": "org.apache.commons.lang3.math.Fraction",
+      "status": "OK",
+      "mutations": 262,
+      "elapsed_s": 57.34358501434326
+    },
+    {
+      "fqn": "org.apache.commons.lang3.math.IEEE754rUtils",
+      "status": "OK",
+      "mutations": 44,
+      "elapsed_s": 4.404601097106934
+    },
+    {
+      "fqn": "org.apache.commons.lang3.mutable.MutableFloat",
+      "status": "OK",
+      "mutations": 38,
+      "elapsed_s": 4.239966869354248
+    },
+    {
+      "fqn": "org.apache.commons.lang3.mutable.MutableObject",
+      "status": "OK",
+      "mutations": 10,
+      "elapsed_s": 3.292818307876587
+    },
+    {
+      "fqn": "org.apache.commons.lang3.reflect.MethodUtils",
+      "status": "OK",
+      "mutations": 142,
+      "elapsed_s": 10.20970606803894
+    },
+    {
+      "fqn": "org.apache.commons.lang3.reflect.FieldUtils",
+      "status": "OK",
+      "mutations": 72,
+      "elapsed_s": 5.749356031417847
+    },
+    {
+      "fqn": "org.apache.commons.lang3.stream.Streams",
+      "status": "OK",
+      "mutations": 26,
+      "elapsed_s": 4.173846960067749
+    },
+    {
+      "fqn": "org.apache.commons.lang3.stream.LangCollectors",
+      "status": "OK",
+      "mutations": 6,
+      "elapsed_s": 3.426689863204956
+    },
+    {
+      "fqn": "org.apache.commons.lang3.text.FormattableUtils",
+      "status": "OK",
+      "mutations": 21,
+      "elapsed_s": 8.81545114517212
+    },
+    {
+      "fqn": "org.apache.commons.lang3.text.translate.EntityArrays",
+      "status": "OK",
+      "mutations": 13,
+      "elapsed_s": 3.5296900272369385
+    },
+    {
+      "fqn": "org.apache.commons.lang3.text.translate.NumericEntityEscaper",
+      "status": "OK",
+      "mutations": 19,
+      "elapsed_s": 3.9484517574310303
+    },
+    {
+      "fqn": "org.apache.commons.lang3.tuple.Pair",
+      "status": "OK",
+      "mutations": 19,
+      "elapsed_s": 4.036967039108276
+    },
+    {
+      "fqn": "org.apache.commons.lang3.tuple.ImmutablePair",
+      "status": "OK",
+      "mutations": 12,
+      "elapsed_s": 4.17658805847168
+    },
+    {
+      "fqn": "org.apache.commons.lang3.util.FluentBitSet",
+      "status": "OK",
+      "mutations": 71,
+      "elapsed_s": 5.030178070068359
+    },
+    {
+      "fqn": "org.apache.commons.lang3.util.IterableStringTokenizer",
+      "status": "OK",
+      "mutations": 5,
+      "elapsed_s": 3.81134295463562
+    }
+  ]
+}

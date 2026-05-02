@@ -1,0 +1,17 @@
+{
+  "total_tests": 4589,
+  "total_mutations": 772,
+  "inclusiveness_pct": 99.87,
+  "avg_selection_size": 16.7,
+  "selection_rate_pct": 0.36,
+  "test_reduction_pct": 99.64,
+  "safe": 771,
+  "unsafe": 1,
+  "unsafe_details": [
+    {
+      "class": "org.apache.commons.lang3.reflect.FieldUtils",
+      "method": "removeFinalModifier",
+      "line": "563"
+    }
+  ]
+}

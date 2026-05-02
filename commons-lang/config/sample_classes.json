@@ -1,0 +1,36 @@
+{
+  "project": "Apache Commons Lang",
+  "version": "3.21.0-SNAPSHOT",
+  "repository": "https://github.com/apache/commons-lang",
+  "commit": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
+  "sampling": {
+    "strategy": "stratified_random",
+    "seed": 42,
+    "classes_per_subpackage": 2,
+    "max_loc": 1200,
+    "total_sampled": 21
+  },
+  "classes": [
+    {"fqn": "org.apache.commons.lang3.arch.Processor", "subpkg": "arch", "loc": 253, "targetTests": "org.apache.commons.lang3.arch.*"},
+    {"fqn": "org.apache.commons.lang3.builder.HashCodeBuilder", "subpkg": "builder", "loc": 809, "targetTests": "org.apache.commons.lang3.builder.*"},
+    {"fqn": "org.apache.commons.lang3.compare.ComparableUtils", "subpkg": "compare", "loc": 246, "targetTests": "org.apache.commons.lang3.compare.*"},
+    {"fqn": "org.apache.commons.lang3.concurrent.locks.LockingVisitors", "subpkg": "concurrent/locks", "loc": 760, "targetTests": "org.apache.commons.lang3.concurrent.locks.*"},
+    {"fqn": "org.apache.commons.lang3.event.EventListenerSupport", "subpkg": "event", "loc": 362, "targetTests": "org.apache.commons.lang3.event.*"},
+    {"fqn": "org.apache.commons.lang3.event.EventUtils", "subpkg": "event", "loc": 134, "targetTests": "org.apache.commons.lang3.event.*"},
+    {"fqn": "org.apache.commons.lang3.math.Fraction", "subpkg": "math", "loc": 923, "targetTests": "org.apache.commons.lang3.math.*"},
+    {"fqn": "org.apache.commons.lang3.math.IEEE754rUtils", "subpkg": "math", "loc": 261, "targetTests": "org.apache.commons.lang3.math.*"},
+    {"fqn": "org.apache.commons.lang3.mutable.MutableFloat", "subpkg": "mutable", "loc": 416, "targetTests": "org.apache.commons.lang3.mutable.*"},
+    {"fqn": "org.apache.commons.lang3.mutable.MutableObject", "subpkg": "mutable", "loc": 128, "targetTests": "org.apache.commons.lang3.mutable.*"},
+    {"fqn": "org.apache.commons.lang3.reflect.MethodUtils", "subpkg": "reflect", "loc": 1090, "targetTests": "org.apache.commons.lang3.reflect.*"},
+    {"fqn": "org.apache.commons.lang3.reflect.FieldUtils", "subpkg": "reflect", "loc": 943, "targetTests": "org.apache.commons.lang3.reflect.*"},
+    {"fqn": "org.apache.commons.lang3.stream.Streams", "subpkg": "stream", "loc": 854, "targetTests": "org.apache.commons.lang3.stream.*"},
+    {"fqn": "org.apache.commons.lang3.stream.LangCollectors", "subpkg": "stream", "loc": 218, "targetTests": "org.apache.commons.lang3.stream.*"},
+    {"fqn": "org.apache.commons.lang3.text.FormattableUtils", "subpkg": "text", "loc": 151, "targetTests": "org.apache.commons.lang3.text.*"},
+    {"fqn": "org.apache.commons.lang3.text.translate.EntityArrays", "subpkg": "text/translate", "loc": 479, "targetTests": "org.apache.commons.lang3.text.translate.*"},
+    {"fqn": "org.apache.commons.lang3.text.translate.NumericEntityEscaper", "subpkg": "text/translate", "loc": 122, "targetTests": "org.apache.commons.lang3.text.translate.*"},
+    {"fqn": "org.apache.commons.lang3.tuple.Pair", "subpkg": "tuple", "loc": 264, "targetTests": "org.apache.commons.lang3.tuple.*"},
+    {"fqn": "org.apache.commons.lang3.tuple.ImmutablePair", "subpkg": "tuple", "loc": 197, "targetTests": "org.apache.commons.lang3.tuple.*"},
+    {"fqn": "org.apache.commons.lang3.util.FluentBitSet", "subpkg": "util", "loc": 610, "targetTests": "org.apache.commons.lang3.util.*"},
+    {"fqn": "org.apache.commons.lang3.util.IterableStringTokenizer", "subpkg": "util", "loc": 114, "targetTests": "org.apache.commons.lang3.util.*"}
+  ]
+}
