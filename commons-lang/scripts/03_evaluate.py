@@ -120,8 +120,10 @@ def main():
         sys.exit(1)
 
     with open(coverage_map_path) as f:
-        test_mappings = json.load(f)["testMappings"]
+        coverage_data = json.load(f)
+    test_mappings = coverage_data["testMappings"]
     total_tests = len(test_mappings)
+    commit = coverage_data.get("metadata", {}).get("commitId", "unknown")
 
     mutations = load_mutations(results_dir)
     if not mutations:
@@ -193,6 +195,9 @@ def main():
                     f"{mut['mutator']},{len(mut['killingTests'])},{len(t_sel)},{len(inter)>0}\n")
 
     summary = {
+        "project": "Apache Commons Lang",
+        "commit": commit,
+        "num_classes": len(class_safety),
         "total_tests": total_tests,
         "total_mutations": total,
         "inclusiveness_pct": round(inclusiveness, 2),

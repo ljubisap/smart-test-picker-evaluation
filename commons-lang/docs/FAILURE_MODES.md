@@ -14,6 +14,24 @@ Out of 772 KILLED mutations, exactly **1 mutation** was not safely covered by th
 | Mutator | `VoidMethodCallMutator` |
 | Killing Test | `FieldUtilsTest#testRemoveFinalModifierNullPointerException` |
 
+### PIT XML (from `results/per-class/org.apache.commons.lang3.reflect.FieldUtils/mutations.xml`)
+
+```xml
+<mutation detected="true" status="KILLED" numberOfTestsRun="1">
+  <sourceFile>FieldUtils.java</sourceFile>
+  <mutatedClass>org.apache.commons.lang3.reflect.FieldUtils</mutatedClass>
+  <mutatedMethod>removeFinalModifier</mutatedMethod>
+  <methodDescription>(Ljava/lang/reflect/Field;)V</methodDescription>
+  <lineNumber>563</lineNumber>
+  <mutator>org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator</mutator>
+  <killingTests>
+    org.apache.commons.lang3.reflect.FieldUtilsTest.[engine:junit-jupiter]/
+    [class:org.apache.commons.lang3.reflect.FieldUtilsTest]/
+    [method:testRemoveFinalModifierNullPointerException()]
+  </killingTests>
+</mutation>
+```
+
 ## Root Cause: Exception-Path Coverage Gap
 
 ### What Happened
@@ -76,3 +94,40 @@ Accept this as a known limitation. The 99.87% safety rate already exceeds the li
 ## Other Classes: 100% Safety
 
 All other 20 classes achieved perfect 100% inclusiveness, confirming the failure mode is specific to the exception-path scenario, not a systematic weakness.
+
+## Normalization Bugs Found and Fixed During Development
+
+During evaluator development, two normalization bugs caused false "unsafe" results. Both were fixed before final evaluation. Documenting them here for reproducibility and to explain the normalizer's design.
+
+### Bug 1: Nested Class — Taking First Instead of Last
+
+**Symptom:** Certain mutations in classes like `ComparableUtils` showed as unsafe.
+
+**Root cause:** PIT uses `[nested-class:X]` tags for inner classes. When multiple nested levels exist, the deepest class name is the one JaCoCo uses. The evaluator initially took `nested_matches[0]` (first/outermost) instead of `nested_matches[-1]` (last/deepest).
+
+**PIT format example:**
+```
+[class:org.apache.commons.lang3.compare.ComparableUtils]/
+[nested-class:AbstractComparableUtils]/
+[nested-class:InRange]/
+[method:test()]
+```
+
+**Fix:** `simple_class = nested_matches[-1]` → normalizes to `InRange#test`
+
+### Bug 2: Parameterized Tests — Unrecognized `[test-template:]` Tag
+
+**Symptom:** Some mutations showed 0 killing tests (normalizer returned `None`).
+
+**Root cause:** PIT encodes `@ParameterizedTest` methods with `[test-template:name(params)]` instead of `[method:name()]`. The normalizer only looked for `[method:]`.
+
+**PIT format example:**
+```
+[class:org.apache.commons.lang3.math.FractionTest]/
+[test-template:testCompareTo(String, String, int)]/
+[test-template-invocation:#3]
+```
+
+**Fix:** Fallback to `re.search(r'\[test-template:([^\]]+)\]', pit_test_id)` when `[method:]` is not found.
+
+Both fixes are in `normalize_pit_test_name()` in scripts `03_evaluate.py` and `04_baselines.py`.

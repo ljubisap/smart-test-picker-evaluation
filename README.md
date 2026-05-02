@@ -1,17 +1,20 @@
 # Smart Test Picker — Evaluation Replication Package
 
-Replication package for the empirical evaluation of **Smart Test Picker**, a lightweight regression test selection tool based on per-test runtime coverage.
+This is the replication package for the paper:
 
-This repository contains scripts, configurations, raw results, and documentation for reproducing the mutation-based safety evaluation described in Paper 1 (RAD 1).
+> **Lightweight Regression Test Selection via Per-Test Runtime Class and Method Coverage in Java**
+> *(submitted to ISSTA 2027)*
+
+It contains scripts, configurations, raw results, and documentation for reproducing the mutation-based safety evaluation of Smart Test Picker, a regression test selection tool based on per-test runtime coverage captured via JaCoCo.
 
 ## Benchmark Projects
 
-| Project | Status | Tests | Mutations | Safety | Reduction |
-|---------|--------|-------|-----------|--------|-----------|
-| [Apache Commons Lang](commons-lang/) | Complete | 4589 | 772 | 99.87% | 99.64% |
-| Caffeine | Planned | — | — | — | — |
-| Apache Commons IO | Planned | — | — | — | — |
-| Micronaut Core | Planned | — | — | — | — |
+| Project | Tests | Mutations | Safety | Reduction | Status | Folder |
+|---------|-------|-----------|--------|-----------|--------|--------|
+| Apache Commons Lang | 4589 | 772 | 99.87% | 99.64% | Done | [commons-lang/](commons-lang/) |
+| Spring PetClinic | 52 | TBD | TBD | TBD | Pilot (complete) | petclinic/ |
+| Caffeine | TBD | TBD | TBD | TBD | Planned | caffeine/ |
+| Apache Commons IO | TBD | TBD | TBD | TBD | Planned | commons-io/ |
 
 ## Repository Structure
 
@@ -21,11 +24,14 @@ smart-test-picker-evaluation/
 ├── LICENSE                  # Apache License 2.0
 ├── .gitignore
 └── commons-lang/           # First benchmark project
+    ├── README.md           # Project-specific quick start
     ├── config/             # Sampling config, PIT Maven profile
     ├── scripts/            # Numbered evaluation scripts (00-04)
     ├── results/            # Raw PIT output + aggregated metrics
     └── docs/               # Methodology, reproduction, failure analysis
 ```
+
+See `<project>/docs/README.md` for project-specific reproduction details.
 
 ## Methodology
 
@@ -40,8 +46,9 @@ See `<project>/docs/METHODOLOGY.md` for detailed methodology per project.
 
 ## Requirements
 
-- Java 17+, Maven 3.9+, Python 3.9+
+- Java 21+, Maven 3.9.6+, Python 3.10+
 - Smart Test Picker Maven plugin 0.1.11+ (built from source)
+- No external Python packages (stdlib only)
 
 See `<project>/docs/REQUIREMENTS.md` for project-specific prerequisites.
 
@@ -49,14 +56,15 @@ See `<project>/docs/REQUIREMENTS.md` for project-specific prerequisites.
 
 ```bash
 cd commons-lang
-# Reproduce from scratch:
+
+# Verify existing results (no build required):
+cat results/aggregated/evaluation_summary.json | python3 -m json.tool
+
+# Reproduce from scratch (requires commons-lang checkout + plugin):
 python3 scripts/01_generate_coverage_map.py --project-dir /path/to/commons-lang
 python3 scripts/02_run_pit.py --project-dir /path/to/commons-lang
 python3 scripts/03_evaluate.py --project-dir /path/to/commons-lang
 python3 scripts/04_baselines.py --project-dir /path/to/commons-lang
-
-# Or verify existing results:
-cat results/aggregated/evaluation_summary.json | python3 -m json.tool
 ```
 
 ## Citation
@@ -65,9 +73,11 @@ cat results/aggregated/evaluation_summary.json | python3 -m json.tool
 @inproceedings{smarttestpicker2027,
   title     = {Lightweight Regression Test Selection via Per-Test Runtime
                Class and Method Coverage in Java},
-  author    = {TBD},
-  booktitle = {TBD},
-  year      = {2027}
+  author    = {Punosevac, Ljubisa},
+  booktitle = {Proceedings of the International Symposium on Software
+               Testing and Analysis (ISSTA)},
+  year      = {2027},
+  note      = {Under submission}
 }
 ```
 

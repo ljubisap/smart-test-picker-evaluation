@@ -4,6 +4,8 @@ __pycache__/
 *.pyo
 .pytest_cache/
 *.egg-info/
+.venv/
+venv/
 
 # Java
 target/
@@ -27,6 +29,13 @@ out/
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Misc
+.env
 
 # Logs (keep result logs, ignore stray ones)
 *.log

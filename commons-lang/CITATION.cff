@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "Smart Test Picker — Evaluation Replication Package"
+message: "If you use this replication package, please cite the associated paper."
+type: software
+authors:
+  - given-names: Ljubisa
+    family-names: Punosevac
+    orcid: ""
+version: "1.0.0"
+date-released: "2026-05-02"
+license: Apache-2.0
+repository-code: "https://github.com/ljubisap/smart-test-picker-evaluation"
+abstract: >-
+  Replication package for the empirical evaluation of Smart Test Picker,
+  a lightweight regression test selection tool. Contains scripts, configurations,
+  and raw results for mutation-based safety validation on Apache Commons Lang.
+keywords:
+  - regression test selection
+  - mutation testing
+  - JaCoCo
+  - PIT
+  - per-test coverage
+preferred-citation:
+  type: conference-paper
+  title: "Lightweight Regression Test Selection via Per-Test Runtime Class and Method Coverage in Java"
+  authors:
+    - given-names: Ljubisa
+      family-names: Punosevac
+  year: 2027
+  conference:
+    name: "International Symposium on Software Testing and Analysis (ISSTA)"
+  notes: "Under submission"

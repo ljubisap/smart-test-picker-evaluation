@@ -1,131 +1,208 @@
 {
-  "timestamp": "2026-05-02T09:49:01.934518",
-  "total_classes": 20,
-  "ok": 20,
+  "project": "Apache Commons Lang",
+  "commit": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
+  "timestamp": "2026-05-02T09:49:01",
+  "total_classes": 21,
+  "ok": 21,
   "failed": 0,
   "timeout": 0,
-  "total_mutations": 822,
-  "total_elapsed_s": 308.7403874397278,
+  "mutation_status_breakdown": {
+    "NO_COVERAGE": 32,
+    "KILLED": 772,
+    "SURVIVED": 115,
+    "TIMED_OUT": 13
+  },
+  "total_mutations": 932,
+  "mutation_score_pct": 82.8,
   "results": [
     {
       "fqn": "org.apache.commons.lang3.arch.Processor",
       "status": "OK",
-      "mutations": 17,
-      "elapsed_s": 8.537290096282959
+      "total_mutations": 17,
+      "killed": 14,
+      "survived": 0,
+      "no_coverage": 3,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.apache.commons.lang3.builder.HashCodeBuilder",
+      "status": "OK",
+      "total_mutations": 110,
+      "killed": 103,
+      "survived": 3,
+      "no_coverage": 4,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.compare.ComparableUtils",
       "status": "OK",
-      "mutations": 25,
-      "elapsed_s": 4.477556943893433
+      "total_mutations": 25,
+      "killed": 23,
+      "survived": 2,
+      "no_coverage": 0,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.concurrent.locks.LockingVisitors",
       "status": "OK",
-      "mutations": 5,
-      "elapsed_s": 161.08051013946533
+      "total_mutations": 5,
+      "killed": 5,
+      "survived": 0,
+      "no_coverage": 0,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.event.EventListenerSupport",
       "status": "OK",
-      "mutations": 14,
-      "elapsed_s": 5.052967071533203
+      "total_mutations": 14,
+      "killed": 12,
+      "survived": 2,
+      "no_coverage": 0,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.event.EventUtils",
       "status": "OK",
-      "mutations": 1,
-      "elapsed_s": 3.4028239250183105
+      "total_mutations": 1,
+      "killed": 1,
+      "survived": 0,
+      "no_coverage": 0,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.math.Fraction",
       "status": "OK",
-      "mutations": 262,
-      "elapsed_s": 57.34358501434326
+      "total_mutations": 262,
+      "killed": 196,
+      "survived": 48,
+      "no_coverage": 5,
+      "timed_out": 13
     },
     {
       "fqn": "org.apache.commons.lang3.math.IEEE754rUtils",
       "status": "OK",
-      "mutations": 44,
-      "elapsed_s": 4.404601097106934
+      "total_mutations": 44,
+      "killed": 42,
+      "survived": 2,
+      "no_coverage": 0,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.mutable.MutableFloat",
       "status": "OK",
-      "mutations": 38,
-      "elapsed_s": 4.239966869354248
+      "total_mutations": 38,
+      "killed": 35,
+      "survived": 3,
+      "no_coverage": 0,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.mutable.MutableObject",
       "status": "OK",
-      "mutations": 10,
-      "elapsed_s": 3.292818307876587
-    },
-    {
-      "fqn": "org.apache.commons.lang3.reflect.MethodUtils",
-      "status": "OK",
-      "mutations": 142,
-      "elapsed_s": 10.20970606803894
+      "total_mutations": 10,
+      "killed": 10,
+      "survived": 0,
+      "no_coverage": 0,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.reflect.FieldUtils",
       "status": "OK",
-      "mutations": 72,
-      "elapsed_s": 5.749356031417847
+      "total_mutations": 72,
+      "killed": 61,
+      "survived": 3,
+      "no_coverage": 8,
+      "timed_out": 0
     },
     {
-      "fqn": "org.apache.commons.lang3.stream.Streams",
+      "fqn": "org.apache.commons.lang3.reflect.MethodUtils",
       "status": "OK",
-      "mutations": 26,
-      "elapsed_s": 4.173846960067749
+      "total_mutations": 142,
+      "killed": 121,
+      "survived": 18,
+      "no_coverage": 3,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.stream.LangCollectors",
       "status": "OK",
-      "mutations": 6,
-      "elapsed_s": 3.426689863204956
+      "total_mutations": 6,
+      "killed": 2,
+      "survived": 4,
+      "no_coverage": 0,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.apache.commons.lang3.stream.Streams",
+      "status": "OK",
+      "total_mutations": 26,
+      "killed": 25,
+      "survived": 1,
+      "no_coverage": 0,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.text.FormattableUtils",
       "status": "OK",
-      "mutations": 21,
-      "elapsed_s": 8.81545114517212
+      "total_mutations": 21,
+      "killed": 17,
+      "survived": 3,
+      "no_coverage": 1,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.text.translate.EntityArrays",
       "status": "OK",
-      "mutations": 13,
-      "elapsed_s": 3.5296900272369385
+      "total_mutations": 13,
+      "killed": 2,
+      "survived": 3,
+      "no_coverage": 8,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.text.translate.NumericEntityEscaper",
       "status": "OK",
-      "mutations": 19,
-      "elapsed_s": 3.9484517574310303
-    },
-    {
-      "fqn": "org.apache.commons.lang3.tuple.Pair",
-      "status": "OK",
-      "mutations": 19,
-      "elapsed_s": 4.036967039108276
+      "total_mutations": 19,
+      "killed": 18,
+      "survived": 1,
+      "no_coverage": 0,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.tuple.ImmutablePair",
       "status": "OK",
-      "mutations": 12,
-      "elapsed_s": 4.17658805847168
+      "total_mutations": 12,
+      "killed": 11,
+      "survived": 1,
+      "no_coverage": 0,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.apache.commons.lang3.tuple.Pair",
+      "status": "OK",
+      "total_mutations": 19,
+      "killed": 19,
+      "survived": 0,
+      "no_coverage": 0,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.util.FluentBitSet",
       "status": "OK",
-      "mutations": 71,
-      "elapsed_s": 5.030178070068359
+      "total_mutations": 71,
+      "killed": 50,
+      "survived": 21,
+      "no_coverage": 0,
+      "timed_out": 0
     },
     {
       "fqn": "org.apache.commons.lang3.util.IterableStringTokenizer",
       "status": "OK",
-      "mutations": 5,
-      "elapsed_s": 3.81134295463562
+      "total_mutations": 5,
+      "killed": 5,
+      "survived": 0,
+      "no_coverage": 0,
+      "timed_out": 0
     }
   ]
 }

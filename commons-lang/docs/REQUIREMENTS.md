@@ -1,13 +1,21 @@
 # Requirements
 
+## Operating System
+
+Tested on:
+- macOS 14.x (Apple Silicon, primary development)
+- Linux (Ubuntu 22.04, CI)
+
+Should work on any Unix-like OS with the tools below. Windows users: use WSL2.
+
 ## Software
 
-| Tool | Version | Purpose |
-|------|---------|---------|
-| Java | 17+ | Build and test execution |
-| Maven | 3.9+ | Build tool for commons-lang |
-| Python | 3.9+ | Evaluation scripts |
-| Git | 2.x | Change detection |
+| Tool | Version | Verified | Purpose |
+|------|---------|----------|---------|
+| Java | OpenJDK 21.0.2+ | `java -version` | Build and test execution |
+| Maven | 3.9.6+ | `mvn --version` | Build tool for commons-lang |
+| Python | 3.10+ | `python3 --version` | Evaluation scripts |
+| Git | 2.39+ | `git --version` | Change detection, diff |
 
 ## Maven Plugins (automatically downloaded)
 
@@ -27,6 +35,11 @@ cd /path/to/smart-test-picker-working
 ```
 
 This installs `io.github.ljubisap:smart-test-picker-maven:0.1.11` to `~/.m2/repository/`.
+
+Verify installation:
+```bash
+ls ~/.m2/repository/io/github/ljubisap/smart-test-picker-maven/0.1.11/
+```
 
 ## Subject Project Setup
 
@@ -48,10 +61,24 @@ This installs `io.github.ljubisap:smart-test-picker-maven:0.1.11` to `~/.m2/repo
 
 ## Hardware
 
-- Minimum: 8 GB RAM, 4 CPU cores
-- PIT run time: ~5 minutes (21 classes, 772 mutations)
-- Coverage map generation: ~10 minutes (full test suite)
+| Resource | Minimum | Recommended |
+|----------|---------|-------------|
+| RAM | 8 GB | 16 GB |
+| CPU | 4 cores | 8 cores |
+| Disk | 2 GB free | 5 GB free |
+
+**Time estimates:**
+| Step | Duration |
+|------|----------|
+| Coverage map generation (Step 1) | ~10 minutes |
+| PIT mutation testing (Step 2) | ~5 minutes |
+| Evaluation + baselines (Steps 3-4) | < 10 seconds |
+| **Total** | **~15 minutes** |
 
 ## Python Dependencies
 
-No external packages required — scripts use only the Python standard library.
+No external packages required — all scripts use only the Python standard library:
+- `argparse`, `json`, `xml.etree.ElementTree`, `pathlib`, `subprocess`
+- `random`, `re`, `collections`, `shutil`, `time`, `datetime`
+
+No `requirements.txt` or virtual environment needed.
