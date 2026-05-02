@@ -69,6 +69,8 @@ python3 scripts/04_baselines.py --project-dir /path/to/commons-lang
 
 ## Citation
 
+If you use this work, please cite both the paper and the replication package:
+
 ```bibtex
 @inproceedings{smarttestpicker2027,
   title     = {Lightweight Regression Test Selection via Per-Test Runtime
@@ -78,6 +80,16 @@ python3 scripts/04_baselines.py --project-dir /path/to/commons-lang
                Testing and Analysis (ISSTA)},
   year      = {2027},
   note      = {Under submission}
+}
+
+@misc{smarttestpicker_replication2026,
+  title        = {Smart Test Picker Evaluation Replication Package},
+  author       = {Punosevac, Ljubisa},
+  year         = {2026},
+  howpublished = {\url{https://github.com/ljubisap/smart-test-picker-evaluation}},
+  note         = {Replication package for paper ``Lightweight Regression
+                  Test Selection via Per-Test Runtime Class and Method
+                  Coverage in Java''}
 }
 ```
 
