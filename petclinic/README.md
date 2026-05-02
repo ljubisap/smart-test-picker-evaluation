@@ -55,21 +55,25 @@ petclinic/
 ├── README.md                   # This file
 ├── config/
 │   ├── sample_classes.json     # All 14 production classes (no sampling)
-│   └── pitest_config.md        # PIT Gradle plugin configuration
+│   ├── pitest.gradle           # PIT Gradle plugin config (copy-paste ready)
+│   └── pitest_config.md        # Human-readable config documentation
 ├── scripts/
+│   ├── 00_sample_classes.py    # Class listing + --verify mode
 │   ├── 01_generate_coverage_map.py
 │   ├── 02_run_pit.py
 │   ├── 03_evaluate.py
 │   └── 04_baselines.py
 ├── results/
-│   ├── mutations.xml           # Raw PIT output (142 mutations)
-│   ├── test-coverage-map.json  # Coverage map (52 tests)
+│   ├── mutations.xml           # Raw PIT output (142 mutations, single file)
+│   ├── test-coverage-map.json  # Coverage map (52 tests, included for verification)
 │   └── aggregated/
 │       ├── evaluation_summary.json
 │       ├── evaluation_results.csv
 │       ├── pit_summary.json
 │       └── baseline_comparison.json
 └── docs/
+    ├── README.md               # Navigation + commons-lang differences
+    ├── REPRODUCE.md            # Step-by-step reproduction guide
     ├── METHODOLOGY.md
     ├── REQUIREMENTS.md
     └── FAILURE_MODES.md
