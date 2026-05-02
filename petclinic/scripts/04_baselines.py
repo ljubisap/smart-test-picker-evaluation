@@ -4,7 +4,8 @@
 
 Baselines:
   1. Class-level only — select all tests touching the mutated class (no method info)
-  2. Random(k) — select k random tests per mutation (k = plugin's avg selection size)
+  2. Random(k_M) — per-mutation random selection where k_M equals the number
+     of tests the proposed selector would pick for that mutation
 
 Usage:
   python3 04_baselines.py --project-dir /path/to/spring-petclinic
@@ -71,14 +72,6 @@ def class_level_only_selector(test_mappings, changed_class, changed_method):
     return selected
 
 
-def random_selector(test_mappings, changed_class, changed_method, k, seed):
-    """Select k random tests (deterministic via seed)."""
-    all_tests = list(test_mappings.keys())
-    rng = random.Random(seed)
-    k_clamped = min(k, len(all_tests))
-    return set(rng.sample(all_tests, k_clamped))
-
-
 def load_mutations(mutations_xml_path):
     """Load all KILLED mutations from mutations.xml."""
     mutations = []
@@ -102,18 +95,45 @@ def load_mutations(mutations_xml_path):
     return mutations
 
 
-def evaluate_selector(selector_fn, test_mappings, mutations, total_tests, **kwargs):
+def evaluate_selector(selector_fn, test_mappings, mutations, total_tests):
     """Evaluate a selector function against all mutations."""
     safe = 0
     selection_sizes = []
 
-    for i, mut in enumerate(mutations):
-        if "k" in kwargs:
-            t_sel = selector_fn(test_mappings, mut["mutatedClass"], mut["mutatedMethod"],
-                                kwargs["k"], seed=42 + i)
-        else:
-            t_sel = selector_fn(test_mappings, mut["mutatedClass"], mut["mutatedMethod"])
+    for mut in mutations:
+        t_sel = selector_fn(test_mappings, mut["mutatedClass"], mut["mutatedMethod"])
+        selection_sizes.append(len(t_sel))
+        if t_sel & mut["killingTests"]:
+            safe += 1
 
+    total = len(mutations)
+    avg_sel = sum(selection_sizes) / len(selection_sizes)
+    return {
+        "inclusiveness_pct": round(safe / total * 100, 2),
+        "selection_rate_pct": round(avg_sel / total_tests * 100, 2),
+        "avg_selection_size": round(avg_sel, 1),
+        "safe": safe,
+        "unsafe": total - safe,
+        "total": total,
+    }
+
+
+def evaluate_random_per_mutation(mutations, test_mappings, coverage_selector_fn, total_tests, seed=42):
+    """
+    Evaluate random selector with per-mutation budget k_M.
+
+    For each mutation M, k_M = |coverage_selector(M)|. The random selector
+    picks k_M tests uniformly at random, ensuring the same selection budget
+    as the proposed approach for each individual mutation.
+    """
+    all_tests = list(test_mappings.keys())
+    safe = 0
+    selection_sizes = []
+
+    for i, mut in enumerate(mutations):
+        k_m = len(coverage_selector_fn(test_mappings, mut["mutatedClass"], mut["mutatedMethod"]))
+        rng = random.Random(seed + i)
+        t_sel = set(rng.sample(all_tests, min(k_m, total_tests)))
         selection_sizes.append(len(t_sel))
         if t_sel & mut["killingTests"]:
             safe += 1
@@ -163,9 +183,7 @@ def main():
     # Run all selectors
     plugin_results = evaluate_selector(coverage_selector, test_mappings, mutations, total_tests)
     class_results = evaluate_selector(class_level_only_selector, test_mappings, mutations, total_tests)
-
-    k = round(plugin_results["avg_selection_size"])
-    random_results = evaluate_selector(random_selector, test_mappings, mutations, total_tests, k=k)
+    random_results = evaluate_random_per_mutation(mutations, test_mappings, coverage_selector, total_tests, seed=42)
 
     # Print
     print(f"{'='*70}")
@@ -176,7 +194,7 @@ def main():
     print(f"{'-'*50}")
     for name, r in [("Coverage (plugin)", plugin_results),
                     ("Class-level only", class_results),
-                    (f"Random(k={k})", random_results)]:
+                    ("Random(k=per-mut)", random_results)]:
         print(f"{name:<25} {r['inclusiveness_pct']:>7.2f}% {r['selection_rate_pct']:>8.2f}% {r['avg_selection_size']:>6.1f}")
 
     # Write output
@@ -187,10 +205,11 @@ def main():
         "project": "Spring PetClinic",
         "total_tests": total_tests,
         "total_mutations": len(mutations),
+        "seed": 42,
         "selectors": {
             "coverage_plugin": plugin_results,
             "class_level_only": class_results,
-            f"random_k{k}": random_results,
+            "random_per_mutation": random_results,
         }
     }
     out_path = agg_dir / "baseline_comparison.json"

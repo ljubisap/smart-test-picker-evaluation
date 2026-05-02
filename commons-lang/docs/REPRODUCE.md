@@ -66,7 +66,7 @@ python3 scripts/04_baselines.py --project-dir /path/to/commons-lang
 
 Compares proposed selector against:
 - Class-level only (no method granularity)
-- Random selection (k = avg proposed selection size)
+- Random selection (k = per-mutation proposed selection size)
 
 **Output:** `results/aggregated/baseline_comparison.json`
 

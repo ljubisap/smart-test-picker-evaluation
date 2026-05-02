@@ -2,6 +2,7 @@
   "project": "Spring PetClinic",
   "total_tests": 52,
   "total_mutations": 94,
+  "seed": 42,
   "selectors": {
     "coverage_plugin": {
       "inclusiveness_pct": 100.0,
@@ -19,12 +20,12 @@
       "unsafe": 0,
       "total": 94
     },
-    "random_k10": {
-      "inclusiveness_pct": 42.55,
-      "selection_rate_pct": 19.23,
-      "avg_selection_size": 10.0,
-      "safe": 40,
-      "unsafe": 54,
+    "random_per_mutation": {
+      "inclusiveness_pct": 37.23,
+      "selection_rate_pct": 18.7,
+      "avg_selection_size": 9.7,
+      "safe": 35,
+      "unsafe": 59,
       "total": 94
     }
   }

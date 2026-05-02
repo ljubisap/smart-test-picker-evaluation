@@ -8,7 +8,7 @@ Replication package for evaluating the **Smart Test Picker** regression test sel
 |----------|--------|----------------|----------------|
 | **Coverage (proposed)** | **99.87%** | 0.36% | **99.64%** |
 | Class-level only | 99.87% | 1.08% | 98.92% |
-| Random (k=17) | 1.81% | 0.37% | 99.63% |
+| Random (k=per-mutation) | 1.94% | 0.36% | 99.64% |
 
 - **772 KILLED mutations** across 21 classes (4589 tests in coverage map)
 - **1 unsafe mutation** — `FieldUtils.removeFinalModifier` (exception-path coverage gap)

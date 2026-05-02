@@ -102,8 +102,9 @@ Key rules:
 ### Class-Level Only
 Selects ALL tests that cover the changed class, ignoring method-level information. Represents traditional class-granularity RTS approaches (similar to Ekstazi).
 
-### Random(k)
-Selects k random tests where k = average proposed selection size. Per-mutation seed (42 + mutation_index) ensures reproducibility. Represents the null hypothesis (selection without coverage information is no better than random).
+### Random(k=per-mutation)
+
+For each mutation M, the random selector chooses k_M tests uniformly at random (without replacement) from the test suite, where k_M equals the number of tests the proposed coverage-based selector would select for M. This ensures the random baseline has the same selection budget as the proposed approach for each individual mutation, eliminating size-based comparison bias. Per-mutation seed (42 + mutation_index) ensures reproducibility. Represents the null hypothesis: selection without coverage information is no better than random.
 
 ## Metrics
 

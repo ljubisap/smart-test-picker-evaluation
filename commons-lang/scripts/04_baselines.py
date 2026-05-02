@@ -5,7 +5,8 @@
 Evaluates three strategies against PIT mutation ground truth:
   1. Coverage (proposed): dual-granularity method+class selection
   2. Class-level only: all tests covering changed class (no method matching)
-  3. Random(k): k random tests where k = avg proposed selection size
+  3. Random(k_M): per-mutation random selection where k_M equals the number
+     of tests the proposed selector would pick for that mutation
 
 Metrics per selector: Safety (inclusiveness), Selection Rate, Avg Selection Size.
 
@@ -136,8 +137,14 @@ def evaluate_selector(name, selector_fn, mutations, test_mappings):
     }
 
 
-def evaluate_random(mutations, test_mappings, k, seed=42):
-    """Evaluate random selector with per-mutation seed for reproducibility."""
+def evaluate_random_per_mutation(mutations, test_mappings, coverage_selector_fn, seed=42):
+    """
+    Evaluate random selector with per-mutation budget k_M.
+
+    For each mutation M, k_M = |coverage_selector(M)|. The random selector
+    picks k_M tests uniformly at random, ensuring the same selection budget
+    as the proposed approach for each individual mutation.
+    """
     all_tests = list(test_mappings.keys())
     total_tests = len(all_tests)
     safe = 0
@@ -145,8 +152,9 @@ def evaluate_random(mutations, test_mappings, k, seed=42):
     sizes = []
 
     for i, mut in enumerate(mutations):
+        k_m = len(coverage_selector_fn(test_mappings, mut["mutatedClass"], mut["mutatedMethod"]))
         rng = random.Random(seed + i)
-        t_selected = set(rng.sample(all_tests, min(k, total_tests)))
+        t_selected = set(rng.sample(all_tests, min(k_m, total_tests)))
         intersection = t_selected & mut["killingTests"]
         if intersection:
             safe += 1
@@ -158,7 +166,7 @@ def evaluate_random(mutations, test_mappings, k, seed=42):
     avg_sel = sum(sizes) / len(sizes) if sizes else 0
 
     return {
-        "name": f"Random (k={k})",
+        "name": f"Random (k=per-mutation)",
         "safety_pct": round(safe / total * 100, 2) if total > 0 else 0,
         "safe": safe,
         "unsafe": unsafe,
@@ -201,15 +209,16 @@ def main():
     res_coverage = evaluate_selector(
         "Coverage (proposed)", coverage_selector, mutations, test_mappings
     )
-    avg_k = round(res_coverage["avg_selected"])
 
     # 2. Class-level only selector
     res_class = evaluate_selector(
         "Class-level only", class_level_only_selector, mutations, test_mappings
     )
 
-    # 3. Random selector (k = avg coverage selection size)
-    res_random = evaluate_random(mutations, test_mappings, avg_k, seed=args.seed)
+    # 3. Random selector (per-mutation k_M = coverage selection size for that mutation)
+    res_random = evaluate_random_per_mutation(
+        mutations, test_mappings, coverage_selector, seed=args.seed
+    )
 
     # Print comparison table
     results = [res_coverage, res_class, res_random]

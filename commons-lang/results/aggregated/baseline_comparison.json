@@ -24,14 +24,14 @@
       "test_reduction_pct": 98.92
     },
     {
-      "name": "Random (k=17)",
-      "safety_pct": 1.81,
-      "safe": 14,
-      "unsafe": 758,
+      "name": "Random (k=per-mutation)",
+      "safety_pct": 1.94,
+      "safe": 15,
+      "unsafe": 757,
       "total": 772,
-      "avg_selected": 17.0,
-      "selection_rate_pct": 0.37,
-      "test_reduction_pct": 99.63
+      "avg_selected": 16.7,
+      "selection_rate_pct": 0.36,
+      "test_reduction_pct": 99.64
     }
   ]
 }

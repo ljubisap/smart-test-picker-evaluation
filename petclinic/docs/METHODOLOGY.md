@@ -46,7 +46,7 @@ For each KILLED mutation:
 
 Compare against:
 - **Class-level only** — select all tests touching the mutated class (no method-level filtering)
-- **Random(k)** — select k random tests (k = plugin's average selection size)
+- **Random(k=per-mutation)** — for each mutation M, the random selector chooses k_M tests uniformly at random (without replacement) from the test suite, where k_M equals the number of tests the proposed coverage-based selector would select for M. This ensures the random baseline has the same selection budget as the proposed approach for each individual mutation, eliminating size-based comparison bias. Per-mutation seed (42 + mutation_index) ensures reproducibility.
 
 ## Differences from Commons Lang
 

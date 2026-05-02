@@ -85,6 +85,6 @@ petclinic/
 |----------|--------|---------------|--------------|
 | **Coverage (plugin)** | **100.00%** | **18.70%** | **9.7** |
 | Class-level only | 100.00% | 35.29% | 18.4 |
-| Random(k=10) | 42.55% | 19.23% | 10.0 |
+| Random(k=per-mutation) | 37.23% | 18.70% | 9.7 |
 
 The plugin achieves perfect safety while selecting less than half the tests that class-level-only would select. Random selection at the same budget achieves only ~43% safety.

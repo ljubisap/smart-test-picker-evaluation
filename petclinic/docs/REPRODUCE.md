@@ -93,7 +93,7 @@ python3 scripts/04_baselines.py --project-dir /path/to/spring-petclinic
 ```
 
 What it does:
-- Runs class-level-only selector and random(k=10) selector
+- Runs class-level-only selector and random(k=per-mutation) selector
 - Writes `results/aggregated/baseline_comparison.json`
 
 Expected:
@@ -101,7 +101,7 @@ Expected:
 |----------|--------|-------------|
 | Coverage (plugin) | 100.00% | 9.7 |
 | Class-level only | 100.00% | 18.4 |
-| Random(k=10) | 42.55% | 10.0 |
+| Random(k=per-mutation) | 37.23% | 9.7 |
 
 ## Verifying Reproduction
 
