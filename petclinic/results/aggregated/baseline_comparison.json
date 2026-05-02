@@ -1,0 +1,31 @@
+{
+  "project": "Spring PetClinic",
+  "total_tests": 52,
+  "total_mutations": 94,
+  "selectors": {
+    "coverage_plugin": {
+      "inclusiveness_pct": 100.0,
+      "selection_rate_pct": 18.7,
+      "avg_selection_size": 9.7,
+      "safe": 94,
+      "unsafe": 0,
+      "total": 94
+    },
+    "class_level_only": {
+      "inclusiveness_pct": 100.0,
+      "selection_rate_pct": 35.29,
+      "avg_selection_size": 18.4,
+      "safe": 94,
+      "unsafe": 0,
+      "total": 94
+    },
+    "random_k10": {
+      "inclusiveness_pct": 42.55,
+      "selection_rate_pct": 19.23,
+      "avg_selection_size": 10.0,
+      "safe": 40,
+      "unsafe": 54,
+      "total": 94
+    }
+  }
+}

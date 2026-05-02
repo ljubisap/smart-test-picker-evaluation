@@ -1,0 +1,27 @@
+{
+  "project": "Spring PetClinic",
+  "version": "3.4.0-SNAPSHOT",
+  "repository": "https://github.com/spring-projects/spring-petclinic",
+  "commit": "e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f",
+  "build_system": "Gradle",
+  "sampling": {
+    "strategy": "all_classes",
+    "note": "Small project — all production classes with KILLED mutations included"
+  },
+  "classes": [
+    {"fqn": "org.springframework.samples.petclinic.model.BaseEntity", "subpkg": "model", "loc": 45},
+    {"fqn": "org.springframework.samples.petclinic.model.NamedEntity", "subpkg": "model", "loc": 20},
+    {"fqn": "org.springframework.samples.petclinic.model.Person", "subpkg": "model", "loc": 30},
+    {"fqn": "org.springframework.samples.petclinic.owner.Owner", "subpkg": "owner", "loc": 120},
+    {"fqn": "org.springframework.samples.petclinic.owner.OwnerController", "subpkg": "owner", "loc": 95},
+    {"fqn": "org.springframework.samples.petclinic.owner.Pet", "subpkg": "owner", "loc": 60},
+    {"fqn": "org.springframework.samples.petclinic.owner.PetController", "subpkg": "owner", "loc": 85},
+    {"fqn": "org.springframework.samples.petclinic.owner.PetTypeFormatter", "subpkg": "owner", "loc": 40},
+    {"fqn": "org.springframework.samples.petclinic.owner.PetValidator", "subpkg": "owner", "loc": 35},
+    {"fqn": "org.springframework.samples.petclinic.owner.Visit", "subpkg": "owner", "loc": 40},
+    {"fqn": "org.springframework.samples.petclinic.owner.VisitController", "subpkg": "owner", "loc": 45},
+    {"fqn": "org.springframework.samples.petclinic.vet.Vet", "subpkg": "vet", "loc": 45},
+    {"fqn": "org.springframework.samples.petclinic.vet.VetController", "subpkg": "vet", "loc": 50},
+    {"fqn": "org.springframework.samples.petclinic.vet.Vets", "subpkg": "vet", "loc": 25}
+  ]
+}

@@ -12,7 +12,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | Project | Tests | Mutations | Safety | Reduction | Status | Folder |
 |---------|-------|-----------|--------|-----------|--------|--------|
 | Apache Commons Lang | 4589 | 772 | 99.87% | 99.64% | Done | [commons-lang/](commons-lang/) |
-| Spring PetClinic | 52 | TBD | TBD | TBD | Pilot (complete) | petclinic/ |
+| Spring PetClinic | 52 | 94 | 100.00% | 81.30% | Done (pilot) | [petclinic/](petclinic/) |
 | Caffeine | TBD | TBD | TBD | TBD | Planned | caffeine/ |
 | Apache Commons IO | TBD | TBD | TBD | TBD | Planned | commons-io/ |
 

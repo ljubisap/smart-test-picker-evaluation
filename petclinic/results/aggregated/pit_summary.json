@@ -1,0 +1,41 @@
+{
+  "project": "Spring PetClinic",
+  "commit": "e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f",
+  "total_mutations": 142,
+  "num_classes": 17,
+  "mutation_status_breakdown": {
+    "KILLED": 94,
+    "SURVIVED": 37,
+    "NO_COVERAGE": 11
+  },
+  "mutation_score_pct": 66.2,
+  "mutators_used": {
+    "EmptyObjectReturnValsMutator": 41,
+    "RemoveConditionalMutator_EQUAL_ELSE": 37,
+    "VoidMethodCallMutator": 33,
+    "NullReturnValsMutator": 25,
+    "MathMutator": 2,
+    "BooleanTrueReturnValsMutator": 2,
+    "BooleanFalseReturnValsMutator": 1,
+    "PrimitiveReturnsMutator": 1
+  },
+  "classes": [
+    "org.springframework.samples.petclinic.model.BaseEntity",
+    "org.springframework.samples.petclinic.model.NamedEntity",
+    "org.springframework.samples.petclinic.model.Person",
+    "org.springframework.samples.petclinic.owner.Owner",
+    "org.springframework.samples.petclinic.owner.OwnerController",
+    "org.springframework.samples.petclinic.owner.Pet",
+    "org.springframework.samples.petclinic.owner.PetController",
+    "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+    "org.springframework.samples.petclinic.owner.PetValidator",
+    "org.springframework.samples.petclinic.owner.Visit",
+    "org.springframework.samples.petclinic.owner.VisitController",
+    "org.springframework.samples.petclinic.system.CacheConfiguration",
+    "org.springframework.samples.petclinic.system.WebConfiguration",
+    "org.springframework.samples.petclinic.system.WelcomeController",
+    "org.springframework.samples.petclinic.vet.Vet",
+    "org.springframework.samples.petclinic.vet.VetController",
+    "org.springframework.samples.petclinic.vet.Vets"
+  ]
+}
