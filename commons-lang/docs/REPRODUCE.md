@@ -80,8 +80,8 @@ import json
 with open('results/aggregated/evaluation_summary.json') as f:
     s = json.load(f)
 assert s['inclusiveness_pct'] == 99.87, f'Expected 99.87%, got {s[\"inclusiveness_pct\"]}%'
-assert s['unsafe_count'] == 1, f'Expected 1 unsafe, got {s[\"unsafe_count\"]}'
-assert s['pit_killed_mutations'] == 772, f'Expected 772 mutations, got {s[\"pit_killed_mutations\"]}'
+assert s['unsafe'] == 1, f'Expected 1 unsafe, got {s[\"unsafe\"]}'
+assert s['total_mutations'] == 772, f'Expected 772 mutations, got {s[\"total_mutations\"]}'
 print('All checks passed.')
 "
 ```

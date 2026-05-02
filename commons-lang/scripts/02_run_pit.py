@@ -98,7 +98,8 @@ def run_pit_for_class(mvn, project_dir, results_dir, fqn, target_tests, loc, ind
 
 def main():
     parser = argparse.ArgumentParser(description="Run PIT per-class on sampled classes")
-    parser.add_argument("--project-dir", type=Path, default=Path("/Users/D061177/work/moje/commons-lang"))
+    parser.add_argument("--project-dir", type=Path, required=True,
+                        help="Path to commons-lang checkout")
     parser.add_argument("--mvn", type=str, default="mvn")
     parser.add_argument("--config", type=Path, default=None,
                         help="Path to sample_classes.json (default: ../config/sample_classes.json)")

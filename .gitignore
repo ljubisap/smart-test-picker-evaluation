@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# Java
+target/
+build/
+*.class
+*.jar
+*.exec
+out/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs (keep result logs, ignore stray ones)
+*.log
+!**/results/progress.log
+!**/results/per-class/**/stdout.log
+!**/results/per-class/**/stderr.log

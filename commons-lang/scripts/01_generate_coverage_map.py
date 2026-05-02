@@ -36,7 +36,7 @@ def run(cmd, cwd, desc, timeout=1200):
 
 def main():
     parser = argparse.ArgumentParser(description="Generate per-test coverage map for commons-lang")
-    parser.add_argument("--project-dir", type=Path, default=Path("/Users/D061177/work/moje/commons-lang"),
+    parser.add_argument("--project-dir", type=Path, required=True,
                         help="Path to commons-lang checkout")
     parser.add_argument("--mvn", type=str, default="mvn",
                         help="Path to Maven executable (default: mvn on PATH)")

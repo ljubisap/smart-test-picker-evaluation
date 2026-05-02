@@ -105,7 +105,8 @@ def load_mutations(results_dir):
 
 def main():
     parser = argparse.ArgumentParser(description="Evaluate plugin safety vs PIT ground truth")
-    parser.add_argument("--project-dir", type=Path, default=Path("/Users/D061177/work/moje/commons-lang"))
+    parser.add_argument("--project-dir", type=Path, required=True,
+                        help="Path to commons-lang checkout")
     parser.add_argument("--results-dir", type=Path, default=None)
     parser.add_argument("--coverage-map", type=Path, default=None)
     args = parser.parse_args()

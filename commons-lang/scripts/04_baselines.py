@@ -171,7 +171,8 @@ def evaluate_random(mutations, test_mappings, k, seed=42):
 
 def main():
     parser = argparse.ArgumentParser(description="Baseline comparison vs PIT ground truth")
-    parser.add_argument("--project-dir", type=Path, default=Path("/Users/D061177/work/moje/commons-lang"))
+    parser.add_argument("--project-dir", type=Path, required=True,
+                        help="Path to commons-lang checkout")
     parser.add_argument("--results-dir", type=Path, default=None)
     parser.add_argument("--coverage-map", type=Path, default=None)
     parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
