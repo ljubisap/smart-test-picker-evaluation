@@ -13,7 +13,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 |---------|-------|-----------|--------|-----------|----------|--------|--------|
 | Apache Commons Lang | 4589 | 772 | 99.87% | 99.64% | 16.7 | Done | [commons-lang/](commons-lang/) |
 | JGraphT | 2308 | 517 | 99.81% | 96.69% | 76.4 | Done | [jgrapht/](jgrapht/) |
-| Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.8 | Done (pilot) | [petclinic/](petclinic/) |
+| Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.7 | Done (pilot) | [petclinic/](petclinic/) |
 | Caffeine | TBD | TBD | TBD | TBD | TBD | Planned | caffeine/ |
 
 ## Sampling Strategies
@@ -37,7 +37,7 @@ smart-test-picker-evaluation/
 │   ├── scripts/            # Numbered evaluation scripts (00-04)
 │   ├── results/            # Raw PIT output + aggregated metrics
 │   └── docs/               # Methodology, reproduction, failure analysis
-├── jgrapht/                # Benchmark: JGraphT (Maven, JPMS, 2308 tests)
+├── jgrapht/                # Benchmark: JGraphT (Maven multi-module, Java modules via JPMS, 2308 tests)
 │   ├── config/             # Sampling config (20 classes, curated stratified)
 │   ├── scripts/            # Evaluation scripts (00-04)
 │   ├── results/            # Raw PIT output + aggregated metrics
