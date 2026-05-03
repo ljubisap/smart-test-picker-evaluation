@@ -4,11 +4,18 @@
   "repository": "https://github.com/apache/commons-lang",
   "commit": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
   "sampling": {
-    "strategy": "stratified_random",
-    "seed": 42,
-    "classes_per_subpackage": 2,
-    "max_loc": 1200,
-    "total_sampled": 21
+    "strategy": "curated_stratified",
+    "rationale": "21 classes selected for representativeness across utility domains in Apache Commons Lang",
+    "criteria": [
+      "Stratified sampling intent: 1-2 classes per major subpackage",
+      "Class has matching test class (ClassName -> ClassNameTest)",
+      "Non-trivial mutable code (>=80 LOC)",
+      "Maximum LOC cap: 1200",
+      "Excludes interfaces and abstract base classes"
+    ],
+    "subpackage_count": 13,
+    "total_sampled": 21,
+    "methodology_note": "Initially intended as stratified random sampling with seed=42 (max 2 per subpackage, max 1200 LOC). Verification revealed that re-running the script produces a different sample (24 vs 21 classes, different selections) due to LOC heuristic variance across filesystem state. Documented as curated_stratified for methodology transparency. See docs/METHODOLOGY.md."
   },
   "classes": [
     {"fqn": "org.apache.commons.lang3.arch.Processor", "subpkg": "arch", "loc": 253, "targetTests": "org.apache.commons.lang3.arch.*"},

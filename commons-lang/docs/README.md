@@ -65,7 +65,7 @@ python3 scripts/04_baselines.py --project-dir /path/to/commons-lang
 - **Project:** Apache Commons Lang 3.21.0-SNAPSHOT
 - **Commit:** `8538458e7aeb1455a5942f60fe0b4930da6c5d68`
 - **Test suite:** 4589 test methods (JUnit 5)
-- **Sample:** 21 classes, stratified random (2 per subpackage, max 1200 LOC, seed=42)
+- **Sample:** 21 classes, curated stratified (1–2 per subpackage, see [METHODOLOGY.md](METHODOLOGY.md))
 
 ## Methodology
 

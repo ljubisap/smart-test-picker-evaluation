@@ -16,6 +16,15 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.8 | Done (pilot) | [petclinic/](petclinic/) |
 | Caffeine | TBD | TBD | TBD | TBD | TBD | Planned | caffeine/ |
 
+## Sampling Strategies
+
+| Project | Strategy | Rationale |
+|---------|----------|-----------|
+| Commons Lang | curated_stratified | 1–2 representative classes per utility subpackage (13 subpackages) |
+| JGraphT | curated_stratified | One class per algorithmic subpackage (20 subpackages) |
+| PetClinic | all_classes | Small project (14 classes) permits comprehensive evaluation |
+| Caffeine | TBD | TBD |
+
 ## Repository Structure
 
 ```
@@ -29,8 +38,8 @@ smart-test-picker-evaluation/
 │   ├── results/            # Raw PIT output + aggregated metrics
 │   └── docs/               # Methodology, reproduction, failure analysis
 ├── jgrapht/                # Benchmark: JGraphT (Maven, JPMS, 2308 tests)
-│   ├── config/             # Sampling config (20 classes, stratified)
-│   ├── scripts/            # Evaluation scripts (02-04)
+│   ├── config/             # Sampling config (20 classes, curated stratified)
+│   ├── scripts/            # Evaluation scripts (00-04)
 │   ├── results/            # Raw PIT output + aggregated metrics
 │   └── docs/               # Methodology, reproduction, failure analysis
 └── petclinic/              # Pilot: Spring PetClinic (Gradle, 52 tests)

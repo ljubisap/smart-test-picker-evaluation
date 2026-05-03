@@ -4,6 +4,16 @@
 
 Complete all items in [REQUIREMENTS.md](REQUIREMENTS.md) before starting.
 
+## Step 0: Sample Validation
+
+The 21 evaluated classes are committed in `config/sample_classes.json`. Run validation:
+
+```bash
+python3 scripts/00_sample_classes.py --project-dir /path/to/commons-lang --verify
+```
+
+This confirms all sampled classes exist, have matching test classes, and meet LOC criteria.
+
 ## Step 1: Generate Coverage Map
 
 ```bash
