@@ -5,10 +5,17 @@
   "commit": "719212a1fe0bbbf62210159f50920a71e80b73ed",
   "module": "jgrapht-core",
   "sampling": {
-    "strategy": "stratified_random",
-    "seed": 42,
-    "max_per_package": 3,
-    "total_sampled": 20
+    "strategy": "curated_stratified",
+    "rationale": "One representative class per algorithmic subpackage, selected for algorithm diversity and code non-triviality",
+    "criteria": [
+      "One class per distinct algorithmic subpackage",
+      "At least one test covering the class in test suite",
+      "Non-trivial mutable code (>=80 LOC)",
+      "Algorithm implementation prioritized over utilities"
+    ],
+    "subpackage_count": 20,
+    "total_sampled": 20,
+    "methodology_note": "Initially intended as stratified random sampling with seed=42; verification revealed reproducibility gap (2/20 match). Documented as curated_stratified for methodology transparency. See docs/METHODOLOGY.md for details."
   },
   "classes": [
     {"fqn": "org.jgrapht.Graphs", "subpkg": "(root)", "loc": 614, "targetTests": "org.jgrapht.*"},

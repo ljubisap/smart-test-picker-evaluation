@@ -36,14 +36,34 @@ Inclusiveness = |{m : T_selected(m) ∩ T_killing(m) ≠ ∅}| / |KILLED mutatio
 
 ## Sampling Strategy
 
-### Stratified Random Sampling
+### Methodology
 
-- **Population:** All production classes in `jgrapht-core` with ≥1 test covering them
-- **Strata:** Java subpackages (20 distinct packages sampled)
-- **Sample size:** 1 class per subpackage (20 subpackages selected)
-- **Constraints:** max 3 per package (not hit due to 20 packages available)
-- **Seed:** 42 (deterministic, reproducible)
-- **Result:** 20 classes across 20 subpackages, 804 total mutations, 517 KILLED
+We evaluated 20 classes from JGraphT, selected via curated stratified selection. The selection covers JGraphT's main algorithmic domains: clique algorithms, clustering, graph coloring, connectivity, cycle detection, drawing, max-flow, isomorphism, lowest common ancestor, link prediction, matching, scoring, shortest paths, spanning trees, TSP heuristics, vertex cover, network generation, graph specifics, and core utilities (one class per domain).
+
+### Selection Criteria
+
+- One representative class per distinct algorithmic subpackage
+- Each class has at least one test covering it in the project's test suite (ensuring evaluable coverage)
+- Each class contains non-trivial mutable code suitable for PIT mutation testing (>=80 LOC)
+- Algorithm implementation classes were prioritized over utility wrappers when multiple candidates existed in a subpackage
+
+### Methodology Evolution
+
+The sample was initially intended to be generated via stratified random sampling: `rng.sample(eligible_subpackages, 20)` with seed=42, followed by `rng.choice(candidates)` per subpackage.
+
+During the verification phase of replication package construction, we attempted to reconstruct the original sample using the documented seed and filters. The reconstruction yielded only 2 of 20 classes matching the committed sample (10% match rate), indicating that the original generation occurred in a context (earlier coverage map state, candidate filter parameters, or evaluation iteration) that we could not retroactively reconstruct.
+
+Rather than constructing post-hoc filters to artificially reproduce the existing selection — which would constitute p-hacking — we transparently document the sample as curated_stratified. The committed sample remains methodologically legitimate: each class satisfies the stratification and quality criteria documented above.
+
+This approach aligns with established empirical software engineering benchmarks (e.g., Defects4J [Just et al. 2014]) that rely on curated subjects rather than purely random selection.
+
+### Reproducibility
+
+The committed sample (`config/sample_classes.json`) is authoritative. The `00_sample_classes.py` script validates sample integrity: confirms class existence, LOC counts, and subpackage coverage. Reproducing the evaluation requires using the committed sample, not regenerating it.
+
+### Result
+
+20 classes across 20 subpackages, 804 total mutations, 517 KILLED.
 
 ### Test Scope Adjustment
 

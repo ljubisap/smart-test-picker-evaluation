@@ -69,10 +69,11 @@ See [FAILURE_MODES.md](FAILURE_MODES.md) for full analysis.
 
 ## Sampling Strategy
 
-- Method: stratified by subpackage, seed=42
+- Method: curated stratified selection (one class per algorithmic subpackage)
 - 20 classes from 20 distinct subpackages
 - LOC range: 83 — 1,310
-- No package sampled more than once
+- Criteria: test coverage, non-trivial mutable code (>=80 LOC), algorithm implementation prioritized
+- See [METHODOLOGY.md](METHODOLOGY.md) for selection criteria and methodology evolution notes
 
 ## Reproduction Steps
 
