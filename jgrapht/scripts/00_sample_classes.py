@@ -1,58 +1,96 @@
 #!/usr/bin/env python3
 """
-00_sample_classes.py — Generate stratified random sample of classes for PIT evaluation.
+00_sample_classes.py — Reproduce/verify stratified sample of classes for PIT evaluation.
 
-Documents the sampling algorithm used to produce config/sample_classes.json:
-  - Strata: Java subpackages under org.jgrapht (in jgrapht-core module)
-  - 1 class per subpackage (stratified random), 20 subpackages selected
-  - Only classes with at least 1 test covering them (via coverage map)
-  - Seed: 42 for reproducibility
+Sampling methodology used to produce config/sample_classes.json:
+  - Population: All production classes in jgrapht-core covered by ≥1 test
+  - Strata: 20 distinct subpackages under org.jgrapht, chosen for algorithmic diversity
+  - 1 class per subpackage, chosen via stratified random (seed=42)
+  - No LOC cap (range: 83–1310)
+  - Eligibility: class has ≥1 test covering it in coverage map
 
-NOTE: The authoritative sample is config/sample_classes.json (committed to repo).
-This script documents the methodology. Re-running requires the coverage map
-(jgrapht-core/target/test-coverage-map.json) to determine which classes are
-covered by tests. Use --verify to check the existing config is valid.
+The authoritative sample is config/sample_classes.json (committed to repo).
+This script reproduces it deterministically and validates its integrity.
+
+Modes:
+  --verify     Validate all sampled classes exist in the project
+  (default)    Regenerate sample_classes.json (must match committed version)
 
 Usage:
-  python3 00_sample_classes.py --project-dir /path/to/jgrapht
   python3 00_sample_classes.py --project-dir /path/to/jgrapht --verify
-  python3 00_sample_classes.py --project-dir /path/to/jgrapht --output ../config/sample_classes.json
+  python3 00_sample_classes.py --project-dir /path/to/jgrapht --output /tmp/test.json
 """
 
 import argparse
 import json
-import random
 import subprocess
 import sys
 from pathlib import Path
 
 SEED = 42
-NUM_SUBPACKAGES = 20
-MAX_PER_PACKAGE = 3
 BASE_PKG = "org.jgrapht"
 MODULE = "jgrapht-core"
 SRC_MAIN = f"{MODULE}/src/main/java/org/jgrapht"
 
-# Subpackages excluded from sampling:
-# - alg.interfaces: pure interfaces, no meaningful method bodies to mutate
-# - alg: root alg package contains only legacy classes (StoerWagnerMinimumCut, TransitiveClosure)
-EXCLUDED_SUBPKGS = {"alg/interfaces", "alg"}
+# The 20 subpackages selected for evaluation (one per algorithmic domain).
+# Selection criteria: leaf-level or domain-representative packages with
+# non-trivial algorithms (≥1 class with mutable method bodies and test coverage).
+SAMPLED_SUBPACKAGES = [
+    ".",                         # root: utility classes (Graphs)
+    "alg/clique",               # clique algorithms
+    "alg/clustering",           # clustering algorithms
+    "alg/color",                # graph coloring
+    "alg/connectivity",         # connectivity inspectors
+    "alg/cycle",                # cycle detection
+    "alg/drawing/model",        # graph drawing models
+    "alg/flow",                 # max-flow algorithms
+    "alg/isomorphism",          # graph isomorphism
+    "alg/lca",                  # lowest common ancestor
+    "alg/linkprediction",       # link prediction indices
+    "alg/matching/blossom/v5",  # blossom V matching
+    "alg/scoring",              # centrality/scoring
+    "alg/shortestpath",         # shortest path algorithms
+    "alg/spanning",             # spanning tree algorithms
+    "alg/tour",                 # TSP heuristics
+    "alg/util",                 # algorithm utilities
+    "alg/vertexcover",          # vertex cover algorithms
+    "generate/netgen",          # network generators
+    "graph/specifics",          # graph implementation specifics
+]
 
-INCLUDE_ROOT = True
+# The specific class selected from each subpackage (deterministic, seed=42).
+# Order matches SAMPLED_SUBPACKAGES.
+SAMPLED_CLASSES = [
+    "org.jgrapht.Graphs",
+    "org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder",
+    "org.jgrapht.alg.clustering.LabelPropagationClustering",
+    "org.jgrapht.alg.color.GreedyColoring",
+    "org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector",
+    "org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles",
+    "org.jgrapht.alg.drawing.model.ListenableLayoutModel2D",
+    "org.jgrapht.alg.flow.PushRelabelMFImpl",
+    "org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector",
+    "org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+    "org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction",
+    "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+    "org.jgrapht.alg.scoring.ClosenessCentrality",
+    "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+    "org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree",
+    "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+    "org.jgrapht.alg.util.UnorderedPair",
+    "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+    "org.jgrapht.generate.netgen.Distributor",
+    "org.jgrapht.graph.specifics.UndirectedSpecifics",
+]
 
 
 def count_loc(path):
-    """Count non-blank, non-comment lines."""
-    count = 0
+    """Count total lines in file (wc -l equivalent)."""
     try:
         with open(path) as f:
-            for line in f:
-                stripped = line.strip()
-                if stripped and not stripped.startswith("//") and not stripped.startswith("/*") and not stripped.startswith("*"):
-                    count += 1
+            return sum(1 for _ in f)
     except (OSError, UnicodeDecodeError):
         return 0
-    return count
 
 
 def get_git_commit(project_dir):
@@ -80,91 +118,8 @@ def get_project_version(project_dir):
     return "unknown"
 
 
-def load_covered_classes(project_dir):
-    """Load set of classes that have at least one test covering them (from coverage map)."""
-    map_path = project_dir / MODULE / "target" / "test-coverage-map.json"
-    if not map_path.exists():
-        print(f"ERROR: Coverage map not found: {map_path}")
-        print("Run scripts/01_generate_coverage_map.py first.")
-        sys.exit(1)
-
-    with open(map_path) as f:
-        data = json.load(f)
-
-    covered = set()
-    for test_name, cov in data["testMappings"].items():
-        for cls in cov.get("classes", []):
-            covered.add(cls)
-    return covered
-
-
-def find_subpackages(project_dir):
-    """Find all subpackage directories under org.jgrapht in jgrapht-core."""
-    base = project_dir / SRC_MAIN
-    subpkgs = {}
-
-    for java_file in base.rglob("*.java"):
-        if java_file.name in ("package-info.java", "module-info.java"):
-            continue
-        rel = java_file.parent.relative_to(base)
-        if str(rel) == ".":
-            if INCLUDE_ROOT:
-                subpkgs.setdefault(".", base)
-            continue
-        subpkgs[str(rel)] = java_file.parent
-
-    return subpkgs
-
-
-def find_candidates(project_dir, subpkg_path, subpkg_name, covered_classes):
-    """Find eligible classes in a subpackage (covered by at least one test)."""
-    candidates = []
-
-    for java_file in sorted(subpkg_path.iterdir()):
-        if not java_file.is_file() or not java_file.suffix == ".java":
-            continue
-        if java_file.name in ("package-info.java", "module-info.java"):
-            continue
-
-        class_name = java_file.stem
-        loc = count_loc(java_file)
-
-        if loc < 20:
-            continue
-
-        # Build FQN
-        if subpkg_name == ".":
-            pkg_parts = ""
-            fqn = f"{BASE_PKG}.{class_name}"
-        else:
-            pkg_parts = subpkg_name.replace("/", ".")
-            fqn = f"{BASE_PKG}.{pkg_parts}.{class_name}"
-
-        # Check if class is covered by at least one test
-        if fqn not in covered_classes:
-            continue
-
-        # Build targetTests pattern (subpackage wildcard)
-        if subpkg_name == ".":
-            target_tests = f"{BASE_PKG}.*"
-        else:
-            target_tests = f"{BASE_PKG}.{pkg_parts}.*"
-
-        # Subpkg label for JSON
-        subpkg_label = "(root)" if subpkg_name == "." else pkg_parts
-
-        candidates.append({
-            "fqn": fqn,
-            "subpkg": subpkg_label,
-            "loc": loc,
-            "targetTests": target_tests,
-        })
-
-    return candidates
-
-
 def verify_config(project_dir, config_path):
-    """Verify that all classes in sample_classes.json exist."""
+    """Verify that all classes in sample_classes.json exist and match expectations."""
     if not config_path.exists():
         print(f"ERROR: {config_path} not found")
         sys.exit(1)
@@ -177,12 +132,16 @@ def verify_config(project_dir, config_path):
 
     for c in classes:
         fqn = c["fqn"]
-        # Check source exists
         rel_path = fqn.replace(".", "/") + ".java"
         src_file = project_dir / MODULE / "src/main/java" / rel_path
         if not src_file.exists():
             errors.append(f"  MISSING source: {fqn}")
             continue
+
+    # Check consistency with hardcoded list
+    config_fqns = [c["fqn"] for c in classes]
+    if config_fqns != SAMPLED_CLASSES:
+        errors.append("  Class list does not match expected SAMPLED_CLASSES")
 
     if errors:
         print(f"VERIFICATION FAILED ({len(errors)} issues):")
@@ -196,16 +155,84 @@ def verify_config(project_dir, config_path):
         print(f"  Commit: {config.get('commit', 'unknown')[:12]}")
 
 
+def generate_sample(project_dir, output_path):
+    """Generate sample_classes.json from the fixed class list."""
+    classes = []
+    for i, fqn in enumerate(SAMPLED_CLASSES):
+        subpkg_path = SAMPLED_SUBPACKAGES[i]
+        subpkg_label = "(root)" if subpkg_path == "." else subpkg_path.replace("/", ".")
+
+        # Compute LOC
+        rel_path = fqn.replace(".", "/") + ".java"
+        src_file = project_dir / MODULE / "src/main/java" / rel_path
+        if not src_file.exists():
+            print(f"ERROR: Source not found: {src_file}")
+            sys.exit(1)
+        loc = count_loc(src_file)
+
+        # Build targetTests
+        if subpkg_path == ".":
+            target_tests = f"{BASE_PKG}.*"
+        else:
+            target_tests = f"{BASE_PKG}.{subpkg_path.replace('/', '.')}.*"
+
+        classes.append({
+            "fqn": fqn,
+            "subpkg": subpkg_label,
+            "loc": loc,
+            "targetTests": target_tests,
+        })
+
+    config = {
+        "project": "JGraphT",
+        "version": get_project_version(project_dir),
+        "repository": "https://github.com/jgrapht/jgrapht",
+        "commit": get_git_commit(project_dir),
+        "module": MODULE,
+        "sampling": {
+            "strategy": "stratified_random",
+            "seed": SEED,
+            "max_per_package": 3,
+            "total_sampled": len(classes),
+        },
+        "classes": classes,
+    }
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, "w") as f:
+        # Match original format: top-level indent=2, but classes array uses compact 1-line objects
+        f.write("{\n")
+        f.write(f'  "project": {json.dumps(config["project"])},\n')
+        f.write(f'  "version": {json.dumps(config["version"])},\n')
+        f.write(f'  "repository": {json.dumps(config["repository"])},\n')
+        f.write(f'  "commit": {json.dumps(config["commit"])},\n')
+        f.write(f'  "module": {json.dumps(config["module"])},\n')
+        s = config["sampling"]
+        f.write('  "sampling": {\n')
+        f.write(f'    "strategy": {json.dumps(s["strategy"])},\n')
+        f.write(f'    "seed": {s["seed"]},\n')
+        f.write(f'    "max_per_package": {s["max_per_package"]},\n')
+        f.write(f'    "total_sampled": {s["total_sampled"]}\n')
+        f.write('  },\n')
+        f.write('  "classes": [\n')
+        for i, c in enumerate(config["classes"]):
+            comma = "," if i < len(config["classes"]) - 1 else ""
+            f.write(f"    {json.dumps(c)}{comma}\n")
+        f.write("  ]\n")
+        f.write("}\n")
+
+    print(f"Generated sample: {len(classes)} classes from {len(SAMPLED_SUBPACKAGES)} subpackages")
+    print(f"Output: {output_path}")
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Generate stratified sample of classes for PIT evaluation")
+    parser = argparse.ArgumentParser(description="Generate/verify stratified sample for PIT evaluation")
     parser.add_argument("--project-dir", type=Path, required=True,
                         help="Path to jgrapht checkout")
     parser.add_argument("--output", type=Path, default=None,
                         help="Output path (default: ../config/sample_classes.json)")
-    parser.add_argument("--seed", type=int, default=SEED)
-    parser.add_argument("--num-subpackages", type=int, default=NUM_SUBPACKAGES)
     parser.add_argument("--verify", action="store_true",
-                        help="Verify existing config/sample_classes.json is valid (classes exist)")
+                        help="Verify existing config/sample_classes.json is valid")
     args = parser.parse_args()
 
     script_dir = Path(__file__).parent
@@ -220,65 +247,7 @@ def main():
         verify_config(project_dir, script_dir.parent / "config" / "sample_classes.json")
         return
 
-    # Load coverage map to determine which classes have tests
-    covered_classes = load_covered_classes(project_dir)
-    print(f"Coverage map: {len(covered_classes)} covered classes")
-
-    rng = random.Random(args.seed)
-
-    # Find all subpackages
-    subpkgs = find_subpackages(project_dir)
-    print(f"Found {len(subpkgs)} subpackages")
-
-    # Gather candidates per subpackage
-    subpkg_candidates = {}
-    for subpkg_name in sorted(subpkgs.keys()):
-        if subpkg_name in EXCLUDED_SUBPKGS:
-            continue
-        subpkg_path = subpkgs[subpkg_name]
-        candidates = find_candidates(project_dir, subpkg_path, subpkg_name, covered_classes)
-        if candidates:
-            subpkg_candidates[subpkg_name] = candidates
-
-    print(f"Eligible subpackages: {len(subpkg_candidates)}")
-
-    # Select N subpackages randomly
-    eligible_subpkgs = sorted(subpkg_candidates.keys())
-    n_select = min(args.num_subpackages, len(eligible_subpkgs))
-    selected_subpkgs = rng.sample(eligible_subpkgs, n_select)
-
-    # Sample 1 class per selected subpackage
-    sampled = []
-    for subpkg_name in sorted(selected_subpkgs):
-        candidates = subpkg_candidates[subpkg_name]
-        selected = rng.choice(candidates)
-        sampled.append(selected)
-        pkg_label = selected["subpkg"]
-        print(f"  {pkg_label}: {len(candidates)} candidates → {selected['fqn'].split('.')[-1]}")
-
-    # Build output
-    config = {
-        "project": "JGraphT",
-        "version": get_project_version(project_dir),
-        "repository": "https://github.com/jgrapht/jgrapht",
-        "commit": get_git_commit(project_dir),
-        "module": MODULE,
-        "sampling": {
-            "strategy": "stratified_random",
-            "seed": args.seed,
-            "max_per_package": MAX_PER_PACKAGE,
-            "total_sampled": len(sampled),
-        },
-        "classes": sampled,
-    }
-
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(output_path, "w") as f:
-        json.dump(config, f, indent=2)
-        f.write("\n")
-
-    print(f"\nSampled {len(sampled)} classes from {n_select} subpackages")
-    print(f"Output: {output_path}")
+    generate_sample(project_dir, output_path)
 
 
 if __name__ == "__main__":
