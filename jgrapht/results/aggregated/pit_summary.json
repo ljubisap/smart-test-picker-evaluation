@@ -1,0 +1,112 @@
+{
+  "timestamp": "2026-05-03T13:10:02.595798",
+  "project": "JGraphT",
+  "commit": "719212a1fe0bbbf62210159f50920a71e80b73ed",
+  "total_classes": 20,
+  "ok": 20,
+  "failed": 0,
+  "timeout": 0,
+  "total_mutations": 804,
+  "results": [
+    {
+      "fqn": "org.jgrapht.Graphs",
+      "status": "OK",
+      "mutations": 60
+    },
+    {
+      "fqn": "org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder",
+      "status": "OK",
+      "mutations": 13
+    },
+    {
+      "fqn": "org.jgrapht.alg.clustering.LabelPropagationClustering",
+      "status": "OK",
+      "mutations": 4
+    },
+    {
+      "fqn": "org.jgrapht.alg.color.GreedyColoring",
+      "status": "OK",
+      "mutations": 8
+    },
+    {
+      "fqn": "org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector",
+      "status": "OK",
+      "mutations": 18
+    },
+    {
+      "fqn": "org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles",
+      "status": "OK",
+      "mutations": 34
+    },
+    {
+      "fqn": "org.jgrapht.alg.drawing.model.ListenableLayoutModel2D",
+      "status": "OK",
+      "mutations": 15
+    },
+    {
+      "fqn": "org.jgrapht.alg.flow.PushRelabelMFImpl",
+      "status": "OK",
+      "mutations": 86
+    },
+    {
+      "fqn": "org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector",
+      "status": "OK",
+      "mutations": 21
+    },
+    {
+      "fqn": "org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+      "status": "OK",
+      "mutations": 47
+    },
+    {
+      "fqn": "org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction",
+      "status": "OK",
+      "mutations": 5
+    },
+    {
+      "fqn": "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+      "status": "OK",
+      "mutations": 245
+    },
+    {
+      "fqn": "org.jgrapht.alg.scoring.ClosenessCentrality",
+      "status": "OK",
+      "mutations": 19
+    },
+    {
+      "fqn": "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+      "status": "OK",
+      "mutations": 37
+    },
+    {
+      "fqn": "org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree",
+      "status": "OK",
+      "mutations": 45
+    },
+    {
+      "fqn": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+      "status": "OK",
+      "mutations": 10
+    },
+    {
+      "fqn": "org.jgrapht.alg.util.UnorderedPair",
+      "status": "OK",
+      "mutations": 20
+    },
+    {
+      "fqn": "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+      "status": "OK",
+      "mutations": 47
+    },
+    {
+      "fqn": "org.jgrapht.generate.netgen.Distributor",
+      "status": "OK",
+      "mutations": 22
+    },
+    {
+      "fqn": "org.jgrapht.graph.specifics.UndirectedSpecifics",
+      "status": "OK",
+      "mutations": 48
+    }
+  ]
+}

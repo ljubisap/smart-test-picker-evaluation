@@ -1,0 +1,20 @@
+{
+  "project": "JGraphT",
+  "commit": "719212a1fe0bbbf62210159f50920a71e80b73ed",
+  "num_classes": 20,
+  "total_tests": 2308,
+  "total_mutations": 517,
+  "inclusiveness_pct": 99.81,
+  "avg_selection_size": 76.4,
+  "selection_rate_pct": 3.31,
+  "test_reduction_pct": 96.69,
+  "safe": 516,
+  "unsafe": 1,
+  "unsafe_details": [
+    {
+      "class": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+      "method": "getTour",
+      "line": "97"
+    }
+  ]
+}

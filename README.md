@@ -9,12 +9,12 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 
 ## Benchmark Projects
 
-| Project | Tests | Mutations | Safety | Reduction | Status | Folder |
-|---------|-------|-----------|--------|-----------|--------|--------|
-| Apache Commons Lang | 4589 | 772 | 99.87% | 99.64% | Done | [commons-lang/](commons-lang/) |
-| Spring PetClinic | 52 | 94 | 100.00% | 81.30% | Done (pilot) | [petclinic/](petclinic/) |
-| Caffeine | TBD | TBD | TBD | TBD | Planned | caffeine/ |
-| Apache Commons IO | TBD | TBD | TBD | TBD | Planned | commons-io/ |
+| Project | Tests | Mutations | Safety | Reduction | Avg Sel. | Status | Folder |
+|---------|-------|-----------|--------|-----------|----------|--------|--------|
+| Apache Commons Lang | 4589 | 772 | 99.87% | 99.64% | 16.7 | Done | [commons-lang/](commons-lang/) |
+| JGraphT | 2308 | 517 | 99.81% | 96.69% | 76.4 | Done | [jgrapht/](jgrapht/) |
+| Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.8 | Done (pilot) | [petclinic/](petclinic/) |
+| Caffeine | TBD | TBD | TBD | TBD | TBD | Planned | caffeine/ |
 
 ## Repository Structure
 
@@ -23,12 +23,21 @@ smart-test-picker-evaluation/
 ├── README.md               # This file
 ├── LICENSE                  # Apache License 2.0
 ├── .gitignore
-└── commons-lang/           # First benchmark project
-    ├── README.md           # Project-specific quick start
-    ├── config/             # Sampling config, PIT Maven profile
-    ├── scripts/            # Numbered evaluation scripts (00-04)
-    ├── results/            # Raw PIT output + aggregated metrics
-    └── docs/               # Methodology, reproduction, failure analysis
+├── commons-lang/           # Benchmark: Apache Commons Lang (Maven, 4589 tests)
+│   ├── config/             # Sampling config, PIT Maven profile
+│   ├── scripts/            # Numbered evaluation scripts (00-04)
+│   ├── results/            # Raw PIT output + aggregated metrics
+│   └── docs/               # Methodology, reproduction, failure analysis
+├── jgrapht/                # Benchmark: JGraphT (Maven, JPMS, 2308 tests)
+│   ├── config/             # Sampling config (20 classes, stratified)
+│   ├── scripts/            # Evaluation scripts (02-04)
+│   ├── results/            # Raw PIT output + aggregated metrics
+│   └── docs/               # Methodology, reproduction, failure analysis
+└── petclinic/              # Pilot: Spring PetClinic (Gradle, 52 tests)
+    ├── config/
+    ├── scripts/
+    ├── results/
+    └── docs/
 ```
 
 See `<project>/docs/README.md` for project-specific reproduction details.
