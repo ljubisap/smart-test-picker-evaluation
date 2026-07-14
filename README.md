@@ -13,6 +13,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 |---------|-------|-----------|--------|-----------|----------|--------|--------|
 | Apache Commons Lang | 4589 | 772 | 99.87% | 99.64% | 16.7 | Done | [commons-lang/](commons-lang/) |
 | JGraphT | 2308 | 517 | 99.81% | 96.69% | 76.4 | Done | [jgrapht/](jgrapht/) |
+| Spring Framework (spring-core) | 3624 | 454 | 97.58% | 97.78% | 80.3 | Done | [spring-core/](spring-core/) |
 | Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.7 | Done (pilot) | [petclinic/](petclinic/) |
 | Caffeine | TBD | TBD | TBD | TBD | TBD | Planned | caffeine/ |
 
@@ -22,6 +23,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 |---------|----------|-----------|
 | Commons Lang | curated_stratified | 1–2 representative classes per utility subpackage (13 subpackages) |
 | JGraphT | curated_stratified | One class per algorithmic subpackage (20 subpackages) |
+| Spring Framework | curated_stratified | One class per spring-core subpackage (22 subpackages), excl. infrastructure |
 | PetClinic | all_classes | Small project (14 classes) permits comprehensive evaluation |
 | Caffeine | TBD | TBD |
 
@@ -40,6 +42,11 @@ smart-test-picker-evaluation/
 ├── jgrapht/                # Benchmark: JGraphT (Maven multi-module, Java modules via JPMS, 2308 tests)
 │   ├── config/             # Sampling config (20 classes, curated stratified)
 │   ├── scripts/            # Evaluation scripts (00-04)
+│   ├── results/            # Raw PIT output + aggregated metrics
+│   └── docs/               # Methodology, reproduction, failure analysis
+├── spring-core/            # Benchmark: Spring Framework spring-core (Gradle, 3624 tests)
+│   ├── config/             # Sampling config (22 classes, curated stratified)
+│   ├── scripts/            # Evaluation scripts (02-04)
 │   ├── results/            # Raw PIT output + aggregated metrics
 │   └── docs/               # Methodology, reproduction, failure analysis
 └── petclinic/              # Pilot: Spring PetClinic (Gradle, 52 tests)
@@ -65,7 +72,7 @@ See `<project>/docs/METHODOLOGY.md` for detailed methodology per project.
 ## Requirements
 
 - Java 21+, Maven 3.9.6+, Python 3.10+
-- Smart Test Picker Maven plugin 0.1.11+ (built from source)
+- Smart Test Picker plugin 0.1.0+ (built from source)
 - No external Python packages (stdlib only)
 
 See `<project>/docs/REQUIREMENTS.md` for project-specific prerequisites.

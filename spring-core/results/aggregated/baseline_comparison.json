@@ -1,0 +1,37 @@
+{
+  "total_tests": 3624,
+  "total_mutations": 454,
+  "seed": 42,
+  "results": [
+    {
+      "name": "Coverage (proposed)",
+      "safety_pct": 97.58,
+      "safe": 443,
+      "unsafe": 11,
+      "total": 454,
+      "avg_selected": 80.3,
+      "selection_rate_pct": 2.22,
+      "test_reduction_pct": 97.78
+    },
+    {
+      "name": "Class-level only",
+      "safety_pct": 100.0,
+      "safe": 454,
+      "unsafe": 0,
+      "total": 454,
+      "avg_selected": 527.5,
+      "selection_rate_pct": 14.55,
+      "test_reduction_pct": 85.45
+    },
+    {
+      "name": "Random (k=per-mutation)",
+      "safety_pct": 17.18,
+      "safe": 78,
+      "unsafe": 376,
+      "total": 454,
+      "avg_selected": 80.3,
+      "selection_rate_pct": 2.22,
+      "test_reduction_pct": 97.78
+    }
+  ]
+}

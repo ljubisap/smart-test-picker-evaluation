@@ -83,7 +83,7 @@ git clone https://github.com/jgrapht/jgrapht.git
 cd jgrapht
 git checkout 719212a1fe0bbbf62210159f50920a71e80b73ed
 
-# 2. Generate coverage map (requires smart-test-picker-maven 0.1.11 in mavenLocal)
+# 2. Generate coverage map (requires smart-test-picker-maven 0.1.0 in mavenLocal)
 mvn verify -Psmart-test-picker -pl jgrapht-core
 
 # 3. Run PIT on sampled classes

@@ -1,0 +1,195 @@
+{
+  "project": "Spring Framework (spring-core)",
+  "commit": "99a366baf6640b275d08dde60f05da719139bb6a",
+  "timestamp": "2026-07-14T19:28:40",
+  "total_classes": 22,
+  "ok": 18,
+  "failed": 0,
+  "no_mutations": 4,
+  "timeout": 0,
+  "total_mutations": 563,
+  "results": [
+    {
+      "fqn": "org.springframework.core.SerializableTypeWrapper",
+      "status": "NO_MUTATIONS",
+      "mutations": 0
+    },
+    {
+      "fqn": "org.springframework.core.annotation.RepeatableContainers",
+      "status": "OK",
+      "total_mutations": 14,
+      "killed": 13,
+      "survived": 1,
+      "no_coverage": 0,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.core.codec.AbstractDataBufferDecoder",
+      "status": "OK",
+      "total_mutations": 6,
+      "killed": 6,
+      "survived": 0,
+      "no_coverage": 0,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.core.convert.TypeDescriptor",
+      "status": "OK",
+      "total_mutations": 126,
+      "killed": 111,
+      "survived": 12,
+      "no_coverage": 3,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.core.convert.converter.ConvertingComparator",
+      "status": "OK",
+      "total_mutations": 5,
+      "killed": 5,
+      "survived": 0,
+      "no_coverage": 0,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.core.convert.support.GenericConversionService",
+      "status": "OK",
+      "total_mutations": 62,
+      "killed": 54,
+      "survived": 3,
+      "no_coverage": 5,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.core.env.PropertySource",
+      "status": "OK",
+      "total_mutations": 14,
+      "killed": 7,
+      "survived": 4,
+      "no_coverage": 3,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.core.io.AbstractResource",
+      "status": "NO_MUTATIONS",
+      "mutations": 0
+    },
+    {
+      "fqn": "org.springframework.core.io.buffer.DataBufferUtils",
+      "status": "NO_MUTATIONS",
+      "mutations": 0
+    },
+    {
+      "fqn": "org.springframework.core.io.support.PathMatchingResourcePatternResolver",
+      "status": "NO_MUTATIONS",
+      "mutations": 0
+    },
+    {
+      "fqn": "org.springframework.core.log.LogMessage",
+      "status": "OK",
+      "total_mutations": 11,
+      "killed": 8,
+      "survived": 0,
+      "no_coverage": 3,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.core.style.DefaultValueStyler",
+      "status": "OK",
+      "total_mutations": 37,
+      "killed": 36,
+      "survived": 0,
+      "no_coverage": 1,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.core.task.SimpleAsyncTaskExecutor",
+      "status": "OK",
+      "total_mutations": 44,
+      "killed": 14,
+      "survived": 4,
+      "no_coverage": 23,
+      "timed_out": 3
+    },
+    {
+      "fqn": "org.springframework.core.type.StandardClassMetadata",
+      "status": "OK",
+      "total_mutations": 29,
+      "killed": 28,
+      "survived": 1,
+      "no_coverage": 0,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.core.type.classreading.SimpleAnnotationMetadata",
+      "status": "OK",
+      "total_mutations": 32,
+      "killed": 32,
+      "survived": 0,
+      "no_coverage": 0,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter",
+      "status": "OK",
+      "total_mutations": 26,
+      "killed": 21,
+      "survived": 1,
+      "no_coverage": 4,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.util.Assert",
+      "status": "OK",
+      "total_mutations": 64,
+      "killed": 60,
+      "survived": 1,
+      "no_coverage": 3,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.util.backoff.ExponentialBackOff",
+      "status": "OK",
+      "total_mutations": 13,
+      "killed": 10,
+      "survived": 2,
+      "no_coverage": 1,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.util.concurrent.ListenableFutureCallbackRegistry",
+      "status": "OK",
+      "total_mutations": 14,
+      "killed": 2,
+      "survived": 4,
+      "no_coverage": 2,
+      "timed_out": 6
+    },
+    {
+      "fqn": "org.springframework.util.function.ThrowingConsumer",
+      "status": "OK",
+      "total_mutations": 5,
+      "killed": 4,
+      "survived": 0,
+      "no_coverage": 1,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.util.unit.DataSize",
+      "status": "OK",
+      "total_mutations": 34,
+      "killed": 24,
+      "survived": 5,
+      "no_coverage": 5,
+      "timed_out": 0
+    },
+    {
+      "fqn": "org.springframework.util.xml.AbstractStaxXMLReader",
+      "status": "OK",
+      "total_mutations": 27,
+      "killed": 19,
+      "survived": 0,
+      "no_coverage": 8,
+      "timed_out": 0
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "project": "Spring Framework (spring-core)",
+  "commit": "99a366baf6640b275d08dde60f05da719139bb6a",
+  "num_classes": 18,
+  "total_tests": 3624,
+  "total_mutations": 454,
+  "inclusiveness_pct": 97.58,
+  "avg_selection_size": 80.3,
+  "selection_rate_pct": 2.22,
+  "test_reduction_pct": 97.78,
+  "safe": 443,
+  "unsafe": 11,
+  "unsafe_details": [
+    {
+      "class": "org.springframework.core.convert.TypeDescriptor",
+      "method": "upcast",
+      "line": "235"
+    },
+    {
+      "class": "org.springframework.core.convert.support.GenericConversionService",
+      "method": "canConvert",
+      "line": "133"
+    },
+    {
+      "class": "org.springframework.core.convert.support.GenericConversionService",
+      "method": "canConvert",
+      "line": "140"
+    },
+    {
+      "class": "org.springframework.core.convert.support.GenericConversionService",
+      "method": "convert",
+      "line": "164"
+    },
+    {
+      "class": "org.springframework.core.convert.support.GenericConversionService",
+      "method": "convert",
+      "line": "171"
+    },
+    {
+      "class": "org.springframework.core.task.SimpleAsyncTaskExecutor",
+      "method": "execute",
+      "line": "264"
+    },
+    {
+      "class": "org.springframework.util.Assert",
+      "method": "isAssignable",
+      "line": "539"
+    },
+    {
+      "class": "org.springframework.util.Assert",
+      "method": "isAssignable",
+      "line": "558"
+    },
+    {
+      "class": "org.springframework.util.Assert",
+      "method": "isInstanceOf",
+      "line": "490"
+    },
+    {
+      "class": "org.springframework.util.Assert",
+      "method": "isInstanceOf",
+      "line": "509"
+    },
+    {
+      "class": "org.springframework.util.backoff.ExponentialBackOff",
+      "method": "setMultiplier",
+      "line": "141"
+    }
+  ]
+}

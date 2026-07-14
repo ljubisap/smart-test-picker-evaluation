@@ -6,7 +6,7 @@ Runs the full test suite with JaCoCo per-test instrumentation, then generates
 XML reports and a unified JSON coverage map.
 
 Prerequisites:
-  - Smart Test Picker Maven plugin 0.1.11+ installed in local Maven repo
+  - Smart Test Picker plugin 0.1.0+ installed in local Maven repo
   - Maven 3.8.6+ on PATH (or set via --mvn)
   - JGraphT checked out at the correct commit
 
@@ -60,12 +60,12 @@ def main():
             project, "Test suite with JaCoCo per-test sessions", timeout=1200)
 
     # Step 2: Generate XML reports from .exec files
-    run([mvn, "io.github.ljubisap:smart-test-picker-maven:0.1.11:generate-reports",
+    run([mvn, "com.sap.oss.smart-test-picker:smart-test-picker-maven:0.1.0:generate-reports",
          "-Psmart-test-picker", "-pl", MODULE],
         project, "Generate per-test XML reports", timeout=300)
 
     # Step 3: Generate coverage map JSON
-    run([mvn, "io.github.ljubisap:smart-test-picker-maven:0.1.11:generate-coverage-map",
+    run([mvn, "com.sap.oss.smart-test-picker:smart-test-picker-maven:0.1.0:generate-coverage-map",
          "-Psmart-test-picker", "-pl", MODULE],
         project, "Generate coverage map JSON", timeout=120)
 

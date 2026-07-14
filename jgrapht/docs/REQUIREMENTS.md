@@ -23,7 +23,7 @@ Should work on any Unix-like OS with the tools below. Windows users: use WSL2.
 |--------|---------|---------|
 | PIT (pitest-maven) | 1.17.4 | Mutation testing |
 | pitest-junit5-plugin | 1.2.1 | JUnit 5 support for PIT |
-| Smart Test Picker | 0.1.11 | Per-test coverage map generation |
+| Smart Test Picker | 0.1.0 | Per-test coverage map generation |
 
 ## Smart Test Picker Installation
 
@@ -34,11 +34,11 @@ cd /path/to/smart-test-picker-working
 ./gradlew :smart-test-picker-maven:publishToMavenLocal
 ```
 
-This installs `io.github.ljubisap:smart-test-picker-maven:0.1.11` to `~/.m2/repository/`.
+This installs `com.sap.oss.smart-test-picker:smart-test-picker-maven:0.1.0` to `~/.m2/repository/`.
 
 Verify installation:
 ```bash
-ls ~/.m2/repository/io/github/ljubisap/smart-test-picker-maven/0.1.11/
+ls ~/.m2/repository/com/sap/oss/smart-test-picker/smart-test-picker-maven/0.1.0/
 ```
 
 ## Subject Project Setup
