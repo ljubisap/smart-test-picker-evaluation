@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-01_generate_coverage_map.py — Generate per-test coverage map using Smart Test Picker.
+01_generate_coverage_map.py  --  Generate per-test coverage map using Smart Test Picker.
 
 Runs the full test suite with JaCoCo per-test instrumentation and generates
 the coverage map JSON file used for test selection evaluation.
@@ -21,10 +21,10 @@ from pathlib import Path
 
 def run_cmd(cmd, cwd, desc):
     """Run a command and stream output."""
-    print(f"\n{'─'*60}")
-    print(f"▶ {desc}")
+    print(f"\n{'-'*60}")
+    print(f"> {desc}")
     print(f"  {' '.join(cmd)}")
-    print(f"{'─'*60}")
+    print(f"{'-'*60}")
     result = subprocess.run(cmd, cwd=cwd, capture_output=False)
     if result.returncode != 0:
         print(f"ERROR: {desc} failed with exit code {result.returncode}")
@@ -67,7 +67,7 @@ def main():
 
     coverage_map = project_dir / "build" / "test-coverage-map.json"
     if coverage_map.exists():
-        print(f"\n✓ Coverage map generated: {coverage_map}")
+        print(f"\nOK Coverage map generated: {coverage_map}")
         print(f"  Size: {coverage_map.stat().st_size / 1024:.1f} KB")
     else:
         print(f"\nERROR: Expected coverage map not found at {coverage_map}")

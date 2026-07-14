@@ -23,7 +23,7 @@ python3 scripts/01_generate_coverage_map.py --project-dir /path/to/jgrapht
 This runs the full test suite with JaCoCo per-test instrumentation, then generates:
 - Per-test `.exec` files (JaCoCo binary format)
 - Per-test XML reports
-- `jgrapht-core/target/test-coverage-map.json` — unified coverage map
+- `jgrapht-core/target/test-coverage-map.json`  - unified coverage map
 
 **Duration:** ~7 minutes
 **Output:** `<project-dir>/jgrapht-core/target/test-coverage-map.json`
@@ -40,7 +40,7 @@ python3 scripts/02_run_pit.py --project-dir /path/to/jgrapht
 ```
 
 Runs PIT per-class on all 20 sampled classes with:
-- `fullMutationMatrix=true` — all tests run against each mutation
+- `fullMutationMatrix=true`  - all tests run against each mutation
 - `targetTests` scoped to subpackage (prevents intractable test space)
 - 10-minute timeout per class (30 min for BlossomVPrimalUpdater)
 
@@ -113,7 +113,7 @@ print('All checks passed.')
 
 | Problem | Solution |
 |---------|----------|
-| PIT timeout on BlossomVPrimalUpdater | Expected — increase timeout to 30+ min (1162 LOC, 245 mutations) |
+| PIT timeout on BlossomVPrimalUpdater | Expected  - increase timeout to 30+ min (1162 LOC, 245 mutations) |
 | PIT timeout on `Graphs` (org.jgrapht.*) | Narrow targetTests: `org.jgrapht.*` matches all 2308 tests recursively |
 | UndirectedSpecifics NO_COVERAGE | Widen targetTests to `org.jgrapht.graph.*` (no tests in `graph.specifics`) |
 | JPMS reflection errors | Verify `--add-opens` flags in PIT profile cover all sampled packages |

@@ -1,4 +1,4 @@
-# Caffeine — Secondary Contributions to Paper 1
+# Caffeine  - Secondary Contributions to Paper 1
 
 ## Plugin Engineering Improvements Discovered
 
@@ -8,9 +8,9 @@
 - Impact: 17 tests lost coverage link to CaffeineSpec without manual patching
 
 ### 2. Gradle 9.x Compatibility (Configuration Cache)
-- `SmartTestPickerExtension.getRemoteStore()` — abstract nested managed types break on Gradle 9.x
+- `SmartTestPickerExtension.getRemoteStore()`  - abstract nested managed types break on Gradle 9.x
 - Fix: commented out RemoteStoreExtension (not yet implemented anyway)
-- `generateSmartReports` task captured `Project` in `doLast` lambda — breaks config cache
+- `generateSmartReports` task captured `Project` in `doLast` lambda  - breaks config cache
 - Fix: extract `buildDir`/`projectDir` before lambda, use `t.getLogger()` inside
 
 ### 3. Gradle 8.x vs 9.5 Validation
@@ -21,9 +21,9 @@
 ## Parametrized Test Limitation (Future Work)
 
 - STP uses `context.getTestMethod().map(Method::getName)` for session IDs
-- `@ParameterizedTest` invocations merge: 23 methods × N params → 23 exec files (not N×23)
+- `@ParameterizedTest` invocations merge: 23 methods x N params -> 23 exec files (not Nx23)
 - Caffeine's `@CacheSpec` generates 5,000-11,000 invocations per test class
-- Coverage is MERGED across all invocations of same method → still correct for selection
+- Coverage is MERGED across all invocations of same method -> still correct for selection
 - Not a bug, but worth documenting as design trade-off (space vs granularity)
 
 ## Caffeine Project Profile

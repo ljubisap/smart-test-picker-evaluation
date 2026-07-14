@@ -1,8 +1,8 @@
-# Methodology — Spring Framework (spring-core)
+# Methodology  - Spring Framework (spring-core)
 
 ## Subject Project
 
-- **Project:** Spring Framework — `spring-core` module
+- **Project:** Spring Framework  - `spring-core` module
 - **Version:** 6.1.22-SNAPSHOT
 - **Commit:** `99a366baf6640b275d08dde60f05da719139bb6a`
 - **Build tool:** Gradle 8.14
@@ -15,14 +15,14 @@
 One representative class per subpackage, excluding infrastructure packages (`aot`, `asm`, `cglib`).
 
 **Selection criteria:**
-- Lines of code: 80–1200
+- Lines of code: 80-1200
 - At least 3 tests covering the class
-- One class per subpackage (22 subpackages → 22 classes)
+- One class per subpackage (22 subpackages -> 22 classes)
 
 **Excluded packages:**
-- `org.springframework.aot.*` — AOT compile-time infrastructure, not representative of runtime behavior
-- `org.springframework.asm` — vendored ASM bytecode library
-- `org.springframework.cglib.core` — vendored CGLIB proxy library
+- `org.springframework.aot.*`  - AOT compile-time infrastructure, not representative of runtime behavior
+- `org.springframework.asm`  - vendored ASM bytecode library
+- `org.springframework.cglib.core`  - vendored CGLIB proxy library
 
 ## Coverage Map Generation
 
@@ -30,7 +30,7 @@ The Smart Test Picker Gradle plugin (`com.sap.oss.smart-test-picker:0.1.0`) was 
 
 1. Configures JaCoCo agent for per-test session isolation
 2. Runs all 4,705 tests, producing 7,148 per-test `.exec` files
-3. Converts `.exec` files to per-test XML reports (7,120 generated, 27 skipped — no coverage)
+3. Converts `.exec` files to per-test XML reports (7,120 generated, 27 skipped  - no coverage)
 4. Builds a unified JSON coverage map with method-level granularity
 
 **Result:** 3,624 tests mapped to 579 classes, all with method-level coverage information.
@@ -40,7 +40,7 @@ The Smart Test Picker Gradle plugin (`com.sap.oss.smart-test-picker:0.1.0`) was 
 PIT 1.17.4 was run per-class via command-line interface against pre-compiled Gradle output.
 
 **Configuration:**
-- `fullMutationMatrix=true` — all tests run against each mutation
+- `fullMutationMatrix=true`  - all tests run against each mutation
 - `threads=4`
 - `timeoutConst=10000`
 - `mutators=STRONGER` (default PIT mutator set)

@@ -1,4 +1,4 @@
-# Failure Modes — Spring Framework (spring-core)
+# Failure Modes  - Spring Framework (spring-core)
 
 ## Identified Unsafe Pattern: Exception-Masked Coverage
 
@@ -12,7 +12,7 @@ All 11 unsafe mutations (2.42%) follow a single, well-characterized pattern.
 | Mutation action | Removes call to guard clause (`Assert.notNull`, `Assert.isAssignable`, `checkMultiplier`) |
 | Killing test type | Tests that exercise **only** the guard clause (pass null/invalid arg, expect exception) |
 | JaCoCo effect | Test does not register method-level coverage due to exception before probe activation |
-| Plugin behavior | Correctly does not select — test genuinely has zero coverage on mutated method |
+| Plugin behavior | Correctly does not select  - test genuinely has zero coverage on mutated method |
 
 ### Root Cause: JaCoCo Probe Mechanics
 
@@ -20,9 +20,9 @@ JaCoCo uses **probes** inserted at basic block boundaries. When a test calls a m
 
 ```
 canConvert(String.class, null):
-  L133: INVOKESTATIC Assert.notNull(null, "...")  → exception thrown inside Assert.notNull
+  L133: INVOKESTATIC Assert.notNull(null, "...")  -> exception thrown inside Assert.notNull
   ---- JaCoCo probe would be HERE, but execution never reaches it ----
-  L134: return canConvert(...)  → never executed
+  L134: return canConvert(...)  -> never executed
 ```
 
 Result: JaCoCo reports `canConvert` method as **not covered** (covered=0, missed=1).
@@ -47,7 +47,7 @@ Result: JaCoCo reports `canConvert` method as **not covered** (covered=0, missed
 
 In real development workflows, this limitation does not lead to missed regressions:
 
-1. **Guard clause changes produce method-level diffs**: If a developer modifies the `Assert.notNull` call in `canConvert`, git diff reports `canConvert` as changed, and the plugin selects all tests covering that method — including normal tests that exercise the full method body.
+1. **Guard clause changes produce method-level diffs**: If a developer modifies the `Assert.notNull` call in `canConvert`, git diff reports `canConvert` as changed, and the plugin selects all tests covering that method  - including normal tests that exercise the full method body.
 
 2. **Tests that only exercise guard clauses are inherently low-risk**: These tests verify precondition validation, not business logic. A mutation that removes a null check would be caught by any test that passes a valid argument and expects correct behavior.
 

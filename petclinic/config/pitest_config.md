@@ -43,23 +43,23 @@ pitest {
 
 ## Why fullMutationMatrix=true
 
-Without this flag, PIT stops testing a mutation after the first killing test. With it enabled, PIT runs every test against every mutation — giving us the complete `killingTests` set needed for safety evaluation.
+Without this flag, PIT stops testing a mutation after the first killing test. With it enabled, PIT runs every test against every mutation  - giving us the complete `killingTests` set needed for safety evaluation.
 
 ## Excluded Test Classes
 
 These are Spring Boot integration tests that require a running database (Docker Compose):
-- `MySqlIntegrationTests` — Testcontainers MySQL
-- `PostgresIntegrationTests` — Testcontainers PostgreSQL
-- `PetClinicIntegrationTests` — Full Spring Boot context
-- `CrashControllerIntegrationTests` — Error handling integration test
+- `MySqlIntegrationTests`  - Testcontainers MySQL
+- `PostgresIntegrationTests`  - Testcontainers PostgreSQL
+- `PetClinicIntegrationTests`  - Full Spring Boot context
+- `CrashControllerIntegrationTests`  - Error handling integration test
 
-Excluding them does NOT reduce safety evaluation quality — they are also excluded from the coverage map (they don't run in the Smart Test Picker instrumented test phase).
+Excluding them does NOT reduce safety evaluation quality  - they are also excluded from the coverage map (they don't run in the Smart Test Picker instrumented test phase).
 
 ## Output Location
 
 ```
 build/reports/pitest/
-├── mutations.xml       ← Primary output for evaluation
-├── index.html          ← Visual report
-└── org.springframework.samples.petclinic.*/ ← Per-class HTML
+|-- mutations.xml       <- Primary output for evaluation
+|-- index.html          <- Visual report
+`-- org.springframework.samples.petclinic.*/ <- Per-class HTML
 ```

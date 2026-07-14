@@ -1,10 +1,10 @@
-# JGraphT Evaluation — Replication Package
+# JGraphT Evaluation  - Replication Package
 
 ## Project Details
 
 | Field | Value |
 |-------|-------|
-| Project | JGraphT — Java Graph Library |
+| Project | JGraphT  - Java Graph Library |
 | Version | 1.6.0-SNAPSHOT |
 | Repository | https://github.com/jgrapht/jgrapht |
 | Commit | `719212a1fe0bbbf62210159f50920a71e80b73ed` |
@@ -12,7 +12,7 @@
 | Java | 21 (SapMachine) |
 | Build | Maven 3.8.6 (no wrapper) |
 | JUnit | Jupiter 6.0.3 |
-| JPMS | Yes (module-info.java) — disabled via `useModulePath=false` for STP |
+| JPMS | Yes (module-info.java)  - disabled via `useModulePath=false` for STP |
 
 ## Coverage Map Statistics
 
@@ -37,8 +37,8 @@
 
 Two classes required non-standard test scoping:
 
-1. `org.jgrapht.Graphs` — `targetTests` narrowed to 3 root-package test classes (recursive `org.jgrapht.*` was intractable with 2308 tests × fullMutationMatrix)
-2. `org.jgrapht.graph.specifics.UndirectedSpecifics` — `targetTests` widened to `org.jgrapht.graph.*` (no test classes exist in `graph.specifics` subpackage)
+1. `org.jgrapht.Graphs`  - `targetTests` narrowed to 3 root-package test classes (recursive `org.jgrapht.*` was intractable with 2308 tests x fullMutationMatrix)
+2. `org.jgrapht.graph.specifics.UndirectedSpecifics`  - `targetTests` widened to `org.jgrapht.graph.*` (no test classes exist in `graph.specifics` subpackage)
 
 ## Evaluation Results
 
@@ -52,9 +52,9 @@ Two classes required non-standard test scoping:
 
 ### Key Findings
 
-- The dual-granularity (method + class) selector achieves **99.81% safety** with **96.69% test reduction** — one missed mutation out of 517 KILLED mutations across 20 classes.
-- Method-level selection provides **2.7× fewer tests** than class-level only (76.4 vs 206.3 avg selected) with only 0.19% safety loss.
-- Random selection at the same budget (76.4 tests) achieves only 27.85% safety — proving coverage-based selection is non-trivial.
+- The dual-granularity (method + class) selector achieves **99.81% safety** with **96.69% test reduction**  - one missed mutation out of 517 KILLED mutations across 20 classes.
+- Method-level selection provides **2.7x fewer tests** than class-level only (76.4 vs 206.3 avg selected) with only 0.19% safety loss.
+- Random selection at the same budget (76.4 tests) achieves only 27.85% safety  - proving coverage-based selection is non-trivial.
 
 ### Unsafe Mutation Analysis
 
@@ -63,7 +63,7 @@ Single unsafe mutation:
 - **Method:** `getTour` (line 97)
 - **Killing tests:** `testGetTour0`, `testGetTour2`
 - **Root cause:** These two tests cover the class but do NOT have method-level coverage attribution for `getTour` in the coverage map. The dual-granularity algorithm sees method-level info for other tests covering this class and excludes these two via method-only matching.
-- **Impact:** Structural limitation of line-level instrumentation — same pattern as Commons Lang's `FieldUtils` case.
+- **Impact:** Structural limitation of line-level instrumentation  - same pattern as Commons Lang's `FieldUtils` case.
 
 See [FAILURE_MODES.md](FAILURE_MODES.md) for full analysis.
 
@@ -71,7 +71,7 @@ See [FAILURE_MODES.md](FAILURE_MODES.md) for full analysis.
 
 - Method: curated stratified selection (one class per algorithmic subpackage)
 - 20 classes from 20 distinct subpackages
-- LOC range: 83 — 1,310
+- LOC range: 83  - 1,310
 - Criteria: test coverage, non-trivial mutable code (>=80 LOC), algorithm implementation prioritized
 - See [METHODOLOGY.md](METHODOLOGY.md) for selection criteria and methodology evolution notes
 
@@ -100,29 +100,29 @@ python3 scripts/04_baselines.py --project-dir /path/to/jgrapht
 
 ```
 jgrapht/
-├── config/
-│   └── sample_classes.json          # 20 sampled classes with metadata
-├── scripts/
-│   ├── 02_run_pit.py                # PIT runner (per-class, 10min timeout)
-│   ├── 03_evaluate.py               # Safety evaluation vs PIT ground truth
-│   └── 04_baselines.py              # Baseline comparison (class-only, random)
-├── results/
-│   ├── per-class/                   # Per-class PIT XML + logs
-│   │   ├── org.jgrapht.alg.color.GreedyColoring/
-│   │   │   ├── mutations.xml
-│   │   │   ├── stdout.log
-│   │   │   └── stderr.log
-│   │   └── ...  (20 classes)
-│   ├── aggregated/
-│   │   ├── pit_summary.json         # PIT run summary
-│   │   ├── evaluation_summary.json  # Safety metrics
-│   │   ├── evaluation_results.csv   # Per-mutation results
-│   │   └── baseline_comparison.json # Three-way comparison
-│   └── progress.log                 # Timestamped run log
-└── docs/
-    ├── README.md                    # This file
-    ├── METHODOLOGY.md               # Detailed evaluation methodology
-    └── FAILURE_MODES.md             # Unsafe mutation root cause analysis
+|-- config/
+|   `-- sample_classes.json          # 20 sampled classes with metadata
+|-- scripts/
+|   |-- 02_run_pit.py                # PIT runner (per-class, 10min timeout)
+|   |-- 03_evaluate.py               # Safety evaluation vs PIT ground truth
+|   `-- 04_baselines.py              # Baseline comparison (class-only, random)
+|-- results/
+|   |-- per-class/                   # Per-class PIT XML + logs
+|   |   |-- org.jgrapht.alg.color.GreedyColoring/
+|   |   |   |-- mutations.xml
+|   |   |   |-- stdout.log
+|   |   |   `-- stderr.log
+|   |   `-- ...  (20 classes)
+|   |-- aggregated/
+|   |   |-- pit_summary.json         # PIT run summary
+|   |   |-- evaluation_summary.json  # Safety metrics
+|   |   |-- evaluation_results.csv   # Per-mutation results
+|   |   `-- baseline_comparison.json # Three-way comparison
+|   `-- progress.log                 # Timestamped run log
+`-- docs/
+    |-- README.md                    # This file
+    |-- METHODOLOGY.md               # Detailed evaluation methodology
+    `-- FAILURE_MODES.md             # Unsafe mutation root cause analysis
 ```
 
 ## Comparison with Other Benchmark Projects

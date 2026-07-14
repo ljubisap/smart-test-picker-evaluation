@@ -1,4 +1,4 @@
-# Smart Test Picker — Evaluation Replication Package
+# Smart Test Picker  - Evaluation Replication Package
 
 This is the replication package for the paper:
 
@@ -21,7 +21,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 
 | Project | Strategy | Rationale |
 |---------|----------|-----------|
-| Commons Lang | curated_stratified | 1–2 representative classes per utility subpackage (13 subpackages) |
+| Commons Lang | curated_stratified | 1-2 representative classes per utility subpackage (13 subpackages) |
 | JGraphT | curated_stratified | One class per algorithmic subpackage (20 subpackages) |
 | Spring Framework | curated_stratified | One class per spring-core subpackage (22 subpackages), excl. infrastructure |
 | PetClinic | all_classes | Small project (14 classes) permits comprehensive evaluation |
@@ -31,29 +31,29 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 
 ```
 smart-test-picker-evaluation/
-├── README.md               # This file
-├── LICENSE                  # Apache License 2.0
-├── .gitignore
-├── commons-lang/           # Benchmark: Apache Commons Lang (Maven, 4589 tests)
-│   ├── config/             # Sampling config, PIT Maven profile
-│   ├── scripts/            # Numbered evaluation scripts (00-04)
-│   ├── results/            # Raw PIT output + aggregated metrics
-│   └── docs/               # Methodology, reproduction, failure analysis
-├── jgrapht/                # Benchmark: JGraphT (Maven multi-module, Java modules via JPMS, 2308 tests)
-│   ├── config/             # Sampling config (20 classes, curated stratified)
-│   ├── scripts/            # Evaluation scripts (00-04)
-│   ├── results/            # Raw PIT output + aggregated metrics
-│   └── docs/               # Methodology, reproduction, failure analysis
-├── spring-core/            # Benchmark: Spring Framework spring-core (Gradle, 3624 tests)
-│   ├── config/             # Sampling config (22 classes, curated stratified)
-│   ├── scripts/            # Evaluation scripts (02-04)
-│   ├── results/            # Raw PIT output + aggregated metrics
-│   └── docs/               # Methodology, reproduction, failure analysis
-└── petclinic/              # Pilot: Spring PetClinic (Gradle, 52 tests)
-    ├── config/
-    ├── scripts/
-    ├── results/
-    └── docs/
+|-- README.md               # This file
+|-- LICENSE                  # Apache License 2.0
+|-- .gitignore
+|-- commons-lang/           # Benchmark: Apache Commons Lang (Maven, 4589 tests)
+|   |-- config/             # Sampling config, PIT Maven profile
+|   |-- scripts/            # Numbered evaluation scripts (00-04)
+|   |-- results/            # Raw PIT output + aggregated metrics
+|   `-- docs/               # Methodology, reproduction, failure analysis
+|-- jgrapht/                # Benchmark: JGraphT (Maven multi-module, Java modules via JPMS, 2308 tests)
+|   |-- config/             # Sampling config (20 classes, curated stratified)
+|   |-- scripts/            # Evaluation scripts (00-04)
+|   |-- results/            # Raw PIT output + aggregated metrics
+|   `-- docs/               # Methodology, reproduction, failure analysis
+|-- spring-core/            # Benchmark: Spring Framework spring-core (Gradle, 3624 tests)
+|   |-- config/             # Sampling config (22 classes, curated stratified)
+|   |-- scripts/            # Evaluation scripts (02-04)
+|   |-- results/            # Raw PIT output + aggregated metrics
+|   `-- docs/               # Methodology, reproduction, failure analysis
+`-- petclinic/              # Pilot: Spring PetClinic (Gradle, 52 tests)
+    |-- config/
+    |-- scripts/
+    |-- results/
+    `-- docs/
 ```
 
 See `<project>/docs/README.md` for project-specific reproduction details.
@@ -62,10 +62,10 @@ See `<project>/docs/README.md` for project-specific reproduction details.
 
 For each benchmark project:
 
-1. **Generate coverage map** — Run full test suite with JaCoCo per-test instrumentation via Smart Test Picker plugin
-2. **Run PIT mutation testing** — Per-class with `fullMutationMatrix=true` and subpackage-scoped tests
-3. **Evaluate safety** — For each KILLED mutation, simulate plugin selection and check if killing test is included
-4. **Baseline comparison** — Compare against class-level-only and random selectors
+1. **Generate coverage map**  - Run full test suite with JaCoCo per-test instrumentation via Smart Test Picker plugin
+2. **Run PIT mutation testing**  - Per-class with `fullMutationMatrix=true` and subpackage-scoped tests
+3. **Evaluate safety**  - For each KILLED mutation, simulate plugin selection and check if killing test is included
+4. **Baseline comparison**  - Compare against class-level-only and random selectors
 
 See `<project>/docs/METHODOLOGY.md` for detailed methodology per project.
 

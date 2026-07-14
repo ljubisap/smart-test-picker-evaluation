@@ -1,4 +1,4 @@
-# Apache Commons Lang — Evaluation Replication Package
+# Apache Commons Lang  - Evaluation Replication Package
 
 Replication package for Smart Test Picker (RAD 1) safety evaluation on Apache Commons Lang 3.21.0-SNAPSHOT.
 

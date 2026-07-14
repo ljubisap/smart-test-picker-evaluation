@@ -36,7 +36,7 @@ Out of 772 KILLED mutations, exactly **1 mutation** was not safely covered by th
 
 ### What Happened
 
-The mutation removes a void method call at the entry of `removeFinalModifier()`. The killing test `testRemoveFinalModifierNullPointerException` passes a null argument that causes a `NullPointerException` at line 563 — **before any instrumented line executes**.
+The mutation removes a void method call at the entry of `removeFinalModifier()`. The killing test `testRemoveFinalModifierNullPointerException` passes a null argument that causes a `NullPointerException` at line 563  - **before any instrumented line executes**.
 
 ### Why JaCoCo Doesn't Record Coverage
 
@@ -47,15 +47,15 @@ JaCoCo instruments bytecode at the line level. When an exception occurs at the v
 ```
 FieldUtilsTest#testRemoveFinalModifierNullPointerException:
   classes: [..., "org.apache.commons.lang3.reflect.FieldUtils", ...]
-  methods: [...]  ← does NOT contain "FieldUtils#removeFinalModifier"
+  methods: [...]  <- does NOT contain "FieldUtils#removeFinalModifier"
 ```
 
 The test covers the class (it calls other methods too), but the specific method `removeFinalModifier` is NOT in its method coverage list because JaCoCo never registered a covered line.
 
 ### Selection Algorithm Behavior
 
-1. **Method-level match:** Check if `FieldUtils#removeFinalModifier` is in test's methods → NO
-2. **Class-level fallback:** Check if `FieldUtils` is in test's classes AND test has no method info for that class → `FieldUtils` IS in classes, BUT test has other method-level entries for `FieldUtils` (from other test methods in the same class) → Fallback does NOT apply
+1. **Method-level match:** Check if `FieldUtils#removeFinalModifier` is in test's methods -> NO
+2. **Class-level fallback:** Check if `FieldUtils` is in test's classes AND test has no method info for that class -> `FieldUtils` IS in classes, BUT test has other method-level entries for `FieldUtils` (from other test methods in the same class) -> Fallback does NOT apply
 3. Result: Test is NOT selected
 
 ### Why This Is Not a Bug
@@ -82,10 +82,10 @@ This combination is extremely rare in practice. In our sample of 772 mutations a
 
 | Approach | Trade-off |
 |----------|-----------|
-| Always include class-level fallback | Would select 3x more tests (49 vs 17 avg), defeating purpose of method-level |
+| Always include class-level fallback | Would select ~3x more tests (49 vs 17 avg), reducing the precision advantage of method-level selection |
 | Bytecode-level coverage (not line-level) | Would require different instrumentation approach, not supported by JaCoCo |
 | Static analysis for exception paths | Adds complexity; may introduce false positives |
-| Accept 99.87% safety | Practical choice — full suite as periodic safety net |
+| Accept 99.87% safety | Practical choice  - full suite as periodic safety net |
 
 ### Recommendation
 
@@ -99,7 +99,7 @@ All other 20 classes achieved perfect 100% inclusiveness, confirming the failure
 
 During evaluator development, two normalization bugs caused false "unsafe" results. Both were fixed before final evaluation. Documenting them here for reproducibility and to explain the normalizer's design.
 
-### Bug 1: Nested Class — Taking First Instead of Last
+### Bug 1: Nested Class  - Taking First Instead of Last
 
 **Symptom:** Certain mutations in classes like `ComparableUtils` showed as unsafe.
 
@@ -113,9 +113,9 @@ During evaluator development, two normalization bugs caused false "unsafe" resul
 [method:test()]
 ```
 
-**Fix:** `simple_class = nested_matches[-1]` → normalizes to `InRange#test`
+**Fix:** `simple_class = nested_matches[-1]` -> normalizes to `InRange#test`
 
-### Bug 2: Parameterized Tests — Unrecognized `[test-template:]` Tag
+### Bug 2: Parameterized Tests  - Unrecognized `[test-template:]` Tag
 
 **Symptom:** Some mutations showed 0 killing tests (normalizer returned `None`).
 

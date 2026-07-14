@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-02_run_pit.py — Run PIT mutation testing per-class for Spring Framework spring-core.
+02_run_pit.py  --  Run PIT mutation testing per-class for Spring Framework spring-core.
 
 Uses PIT command-line execution against the already-compiled classes and test classes
 from the Gradle build. Runs PIT per sampled class with fullMutationMatrix=true.
@@ -114,7 +114,7 @@ def run_pit_for_class(target_class, project_dir, classpath, pit_jars, results_di
     class_dir = results_dir / "per-class" / target_class
     class_dir.mkdir(parents=True, exist_ok=True)
 
-    # Determine targetTests — scope to subpackage
+    # Determine targetTests  --  scope to subpackage
     pkg = target_class.rsplit(".", 1)[0]
     # For spring-core, test classes follow the pattern:
     # org.springframework.core.Foo -> test in same or similar package

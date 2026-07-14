@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-04_baselines.py — Compare plugin selection against baseline selectors.
+04_baselines.py  --  Compare plugin selection against baseline selectors.
 
 Baselines:
-  1. Class-level only — select all tests touching the mutated class (no method info)
-  2. Random(k_M) — per-mutation random selection where k_M equals the number
+  1. Class-level only  --  select all tests touching the mutated class (no method info)
+  2. Random(k_M)  --  per-mutation random selection where k_M equals the number
      of tests the proposed selector would pick for that mutation
 
 Usage:
@@ -187,7 +187,7 @@ def main():
 
     # Print
     print(f"{'='*70}")
-    print(f"BASELINE COMPARISON — Spring PetClinic")
+    print(f"BASELINE COMPARISON  --  Spring PetClinic")
     print(f"{'='*70}")
     print(f"Mutations: {len(mutations)} KILLED | Tests: {total_tests}")
     print(f"\n{'Selector':<25} {'Safety%':>8} {'SelRate%':>9} {'AvgSel':>7}")

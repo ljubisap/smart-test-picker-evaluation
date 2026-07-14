@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-00_sample_classes.py — Document class sampling strategy for Spring PetClinic.
+00_sample_classes.py  --  Document class sampling strategy for Spring PetClinic.
 
 PetClinic is a small project (14 production classes with mutations).
-No sampling is applied — ALL classes are included in the evaluation.
+No sampling is applied  --  ALL classes are included in the evaluation.
 
 Modes:
   --verify   Validate that config/sample_classes.json matches expected classes
@@ -71,7 +71,7 @@ def main():
                 print(f"  Extra: {extra}")
             sys.exit(1)
     else:
-        print("Spring PetClinic — Class Sampling Strategy")
+        print("Spring PetClinic  --  Class Sampling Strategy")
         print("=" * 50)
         print()
         print("Strategy: ALL CLASSES (no sampling)")

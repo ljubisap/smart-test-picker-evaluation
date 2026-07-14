@@ -84,7 +84,7 @@ JGraphT uses the Java Module System (`module-info.java`). Key adaptations:
 
 ## Python Dependencies
 
-No external packages required — all scripts use only the Python standard library:
+No external packages required  - all scripts use only the Python standard library:
 - `argparse`, `json`, `xml.etree.ElementTree`, `pathlib`, `subprocess`
 - `random`, `re`, `collections`, `gzip`, `time`, `datetime`
 

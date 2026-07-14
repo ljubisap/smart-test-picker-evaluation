@@ -1,4 +1,4 @@
-# JGraphT — Evaluation Replication Package
+# JGraphT  - Evaluation Replication Package
 
 Replication package for Smart Test Picker (RAD 1) safety evaluation on JGraphT 1.6.0-SNAPSHOT (JPMS-enabled Java graph library).
 

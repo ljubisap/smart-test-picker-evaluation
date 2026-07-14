@@ -1,4 +1,4 @@
-# Reproduction Steps — Spring Framework (spring-core)
+# Reproduction Steps  - Spring Framework (spring-core)
 
 ## Quick Verification (No Build Required)
 
@@ -39,7 +39,7 @@ python3 scripts/04_baselines.py --project-dir /any/path
    ./gradlew publishToMavenLocal
    ```
 
-4. Modify `spring-framework-6/settings.gradle` — add `pluginManagement` block:
+4. Modify `spring-framework-6/settings.gradle`  - add `pluginManagement` block:
    ```groovy
    pluginManagement {
        repositories {
@@ -50,18 +50,18 @@ python3 scripts/04_baselines.py --project-dir /any/path
    }
    ```
 
-5. Modify `spring-framework-6/build.gradle` — add `mavenLocal()` to allprojects repositories:
+5. Modify `spring-framework-6/build.gradle`  - add `mavenLocal()` to allprojects repositories:
    ```groovy
    configure(allprojects) { project ->
        repositories {
-           mavenLocal()  // ← add this line
+           mavenLocal()  // <- add this line
            mavenCentral()
            ...
        }
    }
    ```
 
-6. Modify `spring-framework-6/spring-core/spring-core.gradle` — add plugins and dependency:
+6. Modify `spring-framework-6/spring-core/spring-core.gradle`  - add plugins and dependency:
    ```groovy
    plugins {
        id 'me.champeau.mrjar'
@@ -148,7 +148,7 @@ print('All checks passed.')
 | Problem | Solution |
 |---------|----------|
 | Plugin not found | Ensure `pluginManagement` + `mavenLocal()` are added to settings/build |
-| 3 test failures (BridgeMethodResolver, AnnotationMetadata) | Expected — JaCoCo instrumentation adds synthetic fields, confuses reflection tests |
-| DataBufferUtils PIT timeout | Expected — 1078 LOC reactive class, 600s timeout exceeded |
+| 3 test failures (BridgeMethodResolver, AnnotationMetadata) | Expected  - JaCoCo instrumentation adds synthetic fields, confuses reflection tests |
+| DataBufferUtils PIT timeout | Expected  - 1078 LOC reactive class, 600s timeout exceeded |
 | "No mutations found" | Class is abstract/interface with no mutable code (e.g. AbstractResource) |
-| Coverage map has fewer tests than test suite | Expected — only tests covering spring-core classes are mapped |
+| Coverage map has fewer tests than test suite | Expected  - only tests covering spring-core classes are mapped |

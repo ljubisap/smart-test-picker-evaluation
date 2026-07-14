@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-02_run_pit.py — Run PIT mutation testing per-class with subpackage-scoped tests.
+02_run_pit.py  --  Run PIT mutation testing per-class with subpackage-scoped tests.
 
 For each class in sample_classes.json, runs PIT with:
   - targetClasses = single class FQN
@@ -59,6 +59,11 @@ def run_pit_for_class(mvn, project_dir, results_dir, fqn, target_tests, loc, ind
     log(f"[{index}/{total}] Starting: {fqn} (LOC={loc}, tests={target_tests})", log_file)
     start = time.time()
 
+    # Delete stale PIT output before running to prevent attribution errors
+    pit_xml = project_dir / "target" / "pit-reports" / "mutations.xml"
+    if pit_xml.exists():
+        pit_xml.unlink()
+
     try:
         result = subprocess.run(
             cmd, cwd=str(project_dir), capture_output=True, text=True, timeout=TIMEOUT_SECONDS
@@ -75,23 +80,34 @@ def run_pit_for_class(mvn, project_dir, results_dir, fqn, target_tests, loc, ind
                 reason = "no mutations generated"
             else:
                 reason = f"exit code {result.returncode}"
-            log(f"[{index}/{total}] FAILED: {fqn} ({elapsed:.0f}s) — {reason}", log_file)
+            log(f"[{index}/{total}] FAILED: {fqn} ({elapsed:.0f}s)  --  {reason}", log_file)
             return {"fqn": fqn, "status": "FAILED", "reason": reason, "elapsed_s": elapsed}
 
-        pit_xml = project_dir / "target" / "pit-reports" / "mutations.xml"
-        if pit_xml.exists():
-            shutil.copy2(pit_xml, class_dir / "mutations.xml")
-            mutations_count = sum(1 for line in open(pit_xml) if "<mutation " in line)
-        else:
-            mutations_count = 0
+        if not pit_xml.exists():
+            log(f"[{index}/{total}] FAILED: {fqn} ({elapsed:.0f}s)  --  no mutations.xml produced", log_file)
+            return {"fqn": fqn, "status": "FAILED", "reason": "no mutations.xml produced", "elapsed_s": elapsed}
+
+        # Validate: all mutations in the XML must target the expected class
+        import xml.etree.ElementTree as ET
+        tree = ET.parse(pit_xml)
+        mutations = tree.getroot().findall("mutation")
+        mutations_count = len(mutations)
+        wrong_class = [m for m in mutations if m.findtext("mutatedClass") != fqn]
+        if wrong_class:
+            log(f"[{index}/{total}] FAILED: {fqn} ({elapsed:.0f}s)  --  "
+                f"mutations.xml contains {len(wrong_class)} mutations for wrong class", log_file)
+            return {"fqn": fqn, "status": "FAILED", "reason": "wrong class in mutations.xml", "elapsed_s": elapsed}
+
+        shutil.copy2(pit_xml, class_dir / "mutations.xml")
 
         log(f"[{index}/{total}] DONE: {fqn} ({elapsed:.0f}s, {mutations_count} mutations)", log_file)
         return {"fqn": fqn, "status": "OK", "mutations": mutations_count, "elapsed_s": elapsed}
 
     except subprocess.TimeoutExpired:
         elapsed = time.time() - start
-        os.system("pkill -f 'pitest.*CoverageMinion' 2>/dev/null")
-        os.system("pkill -f 'pitest.*MutationTestMinion' 2>/dev/null")
+        # Kill only the child process tree, not unrelated PIT processes
+        if hasattr(result, 'pid'):
+            os.system(f"pkill -P {result.pid} 2>/dev/null")
         log(f"[{index}/{total}] TIMEOUT: {fqn} ({elapsed:.0f}s)", log_file)
         return {"fqn": fqn, "status": "TIMEOUT", "elapsed_s": elapsed}
 
@@ -125,7 +141,7 @@ def main():
             sys.exit(1)
 
     log_file = results_dir / "progress.log"
-    log(f"=== PIT Evaluation Run — {len(classes)} classes ===", log_file)
+    log(f"=== PIT Evaluation Run  --  {len(classes)} classes ===", log_file)
 
     results = []
     for i, cfg in enumerate(classes):

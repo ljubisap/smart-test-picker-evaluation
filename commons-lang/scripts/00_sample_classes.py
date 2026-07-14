@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-00_sample_classes.py — Document and validate the curated class sample.
+00_sample_classes.py  --  Document and validate the curated class sample.
 
 Methodology Evolution Note
 ===========================
@@ -16,7 +16,7 @@ generated via stratified random sampling:
 During the verification phase, we attempted to reproduce the committed
 sample from scratch using the same seed and filters. The reconstruction
 yielded 24 classes (vs 21 original) with different selections in shared
-subpackages — indicating that the original sample was generated in a
+subpackages  --  indicating that the original sample was generated in a
 context (different LOC counting heuristic, different candidate
 eligibility state) that we could not retroactively reconstruct.
 

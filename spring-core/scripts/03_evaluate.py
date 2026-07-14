@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-03_evaluate.py — Evaluate plugin safety against PIT mutation ground truth.
+03_evaluate.py  --  Evaluate plugin safety against PIT mutation ground truth.
 
 For each KILLED mutation, simulates the plugin's dual-granularity selection
 and checks whether at least one killing test would have been selected.
 
 Metrics:
-  - Inclusiveness (Safety): % mutations where T_selected ∩ T_killing ≠ ∅
+  - Inclusiveness (Safety): % mutations where T_selected   &   T_killing != {}
   - Selection Rate: avg |T_selected| / |all_tests|
   - Test Reduction: 1 - Selection Rate
 
@@ -28,9 +28,9 @@ def normalize_pit_test_name(pit_test_id):
     Normalize PIT's JUnit Platform unique ID to coverage map format.
 
     PIT formats:
-      [class:FQN]/[method:name()] — regular test
-      [class:FQN]/[nested-class:A]/[method:name()] — nested class
-      [class:FQN]/[test-template:name(params)]/[test-template-invocation:#N] — parameterized
+      [class:FQN]/[method:name()]  --  regular test
+      [class:FQN]/[nested-class:A]/[method:name()]  --  nested class
+      [class:FQN]/[test-template:name(params)]/[test-template-invocation:#N]  --  parameterized
 
     Coverage map format: SimpleClassName#methodName
     """
@@ -162,7 +162,7 @@ def main():
 
     # Print results
     print(f"{'='*70}")
-    print(f"EVALUATION RESULTS — Smart Test Picker vs PIT Ground Truth")
+    print(f"EVALUATION RESULTS  --  Smart Test Picker vs PIT Ground Truth")
     print(f"{'='*70}")
     print(f"Project: Spring Framework (spring-core 6.1.x)")
     print(f"Commit: {commit[:12]}")

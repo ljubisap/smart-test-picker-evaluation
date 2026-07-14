@@ -8,14 +8,14 @@ This evaluation uses **PIT mutation testing** as ground truth to validate the sa
 
 ### Ground Truth Generation
 
-1. **PIT with fullMutationMatrix=true** — For each class, PIT:
+1. **PIT with fullMutationMatrix=true**  - For each class, PIT:
    - Generates mutations using DEFAULT operators (conditionals, math, void calls, returns, etc.)
    - Runs ALL scoped tests against EACH mutation (not just until first kill)
    - Records complete killing test set per mutation
 
-2. **Per-class execution** — Each class runs independently with `targetTests` scoped to its subpackage, preventing intractable test space (4589 tests × N mutations).
+2. **Per-class execution**  - Each class runs independently with `targetTests` scoped to its subpackage, preventing intractable test space (4589 tests x N mutations).
 
-3. **KILLED mutations only** — Only mutations detected by at least one test are used for safety validation (surviving mutations have no T_killing to compare against).
+3. **KILLED mutations only**  - Only mutations detected by at least one test are used for safety validation (surviving mutations have no T_killing to compare against).
 
 ### Plugin Simulation
 
@@ -25,13 +25,13 @@ For each KILLED mutation `(mutatedClass, mutatedMethod)`:
 2. Run dual-granularity selection:
    - **Method-level match:** Select tests whose coverage map `methods` list contains `mutatedClass#mutatedMethod`
    - **Class-level fallback:** For tests that cover `mutatedClass` but have no method-level info for that class, select them as a safety net
-3. Compute intersection: `T_selected ∩ T_killing`
+3. Compute intersection: `T_selected   &   T_killing`
 4. Mutation is **safe** iff intersection is non-empty
 
 ### Validation Formula
 
 ```
-Inclusiveness = |{m : T_selected(m) ∩ T_killing(m) ≠ ∅}| / |KILLED mutations|
+Inclusiveness = |{m : T_selected(m)   &   T_killing(m) != {}}| / |KILLED mutations|
 ```
 
 This is a conservative metric: a mutation is "safe" if ANY killing test is selected. It does NOT require ALL killing tests to be selected.
@@ -44,9 +44,9 @@ We evaluated 21 classes from Apache Commons Lang, selected via curated stratifie
 
 ### Selection Criteria
 
-- 1–2 representative classes per major subpackage
-- Each class has a matching test class (`ClassName` → `ClassNameTest`)
-- Non-trivial mutable code (≥80 LOC, ≤1200 LOC)
+- 1-2 representative classes per major subpackage
+- Each class has a matching test class (`ClassName` -> `ClassNameTest`)
+- Non-trivial mutable code (>=80 LOC, <=1200 LOC)
 - Utility/algorithm implementation classes prioritized over thin wrappers
 - Excludes interfaces and abstract base classes
 
@@ -55,17 +55,17 @@ We evaluated 21 classes from Apache Commons Lang, selected via curated stratifie
 | Subpackage | Reason |
 |-----------|--------|
 | `concurrent` (root) | Complex multi-threaded tests with non-deterministic behavior under mutation |
-| `exception` | Thin wrapper classes — trivial mutations, not representative |
+| `exception` | Thin wrapper classes  - trivial mutations, not representative |
 | `function` | Functional interfaces with no method bodies to mutate |
-| `time` | System-time-dependent tests — flaky under mutation |
+| `time` | System-time-dependent tests  - flaky under mutation |
 
 ### Methodology Evolution
 
-The sample was initially intended to be generated via stratified random sampling: `rng.sample(candidates, 2)` per subpackage with seed=42 and a LOC ≤ 1200 filter.
+The sample was initially intended to be generated via stratified random sampling: `rng.sample(candidates, 2)` per subpackage with seed=42 and a LOC <= 1200 filter.
 
 During the verification phase of replication package construction, we attempted to reconstruct the original sample using the documented seed and filters. The reconstruction yielded 24 classes (vs 21 original) with different selections in shared subpackages, indicating that the original generation occurred with a LOC counting heuristic that we could not retroactively reconstruct (the original script acknowledged: "Re-running may produce slightly different classes if LOC counts differ").
 
-Rather than constructing post-hoc heuristics to artificially reproduce the existing selection — which would constitute p-hacking — we transparently document the sample as curated_stratified. The committed sample remains methodologically legitimate: each class satisfies the stratification and quality criteria documented above.
+Rather than constructing post-hoc heuristics to artificially reproduce the existing selection  - which would constitute p-hacking  - we transparently document the sample as curated_stratified. The committed sample remains methodologically legitimate: each class satisfies the stratification and quality criteria documented above.
 
 This approach aligns with established empirical software engineering benchmarks (e.g., Defects4J [Just et al. 2014]) that rely on curated subjects rather than purely random selection.
 
@@ -84,7 +84,7 @@ Certain test classes are excluded from PIT's test scope because they fail withou
 | Test Class | Reason |
 |-----------|--------|
 | `CompareToBuilderTest` | Deep reflection that fails with Java 21 module restrictions |
-| `EqualsBuilderTest` | Same — reflection on private fields |
+| `EqualsBuilderTest` | Same  - reflection on private fields |
 | `HashCodeBuilderAndEqualsBuilderTest` | Same |
 | `ReflectionDiffBuilderTest` | Same |
 | `ToStringBuilderTest` | Same |
@@ -98,9 +98,9 @@ To verify that the sampling and exclusion criteria do not introduce bias, we ran
 
 ### Why Subpackage Scoping
 
-Running PIT with `targetTests=org.apache.commons.lang3.*` (all 4589 tests) is intractable — PIT's coverage scan phase alone takes 45+ minutes per class. Scoping to the subpackage (`org.apache.commons.lang3.math.*` for Fraction) reduces to ~5 minutes while maintaining validity: tests in other subpackages are unlikely to cover a specific class's internals.
+Running PIT with `targetTests=org.apache.commons.lang3.*` (all 4589 tests) is intractable  - PIT's coverage scan phase alone takes 45+ minutes per class. Scoping to the subpackage (`org.apache.commons.lang3.math.*` for Fraction) reduces to ~5 minutes while maintaining validity: tests in other subpackages are unlikely to cover a specific class's internals.
 
-This is safe because JaCoCo's coverage map captures actual runtime dependencies at the method level — if a test from another subpackage exercises a class, it will appear in the coverage map and be selected. The PIT scoping only restricts which tests PIT considers as potential killing tests, not which tests the plugin would select.
+This is safe because JaCoCo's coverage map captures actual runtime dependencies at the method level  - if a test from another subpackage exercises a class, it will appear in the coverage map and be selected. The PIT scoping only restricts which tests PIT considers as potential killing tests, not which tests the plugin would select.
 
 ## PIT Test ID Normalization
 
@@ -131,7 +131,7 @@ For each mutation M, the random selector chooses k_M tests uniformly at random (
 
 | Metric | Definition | Significance |
 |--------|-----------|--------------|
-| **Inclusiveness (Safety)** | % mutations with ≥1 killing test selected | Primary safety metric |
+| **Inclusiveness (Safety)** | % mutations with >=1 killing test selected | Primary safety metric |
 | **Selection Rate** | avg(|T_selected|) / |all_tests| | Efficiency metric |
 | **Test Reduction** | 1 - Selection Rate | Developer-facing time savings |
 | **Avg Selection Size** | Mean tests selected per mutation | Absolute efficiency |

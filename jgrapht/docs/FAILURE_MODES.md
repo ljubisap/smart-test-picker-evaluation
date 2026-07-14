@@ -1,4 +1,4 @@
-# Failure Mode Analysis — JGraphT
+# Failure Mode Analysis  - JGraphT
 
 ## Summary
 
@@ -35,10 +35,10 @@ The tests DO cover the class (class-level coverage is present), but the specific
 ### Selection Algorithm Behavior
 
 1. **Method-level match for `getTour`:** Check if `ChristofidesThreeHalvesApproxMetricTSP#getTour` is in test's methods
-   - `testGetTour3-10`: YES → selected ✓
-   - `testGetTour0`, `testGetTour2`: NO → not selected via method match
+   - `testGetTour3-10`: YES -> selected OK
+   - `testGetTour0`, `testGetTour2`: NO -> not selected via method match
 2. **Class-level fallback:** Does this test cover the class BUT have no method info for it?
-   - `testGetTour0` covers the class, BUT other tests (testGetTour3-10) DO have method info for `ChristofidesThreeHalvesApproxMetricTSP` → the class HAS method-level data → fallback does NOT apply
+   - `testGetTour0` covers the class, BUT other tests (testGetTour3-10) DO have method info for `ChristofidesThreeHalvesApproxMetricTSP` -> the class HAS method-level data -> fallback does NOT apply
 3. **Result:** `testGetTour0` and `testGetTour2` are NOT selected
 
 Since these are the only killing tests for this specific mutation (line 97), the mutation is marked unsafe.
@@ -86,10 +86,10 @@ The failure rate is consistent (0.13% vs 0.19%) and always caused by the same st
 
 | Approach | Trade-off |
 |----------|-----------|
-| Always include class-level fallback | Would select 2.7× more tests (206 vs 76 avg), defeating method-level precision |
+| Always include class-level fallback | Would select 2.7x more tests (206 vs 76 avg), defeating method-level precision |
 | Bytecode-level coverage (not line-level) | Requires different instrumentation, not supported by JaCoCo |
-| Hybrid: fallback if method has ≤N covering tests | Adds heuristic complexity; threshold is arbitrary |
-| Accept 99.81% safety | Practical choice — periodic full suite as safety net |
+| Hybrid: fallback if method has <=N covering tests | Adds heuristic complexity; threshold is arbitrary |
+| Accept 99.81% safety | Practical choice  - periodic full suite as safety net |
 
 ### Recommendation
 

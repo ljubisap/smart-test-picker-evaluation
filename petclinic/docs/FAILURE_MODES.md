@@ -1,4 +1,4 @@
-# Failure Mode Analysis — Spring PetClinic
+# Failure Mode Analysis  - Spring PetClinic
 
 ## Summary
 
@@ -22,7 +22,7 @@ The exception-path coverage gap that caused the single failure in commons-lang r
 2. The exception must occur before ANY instrumented line executes
 3. The method must be in a class where OTHER methods DO have method-level coverage
 
-PetClinic's test suite doesn't have this pattern — tests exercise methods through normal execution paths, and exception tests (like `PetValidator` validation) still cover instrumented lines before throwing.
+PetClinic's test suite doesn't have this pattern  - tests exercise methods through normal execution paths, and exception tests (like `PetValidator` validation) still cover instrumented lines before throwing.
 
 ## Per-Class Results
 

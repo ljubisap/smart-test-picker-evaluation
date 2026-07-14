@@ -1,4 +1,4 @@
-# Spring PetClinic — Evaluation Quick Start
+# Spring PetClinic  - Evaluation Quick Start
 
 Pilot benchmark project for Smart Test Picker's mutation-based safety evaluation.
 
@@ -21,7 +21,7 @@ Pilot benchmark project for Smart Test Picker's mutation-based safety evaluation
 | Tests | 52 (unit + controller, excl. integration) |
 | Production Classes | 14 (with KILLED mutations) |
 | Commit | `e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f` |
-| Sampling | None (all classes included — small project) |
+| Sampling | None (all classes included  - small project) |
 
 ## Verify Existing Results (No Build Required)
 
@@ -52,31 +52,31 @@ python3 scripts/04_baselines.py --project-dir /path/to/spring-petclinic
 
 ```
 petclinic/
-├── README.md                   # This file
-├── config/
-│   ├── sample_classes.json     # All 14 production classes (no sampling)
-│   ├── pitest.gradle           # PIT Gradle plugin config (copy-paste ready)
-│   └── pitest_config.md        # Human-readable config documentation
-├── scripts/
-│   ├── 00_sample_classes.py    # Class listing + --verify mode
-│   ├── 01_generate_coverage_map.py
-│   ├── 02_run_pit.py
-│   ├── 03_evaluate.py
-│   └── 04_baselines.py
-├── results/
-│   ├── mutations.xml           # Raw PIT output (142 mutations, single file)
-│   ├── test-coverage-map.json  # Coverage map (52 tests, included for verification)
-│   └── aggregated/
-│       ├── evaluation_summary.json
-│       ├── evaluation_results.csv
-│       ├── pit_summary.json
-│       └── baseline_comparison.json
-└── docs/
-    ├── README.md               # Navigation + commons-lang differences
-    ├── REPRODUCE.md            # Step-by-step reproduction guide
-    ├── METHODOLOGY.md
-    ├── REQUIREMENTS.md
-    └── FAILURE_MODES.md
+|-- README.md                   # This file
+|-- config/
+|   |-- sample_classes.json     # All 14 production classes (no sampling)
+|   |-- pitest.gradle           # PIT Gradle plugin config (copy-paste ready)
+|   `-- pitest_config.md        # Human-readable config documentation
+|-- scripts/
+|   |-- 00_sample_classes.py    # Class listing + --verify mode
+|   |-- 01_generate_coverage_map.py
+|   |-- 02_run_pit.py
+|   |-- 03_evaluate.py
+|   `-- 04_baselines.py
+|-- results/
+|   |-- mutations.xml           # Raw PIT output (142 mutations, single file)
+|   |-- test-coverage-map.json  # Coverage map (52 tests, included for verification)
+|   `-- aggregated/
+|       |-- evaluation_summary.json
+|       |-- evaluation_results.csv
+|       |-- pit_summary.json
+|       `-- baseline_comparison.json
+`-- docs/
+    |-- README.md               # Navigation + commons-lang differences
+    |-- REPRODUCE.md            # Step-by-step reproduction guide
+    |-- METHODOLOGY.md
+    |-- REQUIREMENTS.md
+    `-- FAILURE_MODES.md
 ```
 
 ## Baseline Comparison

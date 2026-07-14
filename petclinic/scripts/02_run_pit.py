@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-02_run_pit.py — Run PIT mutation testing on Spring PetClinic.
+02_run_pit.py  --  Run PIT mutation testing on Spring PetClinic.
 
 Runs PIT on all production classes at once (small project, ~52 tests, tractable).
 Generates mutations.xml with fullMutationMatrix=true.
@@ -38,10 +38,10 @@ def main():
         sys.exit(1)
 
     # Run PIT
-    print(f"\n{'─'*60}")
-    print(f"▶ Running PIT mutation testing")
+    print(f"\n{'-'*60}")
+    print(f"> Running PIT mutation testing")
     print(f"  {gradlew} pitest")
-    print(f"{'─'*60}")
+    print(f"{'-'*60}")
     result = subprocess.run(
         [str(gradlew), "pitest"],
         cwd=project_dir,
@@ -63,7 +63,7 @@ def main():
     results_dir.mkdir(parents=True, exist_ok=True)
     dest = results_dir / "mutations.xml"
     shutil.copy2(mutations_xml, dest)
-    print(f"\n✓ Copied mutations.xml → {dest}")
+    print(f"\nOK Copied mutations.xml -> {dest}")
     print(f"  Size: {dest.stat().st_size / 1024:.1f} KB")
 
     # Count mutations

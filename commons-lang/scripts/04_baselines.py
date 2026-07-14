@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-04_baselines.py — Compare proposed selector against baseline selectors.
+04_baselines.py  --  Compare proposed selector against baseline selectors.
 
 Evaluates three strategies against PIT mutation ground truth:
   1. Coverage (proposed): dual-granularity method+class selection
@@ -137,40 +137,71 @@ def evaluate_selector(name, selector_fn, mutations, test_mappings):
     }
 
 
-def evaluate_random_per_mutation(mutations, test_mappings, coverage_selector_fn, seed=42):
+def evaluate_random_per_mutation(mutations, test_mappings, coverage_selector_fn, seed=42, num_trials=1000):
     """
-    Evaluate random selector with per-mutation budget k_M.
+    Evaluate random selector with per-mutation budget k_M over multiple trials.
 
     For each mutation M, k_M = |coverage_selector(M)|. The random selector
-    picks k_M tests uniformly at random, ensuring the same selection budget
-    as the proposed approach for each individual mutation.
+    picks k_M tests uniformly at random. Repeated num_trials times to produce
+    mean and standard deviation.
+
+    Also computes the analytical expected safety:
+      P(hit for mutation M) = 1 - C(N-d, k) / C(N, k)
+    where N = total tests, d = |killing tests|, k = selection budget.
     """
+    from math import comb
+
     all_tests = list(test_mappings.keys())
     total_tests = len(all_tests)
-    safe = 0
-    unsafe = 0
-    sizes = []
 
-    for i, mut in enumerate(mutations):
+    # Compute per-mutation budgets and killing test counts
+    per_mutation_info = []
+    for mut in mutations:
         k_m = len(coverage_selector_fn(test_mappings, mut["mutatedClass"], mut["mutatedMethod"]))
-        rng = random.Random(seed + i)
-        t_selected = set(rng.sample(all_tests, min(k_m, total_tests)))
-        intersection = t_selected & mut["killingTests"]
-        if intersection:
-            safe += 1
-        else:
-            unsafe += 1
-        sizes.append(len(t_selected))
+        d_m = len(mut["killingTests"] & set(all_tests))  # killing tests that are in the map
+        per_mutation_info.append((k_m, d_m, mut["killingTests"]))
 
-    total = safe + unsafe
-    avg_sel = sum(sizes) / len(sizes) if sizes else 0
+    # Analytical expected safety
+    analytical_safe = 0
+    for k_m, d_m, _ in per_mutation_info:
+        if d_m == 0 or k_m == 0:
+            continue
+        # P(miss) = C(N-d, k) / C(N, k); P(hit) = 1 - P(miss)
+        k = min(k_m, total_tests)
+        if total_tests - d_m < k:
+            p_hit = 1.0  # must hit
+        else:
+            p_miss = comb(total_tests - d_m, k) / comb(total_tests, k)
+            p_hit = 1.0 - p_miss
+        analytical_safe += p_hit
+    analytical_safety_pct = round(analytical_safe / len(mutations) * 100, 2) if mutations else 0
+
+    # Monte Carlo: num_trials repetitions
+    trial_safeties = []
+    for trial in range(num_trials):
+        safe = 0
+        for i, (k_m, d_m, killing_tests) in enumerate(per_mutation_info):
+            rng = random.Random(seed + trial * len(mutations) + i)
+            t_selected = set(rng.sample(all_tests, min(k_m, total_tests)))
+            if t_selected & killing_tests:
+                safe += 1
+        trial_safeties.append(safe / len(mutations) * 100)
+
+    mean_safety = sum(trial_safeties) / len(trial_safeties)
+    variance = sum((x - mean_safety) ** 2 for x in trial_safeties) / len(trial_safeties)
+    std_safety = variance ** 0.5
+
+    avg_sel = sum(k for k, _, _ in per_mutation_info) / len(per_mutation_info) if per_mutation_info else 0
 
     return {
-        "name": f"Random (k=per-mutation)",
-        "safety_pct": round(safe / total * 100, 2) if total > 0 else 0,
-        "safe": safe,
-        "unsafe": unsafe,
-        "total": total,
+        "name": "Random (k=per-mutation)",
+        "safety_pct": round(mean_safety, 2),
+        "safety_std": round(std_safety, 2),
+        "safety_analytical_pct": analytical_safety_pct,
+        "num_trials": num_trials,
+        "safe": round(mean_safety * len(mutations) / 100),
+        "unsafe": len(mutations) - round(mean_safety * len(mutations) / 100),
+        "total": len(mutations),
         "avg_selected": round(avg_sel, 1),
         "selection_rate_pct": round(avg_sel / total_tests * 100, 2),
         "test_reduction_pct": round((1 - avg_sel / total_tests) * 100, 2),
@@ -223,7 +254,7 @@ def main():
     # Print comparison table
     results = [res_coverage, res_class, res_random]
     print(f"{'='*78}")
-    print(f"BASELINE COMPARISON — Smart Test Picker vs Baselines")
+    print(f"BASELINE COMPARISON  --  Smart Test Picker vs Baselines")
     print(f"{'='*78}")
     print(f"{'Selector':<25} {'Safety':>8} {'Sel. rate':>10} {'Reduction':>10} {'Avg sel.':>9}")
     print(f"{'-'*78}")

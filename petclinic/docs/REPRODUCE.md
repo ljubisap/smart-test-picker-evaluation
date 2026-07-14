@@ -1,4 +1,4 @@
-# Reproduce — Spring PetClinic Evaluation
+# Reproduce  - Spring PetClinic Evaluation
 
 Complete step-by-step guide for reproducing the PetClinic safety evaluation from scratch.
 
@@ -55,9 +55,9 @@ python3 scripts/01_generate_coverage_map.py --project-dir /path/to/spring-petcli
 ```
 
 What it does:
-- `./gradlew clean test` — runs 52 tests with JaCoCo per-test instrumentation
-- `./gradlew generateSmartReports` — converts `.exec` files to per-test XML
-- `./gradlew generateTestCoverageJson` — builds `build/test-coverage-map.json`
+- `./gradlew clean test`  - runs 52 tests with JaCoCo per-test instrumentation
+- `./gradlew generateSmartReports`  - converts `.exec` files to per-test XML
+- `./gradlew generateTestCoverageJson`  - builds `build/test-coverage-map.json`
 
 Output: `spring-petclinic/build/test-coverage-map.json` (52 test mappings)
 
@@ -68,7 +68,7 @@ python3 scripts/02_run_pit.py --project-dir /path/to/spring-petclinic
 ```
 
 What it does:
-- `./gradlew pitest` — runs PIT with `fullMutationMatrix=true`
+- `./gradlew pitest`  - runs PIT with `fullMutationMatrix=true`
 - Copies `build/reports/pitest/mutations.xml` to `results/mutations.xml`
 
 Output: 142 mutations (94 KILLED, 37 SURVIVED, 11 NO_COVERAGE)
@@ -129,5 +129,5 @@ print('OK')
 | `gradlew: Permission denied` | `chmod +x gradlew` |
 | Coverage map not generated | Ensure Smart Test Picker plugin is in `mavenLocal` and configured in `build.gradle` |
 | PIT fails with OOM | Increase `-Xmx` in pitest config: `jvmArgs = ['-Xmx4g']` |
-| Wrong mutation count | Ensure you're on commit `e4a6ebe3` — different commits may have different code |
+| Wrong mutation count | Ensure you're on commit `e4a6ebe3`  - different commits may have different code |
 | Integration tests fail | They're excluded by default; if Docker isn't available, this is expected |

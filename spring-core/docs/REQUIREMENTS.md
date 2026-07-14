@@ -1,4 +1,4 @@
-# Requirements — Spring Framework (spring-core)
+# Requirements  - Spring Framework (spring-core)
 
 ## Software
 
@@ -54,4 +54,4 @@ ls ~/.m2/repository/com/sap/oss/smart-test-picker/smart-test-picker/0.1.0/
 
 ## Python Dependencies
 
-No external packages required — all scripts use only the Python standard library.
+No external packages required  - all scripts use only the Python standard library.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-00_sample_classes.py — Document and validate the curated class sample.
+00_sample_classes.py  --  Document and validate the curated class sample.
 
 Methodology Evolution Note
 ===========================

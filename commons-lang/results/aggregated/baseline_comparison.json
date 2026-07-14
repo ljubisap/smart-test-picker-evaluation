@@ -25,7 +25,10 @@
     },
     {
       "name": "Random (k=per-mutation)",
-      "safety_pct": 1.94,
+      "safety_pct": 2.0,
+      "safety_std": 0.49,
+      "safety_analytical_pct": 2.02,
+      "num_trials": 1000,
       "safe": 15,
       "unsafe": 757,
       "total": 772,

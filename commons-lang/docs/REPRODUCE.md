@@ -23,7 +23,7 @@ python3 scripts/01_generate_coverage_map.py --project-dir /path/to/commons-lang
 This runs the full test suite with JaCoCo per-test instrumentation, then generates:
 - Per-test `.exec` files (JaCoCo binary format)
 - Per-test XML reports
-- `target/test-coverage-map.json` — unified coverage map
+- `target/test-coverage-map.json`  - unified coverage map
 
 **Duration:** ~10 minutes  
 **Output:** `<project-dir>/target/test-coverage-map.json`
@@ -40,7 +40,7 @@ python3 scripts/02_run_pit.py --project-dir /path/to/commons-lang
 ```
 
 Runs PIT per-class on all 21 sampled classes with:
-- `fullMutationMatrix=true` — all tests run against each mutation
+- `fullMutationMatrix=true`  - all tests run against each mutation
 - `targetTests` scoped to subpackage (prevents intractable test space)
 - 10-minute timeout per class
 
@@ -114,6 +114,6 @@ print('All checks passed.')
 | Problem | Solution |
 |---------|----------|
 | PIT "tests did not pass without mutation" | Verify `excludedTestClasses` in PIT profile includes failing tests |
-| PIT timeout on LockingVisitors | Expected — uses threads; increase timeout or exclude |
+| PIT timeout on LockingVisitors | Expected  - uses threads; increase timeout or exclude |
 | Coverage map empty | Ensure `smart-test-picker` profile is active and plugin is in local Maven repo |
 | "No mutations found" for a class | Class may have no mutable code; check PIT stdout.log |
