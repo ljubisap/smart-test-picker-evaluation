@@ -235,7 +235,7 @@ def evaluate_random_per_mutation(mutations, test_mappings, coverage_selector_fn,
 def main():
     parser = argparse.ArgumentParser(description="Baseline comparison vs PIT ground truth")
     parser.add_argument("--project-dir", type=Path, required=True,
-                        help="Path to commons-lang checkout")
+                        help="Path to spring-petclinic checkout")
     parser.add_argument("--results-dir", type=Path, default=None)
     parser.add_argument("--coverage-map", type=Path, default=None)
     parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")

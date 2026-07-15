@@ -39,7 +39,7 @@ Test Reduction:          81.30%
    git checkout e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f
    ```
 
-3. Smart Test Picker plugin 0.1.9+ in `mavenLocal`:
+3. Smart Test Picker plugin 0.1.0 (commit 50b44591fe7e) in `mavenLocal`:
    ```bash
    cd /path/to/smart-test-picker-working
    ./gradlew publishToMavenLocal

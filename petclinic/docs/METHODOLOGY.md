@@ -46,7 +46,7 @@ For each KILLED mutation:
 
 Compare against:
 - **Class-level only**  - select all tests touching the mutated class (no method-level filtering)
-- **Random(k=per-mutation)**  - for each mutation M, the random selector chooses k_M tests uniformly at random (without replacement) from the test suite, where k_M equals the number of tests the proposed coverage-based selector would select for M. This ensures the random baseline has the same selection budget as the proposed approach for each individual mutation, eliminating size-based comparison bias. Per-mutation seed (42 + mutation_index) ensures reproducibility.
+- **Random(k=per-mutation)**  - for each mutation M, the random selector chooses k_M tests uniformly at random (without replacement) from the test suite, where k_M equals the number of tests the proposed coverage-based selector would select for M. This ensures the random baseline has the same selection budget as the proposed approach for each individual mutation, eliminating size-based comparison bias. The random baseline is repeated over 1000 deterministic Monte Carlo trials (per-mutation seed = 42 + trial * N + i). We report mean and standard deviation and independently compute the analytical expected inclusiveness using the hypergeometric probability of selecting at least one killing test.
 
 ## Differences from Commons Lang
 
@@ -79,7 +79,7 @@ Four integration test classes are excluded from both PIT and the coverage map:
 | `PetClinicIntegrationTests` | Full Spring Boot integration test |
 | `CrashControllerIntegrationTests` | Error handling integration test |
 
-These tests exercise infrastructure, not production logic. Their exclusion is symmetric (excluded from both PIT scope and coverage map). The reported results apply to the remaining 52-test scope.
+These integration-test classes require additional runtime infrastructure. Their exclusion is symmetric (excluded from both PIT scope and coverage map). The reported results apply to the remaining 52-test scope.
 
 ## Mutation Score
 
@@ -88,4 +88,4 @@ PetClinic's mutation score is **66.2%** (94 KILLED / 142 total). This is lower t
 - Configuration classes (`CacheConfiguration`, `WebConfiguration`) have no unit tests
 - Some controller paths are only tested via integration tests (excluded)
 
-This doesn't affect our safety evaluation  - we only examine KILLED mutations.
+Their exclusion contributes to the restricted evaluation scope and may affect which mutants are classified as killed. The reported inclusiveness results apply only to mutants killed within the remaining 52-test scope.
