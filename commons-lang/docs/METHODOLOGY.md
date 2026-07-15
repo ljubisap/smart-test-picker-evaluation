@@ -92,6 +92,8 @@ Certain test classes are excluded from PIT's test scope because they fail withou
 
 These are excluded via `<excludedTestClasses>` in the PIT profile (see `config/pit_profile.xml`).
 
+The PIT profile also uses `skipFailingTests=true`. This allows PIT to proceed even if a test fails during PIT's own mutation-free baseline verification. All excluded test classes listed above are the ones that fail without mutation due to Java 21 module restrictions. The baseline test suite (for coverage map generation) passes without failures -- `skipFailingTests` only affects PIT's internal execution.
+
 ### Validation: HashCodeBuilder
 
 To verify that the sampling and exclusion criteria do not introduce bias, we ran PIT separately on `HashCodeBuilder` (one of the highest-LOC classes, 809 lines). Result: **103 KILLED mutations, 100% inclusiveness**. This confirms the evaluation is not cherry-picking easy classes.

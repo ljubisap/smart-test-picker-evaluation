@@ -14,7 +14,7 @@
 
 ```bash
 cd /path/to/smart-test-picker-working
-git checkout sap/main
+git checkout 50b44591fe7e  # pinned for this evaluation
 ./gradlew publishToMavenLocal
 ```
 

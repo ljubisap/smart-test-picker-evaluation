@@ -105,9 +105,6 @@ def run_pit_for_class(mvn, project_dir, results_dir, fqn, target_tests, loc, ind
 
     except subprocess.TimeoutExpired:
         elapsed = time.time() - start
-        # Kill only the child process tree, not unrelated PIT processes
-        if hasattr(result, 'pid'):
-            os.system(f"pkill -P {result.pid} 2>/dev/null")
         log(f"[{index}/{total}] TIMEOUT: {fqn} ({elapsed:.0f}s)", log_file)
         return {"fqn": fqn, "status": "TIMEOUT", "elapsed_s": elapsed}
 
