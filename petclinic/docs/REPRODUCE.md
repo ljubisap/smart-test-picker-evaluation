@@ -101,7 +101,7 @@ Expected:
 |----------|--------|-------------|
 | Coverage (plugin) | 100.00% | 9.7 |
 | Class-level only | 100.00% | 18.4 |
-| Random(k=per-mutation) | 37.23% | 9.7 |
+| Random(k=per-mutation) | 35.96% | 9.7 |
 
 ## Verifying Reproduction
 

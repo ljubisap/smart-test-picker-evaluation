@@ -54,7 +54,7 @@ python3 scripts/04_baselines.py --project-dir /path/to/spring-petclinic
 petclinic/
 |-- README.md                   # This file
 |-- config/
-|   |-- sample_classes.json     # All classes in configured scope (17 mutated, 14 with killed mutants)
+|   |-- sample_classes.json     # All 14 classes with at least one KILLED mutation
 |   |-- pitest.gradle           # PIT Gradle plugin config (copy-paste ready)
 |   `-- pitest_config.md        # Human-readable config documentation
 |-- scripts/
@@ -85,6 +85,6 @@ petclinic/
 |----------|--------|---------------|--------------|
 | **Coverage (plugin)** | **100.00%** | **18.70%** | **9.7** |
 | Class-level only | 100.00% | 35.29% | 18.4 |
-| Random(k=per-mutation) | 37.23% | 18.70% | 9.7 |
+| Random(k=per-mutation) | 35.96% +/- 2.90 | 18.70% | 9.7 |
 
-The plugin achieves perfect safety while selecting less than half the tests that class-level-only would select. Random selection at the same budget achieves only ~37% safety.
+The plugin achieves 100% killed-mutant inclusiveness within the evaluated 52-test scope while selecting fewer than half as many tests as the class-level-only selector. Random selection at the same per-mutation budget achieves 35.96% mean inclusiveness over 1000 trials.

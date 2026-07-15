@@ -36,14 +36,14 @@ pitest {
 | `targetClasses` | `petclinic.*` | All production classes |
 | `targetTests` | `petclinic.*` | All test classes in scope |
 | `excludedTestClasses` | 4 integration test classes | Require Docker, not unit tests |
-| `fullMutationMatrix` | `true` | Run ALL tests against each mutation (not just until first kill) |
+| `fullMutationMatrix` | `true` | Continue after first kill to record additional PIT-reported killing tests |
 | `mutators` | `DEFAULTS` | Standard PIT mutator set |
 | `timestampedReports` | `false` | Fixed output path (no date subdirs) |
 | `threads` | `4` | Parallel mutation testing |
 
 ## Why fullMutationMatrix=true
 
-Without this flag, PIT stops testing a mutation after the first killing test. With it enabled, PIT runs every test against every mutation  - giving us the complete `killingTests` set needed for safety evaluation.
+Without this flag, PIT stops after the first killing test. With it enabled, PIT continues processing and records additional PIT-reported killing tests within the configured test scope. PIT documents this as a partially supported feature.
 
 ## Excluded Test Classes
 
