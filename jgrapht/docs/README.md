@@ -134,6 +134,6 @@ jgrapht/
 | Mutations (KILLED) | 94 | 772 | 517 |
 | Safety | 100% | 99.87% | 99.81% |
 | Test Reduction | 81.30% | 99.64% | 96.69% |
-| Avg Selected | 9.7 | 16.7 | 76.4 |
+| Avg Selected | 9.7 | 17.0 | 76.4 |
 | Build system | Gradle | Maven | Maven |
 | JPMS | No | No | Yes |

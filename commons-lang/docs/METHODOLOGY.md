@@ -13,7 +13,7 @@ This evaluation uses **PIT mutation testing** as ground truth to validate the sa
    - Runs ALL scoped tests against EACH mutation (not just until first kill)
    - Records complete killing test set per mutation
 
-2. **Per-class execution**  - Each class runs independently with `targetTests` scoped to its subpackage, preventing intractable test space (4589 tests x N mutations).
+2. **Per-class execution**  - Each class runs independently with `targetTests` scoped to its subpackage, preventing intractable test space (4692 tests x N mutations).
 
 3. **KILLED mutations only**  - Only mutations detected by at least one test are used for safety validation (surviving mutations have no T_killing to compare against).
 
@@ -98,7 +98,7 @@ To verify that the sampling and exclusion criteria do not introduce bias, we ran
 
 ### Why Subpackage Scoping
 
-Running PIT with `targetTests=org.apache.commons.lang3.*` (all 4589 tests) is intractable  - PIT's coverage scan phase alone takes 45+ minutes per class. Scoping to the subpackage (`org.apache.commons.lang3.math.*` for Fraction) reduces to ~5 minutes while maintaining validity: tests in other subpackages are unlikely to cover a specific class's internals.
+Running PIT with `targetTests=org.apache.commons.lang3.*` (all 4692 tests) is intractable  - PIT's coverage scan phase alone takes 45+ minutes per class. Scoping to the subpackage (`org.apache.commons.lang3.math.*` for Fraction) reduces to ~5 minutes while maintaining validity: tests in other subpackages are unlikely to cover a specific class's internals.
 
 This is safe because JaCoCo's coverage map captures actual runtime dependencies at the method level  - if a test from another subpackage exercises a class, it will appear in the coverage map and be selected. The PIT scoping only restricts which tests PIT considers as potential killing tests, not which tests the plugin would select.
 

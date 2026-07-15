@@ -10,7 +10,7 @@ Replication package for evaluating the **Smart Test Picker** regression test sel
 | Class-level only | 99.87% | 1.08% | 98.92% |
 | Random (k=per-mutation) | 1.94% | 0.36% | 99.64% |
 
-- **772 KILLED mutations** across 21 classes (4589 tests in coverage map)
+- **772 KILLED mutations** across 21 classes (4692 tests in coverage map)
 - **1 unsafe mutation**  - `FieldUtils.removeFinalModifier` (exception-path coverage gap)
 - Method-level selection selects approximately 3x fewer tests than class-level (avg 17 vs 49) at identical measured safety
 
@@ -64,7 +64,7 @@ python3 scripts/04_baselines.py --project-dir /path/to/commons-lang
 
 - **Project:** Apache Commons Lang 3.21.0-SNAPSHOT
 - **Commit:** `8538458e7aeb1455a5942f60fe0b4930da6c5d68`
-- **Test suite:** 4589 test methods (JUnit 5)
+- **Test suite:** 4692 test methods (JUnit 5)
 - **Sample:** 21 classes, curated stratified (1-2 per subpackage, see [METHODOLOGY.md](METHODOLOGY.md))
 
 ## Methodology

@@ -100,11 +100,11 @@ print('All checks passed.')
 
 | Metric | Value |
 |--------|-------|
-| Tests in coverage map | 4589 |
+| Tests in coverage map | 4692 |
 | KILLED mutations | 772 |
 | Classes evaluated | 21 |
 | Inclusiveness (Safety) | 99.87% |
-| Avg selection size | 16.7 tests |
+| Avg selection size | 17.0 tests |
 | Selection rate | 0.36% |
 | Test reduction | 99.64% |
 | Unsafe mutations | 1 |

@@ -56,7 +56,7 @@ Compare against:
 | Sampling | Stratified random (21/~200 classes) | All classes (small project) |
 | PIT execution | Per-class (subpackage scoped) | All at once (tractable) |
 | PIT output | Per-class dirs with `mutations.xml` | Single `mutations.xml` |
-| Test count | 4589 | 52 |
+| Test count | 4692 | 52 |
 | PIT runtime | ~5 min per class | ~2 min total |
 
 ## Scope of Mutations

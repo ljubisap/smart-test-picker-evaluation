@@ -24,7 +24,7 @@ Pilot benchmark for the Smart Test Picker mutation-based safety evaluation.
 
 ### Why These Differences?
 
-**Single mutations.xml:** PetClinic has only 52 tests. PIT runs all tests against all mutations in one pass (~2 min). Per-class scoping is unnecessary  - it's a tractability optimization for large projects like commons-lang (4589 tests).
+**Single mutations.xml:** PetClinic has only 52 tests. PIT runs all tests against all mutations in one pass (~2 min). Per-class scoping is unnecessary  - it's a tractability optimization for large projects like commons-lang (4692 tests).
 
 **Coverage map included:** The coverage map is 80 KB (52 tests). Including it enables `03_evaluate.py` and `04_baselines.py` to run without Step 1 (no build required for result verification). For commons-lang, the map is too large (~15 MB) to commit.
 

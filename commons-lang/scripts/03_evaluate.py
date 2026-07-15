@@ -125,10 +125,33 @@ def main():
     total_tests = len(test_mappings)
     commit = coverage_data.get("metadata", {}).get("commitId", "unknown")
 
+    # Build reverse lookup: base name (without hash suffix) -> list of full map keys
+    # This handles the session ID format: SimpleClass#method_hash
+    base_to_keys = defaultdict(set)
+    for key in test_mappings:
+        # Strip _<7-char-hex> suffix if present
+        if '_' in key and len(key.rsplit('_', 1)[-1]) == 7:
+            last = key.rsplit('_', 1)[-1]
+            if all(c in '0123456789abcdef' for c in last):
+                base = key.rsplit('_', 1)[0]
+                base_to_keys[base].add(key)
+                continue
+        base_to_keys[key].add(key)
+
     mutations = load_mutations(results_dir)
     if not mutations:
         print("ERROR: No mutations found in results/per-class/")
         sys.exit(1)
+
+    # Resolve killing test names to coverage map keys
+    for mut in mutations:
+        resolved = set()
+        for kt in mut["killingTests"]:
+            if kt in test_mappings:
+                resolved.add(kt)
+            elif kt in base_to_keys:
+                resolved.update(base_to_keys[kt])
+        mut["killingTests"] = resolved
 
     # Evaluate
     safe_count = 0

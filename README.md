@@ -11,7 +11,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 
 | Project | Tests | Mutations | Safety | Reduction | Avg Sel. | Status | Folder |
 |---------|-------|-----------|--------|-----------|----------|--------|--------|
-| Apache Commons Lang | 4589 | 772 | 99.87% | 99.64% | 16.7 | Done | [commons-lang/](commons-lang/) |
+| Apache Commons Lang | 4692 | 772 | 99.87% | 99.64% | 17.0 | Done | [commons-lang/](commons-lang/) |
 | JGraphT | 2308 | 517 | 99.81% | 96.69% | 76.4 | Done | [jgrapht/](jgrapht/) |
 | Spring Framework (spring-core) | 3624 | 454 | 97.58% | 97.78% | 80.3 | Done | [spring-core/](spring-core/) |
 | Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.7 | Done (pilot) | [petclinic/](petclinic/) |
@@ -34,7 +34,7 @@ smart-test-picker-evaluation/
 |-- README.md               # This file
 |-- LICENSE                  # Apache License 2.0
 |-- .gitignore
-|-- commons-lang/           # Benchmark: Apache Commons Lang (Maven, 4589 tests)
+|-- commons-lang/           # Benchmark: Apache Commons Lang (Maven, 4692 tests)
 |   |-- config/             # Sampling config, PIT Maven profile
 |   |-- scripts/            # Numbered evaluation scripts (00-04)
 |   |-- results/            # Raw PIT output + aggregated metrics
