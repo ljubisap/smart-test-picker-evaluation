@@ -96,14 +96,13 @@ def load_mutations(results_dir):
                 n = normalize_pit_test_name(pit_id)
                 if n:
                     killing_tests.add(n)
-            # All KILLED mutations are loaded; empty killing_tests will be caught at resolution
-                mutations.append({
-                    "mutatedClass": mut.findtext("mutatedClass"),
-                    "mutatedMethod": mut.findtext("mutatedMethod"),
-                    "lineNumber": mut.findtext("lineNumber"),
-                    "mutator": mut.findtext("mutator"),
-                    "killingTests": killing_tests,
-                })
+            mutations.append({
+                "mutatedClass": mut.findtext("mutatedClass"),
+                "mutatedMethod": mut.findtext("mutatedMethod"),
+                "lineNumber": mut.findtext("lineNumber"),
+                "mutator": mut.findtext("mutator"),
+                "killingTests": killing_tests,
+            })
     return mutations
 
 
@@ -158,7 +157,7 @@ def main():
                 resolved.update(base_to_keys[kt])
         resolved_killing_count += len(resolved)
         if not resolved and mut.get("killingTests"):
-            unresolved_ids.append(f"{mut["mutatedClass"]}.{mut["mutatedMethod"]}")
+            unresolved_ids.append(f"{mut['mutatedClass']}.{mut['mutatedMethod']}")
         mut["killingTests"] = resolved
 
     if unresolved_ids:

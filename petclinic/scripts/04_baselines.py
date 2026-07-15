@@ -64,12 +64,11 @@ def load_mutations(results_dir):
                 n = normalize_pit_test_name(pit_id)
                 if n:
                     killing_tests.add(n)
-            # All KILLED mutations loaded; empty killing_tests caught at resolution
-                mutations.append({
-                    "mutatedClass": mut.findtext("mutatedClass"),
-                    "mutatedMethod": mut.findtext("mutatedMethod"),
-                    "killingTests": killing_tests,
-                })
+            mutations.append({
+                "mutatedClass": mut.findtext("mutatedClass"),
+                "mutatedMethod": mut.findtext("mutatedMethod"),
+                "killingTests": killing_tests,
+            })
         return mutations
 
     # Fall back to per-class directory structure
@@ -92,12 +91,11 @@ def load_mutations(results_dir):
                 n = normalize_pit_test_name(pit_id)
                 if n:
                     killing_tests.add(n)
-            # All KILLED mutations loaded; empty killing_tests caught at resolution
-                mutations.append({
-                    "mutatedClass": mut.findtext("mutatedClass"),
-                    "mutatedMethod": mut.findtext("mutatedMethod"),
-                    "killingTests": killing_tests,
-                })
+            mutations.append({
+                "mutatedClass": mut.findtext("mutatedClass"),
+                "mutatedMethod": mut.findtext("mutatedMethod"),
+                "killingTests": killing_tests,
+            })
     return mutations
 
 

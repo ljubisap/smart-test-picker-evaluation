@@ -157,7 +157,7 @@ def main():
                 resolved.update(base_to_keys[kt])
         resolved_killing_count += len(resolved)
         if not resolved and mut.get("killingTests"):
-            unresolved_ids.append(f"{mut["mutatedClass"]}.{mut["mutatedMethod"]}")
+            unresolved_ids.append(f"{mut['mutatedClass']}.{mut['mutatedMethod']}")
         mut["killingTests"] = resolved
 
     if unresolved_ids:

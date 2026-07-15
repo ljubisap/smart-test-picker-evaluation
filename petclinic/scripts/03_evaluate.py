@@ -128,6 +128,14 @@ def main():
         print("ERROR: No KILLED mutations found in mutations.xml")
         sys.exit(1)
 
+    # Validate: check all killing tests can be found in coverage map
+    unresolved_ids = []
+    for mut in mutations:
+        resolved = mut["killingTests"] & set(test_mappings.keys())
+        if not resolved and mut["killingTests"]:
+            unresolved_ids.append(f"{mut['mutatedClass']}.{mut['mutatedMethod']}")
+        mut["killingTests"] = resolved
+
     if unresolved_ids:
         print(f"ERROR: {len(unresolved_ids)} mutations have no resolved killing tests:")
         for uid in unresolved_ids[:5]:
