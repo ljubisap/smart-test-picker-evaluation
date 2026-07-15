@@ -1,0 +1,592 @@
+{
+  "byProject": {
+    "commons-lang": {
+      "mutations": [
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "FieldUtilsTest#testRemoveFinalModifierNullPointerException",
+              "rawPitId": "org.apache.commons.lang3.reflect.FieldUtilsTest.[engine:junit-jupiter]/[class:org.apache.commons.lang3.reflect.FieldUtilsTest]/[method:testRemoveFinalModifierNullPointerException()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "FieldUtilsTest#testRemoveFinalModifierNullPointerException_242d660",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [],
+                  "targetClassPresent": false,
+                  "type": "C"
+                }
+              ]
+            }
+          ],
+          "line": 563,
+          "mutatedClass": "org.apache.commons.lang3.reflect.FieldUtils",
+          "mutatedMethod": "removeFinalModifier",
+          "mutationId": "commons-lang|org.apache.commons.lang3.reflect.FieldUtils|removeFinalModifier|(Ljava/lang/reflect/Field;)V|563|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=commons-lang/results/per-class/org.apache.commons.lang3.reflect.FieldUtils/mutations.xml:40",
+          "mutationTypes": [
+            "C"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        }
+      ],
+      "unsafeCount": 1
+    },
+    "jgrapht": {
+      "mutations": [
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2",
+              "rawPitId": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest]/[method:testGetTour2()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP#<init>"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "A"
+                }
+              ]
+            },
+            {
+              "pitNormalized": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0",
+              "rawPitId": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest]/[method:testGetTour0()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP#<init>"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "A"
+                }
+              ]
+            }
+          ],
+          "line": 97,
+          "mutatedClass": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+          "mutatedMethod": "getTour",
+          "mutationId": "jgrapht|org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP|getTour|(Lorg/jgrapht/Graph;)Lorg/jgrapht/GraphPath;|97|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=jgrapht/results/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml:1",
+          "mutationTypes": [
+            "A"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": true
+        }
+      ],
+      "unsafeCount": 1
+    },
+    "spring-core": {
+      "mutations": [
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "TypeDescriptorTests#upCastNotSuper",
+              "rawPitId": "org.springframework.core.convert.TypeDescriptorTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.TypeDescriptorTests]/[method:upCastNotSuper()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "TypeDescriptorTests#upCastNotSuper",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.core.convert.TypeDescriptor#<init>",
+                    "org.springframework.core.convert.TypeDescriptor#getType"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "B"
+                }
+              ]
+            }
+          ],
+          "line": 235,
+          "mutatedClass": "org.springframework.core.convert.TypeDescriptor",
+          "mutatedMethod": "upcast",
+          "mutationId": "spring-core|org.springframework.core.convert.TypeDescriptor|upcast|(Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;|235|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml:121",
+          "mutationTypes": [
+            "B"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass",
+              "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertIllegalArgumentNullTargetTypeFromClass()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.core.convert.support.GenericConversionService#<init>"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "A"
+                }
+              ]
+            },
+            {
+              "pitNormalized": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType",
+              "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertFromClassSourceTypeToNullTargetType()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.core.convert.support.GenericConversionService#<init>"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "A"
+                }
+              ]
+            }
+          ],
+          "line": 133,
+          "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+          "mutatedMethod": "canConvert",
+          "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Ljava/lang/Class;Ljava/lang/Class;)Z|133|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:17",
+          "mutationTypes": [
+            "A"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": true
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType",
+              "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertFromTypeDescriptorSourceTypeToNullTargetType()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.core.convert.support.GenericConversionService#<init>"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "A"
+                }
+              ]
+            },
+            {
+              "pitNormalized": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor",
+              "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.core.convert.support.GenericConversionService#<init>"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "A"
+                }
+              ]
+            }
+          ],
+          "line": 140,
+          "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+          "mutatedMethod": "canConvert",
+          "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z|140|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:22",
+          "mutationTypes": [
+            "A"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": true
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "GenericConversionServiceTests#convertToNullTargetClass",
+              "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:convertToNullTargetClass()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "GenericConversionServiceTests#convertToNullTargetClass",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.core.convert.support.GenericConversionService#<init>"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "A"
+                }
+              ]
+            }
+          ],
+          "line": 164,
+          "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+          "mutatedMethod": "convert",
+          "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;|164|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:24",
+          "mutationTypes": [
+            "A"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": true
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "GenericConversionServiceTests#convertToNullTargetTypeDescriptor",
+              "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:convertToNullTargetTypeDescriptor()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "GenericConversionServiceTests#convertToNullTargetTypeDescriptor",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.core.convert.support.GenericConversionService#<init>"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "A"
+                }
+              ]
+            }
+          ],
+          "line": 171,
+          "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+          "mutatedMethod": "convert",
+          "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;|171|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:31",
+          "mutationTypes": [
+            "A"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": true
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable",
+              "rawPitId": "org.springframework.core.task.SimpleAsyncTaskExecutorTests.[engine:junit-jupiter]/[class:org.springframework.core.task.SimpleAsyncTaskExecutorTests]/[method:throwsExceptionWhenSuppliedWithNullRunnable()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.core.task.SimpleAsyncTaskExecutor#<init>",
+                    "org.springframework.core.task.SimpleAsyncTaskExecutor#close"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "B"
+                }
+              ]
+            }
+          ],
+          "line": 264,
+          "mutatedClass": "org.springframework.core.task.SimpleAsyncTaskExecutor",
+          "mutatedMethod": "execute",
+          "mutationId": "spring-core|org.springframework.core.task.SimpleAsyncTaskExecutor|execute|(Ljava/lang/Runnable;J)V|264|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml:14",
+          "mutationTypes": [
+            "B"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "AssertTests#isAssignableWithNullSupertype",
+              "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isAssignableWithNullSupertype()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "AssertTests#isAssignableWithNullSupertype",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.util.Assert#notNull"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "B"
+                }
+              ]
+            }
+          ],
+          "line": 539,
+          "mutatedClass": "org.springframework.util.Assert",
+          "mutatedMethod": "isAssignable",
+          "mutationId": "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)V|539|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:25",
+          "mutationTypes": [
+            "B"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier",
+              "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isAssignableWithNullSupertypeAndMessageSupplier()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.util.Assert#notNull"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "B"
+                }
+              ]
+            }
+          ],
+          "line": 558,
+          "mutatedClass": "org.springframework.util.Assert",
+          "mutatedMethod": "isAssignable",
+          "mutationId": "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/util/function/Supplier;)V|558|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:29",
+          "mutationTypes": [
+            "B"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "AssertTests#isInstanceOfWithNullType",
+              "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isInstanceOfWithNullType()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "AssertTests#isInstanceOfWithNullType",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.util.Assert#notNull"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "B"
+                }
+              ]
+            }
+          ],
+          "line": 490,
+          "mutatedClass": "org.springframework.util.Assert",
+          "mutatedMethod": "isInstanceOf",
+          "mutationId": "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;)V|490|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:33",
+          "mutationTypes": [
+            "B"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier",
+              "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isInstanceOfWithNullTypeAndMessageSupplier()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.util.Assert#notNull"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "B"
+                }
+              ]
+            }
+          ],
+          "line": 509,
+          "mutatedClass": "org.springframework.util.Assert",
+          "mutatedMethod": "isInstanceOf",
+          "mutationId": "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/util/function/Supplier;)V|509|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:36",
+          "mutationTypes": [
+            "B"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "ExponentialBackOffTests#invalidInterval",
+              "rawPitId": "org.springframework.util.ExponentialBackOffTests.[engine:junit-jupiter]/[class:org.springframework.util.ExponentialBackOffTests]/[method:invalidInterval()]",
+              "resolutionMode": "direct",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "ExponentialBackOffTests#invalidInterval",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.util.backoff.ExponentialBackOff#<init>",
+                    "org.springframework.util.backoff.ExponentialBackOff#checkMultiplier",
+                    "org.springframework.util.backoff.ExponentialBackOff#lambda$checkMultiplier$0"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "B"
+                }
+              ]
+            }
+          ],
+          "line": 141,
+          "mutatedClass": "org.springframework.util.backoff.ExponentialBackOff",
+          "mutatedMethod": "setMultiplier",
+          "mutationId": "spring-core|org.springframework.util.backoff.ExponentialBackOff|setMultiplier|(D)V|141|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml:10",
+          "mutationTypes": [
+            "B"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        }
+      ],
+      "unsafeCount": 11
+    }
+  },
+  "inputs": {
+    "coverageMaps": {
+      "commons-lang": {
+        "commit": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
+        "sha256": "75198f3e41ccbfd090295c7a1defa02380cde7618e9ac71cd7b7fa9b35f04384",
+        "tests": 4692
+      },
+      "jgrapht": {
+        "commit": "719212a1fe0bbbf62210159f50920a71e80b73ed",
+        "sha256": "7fb624b149c9769303a88d6f6cda63f04e7a734f22a02106cd161b9dae2f03e6",
+        "tests": 2308
+      },
+      "petclinic": {
+        "commit": "e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f",
+        "sha256": "9cc870f7b555a43e1ad27f6c9ce96a93185a9ccc125f59b7765535f44c0ba31d",
+        "tests": 52
+      },
+      "spring-core": {
+        "commit": "99a366baf6640b275d08dde60f05da719139bb6a",
+        "sha256": "fff54cf01b9105abcffd78771fd25b9f62d1f1582ce57a034aead5daa8162926",
+        "tests": 3624
+      }
+    },
+    "pitResults": {
+      "commons-lang": {
+        "aggregateSha256": "c66099edd362066828194b106527bf9c0a7f92a768b14dfa9e39bf0d091aca6a",
+        "fileCount": 21,
+        "files": [
+          "commons-lang/results/per-class/org.apache.commons.lang3.arch.Processor/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.builder.HashCodeBuilder/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.compare.ComparableUtils/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.concurrent.locks.LockingVisitors/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.event.EventListenerSupport/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.event.EventUtils/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.math.Fraction/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.math.IEEE754rUtils/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.mutable.MutableFloat/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.mutable.MutableObject/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.reflect.FieldUtils/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.reflect.MethodUtils/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.stream.LangCollectors/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.stream.Streams/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.text.FormattableUtils/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.text.translate.EntityArrays/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.text.translate.NumericEntityEscaper/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.tuple.ImmutablePair/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.tuple.Pair/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.util.FluentBitSet/mutations.xml",
+          "commons-lang/results/per-class/org.apache.commons.lang3.util.IterableStringTokenizer/mutations.xml"
+        ],
+        "killedMutations": 772
+      },
+      "jgrapht": {
+        "aggregateSha256": "c915b60b0b7edadfe2e4286cd215461d44b334e7717c73ca24811f49fbcebe0f",
+        "fileCount": 20,
+        "files": [
+          "jgrapht/results/per-class/org.jgrapht.Graphs/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.clustering.LabelPropagationClustering/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.color.GreedyColoring/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.drawing.model.ListenableLayoutModel2D/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.flow.PushRelabelMFImpl/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.lca.BinaryLiftingLCAFinder/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml.gz",
+          "jgrapht/results/per-class/org.jgrapht.alg.scoring.ClosenessCentrality/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.util.UnorderedPair/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.alg.vertexcover.RecursiveExactVCImpl/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.generate.netgen.Distributor/mutations.xml",
+          "jgrapht/results/per-class/org.jgrapht.graph.specifics.UndirectedSpecifics/mutations.xml"
+        ],
+        "killedMutations": 517
+      },
+      "petclinic": {
+        "aggregateSha256": "e736b7617f1b159fab0d25a4e0ba1eaba1828af9e44eaf5eda9b51b1b4ae2547",
+        "fileCount": 1,
+        "files": [
+          "petclinic/results/mutations.xml"
+        ],
+        "killedMutations": 94
+      },
+      "spring-core": {
+        "aggregateSha256": "d6ec4175c35d12d721b661917b6347f3f5041d6d3ef2eb9e9ded1630f8ba81b2",
+        "fileCount": 18,
+        "files": [
+          "spring-core/results/per-class/org.springframework.core.annotation.RepeatableContainers/mutations.xml",
+          "spring-core/results/per-class/org.springframework.core.codec.AbstractDataBufferDecoder/mutations.xml",
+          "spring-core/results/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml",
+          "spring-core/results/per-class/org.springframework.core.convert.converter.ConvertingComparator/mutations.xml",
+          "spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml",
+          "spring-core/results/per-class/org.springframework.core.env.PropertySource/mutations.xml",
+          "spring-core/results/per-class/org.springframework.core.log.LogMessage/mutations.xml",
+          "spring-core/results/per-class/org.springframework.core.style.DefaultValueStyler/mutations.xml",
+          "spring-core/results/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml",
+          "spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml",
+          "spring-core/results/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml",
+          "spring-core/results/per-class/org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter/mutations.xml",
+          "spring-core/results/per-class/org.springframework.util.Assert/mutations.xml",
+          "spring-core/results/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml",
+          "spring-core/results/per-class/org.springframework.util.concurrent.ListenableFutureCallbackRegistry/mutations.xml",
+          "spring-core/results/per-class/org.springframework.util.function.ThrowingConsumer/mutations.xml",
+          "spring-core/results/per-class/org.springframework.util.unit.DataSize/mutations.xml",
+          "spring-core/results/per-class/org.springframework.util.xml.AbstractStaxXMLReader/mutations.xml"
+        ],
+        "killedMutations": 454
+      }
+    }
+  },
+  "invariants": {
+    "classPresentNoMethodsAmongUnsafeEntries": 0,
+    "mutatedMethodPresentAmongUnsafeEntries": 0
+  },
+  "resolutionSummary": {
+    "idOccurrencesWithMultipleCoverageEntries": 57,
+    "idOccurrencesWithSingleCoverageEntry": 172529,
+    "maxEntriesPerIdOccurrence": 3,
+    "pitKillingIdOccurrences": 172586,
+    "resolvedCoverageEntryOccurrences": 172667,
+    "uniqueNormalizedPitKillingIds": 2464,
+    "uniqueRawPitKillingIds": 4854
+  },
+  "schemaVersion": 1,
+  "totalUnsafeMutations": 13,
+  "typeSummary": {
+    "byResolvedEntry": {
+      "A": 8,
+      "B": 7,
+      "C": 1
+    },
+    "exclusiveMutationTypes": {
+      "A_only": 5,
+      "B_only": 7,
+      "C_only": 1
+    },
+    "mutationCountsContainingType": {
+      "A": 5,
+      "B": 7,
+      "C": 1
+    }
+  }
+}

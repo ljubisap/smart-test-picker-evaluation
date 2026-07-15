@@ -1,0 +1,67 @@
+[
+  {
+    "mutationId": "commons-lang|org.apache.commons.lang3.reflect.FieldUtils|removeFinalModifier|(Ljava/lang/reflect/Field;)V|563|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=commons-lang/results/per-class/org.apache.commons.lang3.reflect.FieldUtils/mutations.xml:40",
+    "cause": "NPE before any FieldUtils probe activates (target class absent from coverage)",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "jgrapht|org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP|getTour|(Lorg/jgrapht/Graph;)Lorg/jgrapht/GraphPath;|97|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=jgrapht/results/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml:1",
+    "cause": "checkGraph() guard throws before getTour probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.convert.TypeDescriptor|upcast|(Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;|235|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml:121",
+    "cause": "Assert.isAssignable guard throws before upcast probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Ljava/lang/Class;Ljava/lang/Class;)Z|133|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:17",
+    "cause": "Assert.notNull(target) throws before canConvert probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z|140|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:22",
+    "cause": "Assert.notNull(target) throws before canConvert probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;|164|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:24",
+    "cause": "Assert.notNull(target) throws before convert probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;|171|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:31",
+    "cause": "Assert.notNull(target) throws before convert probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.task.SimpleAsyncTaskExecutor|execute|(Ljava/lang/Runnable;J)V|264|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml:14",
+    "cause": "Assert.notNull(task) throws before execute probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)V|539|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:25",
+    "cause": "Assert.notNull/isAssignable throws before caller method probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/util/function/Supplier;)V|558|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:29",
+    "cause": "Assert.notNull/isAssignable throws before caller method probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;)V|490|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:33",
+    "cause": "Assert.notNull/isAssignable throws before caller method probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/util/function/Supplier;)V|509|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:36",
+    "cause": "Assert.notNull/isAssignable throws before caller method probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-core|org.springframework.util.backoff.ExponentialBackOff|setMultiplier|(D)V|141|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml:10",
+    "cause": "checkMultiplier() guard throws before setMultiplier probe fires",
+    "category": "early-exception-before-probe"
+  }
+]

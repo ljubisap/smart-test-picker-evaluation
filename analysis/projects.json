@@ -1,0 +1,41 @@
+{
+  "projects": [
+    {
+      "name": "commons-lang",
+      "coverageMap": "commons-lang/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "commons-lang/results/per-class/*/mutations.xml"
+      ],
+      "mutationFormat": "per-class",
+      "expected": {"totalTests": 4692, "killedMutations": 772, "safeMutations": 771, "unsafeMutations": 1}
+    },
+    {
+      "name": "jgrapht",
+      "coverageMap": "jgrapht/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "jgrapht/results/per-class/*/mutations.xml",
+        "jgrapht/results/per-class/*/mutations.xml.gz"
+      ],
+      "mutationFormat": "per-class",
+      "expected": {"totalTests": 2308, "killedMutations": 517, "safeMutations": 516, "unsafeMutations": 1}
+    },
+    {
+      "name": "spring-core",
+      "coverageMap": "spring-core/results/test-coverage-map.json",
+      "pitFiles": [
+        "spring-core/results/per-class/*/mutations.xml"
+      ],
+      "mutationFormat": "per-class",
+      "expected": {"totalTests": 3624, "killedMutations": 454, "safeMutations": 443, "unsafeMutations": 11}
+    },
+    {
+      "name": "petclinic",
+      "coverageMap": "petclinic/results/test-coverage-map.json",
+      "pitFiles": [
+        "petclinic/results/mutations.xml"
+      ],
+      "mutationFormat": "single-file",
+      "expected": {"totalTests": 52, "killedMutations": 94, "safeMutations": 94, "unsafeMutations": 0}
+    }
+  ]
+}
