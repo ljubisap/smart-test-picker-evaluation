@@ -68,7 +68,7 @@ This failure mode affects ANY JaCoCo-based per-test RTS tool, not just Smart Tes
 
 | Mutator Set | Inclusiveness | Mutations |
 |-------------|--------------|-----------|
-| All mutators (STRONGER) | 97.58% (443/454) | 454 |
+| All mutators (DEFAULTS) | 97.58% (443/454) | 454 |
 | Excluding VoidMethodCallMutator | 100.00% (415/415) | 415 |
 | VoidMethodCallMutator only | 71.79% (28/39) | 39 |
 

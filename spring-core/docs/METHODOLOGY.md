@@ -43,7 +43,7 @@ PIT 1.17.4 was run per-class via command-line interface against pre-compiled Gra
 - `fullMutationMatrix=true`  - all tests run against each mutation
 - `threads=4`
 - `timeoutConst=10000`
-- `mutators=STRONGER` (default PIT mutator set)
+- `mutators=DEFAULTS` (PIT default mutator group)
 - `targetTests` scoped to parent subpackage per class
 - JVM args: `--add-opens=java.base/java.lang=ALL-UNNAMED`
 

@@ -18,7 +18,7 @@ cd /path/to/smart-test-picker-working
 ./gradlew publishToMavenLocal
 ```
 
-Required: version 0.1.9+ with per-test JaCoCo instrumentation.
+Required: version 0.1.0 (commit 50b44591fe7e) with per-test JaCoCo instrumentation.
 
 ## Spring PetClinic Checkout
 

@@ -1,8 +1,8 @@
-# Failure Mode Analysis  - JGraphT
+# Failure Mode Analysis - JGraphT
 
 ## Summary
 
-Out of 517 KILLED mutations across 20 classes, exactly **1 mutation** was not safely covered by the plugin's selection. This documents the root cause and its implications.
+Out of 517 KILLED mutations across 20 classes, exactly **1 mutation** was not safely covered by the plugin's selection (inclusiveness: 99.81%). This documents the root cause.
 
 ## The Unsafe Mutation
 
@@ -11,91 +11,48 @@ Out of 517 KILLED mutations across 20 classes, exactly **1 mutation** was not sa
 | Class | `org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP` |
 | Method | `getTour` |
 | Line | 97 |
-| Killing Tests | `ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0`, `ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2` |
+| Mutator | `VoidMethodCallMutator` |
+| Mutation | Removed call to `checkGraph` (guard/validation method) |
+| Killing Tests | `testGetTour0`, `testGetTour2` |
 
-## Root Cause: Partial Method-Level Coverage Attribution
+## Classification: Type A (Constructor-Only Footprint)
 
-### What Happened
+The killing tests (`testGetTour0`, `testGetTour2`) cover the class but their method footprint on `ChristofidesThreeHalvesApproxMetricTSP` contains only `<init>`. The mutated method `getTour` is absent from their coverage.
 
-The class `ChristofidesThreeHalvesApproxMetricTSP` has 11 tests covering it, all from `ChristofidesThreeHalvesApproxMetricTSPTest`:
-- `testGetTour0` through `testGetTour10`
+This matches the exception-masked coverage pattern: the test calls `getTour()` which invokes `checkGraph()` (a validation method). `checkGraph` throws an exception before JaCoCo's probe for `getTour` fires, so JaCoCo records zero method coverage for `getTour` in these tests.
 
-JaCoCo recorded method-level coverage for `getTour` in 8 of these tests (`testGetTour3` through `testGetTour10`), but NOT in `testGetTour0` and `testGetTour2`.
+## Selection Algorithm Behavior
 
-### Why JaCoCo Doesn't Record Method Coverage for These Tests
+1. **Method-level match for `getTour`:** 8 tests (`testGetTour3`-`testGetTour10`) have method-level coverage for `getTour` and are selected
+2. **Killing tests `testGetTour0`, `testGetTour2`:** Cover the class but do NOT have `getTour` in their methods list (only `<init>`)
+3. **Class-level fallback:** Does not apply because other tests DO have method-level info for this class
+4. **Result:** Killing tests not selected -- unsafe
 
-The two "missing" tests (`testGetTour0`, `testGetTour2`) call `getTour()` but JaCoCo's per-test session does not register coverage at the method level for them. Possible causes:
+## This IS a Real False Negative
 
-1. **Early return path:** The tests may hit a short-circuit return before the instrumented method body executes meaningful lines
-2. **Exception-based invocation:** The test may trigger an exception in `getTour()` before JaCoCo's line probes fire
-3. **Coverage probe placement:** JaCoCo places probes at specific bytecode locations; certain control flow paths may not trigger the probe associated with `getTour`
+If a developer removes the `checkGraph()` call from `getTour()`:
+- Git diff marks `getTour` as changed
+- Plugin selects 8 tests that cover `getTour` via method-level match
+- All 8 pass (they provide valid graphs)
+- `testGetTour0` and `testGetTour2` (which test invalid-graph behavior) are NOT selected
+- Invalid-graph regression reaches main
 
-The tests DO cover the class (class-level coverage is present), but the specific method `getTour` is absent from their method coverage list.
+## Mitigation: Constructor-Only Footprint Rule
 
-### Selection Algorithm Behavior
+The constructor-only footprint rule resolves this case: since the killing tests have only `<init>` in their method footprint for this class, the rule adds them to the selection.
 
-1. **Method-level match for `getTour`:** Check if `ChristofidesThreeHalvesApproxMetricTSP#getTour` is in test's methods
-   - `testGetTour3-10`: YES -> selected OK
-   - `testGetTour0`, `testGetTour2`: NO -> not selected via method match
-2. **Class-level fallback:** Does this test cover the class BUT have no method info for it?
-   - `testGetTour0` covers the class, BUT other tests (testGetTour3-10) DO have method info for `ChristofidesThreeHalvesApproxMetricTSP` -> the class HAS method-level data -> fallback does NOT apply
-3. **Result:** `testGetTour0` and `testGetTour2` are NOT selected
+| Selector | Inclusiveness | Avg Selected |
+|----------|--------------|--------------|
+| Original | 99.81% (516/517) | 76.4 |
+| With constructor-only rule | 100.00% (517/517) | 98.3 |
 
-Since these are the only killing tests for this specific mutation (line 97), the mutation is marked unsafe.
+Cost: +21.9 additional tests selected on average.
 
-### Why This Is Not a Bug
+## Cross-Project Pattern
 
-The dual-granularity algorithm works correctly:
-- Method-level info exists for this class (8 tests have it)
-- Therefore the algorithm trusts method-level matching
-- But 2 tests that exercise the method have incomplete JaCoCo attribution
-- This is an inherent limitation of line-level instrumentation
+This is the same mechanism as spring-core's 11 false negatives and commons-lang's 1 false negative. All are caused by JaCoCo probe-based instrumentation not recording method coverage when an exception exits before the probe fires. This affects any JaCoCo-based per-test RTS tool.
 
-## Comparison with Commons Lang Failure
-
-| Aspect | Commons Lang | JGraphT |
-|--------|-------------|---------|
-| Class | `FieldUtils` | `ChristofidesThreeHalvesApproxMetricTSP` |
-| Method | `removeFinalModifier` | `getTour` |
-| Root Cause | Exception before first line probe | Incomplete method-level attribution |
-| Pattern | Exception-only path | Partial coverage among similar tests |
-| Impact | 1/772 (0.13%) | 1/517 (0.19%) |
-
-Both share the same structural cause: a test covers a class but JaCoCo does not attribute method-level coverage, and other tests DO have method-level info (preventing class-level fallback).
-
-## Implications
-
-### Frequency
-
-This failure mode requires ALL of:
-1. A test that exercises a method but JaCoCo doesn't record method-level coverage
-2. The method must be in a class where OTHER tests DO have method-level coverage (preventing class-level fallback)
-3. That test must be the ONLY killing test for a particular mutation
-
-This combination is extremely rare: 1/517 = 0.19%.
-
-### Cross-Project Consistency
-
-Across both evaluated projects:
-- Commons Lang: 99.87% safety (1/772 unsafe)
-- JGraphT: 99.81% safety (1/517 unsafe)
-
-The failure rate is consistent (0.13% vs 0.19%) and always caused by the same structural pattern.
-
-### Possible Mitigations
-
-| Approach | Trade-off |
-|----------|-----------|
-| Always include class-level fallback | Would select 2.7x more tests (206 vs 76 avg), defeating method-level precision |
-| Bytecode-level coverage (not line-level) | Requires different instrumentation, not supported by JaCoCo |
-| Hybrid: fallback if method has <=N covering tests | Adds heuristic complexity; threshold is arbitrary |
-| Accept 99.81% safety | Practical choice  - periodic full suite as safety net |
-
-### Recommendation
-
-Accept this as a known limitation. The 99.81% safety rate exceeds the typical RTS safety threshold in literature (95-99%). Running the full suite on merge to main provides complete safety while enjoying 96.69% test reduction on feature branches.
-
-## All Other Classes: 100% Safety
+## All Other Classes: 100% Inclusiveness
 
 The remaining 19 classes achieved perfect 100% inclusiveness:
 

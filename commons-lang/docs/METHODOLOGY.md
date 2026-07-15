@@ -142,7 +142,7 @@ For each mutation M, the random selector chooses k_M tests uniformly at random (
 
 ### Internal
 - PIT mutations approximate real faults; not all mutants correspond to realistic bugs
-- Subpackage scoping may miss cross-package killing tests (mitigated: coverage map captures actual runtime dependencies)
+- Subpackage scoping may miss cross-package killing tests
 
 ### External
 - Single project evaluation; results may not generalize to all Java projects

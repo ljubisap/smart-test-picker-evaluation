@@ -25,7 +25,7 @@ Output: `build/test-coverage-map.json` containing per-test class and method cove
 
 ### Phase 2: PIT Mutation Testing
 
-Run PIT with `fullMutationMatrix=true` to get complete killing test information:
+Run PIT with `fullMutationMatrix=true` to collect PIT-reported killing tests:
 
 ```bash
 ./gradlew pitest
@@ -53,7 +53,7 @@ Compare against:
 | Aspect | Commons Lang | PetClinic |
 |--------|-------------|-----------|
 | Build system | Maven | Gradle |
-| Sampling | Stratified random (21/~200 classes) | All classes (small project) |
+| Sampling | curated_stratified (21 classes) | All classes (small project) |
 | PIT execution | Per-class (subpackage scoped) | All at once (tractable) |
 | PIT output | Per-class dirs with `mutations.xml` | Single `mutations.xml` |
 | Test count | 4692 | 52 |
