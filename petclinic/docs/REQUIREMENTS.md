@@ -15,6 +15,7 @@ The plugin must be published to `mavenLocal` before running Step 1:
 
 ```bash
 cd /path/to/smart-test-picker-working
+git checkout 50b44591fe7e  # pinned for this evaluation
 ./gradlew publishToMavenLocal
 ```
 

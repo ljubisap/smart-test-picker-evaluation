@@ -128,7 +128,7 @@ Selects ALL tests that cover the changed class, ignoring method-level informatio
 
 ### Random(k=per-mutation)
 
-For each mutation M, the random selector chooses k_M tests uniformly at random where k_M equals the number of tests the proposed coverage-based selector would select for M. This ensures identical selection budget per mutation, eliminating size-based comparison bias. Seed: 42 + mutation_index.
+For each mutation M, the random selector chooses k_M tests uniformly at random where k_M equals the number of tests the proposed coverage-based selector would select for M. This ensures identical selection budget per mutation, eliminating size-based comparison bias. Seed: 42 + trial * N + mutation_index (1000 Monte Carlo trials with analytical expectation).
 
 ## Metrics
 

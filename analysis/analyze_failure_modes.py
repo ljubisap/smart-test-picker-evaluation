@@ -351,18 +351,16 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
 
 def main():
     parser = argparse.ArgumentParser(description="Failure taxonomy and mitigation analysis")
-    parser.add_argument("--write", action="store_true", help="Generate output files")
-    parser.add_argument("--verify", action="store_true", help="Verify against committed outputs")
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--write", action="store_true", help="Generate output files")
+    mode.add_argument("--verify", action="store_true", help="Verify against committed outputs")
     parser.add_argument("--commons-map", type=Path, default=None)
     parser.add_argument("--jgrapht-map", type=Path, default=None)
     parser.add_argument("--output-dir", type=Path, default=None)
     args = parser.parse_args()
 
-    if not args.write and not args.verify:
-        parser.error("Specify --write or --verify")
-
-    if args.verify and (args.commons_map or args.jgrapht_map):
-        parser.error("--verify does not allow coverage map overrides (uses committed inputs)")
+    if args.verify and (args.commons_map or args.jgrapht_map or args.output_dir):
+        parser.error("--verify always uses committed input and output artifacts; overrides are not allowed")
 
     # Load config
     config_path = REPO_ROOT / "analysis" / "projects.json"
@@ -382,8 +380,11 @@ def main():
     # Run analysis
     taxonomy, mitigation = run_analysis(REPO_ROOT, projects_config, overrides or None)
 
-    # Output
-    output_dir = args.output_dir or (REPO_ROOT / "results")
+    # Output -- verify always uses committed path
+    if args.verify:
+        output_dir = REPO_ROOT / "results"
+    else:
+        output_dir = args.output_dir or (REPO_ROOT / "results")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     taxonomy_path = output_dir / "failure_taxonomy.json"

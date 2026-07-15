@@ -112,7 +112,7 @@ PIT uses JUnit Platform unique IDs that differ from coverage map keys:
 |-----------|-----------|
 | `[class:pkg.FQN]/[method:name()]` | `SimpleClassName#name` |
 | `[class:pkg.FQN]/[nested-class:Inner]/[method:name()]` | `Inner#name` |
-| `[class:pkg.FQN]/[test-template:name(params)]/[test-template-invocation:#1]` | `FQN#name` |
+| `[class:pkg.FQN]/[test-template:name(params)]/[test-template-invocation:#1]` | `SimpleClassName#name` |
 
 Key rules:
 - Strip package prefix, use simple class name
