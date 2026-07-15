@@ -128,6 +128,12 @@ def main():
         print("ERROR: No KILLED mutations found in mutations.xml")
         sys.exit(1)
 
+    if unresolved_ids:
+        print(f"ERROR: {len(unresolved_ids)} mutations have no resolved killing tests:")
+        for uid in unresolved_ids[:5]:
+            print(f"  {uid}")
+        sys.exit(1)
+
     # Evaluate
     safe_count = 0
     unsafe_mutations = []

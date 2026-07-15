@@ -40,7 +40,7 @@ The Smart Test Picker Gradle plugin (`com.sap.oss.smart-test-picker:0.1.0`) was 
 PIT 1.17.4 was run per-class via command-line interface against pre-compiled Gradle output.
 
 **Configuration:**
-- `fullMutationMatrix=true`  - all tests run against each mutation
+- `fullMutationMatrix=true` - continues after first kill to record additional killing tests
 - `threads=4`
 - `timeoutConst=10000`
 - `mutators=DEFAULTS` (PIT default mutator group)

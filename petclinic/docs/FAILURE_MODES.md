@@ -14,7 +14,7 @@ Unlike Apache Commons Lang (which had 1 unsafe mutation due to an exception-path
 - Straightforward method coverage (no exception-only test paths)
 - Good test-to-production mapping (each controller has a dedicated test class)
 
-## Why 100% Was Expected
+## Why No Probe-Shadowed False Negative Was Observed
 
 The exception-path coverage gap that caused the single failure in commons-lang requires ALL of:
 

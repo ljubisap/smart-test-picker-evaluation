@@ -48,13 +48,13 @@ Two classes required non-standard test scoping:
 |----------|--------|-------------|----------------|----------------|
 | **Coverage (proposed)** | **99.81%** | 76.4 | 3.31% | **96.69%** |
 | Class-level only | 100.00% | 206.3 | 8.94% | 91.06% |
-| Random (k=per-mutation) | 27.85% | 76.4 | 3.31% | 96.69% |
+| Random (k=per-mutation) | 27.89% | 76.4 | 3.31% | 96.69% |
 
 ### Key Findings
 
 - The dual-granularity (method + class) selector achieves **99.81% safety** with **96.69% test reduction**  - one missed mutation out of 517 KILLED mutations across 20 classes.
 - Method-level selection provides **2.7x fewer tests** than class-level only (76.4 vs 206.3 avg selected) with only 0.19% safety loss.
-- Random selection at the same budget (76.4 tests) achieves only 27.85% safety  - proving coverage-based selection is non-trivial.
+- Random selection at the same budget (76.4 tests) achieves only 27.89% inclusiveness  - proving coverage-based selection is non-trivial.
 
 ### Unsafe Mutation Analysis
 

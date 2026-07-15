@@ -101,7 +101,7 @@ def main():
 
         verify_clean_test_run(project, mvn)
     else:
-        # When skipping tests, verify .exec files exist and are from current commit
+        # When skipping tests, verify .exec files exist (no commit verification)
         jacoco_dir = project / "target" / "jacoco"
         exec_files = list(jacoco_dir.glob("session_*.exec")) if jacoco_dir.exists() else []
         if not exec_files:

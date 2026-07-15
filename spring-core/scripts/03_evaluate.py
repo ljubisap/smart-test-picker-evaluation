@@ -96,7 +96,7 @@ def load_mutations(results_dir):
                 n = normalize_pit_test_name(pit_id)
                 if n:
                     killing_tests.add(n)
-            if killing_tests:
+            # All KILLED mutations are loaded; empty killing_tests will be caught at resolution
                 mutations.append({
                     "mutatedClass": mut.findtext("mutatedClass"),
                     "mutatedMethod": mut.findtext("mutatedMethod"),
@@ -160,6 +160,12 @@ def main():
         if not resolved and mut.get("killingTests"):
             unresolved_ids.append(f"{mut["mutatedClass"]}.{mut["mutatedMethod"]}")
         mut["killingTests"] = resolved
+
+    if unresolved_ids:
+        print(f"ERROR: {len(unresolved_ids)} mutations have no resolved killing tests:")
+        for uid in unresolved_ids[:5]:
+            print(f"  {uid}")
+        sys.exit(1)
 
     # Evaluate
     safe_count = 0
