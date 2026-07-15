@@ -96,7 +96,7 @@ The PIT profile also uses `skipFailingTests=true`. This allows PIT to proceed ev
 
 ### Validation: HashCodeBuilder
 
-To verify that the sampling and exclusion criteria do not introduce bias, we ran PIT separately on `HashCodeBuilder` (one of the highest-LOC classes, 809 lines). Result: **103 KILLED mutations, 100% inclusiveness**. This confirms the evaluation is not cherry-picking easy classes.
+To verify that the sampling and exclusion criteria do not introduce bias, we ran PIT separately on `HashCodeBuilder` (one of the highest-LOC classes, 809 lines). Result: **103 KILLED mutations, 100% inclusiveness**. This provides a robustness check but does not prove the absence of selection bias.
 
 ### Why Subpackage Scoping
 

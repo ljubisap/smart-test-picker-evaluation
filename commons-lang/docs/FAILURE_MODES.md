@@ -40,7 +40,7 @@ The mutation removes a void method call at the entry of `removeFinalModifier()`.
 
 ### Why JaCoCo Doesn't Record Coverage
 
-JaCoCo instruments bytecode at the line level. When an exception occurs at the very first instruction of a method (before any line counter is incremented), JaCoCo records **no coverage** for that test-method pair. The test DOES exercise the method, but JaCoCo's instrumentation model cannot observe it.
+JaCoCo instruments bytecode with probes and derives instruction, branch, line, and method counters from activated probes. When an exception occurs at the very first instruction of a method (before any line counter is incremented), JaCoCo records **no coverage** for that test-method pair. The test DOES exercise the method, but JaCoCo's instrumentation model cannot observe it.
 
 ### Coverage Map State
 
@@ -88,7 +88,7 @@ This is an inherent property of JaCoCo probe-based instrumentation, not a line-l
 
 ## Other Classes: 100% Safety
 
-All other 20 classes achieved perfect 100% inclusiveness, confirming the failure mode is specific to the exception-path scenario, not a systematic weakness.
+In this sampled evaluation, all other 20 classes achieved 100% inclusiveness. The only observed false negative followed the exception-path scenario.
 
 ## Normalization Bugs Found and Fixed During Development
 

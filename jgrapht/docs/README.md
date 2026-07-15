@@ -129,7 +129,7 @@ jgrapht/
 
 | Metric | PetClinic | Commons Lang | **JGraphT** |
 |--------|-----------|-------------|------------|
-| Total tests | 52 | 4,589 | 2,308 |
+| Total tests | 52 | 4,692 | 2,308 |
 | Classes sampled | 14 | 21 | 20 |
 | Mutations (KILLED) | 94 | 772 | 517 |
 | Safety | 100% | 99.87% | 99.81% |

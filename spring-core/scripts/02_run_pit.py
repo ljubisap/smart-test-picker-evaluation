@@ -112,12 +112,13 @@ def find_pitest_jar(maven_repo=None):
 def run_pit_for_class(target_class, project_dir, classpath, pit_jars, results_dir, timeout=600):
     """Run PIT on a single class."""
     class_dir = results_dir / "per-class" / target_class
-    class_dir.mkdir(parents=True, exist_ok=True)
+    # Clean stale results to prevent attribution errors
+    if class_dir.exists():
+        shutil.rmtree(class_dir)
+    class_dir.mkdir(parents=True)
 
-    # Determine targetTests  --  scope to subpackage
+    # Determine targetTests -- scope to subpackage
     pkg = target_class.rsplit(".", 1)[0]
-    # For spring-core, test classes follow the pattern:
-    # org.springframework.core.Foo -> test in same or similar package
     target_tests = f"{pkg}.*"
 
     pit_classpath = ":".join(str(j) for j in pit_jars)
@@ -152,6 +153,10 @@ def run_pit_for_class(target_class, project_dir, classpath, pit_jars, results_di
             )
             elapsed = time.time() - start
 
+            if result.returncode != 0:
+                print(f"    FAILED: exit code {result.returncode} ({elapsed:.0f}s)")
+                return "FAILED", 0
+
             # Find mutations.xml in output
             mutations_xml = class_dir / "mutations.xml"
             if not mutations_xml.exists():
@@ -160,16 +165,23 @@ def run_pit_for_class(target_class, project_dir, classpath, pit_jars, results_di
                     shutil.copy2(xml_file, mutations_xml)
                     break
 
-            if mutations_xml.exists():
-                import xml.etree.ElementTree as ET
-                tree = ET.parse(mutations_xml)
-                total = len(tree.getroot().findall("mutation"))
-                killed = len([m for m in tree.getroot().findall("mutation") if m.get("status") == "KILLED"])
-                print(f"    OK: {killed}/{total} killed ({elapsed:.0f}s)")
-                return "OK", total
-            else:
-                print(f"    WARN: No mutations.xml produced ({elapsed:.0f}s)")
-                return "NO_MUTATIONS", 0
+            if not mutations_xml.exists():
+                print(f"    FAILED: no mutations.xml produced ({elapsed:.0f}s)")
+                return "FAILED", 0
+
+            # Validate: all mutations must target the expected class
+            import xml.etree.ElementTree as ET
+            tree = ET.parse(mutations_xml)
+            mutations = tree.getroot().findall("mutation")
+            wrong_class = [m for m in mutations if m.findtext("mutatedClass") != target_class]
+            if wrong_class:
+                print(f"    FAILED: {len(wrong_class)} mutations for wrong class ({elapsed:.0f}s)")
+                return "FAILED", 0
+
+            total = len(mutations)
+            killed = len([m for m in mutations if m.get("status") == "KILLED"])
+            print(f"    OK: {killed}/{total} killed ({elapsed:.0f}s)")
+            return "OK", total
 
         except subprocess.TimeoutExpired:
             elapsed = time.time() - start

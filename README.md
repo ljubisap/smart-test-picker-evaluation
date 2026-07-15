@@ -101,14 +101,12 @@ python3 scripts/04_baselines.py --project-dir /path/to/commons-lang
 If you use this work, please cite both the paper and the replication package:
 
 ```bibtex
-@inproceedings{smarttestpicker2027,
+@unpublished{smarttestpicker2027,
   title     = {Lightweight Regression Test Selection via Per-Test Runtime
                Class and Method Coverage in Java},
   author    = {Punosevac, Ljubisa},
-  booktitle = {Proceedings of the International Symposium on Software
-               Testing and Analysis (ISSTA)},
-  year      = {2027},
-  note      = {Under submission}
+  year      = {2026},
+  note      = {Under submission to ISSTA 2027}
 }
 
 @misc{smarttestpicker_replication2026,

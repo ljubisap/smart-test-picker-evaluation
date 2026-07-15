@@ -7,12 +7,12 @@ Replication package for evaluating the **Smart Test Picker** regression test sel
 | Selector | Safety | Selection Rate | Test Reduction |
 |----------|--------|----------------|----------------|
 | **Coverage (proposed)** | **99.87%** | 0.36% | **99.64%** |
-| Class-level only | 99.87% | 1.08% | 98.92% |
-| Random (k=per-mutation) | 1.94% | 0.36% | 99.64% |
+| Class-level only | 99.87% | 1.07% | 98.92% |
+| Random (k=per-mutation) | 2.03% +/- 0.47 | 0.36% | 99.64% |
 
 - **772 KILLED mutations** across 21 classes (4692 tests in coverage map)
 - **1 unsafe mutation**  - `FieldUtils.removeFinalModifier` (exception-path coverage gap)
-- Method-level selection selects approximately 3x fewer tests than class-level (avg 17 vs 49) at identical measured safety
+- Method-level selection selects approximately 3x fewer tests than class-level (avg 17 vs 50) at identical measured safety
 
 ## Project Structure
 
