@@ -237,6 +237,26 @@ def main():
         print("ERROR: No mutations found in results/per-class/")
         sys.exit(1)
 
+    # Build reverse lookup: base name (without hash suffix) -> set of full map keys
+    base_to_keys = defaultdict(set)
+    for key in test_mappings:
+        if '_' in key and len(key.rsplit('_', 1)[-1]) == 7:
+            last = key.rsplit('_', 1)[-1]
+            if all(c in '0123456789abcdef' for c in last):
+                base_to_keys[key.rsplit('_', 1)[0]].add(key)
+                continue
+        base_to_keys[key].add(key)
+
+    # Resolve killing test names to coverage map keys
+    for mut in mutations:
+        resolved = set()
+        for kt in mut["killingTests"]:
+            if kt in test_mappings:
+                resolved.add(kt)
+            elif kt in base_to_keys:
+                resolved.update(base_to_keys[kt])
+        mut["killingTests"] = resolved
+
     print(f"Data: {total_tests} tests, {len(mutations)} KILLED mutations\n")
 
     # 1. Proposed coverage-based selector
