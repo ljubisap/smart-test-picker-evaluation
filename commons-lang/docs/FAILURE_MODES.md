@@ -125,4 +125,4 @@ During evaluator development, two normalization bugs caused false "unsafe" resul
 
 **Fix:** Fallback to `re.search(r'\[test-template:([^\]]+)\]', pit_test_id)` when `[method:]` is not found.
 
-Both fixes are in `normalize_pit_test_name()` in scripts `03_evaluate.py` and `04_baselines.py`.
+Both fixes are now centralized in `analysis/evaluation_core.py` which is used by all project scripts.

@@ -35,7 +35,7 @@ python3 scripts/04_baselines.py --project-dir /any/path
 3. Smart Test Picker plugin 0.1.0 in `mavenLocal`:
    ```bash
    cd /path/to/smart-test-picker-working
-   git checkout sap/main
+   git checkout 50b44591fe7e  # pinned for this evaluation
    ./gradlew publishToMavenLocal
    ```
 

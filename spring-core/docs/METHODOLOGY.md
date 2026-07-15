@@ -64,6 +64,6 @@ For each KILLED mutation:
 
 ## Baseline Selectors
 
-1. **Coverage (proposed):** Method-level match first; class-level fallback when no method info exists
+1. **Coverage (proposed):** Method-level match first; per-test class-level fallback: test T is selected when T contains C in its class footprint but has no C# entry in its method footprint
 2. **Class-level only:** Select all tests covering the changed class, ignoring method information
 3. **Random(k=per-mutation):** For each mutation, randomly select k tests where k = proposed selector's selection size. Repeated 1000 times with analytical expected value for validation. Per-mutation seed (42 + trial * N + i).

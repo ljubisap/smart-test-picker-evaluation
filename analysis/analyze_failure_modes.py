@@ -273,7 +273,6 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
                 "mutations": muts,
             }
             for name, muts in unsafe_by_project.items()
-            if muts
         },
     }
 
@@ -453,7 +452,12 @@ def main():
         if annotations_path.exists():
             with open(annotations_path) as f:
                 annotations = json.load(f)
-            annotation_ids = {a["mutationId"] for a in annotations}
+            # Check for duplicates
+            all_ids = [a["mutationId"] for a in annotations]
+            if len(all_ids) != len(set(all_ids)):
+                errors.append("Duplicate annotation mutationId detected")
+            # Check completeness
+            annotation_ids = set(all_ids)
             taxonomy_ids = set()
             for proj_data in taxonomy.get("byProject", {}).values():
                 for m in proj_data.get("mutations", []):
@@ -462,6 +466,11 @@ def main():
                 missing = taxonomy_ids - annotation_ids
                 extra = annotation_ids - taxonomy_ids
                 errors.append(f"Annotations mismatch: {len(missing)} missing, {len(extra)} extra")
+            # Validate required fields
+            for a in annotations:
+                if not a.get("mutationId") or not a.get("cause") or not a.get("category"):
+                    errors.append(f"Annotation missing required fields: {a.get('mutationId', 'unknown')}")
+                    break
         else:
             errors.append("failure_annotations.json not found")
 

@@ -82,6 +82,10 @@
       ],
       "unsafeCount": 1
     },
+    "petclinic": {
+      "mutations": [],
+      "unsafeCount": 0
+    },
     "spring-core": {
       "mutations": [
         {

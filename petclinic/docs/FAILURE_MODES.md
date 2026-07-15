@@ -26,7 +26,7 @@ No probe-shadowed false negative was observed among the 94 evaluated killed muta
 
 ## Per-Class Results
 
-All 14 classes with KILLED mutations achieved 100% safety:
+All 14 classes with KILLED mutations achieved 100% killed-mutant inclusiveness:
 
 | Class | Mutations (KILLED) | Safety |
 |-------|-------------------|--------|

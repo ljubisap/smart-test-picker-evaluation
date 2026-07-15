@@ -4,8 +4,9 @@ evaluation_core.py - Shared evaluation logic for Smart Test Picker replication p
 Provides the Python evaluation selector (implementing the documented selection rules),
 PIT mutation loading, killing-test normalization and resolution, and coverage map I/O.
 
-This is NOT the production Java selector. Equivalence with the production implementation
-is separately verified by the contract test (commons-lang/scripts/contract_test.py).
+This is NOT the production Java selector. Automated equivalence with the production
+Java implementation has not yet been established. A preliminary per-mutation contract
+test exists (commons-lang/scripts/contract_test.py) but covers only one project.
 """
 
 from __future__ import annotations

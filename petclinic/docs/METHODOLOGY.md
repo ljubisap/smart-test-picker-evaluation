@@ -66,7 +66,7 @@ PIT targets all classes matching `org.springframework.samples.petclinic.*`:
 - **14 classes** have at least one KILLED mutation (94 total)
 - **3 classes** have only SURVIVED/NO_COVERAGE mutations (system config classes)
 
-Safety evaluation uses only KILLED mutations  - the 14-class count is the relevant denominator.
+Safety evaluation uses only KILLED mutations  - the 94 killed-mutant count is the inclusiveness denominator; 14 classes contribute those mutants.
 
 ## Excluded Test Classes
 

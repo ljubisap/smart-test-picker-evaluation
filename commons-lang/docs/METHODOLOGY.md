@@ -110,7 +110,7 @@ PIT uses JUnit Platform unique IDs that differ from coverage map keys:
 
 | PIT Format | Normalized |
 |-----------|-----------|
-| `[class:pkg.FQN]/[method:name()]` | `FQN#name` |
+| `[class:pkg.FQN]/[method:name()]` | `SimpleClassName#name` |
 | `[class:pkg.FQN]/[nested-class:Inner]/[method:name()]` | `Inner#name` |
 | `[class:pkg.FQN]/[test-template:name(params)]/[test-template-invocation:#1]` | `FQN#name` |
 
@@ -127,7 +127,7 @@ Selects ALL tests that cover the changed class, ignoring method-level informatio
 
 ### Random(k=per-mutation)
 
-For each mutation M, the random selector chooses k_M tests uniformly at random (without replacement) from the test suite, where k_M equals the number of tests the proposed coverage-based selector would select for M. This ensures the random baseline has the same selection budget as the proposed approach for each individual mutation, eliminating size-based comparison bias. Per-mutation seed (42 + mutation_index) ensures reproducibility. Represents the null hypothesis: selection without coverage information is no better than random.
+For each mutation M, the random selector chooses k_M tests uniformly at random (without replacement) from the test suite, where k_M equals the number of tests the proposed coverage-based selector would select for M. This ensures the random baseline has the same selection budget as the proposed approach for each individual mutation, eliminating size-based comparison bias. Per-mutation seed (42 + trial * N + mutation_index) ensures reproducibility. Represents the null hypothesis: selection without coverage information is no better than random.
 
 ## Metrics
 
@@ -145,7 +145,7 @@ For each mutation M, the random selector chooses k_M tests uniformly at random (
 - Subpackage scoping may miss cross-package killing tests
 
 ### External
-- Single project evaluation; results may not generalize to all Java projects
+- Four-project evaluation limited to Java libraries and framework components; results may not generalize to all Java projects
 - commons-lang has relatively simple test-to-code relationships (1:1 test classes)
 
 ### Construct

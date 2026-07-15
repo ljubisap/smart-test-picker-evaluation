@@ -87,6 +87,5 @@ Evaluated on all four projects:
 | Spring Core | 97.58% | 98.46% | +4.3 avg |
 | PetClinic | 100.00% | 100.00% | +2.0 avg |
 
-The rule does not fully resolve all spring-core false negatives because some killing tests have non-constructor method footprints (e.g., `Assert#notNull`, `close`, `getType`). A more aggressive variant (footprint size <= 3) achieves 100% but at higher selection cost.
 
 This mitigation is not implemented in the production plugin. It is documented here as an evaluated prototype for future work.

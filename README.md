@@ -15,7 +15,6 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | JGraphT | 2308 | 517 | 99.81% | 96.69% | 76.4 | Done | [jgrapht/](jgrapht/) |
 | Spring Framework (spring-core) | 3624 | 454 | 97.58% | 97.78% | 80.3 | Done | [spring-core/](spring-core/) |
 | Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.7 | Done (pilot) | [petclinic/](petclinic/) |
-| Caffeine | TBD | TBD | TBD | TBD | TBD | Planned | caffeine/ |
 
 ## Sampling Strategies
 
@@ -25,7 +24,6 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | JGraphT | curated_stratified | One class per algorithmic subpackage (20 subpackages) |
 | Spring Framework | curated_stratified | One class per spring-core subpackage (22 subpackages), excl. infrastructure |
 | PetClinic | all_classes | Small project; 17 classes mutated, 14 with killed mutants |
-| Caffeine | TBD | TBD |
 
 ## Repository Structure
 
@@ -50,6 +48,12 @@ smart-test-picker-evaluation/
 |   |-- results/            # Raw PIT output + aggregated metrics
 |   `-- docs/               # Methodology, reproduction, failure analysis
 `-- petclinic/              # Pilot: Spring PetClinic (Gradle, 52 tests)
+|-- analysis/              # Shared evaluation core, taxonomy and verification
+|   |-- evaluation_core.py  # Shared selectors, loading, resolution
+|   |-- analyze_failure_modes.py  # Taxonomy and mitigation (--write, --verify)
+|   |-- projects.json       # Project configuration
+|   `-- failure_annotations.json  # Manual root-cause annotations
+`-- results/               # Cross-project taxonomy and mitigation outputs
     |-- config/
     |-- scripts/
     |-- results/
@@ -80,6 +84,16 @@ See `<project>/docs/METHODOLOGY.md` for detailed methodology per project.
 - No external Python packages (stdlib only)
 
 See `<project>/docs/REQUIREMENTS.md` for project-specific prerequisites.
+
+## Quick Verification
+
+```bash
+# Unit tests (no external dependencies)
+python3 -m unittest discover -s analysis/tests
+
+# Verify taxonomy and mitigation outputs match committed artifacts
+python3 analysis/analyze_failure_modes.py --verify
+```
 
 ## Quick Start
 

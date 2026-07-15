@@ -50,7 +50,7 @@ Cost: +21.9 additional tests selected on average.
 
 ## Cross-Project Pattern
 
-This is the same mechanism as spring-core's 11 false negatives and commons-lang's 1 false negative. All are caused by JaCoCo probe-based instrumentation not recording method coverage when an exception exits before the probe fires. This potentially affects any RTS approach relying solely on standard JaCoCo probe coverage as its dependency signal.
+This belongs to the same probe-shadowing family as spring-core's 11 false negatives and commons-lang's 1 false negative. All are caused by JaCoCo probe-based instrumentation not recording method coverage when an exception exits before the probe fires. This potentially affects any RTS approach relying solely on standard JaCoCo probe coverage as its dependency signal.
 
 ## All Other Classes: 100% Inclusiveness
 
