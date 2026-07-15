@@ -54,7 +54,7 @@ python3 scripts/04_baselines.py --project-dir /path/to/spring-petclinic
 petclinic/
 |-- README.md                   # This file
 |-- config/
-|   |-- sample_classes.json     # All 14 production classes (no sampling)
+|   |-- sample_classes.json     # All classes in configured scope (17 mutated, 14 with killed mutants)
 |   |-- pitest.gradle           # PIT Gradle plugin config (copy-paste ready)
 |   `-- pitest_config.md        # Human-readable config documentation
 |-- scripts/

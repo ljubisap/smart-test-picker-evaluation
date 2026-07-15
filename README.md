@@ -24,7 +24,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | Commons Lang | curated_stratified | 1-2 representative classes per utility subpackage (13 subpackages) |
 | JGraphT | curated_stratified | One class per algorithmic subpackage (20 subpackages) |
 | Spring Framework | curated_stratified | One class per spring-core subpackage (22 subpackages), excl. infrastructure |
-| PetClinic | all_classes | Small project (14 classes) permits comprehensive evaluation |
+| PetClinic | all_classes | Small project; 17 classes mutated, 14 with killed mutants |
 | Caffeine | TBD | TBD |
 
 ## Repository Structure
@@ -63,7 +63,7 @@ See `<project>/docs/README.md` for project-specific reproduction details.
 For each benchmark project:
 
 1. **Generate coverage map** - Run full test suite with JaCoCo per-test instrumentation via Smart Test Picker plugin
-2. **Run PIT mutation testing** - Per-class with `fullMutationMatrix=true` and subpackage-scoped tests
+2. **Run PIT mutation testing** - Per-class with `fullMutationMatrix=true` and subpackage-scoped tests (PetClinic uses whole-project single run)
 3. **Evaluate inclusiveness** - For each KILLED mutation, simulate plugin selection and check if at least one PIT-reported killing test (from the configured test scope) is in the selected set
 4. **Baseline comparison** - Compare against class-level-only and random selectors (1000 Monte Carlo trials + analytical expectation)
 

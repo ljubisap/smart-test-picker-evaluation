@@ -2,13 +2,13 @@
 
 ## Summary
 
-Out of 94 KILLED mutations across 14 production classes, **zero mutations** were missed by the plugin's selection algorithm.
+Out of 94 KILLED mutations across 14 classes with killed mutants (17 total mutated), **zero mutations** were missed by the plugin's selection algorithm.
 
 **Inclusiveness: 100.00% (94/94)**
 
 ## No Unsafe Mutations
 
-Unlike Apache Commons Lang (which had 1 unsafe mutation due to an exception-path coverage gap), Spring PetClinic achieved perfect safety. This is expected for a small project with:
+Unlike Apache Commons Lang (which had 1 unsafe mutation due to an exception-path coverage gap), Spring PetClinic achieved 100% killed-mutant inclusiveness. This was observed for a small project with:
 
 - Simple test structure (no deeply nested test classes)
 - Straightforward method coverage (no exception-only test paths)
@@ -19,7 +19,7 @@ Unlike Apache Commons Lang (which had 1 unsafe mutation due to an exception-path
 The exception-path coverage gap that caused the single failure in commons-lang requires ALL of:
 
 1. A test that exercises a method ONLY via an exception path
-2. The exception must occur before ANY instrumented line executes
+2. The exception must occur before the corresponding JaCoCo probe activates
 3. The method must be in a class where OTHER methods DO have method-level coverage
 
 No probe-shadowed false negative was observed among the 94 evaluated killed mutants  - tests exercise methods through normal execution paths, and exception tests (like `PetValidator` validation) still cover instrumented lines before throwing.

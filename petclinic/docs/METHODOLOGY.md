@@ -6,7 +6,7 @@ Spring PetClinic serves as the **pilot benchmark**  - a small, well-understood p
 
 ## Why PetClinic?
 
-1. **Small & fast**  - 52 tests, 14 production classes, PIT completes in ~2 minutes
+1. **Small & fast**  - 52 tests across the configured scope (17 classes mutated, 14 with killed mutants), PIT completes in ~2 minutes
 2. **Gradle-based**  - Tests the Gradle plugin path (vs. Maven for commons-lang)
 3. **Spring Boot app**  - Exercises DI, controller layers, JPA entities  - real-world patterns
 4. **Known coverage map**  - Already used as proof-of-concept during plugin development
@@ -79,7 +79,7 @@ Four integration test classes are excluded from both PIT and the coverage map:
 | `PetClinicIntegrationTests` | Full Spring Boot integration test |
 | `CrashControllerIntegrationTests` | Error handling integration test |
 
-These tests exercise infrastructure, not production logic. Their exclusion is symmetric  - excluded from both PIT scope and coverage map  - so it doesn't affect safety evaluation validity.
+These tests exercise infrastructure, not production logic. Their exclusion is symmetric (excluded from both PIT scope and coverage map). The reported results apply to the remaining 52-test scope.
 
 ## Mutation Score
 

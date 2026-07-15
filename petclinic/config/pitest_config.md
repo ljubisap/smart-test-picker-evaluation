@@ -53,7 +53,7 @@ These are Spring Boot integration tests that require a running database (Docker 
 - `PetClinicIntegrationTests`  - Full Spring Boot context
 - `CrashControllerIntegrationTests`  - Error handling integration test
 
-Excluding them does NOT reduce safety evaluation quality  - they are also excluded from the coverage map (they don't run in the Smart Test Picker instrumented test phase).
+They are also excluded from the coverage map. Results apply to the remaining 52-test scope.
 
 ## Output Location
 

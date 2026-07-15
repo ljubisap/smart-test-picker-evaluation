@@ -63,7 +63,7 @@ Single unsafe mutation:
 - **Method:** `getTour` (line 97)
 - **Killing tests:** `testGetTour0`, `testGetTour2`
 - **Root cause:** These two tests cover the class but do NOT have method-level coverage attribution for `getTour` in the coverage map. The dual-granularity algorithm sees method-level info for other tests covering this class and excludes these two via method-only matching.
-- **Impact:** Structural limitation of line-level instrumentation  - same pattern as Commons Lang's `FieldUtils` case.
+- **Impact:** Structural property of JaCoCo probe-based coverage  - same pattern as Commons Lang's `FieldUtils` case.
 
 See [FAILURE_MODES.md](FAILURE_MODES.md) for full analysis.
 
