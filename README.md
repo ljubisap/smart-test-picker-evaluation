@@ -5,12 +5,12 @@ This is the replication package for the paper:
 > **Lightweight Regression Test Selection via Per-Test Runtime Class and Method Coverage in Java**
 > *(submitted to ISSTA 2027)*
 
-It contains scripts, configurations, raw results, and documentation for reproducing the mutation-based safety evaluation of Smart Test Picker, a regression test selection tool based on per-test runtime coverage captured via JaCoCo.
+It contains scripts, configurations, raw results, and documentation for reproducing the mutation-based inclusiveness evaluation of Smart Test Picker, a regression test selection tool based on per-test runtime coverage captured via JaCoCo.
 
 ## Benchmark Projects
 
-| Project | Tests | Mutations | Safety | Reduction | Avg Sel. | Status | Folder |
-|---------|-------|-----------|--------|-----------|----------|--------|--------|
+| Project | Tests | Mutations | Inclusiveness | Reduction | Avg Sel. | Status | Folder |
+|---------|-------|-----------|---------------|-----------|----------|--------|--------|
 | Apache Commons Lang | 4692 | 772 | 99.87% | 99.64% | 17.0 | Done | [commons-lang/](commons-lang/) |
 | JGraphT | 2308 | 517 | 99.81% | 96.69% | 76.4 | Done | [jgrapht/](jgrapht/) |
 | Spring Framework (spring-core) | 3624 | 454 | 97.58% | 97.78% | 80.3 | Done | [spring-core/](spring-core/) |
@@ -62,17 +62,21 @@ See `<project>/docs/README.md` for project-specific reproduction details.
 
 For each benchmark project:
 
-1. **Generate coverage map**  - Run full test suite with JaCoCo per-test instrumentation via Smart Test Picker plugin
-2. **Run PIT mutation testing**  - Per-class with `fullMutationMatrix=true` and subpackage-scoped tests
-3. **Evaluate safety**  - For each KILLED mutation, simulate plugin selection and check if killing test is included
-4. **Baseline comparison**  - Compare against class-level-only and random selectors
+1. **Generate coverage map** - Run full test suite with JaCoCo per-test instrumentation via Smart Test Picker plugin
+2. **Run PIT mutation testing** - Per-class with `fullMutationMatrix=true` and subpackage-scoped tests
+3. **Evaluate inclusiveness** - For each KILLED mutation, simulate plugin selection and check if at least one PIT-reported killing test (from the configured test scope) is in the selected set
+4. **Baseline comparison** - Compare against class-level-only and random selectors (1000 Monte Carlo trials + analytical expectation)
+
+The evaluation measures **killed-mutant inclusiveness**: the fraction of killed mutations for which the selector would have included at least one killing test. The term "safety" is used as shorthand in scripts and output.
+
+Note: PIT `targetTests` is scoped to the subpackage of each target class. This means cross-package killing tests are not measured. Results reflect inclusiveness within the configured test scope, not the complete test suite.
 
 See `<project>/docs/METHODOLOGY.md` for detailed methodology per project.
 
 ## Requirements
 
 - Java 21+, Maven 3.9.6+, Python 3.10+
-- Smart Test Picker plugin 0.1.0+ (built from source)
+- Smart Test Picker plugin 0.1.0 (built from source, commit pinned per project)
 - No external Python packages (stdlib only)
 
 See `<project>/docs/REQUIREMENTS.md` for project-specific prerequisites.

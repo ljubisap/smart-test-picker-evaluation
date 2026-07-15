@@ -46,50 +46,45 @@ JaCoCo instruments bytecode at the line level. When an exception occurs at the v
 
 ```
 FieldUtilsTest#testRemoveFinalModifierNullPointerException:
-  classes: [..., "org.apache.commons.lang3.reflect.FieldUtils", ...]
-  methods: [...]  <- does NOT contain "FieldUtils#removeFinalModifier"
+  classes: ["org.apache.commons.lang3.builder.ToStringStyle"]
+  methods: ["org.apache.commons.lang3.builder.ToStringStyle#getRegistry"]
 ```
 
-The test covers the class (it calls other methods too), but the specific method `removeFinalModifier` is NOT in its method coverage list because JaCoCo never registered a covered line.
+The test does NOT cover `org.apache.commons.lang3.reflect.FieldUtils` at class level. It only covers `ToStringStyle` (likely from a static initializer or JUnit lifecycle). The `FieldUtils` class is completely absent from this test's coverage entry.
 
 ### Selection Algorithm Behavior
 
 1. **Method-level match:** Check if `FieldUtils#removeFinalModifier` is in test's methods -> NO
-2. **Class-level fallback:** Check if `FieldUtils` is in test's classes AND test has no method info for that class -> `FieldUtils` IS in classes, BUT test has other method-level entries for `FieldUtils` (from other test methods in the same class) -> Fallback does NOT apply
-3. Result: Test is NOT selected
+2. **Class-level fallback:** Check if `FieldUtils` is in test's classes -> NO (`FieldUtils` is not in the classes list at all)
+3. Result: Test is NOT selected because it has no observable relationship to `FieldUtils` in the coverage map
 
-### Why This Is Not a Bug
+### Classification: Type C False Negative
 
-The dual-granularity algorithm works correctly:
-- It has method-level info for `FieldUtils` (many other methods are covered)
-- Therefore it trusts method-level matching and does NOT fall back to class-level
-- But the specific exception-only path has no method coverage to match against
+This is the most extreme variant of the exception-masked pattern. The test calls `FieldUtils.removeFinalModifier(null)` which delegates to `removeFinalModifier(null, true)`. The NPE occurs when dereferencing the null `Field` argument before any JaCoCo probe in `FieldUtils` fires. As a result, `FieldUtils` does not appear in the coverage map at all for this test.
 
-This is an **inherent limitation** of line-level coverage instrumentation, not a bug in the selection algorithm.
+No coverage-map-level mitigation can address this case because the test is completely invisible to the target class.
+
+### This IS a Real False Negative
+
+If a developer removes the delegation in `removeFinalModifier(Field)` or changes the null-handling behavior, the test that validates null-argument behavior would not be selected. This is a genuine workflow false negative, not an evaluation artifact.
 
 ## Implications
 
-### Frequency
+### Frequency in This Evaluation
 
-This failure mode requires ALL of:
-1. A test that exercises a method ONLY via an exception path
-2. The exception must occur before ANY instrumented line executes
-3. The method must be in a class where OTHER methods DO have method-level coverage (preventing class-level fallback)
-
-This combination is extremely rare in practice. In our sample of 772 mutations across 21 classes, it occurred exactly once (0.13%).
+This failure mode occurred once in our sample of 772 killed mutations across 21 classes (0.13%). This does not prove the pattern is rare in general; it measures occurrence within this specific sampled evaluation.
 
 ### Possible Mitigations
 
 | Approach | Trade-off |
 |----------|-----------|
-| Always include class-level fallback | Would select ~3x more tests (49 vs 17 avg), reducing the precision advantage of method-level selection |
-| Bytecode-level coverage (not line-level) | Would require different instrumentation approach, not supported by JaCoCo |
+| Constructor-only footprint rule | Does not help for Type C (class absent from map) |
 | Static analysis for exception paths | Adds complexity; may introduce false positives |
-| Accept 99.87% safety | Practical choice  - full suite as periodic safety net |
+| Run full suite periodically | Catches all false negatives at the cost of execution time |
 
-### Recommendation
+### Note on Terminology
 
-Accept this as a known limitation. The 99.87% safety rate already exceeds the literature standard for RTS tools (typically 95-99%). Running the full suite periodically (e.g., nightly or on merge to main) provides complete safety while enjoying 99.64% test reduction on feature branches.
+This is an inherent property of JaCoCo probe-based instrumentation, not a line-level coverage issue specifically. JaCoCo method counters also derive from probe-observed instruction coverage. The problem affects any JaCoCo-based per-test RTS tool.
 
 ## Other Classes: 100% Safety
 

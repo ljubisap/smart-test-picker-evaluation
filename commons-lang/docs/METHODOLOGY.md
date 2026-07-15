@@ -2,7 +2,7 @@
 
 ## Overview
 
-This evaluation uses **PIT mutation testing** as ground truth to validate the safety (inclusiveness) of coverage-based regression test selection. For each artificial fault (mutation), we check whether the plugin's selected test set would include at least one test that detects the fault.
+This evaluation uses **PIT mutation testing** as an evaluation oracle to measure the killed-mutant inclusiveness of coverage-based regression test selection. For each artificial fault (mutation), we check whether the plugin's selected test set would include at least one test that detects the fault.
 
 ## Protocol
 
@@ -11,7 +11,7 @@ This evaluation uses **PIT mutation testing** as ground truth to validate the sa
 1. **PIT with fullMutationMatrix=true**  - For each class, PIT:
    - Generates mutations using DEFAULT operators (conditionals, math, void calls, returns, etc.)
    - Runs ALL scoped tests against EACH mutation (not just until first kill)
-   - Records complete killing test set per mutation
+   - Records PIT-reported killing tests within configured test scope
 
 2. **Per-class execution**  - Each class runs independently with `targetTests` scoped to its subpackage, preventing intractable test space (4692 tests x N mutations).
 
@@ -98,9 +98,9 @@ To verify that the sampling and exclusion criteria do not introduce bias, we ran
 
 ### Why Subpackage Scoping
 
-Running PIT with `targetTests=org.apache.commons.lang3.*` (all 4692 tests) is intractable  - PIT's coverage scan phase alone takes 45+ minutes per class. Scoping to the subpackage (`org.apache.commons.lang3.math.*` for Fraction) reduces to ~5 minutes while maintaining validity: tests in other subpackages are unlikely to cover a specific class's internals.
+Running PIT with `targetTests=org.apache.commons.lang3.*` (all 4692 tests) is intractable - PIT's coverage scan phase alone takes 45+ minutes per class. Scoping to the subpackage (`org.apache.commons.lang3.math.*` for Fraction) reduces to ~5 minutes.
 
-This is safe because JaCoCo's coverage map captures actual runtime dependencies at the method level  - if a test from another subpackage exercises a class, it will appear in the coverage map and be selected. The PIT scoping only restricts which tests PIT considers as potential killing tests, not which tests the plugin would select.
+**Limitation:** Subpackage scoping may miss cross-package killing tests. The coverage map shows that a cross-package test covers a class, but cannot determine whether that test would kill a specific mutation. Therefore, the evaluation measures inclusiveness within the configured PIT test scope, not the complete test suite. This is a threat to validity documented as such.
 
 ## PIT Test ID Normalization
 

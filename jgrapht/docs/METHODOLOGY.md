@@ -2,7 +2,7 @@
 
 ## Overview
 
-This evaluation uses **PIT mutation testing** as ground truth to validate the safety (inclusiveness) of coverage-based regression test selection on JGraphT, a JPMS-enabled Java graph library with 2308 tests.
+This evaluation uses **PIT mutation testing** as an evaluation oracle to measure the killed-mutant inclusiveness of coverage-based regression test selection on JGraphT, a JPMS-enabled Java graph library with 2308 tests.
 
 ## Protocol
 
@@ -11,7 +11,7 @@ This evaluation uses **PIT mutation testing** as ground truth to validate the sa
 1. **PIT with fullMutationMatrix=true**  - For each class, PIT:
    - Generates mutations using DEFAULT operators (conditionals, math, void calls, returns, etc.)
    - Runs ALL scoped tests against EACH mutation (not just until first kill)
-   - Records complete killing test set per mutation
+   - Records PIT-reported killing tests within configured test scope
 
 2. **Per-class execution**  - Each class runs independently with `targetTests` scoped to its subpackage, preventing intractable test space.
 
@@ -78,7 +78,7 @@ Some classes required non-standard test scoping:
 
 Running PIT with `targetTests=org.jgrapht.*` is intractable  - the coverage scan phase exceeds 60 minutes per class due to 2308 tests x N mutations x fullMutationMatrix. Scoping to the subpackage reduces to seconds-to-minutes while maintaining validity.
 
-This is safe because JaCoCo's coverage map captures actual runtime dependencies  - if a test from another subpackage exercises a class, it will appear in the coverage map and be selected by the plugin. PIT scoping only restricts which tests PIT considers as potential killing tests.
+Limitation: subpackage scoping may miss cross-package killing tests. Results measure inclusiveness within configured PIT test scope.
 
 ## JPMS Considerations
 

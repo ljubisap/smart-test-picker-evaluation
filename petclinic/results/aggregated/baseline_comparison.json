@@ -1,32 +1,40 @@
 {
-  "project": "Spring PetClinic",
   "total_tests": 52,
   "total_mutations": 94,
   "seed": 42,
-  "selectors": {
-    "coverage_plugin": {
-      "inclusiveness_pct": 100.0,
-      "selection_rate_pct": 18.7,
-      "avg_selection_size": 9.7,
+  "results": [
+    {
+      "name": "Coverage (proposed)",
+      "safety_pct": 100.0,
       "safe": 94,
       "unsafe": 0,
-      "total": 94
+      "total": 94,
+      "avg_selected": 9.7,
+      "selection_rate_pct": 18.7,
+      "test_reduction_pct": 81.3
     },
-    "class_level_only": {
-      "inclusiveness_pct": 100.0,
+    {
+      "name": "Class-level only",
+      "safety_pct": 100.0,
+      "safe": 94,
+      "unsafe": 0,
+      "total": 94,
+      "avg_selected": 18.4,
       "selection_rate_pct": 35.29,
-      "avg_selection_size": 18.4,
-      "safe": 94,
-      "unsafe": 0,
-      "total": 94
+      "test_reduction_pct": 64.71
     },
-    "random_per_mutation": {
-      "inclusiveness_pct": 37.23,
+    {
+      "name": "Random (k=per-mutation)",
+      "safety_pct": 35.96,
+      "safety_std": 2.9,
+      "safety_analytical_pct": 35.88,
+      "num_trials": 1000,
+      "safe": 34,
+      "unsafe": 60,
+      "total": 94,
+      "avg_selected": 9.7,
       "selection_rate_pct": 18.7,
-      "avg_selection_size": 9.7,
-      "safe": 35,
-      "unsafe": 59,
-      "total": 94
+      "test_reduction_pct": 81.3
     }
-  }
+  ]
 }
