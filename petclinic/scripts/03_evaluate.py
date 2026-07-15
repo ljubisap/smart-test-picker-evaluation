@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 """
-03_evaluate.py  --  Evaluate plugin safety against PIT mutation ground truth.
+03_evaluate.py -- Evaluate plugin inclusiveness against PIT mutation ground truth.
 
 For each KILLED mutation, simulates the plugin's dual-granularity selection
 and checks whether at least one killing test would have been selected.
 
-Metrics:
-  - Inclusiveness (Safety): % mutations where T_selected   &   T_killing != {}
-  - Selection Rate: avg |T_selected| / |all_tests|
-  - Test Reduction: 1 - Selection Rate
+Uses shared evaluation logic from analysis/evaluation_core.py.
 
 Usage:
   python3 03_evaluate.py --project-dir /path/to/spring-petclinic
@@ -16,88 +13,21 @@ Usage:
 
 import argparse
 import json
-import re
 import sys
-import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
 
-def normalize_pit_test_name(pit_test_id):
-    """
-    Normalize PIT's JUnit Platform unique ID to coverage map format.
-
-    PIT formats:
-      [class:FQN]/[method:name()]  --  regular test
-      [class:FQN]/[nested-class:A]/[method:name()]  --  nested class
-      [class:FQN]/[test-template:name(params)]/[test-template-invocation:#N]  --  parameterized
-
-    Coverage map format: SimpleClassName#methodName
-    """
-    class_match = re.search(r'\[class:([^\]]+)\]', pit_test_id)
-    method_match = re.search(r'\[method:([^\]]+)\]', pit_test_id)
-    if not method_match:
-        method_match = re.search(r'\[test-template:([^\]]+)\]', pit_test_id)
-    if not class_match or not method_match:
-        return None
-
-    fqn = class_match.group(1)
-    method = re.sub(r'\(.*\)', '', method_match.group(1))
-    simple_class = fqn.split('.')[-1]
-
-    nested_matches = re.findall(r'\[nested-class:([^\]]+)\]', pit_test_id)
-    if nested_matches:
-        simple_class = nested_matches[-1]
-
-    return f"{simple_class}#{method}"
-
-
-def select_tests_for_change(test_mappings, changed_class, changed_method):
-    """Simulate plugin's dual-granularity selection."""
-    selected = set()
-    method_fqn = f"{changed_class}#{changed_method}"
-
-    for test_name, coverage in test_mappings.items():
-        methods = coverage.get("methods", [])
-        classes = coverage.get("classes", [])
-
-        if method_fqn in methods:
-            selected.add(test_name)
-            continue
-
-        if changed_class in classes:
-            has_method_info = any(m.startswith(changed_class + "#") for m in methods)
-            if not has_method_info:
-                selected.add(test_name)
-
-    return selected
-
-
-def load_mutations(mutations_xml_path):
-    """Load all KILLED mutations from a single mutations.xml file."""
-    mutations = []
-    tree = ET.parse(mutations_xml_path)
-    for mut in tree.getroot().findall("mutation"):
-        if mut.get("status") != "KILLED":
-            continue
-        killing_raw = mut.findtext("killingTests") or ""
-        killing_tests = set()
-        for pit_id in (t.strip() for t in killing_raw.split("|") if t.strip()):
-            n = normalize_pit_test_name(pit_id)
-            if n:
-                killing_tests.add(n)
-        mutations.append({
-            "mutatedClass": mut.findtext("mutatedClass"),
-            "mutatedMethod": mut.findtext("mutatedMethod"),
-            "lineNumber": mut.findtext("lineNumber"),
-            "mutator": mut.findtext("mutator"),
-            "killingTests": killing_tests,
-        })
-    return mutations
+from analysis.evaluation_core import (
+    load_coverage_map, discover_pit_files, load_pit_mutations,
+    build_base_to_keys, resolve_killing_tests, select_original,
+)
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Evaluate plugin safety vs PIT ground truth")
+    parser = argparse.ArgumentParser(description="Evaluate plugin inclusiveness vs PIT ground truth")
     parser.add_argument("--project-dir", type=Path, required=True,
                         help="Path to spring-petclinic checkout")
     parser.add_argument("--results-dir", type=Path, default=None)
@@ -112,29 +42,32 @@ def main():
         print(f"ERROR: Coverage map not found: {coverage_map_path}")
         sys.exit(1)
 
-    with open(coverage_map_path) as f:
-        coverage_data = json.load(f)
+    coverage_data = load_coverage_map(coverage_map_path)
     test_mappings = coverage_data["testMappings"]
     total_tests = len(test_mappings)
     commit = coverage_data.get("metadata", {}).get("commitId", "unknown")
 
-    mutations_xml = results_dir / "mutations.xml"
-    if not mutations_xml.exists():
-        print(f"ERROR: mutations.xml not found: {mutations_xml}")
+    # Build reverse lookup for hash-suffixed keys
+    base_to_keys = build_base_to_keys(test_mappings)
+
+    # Load mutations
+    pit_files = discover_pit_files(REPO_ROOT, ["petclinic/results/mutations.xml"])
+    raw_mutations = load_pit_mutations("petclinic", REPO_ROOT, pit_files)
+
+    if not raw_mutations:
+        print("ERROR: No KILLED mutations found")
         sys.exit(1)
 
-    mutations = load_mutations(mutations_xml)
-    if not mutations:
-        print("ERROR: No KILLED mutations found in mutations.xml")
-        sys.exit(1)
+    # Resolve killing tests
+    mutations = resolve_killing_tests(raw_mutations, test_mappings, base_to_keys)
 
-    # Validate: check all killing tests can be found in coverage map
+    # Validate resolution
     unresolved_ids = []
     for mut in mutations:
-        resolved = mut["killingTests"] & set(test_mappings.keys())
-        if not resolved and mut["killingTests"]:
-            unresolved_ids.append(f"{mut['mutatedClass']}.{mut['mutatedMethod']}")
-        mut["killingTests"] = resolved
+        killing_keys = set(k for kt in mut.killing_tests for k in kt.coverage_keys)
+        resolved_in_map = killing_keys & set(test_mappings.keys())
+        if not resolved_in_map and killing_keys:
+            unresolved_ids.append(f"{mut.mutated_class}.{mut.mutated_method}")
 
     if unresolved_ids:
         print(f"ERROR: {len(unresolved_ids)} mutations have no resolved killing tests:")
@@ -149,12 +82,13 @@ def main():
     class_safety = defaultdict(lambda: {"safe": 0, "unsafe": 0})
 
     for mut in mutations:
-        t_selected = select_tests_for_change(test_mappings, mut["mutatedClass"], mut["mutatedMethod"])
-        intersection = t_selected & mut["killingTests"]
+        t_selected = select_original(test_mappings, mut.mutated_class, mut.mutated_method)
+        killing_keys = set(k for kt in mut.killing_tests for k in kt.coverage_keys)
+        intersection = t_selected & killing_keys
         is_safe = len(intersection) > 0
 
         selection_sizes.append(len(t_selected))
-        cls = mut["mutatedClass"]
+        cls = mut.mutated_class
 
         if is_safe:
             safe_count += 1
@@ -170,7 +104,7 @@ def main():
 
     # Print results
     print(f"{'='*70}")
-    print(f"EVALUATION RESULTS  --  Smart Test Picker vs PIT Ground Truth")
+    print(f"EVALUATION RESULTS -- Smart Test Picker vs PIT Ground Truth")
     print(f"{'='*70}")
     print(f"Project: Spring PetClinic")
     print(f"Commit: {commit[:12]}")
@@ -186,8 +120,9 @@ def main():
     if unsafe_mutations:
         print(f"\n--- UNSAFE MUTATIONS ({len(unsafe_mutations)}) ---")
         for u in unsafe_mutations[:10]:
-            print(f"  {u['mutatedClass']}.{u['mutatedMethod']} L{u['lineNumber']}")
-            print(f"    killing: {list(u['killingTests'])[:3]}")
+            killing_names = [kt.normalized_id for kt in u.killing_tests]
+            print(f"  {u.mutated_class}.{u.mutated_method} L{u.line_number}")
+            print(f"    killing: {killing_names[:3]}")
 
     print(f"\n--- PER-CLASS SAFETY ---")
     for cls in sorted(class_safety.keys()):
@@ -203,10 +138,12 @@ def main():
     with open(csv_path, "w") as f:
         f.write("mutatedClass,mutatedMethod,lineNumber,mutator,numKillingTests,numSelectedTests,safe\n")
         for mut in mutations:
-            t_sel = select_tests_for_change(test_mappings, mut["mutatedClass"], mut["mutatedMethod"])
-            inter = t_sel & mut["killingTests"]
-            f.write(f"{mut['mutatedClass']},{mut['mutatedMethod']},{mut['lineNumber']},"
-                    f"{mut['mutator']},{len(mut['killingTests'])},{len(t_sel)},{len(inter)>0}\n")
+            t_sel = select_original(test_mappings, mut.mutated_class, mut.mutated_method)
+            killing_keys = set(k for kt in mut.killing_tests for k in kt.coverage_keys)
+            inter = t_sel & killing_keys
+            num_killing = sum(len(kt.coverage_keys) for kt in mut.killing_tests)
+            f.write(f"{mut.mutated_class},{mut.mutated_method},{mut.line_number},"
+                    f"{mut.mutator},{num_killing},{len(t_sel)},{len(inter)>0}\n")
 
     summary = {
         "project": "Spring PetClinic",
@@ -220,8 +157,8 @@ def main():
         "test_reduction_pct": round(100 - sel_rate, 2),
         "safe": safe_count,
         "unsafe": len(unsafe_mutations),
-        "unsafe_details": [{"class": u["mutatedClass"], "method": u["mutatedMethod"],
-                            "line": u["lineNumber"]} for u in unsafe_mutations],
+        "unsafe_details": [{"class": u.mutated_class, "method": u.mutated_method,
+                            "line": str(u.line_number)} for u in unsafe_mutations],
     }
     with open(agg_dir / "evaluation_summary.json", "w") as f:
         json.dump(summary, f, indent=2)
