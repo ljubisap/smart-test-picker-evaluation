@@ -60,7 +60,7 @@ The argument that "normal tests would catch it" is incorrect: valid-input tests 
 
 ### Scope of the Problem
 
-This failure mode affects ANY JaCoCo-based per-test RTS tool, not just Smart Test Picker. The same pattern would produce the same false negative in Skippy, Teamscale TIA, or any system that relies on JaCoCo probe-based method coverage to decide test relevance.
+This failure mode potentially affects any RTS approach relying solely on standard JaCoCo probe coverage as its dependency signal.
 
 `VoidMethodCallMutator` is part of PIT's default mutator set (DEFAULTS). The 11 unsafe mutations are not an artifact of using a non-standard operator.
 

@@ -21,7 +21,7 @@ Safety evaluation of Smart Test Picker against PIT mutation testing ground truth
 |----------|--------|-------------|-----------|
 | Coverage (proposed) | 97.58% | 80.3 | 97.78% |
 | Class-level only | 100.00% | 527.5 | 85.45% |
-| Random(k=per-mutation) | 17.18% | 80.3 | 97.78% |
+| Random(k=per-mutation) | 17.37% | 80.3 | 97.78% |
 
 ## Unsafe Mutations Analysis
 

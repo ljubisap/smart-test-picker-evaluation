@@ -10,7 +10,7 @@ This evaluation uses **PIT mutation testing** as an evaluation oracle to measure
 
 1. **PIT with fullMutationMatrix=true**  - For each class, PIT:
    - Generates mutations using DEFAULT operators (conditionals, math, void calls, returns, etc.)
-   - Runs ALL scoped tests against EACH mutation (not just until first kill)
+   - Continues processing after first killing test to record additional PIT-reported killing tests
    - Records PIT-reported killing tests within configured test scope
 
 2. **Per-class execution**  - Each class runs independently with `targetTests` scoped to its subpackage, preventing intractable test space (4692 tests x N mutations).

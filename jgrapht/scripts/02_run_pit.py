@@ -39,7 +39,9 @@ def log(msg, log_file=None):
 
 def run_pit_for_class(mvn, project_dir, results_dir, fqn, target_tests, loc, index, total, log_file):
     class_dir = results_dir / "per-class" / fqn
-    class_dir.mkdir(parents=True, exist_ok=True)
+    if class_dir.exists():
+        shutil.rmtree(class_dir)
+    class_dir.mkdir(parents=True)
 
     cmd = [
         mvn,

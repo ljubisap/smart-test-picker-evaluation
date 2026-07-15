@@ -72,7 +72,7 @@ ls ~/.m2/repository/com/sap/oss/smart-test-picker/smart-test-picker-maven/0.1.0/
 | Step | Duration |
 |------|----------|
 | Coverage map generation (Step 1) | ~10 minutes |
-| PIT mutation testing (Step 2) | ~5 minutes |
+| PIT mutation testing (Step 2) | ~15-30 minutes (21 classes sequentially) |
 | Evaluation + baselines (Steps 3-4) | < 10 seconds |
 | **Total** | **~15 minutes** |
 

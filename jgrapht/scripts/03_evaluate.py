@@ -149,13 +149,20 @@ def main():
         sys.exit(1)
 
     # Resolve killing test names to coverage map keys
+    raw_killing_count = 0
+    resolved_killing_count = 0
+    unresolved_ids = []
     for mut in mutations:
         resolved = set()
         for kt in mut["killingTests"]:
+            raw_killing_count += 1
             if kt in test_mappings:
                 resolved.add(kt)
             elif kt in base_to_keys:
                 resolved.update(base_to_keys[kt])
+        resolved_killing_count += len(resolved)
+        if not resolved and mut.get("killingTests"):
+            unresolved_ids.append(f"{mut["mutatedClass"]}.{mut["mutatedMethod"]}")
         mut["killingTests"] = resolved
 
     # Evaluate
