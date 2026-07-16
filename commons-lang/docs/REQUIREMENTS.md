@@ -31,7 +31,7 @@ The Smart Test Picker Maven plugin must be installed in the local Maven reposito
 
 ```bash
 cd /path/to/smart-test-picker-working
-git checkout 50b44591fe7e  # pinned commit for this evaluation
+git checkout 70b3984626eb  # pinned for this evaluation (corrected collector)
 ./gradlew :smart-test-picker-maven:publishToMavenLocal
 ```
 

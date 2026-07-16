@@ -117,3 +117,25 @@ print('All checks passed.')
 | PIT timeout on LockingVisitors | Expected  - uses threads; increase timeout or exclude |
 | Coverage map empty | Ensure `smart-test-picker` profile is active and plugin is in local Maven repo |
 | "No mutations found" for a class | Class may have no mutable code; check PIT stdout.log |
+
+## Step 5: Contract Test (Python-Java Equivalence)
+
+```bash
+python3 scripts/contract_test.py \
+  --project-dir /path/to/commons-lang \
+  --mvn /path/to/mvn
+```
+
+Requires: coverage map in `target/test-coverage-map.json` (from Step 1), plugin 0.1.0
+(commit `70b3984626eb`) in mavenLocal.
+
+For each of the 21 sampled classes, the script:
+1. Inserts a marker comment in the first killed mutation's method
+2. Commits the change
+3. Runs the production `select-tests` Maven mojo
+4. Compares Java `selectedTests` with Python `evaluation_core.select_original()`
+5. Reverts the commit (try/finally guaranteed)
+
+**Expected output:** 21 EXACT, 0 MISMATCH, 0 INFRA_FAILURE
+
+**Duration:** ~3 minutes (21 Maven invocations)
