@@ -231,17 +231,21 @@ def main():
                 failed += 1
 
         finally:
-            # ALWAYS revert to the recorded original HEAD
-            if committed:
-                run_cmd(["git", "reset", "--hard", original_head], project_dir, "restore original HEAD")
-            else:
-                source_file.write_text(original_content)
-                run_cmd(["git", "checkout", "--", str(source_file)], project_dir, "git checkout")
+            # ALWAYS restore to the exact recorded original HEAD unconditionally.
+            # This handles all cases: committed, staged-but-not-committed, or modified.
+            run_cmd(["git", "reset", "--hard", original_head], project_dir, "restore original HEAD")
 
-            # Verify HEAD is back to original
+            # Verify clean state (HEAD, index, and working tree)
             ok, current_head, _ = run_cmd(["git", "rev-parse", "HEAD"], project_dir, "check HEAD")
             if current_head.strip() != original_head:
-                run_cmd(["git", "reset", "--hard", original_head], project_dir, "force reset")
+                print(f"  CRITICAL: HEAD is {current_head.strip()}, expected {original_head}")
+                infra_failures += 1
+
+            ok, porcelain, _ = run_cmd(["git", "status", "--porcelain"], project_dir, "check clean")
+            if porcelain.strip():
+                print(f"  CRITICAL: Working tree not clean after restore: {porcelain.strip()}")
+                run_cmd(["git", "reset", "--hard", original_head], project_dir, "force clean")
+                run_cmd(["git", "clean", "-fd"], project_dir, "remove untracked")
 
     # Final report
     print()

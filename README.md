@@ -3,7 +3,7 @@
 This is the replication package for the paper:
 
 > **Lightweight Regression Test Selection via Per-Test Runtime Class and Method Coverage in Java**
-> *(submitted to ISSTA 2027)*
+> *(prepared for submission to ISSTA 2027)*
 
 It contains scripts, configurations, raw results, and documentation for reproducing the mutation-based inclusiveness evaluation of Smart Test Picker, a regression test selection tool based on per-test runtime coverage captured via JaCoCo.
 
@@ -93,6 +93,9 @@ python3 -m unittest discover -s analysis/tests
 
 # Verify taxonomy and mitigation outputs match committed artifacts
 python3 analysis/analyze_failure_modes.py --verify
+
+# Verify Python/Java selector equivalence
+python3 analysis/verify_selector_equivalence.py --verify
 ```
 
 ## Quick Start
@@ -120,7 +123,7 @@ If you use this work, please cite both the paper and the replication package:
                Class and Method Coverage in Java},
   author    = {Punosevac, Ljubisa},
   year      = {2026},
-  note      = {Under submission to ISSTA 2027}
+  note      = {Prepared for submission to ISSTA 2027}
 }
 
 @misc{smarttestpicker_replication2026,
