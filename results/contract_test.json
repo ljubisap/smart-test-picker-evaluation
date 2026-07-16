@@ -190,7 +190,6 @@
       "targetClass": "org.apache.commons.lang3.util.IterableStringTokenizer"
     }
   ],
-  "command": "python3 commons-lang/scripts/contract_test.py --project-dir <commons-lang> --mvn <mvn>",
   "coverageMapCommit": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
   "coverageMapTests": 4692,
   "description": "Contract test result: Python evaluation_core.select_original() vs actual pinned Maven plugin execution for 21 Commons Lang cases.",
