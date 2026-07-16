@@ -42,12 +42,8 @@ The incremental process consisted of:
   tools. Every retained candidate identified through exploratory discovery was verified
   against a primary source (paper, official documentation, or repository)
   before inclusion.
-- iJaCoCo (Wang, Wang, Nie, ASE 2024) was identified via [TODO: fill in how it
-  was actually found - e.g., ASE 2024 proceedings scan / arXiv listing /
-  citation alert].
-
-[TODO: adjust the bullet list above to match the actual chronology; remove
-anything that did not happen and add anything that did.]
+- iJaCoCo (Wang, Wang, Nie, ASE 2024) was identified via forward citation
+  from Ekstazi and confirmed in ASE 2024 proceedings (DOI 10.1145/3691620.3695551).
 
 ## 2. Verification search - STATUS: IN PROGRESS
 
@@ -88,14 +84,15 @@ systematic review of all regression-testing research.
 - General web search (initial discovery pass, 2026-07-16)
 - Official tool and product documentation consulted so far (Teamscale,
   Develocity, Parasoft, Skippy repository)
+- DBLP API (bibliographic verification and DOI resolution, 2026-07-16;
+  partial — some queries timed out due to network instability)
 
 ### Pending
-- ACM Digital Library
-- IEEE Xplore
-- Google Scholar (broad discovery)
-- DBLP (bibliographic verification)
+- ACM Digital Library (full query execution)
+- IEEE Xplore (full query execution)
+- Google Scholar (broad discovery verification)
 - arXiv
-- GitHub, Gradle Plugin Portal, Maven Central (open tools)
+- GitHub, Gradle Plugin Portal, Maven Central (open tools verification)
 
 Technical claims were verified against publisher pages, papers, official
 repositories, or official documentation whenever available.
@@ -184,7 +181,7 @@ in the search log and candidate table.
 | More Precise RTS via Semantics-Modifying Changes (Liu, Zhang, Nie, Gligoric, Legunsen) | ISSTA | 2023 | Yes | Static + semantic change reasoning | Test class | No | Empirical | Recent Java RTS near-neighbor |
 | Empirical Comparison of Four Java RTS Techniques (Shin, Ghosh, Vijayasarathy) | JSS | 2022 | Yes | Various incl. coverage-based (OpenClover) | Test | No | Mutation-score-based fault-detection analysis of selected suites | MUST be discussed in manuscript Section 2.2: closest prior mutation-based evaluation of RTS effectiveness; does not measure mutation-level killing-test inclusiveness for JaCoCo-based per-test selection nor probe-level mechanisms |
 | BabelRTS (Maurina, Cazzola, Ghosh) | TSE | 2025 | Polyglot | Static cross-language dependencies | Test | No | Empirical (public replication package) | Recent near-neighbor within cutoff window |
-| SPIRITuS (Romano et al.) | IST | 2018 | Yes | Method code coverage + lexical similarity (IR) | Test | No | Empirical | Closest published method-level coverage-based RTS predecessor; cite and distinguish in Section 2 [TODO: verify full author list] |
+| SPIRITuS (Romano, Scanniello, Antoniol, Marchetto) | IST | 2018 | Yes | Method code coverage + lexical similarity (IR) | Test | No | Empirical | Closest published method-level coverage-based RTS predecessor; cite and distinguish in Section 2 |
 | DIRTS | ICST | 2023 | Yes | DI-aware static dependencies | Class/method | No | Empirical | Direct baseline |
 | BinaryRTS | ICST | 2023 | No (C++) | Binary instrumentation | Test | No | Empirical | Cross-language comparison |
 | iJaCoCo | ASE | 2024 | Yes | Ekstazi + JaCoCo | Test subset for coverage update | Yes | Coverage maintenance, not RTS fault inclusiveness | Near-neighbor |

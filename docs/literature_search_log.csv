@@ -1,10 +1,10 @@
 date,source,query,results_reported,results_screened,candidates_retained,notes
-2026-07-16,web_search,"per-test coverage regression test selection Java tool",6,6,3,"REAL ENTRY - initial discovery pass; surfaced Parasoft Jtest TIA; JCov (unverified); Harrold et al. OOPSLA 2001"
-PENDING,ACM Digital Library,"\"regression test selection\" Java",,,,PENDING - not yet executed
-PENDING,IEEE Xplore,"\"test impact analysis\" Java",,,,PENDING - not yet executed
-PENDING,Google Scholar,"JaCoCo \"regression test selection\"",,,,PENDING - not yet executed
-PENDING,Google Scholar,"(\"mutation testing\" OR PIT) \"regression test selection\"",,,,PENDING - not yet executed
-PENDING,DBLP,"regression test selection Java",,,,PENDING - not yet executed
-PENDING,GitHub,"JaCoCo test selection",,,,PENDING - not yet executed
-PENDING,Gradle Plugin Portal,"test impact",,,,PENDING - not yet executed
-PENDING,Maven Central,"test selection",,,,PENDING - not yet executed
+2026-07-16,web_search,"per-test coverage regression test selection Java tool",6,6,3,"initial discovery pass; surfaced Parasoft Jtest TIA; JCov (unverified); Harrold et al. OOPSLA 2001"
+2026-07-16,DBLP_API,"DIRTS Dependency Injection Regression Test Selection",1,1,1,"DOI confirmed: 10.1109/ICST57152.2023.00046"
+2026-07-16,DBLP_API,"BinaryRTS Cross-language Regression Test Selection",1,1,1,"DOI confirmed: 10.1109/ICST57152.2023.00038"
+2026-07-16,DBLP_API,"Build-System-Aware Multi-language Regression Test Selection",1,1,1,"DOI confirmed: 10.1109/ICSE-SEIP55303.2022.9793870"
+2026-07-16,DBLP_API,"Liu Precise Regression Test Selection 2023",0,0,0,"DBLP API unavailable during session; DOI inferred from ISSTA 2023 proceedings (10.1145/3597926.3598056) - needs manual confirmation"
+2026-07-16,DBLP_API,"JaCoCo regression test selection",0,0,0,"no results (confirms no DBLP-indexed JaCoCo-based RTS publication)"
+2026-07-16,DBLP_API,"per-test coverage test selection",0,0,0,"no results"
+2026-07-16,DBLP_API,"mutation testing regression test selection",0,0,0,"API timeout; partial execution"
+2026-07-16,semantic_scholar,"More Precise Regression Test Selection Semantics Modifying Changes",0,0,0,"API returned empty; DOI assigned from proceedings structure"

@@ -34,10 +34,10 @@ smart-test-picker-evaluation/
 |-- .gitignore
 |-- commons-lang/           # Benchmark: Apache Commons Lang (Maven, 4692 tests)
 |   |-- config/             # Sampling config, PIT Maven profile
-|   |-- scripts/            # Numbered evaluation scripts (00-04)
+|   |-- scripts/            # Numbered evaluation scripts (00-04) + contract test
 |   |-- results/            # Raw PIT output + aggregated metrics
 |   `-- docs/               # Methodology, reproduction, failure analysis
-|-- jgrapht/                # Benchmark: JGraphT (Maven multi-module, Java modules via JPMS, 2308 tests)
+|-- jgrapht/                # Benchmark: JGraphT (Maven multi-module, JPMS, 2308 tests)
 |   |-- config/             # Sampling config (20 classes, curated stratified)
 |   |-- scripts/            # Evaluation scripts (00-04)
 |   |-- results/            # Raw PIT output + aggregated metrics
@@ -47,17 +47,30 @@ smart-test-picker-evaluation/
 |   |-- scripts/            # Evaluation scripts (02-04)
 |   |-- results/            # Raw PIT output + aggregated metrics
 |   `-- docs/               # Methodology, reproduction, failure analysis
-`-- petclinic/              # Pilot: Spring PetClinic (Gradle, 52 tests)
-|-- analysis/              # Shared evaluation core, taxonomy and verification
+|-- petclinic/              # Pilot: Spring PetClinic (Gradle, 52 tests)
+|   |-- config/             # Sampling config (all 17 classes)
+|   |-- scripts/            # Evaluation scripts (00-04)
+|   |-- results/            # PIT output + aggregated metrics
+|   `-- docs/               # Methodology, reproduction, failure analysis
+|-- analysis/               # Shared evaluation core, taxonomy and verification
 |   |-- evaluation_core.py  # Shared selectors, loading, resolution
 |   |-- analyze_failure_modes.py  # Taxonomy and mitigation (--write, --verify)
+|   |-- verify_selector_equivalence.py  # Python/Java equivalence (--verify)
 |   |-- projects.json       # Project configuration
-|   `-- failure_annotations.json  # Manual root-cause annotations
-`-- results/               # Cross-project taxonomy and mitigation outputs
-    |-- config/
-    |-- scripts/
-    |-- results/
-    `-- docs/
+|   |-- failure_annotations.json  # Manual root-cause annotations
+|   `-- tests/              # Unit tests including synthetic divergence tests
+|-- results/                # Cross-project canonical outputs
+|   |-- failure_taxonomy.json
+|   |-- mitigation_comparison.json
+|   |-- selector_equivalence.json
+|   |-- recollection_comparison.json
+|   `-- contract_test.json
+`-- docs/                   # Cross-project documentation
+    |-- FINAL_RECOLLECTION_SETUP.md
+    |-- SAMPLING_CHRONOLOGY.md
+    |-- LITERATURE_SEARCH.md
+    |-- literature_candidates.csv
+    `-- literature_search_log.csv
 ```
 
 See `<project>/docs/README.md` for project-specific reproduction details.
