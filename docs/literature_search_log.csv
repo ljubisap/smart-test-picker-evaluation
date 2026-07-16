@@ -1,0 +1,10 @@
+date,source,query,results_reported,results_screened,candidates_retained,notes
+2026-07-16,web_search,"per-test coverage regression test selection Java tool",6,6,3,"REAL ENTRY - initial discovery pass; surfaced Parasoft Jtest TIA; JCov (unverified); Harrold et al. OOPSLA 2001"
+PENDING,ACM Digital Library,"\"regression test selection\" Java",,,,PENDING - not yet executed
+PENDING,IEEE Xplore,"\"test impact analysis\" Java",,,,PENDING - not yet executed
+PENDING,Google Scholar,"JaCoCo \"regression test selection\"",,,,PENDING - not yet executed
+PENDING,Google Scholar,"(\"mutation testing\" OR PIT) \"regression test selection\"",,,,PENDING - not yet executed
+PENDING,DBLP,"regression test selection Java",,,,PENDING - not yet executed
+PENDING,GitHub,"JaCoCo test selection",,,,PENDING - not yet executed
+PENDING,Gradle Plugin Portal,"test impact",,,,PENDING - not yet executed
+PENDING,Maven Central,"test selection",,,,PENDING - not yet executed
