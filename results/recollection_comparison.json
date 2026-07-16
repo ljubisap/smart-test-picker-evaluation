@@ -1,0 +1,69 @@
+{
+  "collectorCommit": "70b3984626ebed16db015c7c261eda132e999f10",
+  "conclusion": "No safety-status changes. All 13 unsafe mutations remain unsafe with the same taxonomy (5A/7B/1C). Coverage content changes from the append fix affect selected-set sizes but not safety outcomes.",
+  "oldCollectorPin": "50b44591fe7e9aefb1c0d9ceabce2c8b743f3778",
+  "perProject": {
+    "commons-lang": {
+      "classLevelSelectedSetDifferences": 0,
+      "constructorOnlySelectedSetDifferences": 0,
+      "mutationCount": 772,
+      "newLogicalTests": 4692,
+      "newRawTestEntries": 4692,
+      "oldLogicalTests": 4692,
+      "oldRawTestEntries": 4692,
+      "originalSelectedSetDifferences": 0,
+      "safetyStatusChanges": 0,
+      "unsafeAfter": 1,
+      "unsafeBefore": 1
+    },
+    "jgrapht": {
+      "classLevelSelectedSetDifferences": 0,
+      "constructorOnlySelectedSetDifferences": 0,
+      "mutationCount": 517,
+      "newLogicalTests": 2308,
+      "newRawTestEntries": 2308,
+      "oldLogicalTests": 2308,
+      "oldRawTestEntries": 2308,
+      "originalSelectedSetDifferences": 0,
+      "safetyStatusChanges": 0,
+      "unsafeAfter": 1,
+      "unsafeBefore": 1
+    },
+    "petclinic": {
+      "classLevelSelectedSetDifferences": 0,
+      "constructorOnlySelectedSetDifferences": 0,
+      "mutationCount": 94,
+      "newLogicalTests": 52,
+      "newRawTestEntries": 52,
+      "oldLogicalTests": 52,
+      "oldRawTestEntries": 52,
+      "originalSelectedSetDifferences": 0,
+      "safetyStatusChanges": 0,
+      "unsafeAfter": 0,
+      "unsafeBefore": 0
+    },
+    "spring-core": {
+      "classLevelSelectedSetDifferences": 0,
+      "constructorOnlySelectedSetDifferences": 0,
+      "mutationCount": 454,
+      "newLogicalTests": 3624,
+      "newRawTestEntries": 3624,
+      "oldLogicalTests": 3624,
+      "oldRawTestEntries": 3624,
+      "originalSelectedSetDifferences": 0,
+      "safetyStatusChanges": 0,
+      "unsafeAfter": 11,
+      "unsafeBefore": 11
+    }
+  },
+  "safetyFlips": [],
+  "totals": {
+    "classLevelSelectedSetDifferences": 0,
+    "constructorOnlySelectedSetDifferences": 0,
+    "mutations": 1837,
+    "originalSelectedSetDifferences": 0,
+    "safetyStatusChanges": 0,
+    "unsafeAfter": 13,
+    "unsafeBefore": 13
+  }
+}
