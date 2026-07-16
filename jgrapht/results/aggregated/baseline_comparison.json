@@ -9,9 +9,9 @@
       "safe": 516,
       "unsafe": 1,
       "total": 517,
-      "avg_selected": 76.4,
-      "selection_rate_pct": 3.31,
-      "test_reduction_pct": 96.69
+      "avg_selected": 87.7,
+      "selection_rate_pct": 3.8,
+      "test_reduction_pct": 96.2
     },
     {
       "name": "Class-level only",
@@ -19,22 +19,22 @@
       "safe": 517,
       "unsafe": 0,
       "total": 517,
-      "avg_selected": 206.3,
-      "selection_rate_pct": 8.94,
-      "test_reduction_pct": 91.06
+      "avg_selected": 207.8,
+      "selection_rate_pct": 9.0,
+      "test_reduction_pct": 91.0
     },
     {
       "name": "Random (k=per-mutation)",
-      "safety_pct": 27.89,
-      "safety_std": 1.33,
-      "safety_analytical_pct": 27.9,
+      "safety_pct": 33.59,
+      "safety_std": 1.26,
+      "safety_analytical_pct": 33.63,
       "num_trials": 1000,
-      "safe": 144,
-      "unsafe": 373,
+      "safe": 174,
+      "unsafe": 343,
       "total": 517,
-      "avg_selected": 76.4,
-      "selection_rate_pct": 3.31,
-      "test_reduction_pct": 96.69
+      "avg_selected": 87.7,
+      "selection_rate_pct": 3.8,
+      "test_reduction_pct": 96.2
     }
   ]
 }

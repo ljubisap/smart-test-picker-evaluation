@@ -9,7 +9,7 @@
       "safe": 443,
       "unsafe": 11,
       "total": 454,
-      "avg_selected": 80.3,
+      "avg_selected": 80.6,
       "selection_rate_pct": 2.22,
       "test_reduction_pct": 97.78
     },
@@ -19,20 +19,20 @@
       "safe": 454,
       "unsafe": 0,
       "total": 454,
-      "avg_selected": 527.5,
-      "selection_rate_pct": 14.55,
-      "test_reduction_pct": 85.45
+      "avg_selected": 529.2,
+      "selection_rate_pct": 14.6,
+      "test_reduction_pct": 85.4
     },
     {
       "name": "Random (k=per-mutation)",
       "safety_pct": 17.37,
-      "safety_std": 1.04,
+      "safety_std": 1.09,
       "safety_analytical_pct": 17.36,
       "num_trials": 1000,
       "safe": 79,
       "unsafe": 375,
       "total": 454,
-      "avg_selected": 80.3,
+      "avg_selected": 80.6,
       "selection_rate_pct": 2.22,
       "test_reduction_pct": 97.78
     }
