@@ -47,23 +47,23 @@
     },
     {
       "classLevelBaseline": {
-        "avgSelected": 206.3,
+        "avgSelected": 207.8,
         "inclusivenessPct": 100.0,
         "safe": 517,
-        "selectionRatePct": 8.94
+        "selectionRatePct": 9.0
       },
       "constructorOnlyRule": {
         "additionalRecovered": 1,
-        "avgSelected": 98.3,
+        "avgSelected": 96.9,
         "inclusivenessPct": 100.0,
         "safe": 517,
-        "selectionRatePct": 4.26
+        "selectionRatePct": 4.2
       },
       "original": {
-        "avgSelected": 76.4,
+        "avgSelected": 87.7,
         "inclusivenessPct": 99.81,
         "safe": 516,
-        "selectionRatePct": 3.31
+        "selectionRatePct": 3.8
       },
       "project": "jgrapht",
       "totalMutations": 517,
@@ -71,20 +71,20 @@
     },
     {
       "classLevelBaseline": {
-        "avgSelected": 527.5,
+        "avgSelected": 529.2,
         "inclusivenessPct": 100.0,
         "safe": 454,
-        "selectionRatePct": 14.55
+        "selectionRatePct": 14.6
       },
       "constructorOnlyRule": {
         "additionalRecovered": 4,
-        "avgSelected": 84.6,
+        "avgSelected": 84.9,
         "inclusivenessPct": 98.46,
         "safe": 447,
-        "selectionRatePct": 2.33
+        "selectionRatePct": 2.34
       },
       "original": {
-        "avgSelected": 80.3,
+        "avgSelected": 80.6,
         "inclusivenessPct": 97.58,
         "safe": 443,
         "selectionRatePct": 2.22

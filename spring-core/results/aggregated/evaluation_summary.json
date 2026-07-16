@@ -1,11 +1,11 @@
 {
   "project": "Spring Framework (spring-core)",
-  "commit": "99a366baf6640b275d08dde60f05da719139bb6a",
+  "commit": "25838a334c037b68e614f6b571af03a1f6bfec19",
   "num_classes": 18,
   "total_tests": 3624,
   "total_mutations": 454,
   "inclusiveness_pct": 97.58,
-  "avg_selection_size": 80.3,
+  "avg_selection_size": 80.6,
   "selection_rate_pct": 2.22,
   "test_reduction_pct": 97.78,
   "safe": 443,

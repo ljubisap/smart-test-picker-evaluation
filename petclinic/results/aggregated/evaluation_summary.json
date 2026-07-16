@@ -1,6 +1,6 @@
 {
   "project": "Spring PetClinic",
-  "commit": "e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f",
+  "commit": "cbb884f01f7fef663fcff256e303d967494a4f8b",
   "num_classes": 14,
   "total_tests": 52,
   "total_mutations": 94,

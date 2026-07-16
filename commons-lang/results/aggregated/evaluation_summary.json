@@ -1,6 +1,6 @@
 {
   "project": "Apache Commons Lang",
-  "commit": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
+  "commit": "4492c322d072afdd48d0c8323433c7f5e53dcf53",
   "num_classes": 21,
   "total_tests": 4692,
   "total_mutations": 772,

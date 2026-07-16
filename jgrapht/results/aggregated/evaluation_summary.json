@@ -1,13 +1,13 @@
 {
   "project": "JGraphT",
-  "commit": "719212a1fe0bbbf62210159f50920a71e80b73ed",
+  "commit": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
   "num_classes": 20,
   "total_tests": 2308,
   "total_mutations": 517,
   "inclusiveness_pct": 99.81,
-  "avg_selection_size": 76.4,
-  "selection_rate_pct": 3.31,
-  "test_reduction_pct": 96.69,
+  "avg_selection_size": 87.7,
+  "selection_rate_pct": 3.8,
+  "test_reduction_pct": 96.2,
   "safe": 516,
   "unsafe": 1,
   "unsafe_details": [

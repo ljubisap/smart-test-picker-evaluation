@@ -39,10 +39,10 @@
             {
               "pitNormalized": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2",
               "rawPitId": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest]/[method:testGetTour2()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2",
+                  "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2_3dc2465",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP#<init>"
@@ -55,10 +55,10 @@
             {
               "pitNormalized": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0",
               "rawPitId": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest]/[method:testGetTour0()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0",
+                  "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0_3dc2465",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP#<init>"
@@ -93,10 +93,10 @@
             {
               "pitNormalized": "TypeDescriptorTests#upCastNotSuper",
               "rawPitId": "org.springframework.core.convert.TypeDescriptorTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.TypeDescriptorTests]/[method:upCastNotSuper()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "TypeDescriptorTests#upCastNotSuper",
+                  "coverageKey": "TypeDescriptorTests#upCastNotSuper_1ce9511",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.core.convert.TypeDescriptor#<init>",
@@ -123,10 +123,10 @@
             {
               "pitNormalized": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass",
               "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertIllegalArgumentNullTargetTypeFromClass()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass",
+                  "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.core.convert.support.GenericConversionService#<init>"
@@ -139,10 +139,10 @@
             {
               "pitNormalized": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType",
               "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertFromClassSourceTypeToNullTargetType()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType",
+                  "coverageKey": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.core.convert.support.GenericConversionService#<init>"
@@ -168,10 +168,10 @@
             {
               "pitNormalized": "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType",
               "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertFromTypeDescriptorSourceTypeToNullTargetType()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType",
+                  "coverageKey": "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType_1c4b620",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.core.convert.support.GenericConversionService#<init>"
@@ -184,10 +184,10 @@
             {
               "pitNormalized": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor",
               "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor",
+                  "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor_6518014",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.core.convert.support.GenericConversionService#<init>"
@@ -213,10 +213,10 @@
             {
               "pitNormalized": "GenericConversionServiceTests#convertToNullTargetClass",
               "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:convertToNullTargetClass()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "GenericConversionServiceTests#convertToNullTargetClass",
+                  "coverageKey": "GenericConversionServiceTests#convertToNullTargetClass_2b9458d",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.core.convert.support.GenericConversionService#<init>"
@@ -242,10 +242,10 @@
             {
               "pitNormalized": "GenericConversionServiceTests#convertToNullTargetTypeDescriptor",
               "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:convertToNullTargetTypeDescriptor()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "GenericConversionServiceTests#convertToNullTargetTypeDescriptor",
+                  "coverageKey": "GenericConversionServiceTests#convertToNullTargetTypeDescriptor_2a0041a",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.core.convert.support.GenericConversionService#<init>"
@@ -271,10 +271,10 @@
             {
               "pitNormalized": "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable",
               "rawPitId": "org.springframework.core.task.SimpleAsyncTaskExecutorTests.[engine:junit-jupiter]/[class:org.springframework.core.task.SimpleAsyncTaskExecutorTests]/[method:throwsExceptionWhenSuppliedWithNullRunnable()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable",
+                  "coverageKey": "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable_1b9ea4e",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.core.task.SimpleAsyncTaskExecutor#<init>",
@@ -301,10 +301,10 @@
             {
               "pitNormalized": "AssertTests#isAssignableWithNullSupertype",
               "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isAssignableWithNullSupertype()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "AssertTests#isAssignableWithNullSupertype",
+                  "coverageKey": "AssertTests#isAssignableWithNullSupertype_49c6272",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.util.Assert#notNull"
@@ -330,10 +330,10 @@
             {
               "pitNormalized": "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier",
               "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isAssignableWithNullSupertypeAndMessageSupplier()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier",
+                  "coverageKey": "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier_7bdf456",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.util.Assert#notNull"
@@ -359,10 +359,10 @@
             {
               "pitNormalized": "AssertTests#isInstanceOfWithNullType",
               "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isInstanceOfWithNullType()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "AssertTests#isInstanceOfWithNullType",
+                  "coverageKey": "AssertTests#isInstanceOfWithNullType_7d9d1f6",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.util.Assert#notNull"
@@ -388,10 +388,10 @@
             {
               "pitNormalized": "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier",
               "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isInstanceOfWithNullTypeAndMessageSupplier()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier",
+                  "coverageKey": "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier_3ad5712",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.util.Assert#notNull"
@@ -417,10 +417,10 @@
             {
               "pitNormalized": "ExponentialBackOffTests#invalidInterval",
               "rawPitId": "org.springframework.util.ExponentialBackOffTests.[engine:junit-jupiter]/[class:org.springframework.util.ExponentialBackOffTests]/[method:invalidInterval()]",
-              "resolutionMode": "direct",
+              "resolutionMode": "base-name-single",
               "resolvedEntries": [
                 {
-                  "coverageKey": "ExponentialBackOffTests#invalidInterval",
+                  "coverageKey": "ExponentialBackOffTests#invalidInterval_2fbef03",
                   "mutatedMethodPresent": false,
                   "targetClassMethods": [
                     "org.springframework.util.backoff.ExponentialBackOff#<init>",
@@ -455,18 +455,18 @@
         "tests": 4692
       },
       "jgrapht": {
-        "commit": "719212a1fe0bbbf62210159f50920a71e80b73ed",
-        "sha256": "7fb624b149c9769303a88d6f6cda63f04e7a734f22a02106cd161b9dae2f03e6",
+        "commit": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+        "sha256": "851e4287a57b981d8a9af930e9774656987f8e5b8a392ec53bb0850422dbcdc5",
         "tests": 2308
       },
       "petclinic": {
-        "commit": "e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f",
-        "sha256": "9cc870f7b555a43e1ad27f6c9ce96a93185a9ccc125f59b7765535f44c0ba31d",
+        "commit": "cbb884f01f7fef663fcff256e303d967494a4f8b",
+        "sha256": "fb8ace81fab33aac953a26fa6d340ce5f486771295f2ef50a779f4be0981152a",
         "tests": 52
       },
       "spring-core": {
-        "commit": "99a366baf6640b275d08dde60f05da719139bb6a",
-        "sha256": "fff54cf01b9105abcffd78771fd25b9f62d1f1582ce57a034aead5daa8162926",
+        "commit": "25838a334c037b68e614f6b571af03a1f6bfec19",
+        "sha256": "936becf03857bfa0d22958ca88053f4c8bfabc85651f822f4ef51837bb2813b5",
         "tests": 3624
       }
     },
