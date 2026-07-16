@@ -1,7 +1,8 @@
 {
   "collectorCommit": "70b3984626ebed16db015c7c261eda132e999f10",
-  "conclusion": "No safety-status changes. All 13 unsafe mutations remain unsafe with the same taxonomy (5A/7B/1C). Coverage content changed for some tests, but the normalized selected-test sets were unchanged for all 1,837 mutations under all three selectors.",
+  "conclusion": "No safety-status changes. All 13 unsafe mutations remain unsafe with the same taxonomy (5A/7B/1C). Coverage content changed due to the append fix: 174 JGraphT and 13 spring-core mutations select a strictly larger normalized set on the re-collected maps. Commons Lang and PetClinic normalized sets are unchanged.",
   "oldCollectorPin": "50b44591fe7e9aefb1c0d9ceabce2c8b743f3778",
+  "oldMapCommit": "46b3cf44affe721b1b81633cad426b17ed333710",
   "perProject": {
     "commons-lang": {
       "classLevelSelectedSetDifferences": 0,
@@ -17,14 +18,14 @@
       "unsafeBefore": 1
     },
     "jgrapht": {
-      "classLevelSelectedSetDifferences": 0,
-      "constructorOnlySelectedSetDifferences": 0,
+      "classLevelSelectedSetDifferences": 160,
+      "constructorOnlySelectedSetDifferences": 174,
       "mutationCount": 517,
       "newLogicalTests": 2308,
       "newRawTestEntries": 2308,
       "oldLogicalTests": 2308,
       "oldRawTestEntries": 2308,
-      "originalSelectedSetDifferences": 0,
+      "originalSelectedSetDifferences": 174,
       "safetyStatusChanges": 0,
       "unsafeAfter": 1,
       "unsafeBefore": 1
@@ -43,14 +44,14 @@
       "unsafeBefore": 0
     },
     "spring-core": {
-      "classLevelSelectedSetDifferences": 0,
-      "constructorOnlySelectedSetDifferences": 0,
+      "classLevelSelectedSetDifferences": 60,
+      "constructorOnlySelectedSetDifferences": 13,
       "mutationCount": 454,
       "newLogicalTests": 3624,
       "newRawTestEntries": 3624,
       "oldLogicalTests": 3624,
       "oldRawTestEntries": 3624,
-      "originalSelectedSetDifferences": 0,
+      "originalSelectedSetDifferences": 13,
       "safetyStatusChanges": 0,
       "unsafeAfter": 11,
       "unsafeBefore": 11
@@ -58,10 +59,10 @@
   },
   "safetyFlips": [],
   "totals": {
-    "classLevelSelectedSetDifferences": 0,
-    "constructorOnlySelectedSetDifferences": 0,
+    "classLevelSelectedSetDifferences": 220,
+    "constructorOnlySelectedSetDifferences": 187,
     "mutations": 1837,
-    "originalSelectedSetDifferences": 0,
+    "originalSelectedSetDifferences": 187,
     "safetyStatusChanges": 0,
     "unsafeAfter": 13,
     "unsafeBefore": 13

@@ -12,8 +12,8 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | Project | Tests | Mutations | Inclusiveness | Reduction | Avg Sel. | Status | Folder |
 |---------|-------|-----------|---------------|-----------|----------|--------|--------|
 | Apache Commons Lang | 4692 | 772 | 99.87% | 99.64% | 17.0 | Done | [commons-lang/](commons-lang/) |
-| JGraphT | 2308 | 517 | 99.81% | 96.69% | 76.4 | Done | [jgrapht/](jgrapht/) |
-| Spring Framework (spring-core) | 3624 | 454 | 97.58% | 97.78% | 80.3 | Done | [spring-core/](spring-core/) |
+| JGraphT | 2308 | 517 | 99.81% | 96.20% | 87.7 | Done | [jgrapht/](jgrapht/) |
+| Spring Framework (spring-core) | 3624 | 454 | 97.58% | 97.78% | 80.6 | Done | [spring-core/](spring-core/) |
 | Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.7 | Done (pilot) | [petclinic/](petclinic/) |
 
 ## Sampling Strategies

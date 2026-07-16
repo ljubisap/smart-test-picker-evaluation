@@ -1,0 +1,205 @@
+{
+  "cases": [
+    {
+      "caseId": "Processor#is32Bit",
+      "mutatedMethod": "is32Bit",
+      "mutationLine": 187,
+      "selectedCount": 3,
+      "selectedSetHash": "c959938087d8cfc5",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.arch.Processor"
+    },
+    {
+      "caseId": "HashCodeBuilder#<init>",
+      "mutatedMethod": "<init>",
+      "mutationLine": 527,
+      "selectedCount": 51,
+      "selectedSetHash": "d5d24a9f7bbe8173",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.builder.HashCodeBuilder"
+    },
+    {
+      "caseId": "ComparableUtils#between",
+      "mutatedMethod": "between",
+      "mutationLine": 137,
+      "selectedCount": 9,
+      "selectedSetHash": "b034a9c9a9daee6b",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.compare.ComparableUtils"
+    },
+    {
+      "caseId": "LockingVisitors#create",
+      "mutatedMethod": "create",
+      "mutationLine": 696,
+      "selectedCount": 5,
+      "selectedSetHash": "5badd98685679c55",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.concurrent.locks.LockingVisitors"
+    },
+    {
+      "caseId": "EventListenerSupport#<init>",
+      "mutatedMethod": "<init>",
+      "mutationLine": 214,
+      "selectedCount": 18,
+      "selectedSetHash": "314135873fffdc93",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.event.EventListenerSupport"
+    },
+    {
+      "caseId": "EventUtils#bindEventsToMethod",
+      "mutatedMethod": "bindEventsToMethod",
+      "mutationLine": 122,
+      "selectedCount": 3,
+      "selectedSetHash": "d982094f90c32ffd",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.event.EventUtils"
+    },
+    {
+      "caseId": "Fraction#abs",
+      "mutatedMethod": "abs",
+      "mutationLine": 507,
+      "selectedCount": 1,
+      "selectedSetHash": "70df86ee0d138adf",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.math.Fraction"
+    },
+    {
+      "caseId": "IEEE754rUtils#max",
+      "mutatedMethod": "max",
+      "mutationLine": 64,
+      "selectedCount": 2,
+      "selectedSetHash": "3f641a4489b85e18",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.math.IEEE754rUtils"
+    },
+    {
+      "caseId": "MutableFloat#add",
+      "mutatedMethod": "add",
+      "mutationLine": 91,
+      "selectedCount": 2,
+      "selectedSetHash": "288e243469e29f7c",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.mutable.MutableFloat"
+    },
+    {
+      "caseId": "MutableObject#equals",
+      "mutatedMethod": "equals",
+      "mutationLine": 73,
+      "selectedCount": 1,
+      "selectedSetHash": "5230a47f90633ae2",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.mutable.MutableObject"
+    },
+    {
+      "caseId": "MethodUtils#distance",
+      "mutatedMethod": "distance",
+      "mutationLine": 85,
+      "selectedCount": 4,
+      "selectedSetHash": "1cff118dff489a72",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.reflect.MethodUtils"
+    },
+    {
+      "caseId": "FieldUtils#getAllFields",
+      "mutatedMethod": "getAllFields",
+      "mutationLine": 59,
+      "selectedCount": 21,
+      "selectedSetHash": "8b5dedef7b883f53",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.reflect.FieldUtils"
+    },
+    {
+      "caseId": "Streams#failableStream",
+      "mutatedMethod": "failableStream",
+      "mutationLine": 578,
+      "selectedCount": 13,
+      "selectedSetHash": "c13fc99fbf37c461",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.stream.Streams"
+    },
+    {
+      "caseId": "LangCollectors#collect",
+      "mutatedMethod": "collect",
+      "mutationLine": 112,
+      "selectedCount": 9,
+      "selectedSetHash": "ec6097931ced49ae",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.stream.LangCollectors"
+    },
+    {
+      "caseId": "FormattableUtils#append",
+      "mutatedMethod": "append",
+      "mutationLine": 61,
+      "selectedCount": 5,
+      "selectedSetHash": "d8857601ee6f9da1",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.text.FormattableUtils"
+    },
+    {
+      "caseId": "EntityArrays#HTML40_EXTENDED_ESCAPE",
+      "mutatedMethod": "HTML40_EXTENDED_ESCAPE",
+      "mutationLine": 403,
+      "selectedCount": 2,
+      "selectedSetHash": "f7eaa78ea1a61855",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.text.translate.EntityArrays"
+    },
+    {
+      "caseId": "NumericEntityEscaper#above",
+      "mutatedMethod": "above",
+      "mutationLine": 40,
+      "selectedCount": 2,
+      "selectedSetHash": "735042d9dae1612e",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+    },
+    {
+      "caseId": "Pair#accept",
+      "mutatedMethod": "accept",
+      "mutationLine": 127,
+      "selectedCount": 1,
+      "selectedSetHash": "6c83b1d56313e976",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.tuple.Pair"
+    },
+    {
+      "caseId": "ImmutablePair#emptyArray",
+      "mutatedMethod": "emptyArray",
+      "mutationLine": 67,
+      "selectedCount": 1,
+      "selectedSetHash": "43eac77ade49d4fc",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.tuple.ImmutablePair"
+    },
+    {
+      "caseId": "FluentBitSet#and",
+      "mutatedMethod": "and",
+      "mutationLine": 77,
+      "selectedCount": 2,
+      "selectedSetHash": "b8ee822466282919",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.util.FluentBitSet"
+    },
+    {
+      "caseId": "IterableStringTokenizer#iterator",
+      "mutatedMethod": "iterator",
+      "mutationLine": 72,
+      "selectedCount": 14,
+      "selectedSetHash": "62686cca57d334d4",
+      "status": "EXACT",
+      "targetClass": "org.apache.commons.lang3.util.IterableStringTokenizer"
+    }
+  ],
+  "command": "python3 commons-lang/scripts/contract_test.py --project-dir <commons-lang> --mvn <mvn>",
+  "coverageMapCommit": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
+  "coverageMapTests": 4692,
+  "description": "Contract test result: Python evaluation_core.select_original() vs actual pinned Maven plugin execution for 21 Commons Lang cases.",
+  "infraFailures": 0,
+  "mismatches": 0,
+  "passed": 21,
+  "pluginCommit": "70b3984626ebed16db015c7c261eda132e999f10",
+  "pluginVersion": "0.1.0",
+  "schemaVersion": 1,
+  "totalCases": 21,
+  "verifyCommand": "python3 commons-lang/scripts/contract_test.py --project-dir /path/to/commons-lang --mvn /path/to/mvn"
+}
