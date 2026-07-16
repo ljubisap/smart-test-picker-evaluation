@@ -1,41 +1,38 @@
 {
   "byProject": {
     "commons-lang": {
-      "casesWithMethodHits": 772,
-      "casesWithPythonOnlyFallbackCandidates": 0,
-      "casesWithZeroMethodHits": 0,
       "exactMatches": 772,
       "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 772,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
       "mutations": 772
     },
     "jgrapht": {
-      "casesWithMethodHits": 517,
-      "casesWithPythonOnlyFallbackCandidates": 0,
-      "casesWithZeroMethodHits": 0,
       "exactMatches": 517,
       "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 517,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
       "mutations": 517
     },
     "petclinic": {
-      "casesWithMethodHits": 94,
-      "casesWithPythonOnlyFallbackCandidates": 0,
-      "casesWithZeroMethodHits": 0,
       "exactMatches": 94,
       "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 94,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
       "mutations": 94
     },
     "spring-core": {
-      "casesWithMethodHits": 454,
-      "casesWithPythonOnlyFallbackCandidates": 0,
-      "casesWithZeroMethodHits": 0,
       "exactMatches": 454,
       "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 454,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
       "mutations": 454
     }
   },
-  "casesWithMethodHits": 1837,
-  "casesWithPythonOnlyFallbackCandidates": 0,
-  "casesWithZeroMethodHits": 0,
   "description": "Dataset-wide comparison of Python evaluation_core.select_original() vs modeled Java TestSelector.selectTests() semantics for single-method changes. The Java model is faithful to the production code for the exact experimental input shape: changedClasses={C}, changedMethods={C#M}.",
   "differences": [],
   "exactMatches": 1837,
@@ -47,6 +44,9 @@
   },
   "mismatches": 0,
   "mutationOccurrences": 1837,
+  "mutationOccurrencesWithMethodHits": 1837,
+  "mutationOccurrencesWithPythonOnlyFallback": 0,
+  "mutationOccurrencesWithZeroMethodHits": 0,
   "schemaVersion": 1,
   "uniqueSelectorCases": 560
 }

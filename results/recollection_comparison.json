@@ -1,6 +1,6 @@
 {
   "collectorCommit": "70b3984626ebed16db015c7c261eda132e999f10",
-  "conclusion": "No safety-status changes. All 13 unsafe mutations remain unsafe with the same taxonomy (5A/7B/1C). Coverage content changes from the append fix affect selected-set sizes but not safety outcomes.",
+  "conclusion": "No safety-status changes. All 13 unsafe mutations remain unsafe with the same taxonomy (5A/7B/1C). Coverage content changed for some tests, but the normalized selected-test sets were unchanged for all 1,837 mutations under all three selectors.",
   "oldCollectorPin": "50b44591fe7e9aefb1c0d9ceabce2c8b743f3778",
   "perProject": {
     "commons-lang": {

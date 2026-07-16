@@ -178,9 +178,9 @@ def run_verification(repo_root: Path):
             "mutations": len(resolved),
             "exactMatches": proj_exact,
             "mismatches": proj_mismatch,
-            "casesWithMethodHits": proj_method_hits,
-            "casesWithZeroMethodHits": proj_zero_hits,
-            "casesWithPythonOnlyFallbackCandidates": proj_python_fallback,
+            "mutationOccurrencesWithMethodHits": proj_method_hits,
+            "mutationOccurrencesWithZeroMethodHits": proj_zero_hits,
+            "mutationOccurrencesWithPythonOnlyFallback": proj_python_fallback,
         }
 
     report = {
@@ -201,9 +201,9 @@ def run_verification(repo_root: Path):
         "uniqueSelectorCases": len(unique_cases),
         "exactMatches": exact_matches,
         "mismatches": mismatches,
-        "casesWithMethodHits": cases_with_method_hits,
-        "casesWithZeroMethodHits": cases_with_zero_method_hits,
-        "casesWithPythonOnlyFallbackCandidates": cases_with_python_only_fallback,
+        "mutationOccurrencesWithMethodHits": cases_with_method_hits,
+        "mutationOccurrencesWithZeroMethodHits": cases_with_zero_method_hits,
+        "mutationOccurrencesWithPythonOnlyFallback": cases_with_python_only_fallback,
         "byProject": by_project,
         "differences": differences,
     }
@@ -245,9 +245,9 @@ def main():
         print(f"Unique selector cases: {report['uniqueSelectorCases']}")
         print(f"Exact matches: {report['exactMatches']}")
         print(f"Mismatches: {report['mismatches']}")
-        print(f"Cases with method hits: {report['casesWithMethodHits']}")
-        print(f"Cases with zero method hits: {report['casesWithZeroMethodHits']}")
-        print(f"Cases with Python-only fallback candidates: {report['casesWithPythonOnlyFallbackCandidates']}")
+        print(f"Occurrences with method hits: {report['mutationOccurrencesWithMethodHits']}")
+        print(f"Occurrences with zero method hits: {report['mutationOccurrencesWithZeroMethodHits']}")
+        print(f"Occurrences with Python-only fallback: {report['mutationOccurrencesWithPythonOnlyFallback']}")
 
         if report["mismatches"] == 0:
             print()

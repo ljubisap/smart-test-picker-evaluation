@@ -165,17 +165,17 @@ class TestDatasetVerification(unittest.TestCase):
         self.assertIn("uniqueSelectorCases", report)
         self.assertIn("exactMatches", report)
         self.assertIn("mismatches", report)
-        self.assertIn("casesWithMethodHits", report)
-        self.assertIn("casesWithZeroMethodHits", report)
-        self.assertIn("casesWithPythonOnlyFallbackCandidates", report)
+        self.assertIn("mutationOccurrencesWithMethodHits", report)
+        self.assertIn("mutationOccurrencesWithZeroMethodHits", report)
+        self.assertIn("mutationOccurrencesWithPythonOnlyFallback", report)
         self.assertIn("byProject", report)
         self.assertIn("differences", report)
 
         # For our dataset: all matches, no mismatches
         self.assertEqual(report["mismatches"], 0)
         self.assertEqual(report["exactMatches"], report["mutationOccurrences"])
-        self.assertEqual(report["casesWithZeroMethodHits"], 0)
-        self.assertEqual(report["casesWithPythonOnlyFallbackCandidates"], 0)
+        self.assertEqual(report["mutationOccurrencesWithZeroMethodHits"], 0)
+        self.assertEqual(report["mutationOccurrencesWithPythonOnlyFallback"], 0)
 
 
 import json

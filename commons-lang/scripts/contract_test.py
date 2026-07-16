@@ -90,12 +90,18 @@ def main():
 
     # Verify clean working tree
     ok, stdout, _ = run_cmd(["git", "status", "--porcelain"], project_dir, "git status")
+    if not ok:
+        print(f"ERROR: git status failed")
+        sys.exit(1)
     if stdout.strip():
         print(f"ERROR: Working tree is dirty:\n{stdout}")
         sys.exit(1)
 
     # Record original HEAD
     ok, stdout, _ = run_cmd(["git", "rev-parse", "HEAD"], project_dir, "git HEAD")
+    if not ok or not stdout.strip():
+        print("ERROR: Cannot determine HEAD")
+        sys.exit(1)
     original_head = stdout.strip()
 
     # Load coverage map
@@ -225,9 +231,9 @@ def main():
                 failed += 1
 
         finally:
-            # ALWAYS revert
+            # ALWAYS revert to the recorded original HEAD
             if committed:
-                run_cmd(["git", "reset", "--hard", "HEAD~1"], project_dir, "git revert")
+                run_cmd(["git", "reset", "--hard", original_head], project_dir, "restore original HEAD")
             else:
                 source_file.write_text(original_content)
                 run_cmd(["git", "checkout", "--", str(source_file)], project_dir, "git checkout")

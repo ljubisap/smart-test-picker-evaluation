@@ -4,9 +4,11 @@ evaluation_core.py - Shared evaluation logic for Smart Test Picker replication p
 Provides the Python evaluation selector (implementing the documented selection rules),
 PIT mutation loading, killing-test normalization and resolution, and coverage map I/O.
 
-This is NOT the production Java selector. Automated equivalence with the production
-Java implementation has not yet been established. A preliminary per-mutation contract
-test exists (commons-lang/scripts/contract_test.py) but covers only one project.
+This is NOT the production Java selector. Extensional equivalence has been verified
+for the 560 unique single-method-change cases represented by the committed evaluation
+dataset using a faithful model of the pinned Java selector semantics
+(verify_selector_equivalence.py). A separate 21-case Commons Lang contract test
+executes the actual Maven plugin. General algorithmic equivalence is not claimed.
 """
 
 from __future__ import annotations
