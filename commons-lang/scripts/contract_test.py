@@ -68,17 +68,116 @@ def main():
     parser = argparse.ArgumentParser(
         description="Contract test: Python evaluation selector vs Java production selector"
     )
-    parser.add_argument("--project-dir", type=Path, required=True,
-                        help="Path to commons-lang checkout (smart-test-picker-eval branch)")
-    parser.add_argument("--mvn", type=str, required=True,
-                        help="Path to Maven executable")
+    parser.add_argument("--project-dir", type=Path, required=False,
+                        help="Path to commons-lang checkout (required for --run)")
+    parser.add_argument("--mvn", type=str, required=False,
+                        help="Path to Maven executable (required for --run)")
     parser.add_argument("--coverage-map", type=Path, default=None,
                         help="Coverage map path (default: <project-dir>/target/test-coverage-map.json)")
+    parser.add_argument("--verify", action="store_true",
+                        help="Verify committed contract_test.json by recomputing Python side")
+
     args = parser.parse_args()
 
-    project_dir = args.project_dir.resolve()
-    mvn = args.mvn
-    coverage_map_path = args.coverage_map or (project_dir / "target" / "test-coverage-map.json")
+    if args.verify:
+        verify_artifact()
+        return
+
+    # --run mode (default): requires project-dir and mvn
+    if not args.project_dir:
+        parser.error("--project-dir is required for execution mode")
+    if not args.mvn:
+        parser.error("--mvn is required for execution mode")
+
+    run_contract_test(args.project_dir.resolve(), args.mvn, args.coverage_map)
+
+
+def verify_artifact():
+    """Verify committed results/contract_test.json by recomputing Python selected sets."""
+    artifact_path = REPO_ROOT / "results" / "contract_test.json"
+    if not artifact_path.exists():
+        print(f"VERIFY FAILED: {artifact_path} not found")
+        sys.exit(1)
+
+    with open(artifact_path) as f:
+        committed = json.load(f)
+
+    # Load coverage map (use committed map from evaluation repo)
+    import gzip
+    map_path = REPO_ROOT / "commons-lang" / "results" / "test-coverage-map.json.gz"
+    coverage_data = load_coverage_map(map_path)
+    test_mappings = coverage_data["testMappings"]
+    base_to_keys = build_base_to_keys(test_mappings)
+
+    # Load PIT mutations
+    pit_files = discover_pit_files(REPO_ROOT, ["commons-lang/results/per-class/*/mutations.xml"])
+    raw_mutations = load_pit_mutations("commons-lang", REPO_ROOT, pit_files)
+    resolved = resolve_killing_tests(raw_mutations, test_mappings, base_to_keys)
+
+    # Load sample classes
+    sample_path = REPO_ROOT / "commons-lang" / "config" / "sample_classes.json"
+    with open(sample_path) as f:
+        sample_config = json.load(f)
+    target_classes = [c["fqn"] for c in sample_config["classes"]]
+
+    errors = []
+
+    # Verify each case
+    for case in committed["cases"]:
+        target_class = case["targetClass"]
+        mut = next((m for m in resolved if m.mutated_class == target_class), None)
+        if mut is None:
+            errors.append(f"{case['caseId']}: no matching mutation found")
+            continue
+
+        # Verify case ID consistency
+        expected_case_id = f"{target_class.split('.')[-1]}#{mut.mutated_method}"
+        if case["caseId"] != expected_case_id:
+            errors.append(f"{case['caseId']}: caseId mismatch (expected {expected_case_id})")
+            continue
+
+        # Recompute Python selected set
+        python_selected = select_original(test_mappings, mut.mutated_class, mut.mutated_method)
+
+        # Verify count
+        if len(python_selected) != case["selectedCount"]:
+            errors.append(
+                f"{case['caseId']}: selectedCount mismatch "
+                f"(committed={case['selectedCount']}, computed={len(python_selected)})"
+            )
+            continue
+
+        # Verify hash
+        import hashlib
+        sel_hash = hashlib.sha256("|".join(sorted(python_selected)).encode()).hexdigest()[:16]
+        if sel_hash != case["selectedSetHash"]:
+            errors.append(
+                f"{case['caseId']}: selectedSetHash mismatch "
+                f"(committed={case['selectedSetHash']}, computed={sel_hash})"
+            )
+            continue
+
+    # Verify totals
+    if committed["totalCases"] != len(target_classes):
+        errors.append(f"totalCases: {committed['totalCases']} != {len(target_classes)}")
+    if committed["passed"] != len(committed["cases"]):
+        errors.append(f"passed count inconsistent")
+    if committed["mismatches"] != 0:
+        errors.append(f"committed artifact records mismatches != 0")
+
+    if errors:
+        print("VERIFY FAILED:")
+        for e in errors:
+            print(f"  - {e}")
+        sys.exit(1)
+    else:
+        print(f"VERIFY PASSED: contract_test.json ({committed['totalCases']} cases, "
+              f"all selected-set hashes match recomputed Python evaluation)")
+
+
+def run_contract_test(project_dir, mvn, coverage_map_override):
+    """Execute the full Maven contract test against a live project."""
+    coverage_map_path = coverage_map_override or (project_dir / "target" / "test-coverage-map.json")
 
     # Validate prerequisites
     if not project_dir.exists():
