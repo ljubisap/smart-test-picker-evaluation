@@ -1,17 +1,11 @@
 # Literature Search Protocol
 
-This document supports two claims made in the paper "Lightweight Regression Test
-Selection via Per-Test Runtime Class and Method Coverage in Java":
+This document supports the novelty claims made in the paper "Lightweight Regression Test Selection via Per-Test Runtime Class and Method Coverage in Java":
 
-1. (Section 2.2) "To the best of our knowledge, based on our review of published
-   Java RTS and JaCoCo-based test-impact approaches, this is the first work to
-   quantify the fault-detection inclusiveness of JaCoCo-based per-test selection
-   against mutation testing."
-2. (Section 2.5) "To the best of our knowledge, none of the reviewed approaches
-   combines per-test method-level runtime coverage mapping with dual-granularity
-   selection in a single pass, direct Git-based method-context extraction from
-   committed, staged, and working-tree changes, explicit per-test selection
-   reasoning, and actionable coverage feedback for developers."
+1. (Section 2.2, revised) "To the best of our knowledge, no prior study has provided a complete probe-level causal analysis of all observed false negatives in a JaCoCo-based per-test selector, together with an explicit failure taxonomy, a measured mitigation, and a characterization of the residual observability boundary."
+2. (Section 2.5) "To the best of our knowledge, none of the reviewed approaches combines per-test method-level runtime coverage mapping with dual-granularity selection in a single pass, direct Git-based method-context extraction from committed, staged, and working-tree changes, explicit per-test selection reasoning, and actionable coverage feedback for developers."
+
+Note: The original claim that this is "the first work to quantify the fault-detection inclusiveness of JaCoCo-based per-test selection against mutation testing" was found to be indefensible (see Section 12) and has been replaced with claim 1 above.
 
 Both claims are scoped by "to the best of our knowledge". This document records
 how that knowledge was assembled, so the reader can assess its coverage.
@@ -195,7 +189,7 @@ BinaryRTS; iJaCoCo; Skippy; SPIRITuS; Shin et al.
 | SPIRITuS (Romano, Scanniello, Antoniol, Marchetto) | IST | 2018 | Yes | Method code coverage + lexical similarity | Test | No | 389 mutation-generated faulty versions | Included; method-level predecessor |
 | RTSCheck (Zhu et al.) | ICSE | 2019 | Yes | n/a (checks RTS tools) | n/a | No | Rule/behavior checking | Near-neighbor |
 | Reflection-Aware Static RTS (Shi et al.) | PACMPL/OOPSLA | 2019 | Yes | Static + reflection handling | Test class | No | Empirical | Near-neighbor |
-| **Amann and Jürgens: Change-Driven Testing** | **Springer** | **2020** | **Yes** | **Test-wise coverage (Teamscale)** | **Test** | **Yes (Teamscale uses JaCoCo)** | **99.3% fault detection on 12+ systems** | **Included — published Teamscale line** |
+| **Amann and Juergens: Change-Driven Testing** | **Springer** | **2020** | **Yes** | **Test-wise coverage (Teamscale)** | **Test** | **Yes (Teamscale uses JaCoCo)** | **99.3% fault detection on 12 systems** | **Included -- published Teamscale line** |
 | Build-System-Aware RTS (Elsner et al.) | ICSE-SEIP | 2022 | Multi | Build-system + non-code dependencies | Test | No | Industrial CI evaluation | Near-neighbor |
 | Shin et al.: Empirical Comparison of Four Java RTS Techniques | JSS | 2022 | Yes | Various incl. coverage-based (OpenClover) | Test | No | PIT mutation scores; 30,354 mutants | Included; closest mutation-based RTS comparison |
 | DIRTS (Hundsdorfer et al.) | ICST | 2023 | Yes | DI-aware static dependencies | Class/method | No | Empirical | Direct baseline |
@@ -235,7 +229,7 @@ per-test capability was located; excluded from the candidate corpus.
 Dreier (2017) already combined JaCoCo-based per-test method coverage with
 PIT mutation-based fault-detection evaluation on 12 Java systems, reporting
 99.2% aggregate fault detection. Amann and Jürgens (2020) published the same
-Teamscale test-wise-coverage line of work with a 99.3% result across 12+
+Teamscale test-wise-coverage line of work with a 99.3% result across twelve
 systems. SPIRITuS (2018) evaluated method-level coverage-based RTS fault
 detection on 389 mutation-generated faulty versions. Shin et al. (2022)
 compared four Java RTS tools using PIT with 30,354 mutants.

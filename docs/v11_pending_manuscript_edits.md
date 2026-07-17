@@ -1,7 +1,5 @@
 # Pending RAD1 v11 edits (apply AFTER the final literature commit)
 
-This document supersedes v10_1_pending_manuscript_edits.md.
-
 The critical change: the "first JaCoCo + mutation evaluation" novelty claim
 is no longer defensible. Dreier (2017) already combined JaCoCo per-test
 method-coverage selection with PIT mutation evaluation on 12 Java systems.
@@ -32,7 +30,7 @@ specifically for Java, handling incomplete programs and external libraries
 [Harrold et al., OOPSLA 2001]. HyRTS later combined file- and method-level
 dependency granularities to balance safety and selection precision
 [Zhang, ICSE 2018]. More recently, JcgEks integrates Ekstazi's dynamic file
-dependencies with static method call graph analysis, reporting 29% less
+dependencies with static method call graph analysis, reporting about 30% less
 end-to-end time and 30.9% fewer test classes than Ekstazi across 1,000
 revisions of 20 projects [Zhang et al., ASE 2024].
 
@@ -50,7 +48,7 @@ Apache Commons Lang. The selected tests detected 99.2% of the mutants
 detected by the full suites. Amann and Jürgens subsequently described the
 same test-wise-coverage Test-Impact Analysis line of work in their published
 account of Change-Driven Testing, reporting 99.3% fault detection across
-twelve or more systems [Amann and Jürgens, 2020]. Our study therefore does
+twelve systems [Amann and Juergens, 2020]. Our study therefore does
 not claim the first combination of JaCoCo-based per-test selection and
 mutation analysis. Instead, it performs a complete per-mutant killing-test
 inclusiveness audit, traces every observed false negative to JaCoCo probe
@@ -77,9 +75,9 @@ coverage-based dependencies are missed.
 Add one sentence: Parasoft Jtest provides commercial Java test-impact analysis
 that correlates test-execution and coverage data with code changes;
 implementation details and reproducible evaluation artifacts are not publicly
-available. In the open-source ecosystem, junit4git and Tia also provide
-JaCoCo-based test-impact functionality without published fault-detection
-evaluations.
+available. In the open-source ecosystem, junit4git uses its own Java-agent
+instrumentation to record test impacts, while Tia uses JaCoCo-based method
+mapping; neither provides a published systematic fault-detection evaluation.
 
 ---
 
