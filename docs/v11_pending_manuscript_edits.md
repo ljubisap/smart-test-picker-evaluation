@@ -137,10 +137,10 @@ that gap."
 - Shin, M.K., Ghosh, S., and Vijayasarathy, L.R. An Empirical Comparison of
   Four Java-based Regression Test Selection Techniques. JSS 2022.
   DOI: 10.1016/j.jss.2021.111174.
-- Zhang, C., Li, B., Chen, Z., and Hao, D. Hybrid Regression Test Selection by
+- Zhang, G., Liu, L., Chen, Z., and Wang, J. Hybrid Regression Test Selection by
   Integrating File and Method Dependences (JcgEks). ASE 2024.
-  DOI: 10.1145/3691620.3695062.
-- Machalica, M., Samber, A., Behrndt, M., Branscomb, B., and Cadar, C.
+  DOI: 10.1145/3691620.3695525.
+- Machalica, M., Samylkin, A., Porth, M., and Chandra, S.
   Predictive Test Selection. ICSE-SEIP 2019.
   DOI: 10.1109/ICSE-SEIP.2019.00018.
 - Parasoft. Jtest Test Impact Analysis. Product documentation.
