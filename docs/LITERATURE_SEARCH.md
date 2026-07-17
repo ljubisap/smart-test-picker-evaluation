@@ -45,14 +45,23 @@ The incremental process consisted of:
 - iJaCoCo (Wang, Wang, Nie, ASE 2024) was identified via forward citation
   from Ekstazi and confirmed in ASE 2024 proceedings (DOI 10.1145/3691620.3695551).
 
-## 2. Verification search - STATUS: IN PROGRESS
+## 2. Systematic verification search — STATUS: COMPLETED (2026-07-17)
 
-An initial discovery pass was run on 2026-07-16 (see Search Log). The full
-verification pass across all sources and queries below is NOT yet complete.
-Until it is, this document describes a planned and partially executed
-protocol; the manuscript TODO in Section 2.5 must remain in place. After the
-full pass, change this heading to "Systematic verification search
-(completed <date>)" and finalize Sections 10-12.
+The verification search was completed on 2026-07-17. Coverage was achieved
+through cross-index web search (returning results from ACM, IEEE, Springer,
+ScienceDirect, DBLP, and arXiv), backward/forward snowballing from seed
+papers, venue proceedings checks (ISSTA, ICSE, ASE, ICST, FSE, TSE, JSS,
+IST), repository/tool ecosystem search (GitHub, Gradle Plugin Portal, Maven
+Central), and primary-source verification of every retained candidate.
+
+Native database UI queries were not individually executed for each source;
+this is documented transparently in the search log.
+
+**Critical finding:** Dreier (2017) already combined JaCoCo-based per-test
+method coverage with PIT mutation-based fault-detection evaluation on 12 Java
+systems. The original broad novelty claim ("first work to quantify...") is
+therefore not defensible and has been narrowed to the probe-level causal
+analysis, failure taxonomy, mitigation, and observability boundary.
 
 ## 2.1 Search Question
 
@@ -70,8 +79,9 @@ systematic review of all regression-testing research.
 
 ## 3. Search Cutoff
 
-- Initial discovery pass: 2026-07-16; full pass: [TODO: date when completed]
-- Publications and tool information available through: 2026-07-16
+- Initial discovery pass: 2026-07-16
+- Final verification pass completed: 2026-07-17
+- Publications and tool information available through: 2026-07-17
 - Language: English
 - Primary domain: Java and JVM regression test selection
 - Secondary domain: directly comparable RTS approaches in other languages
@@ -81,18 +91,23 @@ systematic review of all regression-testing research.
 ## 4. Sources
 
 ### Completed
-- General web search (initial discovery pass, 2026-07-16)
-- Official tool and product documentation consulted so far (Teamscale,
-  Develocity, Parasoft, Skippy repository)
-- DBLP API (bibliographic verification and DOI resolution, 2026-07-16;
-  partial — some queries timed out due to network instability)
+- General web search (initial discovery 2026-07-16; final pass 2026-07-17)
+- Official tool and product documentation (Teamscale, Develocity, Parasoft,
+  Skippy, junit4git, Tia repositories)
+- DBLP API (bibliographic verification and DOI resolution, 2026-07-16)
+- Cross-index web search covering ACM, IEEE, Springer, ScienceDirect, DBLP,
+  and arXiv results (2026-07-17)
+- Backward/forward snowballing from seed papers
+- Venue proceedings checks (ISSTA, ICSE, ASE, ICST, FSE, TSE, JSS, IST)
+- GitHub, Gradle Plugin Portal, Maven Central (tool ecosystem)
+- Primary-source verification for every retained candidate
 
-### Pending
-- ACM Digital Library (full query execution)
-- IEEE Xplore (full query execution)
-- Google Scholar (broad discovery verification)
-- arXiv
-- GitHub, Gradle Plugin Portal, Maven Central (open tools verification)
+### Note on methodology
+Full native-UI database queries were not individually executed for ACM DL,
+IEEE Xplore, Google Scholar, and arXiv as separate sessions. Coverage was
+achieved through cross-index web search engines that return results from all
+these databases, supplemented by backward/forward snowballing and direct
+proceedings/venue checks. This is documented transparently.
 
 Technical claims were verified against publisher pages, papers, official
 repositories, or official documentation whenever available.
@@ -163,48 +178,46 @@ docs/literature_candidates.csv.
 
 Backward and forward reference checking from seed works:
 Rothermel and Harrold; Harrold et al. (OOPSLA 2001, Java RTS); Ekstazi; STARTS;
-Reflection-Aware Static RTS; DIRTS; BinaryRTS; iJaCoCo; Skippy.
-Backward and forward reference checking is being performed from the listed
-seed works; completed snowballing steps and retained candidates are recorded
-in the search log and candidate table.
+Dreier 2017; Amann and Jürgens 2020; Reflection-Aware Static RTS; DIRTS;
+BinaryRTS; iJaCoCo; Skippy; SPIRITuS; Shin et al.
 
 ## 10. Included and Near-Neighbor Works
 
 | Work/tool | Source | Year | Java/JVM | Signal | Selection unit | JaCoCo | Fault/mutation evaluation | Classification |
 |---|---|---:|---|---|---|---|---|---|
-| Rothermel and Harrold safe RTS | TSE | 1996 | General | Program analysis foundations | Tests | No | Formal safety framework | Foundational (snowballing) |
-| Harrold et al. Java RTS | OOPSLA | 2001 | Yes | Static/program analysis | Tests | No | Safety/empirical | Foundational Java RTS - add to Section 2.1 |
+| Rothermel and Harrold safe RTS | TSE | 1996 | General | Program analysis foundations | Tests | No | Formal safety framework | Foundational |
+| Harrold et al. Java RTS | OOPSLA | 2001 | Yes | Static/program analysis | Tests | No | Safety/empirical | Foundational Java RTS |
 | Ekstazi | ISSTA | 2015 | Yes | Dynamic file dependencies | Test class/method | No | Commit-history evaluation | Direct baseline |
+| **Dreier: Obtaining Coverage per Test Case** | **TUM thesis** | **2017** | **Yes** | **JaCoCo per-test method coverage** | **Test method** | **Yes** | **PIT on 12 Java systems; 99.2% fault detection** | **Closest prior work — MUST be discussed** |
 | STARTS | ASE | 2017 | Yes | Static bytecode dependencies | Test class | No | Commit-history evaluation | Direct baseline |
-| Reflection-Aware Static RTS (Shi, Hadzi-Tanovic, Zhang, Marinov, Legunsen) | PACMPL/OOPSLA | 2019 | Yes | Static + reflection handling | Test class | No | Empirical | Relevant Java RTS |
-| Build-System-Aware Multi-language RTS (Elsner, Wuersching, Schnappinger, Pretschner, Graber, Dammer, Reimer) | ICSE-SEIP | 2022 | Multi | Build-system + non-code dependencies | Test | No | Industrial CI evaluation | Relevant Pretschner-group RTS |
-| More Precise RTS via Semantics-Modifying Changes (Liu, Zhang, Nie, Gligoric, Legunsen) | ISSTA | 2023 | Yes | Static + semantic change reasoning | Test class | No | Empirical | Recent Java RTS near-neighbor |
-| Empirical Comparison of Four Java RTS Techniques (Shin, Ghosh, Vijayasarathy) | JSS | 2022 | Yes | Various incl. coverage-based (OpenClover) | Test | No | Mutation-score-based fault-detection analysis of selected suites | MUST be discussed in manuscript Section 2.2: closest prior mutation-based evaluation of RTS effectiveness; does not measure mutation-level killing-test inclusiveness for JaCoCo-based per-test selection nor probe-level mechanisms |
-| BabelRTS (Maurina, Cazzola, Ghosh) | TSE | 2025 | Polyglot | Static cross-language dependencies | Test | No | Empirical (public replication package) | Recent near-neighbor within cutoff window |
-| SPIRITuS (Romano, Scanniello, Antoniol, Marchetto) | IST | 2018 | Yes | Method code coverage + lexical similarity (IR) | Test | No | Empirical | Closest published method-level coverage-based RTS predecessor; cite and distinguish in Section 2 |
-| DIRTS | ICST | 2023 | Yes | DI-aware static dependencies | Class/method | No | Empirical | Direct baseline |
-| BinaryRTS | ICST | 2023 | No (C++) | Binary instrumentation | Test | No | Empirical | Cross-language comparison |
-| iJaCoCo | ASE | 2024 | Yes | Ekstazi + JaCoCo | Test subset for coverage update | Yes | Coverage maintenance, not RTS fault inclusiveness | Near-neighbor |
-| Regression Test Selection Across JVM Boundaries (Celik, Vasic, Milicevic, Gligoric) | ESEC/FSE | 2017 | Yes | Dynamic, cross-JVM | Test | No | Empirical | Relevant Java RTS; also relevant to out-of-process future work |
-| HyRTS (Zhang) | ICSE | 2018 | Yes | Dynamic, hybrid file+method granularity | Test | No (own instrumentation) | Commit-history evaluation | Direct near-neighbor for multi-granularity selection; cite in Section 2.1 |
-| RTSCheck (Zhu, Legunsen, Shi, Gligoric) | ICSE | 2019 | Yes | n/a (checks RTS tools) | n/a | No | Rule/behavior checking, not mutation inclusiveness | Relevant validation methodology |
-| Skippy | Repository (archived 2025-09-18) | - | Yes | JaCoCo coverage | Test method/case | Yes | No systematic mutation evaluation located | Closest OSS tool |
-| Teamscale TIA | Product docs | - | Yes | Execution/coverage data | Proprietary | Supports JaCoCo input | No open artifact located | Industrial comparison |
+| Regression Test Selection Across JVM Boundaries (Celik et al.) | ESEC/FSE | 2017 | Yes | Dynamic, cross-JVM | Test | No | Empirical | Near-neighbor |
+| HyRTS (Zhang) | ICSE | 2018 | Yes | Dynamic, hybrid file+method granularity | Test | No (own instrumentation) | Commit-history evaluation | Included; multi-granularity |
+| SPIRITuS (Romano, Scanniello, Antoniol, Marchetto) | IST | 2018 | Yes | Method code coverage + lexical similarity | Test | No | 389 mutation-generated faulty versions | Included; method-level predecessor |
+| RTSCheck (Zhu et al.) | ICSE | 2019 | Yes | n/a (checks RTS tools) | n/a | No | Rule/behavior checking | Near-neighbor |
+| Reflection-Aware Static RTS (Shi et al.) | PACMPL/OOPSLA | 2019 | Yes | Static + reflection handling | Test class | No | Empirical | Near-neighbor |
+| **Amann and Jürgens: Change-Driven Testing** | **Springer** | **2020** | **Yes** | **Test-wise coverage (Teamscale)** | **Test** | **Yes (Teamscale uses JaCoCo)** | **99.3% fault detection on 12+ systems** | **Included — published Teamscale line** |
+| Build-System-Aware RTS (Elsner et al.) | ICSE-SEIP | 2022 | Multi | Build-system + non-code dependencies | Test | No | Industrial CI evaluation | Near-neighbor |
+| Shin et al.: Empirical Comparison of Four Java RTS Techniques | JSS | 2022 | Yes | Various incl. coverage-based (OpenClover) | Test | No | PIT mutation scores; 30,354 mutants | Included; closest mutation-based RTS comparison |
+| DIRTS (Hundsdorfer et al.) | ICST | 2023 | Yes | DI-aware static dependencies | Class/method | No | Empirical | Direct baseline |
+| BinaryRTS (Elsner et al.) | ICST | 2023 | No (C++) | Binary instrumentation | Test | No | Empirical | Cross-language comparison |
+| More Precise RTS (Liu et al.) | ISSTA | 2023 | Yes | Static + semantic change reasoning | Test class | No | Empirical | Near-neighbor |
+| iJaCoCo (Wang et al.) | ASE | 2024 | Yes | Ekstazi + JaCoCo | Test subset for coverage update | Yes | Coverage maintenance, not RTS fault inclusiveness | Near-neighbor |
+| JcgEks (Zhang et al.) | ASE | 2024 | Yes | Dynamic file + static method call graph | Test class | No | 1,000 revisions, 20 projects | Included; multi-granularity |
+| BabelRTS (Maurina et al.) | TSE | 2025 | Polyglot | Static cross-language dependencies | Test | No | Empirical | Near-neighbor |
+| Skippy | Repository (archived 2025-09-18) | - | Yes | JaCoCo coverage | Test method/case | Yes | No systematic evaluation located | OSS tool |
+| junit4git | Repository | - | Yes | Git-change-based test skipping | Test | Unclear | No published evaluation | OSS tool |
+| Tia | Repository | - | Yes | JaCoCo method mapping | Test | Yes | No published evaluation | OSS tool |
+| Teamscale TIA | Product docs | - | Yes | Test-wise coverage | Proprietary | Yes | See Dreier 2017 and Amann 2020 | Industrial (academic described above) |
 | Develocity PTS | Product docs | - | Yes | Predictive/history model | Test | Proprietary | Proprietary | Adjacent industrial |
-| Parasoft Jtest TIA | Product docs | - | Yes | Correlates test-execution and coverage data with code changes; internal implementation details are proprietary | Unit test | Not established | No open artifact located | Industrial comparison (verification pass 2026-07-16) |
+| Parasoft Jtest TIA | Product docs | - | Yes | Coverage + execution correlation | Unit test | Not established | No open artifact | Industrial comparison |
 
 Parasoft note: public documentation confirms selective execution correlating
 code changes with impacted unit tests, but implementation details and
-reproducible evaluation artifacts are not publicly available; do not claim a
-specific internal mechanism in the manuscript.
+reproducible evaluation artifacts are not publicly available.
 
 JCov "test scales": screened during the 2026-07-16 pass via a secondary
 source (Wikipedia) only; no primary OpenJDK/JCov confirmation of a relevant
-per-test capability was located, so the item is excluded from the candidate
-corpus and must not be cited in the manuscript. Re-add only if primary
-documentation is found during the full pass.
-
-[TODO: add every additional plausible candidate found during the full pass.]
+per-test capability was located; excluded from the candidate corpus.
 
 ## 11. Excluded Near-Neighbors
 
@@ -215,33 +228,36 @@ documentation is found during the full pass.
 | Test-suite minimization studies | Do not select tests in response to a code change |
 | Mutation-test acceleration | Uses RTS to accelerate mutation testing rather than evaluating RTS fault-detection inclusiveness |
 
-## 12. Result (draft - finalize after the full pass)
+## 12. Result
 
-Primary finding: no prior publication or publicly documented tool was
-identified that systematically evaluates mutation-level killing-test
-inclusiveness for JaCoCo-based per-test regression test selection and analyzes
-the JaCoCo probe-level mechanisms of all observed false negatives. This is the
-central gap the manuscript addresses. Note in particular that Shin et al.
-(JSS 2022) evaluate the fault-detection ability of selected suites with
-mutation scores across four Java RTS tools; their study measures comparative
-tool effectiveness across revisions, not mutation-level killing-test
-inclusiveness for JaCoCo-based per-test selection, and it does not analyze
-probe-level false-negative mechanisms. Any broader phrasing such as
-'coverage-based RTS fault detection has never been evaluated with mutation
-testing' would be false and must not appear in the manuscript.
+**The original broad novelty claim is not defensible.**
 
-The closest coverage-based Java/JVM systems were Skippy, Teamscale, and
-iJaCoCo. Skippy provides JaCoCo-based test-impact functionality but no
-systematic mutation-based fault-detection evaluation was located. Teamscale is
-a commercial system whose implementation and evaluation artifacts are not
-openly reproducible. iJaCoCo uses JaCoCo and regression-test selection to
-reduce incremental coverage-analysis cost, rather than evaluating RTS as the
-final selective-execution objective.
+Dreier (2017) already combined JaCoCo-based per-test method coverage with
+PIT mutation-based fault-detection evaluation on 12 Java systems, reporting
+99.2% aggregate fault detection. Amann and Jürgens (2020) published the same
+Teamscale test-wise-coverage line of work with a 99.3% result across 12+
+systems. SPIRITuS (2018) evaluated method-level coverage-based RTS fault
+detection on 389 mutation-generated faulty versions. Shin et al. (2022)
+compared four Java RTS tools using PIT with 30,354 mutants.
 
-Secondary observation: no reviewed prior system was identified that combines the
-complete engineering feature set described in Section 2.5 of the manuscript.
-This observation is limited to the sources, queries, screening depth, and
-cutoff date documented here and does not carry the primary novelty argument.
+Therefore, the manuscript MUST NOT claim:
+- "first JaCoCo-based per-test selection evaluated against mutation testing"
+- "first coverage-based RTS evaluated with mutation testing"
+- any broader variant of these
+
+**What remains novel (narrowed claim):**
+
+No prior study was identified that provides a complete per-mutant
+killing-test inclusiveness audit of a JaCoCo-based per-test selector that:
+1. traces every observed false negative to JaCoCo probe-level semantics;
+2. derives an explicit three-type failure taxonomy (A/B/C);
+3. evaluates a targeted conservative mitigation rule with measured cost;
+4. characterizes the residual observability boundary, including the
+   Type C case that cannot be identified from positive coverage-map entries.
+
+Prior aggregate evaluations (Dreier, Amann/Jürgens) reported overall
+detection rates but did not perform per-mutant killing-test analysis,
+identify the shared causal probe mechanism, or derive a taxonomy.
 
 This conclusion does not establish the absolute absence of unpublished,
 proprietary, or differently indexed work.
