@@ -48,7 +48,7 @@ See `config/pitest_config.md` for the exact PIT configuration block.
 | Step | Duration | Notes |
 |------|----------|-------|
 | Step 1: Coverage map | ~1 min | 52 tests with JaCoCo |
-| Step 2: PIT | ~2 min | 142 mutations x 52 tests |
+| Step 2: PIT | ~2 min | 139 mutations x 52 tests |
 | Step 3: Evaluate | <1 sec | Pure computation |
 | Step 4: Baselines | <1 sec | Pure computation |
 | **Total** | **~3-4 min** | |

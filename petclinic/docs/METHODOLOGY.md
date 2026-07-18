@@ -4,6 +4,13 @@
 
 Spring PetClinic serves as the **pilot benchmark**  - a small, well-understood project used to verify the complete evaluation pipeline before applying it to larger benchmarks (Apache Commons Lang, Caffeine, etc.).
 
+## Benchmark Commits
+
+- **Source benchmark:** `e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f` (upstream PetClinic production code)
+- **Evaluation configuration:** `cbb884f` (adds Smart Test Picker plugin and PIT config on top of e4a6ebe; does not modify production Java code)
+
+The coverage map metadata records `cbb884f` because that is HEAD during collection. PIT targets the same production classes present in `e4a6ebe`.
+
 ## Why PetClinic?
 
 1. **Small & fast**  - 52 tests across the configured scope (17 classes mutated, 14 with killed mutants), PIT completes in ~2 minutes
@@ -62,7 +69,7 @@ Compare against:
 ## Scope of Mutations
 
 PIT targets all classes matching `org.springframework.samples.petclinic.*`:
-- **17 classes** received mutations (142 total)
+- **17 classes** received mutations (139 total)
 - **14 classes** have at least one KILLED mutation (94 total)
 - **3 classes** have only SURVIVED/NO_COVERAGE mutations (system config classes)
 
@@ -83,7 +90,7 @@ These integration-test classes require additional runtime infrastructure. Their 
 
 ## Mutation Score
 
-PetClinic's mutation score is **66.2%** (94 KILLED / 142 total). This is lower than commons-lang (82.8%) because:
+PetClinic's mutation score is **67.6%** (94 KILLED / 139 total). This is lower than commons-lang (82.8%) because:
 - Several model classes have boilerplate getters/setters that aren't directly tested
 - Configuration classes (`CacheConfiguration`, `WebConfiguration`) have no unit tests
 - Some controller paths are only tested via integration tests (excluded)

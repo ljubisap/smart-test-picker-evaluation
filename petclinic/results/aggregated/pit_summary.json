@@ -1,18 +1,18 @@
 {
   "project": "Spring PetClinic",
   "commit": "e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f",
-  "total_mutations": 142,
+  "total_mutations": 139,
   "num_classes": 17,
   "mutation_status_breakdown": {
     "KILLED": 94,
-    "SURVIVED": 37,
+    "SURVIVED": 34,
     "NO_COVERAGE": 11
   },
-  "mutation_score_pct": 66.2,
+  "mutation_score_pct": 67.63,
   "mutators_used": {
     "EmptyObjectReturnValsMutator": 41,
     "RemoveConditionalMutator_EQUAL_ELSE": 37,
-    "VoidMethodCallMutator": 33,
+    "VoidMethodCallMutator": 30,
     "NullReturnValsMutator": 25,
     "MathMutator": 2,
     "BooleanTrueReturnValsMutator": 2,
@@ -37,5 +37,6 @@
     "org.springframework.samples.petclinic.vet.Vet",
     "org.springframework.samples.petclinic.vet.VetController",
     "org.springframework.samples.petclinic.vet.Vets"
-  ]
+  ],
+  "provenance_note": "Three System.out.println mutations (VoidMethodCallMutator on OwnerController lines 129, 142, 172) present in original collection were removed because they originated from uncommitted debug statements not present in the pinned benchmark commit e4a6ebe. All three were SURVIVED and did not affect RTS inclusiveness results."
 }

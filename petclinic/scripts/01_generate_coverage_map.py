@@ -6,7 +6,7 @@ Runs the full test suite with JaCoCo per-test instrumentation and generates
 the coverage map JSON file used for test selection evaluation.
 
 Prerequisites:
-  - Smart Test Picker Gradle plugin 0.1.9+ published to mavenLocal
+  - Smart Test Picker Gradle plugin 0.1.0 (commit 70b3984626eb) published to mavenLocal
   - spring-petclinic with Smart Test Picker plugin configured in build.gradle
 
 Usage:

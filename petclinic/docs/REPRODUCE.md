@@ -72,7 +72,7 @@ What it does:
 - `./gradlew pitest`  - runs PIT with `fullMutationMatrix=true`
 - Copies `build/reports/pitest/mutations.xml` to `results/mutations.xml`
 
-Output: 142 mutations (94 KILLED, 37 SURVIVED, 11 NO_COVERAGE)
+Output: 139 mutations (94 KILLED, 34 SURVIVED, 11 NO_COVERAGE)
 
 ### Step 3: Evaluate Safety (<1 sec)
 
@@ -102,7 +102,7 @@ Expected:
 |----------|--------|-------------|
 | Coverage (plugin) | 100.00% | 9.7 |
 | Class-level only | 100.00% | 18.4 |
-| Random(k=per-mutation) | 35.96% | 9.7 |
+| Random(k=per-mutation) | 35.97% | 9.7 |
 
 ## Verifying Reproduction
 

@@ -64,7 +64,7 @@ petclinic/
 |   |-- 03_evaluate.py
 |   `-- 04_baselines.py
 |-- results/
-|   |-- mutations.xml           # Raw PIT output (142 mutations, single file)
+|   |-- mutations.xml           # Raw PIT output (139 mutations, single file)
 |   |-- test-coverage-map.json  # Coverage map (52 tests, included for verification)
 |   `-- aggregated/
 |       |-- evaluation_summary.json
@@ -85,6 +85,6 @@ petclinic/
 |----------|--------|---------------|--------------|
 | **Coverage (plugin)** | **100.00%** | **18.70%** | **9.7** |
 | Class-level only | 100.00% | 35.29% | 18.4 |
-| Random(k=per-mutation) | 35.96% +/- 2.90 | 18.70% | 9.7 |
+| Random(k=per-mutation) | 35.97% ± 2.95 | 18.70% | 9.7 |
 
-The plugin achieves 100% killed-mutant inclusiveness within the evaluated 52-test scope while selecting fewer than half as many tests as the class-level-only selector. Random selection at the same per-mutation budget achieves 35.96% mean inclusiveness over 1000 trials.
+The plugin achieves 100% killed-mutant inclusiveness within the evaluated 52-test scope while selecting fewer than half as many tests as the class-level-only selector. Random selection at the same per-mutation budget achieves 35.97% mean inclusiveness over 1000 trials.
