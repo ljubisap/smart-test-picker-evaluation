@@ -25,7 +25,7 @@ This runs the full test suite with JaCoCo per-test instrumentation, then generat
 - Per-test XML reports
 - `target/test-coverage-map.json`  - unified coverage map
 
-**Duration:** ~10 minutes  
+**Duration:** ~15-20 minutes (depends on hardware and warm/cold cache)
 **Output:** `<project-dir>/target/test-coverage-map.json`
 
 To skip test execution (use existing `.exec` files):
@@ -44,7 +44,7 @@ Runs PIT per-class on all 21 sampled classes with:
 - `targetTests` scoped to subpackage (prevents intractable test space)
 - 10-minute timeout per class
 
-**Duration:** ~5 minutes  
+**Duration:** ~5-10 minutes (21 classes sequentially)
 **Output:** `results/per-class/<FQN>/mutations.xml`
 
 To run a single class (debugging):

@@ -16,12 +16,14 @@
               </dependency>
             </dependencies>
             <configuration>
-              <!-- targetClasses and targetTests are overridden via CLI per-class -->
+              <!-- targetClasses and targetTests are provided via CLI per-class:
+                   -DtargetClasses=com.example.Foo -DtargetTests=com.example.*
+                   Maven properties below serve as CLI-overridable defaults. -->
               <targetClasses>
-                <param>org.apache.commons.lang3.*</param>
+                <param>${pitest.targetClasses}</param>
               </targetClasses>
               <targetTests>
-                <param>org.apache.commons.lang3.*</param>
+                <param>${pitest.targetTests}</param>
               </targetTests>
               <excludedTestClasses>
                 <param>org.apache.commons.lang3.builder.CompareToBuilderTest</param>

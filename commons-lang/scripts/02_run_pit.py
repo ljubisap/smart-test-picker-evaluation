@@ -142,6 +142,15 @@ def main():
     log_file = results_dir / "progress.log"
     log(f"=== PIT Evaluation Run  --  {len(classes)} classes ===", log_file)
 
+    # Prerequisite check: compiled classes must exist
+    classes_dir = args.project_dir / "target" / "classes"
+    test_classes_dir = args.project_dir / "target" / "test-classes"
+    if not classes_dir.exists() or not test_classes_dir.exists():
+        print(f"ERROR: Compiled classes not found. Run 'mvn test-compile' or Step 1 first.")
+        print(f"  Expected: {classes_dir}")
+        print(f"  Expected: {test_classes_dir}")
+        sys.exit(1)
+
     results = []
     for i, cfg in enumerate(classes):
         r = run_pit_for_class(
@@ -178,6 +187,9 @@ def main():
 
     log(f"=== DONE: OK={summary['ok']}, FAILED={summary['failed']}, "
         f"TIMEOUT={summary['timeout']}, mutations={summary['total_mutations']} ===", log_file)
+
+    if summary["failed"] > 0 or summary["timeout"] > 0:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
