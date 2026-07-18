@@ -527,7 +527,7 @@
         "killedMutations": 517
       },
       "petclinic": {
-        "aggregateSha256": "2f54c0f80fc29db1f6ebaa4f4a42120d0dc6d4f89ac0f155d17a6f62896ac0f8",
+        "aggregateSha256": "88cc11b5e9887507f991d8e752e15072791c3cbc92e3e4351c8be1fb7b7c40ce",
         "fileCount": 1,
         "files": [
           "petclinic/results/mutations.xml"

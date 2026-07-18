@@ -7,9 +7,12 @@ Spring PetClinic serves as the **pilot benchmark**  - a small, well-understood p
 ## Benchmark Commits
 
 - **Source benchmark:** `e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f` (upstream PetClinic production code)
-- **Evaluation configuration:** `cbb884f` (adds Smart Test Picker plugin and PIT config on top of e4a6ebe; does not modify production Java code)
+- **STP evaluation config:** `cbb884f` (adds Smart Test Picker plugin config on top of e4a6ebe; does not modify production Java code)
+- **PIT evaluation config:** `2bb92ff` (adds PIT plugin config on a separate branch from e4a6ebe)
 
-The coverage map metadata records `cbb884f` because that is HEAD during collection. PIT targets the same production classes present in `e4a6ebe`.
+For the final unified evaluation, both STP and PIT configurations are applied together on the `smart-test-picker-eval` branch. The coverage map metadata records the evaluation HEAD because that is the commit present during collection. PIT targets the same production classes present in `e4a6ebe`.
+
+Note on test scope: The test task discovers all test classes including integration tests. Integration tests that require Docker/Testcontainers infrastructure are either skipped (no container available) or excluded by PIT via `excludedTestClasses`. The STP coverage collector generates 56 session files; 4 produce empty coverage and are excluded during report generation, resulting in 52 mapped tests.
 
 ## Why PetClinic?
 

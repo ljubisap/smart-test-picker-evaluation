@@ -69,7 +69,7 @@ def evaluate_random_per_mutation(mutations, test_mappings, seed=42, num_trials=1
     Also computes the analytical expected safety:
       P(hit for mutation M) = 1 - C(N-d, k) / C(N, k)
     """
-    all_tests = list(test_mappings.keys())
+    all_tests = sorted(test_mappings.keys())
     total_tests = len(all_tests)
 
     # Compute per-mutation budgets and killing test counts
