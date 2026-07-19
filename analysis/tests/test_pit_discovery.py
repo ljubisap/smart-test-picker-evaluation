@@ -69,3 +69,30 @@ class TestPitDiscoveryAbsolutePath(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestSampleClassesConfig(unittest.TestCase):
+    """Validate that all sample_classes.json files have required fields."""
+
+    REQUIRED_FIELDS = {"fqn", "targetTests"}
+    SUBPACKAGE_FIELDS = {"subpackage", "subpkg"}  # projects use one or the other
+
+    def _check_project(self, project_name, config_path):
+        with open(config_path) as f:
+            config = json.load(f)
+        classes = config.get("classes", [])
+        self.assertTrue(len(classes) > 0, f"{project_name}: no classes")
+        for i, cls in enumerate(classes):
+            for field in self.REQUIRED_FIELDS:
+                self.assertIn(field, cls, f"{project_name} class {i} ({cls.get('fqn','?')}): missing '{field}'")
+            has_subpkg = bool(self.SUBPACKAGE_FIELDS & set(cls.keys()))
+            self.assertTrue(has_subpkg, f"{project_name} class {i} ({cls.get('fqn','?')}): missing subpackage/subpkg")
+
+    def test_commons_lang_config(self):
+        self._check_project("commons-lang", REPO_ROOT / "commons-lang" / "config" / "sample_classes.json")
+
+    def test_jgrapht_config(self):
+        self._check_project("jgrapht", REPO_ROOT / "jgrapht" / "config" / "sample_classes.json")
+
+    def test_spring_core_config(self):
+        self._check_project("spring-core", REPO_ROOT / "spring-core" / "config" / "sample_classes.json")

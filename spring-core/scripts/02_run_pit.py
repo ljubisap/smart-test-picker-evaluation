@@ -232,7 +232,10 @@ def main():
     summary = []
     for cls_info in classes:
         fqn = cls_info["fqn"]
-        target_tests = cls_info.get("targetTests", fqn.rsplit(".", 1)[0] + ".*")
+        if "targetTests" not in cls_info:
+            print(f"ERROR: {fqn} missing required 'targetTests' field in sample_classes.json")
+            sys.exit(1)
+        target_tests = cls_info["targetTests"]
         status, mutations = run_pit_for_class(
             fqn, target_tests, args.project_dir, classpath, pit_jars, results_dir, args.timeout
         )
