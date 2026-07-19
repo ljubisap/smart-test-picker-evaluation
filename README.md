@@ -86,7 +86,7 @@ For each benchmark project:
 
 The evaluation measures **killed-mutant inclusiveness**: the fraction of killed mutations for which the selector would have included at least one killing test. The term "safety" is used as shorthand in scripts and output.
 
-Note: For Commons Lang, JGraphT, and spring-core, PIT `targetTests` is scoped to the subpackage of each target class. PetClinic uses its configured whole-project 52-test scope. Cross-package killing tests are not measured for the per-class projects. Results reflect inclusiveness within the configured test scope, not the complete test suite.
+Note: For Commons Lang, JGraphT, and spring-core, PIT `targetTests` is an explicitly configured functional-package scope per class (see each project's `config/sample_classes.json`). For most classes this is the immediate subpackage; for some spring-core classes it is the parent package (e.g. `org.springframework.util.*` for classes in `util.backoff`). PetClinic uses its configured whole-project 52-test scope. Cross-package killing tests are not measured for the per-class projects. Results reflect inclusiveness within the configured test scope, not the complete test suite.
 
 See `<project>/docs/METHODOLOGY.md` for detailed methodology per project.
 

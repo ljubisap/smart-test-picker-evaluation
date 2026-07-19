@@ -178,8 +178,12 @@ The study uses three distinct scopes that must not be conflated:
    - PetClinic: all 17 production classes
 
 3. **PIT test scope:** for Commons Lang, JGraphT, and spring-core, PIT killing tests
-   were restricted to tests in the relevant subpackage (`targetTests`). PetClinic
-   used its full test suite.
+   were restricted to an explicitly configured functional-package scope per class
+   (`targetTests` in `sample_classes.json`). For most classes this is the immediate
+   subpackage; for some spring-core classes it is the parent package to include
+   tests not co-located with the production class. PetClinic used its full test suite.
+   Spring-core scopes were reconstructed from canonical PIT logs and confirmed by
+   diagnostic reproduction.
 
 Only mutations reported as KILLED within the configured PIT test scope enter
 the inclusiveness evaluation. Killing tests outside the configured scope are

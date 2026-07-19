@@ -73,7 +73,7 @@ class TestSampleClassesConfig(unittest.TestCase):
     REQUIRED_FIELDS = {"fqn", "targetTests", "loc"}
     SUBPACKAGE_FIELDS = {"subpackage", "subpkg"}  # projects use one or the other
 
-    def _check_project(self, project_name, config_path):
+    def _check_project(self, project_name, config_path, require_tests_field=False):
         with open(config_path) as f:
             config = json.load(f)
         classes = config.get("classes", [])
@@ -87,11 +87,20 @@ class TestSampleClassesConfig(unittest.TestCase):
             # loc must be positive integer
             self.assertIsInstance(cls["loc"], int, f"{project_name} {cls['fqn']}: loc not int")
             self.assertGreater(cls["loc"], 0, f"{project_name} {cls['fqn']}: loc must be positive")
-            # targetTests must be non-empty
-            self.assertTrue(len(cls["targetTests"]) > 0, f"{project_name} {cls['fqn']}: targetTests empty")
+            # targetTests must be a non-empty string with valid package pattern
+            tt = cls["targetTests"]
+            self.assertIsInstance(tt, str, f"{project_name} {cls['fqn']}: targetTests must be string")
+            self.assertTrue(len(tt) > 0, f"{project_name} {cls['fqn']}: targetTests empty")
+            # Must look like a package pattern (contains dot or comma for multi-class)
+            self.assertTrue("." in tt, f"{project_name} {cls['fqn']}: targetTests '{tt}' not a valid package pattern")
             # fqn uniqueness
             self.assertNotIn(cls["fqn"], fqns, f"{project_name}: duplicate fqn {cls['fqn']}")
             fqns.add(cls["fqn"])
+            # tests field (required for spring-core)
+            if require_tests_field:
+                self.assertIn("tests", cls, f"{project_name} {cls['fqn']}: missing 'tests'")
+                self.assertIsInstance(cls["tests"], int, f"{project_name} {cls['fqn']}: tests not int")
+                self.assertGreater(cls["tests"], 0, f"{project_name} {cls['fqn']}: tests must be positive")
 
     def test_commons_lang_config(self):
         self._check_project("commons-lang", REPO_ROOT / "commons-lang" / "config" / "sample_classes.json")
@@ -100,7 +109,7 @@ class TestSampleClassesConfig(unittest.TestCase):
         self._check_project("jgrapht", REPO_ROOT / "jgrapht" / "config" / "sample_classes.json")
 
     def test_spring_core_config(self):
-        self._check_project("spring-core", REPO_ROOT / "spring-core" / "config" / "sample_classes.json")
+        self._check_project("spring-core", REPO_ROOT / "spring-core" / "config" / "sample_classes.json", require_tests_field=True)
 
 
 if __name__ == "__main__":

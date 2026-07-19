@@ -44,7 +44,7 @@ PIT 1.17.4 was run per-class via command-line interface against pre-compiled Gra
 - `threads=4`
 - `timeoutConst=10000`
 - `mutators=DEFAULTS` (PIT default mutator group)
-- `targetTests` scoped to parent subpackage per class
+- `targetTests` explicitly configured per class (functional-package scope; see `config/sample_classes.json`)
 - JVM args: `--add-opens=java.base/java.lang=ALL-UNNAMED`
 
 **Results:**
