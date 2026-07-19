@@ -96,28 +96,52 @@ Note: 3-5 reflection-based tests may fail due to JaCoCo instrumentation adding s
 ### Step 2: Run PIT Mutation Testing (~15 min)
 
 ```bash
-python3 scripts/02_run_pit.py --project-dir /path/to/spring-framework-6
+# From the evaluation repository root:
+python3 spring-core/scripts/02_run_pit.py \
+  --project-dir /path/to/spring-framework-6 \
+  --results-dir /path/to/fresh-results
 ```
 
 Requires PIT 1.17.4 jars in local Maven repository. The script downloads them automatically if missing.
 
-Output: `results/per-class/<FQN>/mutations.xml`
+The PIT runner will exit with code 1 because 3 classes fail baseline tests and 1 times out. This is expected. The 18 OK classes produce valid `per-class/<FQN>/mutations.xml` files.
+
+Output: `/path/to/fresh-results/per-class/<FQN>/mutations.xml` (18 classes with results)
 
 ### Step 3: Evaluate Safety (<1 sec)
 
 ```bash
-python3 scripts/03_evaluate.py --project-dir /path/to/spring-framework-6
+# Copy the fresh coverage map into results for evaluation:
+cp /path/to/spring-framework-6/spring-core/build/test-coverage-map.json \
+   /path/to/fresh-results/test-coverage-map.json
+
+python3 spring-core/scripts/03_evaluate.py \
+  --project-dir /path/to/spring-framework-6 \
+  --results-dir /path/to/fresh-results \
+  --coverage-map /path/to/fresh-results/test-coverage-map.json
 ```
 
-Output: `results/aggregated/evaluation_summary.json`
+Output: `/path/to/fresh-results/aggregated/evaluation_summary.json`
 
 ### Step 4: Baseline Comparison (<1 sec)
 
 ```bash
-python3 scripts/04_baselines.py --project-dir /path/to/spring-framework-6
+python3 spring-core/scripts/04_baselines.py \
+  --project-dir /path/to/spring-framework-6 \
+  --results-dir /path/to/fresh-results \
+  --coverage-map /path/to/fresh-results/test-coverage-map.json
 ```
 
-Output: `results/aggregated/baseline_comparison.json`
+Output: `/path/to/fresh-results/aggregated/baseline_comparison.json`
+
+### Using canonical artifacts instead
+
+To reproduce the reported results exactly (without re-running PIT), omit `--results-dir` and `--coverage-map`. The scripts default to the committed canonical artifacts:
+
+```bash
+python3 spring-core/scripts/03_evaluate.py --project-dir /any/path
+python3 spring-core/scripts/04_baselines.py --project-dir /any/path
+```
 
 ## Verification
 
