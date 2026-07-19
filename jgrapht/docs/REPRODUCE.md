@@ -113,9 +113,9 @@ print('All checks passed.')
 
 | Problem | Solution |
 |---------|----------|
-| PIT timeout on BlossomVPrimalUpdater | Expected  - increase timeout to 30+ min (1162 LOC, 245 mutations) |
-| PIT timeout on `Graphs` (org.jgrapht.*) | Narrow targetTests: `org.jgrapht.*` matches all 2308 tests recursively |
-| UndirectedSpecifics NO_COVERAGE | Widen targetTests to `org.jgrapht.graph.*` (no tests in `graph.specifics`) |
+| PIT timeout on BlossomVPrimalUpdater | Handled automatically: script uses 1800s override for this class |
+| PIT timeout on `Graphs` | Handled automatically: targetTests is narrowed to 3 root test classes in sample_classes.json |
+| UndirectedSpecifics NO_COVERAGE | Handled automatically: targetTests is widened to `org.jgrapht.graph.*` in sample_classes.json |
 | JPMS reflection errors | Verify `--add-opens` flags in PIT profile cover all sampled packages |
 | Coverage map empty | Ensure `smart-test-picker` profile is active and plugin is in local Maven repo |
 | "No mutations found" for a class | Class may have no mutable code; check PIT stdout.log |

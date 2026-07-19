@@ -48,14 +48,15 @@ def main():
 
     base_to_keys = build_base_to_keys(test_mappings)
 
+    pit_base = results_dir / "per-class"
     pit_files = discover_pit_files(REPO_ROOT, [
-        "jgrapht/results/per-class/*/mutations.xml",
-        "jgrapht/results/per-class/*/mutations.xml.gz",
+        str(pit_base / "*/mutations.xml"),
+        str(pit_base / "*/mutations.xml.gz"),
     ])
     raw_mutations = load_pit_mutations("jgrapht", REPO_ROOT, pit_files)
 
     if not raw_mutations:
-        print("ERROR: No mutations found in results/per-class/")
+        print(f"ERROR: No mutations found in {pit_base}/")
         sys.exit(1)
 
     mutations = resolve_killing_tests(raw_mutations, test_mappings, base_to_keys)

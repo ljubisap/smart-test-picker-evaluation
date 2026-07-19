@@ -46,7 +46,7 @@ The constructor-only footprint rule resolves this case: since the killing tests 
 | Original | 99.81% (516/517) | 87.7 |
 | With constructor-only rule | 100.00% (517/517) | 96.9 |
 
-Cost: +21.9 additional tests selected on average.
+Cost: +9.2 additional tests selected on average.
 
 ## Cross-Project Pattern
 

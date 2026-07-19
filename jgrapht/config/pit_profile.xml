@@ -43,12 +43,14 @@
               </dependency>
             </dependencies>
             <configuration>
-              <!-- targetClasses and targetTests are overridden via CLI per-class -->
+              <!-- targetClasses and targetTests are provided via CLI per-class:
+                   -DtargetClasses=org.jgrapht.Foo -DtargetTests=org.jgrapht.alg.foo.*
+                   Maven properties below serve as CLI-overridable defaults. -->
               <targetClasses>
-                <param>org.jgrapht.*</param>
+                <param>${pitest.targetClasses}</param>
               </targetClasses>
               <targetTests>
-                <param>org.jgrapht.*</param>
+                <param>${pitest.targetTests}</param>
               </targetTests>
               <outputFormats>
                 <outputFormat>XML</outputFormat>
