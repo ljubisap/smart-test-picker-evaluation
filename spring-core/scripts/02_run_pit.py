@@ -20,6 +20,11 @@ import sys
 import time
 from pathlib import Path
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
+
+from analysis.evaluation_core import is_valid_target_tests
+
 
 def get_classpath(project_dir):
     """Get the test runtime classpath from Gradle, comma-separated for PIT CLI."""
@@ -225,8 +230,8 @@ def main():
         if "targetTests" not in cls_info:
             print(f"ERROR: class {i} ({cls_info.get('fqn','?')}) missing required 'targetTests' in sample_classes.json")
             sys.exit(1)
-        if not cls_info["targetTests"]:
-            print(f"ERROR: class {i} ({cls_info['fqn']}) has empty 'targetTests'")
+        if not is_valid_target_tests(cls_info["targetTests"]):
+            print(f"ERROR: class {i} ({cls_info['fqn']}) has invalid 'targetTests': {cls_info['targetTests']}")
             sys.exit(1)
 
     # Prerequisite check

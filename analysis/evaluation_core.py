@@ -437,3 +437,26 @@ def all_coverage_keys(mutation: ResolvedMutation) -> set[str]:
     for kt in mutation.killing_tests:
         keys.update(kt.coverage_keys)
     return keys
+
+
+def is_valid_target_tests(value) -> bool:
+    """Validate a targetTests string: wildcard pattern(s) or comma-separated FQCNs.
+
+    Valid forms:
+      - Package wildcard: org.example.pkg.* (at least 2 segments before .*)
+      - FQCN: org.example.ClassName (last segment starts uppercase)
+      - Comma-separated mix of the above
+    """
+    if not isinstance(value, str) or not value.strip():
+        return False
+    parts = [p.strip() for p in value.split(",")]
+    for part in parts:
+        if part.endswith(".*"):
+            pkg = part[:-2]
+            if not pkg or not re.match(r'^[a-z][a-z0-9_]*(\.[a-z][a-z0-9_]*)+$', pkg):
+                return False
+        elif re.match(r'^[a-z][a-z0-9_]*(\.[a-z][a-z0-9_]*)*\.[A-Z][A-Za-z0-9_]*$', part):
+            pass
+        else:
+            return False
+    return True

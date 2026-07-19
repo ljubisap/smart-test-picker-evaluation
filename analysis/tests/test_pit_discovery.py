@@ -15,7 +15,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT))
 
-from analysis.evaluation_core import load_pit_mutations, load_coverage_map, build_base_to_keys, resolve_killing_tests
+from analysis.evaluation_core import load_pit_mutations, load_coverage_map, build_base_to_keys, resolve_killing_tests, is_valid_target_tests
 
 
 class TestPitDiscoveryAbsolutePath(unittest.TestCase):
@@ -87,15 +87,9 @@ class TestSampleClassesConfig(unittest.TestCase):
             # loc must be positive integer
             self.assertIsInstance(cls["loc"], int, f"{project_name} {cls['fqn']}: loc not int")
             self.assertGreater(cls["loc"], 0, f"{project_name} {cls['fqn']}: loc must be positive")
-            # targetTests must be a non-empty string with valid package pattern
+            # targetTests must be a valid package wildcard or FQCN list
             tt = cls["targetTests"]
-            self.assertIsInstance(tt, str, f"{project_name} {cls['fqn']}: targetTests must be string")
-            self.assertTrue(len(tt) > 0, f"{project_name} {cls['fqn']}: targetTests empty")
-            # Must be either a wildcard pattern (ends with .*) or comma-separated FQCNs
-            parts = [p.strip() for p in tt.split(",")]
-            for part in parts:
-                valid = part.endswith(".*") or (part.count(".") >= 2 and part[0].islower())
-                self.assertTrue(valid, f"{project_name} {cls['fqn']}: targetTests part '{part}' is not a valid wildcard (.*) or FQCN")
+            self.assertTrue(is_valid_target_tests(tt), f"{project_name} {cls['fqn']}: targetTests '{tt}' is not valid (must be pkg.* wildcard or comma-separated FQCNs)")
             # fqn uniqueness
             self.assertNotIn(cls["fqn"], fqns, f"{project_name}: duplicate fqn {cls['fqn']}")
             fqns.add(cls["fqn"])
@@ -113,6 +107,40 @@ class TestSampleClassesConfig(unittest.TestCase):
 
     def test_spring_core_config(self):
         self._check_project("spring-core", REPO_ROOT / "spring-core" / "config" / "sample_classes.json", require_tests_field=True)
+
+
+class TestTargetTestsValidation(unittest.TestCase):
+    """Unit tests for is_valid_target_tests validation function."""
+
+    def test_valid_wildcard(self):
+        self.assertTrue(is_valid_target_tests("org.springframework.core.*"))
+        self.assertTrue(is_valid_target_tests("org.apache.commons.lang3.arch.*"))
+        self.assertTrue(is_valid_target_tests("org.jgrapht.alg.color.*"))
+
+    def test_valid_fqcn(self):
+        self.assertTrue(is_valid_target_tests("org.jgrapht.GraphsTest"))
+        self.assertTrue(is_valid_target_tests("org.jgrapht.GraphsTest,org.jgrapht.GraphTestsTest,org.jgrapht.GraphMetricsTest"))
+
+    def test_invalid_bare_wildcard(self):
+        self.assertFalse(is_valid_target_tests(".*"))
+
+    def test_invalid_double_dot(self):
+        self.assertFalse(is_valid_target_tests("a..B"))
+        self.assertFalse(is_valid_target_tests("org..Bad"))
+
+    def test_invalid_no_wildcard_no_uppercase(self):
+        self.assertFalse(is_valid_target_tests("abc.def.ghi"))
+
+    def test_invalid_trailing_dot(self):
+        self.assertFalse(is_valid_target_tests("org.springframework."))
+
+    def test_invalid_empty(self):
+        self.assertFalse(is_valid_target_tests(""))
+        self.assertFalse(is_valid_target_tests(None))
+        self.assertFalse(is_valid_target_tests(123))
+
+    def test_invalid_single_segment_wildcard(self):
+        self.assertFalse(is_valid_target_tests("org.*"))
 
 
 if __name__ == "__main__":
