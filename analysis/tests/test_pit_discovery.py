@@ -91,8 +91,11 @@ class TestSampleClassesConfig(unittest.TestCase):
             tt = cls["targetTests"]
             self.assertIsInstance(tt, str, f"{project_name} {cls['fqn']}: targetTests must be string")
             self.assertTrue(len(tt) > 0, f"{project_name} {cls['fqn']}: targetTests empty")
-            # Must look like a package pattern (contains dot or comma for multi-class)
-            self.assertTrue("." in tt, f"{project_name} {cls['fqn']}: targetTests '{tt}' not a valid package pattern")
+            # Must be either a wildcard pattern (ends with .*) or comma-separated FQCNs
+            parts = [p.strip() for p in tt.split(",")]
+            for part in parts:
+                valid = part.endswith(".*") or (part.count(".") >= 2 and part[0].islower())
+                self.assertTrue(valid, f"{project_name} {cls['fqn']}: targetTests part '{part}' is not a valid wildcard (.*) or FQCN")
             # fqn uniqueness
             self.assertNotIn(cls["fqn"], fqns, f"{project_name}: duplicate fqn {cls['fqn']}")
             fqns.add(cls["fqn"])

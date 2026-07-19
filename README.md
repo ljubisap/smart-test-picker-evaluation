@@ -80,7 +80,7 @@ See `<project>/docs/README.md` for project-specific reproduction details.
 For each benchmark project:
 
 1. **Generate coverage map** - Run full test suite with JaCoCo per-test instrumentation via Smart Test Picker plugin
-2. **Run PIT mutation testing** - Per-class with `fullMutationMatrix=true` and subpackage-scoped tests (PetClinic uses whole-project single run)
+2. **Run PIT mutation testing** - Per-class with `fullMutationMatrix=true` and explicitly configured functional-package test scope (PetClinic uses whole-project single run)
 3. **Evaluate inclusiveness** - For each KILLED mutation, simulate plugin selection and check if at least one PIT-reported killing test (from the configured test scope) is in the selected set
 4. **Baseline comparison** - Compare against class-level-only and random selectors (1000 Monte Carlo trials + analytical expectation)
 
