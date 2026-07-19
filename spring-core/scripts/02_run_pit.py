@@ -96,16 +96,12 @@ def find_pitest_jar(maven_repo=None):
     return jars
 
 
-def run_pit_for_class(target_class, project_dir, classpath, pit_jars, results_dir, timeout=600):
+def run_pit_for_class(target_class, target_tests, project_dir, classpath, pit_jars, results_dir, timeout=600):
     """Run PIT on a single class. Returns (status, mutation_count)."""
     class_dir = results_dir / "per-class" / target_class
     if class_dir.exists():
         shutil.rmtree(class_dir)
     class_dir.mkdir(parents=True)
-
-    # Determine targetTests scope to subpackage
-    pkg = target_class.rsplit(".", 1)[0]
-    target_tests = f"{pkg}.*"
 
     pit_classpath = ":".join(str(j) for j in pit_jars)
 
@@ -236,8 +232,9 @@ def main():
     summary = []
     for cls_info in classes:
         fqn = cls_info["fqn"]
+        target_tests = cls_info.get("targetTests", fqn.rsplit(".", 1)[0] + ".*")
         status, mutations = run_pit_for_class(
-            fqn, args.project_dir, classpath, pit_jars, results_dir, args.timeout
+            fqn, target_tests, args.project_dir, classpath, pit_jars, results_dir, args.timeout
         )
         summary.append({"fqn": fqn, "status": status, "mutations": mutations})
 
