@@ -1,6 +1,6 @@
     <!-- PIT Mutation Testing Profile for Evaluation -->
-    <!-- Add this inside <profiles> section of jgrapht/pom.xml -->
-    <!-- NOTE: JGraphT uses JPMS — requires --add-opens for all sampled packages -->
+    <!-- Add this inside the existing profiles section of the ROOT pom.xml -->
+    <!-- NOTE: JGraphT uses JPMS and requires add-opens flags for all sampled packages -->
     <profile>
       <id>pitest</id>
       <build>

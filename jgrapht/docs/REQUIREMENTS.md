@@ -51,9 +51,9 @@ ls ~/.m2/repository/com/sap/oss/smart-test-picker/smart-test-picker-maven/0.1.0/
    git checkout 719212a1fe0bbbf62210159f50920a71e80b73ed
    ```
 
-2. Add profiles to `jgrapht-core/pom.xml` (inside `<profiles>` section):
-   - Smart Test Picker coverage profile: see `config/coverage_profile.xml`
-   - PIT mutation profile: see `config/pit_profile.xml`
+2. Add the evaluation profiles:
+   - Add `config/coverage_profile.xml` inside a new `<profiles>` section at the end of `jgrapht-core/pom.xml` (before `</project>`).
+   - Add `config/pit_profile.xml` inside the existing `<profiles>` section of the root `pom.xml`.
 
 3. Add `junit-platform.properties` to `jgrapht-core/src/test/resources/`:
    ```
