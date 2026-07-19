@@ -137,7 +137,7 @@ def main():
 
     script_dir = Path(__file__).parent
     results_dir = args.results_dir or (script_dir.parent / "results")
-    coverage_map_path = args.coverage_map or (script_dir.parent / "results" / "test-coverage-map.json")
+    coverage_map_path = args.coverage_map or (results_dir / "test-coverage-map.json")
 
     if not coverage_map_path.exists():
         print(f"ERROR: Coverage map not found: {coverage_map_path}")

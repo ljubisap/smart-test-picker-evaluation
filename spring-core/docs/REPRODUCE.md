@@ -91,7 +91,7 @@ Note: the two commands must be run separately because the test task exits with a
 
 Output: `spring-core/build/test-coverage-map.json` (3,624 test mappings)
 
-Note: 5 reflection-based tests fail due to JaCoCo instrumentation adding synthetic fields (BridgeMethodResolverTests, MergedAnnotationsTests, AnnotationMetadataTests). This does not affect coverage map generation.
+Note: 3-5 reflection-based tests may fail due to JaCoCo instrumentation adding synthetic fields (BridgeMethodResolverTests, MergedAnnotationsTests, AnnotationMetadataTests). The exact count varies between runs. This does not affect coverage map generation.
 
 ### Step 2: Run PIT Mutation Testing (~15 min)
 
@@ -151,7 +151,7 @@ print('All checks passed.')
 | Problem | Solution |
 |---------|----------|
 | Plugin not found | Ensure `pluginManagement` + `mavenLocal()` are added to settings/build |
-| 5 test failures (BridgeMethodResolver, MergedAnnotations, AnnotationMetadata) | Expected  - JaCoCo instrumentation adds synthetic fields, confuses reflection tests |
+| 3-5 test failures (BridgeMethodResolver, MergedAnnotations, AnnotationMetadata) | Expected  - JaCoCo instrumentation adds synthetic fields, confuses reflection tests; exact count varies |
 | DataBufferUtils PIT timeout | Expected  - 1078 LOC reactive class, 600s timeout exceeded |
 | "No mutations found" | Class is abstract/interface with no mutable code (e.g. AbstractResource) |
 | Coverage map has fewer tests than test suite | Expected  - only tests covering spring-core classes are mapped |

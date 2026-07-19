@@ -4,14 +4,15 @@
   "timestamp": "2026-07-14T19:28:40",
   "total_classes": 22,
   "ok": 18,
-  "failed": 0,
-  "no_mutations": 4,
-  "timeout": 0,
+  "failed": 3,
+  "timeout": 1,
   "total_mutations": 563,
+  "provenance_note": "Four classes did not produce usable mutations: SerializableTypeWrapper, AbstractResource, and PathMatchingResourcePatternResolver failed because baseline tests do not pass without mutation (PIT requirement); DataBufferUtils timed out (1078 LOC reactive class). The 18 OK classes produced all 563 mutations used in the evaluation.",
   "results": [
     {
       "fqn": "org.springframework.core.SerializableTypeWrapper",
-      "status": "NO_MUTATIONS",
+      "status": "FAILED",
+      "reason": "baseline tests do not pass without mutation",
       "mutations": 0
     },
     {
@@ -70,17 +71,20 @@
     },
     {
       "fqn": "org.springframework.core.io.AbstractResource",
-      "status": "NO_MUTATIONS",
+      "status": "FAILED",
+      "reason": "baseline tests do not pass without mutation",
       "mutations": 0
     },
     {
       "fqn": "org.springframework.core.io.buffer.DataBufferUtils",
-      "status": "NO_MUTATIONS",
+      "status": "TIMEOUT",
+      "reason": "PIT execution timed out (1078 LOC reactive class)",
       "mutations": 0
     },
     {
       "fqn": "org.springframework.core.io.support.PathMatchingResourcePatternResolver",
-      "status": "NO_MUTATIONS",
+      "status": "FAILED",
+      "reason": "baseline tests do not pass without mutation",
       "mutations": 0
     },
     {
