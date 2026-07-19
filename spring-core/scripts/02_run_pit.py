@@ -131,7 +131,7 @@ def run_pit_for_class(target_class, target_tests, project_dir, classpath, pit_ja
         "--jvmArgs", "--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.util=ALL-UNNAMED",
     ]
 
-    print(f"  Running PIT for {target_class}...")
+    print(f"  Running PIT for {target_class} (targetTests={target_tests})...")
     start = time.time()
 
     with open(class_dir / "stdout.log", "w") as stdout_f, \
@@ -220,6 +220,15 @@ def main():
     else:
         classes = config["classes"]
 
+    # Upfront config validation before any work
+    for i, cls_info in enumerate(classes):
+        if "targetTests" not in cls_info:
+            print(f"ERROR: class {i} ({cls_info.get('fqn','?')}) missing required 'targetTests' in sample_classes.json")
+            sys.exit(1)
+        if not cls_info["targetTests"]:
+            print(f"ERROR: class {i} ({cls_info['fqn']}) has empty 'targetTests'")
+            sys.exit(1)
+
     # Prerequisite check
     classes_dir = args.project_dir / "spring-core" / "build" / "classes"
     if not classes_dir.exists():
@@ -241,14 +250,11 @@ def main():
     summary = []
     for cls_info in classes:
         fqn = cls_info["fqn"]
-        if "targetTests" not in cls_info:
-            print(f"ERROR: {fqn} missing required 'targetTests' field in sample_classes.json")
-            sys.exit(1)
         target_tests = cls_info["targetTests"]
         status, mutations = run_pit_for_class(
             fqn, target_tests, args.project_dir, classpath, pit_jars, results_dir, args.timeout
         )
-        summary.append({"fqn": fqn, "status": status, "mutations": mutations})
+        summary.append({"fqn": fqn, "status": status, "mutations": mutations, "targetTests": target_tests})
 
     ok = sum(1 for s in summary if s["status"] == "OK")
     failed = sum(1 for s in summary if s["status"] == "FAILED")
@@ -261,7 +267,7 @@ def main():
 
     with open(results_dir / "progress.log", "w") as f:
         for s in summary:
-            f.write(f"{s['fqn']}: {s['status']} ({s['mutations']} mutations)\n")
+            f.write(f"{s['fqn']}: {s['status']} ({s['mutations']} mutations, targetTests={s['targetTests']})\n")
 
     if failed > 0 or timeout > 0:
         sys.exit(1)

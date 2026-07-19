@@ -67,14 +67,10 @@ class TestPitDiscoveryAbsolutePath(unittest.TestCase):
         self.assertTrue(len(resolved) > 0)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class TestSampleClassesConfig(unittest.TestCase):
     """Validate that all sample_classes.json files have required fields."""
 
-    REQUIRED_FIELDS = {"fqn", "targetTests"}
+    REQUIRED_FIELDS = {"fqn", "targetTests", "loc"}
     SUBPACKAGE_FIELDS = {"subpackage", "subpkg"}  # projects use one or the other
 
     def _check_project(self, project_name, config_path):
@@ -82,11 +78,20 @@ class TestSampleClassesConfig(unittest.TestCase):
             config = json.load(f)
         classes = config.get("classes", [])
         self.assertTrue(len(classes) > 0, f"{project_name}: no classes")
+        fqns = set()
         for i, cls in enumerate(classes):
             for field in self.REQUIRED_FIELDS:
                 self.assertIn(field, cls, f"{project_name} class {i} ({cls.get('fqn','?')}): missing '{field}'")
             has_subpkg = bool(self.SUBPACKAGE_FIELDS & set(cls.keys()))
             self.assertTrue(has_subpkg, f"{project_name} class {i} ({cls.get('fqn','?')}): missing subpackage/subpkg")
+            # loc must be positive integer
+            self.assertIsInstance(cls["loc"], int, f"{project_name} {cls['fqn']}: loc not int")
+            self.assertGreater(cls["loc"], 0, f"{project_name} {cls['fqn']}: loc must be positive")
+            # targetTests must be non-empty
+            self.assertTrue(len(cls["targetTests"]) > 0, f"{project_name} {cls['fqn']}: targetTests empty")
+            # fqn uniqueness
+            self.assertNotIn(cls["fqn"], fqns, f"{project_name}: duplicate fqn {cls['fqn']}")
+            fqns.add(cls["fqn"])
 
     def test_commons_lang_config(self):
         self._check_project("commons-lang", REPO_ROOT / "commons-lang" / "config" / "sample_classes.json")
@@ -96,3 +101,7 @@ class TestSampleClassesConfig(unittest.TestCase):
 
     def test_spring_core_config(self):
         self._check_project("spring-core", REPO_ROOT / "spring-core" / "config" / "sample_classes.json")
+
+
+if __name__ == "__main__":
+    unittest.main()
