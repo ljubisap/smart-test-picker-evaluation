@@ -26,10 +26,13 @@ def get_classpath(project_dir):
     cp_file = project_dir / "spring-core" / "build" / "pit-classpath.txt"
     if cp_file.exists():
         raw = cp_file.read_text().strip()
-        # Convert OS path separator to comma for PIT CLI
         return raw.replace(os.pathsep, ",")
 
     print("Generating classpath from Gradle...")
+    gradle_file = project_dir / "spring-core" / "spring-core.gradle"
+    original = gradle_file.read_text()
+
+    # Only append the task if it doesn't already exist in the file
     task_script = '''
 task pitClasspath {
     doLast {
@@ -38,9 +41,11 @@ task pitClasspath {
     }
 }
 '''
-    gradle_file = project_dir / "spring-core" / "spring-core.gradle"
-    original = gradle_file.read_text()
-    gradle_file.write_text(original + "\n" + task_script)
+    needs_cleanup = False
+    if "pitClasspath" not in original:
+        gradle_file.write_text(original + "\n" + task_script)
+        needs_cleanup = True
+
     try:
         result = subprocess.run(
             ["./gradlew", ":spring-core:pitClasspath"],
@@ -50,10 +55,14 @@ task pitClasspath {
             print(f"ERROR generating classpath: {result.stderr[-500:]}")
             sys.exit(1)
     finally:
-        gradle_file.write_text(original)
+        if needs_cleanup:
+            gradle_file.write_text(original)
+
+    if not cp_file.exists():
+        print("ERROR: pit-classpath.txt was not generated")
+        sys.exit(1)
 
     raw = cp_file.read_text().strip()
-    # Convert OS path separator to comma for PIT CLI
     return raw.replace(os.pathsep, ",")
 
 
