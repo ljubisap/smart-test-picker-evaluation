@@ -104,7 +104,7 @@ python3 spring-core/scripts/02_run_pit.py \
 
 Requires PIT 1.17.4 jars in local Maven repository. The script downloads them automatically if missing.
 
-The PIT runner will exit with code 1 because 3 classes fail baseline tests and 1 times out. This is expected. The 18 OK classes produce valid `per-class/<FQN>/mutations.xml` files.
+The PIT runner will exit with code 1 because 4 classes do not produce usable results (baseline test failures or timeout depending on scope and environment). This is expected. The 18 OK classes produce valid `per-class/<FQN>/mutations.xml` files.
 
 Output: `/path/to/fresh-results/per-class/<FQN>/mutations.xml` (18 classes with results)
 
@@ -180,11 +180,11 @@ Note: these assertions apply to the canonical committed PIT artifacts (454 KILLE
 |---------|----------|
 | Plugin not found | Ensure `pluginManagement` + `mavenLocal()` are added to settings/build |
 | 3-5 test failures (BridgeMethodResolver, MergedAnnotations, AnnotationMetadata) | Expected  - JaCoCo instrumentation adds synthetic fields, confuses reflection tests; exact count varies |
-| DataBufferUtils PIT timeout | Expected  - 1078 LOC reactive class, 600s timeout exceeded |
+| DataBufferUtils PIT failure | With the reconstructed wider scope (org.springframework.core.io.*), PIT fails due to baseline test failures (PathResourceTests). With the original narrow scope, PIT timed out instead. Either way, DataBufferUtils produces no usable mutations. |
 | PIT "tests did not pass without mutation" | Baseline tests for that class fail independently of mutation (e.g. SerializableTypeWrapper, AbstractResource, PathMatchingResourcePatternResolver). PIT refuses to mutate such classes. |
 | Coverage map has fewer tests than test suite | Expected  - only tests covering spring-core classes are mapped |
 | Fresh PIT gives slightly different KILLED count | Minor status variations (KILLED vs SURVIVED for individual mutations) can occur between PIT runs due to timeout sensitivity and static initialization effects. `fullMutationMatrix=true` is a partially supported PIT feature. Larger discrepancies indicate a targetTests scope mismatch; verify that `sample_classes.json` targetTests fields match the documented scopes. The committed `per-class/*/mutations.xml` files are the canonical artifacts used to reproduce the reported evaluation results. |
-| Fresh coverage map differs from canonical | Expected  - per-test method coverage can vary slightly between runs due to JIT compilation, class-loading order, and thread timing. The canonical committed map is the evaluation input. Fresh maps produce identical headline results despite content-level differences in individual test footprints. |
+| Fresh coverage map differs from canonical | Expected  - per-test method coverage can vary slightly between runs due to JIT compilation, class-loading order, and thread timing. The canonical committed map is the evaluation input. Fresh maps produce identical safety and proposed-selector results; coverage-dependent baselines (class-level average) may differ minimally (e.g. 529.1 vs canonical 529.2). |
 | PIT runner exits with code 1 | Expected when any class has FAILED or TIMEOUT status. The 18 OK classes still produce valid `mutations.xml` files usable for evaluation. |
 
 ## Commit Metadata
