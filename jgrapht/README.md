@@ -2,7 +2,7 @@
 
 Replication package for Smart Test Picker (RAD 1) safety evaluation on JGraphT 1.6.0-SNAPSHOT (JPMS-enabled Java graph library).
 
-**Result: 99.81% inclusiveness (516/517 mutations safe), 96.69% test reduction.**
+**Result: 99.81% inclusiveness (516/517 mutations safe), 96.20% test reduction.**
 
 ## Documentation
 

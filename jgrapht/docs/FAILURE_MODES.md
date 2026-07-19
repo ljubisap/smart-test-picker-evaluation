@@ -43,8 +43,8 @@ The constructor-only footprint rule resolves this case: since the killing tests 
 
 | Selector | Inclusiveness | Avg Selected |
 |----------|--------------|--------------|
-| Original | 99.81% (516/517) | 76.4 |
-| With constructor-only rule | 100.00% (517/517) | 98.3 |
+| Original | 99.81% (516/517) | 87.7 |
+| With constructor-only rule | 100.00% (517/517) | 96.9 |
 
 Cost: +21.9 additional tests selected on average.
 

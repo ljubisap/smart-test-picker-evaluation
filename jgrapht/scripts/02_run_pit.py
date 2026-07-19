@@ -6,7 +6,7 @@ For each class in sample_classes.json, runs PIT with:
   - targetClasses = single class FQN
   - targetTests = subpackage of that class (scoped, not full suite)
   - fullMutationMatrix = true
-  - 10 minute timeout per class
+  - per-class timeout from config (default 600s, BlossomVPrimalUpdater: 1800s)
 
 Output: results/per-class/<FQN>/mutations.xml for each class.
 
@@ -25,7 +25,11 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-TIMEOUT_SECONDS = 600  # 10 minutes per class
+DEFAULT_TIMEOUT_SECONDS = 600  # 10 minutes per class
+# Classes that need longer timeouts (documented in REPRODUCE.md)
+TIMEOUT_OVERRIDES = {
+    "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater": 1800,  # 30 min
+}
 
 
 def log(msg, log_file=None):
@@ -66,8 +70,9 @@ def run_pit_for_class(mvn, project_dir, results_dir, fqn, target_tests, loc, ind
         pit_xml.unlink()
 
     try:
+        timeout = TIMEOUT_OVERRIDES.get(fqn, DEFAULT_TIMEOUT_SECONDS)
         result = subprocess.run(
-            cmd, cwd=str(project_dir), capture_output=True, text=True, timeout=TIMEOUT_SECONDS
+            cmd, cwd=str(project_dir), capture_output=True, text=True, timeout=timeout
         )
         elapsed = time.time() - start
 
@@ -141,6 +146,15 @@ def main():
     log_file = results_dir / "progress.log"
     log(f"=== PIT Evaluation Run  --  {len(classes)} classes ===", log_file)
 
+    # Prerequisite check: compiled classes must exist
+    classes_dir = args.project_dir / "jgrapht-core" / "target" / "classes"
+    test_classes_dir = args.project_dir / "jgrapht-core" / "target" / "test-classes"
+    if not classes_dir.exists() or not test_classes_dir.exists():
+        print(f"ERROR: Compiled classes not found. Run 'mvn test-compile -pl jgrapht-core' or Step 1 first.")
+        print(f"  Expected: {classes_dir}")
+        print(f"  Expected: {test_classes_dir}")
+        sys.exit(1)
+
     results = []
     for i, cfg in enumerate(classes):
         r = run_pit_for_class(
@@ -177,6 +191,9 @@ def main():
 
     log(f"=== DONE: OK={summary['ok']}, FAILED={summary['failed']}, "
         f"TIMEOUT={summary['timeout']}, mutations={summary['total_mutations']} ===", log_file)
+
+    if summary["failed"] > 0 or summary["timeout"] > 0:
+        sys.exit(1)
 
 
 if __name__ == "__main__":

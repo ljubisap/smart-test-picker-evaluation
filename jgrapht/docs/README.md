@@ -46,15 +46,15 @@ Two classes required non-standard test scoping:
 
 | Selector | Safety | Avg Selected | Selection Rate | Test Reduction |
 |----------|--------|-------------|----------------|----------------|
-| **Coverage (proposed)** | **99.81%** | 76.4 | 3.31% | **96.69%** |
-| Class-level only | 100.00% | 206.3 | 8.94% | 91.06% |
-| Random (k=per-mutation) | 27.89% | 76.4 | 3.31% | 96.69% |
+| **Coverage (proposed)** | **99.81%** | 87.7 | 3.80% | **96.20%** |
+| Class-level only | 100.00% | 207.8 | 9.00% | 91.00% |
+| Random (k=per-mutation) | 33.59% | 87.7 | 3.80% | 96.20% |
 
 ### Key Findings
 
-- The dual-granularity (method + class) selector achieves **99.81% safety** with **96.69% test reduction**  - one missed mutation out of 517 KILLED mutations across 20 classes.
-- Method-level selection provides **2.7x fewer tests** than class-level only (76.4 vs 206.3 avg selected) with only 0.19% safety loss.
-- Random selection at the same budget (76.4 tests) achieves only 27.89% inclusiveness  - proving coverage-based selection is non-trivial.
+- The dual-granularity (method + class) selector achieves **99.81% safety** with **96.20% test reduction**  - one missed mutation out of 517 KILLED mutations across 20 classes.
+- Method-level selection provides **2.4x fewer tests** than class-level only (87.7 vs 207.8 avg selected) with only 0.19% safety loss.
+- Random selection at the same budget (87.7 tests) achieves only 33.59% inclusiveness  - proving coverage-based selection is non-trivial.
 
 ### Unsafe Mutation Analysis
 
@@ -133,7 +133,7 @@ jgrapht/
 | Classes sampled | 14 | 21 | 20 |
 | Mutations (KILLED) | 94 | 772 | 517 |
 | Safety | 100% | 99.87% | 99.81% |
-| Test Reduction | 81.30% | 99.64% | 96.69% |
-| Avg Selected | 9.7 | 17.0 | 76.4 |
+| Test Reduction | 81.30% | 99.64% | 96.20% |
+| Avg Selected | 9.7 | 17.0 | 87.7 |
 | Build system | Gradle | Maven | Maven |
 | JPMS | No | No | Yes |

@@ -18,7 +18,7 @@
     "methodology_note": "Initially intended as stratified random sampling with seed=42; verification revealed reproducibility gap (2/20 match). Documented as curated_stratified for methodology transparency. See docs/METHODOLOGY.md for details."
   },
   "classes": [
-    {"fqn": "org.jgrapht.Graphs", "subpkg": "(root)", "loc": 614, "targetTests": "org.jgrapht.*"},
+    {"fqn": "org.jgrapht.Graphs", "subpkg": "(root)", "loc": 614, "targetTests": "org.jgrapht.GraphsTest+org.jgrapht.GraphTestsTest+org.jgrapht.GraphMetricsTest"},
     {"fqn": "org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder", "subpkg": "alg.clique", "loc": 138, "targetTests": "org.jgrapht.alg.clique.*"},
     {"fqn": "org.jgrapht.alg.clustering.LabelPropagationClustering", "subpkg": "alg.clustering", "loc": 348, "targetTests": "org.jgrapht.alg.clustering.*"},
     {"fqn": "org.jgrapht.alg.color.GreedyColoring", "subpkg": "alg.color", "loc": 106, "targetTests": "org.jgrapht.alg.color.*"},
@@ -37,6 +37,6 @@
     {"fqn": "org.jgrapht.alg.util.UnorderedPair", "subpkg": "alg.util", "loc": 91, "targetTests": "org.jgrapht.alg.util.*"},
     {"fqn": "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl", "subpkg": "alg.vertexcover", "loc": 339, "targetTests": "org.jgrapht.alg.vertexcover.*"},
     {"fqn": "org.jgrapht.generate.netgen.Distributor", "subpkg": "generate.netgen", "loc": 217, "targetTests": "org.jgrapht.generate.netgen.*"},
-    {"fqn": "org.jgrapht.graph.specifics.UndirectedSpecifics", "subpkg": "graph.specifics", "loc": 294, "targetTests": "org.jgrapht.graph.specifics.*"}
+    {"fqn": "org.jgrapht.graph.specifics.UndirectedSpecifics", "subpkg": "graph.specifics", "loc": 294, "targetTests": "org.jgrapht.graph.*"}
   ]
 }

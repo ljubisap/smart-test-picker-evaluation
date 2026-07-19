@@ -135,9 +135,9 @@ For each mutation M, the random selector chooses k_M tests uniformly at random w
 | Metric | Definition | JGraphT Result |
 |--------|-----------|----------------|
 | **Inclusiveness (Safety)** | % mutations with >=1 killing test selected | 99.81% |
-| **Selection Rate** | avg(\|T_selected\|) / \|all_tests\| | 3.31% |
-| **Test Reduction** | 1 - Selection Rate | 96.69% |
-| **Avg Selection Size** | Mean tests selected per mutation | 76.4 |
+| **Selection Rate** | avg(\|T_selected\|) / \|all_tests\| | 3.80% |
+| **Test Reduction** | 1 - Selection Rate | 96.20% |
+| **Avg Selection Size** | Mean tests selected per mutation | 87.7 |
 
 ## Threats to Validity
 

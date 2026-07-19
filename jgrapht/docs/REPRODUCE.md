@@ -104,9 +104,9 @@ print('All checks passed.')
 | KILLED mutations | 517 |
 | Classes evaluated | 20 |
 | Inclusiveness (Safety) | 99.81% |
-| Avg selection size | 76.4 tests |
-| Selection rate | 3.31% |
-| Test reduction | 96.69% |
+| Avg selection size | 87.7 tests |
+| Selection rate | 3.80% |
+| Test reduction | 96.20% |
 | Unsafe mutations | 1 |
 
 ## Troubleshooting
