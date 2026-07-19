@@ -143,12 +143,14 @@ python3 spring-core/scripts/03_evaluate.py --project-dir /any/path
 python3 spring-core/scripts/04_baselines.py --project-dir /any/path
 ```
 
-## Verification
+## Verification (canonical artifacts)
+
+The following check verifies the committed canonical results. Run from the evaluation repository root:
 
 ```bash
 python3 -c "
 import json
-with open('results/aggregated/evaluation_summary.json') as f:
+with open('spring-core/results/aggregated/evaluation_summary.json') as f:
     s = json.load(f)
 assert s['inclusiveness_pct'] == 97.58, f'Expected 97.58%, got {s[\"inclusiveness_pct\"]}%'
 assert s['unsafe'] == 11, f'Expected 11 unsafe, got {s[\"unsafe\"]}'
@@ -157,7 +159,9 @@ print('All checks passed.')
 "
 ```
 
-## Expected Results
+Note: these assertions apply to the canonical committed PIT artifacts (454 KILLED). A fresh PIT run may produce a different KILLED count due to documented PIT non-determinism; in that case, verify inclusiveness percentage rather than exact mutation counts.
+
+## Expected Results (canonical)
 
 | Metric | Value |
 |--------|-------|

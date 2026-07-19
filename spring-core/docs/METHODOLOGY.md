@@ -49,7 +49,7 @@ PIT 1.17.4 was run per-class via command-line interface against pre-compiled Gra
 
 **Results:**
 - 22 classes attempted
-- 18 produced mutations (4 had no mutable code, 0 timed out)
+- 18 produced usable mutation results; 3 failed because baseline tests did not pass and 1 timed out
 - 563 total mutations generated
 - 454 KILLED (used for evaluation)
 
