@@ -74,7 +74,7 @@ python3 scripts/04_baselines.py --project-dir /any/path
    testRuntimeOnly("com.sap.oss.smart-test-picker:smart-test-picker-core:0.1.0")
    ```
 
-7. Add `.gitattributes` in project root:
+7. Append to the existing `.gitattributes` in the project root (do not overwrite existing rules):
    ```
    *.java diff=java
    ```

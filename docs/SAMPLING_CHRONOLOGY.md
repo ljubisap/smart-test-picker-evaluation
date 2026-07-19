@@ -48,7 +48,7 @@ The 22-class list includes four classes that yielded no usable killed-mutation
 observations in the final evaluation:
 - `SerializableTypeWrapper` — baseline tests do not pass without mutation
 - `AbstractResource` — baseline tests do not pass without mutation
-- `DataBufferUtils` — PIT execution timed out
+- `DataBufferUtils` — baseline tests do not pass (with reconstructed wider scope) or PIT timeout (with original narrow scope)
 - `PathMatchingResourcePatternResolver` — baseline tests do not pass without mutation
 
 These classes remain in `sample_classes.json` but do not contribute killed mutations
@@ -90,7 +90,7 @@ yielded killed mutants), not an independent sampling choice.
 |---------|--------|--------|----------|----------|
 | Commons Lang | strategy label to curated_stratified | `f7b5324` | SAMPLING_DESIGN | Commit message: methodology transparency |
 | JGraphT | strategy label to curated_stratified | `ecf189b` | SAMPLING_DESIGN | Commit message: methodology transparency |
-| spring-core | 4 classes yielded no usable killed-mutation observations | `bf42058` | TECHNICAL_SETUP | 3 baseline-test failures + 1 timeout |
+| spring-core | 4 classes yielded no usable killed-mutation observations | `bf42058` | TECHNICAL_SETUP | baseline-test failures or timeout |
 | Commons Lang | Exclusion of `concurrent`, `exception`, `function`, and `time` | `56bfd69` | SAMPLING_DESIGN | Author confirmation: bounded mutation-analysis workload |
 | spring-core | Exclusion of `aot`, `asm`, and `cglib` | `bf42058` | SAMPLING_DESIGN | Author confirmation: bounded mutation-analysis workload |
 
