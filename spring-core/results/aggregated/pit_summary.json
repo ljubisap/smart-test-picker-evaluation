@@ -7,7 +7,7 @@
   "failed": 3,
   "timeout": 1,
   "total_mutations": 563,
-  "provenance_note": "Four classes did not produce usable mutations: SerializableTypeWrapper, AbstractResource, and PathMatchingResourcePatternResolver failed because baseline tests do not pass without mutation (PIT requirement); DataBufferUtils timed out (1078 LOC reactive class). The 18 OK classes produced all 563 mutations used in the evaluation.",
+  "provenance_note": "Four classes did not produce usable mutations: SerializableTypeWrapper, AbstractResource, and PathMatchingResourcePatternResolver failed because baseline tests do not pass without mutation (PIT requirement); DataBufferUtils timed out (1078 LOC reactive class). The 18 OK classes produced 563 mutation records, including 454 KILLED mutations used for safety evaluation.",
   "results": [
     {
       "fqn": "org.springframework.core.SerializableTypeWrapper",

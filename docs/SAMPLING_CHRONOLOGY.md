@@ -46,14 +46,14 @@ documentation were updated later.
 
 The 22-class list includes four classes that yielded no usable killed-mutation
 observations in the final evaluation:
-- `SerializableTypeWrapper` — no mutable code
-- `AbstractResource` — abstract class, no mutable code
+- `SerializableTypeWrapper` — baseline tests do not pass without mutation
+- `AbstractResource` — baseline tests do not pass without mutation
 - `DataBufferUtils` — PIT execution timed out
-- `PathMatchingResourcePatternResolver` — no mutable code
+- `PathMatchingResourcePatternResolver` — baseline tests do not pass without mutation
 
 These classes remain in `sample_classes.json` but do not contribute killed mutations
-to the inclusiveness analysis. Their non-contribution reflects mutation feasibility or
-absence of mutable code, not selection based on measured RTS outcomes.
+to the inclusiveness analysis. Their non-contribution reflects PIT execution feasibility
+(baseline test failures or timeout), not selection based on measured RTS outcomes.
 This is classified as **TECHNICAL_SETUP** — PIT feasibility, not result-informed.
 
 ### Spring PetClinic
@@ -90,7 +90,7 @@ yielded killed mutants), not an independent sampling choice.
 |---------|--------|--------|----------|----------|
 | Commons Lang | strategy label to curated_stratified | `f7b5324` | SAMPLING_DESIGN | Commit message: methodology transparency |
 | JGraphT | strategy label to curated_stratified | `ecf189b` | SAMPLING_DESIGN | Commit message: methodology transparency |
-| spring-core | 4 classes yielded no usable killed-mutation observations | `bf42058` | TECHNICAL_SETUP | METHODOLOGY.md: "no mutable code" / "timeout" |
+| spring-core | 4 classes yielded no usable killed-mutation observations | `bf42058` | TECHNICAL_SETUP | 3 baseline-test failures + 1 timeout |
 | Commons Lang | Exclusion of `concurrent`, `exception`, `function`, and `time` | `56bfd69` | SAMPLING_DESIGN | Author confirmation: bounded mutation-analysis workload |
 | spring-core | Exclusion of `aot`, `asm`, and `cglib` | `bf42058` | SAMPLING_DESIGN | Author confirmation: bounded mutation-analysis workload |
 

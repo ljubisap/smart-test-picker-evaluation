@@ -29,8 +29,8 @@ One representative class per subpackage, excluding infrastructure packages (`aot
 The Smart Test Picker Gradle plugin (`com.sap.oss.smart-test-picker:0.1.0`) was applied to the `spring-core` module with JaCoCo instrumentation. The plugin:
 
 1. Configures JaCoCo agent for per-test session isolation
-2. Runs all 4,705 tests, producing 7,148 per-test `.exec` files
-3. Converts `.exec` files to per-test XML reports (7,120 generated, 27 skipped  - no coverage)
+2. Runs all tests, producing per-test `.exec` files (count varies: 3,638 observed in fresh runs; the canonical collection produced more due to parameterized test expansion differences)
+3. Converts `.exec` files to per-test XML reports; skips sessions with no coverage
 4. Builds a unified JSON coverage map with method-level granularity
 
 **Result:** 3,624 tests mapped to 579 classes, all with method-level coverage information.

@@ -153,9 +153,11 @@ print('All checks passed.')
 | Plugin not found | Ensure `pluginManagement` + `mavenLocal()` are added to settings/build |
 | 3-5 test failures (BridgeMethodResolver, MergedAnnotations, AnnotationMetadata) | Expected  - JaCoCo instrumentation adds synthetic fields, confuses reflection tests; exact count varies |
 | DataBufferUtils PIT timeout | Expected  - 1078 LOC reactive class, 600s timeout exceeded |
-| "No mutations found" | Class is abstract/interface with no mutable code (e.g. AbstractResource) |
+| PIT "tests did not pass without mutation" | Baseline tests for that class fail independently of mutation (e.g. SerializableTypeWrapper, AbstractResource, PathMatchingResourcePatternResolver). PIT refuses to mutate such classes. |
 | Coverage map has fewer tests than test suite | Expected  - only tests covering spring-core classes are mapped |
 | Fresh PIT gives different KILLED count | PIT results can vary between runs, particularly for timeout-sensitive tests and code affected by static initialization. `fullMutationMatrix=true` is a partially supported PIT feature. The committed `per-class/*/mutations.xml` files are the canonical artifacts used to reproduce the reported evaluation results. |
+| Fresh coverage map differs from canonical | Expected  - per-test method coverage can vary slightly between runs due to JIT compilation, class-loading order, and thread timing. The canonical committed map is the evaluation input. Fresh maps produce identical headline results despite content-level differences in individual test footprints. |
+| PIT runner exits with code 1 | Expected when any class has FAILED or TIMEOUT status. The 18 OK classes still produce valid `mutations.xml` files usable for evaluation. |
 
 ## Commit Metadata
 
