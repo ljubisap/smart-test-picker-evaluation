@@ -25,7 +25,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT))
 
 from analysis.evaluation_core import (
-    load_coverage_map, discover_pit_files, load_pit_mutations,
+    load_coverage_map, load_pit_mutations,
     build_base_to_keys, resolve_killing_tests,
     select_original, select_class_level,
 )
@@ -149,11 +149,19 @@ def main():
 
     base_to_keys = build_base_to_keys(test_mappings)
     pit_base = results_dir / "per-class"
-    pit_files = discover_pit_files(REPO_ROOT, [str(pit_base / "*/mutations.xml"), str(pit_base / "*/mutations.xml.gz")])
-    raw_mutations = load_pit_mutations("jgrapht", REPO_ROOT, pit_files)
+    pit_files = sorted(
+        list(pit_base.glob("*/mutations.xml")) + list(pit_base.glob("*/mutations.xml.gz")),
+        key=lambda p: p.as_posix()
+    )
+    if not pit_files:
+        print(f"ERROR: No mutations found in {pit_base}/")
+        sys.exit(1)
+    # Use results_dir parent as root for relativization when files are outside REPO_ROOT
+    pit_root = REPO_ROOT if str(pit_base).startswith(str(REPO_ROOT)) else results_dir.parent
+    raw_mutations = load_pit_mutations("jgrapht", pit_root, tuple(pit_files))
 
     if not raw_mutations:
-        print(f"ERROR: No mutations found in {pit_base}/")
+        print(f"ERROR: No KILLED mutations found in {pit_base}/")
         sys.exit(1)
 
     mutations = resolve_killing_tests(raw_mutations, test_mappings, base_to_keys)

@@ -119,3 +119,4 @@ print('All checks passed.')
 | JPMS reflection errors | Verify `--add-opens` flags in PIT profile cover all sampled packages |
 | Coverage map empty | Ensure `smart-test-picker` profile is active and plugin is in local Maven repo |
 | "No mutations found" for a class | Class may have no mutable code; check PIT stdout.log |
+| Fresh PIT gives different KILLED count | PIT results can vary between runs, particularly for timeout-sensitive tests and code affected by static initialization. `fullMutationMatrix=true` is a partially supported PIT feature. In this environment, fresh runs have produced different KILLED/SURVIVED counts. The committed `per-class/*/mutations.xml` files are the canonical artifacts used to reproduce the reported evaluation results. |
