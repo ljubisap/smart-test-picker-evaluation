@@ -10,7 +10,7 @@ Safety evaluation of Smart Test Picker against PIT mutation testing ground truth
 | KILLED mutations | 454 |
 | Classes evaluated | 18 |
 | **Inclusiveness (Safety)** | **97.58%** |
-| Avg selection size | 80.3 tests |
+| Avg selection size | 80.6 tests |
 | Selection rate | 2.22% |
 | **Test reduction** | **97.78%** |
 | Unsafe mutations | 11 |
@@ -19,9 +19,9 @@ Safety evaluation of Smart Test Picker against PIT mutation testing ground truth
 
 | Selector | Safety | Avg Selected | Reduction |
 |----------|--------|-------------|-----------|
-| Coverage (proposed) | 97.58% | 80.3 | 97.78% |
+| Coverage (proposed) | 97.58% | 80.6 | 97.78% |
 | Class-level only | 100.00% | 527.5 | 85.45% |
-| Random(k=per-mutation) | 17.37% | 80.3 | 97.78% |
+| Random(k=per-mutation) | 17.37% | 80.6 | 97.78% |
 
 ## Unsafe Mutations Analysis
 

@@ -15,7 +15,7 @@ python3 scripts/04_baselines.py --project-dir /any/path
 
 # Expected output from 03_evaluate.py:
 #   Inclusiveness (Safety):  97.58% (443/454)
-#   Avg Selection Size:      80.3 tests
+#   Avg Selection Size:      80.6 tests
 #   Selection Rate:          2.22%
 #   Test Reduction:          97.78%
 ```
@@ -83,12 +83,15 @@ python3 scripts/04_baselines.py --project-dir /any/path
 
 ```bash
 cd spring-framework-6
-./gradlew :spring-core:test :spring-core:generateTestCoverageJson
+./gradlew :spring-core:test
+./gradlew :spring-core:generateTestCoverageJson
 ```
+
+Note: the two commands must be run separately because the test task exits with a non-zero code due to expected test failures. Running them as a single command line would prevent the second task from executing.
 
 Output: `spring-core/build/test-coverage-map.json` (3,624 test mappings)
 
-Note: 3 reflection-based tests fail due to JaCoCo instrumentation adding synthetic fields. This does not affect coverage map generation.
+Note: 5 reflection-based tests fail due to JaCoCo instrumentation adding synthetic fields (BridgeMethodResolverTests, MergedAnnotationsTests, AnnotationMetadataTests). This does not affect coverage map generation.
 
 ### Step 2: Run PIT Mutation Testing (~15 min)
 
@@ -138,7 +141,7 @@ print('All checks passed.')
 | KILLED mutations | 454 |
 | Classes evaluated | 18 |
 | Inclusiveness (Safety) | 97.58% |
-| Avg selection size | 80.3 tests |
+| Avg selection size | 80.6 tests |
 | Selection rate | 2.22% |
 | Test reduction | 97.78% |
 | Unsafe mutations | 11 |
@@ -148,7 +151,15 @@ print('All checks passed.')
 | Problem | Solution |
 |---------|----------|
 | Plugin not found | Ensure `pluginManagement` + `mavenLocal()` are added to settings/build |
-| 3 test failures (BridgeMethodResolver, AnnotationMetadata) | Expected  - JaCoCo instrumentation adds synthetic fields, confuses reflection tests |
+| 5 test failures (BridgeMethodResolver, MergedAnnotations, AnnotationMetadata) | Expected  - JaCoCo instrumentation adds synthetic fields, confuses reflection tests |
 | DataBufferUtils PIT timeout | Expected  - 1078 LOC reactive class, 600s timeout exceeded |
 | "No mutations found" | Class is abstract/interface with no mutable code (e.g. AbstractResource) |
 | Coverage map has fewer tests than test suite | Expected  - only tests covering spring-core classes are mapped |
+| Fresh PIT gives different KILLED count | PIT results can vary between runs, particularly for timeout-sensitive tests and code affected by static initialization. `fullMutationMatrix=true` is a partially supported PIT feature. The committed `per-class/*/mutations.xml` files are the canonical artifacts used to reproduce the reported evaluation results. |
+
+## Commit Metadata
+
+- **Source benchmark:** `99a366baf6640b275d08dde60f05da719139bb6a` (Spring Framework 6.1.x)
+- **Evaluation setup:** `25838a3` (adds STP plugin, mavenLocal, .gitattributes on top of 99a366b; does not modify production Java code)
+
+The coverage map metadata records the evaluation HEAD (`25838a3`) because that is the commit present during collection. PIT targets the same production classes present in the source benchmark.
