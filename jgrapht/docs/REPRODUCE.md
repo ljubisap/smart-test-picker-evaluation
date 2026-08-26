@@ -40,9 +40,12 @@ python3 scripts/02_run_pit.py --project-dir /path/to/jgrapht
 ```
 
 Runs PIT per-class on all 20 sampled classes with:
+- A clean `test-compile` using the PIT profile before the first class. This is
+  required after coverage collection; the runner preserves and restores the
+  generated `jgrapht-core/target/test-coverage-map.json` across the clean.
 - `fullMutationMatrix=true`  - all tests run against each mutation
 - `targetTests` scoped to subpackage (prevents intractable test space)
-- 10-minute timeout per class (30 min for BlossomVPrimalUpdater)
+- 30-minute timeout per class (60 min for BlossomVPrimalUpdater)
 
 **Duration:** ~45 minutes
 **Output:** `results/per-class/<FQN>/mutations.xml[.gz]`
@@ -113,7 +116,7 @@ print('All checks passed.')
 
 | Problem | Solution |
 |---------|----------|
-| PIT timeout on BlossomVPrimalUpdater | Handled automatically: script uses 1800s override for this class |
+| PIT timeout on BlossomVPrimalUpdater | Handled automatically: script uses a 3600s override for this class |
 | PIT timeout on `Graphs` | Handled automatically: targetTests is narrowed to 3 root test classes in sample_classes.json |
 | UndirectedSpecifics NO_COVERAGE | Handled automatically: targetTests is widened to `org.jgrapht.graph.*` in sample_classes.json |
 | JPMS reflection errors | Verify `--add-opens` flags in PIT profile cover all sampled packages |

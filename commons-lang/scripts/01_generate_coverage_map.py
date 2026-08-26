@@ -24,7 +24,7 @@ from datetime import datetime
 from pathlib import Path
 
 
-def run(cmd, cwd, desc, timeout=1200):
+def run(cmd, cwd, desc, timeout=3600):
     print(f"[{desc}] Running...")
     start = time.time()
     result = subprocess.run(cmd, cwd=str(cwd), capture_output=True, text=True, timeout=timeout)
@@ -43,7 +43,7 @@ def verify_clean_test_run(project, mvn):
     start = time.time()
     result = subprocess.run(
         [mvn, "test", "-Psmart-test-picker"],
-        cwd=str(project), capture_output=True, text=True, timeout=1200
+        cwd=str(project), capture_output=True, text=True, timeout=3600
     )
     elapsed = time.time() - start
 
@@ -112,12 +112,12 @@ def main():
     # Step 2: Generate XML reports from .exec files
     run([mvn, "com.sap.oss.smart-test-picker:smart-test-picker-maven:0.1.0:generate-reports",
          "-Psmart-test-picker"],
-        project, "Generate per-test XML reports", timeout=300)
+        project, "Generate per-test XML reports", timeout=900)
 
     # Step 3: Generate coverage map JSON
     run([mvn, "com.sap.oss.smart-test-picker:smart-test-picker-maven:0.1.0:generate-coverage-map",
          "-Psmart-test-picker"],
-        project, "Generate coverage map JSON", timeout=120)
+        project, "Generate coverage map JSON", timeout=300)
 
     # Verify output
     map_file = project / "target" / "test-coverage-map.json"

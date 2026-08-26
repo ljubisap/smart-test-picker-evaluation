@@ -25,7 +25,7 @@ from pathlib import Path
 MODULE = "jgrapht-core"
 
 
-def run(cmd, cwd, desc, timeout=1200):
+def run(cmd, cwd, desc, timeout=7200):
     print(f"[{desc}] Running...")
     start = time.time()
     result = subprocess.run(cmd, cwd=str(cwd), capture_output=True, text=True, timeout=timeout)
@@ -44,7 +44,7 @@ def verify_clean_test_run(project, mvn):
     start = time.time()
     result = subprocess.run(
         [mvn, "verify", "-Psmart-test-picker", "-pl", MODULE],
-        cwd=str(project), capture_output=True, text=True, timeout=1200
+        cwd=str(project), capture_output=True, text=True, timeout=7200
     )
     elapsed = time.time() - start
 
@@ -109,12 +109,12 @@ def main():
     # Step 2: Generate XML reports from .exec files
     run([mvn, "com.sap.oss.smart-test-picker:smart-test-picker-maven:0.1.0:generate-reports",
          "-Psmart-test-picker", "-pl", MODULE],
-        project, "Generate per-test XML reports", timeout=300)
+        project, "Generate per-test XML reports", timeout=900)
 
     # Step 3: Generate coverage map JSON
     run([mvn, "com.sap.oss.smart-test-picker:smart-test-picker-maven:0.1.0:generate-coverage-map",
          "-Psmart-test-picker", "-pl", MODULE],
-        project, "Generate coverage map JSON", timeout=120)
+        project, "Generate coverage map JSON", timeout=300)
 
     # Verify output
     map_file = project / MODULE / "target" / "test-coverage-map.json"

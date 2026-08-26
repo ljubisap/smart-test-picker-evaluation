@@ -25,7 +25,8 @@ The old pin `50b4459` was documented before the two collection fixes were implem
 | Field | Value |
 |-------|-------|
 | Repository | `https://github.com/apache/commons-lang` |
-| Benchmark commit | `4492c322d072afdd48d0c8323433c7f5e53dcf53` |
+| Benchmark commit | `8538458e7aeb1455a5942f60fe0b4930da6c5d68` |
+| Evaluation setup commit | `4492c322d072afdd48d0c8323433c7f5e53dcf53` |
 | Evaluation branch | `smart-test-picker-eval` |
 | Build tool | Maven |
 | Coverage map tests | 4692 |

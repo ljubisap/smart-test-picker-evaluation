@@ -6,7 +6,8 @@ For each class in sample_classes.json, runs PIT with:
   - targetClasses = single class FQN
   - targetTests = subpackage of that class (scoped, not full suite)
   - fullMutationMatrix = true
-  - per-class timeout from config (default 600s, BlossomVPrimalUpdater: 1800s)
+  - clean PIT-profile compilation before mutation analysis
+  - per-class timeout (default 1800s, BlossomVPrimalUpdater: 3600s)
 
 Output: results/per-class/<FQN>/mutations.xml for each class.
 
@@ -25,11 +26,33 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-DEFAULT_TIMEOUT_SECONDS = 600  # 10 minutes per class
+DEFAULT_TIMEOUT_SECONDS = 1800  # 30 minutes per class
 # Classes that need longer timeouts (documented in REPRODUCE.md)
 TIMEOUT_OVERRIDES = {
-    "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater": 1800,  # 30 min
+    "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater": 3600,  # 60 min
 }
+
+
+def prepare_pit_build(mvn, project_dir):
+    """Rebuild without the coverage profile before PIT, preserving its output map."""
+    map_file = project_dir / "jgrapht-core" / "target" / "test-coverage-map.json"
+    saved_map = map_file.read_bytes() if map_file.exists() else None
+
+    print("Preparing clean JGraphT test classes with the PIT profile...")
+    result = subprocess.run(
+        [mvn, "clean", "test-compile", "-Ppitest", "-pl", "jgrapht-core"],
+        cwd=str(project_dir), capture_output=True, text=True, timeout=1800
+    )
+    if result.returncode != 0:
+        print("ERROR: clean PIT-profile compilation failed")
+        print(result.stdout[-2000:])
+        print(result.stderr[-2000:])
+        sys.exit(1)
+
+    if saved_map is not None:
+        map_file.parent.mkdir(parents=True, exist_ok=True)
+        map_file.write_bytes(saved_map)
+        print(f"Restored coverage map after clean build: {map_file}")
 
 
 def log(msg, log_file=None):
@@ -145,6 +168,8 @@ def main():
 
     log_file = results_dir / "progress.log"
     log(f"=== PIT Evaluation Run  --  {len(classes)} classes ===", log_file)
+
+    prepare_pit_build(args.mvn, args.project_dir)
 
     # Prerequisite check: compiled classes must exist
     classes_dir = args.project_dir / "jgrapht-core" / "target" / "classes"

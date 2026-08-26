@@ -71,10 +71,10 @@ ls ~/.m2/repository/com/sap/oss/smart-test-picker/smart-test-picker-maven/0.1.0/
 **Time estimates:**
 | Step | Duration |
 |------|----------|
-| Coverage map generation (Step 1) | ~15-20 minutes |
+| Coverage map generation (Step 1) | ~15-25 minutes |
 | PIT mutation testing (Step 2) | ~5-10 minutes (21 classes sequentially) |
 | Evaluation + baselines (Steps 3-4) | < 10 seconds |
-| **Total** | **~25-35 minutes** |
+| **Total** | **~25-40 minutes** |
 
 ## Python Dependencies
 

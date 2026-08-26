@@ -103,7 +103,7 @@ jgrapht/
 |-- config/
 |   `-- sample_classes.json          # 20 sampled classes with metadata
 |-- scripts/
-|   |-- 02_run_pit.py                # PIT runner (per-class, 10min timeout)
+|   |-- 02_run_pit.py                # PIT runner (30min default, 60min Blossom timeout)
 |   |-- 03_evaluate.py               # Safety evaluation vs PIT ground truth
 |   `-- 04_baselines.py              # Baseline comparison (class-only, random)
 |-- results/

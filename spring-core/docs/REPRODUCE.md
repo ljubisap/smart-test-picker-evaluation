@@ -79,7 +79,7 @@ python3 scripts/04_baselines.py --project-dir /any/path
    *.java diff=java
    ```
 
-### Step 1: Generate Coverage Map (~3 min)
+### Step 1: Generate Coverage Map (~5-10 min)
 
 ```bash
 cd spring-framework-6

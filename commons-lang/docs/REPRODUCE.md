@@ -25,7 +25,7 @@ This runs the full test suite with JaCoCo per-test instrumentation, then generat
 - Per-test XML reports
 - `target/test-coverage-map.json`  - unified coverage map
 
-**Duration:** ~15-20 minutes (depends on hardware and warm/cold cache)
+**Duration:** ~15-25 minutes (depends on hardware and warm/cold cache)
 **Output:** `<project-dir>/target/test-coverage-map.json`
 
 To skip test execution (use existing `.exec` files):
