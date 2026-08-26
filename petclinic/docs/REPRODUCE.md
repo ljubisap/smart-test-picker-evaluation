@@ -1,6 +1,6 @@
 # Reproduce  - Spring PetClinic Evaluation
 
-Complete step-by-step guide for reproducing the PetClinic safety evaluation from scratch.
+Guide for verifying the archived PetClinic evaluation artifacts.
 
 ## Quick Verification (No Build Required)
 
@@ -27,7 +27,29 @@ Selection Rate:          18.70%
 Test Reduction:          81.30%
 ```
 
-## Full Reproduction (Build Required)
+## Full Reproduction Status
+
+A build-from-source reproduction is **not currently self-contained** in this
+package. Do not treat the commands in the quick-verification section as proof
+that a fresh PetClinic build was reproduced.
+
+The archived evaluation records:
+
+- source benchmark `e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f`;
+- coverage setup commit `cbb884f`;
+- PIT setup commit `2bb92ff`.
+
+The documented upstream repository does not currently advertise the source
+benchmark object, and this package does not contain either setup commit or a
+complete Smart Test Picker Gradle configuration. Consequently there is no
+honest sequence that reconstructs the archived raw artifacts from a clean
+upstream checkout using only this repository.
+
+The following section documents the archived collection procedure for
+provenance. It is not a from-scratch recipe until the source object and both
+setup commits are published.
+
+## Archived Collection Procedure (Not Self-Contained)
 
 ### Prerequisites
 
@@ -46,8 +68,9 @@ Test Reduction:          81.30%
    ./gradlew publishToMavenLocal
    ```
 
-4. PetClinic's `build.gradle` must include the PIT and Smart Test Picker plugin config.
-   See `config/pitest.gradle` for the exact PIT block to add.
+4. PetClinic's `build.gradle` used separate Smart Test Picker and PIT setup
+   commits. Only the PIT block is retained here in `config/pitest.gradle`; the
+   complete Smart Test Picker setup is not retained in this package.
 
 ### Step 1: Generate Coverage Map (~1 min)
 
@@ -104,9 +127,9 @@ Expected:
 | Class-level only | 100.00% | 18.4 |
 | Random(k=per-mutation) | 35.97% | 9.7 |
 
-## Verifying Reproduction
+## Verifying Archived Artifacts
 
-After running all 4 steps, compare outputs:
+The following checks apply to the committed archived outputs:
 
 ```bash
 # Should show 100.0% inclusiveness, 94 mutations, 52 tests
@@ -130,5 +153,5 @@ print('OK')
 | `gradlew: Permission denied` | `chmod +x gradlew` |
 | Coverage map not generated | Ensure Smart Test Picker plugin is in `mavenLocal` and configured in `build.gradle` |
 | PIT fails with OOM | Increase `-Xmx` in pitest config: `jvmArgs = ['-Xmx4g']` |
-| Wrong mutation count | Ensure you're on commit `e4a6ebe3`  - different commits may have different code |
+| Source commit cannot be checked out | Expected with the currently documented upstream; use committed artifacts until the benchmark object and setup commits are published |
 | Integration tests fail | They're excluded by default; if Docker isn't available, this is expected |

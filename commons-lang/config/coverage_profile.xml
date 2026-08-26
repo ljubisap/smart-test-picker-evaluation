@@ -1,0 +1,53 @@
+    <!-- Smart Test Picker coverage collection profile. -->
+    <!-- Add this inside the root pom.xml <profiles> element. -->
+    <!-- Requires Smart Test Picker 0.1.0 (commit 70b3984626eb) in mavenLocal. -->
+    <profile>
+      <id>smart-test-picker</id>
+      <dependencies>
+        <dependency>
+          <groupId>com.sap.oss.smart-test-picker</groupId>
+          <artifactId>smart-test-picker-core</artifactId>
+          <version>0.1.0</version>
+          <scope>test</scope>
+        </dependency>
+      </dependencies>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.13</version>
+            <executions>
+              <execution>
+                <id>prepare-agent</id>
+                <goals><goal>prepare-agent</goal></goals>
+                <configuration>
+                  <propertyName>jacocoArgLine</propertyName>
+                  <destFile>${project.build.directory}/jacoco/test.exec</destFile>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>default-test</id>
+                <configuration>
+                  <!-- Preserve Commons Lang's Java-version-specific module opens. -->
+                  <argLine>${argLine} ${jacocoArgLine}</argLine>
+                  <properties>
+                    <configurationParameters>
+                      junit.jupiter.execution.parallel.enabled = false
+                      junit.jupiter.extensions.autodetection.enabled = true
+                      junit.jupiter.testinstance.lifecycle.default = per_method
+                    </configurationParameters>
+                  </properties>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>

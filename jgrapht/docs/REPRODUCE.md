@@ -36,7 +36,8 @@ python3 scripts/01_generate_coverage_map.py --project-dir /path/to/jgrapht --ski
 ## Step 2: Run PIT Mutation Testing
 
 ```bash
-python3 scripts/02_run_pit.py --project-dir /path/to/jgrapht
+python3 scripts/02_run_pit.py --project-dir /path/to/jgrapht \
+  --results-dir /path/to/fresh-results
 ```
 
 Runs PIT per-class on all 20 sampled classes with:
@@ -48,7 +49,7 @@ Runs PIT per-class on all 20 sampled classes with:
 - 30-minute timeout per class (60 min for BlossomVPrimalUpdater)
 
 **Duration:** ~45 minutes
-**Output:** `results/per-class/<FQN>/mutations.xml[.gz]`
+**Output:** `/path/to/fresh-results/per-class/<FQN>/mutations.xml[.gz]`
 
 To run a single class (debugging):
 ```bash
@@ -59,7 +60,9 @@ python3 scripts/02_run_pit.py --project-dir /path/to/jgrapht \
 ## Step 3: Evaluate Plugin Safety
 
 ```bash
-python3 scripts/03_evaluate.py --project-dir /path/to/jgrapht
+python3 scripts/03_evaluate.py --project-dir /path/to/jgrapht \
+  --results-dir /path/to/fresh-results \
+  --coverage-map /path/to/jgrapht/jgrapht-core/target/test-coverage-map.json
 ```
 
 Simulates plugin behavior for each KILLED mutation:
@@ -68,24 +71,31 @@ Simulates plugin behavior for each KILLED mutation:
 3. Checks if selected tests include at least one killing test
 
 **Output:**
-- `results/aggregated/evaluation_results.csv`
-- `results/aggregated/evaluation_summary.json`
+- `/path/to/fresh-results/aggregated/evaluation_results.csv`
+- `/path/to/fresh-results/aggregated/evaluation_summary.json`
 
 ## Step 4: Baseline Comparison
 
 ```bash
-python3 scripts/04_baselines.py --project-dir /path/to/jgrapht
+python3 scripts/04_baselines.py --project-dir /path/to/jgrapht \
+  --results-dir /path/to/fresh-results \
+  --coverage-map /path/to/jgrapht/jgrapht-core/target/test-coverage-map.json
 ```
 
 Compares proposed selector against:
 - Class-level only (no method granularity)
 - Random selection (k = per-mutation proposed selection size)
 
-**Output:** `results/aggregated/baseline_comparison.json`
+**Output:** `/path/to/fresh-results/aggregated/baseline_comparison.json`
 
 ## Verification
 
-After all steps, verify results match expected values:
+After all steps, inspect the freshly generated result at
+`/path/to/fresh-results/aggregated/evaluation_summary.json`. A fresh PIT run is
+not expected to reproduce the canonical mutation count exactly; see the
+non-determinism note below.
+
+To verify the reported canonical values using the committed artifacts, run:
 
 ```bash
 python3 -c "
@@ -99,7 +109,7 @@ print('All checks passed.')
 "
 ```
 
-## Expected Results
+## Expected Results (Canonical Artifacts)
 
 | Metric | Value |
 |--------|-------|

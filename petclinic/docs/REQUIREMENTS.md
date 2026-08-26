@@ -21,7 +21,7 @@ git checkout 70b3984626eb  # pinned for this evaluation (corrected collector)
 
 Required: version 0.1.0 (commit 70b3984626eb) with per-test JaCoCo instrumentation.
 
-## Spring PetClinic Checkout
+## Spring PetClinic Checkout Provenance
 
 ```bash
 git clone https://github.com/spring-projects/spring-petclinic.git
@@ -29,11 +29,19 @@ cd spring-petclinic
 git checkout e4a6ebe3139f6b2bf5303b362bc5856d86c46a6f
 ```
 
-The `build.gradle` must include:
+This object is recorded by the archived evaluation but is not currently
+advertised by the documented upstream repository. The package also records
+separate setup commits `cbb884f` (coverage) and `2bb92ff` (PIT), neither of
+which is included here. Therefore these are provenance identifiers, not a
+currently executable from-scratch prerequisite.
+
+The archived `build.gradle` configurations included:
 - Smart Test Picker plugin configuration (for Step 1)
 - PIT Gradle plugin `info.solidsoft.pitest` version 1.15.0 (for Step 2)
 
-See `config/pitest_config.md` for the exact PIT configuration block.
+See `config/pitest_config.md` for the retained PIT block. The complete Smart
+Test Picker Gradle setup was not retained, so a full source rebuild cannot be
+performed using this package alone.
 
 ## Hardware
 

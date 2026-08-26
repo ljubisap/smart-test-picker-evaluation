@@ -51,9 +51,12 @@ ls ~/.m2/repository/com/sap/oss/smart-test-picker/smart-test-picker-maven/0.1.0/
    git checkout 8538458e7aeb1455a5942f60fe0b4930da6c5d68
    ```
 
-2. Add profiles to `pom.xml` (inside `<profiles>` section):
-   - Smart Test Picker profile: enables JaCoCo per-test instrumentation
-   - PIT profile: see `config/pit_profile.xml`
+2. Add both supplied profiles inside the root `pom.xml` `<profiles>` element:
+   - `config/coverage_profile.xml` enables JaCoCo per-test instrumentation.
+   - `config/pit_profile.xml` configures PIT.
+
+   Copy the `<profile>...</profile>` element from each file, not the files
+   themselves and not an additional nested `<profiles>` element.
 
 3. Ensure `.gitattributes` contains:
    ```

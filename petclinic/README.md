@@ -30,23 +30,19 @@ cat results/aggregated/evaluation_summary.json | python3 -m json.tool
 cat results/aggregated/baseline_comparison.json | python3 -m json.tool
 ```
 
-## Reproduce from Scratch
+## Verify Archived Results
 
 ```bash
-# Prerequisites: Java 21, spring-petclinic checkout, Smart Test Picker plugin in mavenLocal
-
-# Step 1: Generate coverage map (~1 min)
-python3 scripts/01_generate_coverage_map.py --project-dir /path/to/spring-petclinic
-
-# Step 2: Run PIT mutation testing (~2 min)
-python3 scripts/02_run_pit.py --project-dir /path/to/spring-petclinic
-
-# Step 3: Evaluate safety (~1 sec)
-python3 scripts/03_evaluate.py --project-dir /path/to/spring-petclinic
-
-# Step 4: Baseline comparison (~1 sec)
-python3 scripts/04_baselines.py --project-dir /path/to/spring-petclinic
+python3 scripts/00_sample_classes.py --verify
+python3 scripts/03_evaluate.py --project-dir /any/path
+python3 scripts/04_baselines.py --project-dir /any/path
 ```
+
+The source benchmark and separate coverage/PIT setup commits used for the
+archived run are not available through the documented upstream checkout or
+contained in this package. A full build-from-source reproduction is therefore
+not currently claimed. See `docs/REPRODUCE.md` for provenance and the exact
+limitation.
 
 ## Directory Structure
 

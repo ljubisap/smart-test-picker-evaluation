@@ -83,17 +83,17 @@ git clone https://github.com/jgrapht/jgrapht.git
 cd jgrapht
 git checkout 719212a1fe0bbbf62210159f50920a71e80b73ed
 
-# 2. Generate coverage map (requires smart-test-picker-maven 0.1.0 in mavenLocal)
-mvn verify -Psmart-test-picker -pl jgrapht-core
+# 2. Complete the POM and JUnit setup in REQUIREMENTS.md, then generate coverage
+python3 scripts/01_generate_coverage_map.py --project-dir /path/to/jgrapht
 
 # 3. Run PIT on sampled classes
-python3 scripts/02_run_pit.py --project-dir /path/to/jgrapht
+python3 scripts/02_run_pit.py --project-dir /path/to/jgrapht --results-dir /path/to/fresh-results
 
 # 4. Evaluate
-python3 scripts/03_evaluate.py --project-dir /path/to/jgrapht
+python3 scripts/03_evaluate.py --project-dir /path/to/jgrapht --results-dir /path/to/fresh-results --coverage-map /path/to/jgrapht/jgrapht-core/target/test-coverage-map.json
 
 # 5. Baseline comparison
-python3 scripts/04_baselines.py --project-dir /path/to/jgrapht
+python3 scripts/04_baselines.py --project-dir /path/to/jgrapht --results-dir /path/to/fresh-results --coverage-map /path/to/jgrapht/jgrapht-core/target/test-coverage-map.json
 ```
 
 ## File Layout

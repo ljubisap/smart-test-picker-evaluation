@@ -93,8 +93,14 @@ See `<project>/docs/METHODOLOGY.md` for detailed methodology per project.
 ## Requirements
 
 - Java 21+, Maven 3.9.6+, Python 3.10+
-- Smart Test Picker plugin 0.1.0 (built from source, commit pinned per project)
+- Smart Test Picker plugin 0.1.0 (built from source at commit `70b3984626eb`)
 - No external Python packages (stdlib only)
+
+The Smart Test Picker source repository is not vendored here and this package
+does not record its clone URL. A source checkout containing the pinned commit,
+or the already-published `0.1.0` artifacts in `mavenLocal`, is therefore an
+external prerequisite. “From scratch” in the project guides means from a clean
+benchmark checkout after this prerequisite has been satisfied.
 
 See `<project>/docs/REQUIREMENTS.md` for project-specific prerequisites.
 
@@ -121,9 +127,9 @@ cat results/aggregated/evaluation_summary.json | python3 -m json.tool
 
 # Reproduce from scratch (requires commons-lang checkout + plugin):
 python3 scripts/01_generate_coverage_map.py --project-dir /path/to/commons-lang
-python3 scripts/02_run_pit.py --project-dir /path/to/commons-lang
-python3 scripts/03_evaluate.py --project-dir /path/to/commons-lang
-python3 scripts/04_baselines.py --project-dir /path/to/commons-lang
+python3 scripts/02_run_pit.py --project-dir /path/to/commons-lang --results-dir /path/to/fresh-results
+python3 scripts/03_evaluate.py --project-dir /path/to/commons-lang --results-dir /path/to/fresh-results --coverage-map /path/to/commons-lang/target/test-coverage-map.json
+python3 scripts/04_baselines.py --project-dir /path/to/commons-lang --results-dir /path/to/fresh-results --coverage-map /path/to/commons-lang/target/test-coverage-map.json
 ```
 
 ## Citation

@@ -51,13 +51,13 @@ See [REPRODUCE.md](REPRODUCE.md) for full step-by-step instructions.
 python3 scripts/01_generate_coverage_map.py --project-dir /path/to/commons-lang
 
 # 2. Run PIT mutation testing
-python3 scripts/02_run_pit.py --project-dir /path/to/commons-lang
+python3 scripts/02_run_pit.py --project-dir /path/to/commons-lang --results-dir /path/to/fresh-results
 
 # 3. Evaluate safety
-python3 scripts/03_evaluate.py --project-dir /path/to/commons-lang
+python3 scripts/03_evaluate.py --project-dir /path/to/commons-lang --results-dir /path/to/fresh-results --coverage-map /path/to/commons-lang/target/test-coverage-map.json
 
 # 4. Compare baselines
-python3 scripts/04_baselines.py --project-dir /path/to/commons-lang
+python3 scripts/04_baselines.py --project-dir /path/to/commons-lang --results-dir /path/to/fresh-results --coverage-map /path/to/commons-lang/target/test-coverage-map.json
 ```
 
 ## Subject Project

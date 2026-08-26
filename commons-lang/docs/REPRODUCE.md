@@ -16,6 +16,9 @@ This confirms all sampled classes exist, have matching test classes, and meet LO
 
 ## Step 1: Generate Coverage Map
 
+Before running this step, complete the subject-project setup in
+[`REQUIREMENTS.md`](REQUIREMENTS.md), including both supplied Maven profiles.
+
 ```bash
 python3 scripts/01_generate_coverage_map.py --project-dir /path/to/commons-lang
 ```
@@ -36,7 +39,8 @@ python3 scripts/01_generate_coverage_map.py --project-dir /path/to/commons-lang 
 ## Step 2: Run PIT Mutation Testing
 
 ```bash
-python3 scripts/02_run_pit.py --project-dir /path/to/commons-lang
+python3 scripts/02_run_pit.py --project-dir /path/to/commons-lang \
+  --results-dir /path/to/fresh-results
 ```
 
 Runs PIT per-class on all 21 sampled classes with:
@@ -45,7 +49,7 @@ Runs PIT per-class on all 21 sampled classes with:
 - 10-minute timeout per class
 
 **Duration:** ~5-10 minutes (21 classes sequentially)
-**Output:** `results/per-class/<FQN>/mutations.xml`
+**Output:** `/path/to/fresh-results/per-class/<FQN>/mutations.xml`
 
 To run a single class (debugging):
 ```bash
@@ -56,7 +60,9 @@ python3 scripts/02_run_pit.py --project-dir /path/to/commons-lang \
 ## Step 3: Evaluate Plugin Safety
 
 ```bash
-python3 scripts/03_evaluate.py --project-dir /path/to/commons-lang
+python3 scripts/03_evaluate.py --project-dir /path/to/commons-lang \
+  --results-dir /path/to/fresh-results \
+  --coverage-map /path/to/commons-lang/target/test-coverage-map.json
 ```
 
 Simulates plugin behavior for each KILLED mutation:
@@ -65,29 +71,32 @@ Simulates plugin behavior for each KILLED mutation:
 3. Checks if selected tests include at least one killing test
 
 **Output:**
-- `results/aggregated/evaluation_results.csv`
-- `results/aggregated/evaluation_summary.json`
+- `/path/to/fresh-results/aggregated/evaluation_results.csv`
+- `/path/to/fresh-results/aggregated/evaluation_summary.json`
 
 ## Step 4: Baseline Comparison
 
 ```bash
-python3 scripts/04_baselines.py --project-dir /path/to/commons-lang
+python3 scripts/04_baselines.py --project-dir /path/to/commons-lang \
+  --results-dir /path/to/fresh-results \
+  --coverage-map /path/to/commons-lang/target/test-coverage-map.json
 ```
 
 Compares proposed selector against:
 - Class-level only (no method granularity)
 - Random selection (k = per-mutation proposed selection size)
 
-**Output:** `results/aggregated/baseline_comparison.json`
+**Output:** `/path/to/fresh-results/aggregated/baseline_comparison.json`
 
 ## Verification
 
-After all steps, verify results match expected values:
+After all steps, verify the freshly generated result (not the committed
+canonical artifact):
 
 ```bash
 python3 -c "
 import json
-with open('results/aggregated/evaluation_summary.json') as f:
+with open('/path/to/fresh-results/aggregated/evaluation_summary.json') as f:
     s = json.load(f)
 assert s['inclusiveness_pct'] == 99.87, f'Expected 99.87%, got {s[\"inclusiveness_pct\"]}%'
 assert s['unsafe'] == 1, f'Expected 1 unsafe, got {s[\"unsafe\"]}'

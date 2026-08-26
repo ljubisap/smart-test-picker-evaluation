@@ -6,7 +6,7 @@ Pilot benchmark for the Smart Test Picker mutation-based safety evaluation.
 
 | File | Contents |
 |------|----------|
-| [REPRODUCE.md](REPRODUCE.md) | Step-by-step reproduction guide |
+| [REPRODUCE.md](REPRODUCE.md) | Archived-artifact verification and reproduction limitation |
 | [METHODOLOGY.md](METHODOLOGY.md) | Evaluation protocol and design decisions |
 | [REQUIREMENTS.md](REQUIREMENTS.md) | Software, hardware, time estimates |
 | [FAILURE_MODES.md](FAILURE_MODES.md) | Analysis of unsafe mutations (none for PetClinic) |
@@ -28,4 +28,7 @@ Pilot benchmark for the Smart Test Picker mutation-based safety evaluation.
 
 **Coverage map included:** The coverage map is 80 KB (52 tests). Including it enables `03_evaluate.py` and `04_baselines.py` to run without Step 1 (no build required for result verification). For commons-lang, the map is too large (~15 MB) to commit.
 
-**Gradle, not Maven:** Spring PetClinic is a dual-build project (both `pom.xml` and `build.gradle` exist). We use Gradle because the Smart Test Picker Gradle plugin was the primary development target. The evaluation protocol is identical regardless of build system.
+**Gradle, not Maven:** The archived evaluation used Gradle. The source and
+setup commits needed to rebuild it are not contained in this package; see
+[REPRODUCE.md](REPRODUCE.md) before treating the retained commands as a fresh
+reproduction recipe.
