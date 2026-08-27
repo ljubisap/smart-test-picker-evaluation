@@ -63,6 +63,10 @@ ls ~/.m2/repository/com/sap/oss/smart-test-picker/smart-test-picker-maven/0.1.0/
    *.java diff=java
    ```
 
+Leave these setup changes uncommitted until Step 0 validates the pinned source
+commit. `REPRODUCE.md` documents when to commit them before the contract test,
+which requires a clean working tree.
+
 ## Hardware
 
 | Resource | Minimum | Recommended |

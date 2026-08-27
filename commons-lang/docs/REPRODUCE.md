@@ -129,6 +129,21 @@ print('All checks passed.')
 
 ## Step 5: Contract Test (Python-Java Equivalence)
 
+The contract test creates temporary commits and intentionally refuses to run
+with a dirty working tree. Steps 1-4 leave the evaluation changes required by
+`REQUIREMENTS.md` uncommitted, so commit only those setup files before running
+the contract test:
+
+```bash
+cd /path/to/commons-lang
+git add pom.xml .gitattributes
+git commit -m "chore: configure smart test picker evaluation"
+```
+
+Do this only after Step 0 has validated the pinned source commit. The setup
+commit changes build configuration only; the benchmark production sources
+remain at `8538458e7aeb1455a5942f60fe0b4930da6c5d68`.
+
 ```bash
 python3 scripts/contract_test.py \
   --project-dir /path/to/commons-lang \
