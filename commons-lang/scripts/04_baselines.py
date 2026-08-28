@@ -148,8 +148,23 @@ def main():
     total_tests = len(test_mappings)
 
     base_to_keys = build_base_to_keys(test_mappings)
-    pit_files = discover_pit_files(REPO_ROOT, ["commons-lang/results/per-class/*/mutations.xml"])
-    raw_mutations = load_pit_mutations("commons-lang", REPO_ROOT, pit_files)
+    if args.results_dir is not None:
+        # Fresh reproduction: read PIT output from the supplied results dir.
+        pit_base = results_dir / "per-class"
+        pit_files = tuple(sorted(
+            list(pit_base.glob("*/mutations.xml")) + list(pit_base.glob("*/mutations.xml.gz")),
+            key=lambda p: p.as_posix()
+        ))
+        if not pit_files:
+            print(f"ERROR: No mutations found in {pit_base}/")
+            sys.exit(1)
+        # Use results_dir parent as root for relativization when files are outside REPO_ROOT.
+        pit_root = REPO_ROOT if str(pit_base).startswith(str(REPO_ROOT)) else results_dir.parent
+        raw_mutations = load_pit_mutations("commons-lang", pit_root, pit_files)
+    else:
+        # Canonical: read committed PIT ground truth.
+        pit_files = discover_pit_files(REPO_ROOT, ["commons-lang/results/per-class/*/mutations.xml"])
+        raw_mutations = load_pit_mutations("commons-lang", REPO_ROOT, pit_files)
 
     if not raw_mutations:
         print("ERROR: No mutations found in results/per-class/")
