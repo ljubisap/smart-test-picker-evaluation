@@ -188,3 +188,23 @@ The study uses three distinct scopes that must not be conflated:
 Only mutations reported as KILLED within the configured PIT test scope enter
 the inclusiveness evaluation. Killing tests outside the configured scope are
 not observed.
+
+## Independent Modern Subjects (2026-10-01)
+
+Hibernate ORM, Apache Flink, Quarkus, and Spring Security use a stronger input
+freeze than the original subjects. Their `config/subject.json` and
+`config/sample_classes.json` artifacts were created from qualified scope,
+source structure, and functional strata only, and committed before inspecting
+new PIT matrices, STP inclusiveness results, or failure cases.
+
+The frozen class counts are:
+
+- Hibernate ORM: 16
+- Apache Flink: 16
+- Quarkus Arc: 16
+- Spring Security: 18
+
+Empty, failed, timed-out, or mutation-free sampled classes remain part of the
+frozen input and are reported rather than replaced. Project-specific test
+scopes are declared in the sample artifacts before execution and may not be
+changed in response to killing-test or STP outcomes.

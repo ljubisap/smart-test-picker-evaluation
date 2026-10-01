@@ -1,0 +1,25 @@
+{
+  "project": "Hibernate ORM",
+  "repository": "https://github.com/hibernate/hibernate-orm.git",
+  "release": "7.4.11.Final",
+  "tag": "7.4.11",
+  "commit": "a95dd44cf654131e984682687cf1b2ec5d3e34cd",
+  "module": "hibernate-core",
+  "qualifiedTestScope": [
+    "org.hibernate.orm.test.bytecode.enhancement.*",
+    "org.hibernate.orm.test.proxy.*",
+    "org.hibernate.orm.test.jpa.callbacks.*",
+    "org.hibernate.orm.test.event.*"
+  ],
+  "qualifiedPopulation": {"nativeRaw": 1495, "stpRunnableLogical": 1099},
+  "jdk": "SapMachine 25.0.4.1+1-LTS",
+  "buildTool": "Gradle 9.5.0",
+  "junitPlatform": "6.0.1",
+  "stpCommit": "2e0954b5b590fb0b9da979c28b0d053e4ce9e5c9",
+  "stpTree": "7a61a4933a7f2b6a64aa06e4893ba61c9d26da33",
+  "pitest": "1.17.4",
+  "pitestJunit5Plugin": "1.2.1",
+  "mutators": ["DEFAULTS"],
+  "fullMutationMatrix": true,
+  "denominator": "KILLED mutants within each frozen targetTests scope"
+}
