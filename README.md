@@ -15,6 +15,10 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | JGraphT | 2308 | 517 | 99.81% | 96.20% | 87.7 | Done | [jgrapht/](jgrapht/) |
 | Spring Framework (spring-core) | 3624 | 454 | 97.58% | 97.78% | 80.6 | Done | [spring-core/](spring-core/) |
 | Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.7 | Done (pilot) | [petclinic/](petclinic/) |
+| Apache Flink (scheduler scope) | 665 | 349 | 100.00% | 94.55% | 36.23 | Done | [flink/](flink/) |
+| Hibernate ORM | — | — | — | — | — | PIT oracle blocked | [hibernate/](hibernate/) |
+| Quarkus Arc | — | — | — | — | — | PIT oracle blocked | [quarkus/](quarkus/) |
+| Spring Security | — | — | — | — | — | PIT/JDK blocked | [spring-security/](spring-security/) |
 
 ## Sampling Strategies
 
@@ -24,6 +28,10 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | JGraphT | curated_stratified | One class per algorithmic subpackage (20 subpackages) |
 | Spring Framework | curated_stratified | One class per spring-core subpackage (22 subpackages), excl. infrastructure |
 | PetClinic | all_classes | Small project; 17 classes mutated, 14 with killed mutants |
+| Flink | curated_stratified | 16 scheduler classes frozen before PIT/STP outcomes |
+| Hibernate | curated_stratified | Frozen before execution; PIT oracle blocked |
+| Quarkus | curated_stratified | Frozen before execution; full Arc PIT scope blocked |
+| Spring Security | curated_stratified | Frozen before execution; PIT 1.17.4 cannot transform JDK 25 bytecode |
 
 ## Repository Structure
 
@@ -52,6 +60,10 @@ smart-test-picker-evaluation/
 |   |-- scripts/            # Evaluation scripts (00-04)
 |   |-- results/            # PIT output + aggregated metrics
 |   `-- docs/               # Methodology, reproduction, failure analysis
+|-- flink/                  # Independent validation: scheduler scope (665 tests)
+|-- hibernate/              # Frozen attempt and PIT-oracle blocker evidence
+|-- quarkus/                # Frozen attempt and PIT-oracle blocker evidence
+|-- spring-security/        # Frozen attempt and PIT/JDK blocker evidence
 |-- analysis/               # Shared evaluation core, taxonomy and verification
 |   |-- evaluation_core.py  # Shared selectors, loading, resolution
 |   |-- analyze_failure_modes.py  # Taxonomy and mitigation (--write, --verify)
@@ -93,7 +105,10 @@ See `<project>/docs/METHODOLOGY.md` for detailed methodology per project.
 ## Requirements
 
 - Java 21+, Maven 3.9.6+, Python 3.10+
-- Smart Test Picker plugin 0.1.0 (built from source at commit `70b3984626eb`)
+- Smart Test Picker JaCoCo evaluation line built from commit
+  `2e0954b5b590fb0b9da979c28b0d053e4ce9e5c9` (tree
+  `7a61a4933a7f2b6a64aa06e4893ba61c9d26da33`) for the independent-subject
+  extension. Original-subject provenance remains recorded in each subject.
 - No external Python packages (stdlib only)
 
 The Smart Test Picker source repository is not vendored here and this package
@@ -115,7 +130,16 @@ python3 analysis/analyze_failure_modes.py --verify
 
 # Verify Python/Java selector equivalence
 python3 analysis/verify_selector_equivalence.py --verify
+
+# Verify independent-subject artifact hashes
+python3 analysis/freeze_artifacts.py --verify
 ```
+
+The attempted eight-subject summary is
+[`results/eight-subject-summary.json`](results/eight-subject-summary.json).
+Three new subjects are explicitly PIT-oracle blocked and are excluded from
+mutation denominators; see
+[`docs/EIGHT_SUBJECT_EXTENSION_REPORT.md`](docs/EIGHT_SUBJECT_EXTENSION_REPORT.md).
 
 ## Quick Start
 

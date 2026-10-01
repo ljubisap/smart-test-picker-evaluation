@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "attemptedSubjects": 8,
+  "completedSubjects": 5,
+  "blockedSubjects": 3,
+  "projects": [
+    {
+      "project": "commons-lang",
+      "status": "COMPLETE",
+      "logicalTests": 4692,
+      "sampledProductionClasses": 21,
+      "usableMutationProducingClasses": 21,
+      "totalPitMutations": 932,
+      "killedMutations": 772,
+      "stpInclusive": 771,
+      "inclusivenessPct": 99.87,
+      "avgSelected": 17.0,
+      "reductionPct": 99.64,
+      "classLevel": {
+        "name": "Class-level only",
+        "safety_pct": 99.87,
+        "safe": 771,
+        "unsafe": 1,
+        "total": 772,
+        "avg_selected": 50.1,
+        "selection_rate_pct": 1.07,
+        "test_reduction_pct": 98.93
+      },
+      "randomEqualBudget": {
+        "name": "Random (k=per-mutation)",
+        "safety_pct": 2.03,
+        "safety_std": 0.5,
+        "safety_analytical_pct": 2.02,
+        "num_trials": 1000,
+        "safe": 16,
+        "unsafe": 756,
+        "total": 772,
+        "avg_selected": 17.0,
+        "selection_rate_pct": 0.36,
+        "test_reduction_pct": 99.64
+      },
+      "falseNegatives": 1,
+      "failureTaxonomy": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "NEW_TYPE": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 0,
+        "avgSelected": 19.8,
+        "inclusivenessPct": 99.87,
+        "safe": 771,
+        "selectionRatePct": 0.42
+      }
+    },
+    {
+      "project": "jgrapht",
+      "status": "COMPLETE",
+      "logicalTests": 2308,
+      "sampledProductionClasses": 20,
+      "usableMutationProducingClasses": 20,
+      "totalPitMutations": 804,
+      "killedMutations": 517,
+      "stpInclusive": 516,
+      "inclusivenessPct": 99.81,
+      "avgSelected": 87.7,
+      "reductionPct": 96.2,
+      "classLevel": {
+        "name": "Class-level only",
+        "safety_pct": 100.0,
+        "safe": 517,
+        "unsafe": 0,
+        "total": 517,
+        "avg_selected": 207.8,
+        "selection_rate_pct": 9.0,
+        "test_reduction_pct": 91.0
+      },
+      "randomEqualBudget": {
+        "name": "Random (k=per-mutation)",
+        "safety_pct": 33.59,
+        "safety_std": 1.26,
+        "safety_analytical_pct": 33.63,
+        "num_trials": 1000,
+        "safe": 174,
+        "unsafe": 343,
+        "total": 517,
+        "avg_selected": 87.7,
+        "selection_rate_pct": 3.8,
+        "test_reduction_pct": 96.2
+      },
+      "falseNegatives": 1,
+      "failureTaxonomy": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "NEW_TYPE": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 1,
+        "avgSelected": 96.9,
+        "inclusivenessPct": 100.0,
+        "safe": 517,
+        "selectionRatePct": 4.2
+      }
+    },
+    {
+      "project": "spring-core",
+      "status": "COMPLETE",
+      "logicalTests": 3624,
+      "sampledProductionClasses": 22,
+      "usableMutationProducingClasses": 18,
+      "totalPitMutations": 563,
+      "killedMutations": 454,
+      "stpInclusive": 443,
+      "inclusivenessPct": 97.58,
+      "avgSelected": 80.6,
+      "reductionPct": 97.78,
+      "classLevel": {
+        "name": "Class-level only",
+        "safety_pct": 100.0,
+        "safe": 454,
+        "unsafe": 0,
+        "total": 454,
+        "avg_selected": 529.2,
+        "selection_rate_pct": 14.6,
+        "test_reduction_pct": 85.4
+      },
+      "randomEqualBudget": {
+        "name": "Random (k=per-mutation)",
+        "safety_pct": 17.37,
+        "safety_std": 1.09,
+        "safety_analytical_pct": 17.36,
+        "num_trials": 1000,
+        "safe": 79,
+        "unsafe": 375,
+        "total": 454,
+        "avg_selected": 80.6,
+        "selection_rate_pct": 2.22,
+        "test_reduction_pct": 97.78
+      },
+      "falseNegatives": 11,
+      "failureTaxonomy": {
+        "A": 4,
+        "B": 7,
+        "C": 0,
+        "NEW_TYPE": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 4,
+        "avgSelected": 84.9,
+        "inclusivenessPct": 98.46,
+        "safe": 447,
+        "selectionRatePct": 2.34
+      }
+    },
+    {
+      "project": "petclinic",
+      "status": "COMPLETE",
+      "logicalTests": 52,
+      "sampledProductionClasses": 14,
+      "usableMutationProducingClasses": 14,
+      "totalPitMutations": 139,
+      "killedMutations": 94,
+      "stpInclusive": 94,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 9.7,
+      "reductionPct": 81.3,
+      "classLevel": {
+        "name": "Class-level only",
+        "safety_pct": 100.0,
+        "safe": 94,
+        "unsafe": 0,
+        "total": 94,
+        "avg_selected": 18.4,
+        "selection_rate_pct": 35.29,
+        "test_reduction_pct": 64.71
+      },
+      "randomEqualBudget": {
+        "name": "Random (k=per-mutation)",
+        "safety_pct": 35.97,
+        "safety_std": 2.95,
+        "safety_analytical_pct": 35.88,
+        "num_trials": 1000,
+        "safe": 34,
+        "unsafe": 60,
+        "total": 94,
+        "avg_selected": 9.7,
+        "selection_rate_pct": 18.7,
+        "test_reduction_pct": 81.3
+      },
+      "falseNegatives": 0,
+      "failureTaxonomy": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "NEW_TYPE": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 0,
+        "avgSelected": 11.7,
+        "inclusivenessPct": 100.0,
+        "safe": 94,
+        "selectionRatePct": 22.52
+      }
+    },
+    {
+      "project": "flink",
+      "status": "COMPLETE",
+      "logicalTests": 665,
+      "sampledProductionClasses": 16,
+      "usableMutationProducingClasses": 16,
+      "totalPitMutations": 681,
+      "killedMutations": 349,
+      "stpInclusive": 349,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 36.23,
+      "reductionPct": 94.55,
+      "classLevel": {
+        "name": "Class-level only",
+        "safe": 349,
+        "unsafe": 0,
+        "total": 349,
+        "inclusivenessPct": 100.0,
+        "avgSelected": 64.93,
+        "selectionRatePct": 9.76,
+        "reductionPct": 90.24
+      },
+      "randomEqualBudget": {
+        "name": "Random equal-budget",
+        "trials": 1000,
+        "seed": 42,
+        "inclusivenessPct": 19.33,
+        "inclusivenessStdPct": 1.69,
+        "analyticalInclusivenessPct": 19.38,
+        "avgSelected": 36.23,
+        "selectionRatePct": 5.45,
+        "reductionPct": 94.55
+      },
+      "falseNegatives": 0,
+      "failureTaxonomy": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "NEW_TYPE": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 0,
+        "avgSelected": 38.4,
+        "inclusivenessPct": 100.0,
+        "safe": 349,
+        "selectionRatePct": 5.77
+      }
+    },
+    {
+      "project": "hibernate",
+      "status": "PIT_GROUND_TRUTH_BLOCKED",
+      "logicalTests": 1099,
+      "sampledProductionClasses": 16,
+      "usableMutationProducingClasses": null,
+      "totalPitMutations": null,
+      "killedMutations": null,
+      "stpInclusive": null,
+      "inclusivenessPct": null,
+      "avgSelected": null,
+      "reductionPct": null,
+      "classLevel": null,
+      "randomEqualBudget": null,
+      "falseNegatives": null,
+      "failureTaxonomy": null,
+      "mitigation": null,
+      "blocker": {
+        "status": "PIT_GROUND_TRUTH_BLOCKED",
+        "subject": "Hibernate ORM 7.4.11.Final",
+        "subjectCommit": "a95dd44cf654131e984682687cf1b2ec5d3e34cd",
+        "pitest": "1.17.4",
+        "pitestJunit5Plugin": "1.2.1",
+        "gradlePitIntegrationPlugin": "1.19.0",
+        "jdk": "SapMachine 25.0.4.1+1-LTS",
+        "nativeSingleTestControl": {
+          "testClass": "org.hibernate.orm.test.bytecode.enhancement.basic.BasicSessionTest",
+          "status": "PASS"
+        },
+        "pitSingleTestDiagnostic": {
+          "targetClass": "org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
+          "testClass": "org.hibernate.orm.test.bytecode.enhancement.basic.BasicSessionTest",
+          "status": "FAIL",
+          "stage": "PIT coverage generation minion",
+          "failure": "Coverage generation minion exited abnormally (UNKNOWN_ERROR)"
+        },
+        "pitFrozenScopeDiagnostic": {
+          "testClassesSent": 932,
+          "status": "FAIL",
+          "stage": "PIT coverage generation minion",
+          "failure": "Coverage generation minion exited abnormally (UNKNOWN_ERROR)"
+        },
+        "decision": "Stop Hibernate subject; do not change PIT version, subject release, or targetTests scope"
+      }
+    },
+    {
+      "project": "quarkus",
+      "status": "PIT_GROUND_TRUTH_BLOCKED",
+      "logicalTests": 684,
+      "sampledProductionClasses": 16,
+      "usableMutationProducingClasses": null,
+      "totalPitMutations": null,
+      "killedMutations": null,
+      "stpInclusive": null,
+      "inclusivenessPct": null,
+      "avgSelected": null,
+      "reductionPct": null,
+      "classLevel": null,
+      "randomEqualBudget": null,
+      "falseNegatives": null,
+      "failureTaxonomy": null,
+      "mitigation": null,
+      "blocker": {
+        "status": "PIT_GROUND_TRUTH_BLOCKED",
+        "subject": "Quarkus Arc 3.40.1",
+        "subjectCommit": "6ce99878508d792f3c2a2a7f9520b086a1c32cab",
+        "pitest": "1.17.4",
+        "pitestJunit5Plugin": "1.2.1",
+        "splitModuleAdapter": "processor compiled output + sources supplied to Arc tests PIT execution",
+        "singleTestDiagnostic": {
+          "targetClass": "io.quarkus.arc.processor.Annotations",
+          "testClass": "io.quarkus.arc.test.interceptors.SimpleInterceptorTest",
+          "status": "PASS",
+          "mutationsGenerated": 101
+        },
+        "frozenScopeDiagnostic": {
+          "testClassesSent": 6044,
+          "status": "FAIL",
+          "stage": "PIT coverage generation minion",
+          "failure": "UNKNOWN_ERROR during Arc bean destruction lifecycle"
+        },
+        "decision": "Stop Quarkus subject; do not narrow the predeclared full Arc targetTests policy"
+      }
+    },
+    {
+      "project": "spring-security",
+      "status": "PIT_GROUND_TRUTH_BLOCKED",
+      "logicalTests": 1440,
+      "sampledProductionClasses": 18,
+      "usableMutationProducingClasses": null,
+      "totalPitMutations": null,
+      "killedMutations": null,
+      "stpInclusive": null,
+      "inclusivenessPct": null,
+      "avgSelected": null,
+      "reductionPct": null,
+      "classLevel": null,
+      "randomEqualBudget": null,
+      "falseNegatives": null,
+      "failureTaxonomy": null,
+      "mitigation": null,
+      "blocker": {
+        "status": "PIT_GROUND_TRUTH_BLOCKED",
+        "subject": "Spring Security 7.1.1",
+        "subjectCommit": "a825937b8175ee85872c49d9c7fc25eea8cff991",
+        "jdk": "SapMachine 25.0.4.1+1-LTS",
+        "classFileMajorVersion": 69,
+        "pitest": "1.17.4",
+        "pitestJunit5Plugin": "1.2.1",
+        "pilot": {
+          "targetClass": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+          "testsExamined": 11,
+          "mutationsGenerated": 22,
+          "killed": 0,
+          "noCoverage": 22,
+          "rootCause": "PIT relocated ASM throws IllegalArgumentException: Unsupported class file major version 69"
+        },
+        "decision": "Stop Spring Security subject; do not change PIT version or qualified JDK"
+      }
+    }
+  ],
+  "aggregateCompletedSubjectsOnly": {
+    "killedMutations": 2186,
+    "stpInclusive": 2173,
+    "falseNegatives": 13,
+    "inclusivenessPct": 99.41,
+    "mitigationRecoveries": 5,
+    "newFailureTypeExists": false
+  },
+  "interpretation": "Blocked subjects are excluded from every mutation denominator; null is not zero."
+}

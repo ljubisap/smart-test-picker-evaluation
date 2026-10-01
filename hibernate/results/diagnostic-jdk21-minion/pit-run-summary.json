@@ -1,0 +1,17 @@
+{
+  "project": "Hibernate ORM diagnostic only",
+  "classes": [
+    {
+      "fqn": "org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.basic.BasicSessionTest",
+      "status": "FAILED",
+      "reason": "exit 1",
+      "mutations": 0,
+      "elapsedSeconds": 30.35
+    }
+  ],
+  "ok": 0,
+  "failed": 1,
+  "timeout": 0,
+  "totalMutations": 0
+}

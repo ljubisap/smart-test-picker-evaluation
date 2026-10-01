@@ -1,0 +1,137 @@
+{
+  "project": "Apache Flink",
+  "classes": [
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.DefaultScheduler",
+      "targetTests": "org.apache.flink.runtime.scheduler.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 72,
+      "elapsedSeconds": 821.62
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.ExecutionGraphHandler",
+      "targetTests": "org.apache.flink.runtime.scheduler.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 26,
+      "elapsedSeconds": 86.44
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator",
+      "targetTests": "org.apache.flink.runtime.scheduler.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 35,
+      "elapsedSeconds": 132.92
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptive.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 26,
+      "elapsedSeconds": 152.11
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptive.Executing",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptive.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 56,
+      "elapsedSeconds": 362.13
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptive.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 18,
+      "elapsedSeconds": 65.0
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptive.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 22,
+      "elapsedSeconds": 30.77
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptive.allocator.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 35,
+      "elapsedSeconds": 8.19
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptivebatch.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 72,
+      "elapsedSeconds": 19.15
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptivebatch.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 48,
+      "elapsedSeconds": 202.88
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptivebatch.util.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 55,
+      "elapsedSeconds": 8.96
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology",
+      "targetTests": "org.apache.flink.runtime.scheduler.adapter.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 48,
+      "elapsedSeconds": 9.25
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry",
+      "targetTests": "org.apache.flink.runtime.scheduler.exceptionhistory.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 10,
+      "elapsedSeconds": 7.06
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector",
+      "targetTests": "org.apache.flink.runtime.scheduler.slowtaskdetector.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 69,
+      "elapsedSeconds": 118.69
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl",
+      "targetTests": "org.apache.flink.runtime.scheduler.stopwithsavepoint.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 13,
+      "elapsedSeconds": 37.48
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy",
+      "targetTests": "org.apache.flink.runtime.scheduler.strategy.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 76,
+      "elapsedSeconds": 24.74
+    }
+  ],
+  "ok": 16,
+  "failed": 0,
+  "timeout": 0,
+  "totalMutations": 681
+}

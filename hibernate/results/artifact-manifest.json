@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "project": "hibernate",
+  "artifacts": {
+    "hibernate/config/pit-diagnostic-single-test.json": "1a3b851c801ee2b80f80cc3d1292586cb6045c6ad01bfdee202ddc2931886e78",
+    "hibernate/config/pit.init.gradle": "96f247cb0c7e2bb53386e9c8c920883c316d6266670740c54c6ce17571ad0553",
+    "hibernate/config/sample_classes.json": "d09264d2badf5fa3ef4d7354bb2f1108d6b19f142c6543b8c71123359ef611c3",
+    "hibernate/config/subject.json": "28a0f79d23fa1cd64879cbb1fb445fdd9a3edde44b83b5a870b13a5e6400453a"
+  }
+}

@@ -32,6 +32,10 @@
       ],
       "unsafeCount": 1
     },
+    "flink": {
+      "mutations": [],
+      "unsafeCount": 0
+    },
     "jgrapht": {
       "mutations": [
         {
@@ -454,6 +458,11 @@
         "sha256": "75198f3e41ccbfd090295c7a1defa02380cde7618e9ac71cd7b7fa9b35f04384",
         "tests": 4692
       },
+      "flink": {
+        "commit": "c0f8d1a1e09f209885a88f9c19ceb9d9e9870283",
+        "sha256": "766a16502d728157639fe9180cf1d226106e2ef185e7419d41ed0eb69c777a02",
+        "tests": 665
+      },
       "jgrapht": {
         "commit": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
         "sha256": "851e4287a57b981d8a9af930e9774656987f8e5b8a392ec53bb0850422dbcdc5",
@@ -498,6 +507,29 @@
           "commons-lang/results/per-class/org.apache.commons.lang3.util.IterableStringTokenizer/mutations.xml"
         ],
         "killedMutations": 772
+      },
+      "flink": {
+        "aggregateSha256": "ca6415b15f55c79695a8a32cacf829dd65df434f32e167bb1f980271f493301d",
+        "fileCount": 16,
+        "files": [
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.DefaultScheduler/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.ExecutionGraphHandler/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.Executing/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl/mutations.xml",
+          "flink/results/per-class/org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy/mutations.xml"
+        ],
+        "killedMutations": 349
       },
       "jgrapht": {
         "aggregateSha256": "c915b60b0b7edadfe2e4286cd215461d44b334e7717c73ca24811f49fbcebe0f",
@@ -567,12 +599,12 @@
   },
   "resolutionSummary": {
     "idOccurrencesWithMultipleCoverageEntries": 57,
-    "idOccurrencesWithSingleCoverageEntry": 172529,
+    "idOccurrencesWithSingleCoverageEntry": 174296,
     "maxEntriesPerIdOccurrence": 3,
-    "pitKillingIdOccurrences": 172586,
-    "resolvedCoverageEntryOccurrences": 172667,
-    "uniqueNormalizedPitKillingIds": 2464,
-    "uniqueRawPitKillingIds": 4854
+    "pitKillingIdOccurrences": 174353,
+    "resolvedCoverageEntryOccurrences": 174434,
+    "uniqueNormalizedPitKillingIds": 2664,
+    "uniqueRawPitKillingIds": 5070
   },
   "schemaVersion": 1,
   "totalUnsafeMutations": 13,

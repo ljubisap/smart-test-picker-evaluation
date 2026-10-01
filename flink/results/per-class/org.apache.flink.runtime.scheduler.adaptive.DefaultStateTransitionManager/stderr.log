@@ -1,0 +1,308 @@
+21:33:47 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+21:33:48 PIT >> INFO : Created 1 mutation test units in pre scan
+21:33:48 PIT >> INFO : Sending 169 test classes to minion
+21:33:48 PIT >> INFO : Sent tests to minion
+21:33:50 PIT >> INFO : Calculated coverage in 2 seconds.
+21:33:51 PIT >> INFO : Created 1 mutation test units
+21:34:03 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:34:05 PIT >> WARNING : Error while watching child process
+java.util.concurrent.ExecutionException: org.pitest.util.PitError: null
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : SAP SE
+Version : 21.0.12.1+1-LTS
+Uptime : 21072
+Input ->
+ 1 : -XX:+IgnoreUnrecognizedVMOptions
+ 2 : --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED
+ 3 : --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+ 4 : --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+ 5 : --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+ 6 : --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+ 7 : --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED
+ 8 : -XX:ActiveProcessorCount=3
+ 9 : -Xmx4g
+ 10 : -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.8.6/bin/m2.conf
+ 11 : -Dmaven.home=/Users/D061177/Programs/apache-maven-3.8.6
+ 12 : -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.8.6/lib/jansi-native
+ 13 : -Dmaven.multiModuleProjectDirectory=/Users/D061177/work/issta/flink-stp-qualification/subject
+BootClassPathSupported : false
+
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.pitest.util.CommunicationThread.waitToFinish(CommunicationThread.java:62)
+	at org.pitest.mutationtest.execute.MutationTestProcess.waitToDie(MutationTestProcess.java:56)
+	at org.pitest.mutationtest.build.MutationTestUnit.waitForMinionToDie(MutationTestUnit.java:103)
+	at org.pitest.mutationtest.build.MutationTestUnit.runTestInSeperateProcessForMutationRange(MutationTestUnit.java:90)
+	at org.pitest.mutationtest.build.MutationTestUnit.runTestsInSeperateProcess(MutationTestUnit.java:73)
+	at org.pitest.mutationtest.build.MutationTestUnit.call(MutationTestUnit.java:55)
+	at org.pitest.mutationtest.build.MutationTestUnit.call(MutationTestUnit.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.pitest.util.PitError: null
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : SAP SE
+Version : 21.0.12.1+1-LTS
+Uptime : 21072
+Input ->
+ 1 : -XX:+IgnoreUnrecognizedVMOptions
+ 2 : --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED
+ 3 : --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+ 4 : --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+ 5 : --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+ 6 : --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+ 7 : --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED
+ 8 : -XX:ActiveProcessorCount=3
+ 9 : -Xmx4g
+ 10 : -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.8.6/bin/m2.conf
+ 11 : -Dmaven.home=/Users/D061177/Programs/apache-maven-3.8.6
+ 12 : -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.8.6/lib/jansi-native
+ 13 : -Dmaven.multiModuleProjectDirectory=/Users/D061177/work/issta/flink-stp-qualification/subject
+BootClassPathSupported : false
+
+	at org.pitest.util.Unchecked.translateCheckedException(Unchecked.java:20)
+	at org.pitest.util.SafeDataInputStream.readByte(SafeDataInputStream.java:78)
+	at org.pitest.util.SocketReadingCallable.receiveResults(SocketReadingCallable.java:57)
+	at org.pitest.util.SocketReadingCallable.call(SocketReadingCallable.java:34)
+	at org.pitest.util.SocketReadingCallable.call(SocketReadingCallable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 1 more
+Caused by: java.io.EOFException
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:297)
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:275)
+	at org.pitest.util.SafeDataInputStream.readByte(SafeDataInputStream.java:76)
+	... 5 more
+21:34:05 PIT >> WARNING : Error while watching child process
+java.util.concurrent.ExecutionException: org.pitest.util.PitError: null
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : SAP SE
+Version : 21.0.12.1+1-LTS
+Uptime : 21072
+Input ->
+ 1 : -XX:+IgnoreUnrecognizedVMOptions
+ 2 : --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED
+ 3 : --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+ 4 : --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+ 5 : --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+ 6 : --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+ 7 : --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED
+ 8 : -XX:ActiveProcessorCount=3
+ 9 : -Xmx4g
+ 10 : -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.8.6/bin/m2.conf
+ 11 : -Dmaven.home=/Users/D061177/Programs/apache-maven-3.8.6
+ 12 : -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.8.6/lib/jansi-native
+ 13 : -Dmaven.multiModuleProjectDirectory=/Users/D061177/work/issta/flink-stp-qualification/subject
+BootClassPathSupported : false
+
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.pitest.util.CommunicationThread.waitToFinish(CommunicationThread.java:62)
+	at org.pitest.mutationtest.execute.MutationTestProcess.waitToDie(MutationTestProcess.java:67)
+	at org.pitest.mutationtest.build.MutationTestUnit.waitForMinionToDie(MutationTestUnit.java:103)
+	at org.pitest.mutationtest.build.MutationTestUnit.runTestInSeperateProcessForMutationRange(MutationTestUnit.java:90)
+	at org.pitest.mutationtest.build.MutationTestUnit.runTestsInSeperateProcess(MutationTestUnit.java:73)
+	at org.pitest.mutationtest.build.MutationTestUnit.call(MutationTestUnit.java:55)
+	at org.pitest.mutationtest.build.MutationTestUnit.call(MutationTestUnit.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.pitest.util.PitError: null
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : SAP SE
+Version : 21.0.12.1+1-LTS
+Uptime : 21072
+Input ->
+ 1 : -XX:+IgnoreUnrecognizedVMOptions
+ 2 : --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED
+ 3 : --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+ 4 : --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+ 5 : --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+ 6 : --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+ 7 : --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED
+ 8 : -XX:ActiveProcessorCount=3
+ 9 : -Xmx4g
+ 10 : -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.8.6/bin/m2.conf
+ 11 : -Dmaven.home=/Users/D061177/Programs/apache-maven-3.8.6
+ 12 : -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.8.6/lib/jansi-native
+ 13 : -Dmaven.multiModuleProjectDirectory=/Users/D061177/work/issta/flink-stp-qualification/subject
+BootClassPathSupported : false
+
+	at org.pitest.util.Unchecked.translateCheckedException(Unchecked.java:20)
+	at org.pitest.util.SafeDataInputStream.readByte(SafeDataInputStream.java:78)
+	at org.pitest.util.SocketReadingCallable.receiveResults(SocketReadingCallable.java:57)
+	at org.pitest.util.SocketReadingCallable.call(SocketReadingCallable.java:34)
+	at org.pitest.util.SocketReadingCallable.call(SocketReadingCallable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 1 more
+Caused by: java.io.EOFException
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:297)
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:275)
+	at org.pitest.util.SafeDataInputStream.readByte(SafeDataInputStream.java:76)
+	... 5 more
+21:34:05 PIT >> WARNING : Minion exited abnormally due to RUN_ERROR
+21:34:17 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:34:29 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:34:41 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:34:54 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:35:06 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:35:08 PIT >> WARNING : Error while watching child process
+java.util.concurrent.ExecutionException: org.pitest.util.PitError: null
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : SAP SE
+Version : 21.0.12.1+1-LTS
+Uptime : 84611
+Input ->
+ 1 : -XX:+IgnoreUnrecognizedVMOptions
+ 2 : --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED
+ 3 : --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+ 4 : --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+ 5 : --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+ 6 : --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+ 7 : --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED
+ 8 : -XX:ActiveProcessorCount=3
+ 9 : -Xmx4g
+ 10 : -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.8.6/bin/m2.conf
+ 11 : -Dmaven.home=/Users/D061177/Programs/apache-maven-3.8.6
+ 12 : -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.8.6/lib/jansi-native
+ 13 : -Dmaven.multiModuleProjectDirectory=/Users/D061177/work/issta/flink-stp-qualification/subject
+BootClassPathSupported : false
+
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.pitest.util.CommunicationThread.waitToFinish(CommunicationThread.java:62)
+	at org.pitest.mutationtest.execute.MutationTestProcess.waitToDie(MutationTestProcess.java:56)
+	at org.pitest.mutationtest.build.MutationTestUnit.waitForMinionToDie(MutationTestUnit.java:103)
+	at org.pitest.mutationtest.build.MutationTestUnit.runTestInSeperateProcessForMutationRange(MutationTestUnit.java:90)
+	at org.pitest.mutationtest.build.MutationTestUnit.runTestsInSeperateProcess(MutationTestUnit.java:73)
+	at org.pitest.mutationtest.build.MutationTestUnit.call(MutationTestUnit.java:55)
+	at org.pitest.mutationtest.build.MutationTestUnit.call(MutationTestUnit.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.pitest.util.PitError: null
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : SAP SE
+Version : 21.0.12.1+1-LTS
+Uptime : 84611
+Input ->
+ 1 : -XX:+IgnoreUnrecognizedVMOptions
+ 2 : --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED
+ 3 : --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+ 4 : --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+ 5 : --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+ 6 : --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+ 7 : --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED
+ 8 : -XX:ActiveProcessorCount=3
+ 9 : -Xmx4g
+ 10 : -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.8.6/bin/m2.conf
+ 11 : -Dmaven.home=/Users/D061177/Programs/apache-maven-3.8.6
+ 12 : -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.8.6/lib/jansi-native
+ 13 : -Dmaven.multiModuleProjectDirectory=/Users/D061177/work/issta/flink-stp-qualification/subject
+BootClassPathSupported : false
+
+	at org.pitest.util.Unchecked.translateCheckedException(Unchecked.java:20)
+	at org.pitest.util.SafeDataInputStream.readByte(SafeDataInputStream.java:78)
+	at org.pitest.util.SocketReadingCallable.receiveResults(SocketReadingCallable.java:57)
+	at org.pitest.util.SocketReadingCallable.call(SocketReadingCallable.java:34)
+	at org.pitest.util.SocketReadingCallable.call(SocketReadingCallable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 1 more
+Caused by: java.io.EOFException
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:297)
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:275)
+	at org.pitest.util.SafeDataInputStream.readByte(SafeDataInputStream.java:76)
+	... 5 more
+21:35:08 PIT >> WARNING : Error while watching child process
+java.util.concurrent.ExecutionException: org.pitest.util.PitError: null
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : SAP SE
+Version : 21.0.12.1+1-LTS
+Uptime : 84611
+Input ->
+ 1 : -XX:+IgnoreUnrecognizedVMOptions
+ 2 : --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED
+ 3 : --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+ 4 : --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+ 5 : --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+ 6 : --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+ 7 : --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED
+ 8 : -XX:ActiveProcessorCount=3
+ 9 : -Xmx4g
+ 10 : -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.8.6/bin/m2.conf
+ 11 : -Dmaven.home=/Users/D061177/Programs/apache-maven-3.8.6
+ 12 : -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.8.6/lib/jansi-native
+ 13 : -Dmaven.multiModuleProjectDirectory=/Users/D061177/work/issta/flink-stp-qualification/subject
+BootClassPathSupported : false
+
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at org.pitest.util.CommunicationThread.waitToFinish(CommunicationThread.java:62)
+	at org.pitest.mutationtest.execute.MutationTestProcess.waitToDie(MutationTestProcess.java:67)
+	at org.pitest.mutationtest.build.MutationTestUnit.waitForMinionToDie(MutationTestUnit.java:103)
+	at org.pitest.mutationtest.build.MutationTestUnit.runTestInSeperateProcessForMutationRange(MutationTestUnit.java:90)
+	at org.pitest.mutationtest.build.MutationTestUnit.runTestsInSeperateProcess(MutationTestUnit.java:73)
+	at org.pitest.mutationtest.build.MutationTestUnit.call(MutationTestUnit.java:55)
+	at org.pitest.mutationtest.build.MutationTestUnit.call(MutationTestUnit.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.pitest.util.PitError: null
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : SAP SE
+Version : 21.0.12.1+1-LTS
+Uptime : 84611
+Input ->
+ 1 : -XX:+IgnoreUnrecognizedVMOptions
+ 2 : --add-exports=java.security.jgss/sun.security.krb5=ALL-UNNAMED
+ 3 : --add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED
+ 4 : --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+ 5 : --add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED
+ 6 : --add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED
+ 7 : --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED
+ 8 : -XX:ActiveProcessorCount=3
+ 9 : -Xmx4g
+ 10 : -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.8.6/bin/m2.conf
+ 11 : -Dmaven.home=/Users/D061177/Programs/apache-maven-3.8.6
+ 12 : -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.8.6/lib/jansi-native
+ 13 : -Dmaven.multiModuleProjectDirectory=/Users/D061177/work/issta/flink-stp-qualification/subject
+BootClassPathSupported : false
+
+	at org.pitest.util.Unchecked.translateCheckedException(Unchecked.java:20)
+	at org.pitest.util.SafeDataInputStream.readByte(SafeDataInputStream.java:78)
+	at org.pitest.util.SocketReadingCallable.receiveResults(SocketReadingCallable.java:57)
+	at org.pitest.util.SocketReadingCallable.call(SocketReadingCallable.java:34)
+	at org.pitest.util.SocketReadingCallable.call(SocketReadingCallable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 1 more
+Caused by: java.io.EOFException
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:297)
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:275)
+	at org.pitest.util.SafeDataInputStream.readByte(SafeDataInputStream.java:76)
+	... 5 more
+21:35:08 PIT >> WARNING : Minion exited abnormally due to RUN_ERROR
+21:35:22 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:35:35 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:35:47 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:36:00 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:36:12 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:36:16 PIT >> INFO : Completed in 148 seconds

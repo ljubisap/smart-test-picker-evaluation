@@ -1,0 +1,27 @@
+{
+  "status": "PIT_GROUND_TRUTH_BLOCKED",
+  "subject": "Hibernate ORM 7.4.11.Final",
+  "subjectCommit": "a95dd44cf654131e984682687cf1b2ec5d3e34cd",
+  "pitest": "1.17.4",
+  "pitestJunit5Plugin": "1.2.1",
+  "gradlePitIntegrationPlugin": "1.19.0",
+  "jdk": "SapMachine 25.0.4.1+1-LTS",
+  "nativeSingleTestControl": {
+    "testClass": "org.hibernate.orm.test.bytecode.enhancement.basic.BasicSessionTest",
+    "status": "PASS"
+  },
+  "pitSingleTestDiagnostic": {
+    "targetClass": "org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
+    "testClass": "org.hibernate.orm.test.bytecode.enhancement.basic.BasicSessionTest",
+    "status": "FAIL",
+    "stage": "PIT coverage generation minion",
+    "failure": "Coverage generation minion exited abnormally (UNKNOWN_ERROR)"
+  },
+  "pitFrozenScopeDiagnostic": {
+    "testClassesSent": 932,
+    "status": "FAIL",
+    "stage": "PIT coverage generation minion",
+    "failure": "Coverage generation minion exited abnormally (UNKNOWN_ERROR)"
+  },
+  "decision": "Stop Hibernate subject; do not change PIT version, subject release, or targetTests scope"
+}

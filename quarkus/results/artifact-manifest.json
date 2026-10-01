@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "project": "quarkus",
+  "artifacts": {
+    "quarkus/config/pit-diagnostic-single-test.json": "46179393cf73ebff683a650d878981d3f73621daea2d0dc6df5473c8f5774b84",
+    "quarkus/config/pit_profile.xml": "33588c56361cb46b8af4909991a883115cd954c957f88c4eb5c6632d748fb7e4",
+    "quarkus/config/sample_classes.json": "a6b73ba5f6e8ed69f4a54205b506ef697cc15faddbb95137a11705d4298c0b4e",
+    "quarkus/config/subject.json": "d4b0a9fd1c9535d13f995d13f753406a71e3b91ca9c4cbad9d3b2d4a2f383a1c",
+    "quarkus/results/test-coverage-map.json.gz": "75a90982597df90940ad93995fe5e33a30011bcbddc85d46452a599dbea61717"
+  }
+}

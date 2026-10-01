@@ -1,0 +1,57 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+POM relocation to an other version number is not fully supported in Gradle : xml-apis:xml-apis:2.0.2 relocated to xml-apis:xml-apis:1.0.b2.
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+22:25:15 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+22:25:15 PIT >> INFO : Created 1 mutation test units in pre scan
+22:25:16 PIT >> INFO : MINION : Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+22:25:16 PIT >> INFO : Sending 11 test classes to minion
+22:25:16 PIT >> INFO : Sent tests to minion
+22:25:16 PIT >> INFO : MINION : RuntimeException while transforming  org/springframework/security/access/hierarchicalroles/RoleHierarchyImpl
+22:25:16 PIT >> INFO : MINION : java.lang.IllegalArgumentException: Unsupported class file major version 69
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.ClassReader.<init>(ClassReader.java:200)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.ClassReader.<init>(ClassReader.java:180)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.ClassReader.<init>(ClassReader.java:166)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.classinfo.ComputeClassWriter.typeInfo(ComputeClassWriter.java:192)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.classinfo.ComputeClassWriter.getCommonSuperClass(ComputeClassWriter.java:71)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.SymbolTable.addMergedType(SymbolTable.java:1286)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.Frame.merge(Frame.java:1311)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.Frame.merge(Frame.java:1208)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.MethodWriter.computeAllFrames(MethodWriter.java:1612)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.MethodWriter.visitMaxs(MethodWriter.java:1548)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.MethodVisitor.visitMaxs(MethodVisitor.java:787)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.commons.LocalVariablesSorter.visitMaxs(LocalVariablesSorter.java:147)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.MethodVisitor.visitMaxs(MethodVisitor.java:787)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.tree.MethodNode.accept(MethodNode.java:767)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.coverage.analysis.CoverageAnalyser.visitEnd(CoverageAnalyser.java:46)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.ClassReader.readMethod(ClassReader.java:1516)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.ClassReader.accept(ClassReader.java:745)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.reloc.asm.ClassReader.accept(ClassReader.java:425)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.coverage.CoverageTransformer.transformBytes(CoverageTransformer.java:59)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.coverage.CoverageTransformer.transform(CoverageTransformer.java:32)
+22:25:16 PIT >> INFO : MINION : 	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
+22:25:16 PIT >> INFO : MINION : 	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+22:25:16 PIT >> INFO : MINION : 	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:594)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:962)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:144)
+22:25:16 PIT >> INFO : MINION : 	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:776)
+22:25:16 PIT >> INFO : MINION : 	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:691)
+22:25:16 PIT >> INFO : MINION : 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:620)
+22:25:16 PIT >> INFO : MINION : 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:578)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.lang.Class.forName0(Native Method)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.lang.Class.forName(Class.java:547)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.classinfo.ClassName.lambda$nameToClass$0(ClassName.java:127)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:288)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+22:25:16 PIT >> INFO : MINION : 	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:723)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.discoverTests(CoverageMinion.java:170)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.getTestsFromParent(CoverageMinion.java:154)
+22:25:16 PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.main(CoverageMinion.java:82)
+22:25:16 PIT >> INFO : Calculated coverage in 0 seconds.
+22:25:16 PIT >> INFO : Created 1 mutation test units
+22:25:16 PIT >> INFO : Completed in 0 seconds

@@ -1,0 +1,21 @@
+{
+  "status": "PIT_GROUND_TRUTH_BLOCKED",
+  "subject": "Quarkus Arc 3.40.1",
+  "subjectCommit": "6ce99878508d792f3c2a2a7f9520b086a1c32cab",
+  "pitest": "1.17.4",
+  "pitestJunit5Plugin": "1.2.1",
+  "splitModuleAdapter": "processor compiled output + sources supplied to Arc tests PIT execution",
+  "singleTestDiagnostic": {
+    "targetClass": "io.quarkus.arc.processor.Annotations",
+    "testClass": "io.quarkus.arc.test.interceptors.SimpleInterceptorTest",
+    "status": "PASS",
+    "mutationsGenerated": 101
+  },
+  "frozenScopeDiagnostic": {
+    "testClassesSent": 6044,
+    "status": "FAIL",
+    "stage": "PIT coverage generation minion",
+    "failure": "UNKNOWN_ERROR during Arc bean destruction lifecycle"
+  },
+  "decision": "Stop Quarkus subject; do not narrow the predeclared full Arc targetTests policy"
+}

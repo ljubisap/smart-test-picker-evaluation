@@ -108,6 +108,18 @@ class TestSampleClassesConfig(unittest.TestCase):
     def test_spring_core_config(self):
         self._check_project("spring-core", REPO_ROOT / "spring-core" / "config" / "sample_classes.json", require_tests_field=True)
 
+    def test_hibernate_config(self):
+        self._check_project("hibernate", REPO_ROOT / "hibernate" / "config" / "sample_classes.json")
+
+    def test_flink_config(self):
+        self._check_project("flink", REPO_ROOT / "flink" / "config" / "sample_classes.json")
+
+    def test_quarkus_config(self):
+        self._check_project("quarkus", REPO_ROOT / "quarkus" / "config" / "sample_classes.json")
+
+    def test_spring_security_config(self):
+        self._check_project("spring-security", REPO_ROOT / "spring-security" / "config" / "sample_classes.json")
+
 
 class TestTargetTestsValidation(unittest.TestCase):
     """Unit tests for is_valid_target_tests validation function."""

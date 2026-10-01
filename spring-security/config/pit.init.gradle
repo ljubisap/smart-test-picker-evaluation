@@ -1,0 +1,34 @@
+initscript {
+    repositories { gradlePluginPortal(); mavenCentral() }
+    dependencies { classpath 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.19.0' }
+}
+
+gradle.beforeProject { project ->
+    if (project.path == ':spring-security-core') {
+        project.pluginManager.withPlugin('java') {
+            project.pluginManager.apply(info.solidsoft.gradle.pitest.PitestPlugin)
+        }
+    }
+}
+
+gradle.afterProject { project, state ->
+    if (project.path == ':spring-security-core' && !state.failure) {
+        project.pitest {
+            pitestVersion = '1.17.4'
+            junit5PluginVersion = '1.2.1'
+            targetClasses = [project.findProperty('pitestTargetClass') as String]
+            targetTests = [project.findProperty('pitestTargetTests') as String]
+            mutators = ['DEFAULTS']
+            fullMutationMatrix = true
+            outputFormats = ['XML']
+            timestampedReports = false
+            threads = Integer.parseInt(System.getenv('STP_EVAL_CPUS') ?: '3')
+            jvmArgs = ["-XX:ActiveProcessorCount=${System.getenv('STP_EVAL_CPUS') ?: '3'}", '-Xmx4g']
+            if (System.getenv('PIT_JVM_PATH')) {
+                jvmPath = System.getenv('PIT_JVM_PATH')
+            }
+            timeoutFactor = 2.0
+            timeoutConstInMillis = 10000
+        }
+    }
+}

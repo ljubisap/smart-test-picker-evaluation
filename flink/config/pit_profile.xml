@@ -1,0 +1,19 @@
+    <profile>
+      <id>stp-evaluation-pit</id>
+      <build><plugins><plugin>
+        <groupId>org.pitest</groupId><artifactId>pitest-maven</artifactId><version>1.17.4</version>
+        <dependencies><dependency><groupId>org.pitest</groupId><artifactId>pitest-junit5-plugin</artifactId><version>1.2.1</version></dependency></dependencies>
+        <configuration>
+          <targetClasses><param>${pitest.targetClasses}</param></targetClasses>
+          <targetTests><param>${pitest.targetTests}</param></targetTests>
+          <!-- The qualified scheduler oracle is Surefire **/*Test, not Flink's
+               separate *ITCase convention.  Keep PIT inside that frozen scope. -->
+          <excludedTestClasses><param>**.*ITCase</param><param>**.*ITCaseBase</param></excludedTestClasses>
+          <fullMutationMatrix>true</fullMutationMatrix><mutators><mutator>DEFAULTS</mutator></mutators>
+          <outputFormats><outputFormat>XML</outputFormat></outputFormats>
+          <timestampedReports>false</timestampedReports><skipFailingTests>true</skipFailingTests>
+          <threads>${stp.eval.cpus}</threads><timeoutFactor>2.0</timeoutFactor><timeoutConstant>10000</timeoutConstant>
+          <jvmArgs><jvmArg>-XX:ActiveProcessorCount=${stp.eval.cpus}</jvmArg><jvmArg>-Xmx3g</jvmArg></jvmArgs>
+        </configuration>
+      </plugin></plugins></build>
+    </profile>

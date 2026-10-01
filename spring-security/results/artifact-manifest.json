@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "project": "spring-security",
+  "artifacts": {
+    "spring-security/config/pit.init.gradle": "a8d2df58272d6944da95b21623bc58d411c2710b5eaad4c94d54f5390778773a",
+    "spring-security/config/sample_classes.json": "3a1f70264020fed393cfde62ba141c13eba8a113ee5d38f35eca37503058ca69",
+    "spring-security/config/subject.json": "2d49f07e533658bad6adf8712b1eef7534d636234ba9868a510d3579cd8c137f"
+  }
+}

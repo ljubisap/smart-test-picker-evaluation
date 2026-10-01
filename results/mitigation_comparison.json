@@ -2,18 +2,18 @@
   "aggregated": {
     "classLevelBaseline": {
       "inclusivenessPct": 99.95,
-      "safe": 1836
+      "safe": 2185
     },
     "constructorOnlyRule": {
       "additionalRecovered": 5,
-      "inclusivenessPct": 99.56,
-      "safe": 1829
+      "inclusivenessPct": 99.63,
+      "safe": 2178
     },
     "original": {
-      "inclusivenessPct": 99.29,
-      "safe": 1824
+      "inclusivenessPct": 99.41,
+      "safe": 2173
     },
-    "totalMutations": 1837
+    "totalMutations": 2186
   },
   "methodology": {
     "aggregation": "micro-average over all killed mutations across projects",
@@ -116,6 +116,30 @@
       "project": "petclinic",
       "totalMutations": 94,
       "totalTests": 52
+    },
+    {
+      "classLevelBaseline": {
+        "avgSelected": 64.9,
+        "inclusivenessPct": 100.0,
+        "safe": 349,
+        "selectionRatePct": 9.76
+      },
+      "constructorOnlyRule": {
+        "additionalRecovered": 0,
+        "avgSelected": 38.4,
+        "inclusivenessPct": 100.0,
+        "safe": 349,
+        "selectionRatePct": 5.77
+      },
+      "original": {
+        "avgSelected": 36.2,
+        "inclusivenessPct": 100.0,
+        "safe": 349,
+        "selectionRatePct": 5.45
+      },
+      "project": "flink",
+      "totalMutations": 349,
+      "totalTests": 665
     }
   ],
   "schemaVersion": 1

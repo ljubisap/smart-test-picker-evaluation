@@ -8,6 +8,14 @@
       "mutationOccurrencesWithZeroMethodHits": 0,
       "mutations": 772
     },
+    "flink": {
+      "exactMatches": 349,
+      "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 349,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
+      "mutations": 349
+    },
     "jgrapht": {
       "exactMatches": 517,
       "mismatches": 0,
@@ -35,7 +43,7 @@
   },
   "description": "Dataset-wide comparison of Python evaluation_core.select_original() vs modeled Java TestSelector.selectTests() semantics for single-method changes. The Java model is faithful to the production code for the exact experimental input shape: changedClasses={C}, changedMethods={C#M}.",
   "differences": [],
-  "exactMatches": 1837,
+  "exactMatches": 2186,
   "experimentalInputShape": {
     "changedClasses": "{C}",
     "changedMethods": "{C#M}",
@@ -43,10 +51,10 @@
     "classesWithMethodInfo": "{C}"
   },
   "mismatches": 0,
-  "mutationOccurrences": 1837,
-  "mutationOccurrencesWithMethodHits": 1837,
+  "mutationOccurrences": 2186,
+  "mutationOccurrencesWithMethodHits": 2186,
   "mutationOccurrencesWithPythonOnlyFallback": 0,
   "mutationOccurrencesWithZeroMethodHits": 0,
   "schemaVersion": 1,
-  "uniqueSelectorCases": 560
+  "uniqueSelectorCases": 736
 }

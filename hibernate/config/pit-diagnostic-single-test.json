@@ -1,0 +1,11 @@
+{
+  "project": "Hibernate ORM diagnostic only",
+  "classes": [
+    {
+      "fqn": "org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.basic.BasicSessionTest",
+      "loc": 330,
+      "subpackage": "bytecode.internal"
+    }
+  ]
+}

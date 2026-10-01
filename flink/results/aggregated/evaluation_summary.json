@@ -1,0 +1,48 @@
+{
+  "project": "flink",
+  "logicalTests": 665,
+  "killedMutations": 349,
+  "selectors": {
+    "stp": {
+      "name": "STP",
+      "safe": 349,
+      "unsafe": 0,
+      "total": 349,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 36.23,
+      "selectionRatePct": 5.45,
+      "reductionPct": 94.55
+    },
+    "constructorOnlyMitigation": {
+      "name": "Constructor-only mitigation",
+      "safe": 349,
+      "unsafe": 0,
+      "total": 349,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 38.37,
+      "selectionRatePct": 5.77,
+      "reductionPct": 94.23
+    },
+    "classLevel": {
+      "name": "Class-level only",
+      "safe": 349,
+      "unsafe": 0,
+      "total": 349,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 64.93,
+      "selectionRatePct": 9.76,
+      "reductionPct": 90.24
+    },
+    "randomEqualBudget": {
+      "name": "Random equal-budget",
+      "trials": 1000,
+      "seed": 42,
+      "inclusivenessPct": 19.33,
+      "inclusivenessStdPct": 1.69,
+      "analyticalInclusivenessPct": 19.38,
+      "avgSelected": 36.23,
+      "selectionRatePct": 5.45,
+      "reductionPct": 94.55
+    }
+  }
+}

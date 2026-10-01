@@ -36,6 +36,15 @@
       ],
       "mutationFormat": "single-file",
       "expected": {"totalTests": 52, "killedMutations": 94, "safeMutations": 94, "unsafeMutations": 0}
+    },
+    {
+      "name": "flink",
+      "coverageMap": "flink/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "flink/results/per-class/*/mutations.xml"
+      ],
+      "mutationFormat": "per-class",
+      "expected": {"totalTests": 665, "killedMutations": 349, "safeMutations": 349, "unsafeMutations": 0}
     }
   ]
 }

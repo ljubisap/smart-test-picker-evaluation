@@ -1,0 +1,11 @@
+{
+  "project": "Quarkus Arc diagnostic only",
+  "classes": [
+    {
+      "fqn": "io.quarkus.arc.processor.Annotations",
+      "targetTests": "io.quarkus.arc.test.interceptors.SimpleInterceptorTest",
+      "loc": 380,
+      "subpackage": "processor"
+    }
+  ]
+}

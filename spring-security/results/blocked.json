@@ -1,0 +1,18 @@
+{
+  "status": "PIT_GROUND_TRUTH_BLOCKED",
+  "subject": "Spring Security 7.1.1",
+  "subjectCommit": "a825937b8175ee85872c49d9c7fc25eea8cff991",
+  "jdk": "SapMachine 25.0.4.1+1-LTS",
+  "classFileMajorVersion": 69,
+  "pitest": "1.17.4",
+  "pitestJunit5Plugin": "1.2.1",
+  "pilot": {
+    "targetClass": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+    "testsExamined": 11,
+    "mutationsGenerated": 22,
+    "killed": 0,
+    "noCoverage": 22,
+    "rootCause": "PIT relocated ASM throws IllegalArgumentException: Unsupported class file major version 69"
+  },
+  "decision": "Stop Spring Security subject; do not change PIT version or qualified JDK"
+}
