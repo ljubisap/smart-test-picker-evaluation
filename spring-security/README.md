@@ -9,6 +9,7 @@ The Gradle adapter is `config/pit.init.gradle`; shared result evaluation is
 performed by `analysis/evaluate_subject.py` without project-specific selector
 logic.
 
-PIT 1.17.4 cannot transform the qualified JDK 25 class files (major version
-69). See `docs/PIT_BLOCKER.md` and `results/blocked.json`; the evaluated PIT or
-subject environment was not silently changed.
+The preserved first attempt shows that PIT 1.17.4 cannot transform JDK 25 class
+files (major version 69). The official `-PtestToolchain=21` build mode preserves
+the native population and is re-frozen for the canonical mutation campaign;
+see `docs/JDK21_REFREEZE.md`. The original blocker evidence remains retained.
