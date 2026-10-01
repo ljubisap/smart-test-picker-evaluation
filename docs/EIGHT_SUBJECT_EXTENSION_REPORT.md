@@ -2,9 +2,11 @@
 
 ## Outcome
 
-Eight subjects were attempted under the frozen protocol. Five produced a
-defensible common PIT/STP data set; three were stopped rather than changing a
-frozen tool, JDK, release, or `targetTests` policy after observing results.
+Eight subjects were attempted under the frozen protocol. Six produced a
+defensible common PIT/STP data set; two were stopped rather than changing a
+frozen tool, release, or `targetTests` policy after observing results. Spring
+Security was recovered through its upstream-supported JDK 21 toolchain mode,
+which preserves the qualified native test population.
 
 | Subject | Status | KILLED | STP inclusive | Inclusiveness | Avg selected | Reduction |
 |---|---:|---:|---:|---:|---:|---:|
@@ -15,13 +17,14 @@ frozen tool, JDK, release, or `targetTests` policy after observing results.
 | Flink | complete | 349 | 349 | 100.00% | 36.23 | 94.55% |
 | Hibernate ORM | PIT oracle blocked | — | — | — | — | — |
 | Quarkus Arc | PIT oracle blocked | — | — | — | — | — |
-| Spring Security | PIT oracle blocked | — | — | — | — | — |
+| Spring Security | complete | 340 | 330 | 97.06% | 36.86 | 97.44% |
 
-Across the five completed subjects, STP includes a PIT-reported killing test
-for 2,173 of 2,186 KILLED mutants (99.41%). The unchanged constructor-only
-mitigation recovers five of the thirteen misses. Flink adds no false negative,
-so it adds no new failure type and provides no positive recovery opportunity
-for the mitigation.
+Across the six completed subjects, STP includes a PIT-reported killing test
+for 2,503 of 2,526 KILLED mutants (99.09%). The unchanged constructor-only
+mitigation recovers seven of the twenty-three misses. Flink adds no false
+negative. Spring Security adds ten misses, all instances of the existing
+Type A/B/C early-exception mechanism, including two Type A cases recovered by
+the unchanged rule. No new failure type appears.
 
 ## Flink
 
@@ -47,13 +50,6 @@ Spring Security exposes the same PIT generation's concrete incompatibility
 with JDK 25 class files. The subject was stopped without changing PIT, JDK,
 release, or test scope.
 
-### Spring Security
-
-PIT 1.17.4 discovers tests and generates mutations, but its relocated ASM
-throws `IllegalArgumentException: Unsupported class file major version 69`
-while transforming JDK 25 bytecode. All 22 diagnostic mutants consequently
-have `NO_COVERAGE`. This cannot form a killing-test oracle.
-
 ### Quarkus
 
 The split-module adapter is functional: an exact Arc test diagnostic generated
@@ -67,17 +63,19 @@ violate the frozen `targetTests` policy, so the subject was stopped.
 The requested directly comparable eight-subject result was not attainable
 under the frozen versions. Reporting blocked subjects as zero-mutation or
 zero-miss projects would bias both denominator and apparent inclusiveness.
-Therefore headline aggregation covers only the five subjects with a valid PIT
+Therefore headline aggregation covers only the six subjects with a valid PIT
 killing-test oracle. Detailed machine-readable blockers are stored in each
-subject's `results/blocked.json`.
+blocked subject's `results/blocked.json`. Spring Security's preserved JDK 25
+diagnostic is historical evidence; `spring-security/docs/JDK21_REFREEZE.md`
+records why the official JDK 21 mode is the canonical mutation environment.
 
 The result answers the independent-validation questions only partially:
 
 - Flink independently retains 100% killed-mutant inclusiveness.
 - Flink exhibits no Type A/B/C or new observability failure.
-- The constructor rule is applied unchanged, but Flink contains no miss to
-  recover; this is consistent evidence, not a recovery demonstration.
-- No genuinely new JaCoCo failure type appears in the completed new subject.
+- Spring Security independently adds two Type A, three Type B, and five Type C
+  misses; the two Type A misses are recovered by the frozen constructor rule.
+- No genuinely new JaCoCo failure type appears in the completed new subjects.
 
 PIT mutations remain fault approximations, and killing tests are an operational
 oracle only inside each predeclared `targetTests` scope.

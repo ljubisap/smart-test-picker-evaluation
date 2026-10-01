@@ -449,6 +449,309 @@
         }
       ],
       "unsafeCount": 11
+    },
+    "spring-security": {
+      "mutations": [
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull",
+              "rawPitId": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImplTests.[engine:junit-jupiter]/[class:org.springframework.security.access.hierarchicalroles.RoleHierarchyImplTests]/[method:testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull_5894d6c",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [],
+                  "targetClassPresent": false,
+                  "type": "C"
+                }
+              ]
+            }
+          ],
+          "line": 130,
+          "mutatedClass": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+          "mutatedMethod": "withRolePrefix",
+          "mutationId": "spring-security|org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl|withRolePrefix|(Ljava/lang/String;)Lorg/springframework/security/access/hierarchicalroles/RoleHierarchyImpl$Builder;|130|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml:20",
+          "mutationTypes": [
+            "C"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "DefaultAuthenticationEventPublisherTests#emptyMapCausesException",
+              "rawPitId": "org.springframework.security.authentication.DefaultAuthenticationEventPublisherTests.[engine:junit-jupiter]/[class:org.springframework.security.authentication.DefaultAuthenticationEventPublisherTests]/[method:emptyMapCausesException()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "DefaultAuthenticationEventPublisherTests#emptyMapCausesException_73be958",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#<init>",
+                    "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#addMapping"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "B"
+                }
+              ]
+            }
+          ],
+          "line": 174,
+          "mutatedClass": "org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+          "mutatedMethod": "setAdditionalExceptionMappings",
+          "mutationId": "spring-security|org.springframework.security.authentication.DefaultAuthenticationEventPublisher|setAdditionalExceptionMappings|(Ljava/util/Map;)V|174|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml:19",
+          "mutationTypes": [
+            "B"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "DefaultAuthenticationEventPublisherTests#defaultAuthenticationFailureEventClassSetNullThen",
+              "rawPitId": "org.springframework.security.authentication.DefaultAuthenticationEventPublisherTests.[engine:junit-jupiter]/[class:org.springframework.security.authentication.DefaultAuthenticationEventPublisherTests]/[method:defaultAuthenticationFailureEventClassSetNullThen()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "DefaultAuthenticationEventPublisherTests#defaultAuthenticationFailureEventClassSetNullThen_5ad692c",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#<init>",
+                    "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#addMapping"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "B"
+                }
+              ]
+            }
+          ],
+          "line": 193,
+          "mutatedClass": "org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+          "mutatedMethod": "setDefaultAuthenticationFailureEvent",
+          "mutationId": "spring-security|org.springframework.security.authentication.DefaultAuthenticationEventPublisher|setDefaultAuthenticationFailureEvent|(Ljava/lang/Class;)V|193|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml:26",
+          "mutationTypes": [
+            "B"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "DaoAuthenticationProviderTests#testStartupFailsIfNoUserCacheSet",
+              "rawPitId": "org.springframework.security.authentication.dao.DaoAuthenticationProviderTests.[engine:junit-jupiter]/[class:org.springframework.security.authentication.dao.DaoAuthenticationProviderTests]/[method:testStartupFailsIfNoUserCacheSet()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "DaoAuthenticationProviderTests#testStartupFailsIfNoUserCacheSet_495e890",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider#<init>",
+                    "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider#getUserCache",
+                    "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider#setUserCache"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "B"
+                }
+              ]
+            }
+          ],
+          "line": 127,
+          "mutatedClass": "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider",
+          "mutatedMethod": "afterPropertiesSet",
+          "mutationId": "spring-security|org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider|afterPropertiesSet|()V|127|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider/mutations.xml:0",
+          "mutationTypes": [
+            "B"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException",
+              "rawPitId": "org.springframework.security.authorization.AuthorityAuthorizationManagerTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.AuthorityAuthorizationManagerTests]/[method:hasAnyAuthorityWhenEmptyThenException()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException_4acbb6d",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [],
+                  "targetClassPresent": false,
+                  "type": "C"
+                }
+              ]
+            },
+            {
+              "pitNormalized": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenNullThenException",
+              "rawPitId": "org.springframework.security.authorization.AuthorityAuthorizationManagerTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.AuthorityAuthorizationManagerTests]/[method:hasAnyAuthorityWhenNullThenException()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenNullThenException_666eb63",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [],
+                  "targetClassPresent": false,
+                  "type": "C"
+                }
+              ]
+            }
+          ],
+          "line": 122,
+          "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+          "mutatedMethod": "hasAnyAuthority",
+          "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyAuthority|([Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|122|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:1",
+          "mutationTypes": [
+            "C"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException",
+              "rawPitId": "org.springframework.security.authorization.AuthorityAuthorizationManagerTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.AuthorityAuthorizationManagerTests]/[method:hasAnyRoleWhenCustomRolePrefixNullThenException()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException_224748b",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [],
+                  "targetClassPresent": false,
+                  "type": "C"
+                }
+              ]
+            }
+          ],
+          "line": 108,
+          "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+          "mutatedMethod": "hasAnyRole",
+          "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyRole|(Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|108|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:4",
+          "mutationTypes": [
+            "C"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException",
+              "rawPitId": "org.springframework.security.authorization.AuthorityAuthorizationManagerTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.AuthorityAuthorizationManagerTests]/[method:hasAuthorityWhenNullThenException()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException_5281bf4",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [],
+                  "targetClassPresent": false,
+                  "type": "C"
+                }
+              ]
+            }
+          ],
+          "line": 83,
+          "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+          "mutatedMethod": "hasAuthority",
+          "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAuthority|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|83|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:9",
+          "mutationTypes": [
+            "C"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException",
+              "rawPitId": "org.springframework.security.authorization.AuthorityAuthorizationManagerTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.AuthorityAuthorizationManagerTests]/[method:hasRoleWhenNullThenException()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException_85c3cde",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [],
+                  "targetClassPresent": false,
+                  "type": "C"
+                }
+              ]
+            }
+          ],
+          "line": 69,
+          "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+          "mutatedMethod": "hasRole",
+          "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasRole|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|69|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:12",
+          "mutationTypes": [
+            "C"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "AuthorizationManagerBeforeMethodInterceptorTests#configureWhenAuthorizationEventPublisherIsNullThenIllegalArgument",
+              "rawPitId": "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptorTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptorTests]/[method:configureWhenAuthorizationEventPublisherIsNullThenIllegalArgument()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "AuthorizationManagerBeforeMethodInterceptorTests#configureWhenAuthorizationEventPublisherIsNullThenIllegalArgument_2166c4c",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor#<init>"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "A"
+                }
+              ]
+            }
+          ],
+          "line": 216,
+          "mutatedClass": "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor",
+          "mutatedMethod": "setAuthorizationEventPublisher",
+          "mutationId": "spring-security|org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor|setAuthorizationEventPublisher|(Lorg/springframework/security/authorization/AuthorizationEventPublisher;)V|216|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor/mutations.xml:42",
+          "mutationTypes": [
+            "A"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": true
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "MapBasedAttributes2GrantedAuthoritiesMapperTests#testAfterPropertiesSetEmptyMap",
+              "rawPitId": "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapperTests.[engine:junit-jupiter]/[class:org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapperTests]/[method:testAfterPropertiesSetEmptyMap()]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "MapBasedAttributes2GrantedAuthoritiesMapperTests#testAfterPropertiesSetEmptyMap_491a488",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper#<init>"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "A"
+                }
+              ]
+            }
+          ],
+          "line": 85,
+          "mutatedClass": "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper",
+          "mutatedMethod": "setAttributes2grantedAuthoritiesMap",
+          "mutationId": "spring-security|org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper|setAttributes2grantedAuthoritiesMap|(Ljava/util/Map;)V|85|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml:23",
+          "mutationTypes": [
+            "A"
+          ],
+          "mutator": "VoidMethodCallMutator",
+          "recoveredByConstructorRule": true
+        }
+      ],
+      "unsafeCount": 10
     }
   },
   "inputs": {
@@ -477,6 +780,11 @@
         "commit": "25838a334c037b68e614f6b571af03a1f6bfec19",
         "sha256": "936becf03857bfa0d22958ca88053f4c8bfabc85651f822f4ef51837bb2813b5",
         "tests": 3624
+      },
+      "spring-security": {
+        "commit": "a825937b8175ee85872c49d9c7fc25eea8cff991",
+        "sha256": "f63447db288566e5b3d86a9ffd1051843328cd3bb5d14c9c93aa1e14e7de86ac",
+        "tests": 1440
       }
     },
     "pitResults": {
@@ -590,6 +898,31 @@
           "spring-core/results/per-class/org.springframework.util.xml.AbstractStaxXMLReader/mutations.xml"
         ],
         "killedMutations": 454
+      },
+      "spring-security": {
+        "aggregateSha256": "f25d87324de616fb75ccc6473579914e776603e2da3fa84ce2405d3b1a84c1f2",
+        "fileCount": 18,
+        "files": [
+          "spring-security/results/per-class/org.springframework.security.access.expression.SecurityExpressionRoot/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.authentication.ProviderManager/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.concurrent.DelegatingSecurityContextRunnable/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.converter.RsaKeyConverters/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.core.context.SecurityContextHolder/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.core.session.SessionRegistryImpl/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.core.token.KeyBasedPersistenceTokenService/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.core.userdetails.User/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.jackson2.SecurityJackson2Modules/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.provisioning.InMemoryUserDetailsManager/mutations.xml",
+          "spring-security/results/per-class/org.springframework.security.util.matcher.InetAddressMatchers/mutations.xml"
+        ],
+        "killedMutations": 340
       }
     }
   },
@@ -598,31 +931,31 @@
     "mutatedMethodPresentAmongUnsafeEntries": 0
   },
   "resolutionSummary": {
-    "idOccurrencesWithMultipleCoverageEntries": 57,
-    "idOccurrencesWithSingleCoverageEntry": 174296,
+    "idOccurrencesWithMultipleCoverageEntries": 307,
+    "idOccurrencesWithSingleCoverageEntry": 176737,
     "maxEntriesPerIdOccurrence": 3,
-    "pitKillingIdOccurrences": 174353,
-    "resolvedCoverageEntryOccurrences": 174434,
-    "uniqueNormalizedPitKillingIds": 2664,
-    "uniqueRawPitKillingIds": 5070
+    "pitKillingIdOccurrences": 177044,
+    "resolvedCoverageEntryOccurrences": 177375,
+    "uniqueNormalizedPitKillingIds": 3109,
+    "uniqueRawPitKillingIds": 5566
   },
   "schemaVersion": 1,
-  "totalUnsafeMutations": 13,
+  "totalUnsafeMutations": 23,
   "typeSummary": {
     "byResolvedEntry": {
-      "A": 8,
-      "B": 7,
-      "C": 1
+      "A": 10,
+      "B": 10,
+      "C": 7
     },
     "exclusiveMutationTypes": {
-      "A_only": 5,
-      "B_only": 7,
-      "C_only": 1
+      "A_only": 7,
+      "B_only": 10,
+      "C_only": 6
     },
     "mutationCountsContainingType": {
-      "A": 5,
-      "B": 7,
-      "C": 1
+      "A": 7,
+      "B": 10,
+      "C": 6
     }
   }
 }

@@ -1,0 +1,17 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+23:24:32 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+23:24:33 PIT >> INFO : Created 1 mutation test units in pre scan
+23:24:33 PIT >> INFO : MINION : Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+23:24:33 PIT >> INFO : Sending 17 test classes to minion
+23:24:33 PIT >> INFO : Sent tests to minion
+23:24:33 PIT >> INFO : MINION : Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+23:24:33 PIT >> INFO : MINION : WARNING: A Java agent has been loaded dynamically (/Users/D061177/work/issta/spring-security-stp-qualification/gradle-home/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.18.2/62f38a6faf7f069d661b79a07d566f504b0b20c4/byte-buddy-agent-1.18.2.jar)
+23:24:33 PIT >> INFO : MINION : WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+23:24:33 PIT >> INFO : MINION : WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+23:24:33 PIT >> INFO : MINION : WARNING: Dynamic loading of agents will be disallowed by default in a future release
+23:24:33 PIT >> INFO : MINION : OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+23:24:34 PIT >> INFO : MINION : OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+23:24:35 PIT >> INFO : Calculated coverage in 1 seconds.
+23:24:35 PIT >> INFO : Created 1 mutation test units
+23:24:38 PIT >> INFO : Completed in 5 seconds

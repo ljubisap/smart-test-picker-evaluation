@@ -63,5 +63,55 @@
     "mutationId": "spring-core|org.springframework.util.backoff.ExponentialBackOff|setMultiplier|(D)V|141|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml:10",
     "cause": "checkMultiplier() guard throws before setMultiplier probe fires",
     "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-security|org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl|withRolePrefix|(Ljava/lang/String;)Lorg/springframework/security/access/hierarchicalroles/RoleHierarchyImpl$Builder;|130|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml:20",
+    "cause": "Assert.notNull(rolePrefix) throws before the withRolePrefix probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-security|org.springframework.security.authentication.DefaultAuthenticationEventPublisher|setAdditionalExceptionMappings|(Ljava/util/Map;)V|174|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml:19",
+    "cause": "Assert.notEmpty(mappings) throws before the setter probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-security|org.springframework.security.authentication.DefaultAuthenticationEventPublisher|setDefaultAuthenticationFailureEvent|(Ljava/lang/Class;)V|193|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml:26",
+    "cause": "Assert.notNull(event class) throws before the setter probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-security|org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider|afterPropertiesSet|()V|127|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider/mutations.xml:0",
+    "cause": "Assert.notNull(userCache) throws before the afterPropertiesSet probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyAuthority|([Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|122|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:1",
+    "cause": "Assert.notEmpty(authorities) throws before any target-class probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyRole|(Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|108|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:4",
+    "cause": "Assert.notNull(rolePrefix) throws before any target-class probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAuthority|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|83|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:9",
+    "cause": "Assert.notNull(authority) throws before any target-class probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasRole|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|69|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:12",
+    "cause": "Assert.notNull(role) throws before any target-class probe fires",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-security|org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor|setAuthorizationEventPublisher|(Lorg/springframework/security/authorization/AuthorizationEventPublisher;)V|216|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor/mutations.xml:42",
+    "cause": "Assert.notNull(eventPublisher) throws before the setter probe fires; constructor-only footprint remains",
+    "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "spring-security|org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper|setAttributes2grantedAuthoritiesMap|(Ljava/util/Map;)V|85|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml:23",
+    "cause": "Assert.notEmpty(map) throws before the setter probe fires; constructor-only footprint remains",
+    "category": "early-exception-before-probe"
   }
 ]

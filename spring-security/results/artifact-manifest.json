@@ -4,6 +4,28 @@
   "artifacts": {
     "spring-security/config/pit.init.gradle": "a8d2df58272d6944da95b21623bc58d411c2710b5eaad4c94d54f5390778773a",
     "spring-security/config/sample_classes.json": "3a1f70264020fed393cfde62ba141c13eba8a113ee5d38f35eca37503058ca69",
-    "spring-security/config/subject.json": "2d49f07e533658bad6adf8712b1eef7534d636234ba9868a510d3579cd8c137f"
+    "spring-security/config/subject.json": "921841c8a500ea4e65ea5e4cb460d8537a43f81a8afd0205f8a3574f600972e9",
+    "spring-security/results/aggregated/evaluation_results.csv": "5415cd615a6a6a1bc316ebfe34250802c1427c826621829b5d27609d06de17ce",
+    "spring-security/results/aggregated/evaluation_summary.json": "9f80297341f3b378f570e0100da7d48eb92df7d390dd93ba8003e78bd1500151",
+    "spring-security/results/aggregated/mutation_results.json": "388b793aaee2ca329c3c11425525be60f417dff2c2865d57594c62adca85cf47",
+    "spring-security/results/per-class/org.springframework.security.access.expression.SecurityExpressionRoot/mutations.xml": "e242716ac1f2b273be6087a036f5eac5909b43a2bfcd681dd51ab9261f6d19c8",
+    "spring-security/results/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml": "6a08dac2b5a2869e3644a2a957b0f0c6e17671515e642566e57742d8f4f4e123",
+    "spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml": "b249a3b8ca03391a6472bec07d9b0416fe4c51dc1facff3511f04a43dd0164df",
+    "spring-security/results/per-class/org.springframework.security.authentication.ProviderManager/mutations.xml": "c38ced06651f25fb5953d6022642c37ca84f803e4c4ebaf3f990671e693a6bb8",
+    "spring-security/results/per-class/org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider/mutations.xml": "331205ade1496497a42d5bee1ddc5eba52a23299073d21da8de27278b32a2952",
+    "spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml": "9ddd5d02e55c3d8ed90cd16b862bebb2e412136da24d38f81bbf2a0b835242b2",
+    "spring-security/results/per-class/org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor/mutations.xml": "bb3f6ca96ed3dac652549eefc51728c214b1c0c0a1071f4258af35a66ffaff77",
+    "spring-security/results/per-class/org.springframework.security.concurrent.DelegatingSecurityContextRunnable/mutations.xml": "d6cd0a8c3c2040669525415f7d783183591ef966a38c5858ad7cf285148e9112",
+    "spring-security/results/per-class/org.springframework.security.converter.RsaKeyConverters/mutations.xml": "11ac631c71854bb04d71d8056ebf2591f04533b44f3335744aa62580f0003113",
+    "spring-security/results/per-class/org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner/mutations.xml": "2ec07ec69d13ea7c18a8a22c39fa8ae258fd9203213d049400db1e83568e3aa0",
+    "spring-security/results/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml": "76f0d1ee39246dde685dc7066587ee2bb71986c4078994e44b43fec0c59d6e10",
+    "spring-security/results/per-class/org.springframework.security.core.context.SecurityContextHolder/mutations.xml": "3c70a2f44b321cd7848d9c4550c5915f8797c174706dde5e92ba1f63d2d3d437",
+    "spring-security/results/per-class/org.springframework.security.core.session.SessionRegistryImpl/mutations.xml": "a9d406941194e47f0ad559491ad89f1ab41296ca9aad9a6342b00490653b743f",
+    "spring-security/results/per-class/org.springframework.security.core.token.KeyBasedPersistenceTokenService/mutations.xml": "525185e9c89692975165f62d5f40e294556b149a378caaaf73a2fe6b7d38ea93",
+    "spring-security/results/per-class/org.springframework.security.core.userdetails.User/mutations.xml": "54b59e55bb9e294c739057384a6dbc38c6c91e0651a72a87183ae182bddf4754",
+    "spring-security/results/per-class/org.springframework.security.jackson2.SecurityJackson2Modules/mutations.xml": "5ad8f8378a29105b5849b79fd9ec59caca01418d6529780110ce5cc7e8b7a046",
+    "spring-security/results/per-class/org.springframework.security.provisioning.InMemoryUserDetailsManager/mutations.xml": "fdce8b8437ccf0c514b841485e82ce54cfc4923d560d7ed5fd56009ae65559b7",
+    "spring-security/results/per-class/org.springframework.security.util.matcher.InetAddressMatchers/mutations.xml": "48b54f9e898ec15ebc40761ffa2898710dc42f8de7b43637d1abe626ec787b8a",
+    "spring-security/results/test-coverage-map.json.gz": "f63447db288566e5b3d86a9ffd1051843328cd3bb5d14c9c93aa1e14e7de86ac"
   }
 }

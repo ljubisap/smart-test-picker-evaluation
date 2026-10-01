@@ -18,7 +18,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | Apache Flink (scheduler scope) | 665 | 349 | 100.00% | 94.55% | 36.23 | Done | [flink/](flink/) |
 | Hibernate ORM | — | — | — | — | — | PIT oracle blocked | [hibernate/](hibernate/) |
 | Quarkus Arc | — | — | — | — | — | PIT oracle blocked | [quarkus/](quarkus/) |
-| Spring Security | — | — | — | — | — | PIT/JDK blocked | [spring-security/](spring-security/) |
+| Spring Security | 1440 | 340 | 97.06% | 97.44% | 36.86 | Done (JDK 21) | [spring-security/](spring-security/) |
 
 ## Sampling Strategies
 
@@ -31,7 +31,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | Flink | curated_stratified | 16 scheduler classes frozen before PIT/STP outcomes |
 | Hibernate | curated_stratified | Frozen before execution; PIT oracle blocked |
 | Quarkus | curated_stratified | Frozen before execution; full Arc PIT scope blocked |
-| Spring Security | curated_stratified | Frozen before execution; PIT 1.17.4 cannot transform JDK 25 bytecode |
+| Spring Security | curated_stratified | 18 classes frozen before outcomes; official JDK 21 toolchain mode |
 
 ## Repository Structure
 
@@ -63,7 +63,7 @@ smart-test-picker-evaluation/
 |-- flink/                  # Independent validation: scheduler scope (665 tests)
 |-- hibernate/              # Frozen attempt and PIT-oracle blocker evidence
 |-- quarkus/                # Frozen attempt and PIT-oracle blocker evidence
-|-- spring-security/        # Frozen attempt and PIT/JDK blocker evidence
+|-- spring-security/        # Independent validation: spring-security-core (1440 tests)
 |-- analysis/               # Shared evaluation core, taxonomy and verification
 |   |-- evaluation_core.py  # Shared selectors, loading, resolution
 |   |-- analyze_failure_modes.py  # Taxonomy and mitigation (--write, --verify)
@@ -137,7 +137,7 @@ python3 analysis/freeze_artifacts.py --verify
 
 The attempted eight-subject summary is
 [`results/eight-subject-summary.json`](results/eight-subject-summary.json).
-Three new subjects are explicitly PIT-oracle blocked and are excluded from
+Two new subjects are explicitly PIT-oracle blocked and are excluded from
 mutation denominators; see
 [`docs/EIGHT_SUBJECT_EXTENSION_REPORT.md`](docs/EIGHT_SUBJECT_EXTENSION_REPORT.md).
 

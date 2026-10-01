@@ -39,11 +39,19 @@
       "mutationOccurrencesWithPythonOnlyFallback": 0,
       "mutationOccurrencesWithZeroMethodHits": 0,
       "mutations": 454
+    },
+    "spring-security": {
+      "exactMatches": 340,
+      "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 339,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 1,
+      "mutations": 340
     }
   },
   "description": "Dataset-wide comparison of Python evaluation_core.select_original() vs modeled Java TestSelector.selectTests() semantics for single-method changes. The Java model is faithful to the production code for the exact experimental input shape: changedClasses={C}, changedMethods={C#M}.",
   "differences": [],
-  "exactMatches": 2186,
+  "exactMatches": 2526,
   "experimentalInputShape": {
     "changedClasses": "{C}",
     "changedMethods": "{C#M}",
@@ -51,10 +59,10 @@
     "classesWithMethodInfo": "{C}"
   },
   "mismatches": 0,
-  "mutationOccurrences": 2186,
-  "mutationOccurrencesWithMethodHits": 2186,
+  "mutationOccurrences": 2526,
+  "mutationOccurrencesWithMethodHits": 2525,
   "mutationOccurrencesWithPythonOnlyFallback": 0,
-  "mutationOccurrencesWithZeroMethodHits": 0,
+  "mutationOccurrencesWithZeroMethodHits": 1,
   "schemaVersion": 1,
-  "uniqueSelectorCases": 736
+  "uniqueSelectorCases": 873
 }

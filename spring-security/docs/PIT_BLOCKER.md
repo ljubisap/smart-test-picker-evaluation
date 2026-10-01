@@ -1,6 +1,6 @@
-# Spring Security PIT ground-truth blocker
+# Historical Spring Security JDK 25 PIT blocker
 
-The frozen PIT 1.17.4 engine cannot instrument Spring Security's JDK 25 class
+The first PIT 1.17.4 attempt could not instrument Spring Security's JDK 25 class
 files. Its coverage transformer throws:
 
 ```text
@@ -13,6 +13,8 @@ KILLED-mutant denominator. This also supplies the concrete missing detail for
 Hibernate's JDK 25 PIT minion exit.
 
 The Gradle integration adapter is 1.19.0 for Gradle 9 compatibility, while the
-PIT engine and JUnit5 plugin remain exactly 1.17.4 and 1.2.1. The subject is
-stopped rather than changing PIT, lowering the qualified JDK, or substituting
-a different Spring Security release.
+PIT engine and JUnit5 plugin remain exactly 1.17.4 and 1.2.1. This diagnosis is
+preserved, but it is no longer the canonical campaign status. The upstream-
+supported `-PtestToolchain=21` configuration preserves the qualified test
+population and supports the completed mutation experiment documented in
+`JDK21_REFREEZE.md`.

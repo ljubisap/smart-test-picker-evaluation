@@ -57,10 +57,10 @@ class TestSelectors(unittest.TestCase):
         selected = select_original(self.test_mappings, "com.example.Foo", "bar")
         self.assertIn("FooTest#testBar_abc1234", selected)
 
-    def test_class_present_empty_footprint_selected_by_original(self):
-        """Class present + no method info for class -> Original selects (fallback)."""
+    def test_class_present_empty_footprint_not_selected_when_method_hit_exists(self):
+        """An exact hit suppresses global class escalation."""
         selected = select_original(self.test_mappings, "com.example.Foo", "bar")
-        self.assertIn("ClassOnlyTest#test_jkl3456", selected)
+        self.assertNotIn("ClassOnlyTest#test_jkl3456", selected)
 
     def test_constructor_only_footprint_skipped_by_original(self):
         """Test with only <init> is NOT selected by Original for method change."""
@@ -106,10 +106,11 @@ class TestSelectors(unittest.TestCase):
         selected = select_constructor_only_rule(self.test_mappings, "com.example.Foo", "bar")
         self.assertNotIn("MixedTest#test_stu5678", selected)
 
-    def test_classPresentNoMethods_invariant(self):
-        """Test with class present but no methods IS selected by Original (fallback)."""
-        selected = select_original(self.test_mappings, "com.example.Foo", "bar")
+    def test_zero_hit_escalates_to_all_class_footprints(self):
+        """No exact method hit selects every test covering the changed class."""
+        selected = select_original(self.test_mappings, "com.example.Foo", "missing")
         self.assertIn("ClassOnlyTest#test_jkl3456", selected)
+        self.assertIn("MixedTest#test_stu5678", selected)
 
 
 class TestNormalization(unittest.TestCase):

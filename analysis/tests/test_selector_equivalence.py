@@ -1,16 +1,8 @@
 """
 test_selector_equivalence.py -- Unit tests for verify_selector_equivalence.py
 
-Tests the dataset-wide verifier AND proves it detects the two known general
-semantic divergences between Python select_original and Java TestSelector:
-
-1. Python-only per-test fallback: when method hits exist but a test has class
-   presence without any method entries for that class, Python selects it but
-   Java does not.
-
-2. Java zero-hit escalation: when NO test covers C#M at method level, Java
-   escalates to class-level for all tests covering C, while Python only selects
-   tests with no C#* methods.
+Tests the dataset-wide verifier and the shared evaluator's exact reproduction
+of the frozen Java TestSelector method-hit and zero-hit escalation semantics.
 """
 
 import sys
@@ -47,8 +39,7 @@ class TestJavaSemanticModel(unittest.TestCase):
         self.assertEqual(java, python)
 
     def test_class_level_fallback_no_methods(self):
-        """When a test has class presence but no method entries, Python's per-test
-        fallback selects it; Java does not (because method hits exist elsewhere)."""
+        """A method hit suppresses class escalation for all other tests."""
         tm = {
             "TestA_abc1234": {
                 "classes": ["com.example.Foo"],
@@ -66,18 +57,11 @@ class TestJavaSemanticModel(unittest.TestCase):
         # TestB is NOT selected (class-level fallback doesn't apply in Java here).
         self.assertEqual(java, {"TestA_abc1234"})
 
-        # Python: TestA via method match. TestB via per-test fallback (Foo in classes,
-        # no Foo# methods for this test).
-        self.assertEqual(python, {"TestA_abc1234", "TestB_def5678"})
-
-        # DIVERGENCE: Python is a superset
-        self.assertNotEqual(java, python)
-        self.assertTrue(python.issuperset(java))
-        self.assertEqual(python - java, {"TestB_def5678"})
+        self.assertEqual(python, {"TestA_abc1234"})
+        self.assertEqual(java, python)
 
     def test_java_escalation_zero_hits(self):
-        """When NO test covers C#M, Java escalates to all tests covering C.
-        Python only selects tests where C is present but has no C# methods."""
+        """When no test covers C#M, both models escalate to class coverage."""
         tm = {
             "TestA_abc1234": {
                 "classes": ["com.example.Foo"],
@@ -99,15 +83,8 @@ class TestJavaSemanticModel(unittest.TestCase):
         # ALL tests covering Foo are selected: TestA and TestB.
         self.assertEqual(java, {"TestA_abc1234", "TestB_def5678"})
 
-        # Python: Foo#missingMethod not in any test's methods.
-        # TestA: Foo in classes, but has Foo#otherMethod -> NOT selected (has method info).
-        # TestB: Foo in classes, no Foo# methods -> selected via per-test fallback.
-        self.assertEqual(python, {"TestB_def5678"})
-
-        # DIVERGENCE: Java is a superset
-        self.assertNotEqual(java, python)
-        self.assertTrue(java.issuperset(python))
-        self.assertEqual(java - python, {"TestA_abc1234"})
+        self.assertEqual(python, {"TestA_abc1234", "TestB_def5678"})
+        self.assertEqual(java, python)
 
     def test_no_coverage_at_all(self):
         """When no test covers the class at all, both return empty."""
@@ -171,10 +148,10 @@ class TestDatasetVerification(unittest.TestCase):
         self.assertIn("byProject", report)
         self.assertIn("differences", report)
 
-        # For our dataset: all matches, no mismatches
+        # Canonical artifacts must contain only production-equivalent cases.
         self.assertEqual(report["mismatches"], 0)
         self.assertEqual(report["exactMatches"], report["mutationOccurrences"])
-        self.assertEqual(report["mutationOccurrencesWithZeroMethodHits"], 0)
+        self.assertGreaterEqual(report["mutationOccurrencesWithZeroMethodHits"], 0)
         self.assertEqual(report["mutationOccurrencesWithPythonOnlyFallback"], 0)
 
 

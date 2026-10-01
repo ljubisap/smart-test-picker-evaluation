@@ -1,25 +1,7 @@
-Fetching distribution.
-Downloading https://services.gradle.org/distributions/gradle-9.7.0-bin.zip
-..............10%..............20%...............30%..............40%..............50%...............60%..............70%..............80%...............90%..............100%
-
-Welcome to Gradle 9.7.0!
-
-Here are the highlights of this release:
- - Isolated Projects graduates to incubating
- - Broader Configuration Cache compatibility
- - More source locations in problem reports
-
-For more details see https://docs.gradle.org/9.7.0/release-notes.html
-
 To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.7.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
 Daemon will be stopped at the end of the build
 > Task :buildSrc:extractPluginRequests UP-TO-DATE
 > Task :buildSrc:generatePluginAdapters UP-TO-DATE
-
-> Task :buildSrc:compileJava
-Please update your dependency to directly use the correct version 'xml-apis:xml-apis:1.0.b2'.
-Resolution will only pick dependencies of the relocated element.  Artifacts and other metadata will be ignored.
-
 > Task :buildSrc:compileJava UP-TO-DATE
 > Task :buildSrc:compileGroovy UP-TO-DATE
 > Task :buildSrc:compileGroovyPlugins UP-TO-DATE
@@ -48,46 +30,46 @@ Resolution will only pick dependencies of the relocated element.  Artifacts and 
 - Mutators
 ================================================================================
 > org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
->> Generated 1 Killed 0 (0%)
-> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+>> Generated 1 Killed 1 (100%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
 > MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
-> NO_COVERAGE 1
+> NO_COVERAGE 0
 --------------------------------------------------------------------------------
 > org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
->> Generated 1 Killed 0 (0%)
-> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+>> Generated 1 Killed 1 (100%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
 > MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
-> NO_COVERAGE 1
+> NO_COVERAGE 0
 --------------------------------------------------------------------------------
 > org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
->> Generated 1 Killed 0 (0%)
-> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+>> Generated 1 Killed 1 (100%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
 > MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
-> NO_COVERAGE 1
+> NO_COVERAGE 0
 --------------------------------------------------------------------------------
 > org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
->> Generated 11 Killed 0 (0%)
-> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+>> Generated 11 Killed 9 (82%)
+> KILLED 9 SURVIVED 2 TIMED_OUT 0 NON_VIABLE 0
 > MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
-> NO_COVERAGE 11
+> NO_COVERAGE 0
 --------------------------------------------------------------------------------
 > org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
->> Generated 3 Killed 0 (0%)
-> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+>> Generated 3 Killed 3 (100%)
+> KILLED 3 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
 > MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
-> NO_COVERAGE 3
+> NO_COVERAGE 0
 --------------------------------------------------------------------------------
 > org.pitest.mutationtest.engine.gregor.mutators.MathMutator
->> Generated 1 Killed 0 (0%)
-> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+>> Generated 1 Killed 1 (100%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
 > MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
-> NO_COVERAGE 1
+> NO_COVERAGE 0
 --------------------------------------------------------------------------------
 > org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
->> Generated 4 Killed 0 (0%)
-> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+>> Generated 4 Killed 3 (75%)
+> KILLED 3 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0
 > MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
-> NO_COVERAGE 4
+> NO_COVERAGE 0
 --------------------------------------------------------------------------------
 ================================================================================
 - Timings
@@ -96,18 +78,18 @@ Resolution will only pick dependencies of the relocated element.  Artifacts and 
 > scan classpath : < 1 second
 > coverage and dependency analysis : < 1 second
 > build mutation tests : < 1 second
-> run mutation analysis : < 1 second
+> run mutation analysis : 1 seconds
 --------------------------------------------------------------------------------
-> Total  : < 1 second
+> Total  : 2 seconds
 --------------------------------------------------------------------------------
 ================================================================================
 - Statistics
 ================================================================================
->> Line Coverage (for mutated classes only): 0/59 (0%)
+>> Line Coverage (for mutated classes only): 57/59 (97%)
 >> 11 tests examined
->> Generated 22 mutations Killed 0 (0%)
->> Mutations with no coverage 22. Test strength 100%
->> Ran 0 tests (0 tests per mutation)
+>> Generated 22 mutations Killed 19 (86%)
+>> Mutations with no coverage 0. Test strength 86%
+>> Ran 286 tests (13 tests per mutation)
 Enhanced functionality available at https://www.arcmutate.com/
 
 Build messages:-
@@ -121,6 +103,6 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/9.7.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 3m 12s
+BUILD SUCCESSFUL in 21s
 18 actionable tasks: 1 executed, 17 up-to-date
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.7.0/userguide/configuration_cache_enabling.html

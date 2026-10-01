@@ -45,6 +45,15 @@
       ],
       "mutationFormat": "per-class",
       "expected": {"totalTests": 665, "killedMutations": 349, "safeMutations": 349, "unsafeMutations": 0}
+    },
+    {
+      "name": "spring-security",
+      "coverageMap": "spring-security/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "spring-security/results/per-class/*/mutations.xml"
+      ],
+      "mutationFormat": "per-class",
+      "expected": {"totalTests": 1440, "killedMutations": 340, "safeMutations": 330, "unsafeMutations": 10}
     }
   ]
 }

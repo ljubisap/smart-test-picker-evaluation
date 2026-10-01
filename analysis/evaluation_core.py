@@ -325,29 +325,23 @@ def resolve_killing_tests(
 
 def select_original(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:
     """
-    Python evaluation selector implementing the documented selection rules.
+    Frozen production TestSelector semantics for one changed method.
 
-    Select test T for change in method M of class C if:
-    - C#M is in T.methods, OR
-    - C is in T.classes AND T has no C#... methods (per-test class-level fallback)
+    Select exact C#M method hits. If there are no method hits anywhere for C#M,
+    escalate the changed class and select every test whose class footprint
+    contains C. This is the production selector's class-level fallback.
     """
-    selected = set()
     method_fqn = f"{changed_class}#{changed_method}"
-
-    for test_name, coverage in test_mappings.items():
-        methods = coverage.get("methods", [])
-        classes = coverage.get("classes", [])
-
-        if method_fqn in methods:
-            selected.add(test_name)
-            continue
-
-        if changed_class in classes:
-            has_method_info = any(m.startswith(changed_class + "#") for m in methods)
-            if not has_method_info:
-                selected.add(test_name)
-
-    return selected
+    method_hits = {
+        test_name for test_name, coverage in test_mappings.items()
+        if method_fqn in coverage.get("methods", [])
+    }
+    if method_hits:
+        return method_hits
+    return {
+        test_name for test_name, coverage in test_mappings.items()
+        if changed_class in coverage.get("classes", [])
+    }
 
 
 def select_constructor_only_rule(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:

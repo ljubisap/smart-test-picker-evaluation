@@ -4,7 +4,8 @@ Date: 2026-10-01
 
 The original mutation attempt used the qualification environment's default
 JDK 25 toolchain. PIT 1.17.4 cannot transform class-file major version 69, so
-that attempt remains preserved in `PIT_BLOCKER.md` and `results/blocked.json`.
+that attempt remains preserved in `PIT_BLOCKER.md` and
+`results/jdk25-blocked.json`.
 
 Spring Security's build exposes the official `-PtestToolchain` property. A
 native control with `-PtestToolchain=21` passed the unchanged

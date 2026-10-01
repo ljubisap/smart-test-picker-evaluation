@@ -4,14 +4,150 @@
     {
       "fqn": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
       "targetTests": "org.springframework.security.access.hierarchicalroles.*",
-      "status": "FAILED",
-      "reason": "expected one mutations.xml, found 0",
-      "mutations": 0,
-      "elapsedSeconds": 192.84
+      "status": "OK",
+      "reason": null,
+      "mutations": 22,
+      "elapsedSeconds": 21.36
+    },
+    {
+      "fqn": "org.springframework.security.access.expression.SecurityExpressionRoot",
+      "targetTests": "org.springframework.security.access.expression.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 51,
+      "elapsedSeconds": 18.28
+    },
+    {
+      "fqn": "org.springframework.security.authentication.ProviderManager",
+      "targetTests": "org.springframework.security.authentication.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 37,
+      "elapsedSeconds": 20.55
+    },
+    {
+      "fqn": "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider",
+      "targetTests": "org.springframework.security.authentication.dao.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 35,
+      "elapsedSeconds": 26.49
+    },
+    {
+      "fqn": "org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+      "targetTests": "org.springframework.security.authentication.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 27,
+      "elapsedSeconds": 19.71
+    },
+    {
+      "fqn": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "targetTests": "org.springframework.security.authorization.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 25,
+      "elapsedSeconds": 20.07
+    },
+    {
+      "fqn": "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor",
+      "targetTests": "org.springframework.security.authorization.method.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 43,
+      "elapsedSeconds": 16.16
+    },
+    {
+      "fqn": "org.springframework.security.concurrent.DelegatingSecurityContextRunnable",
+      "targetTests": "org.springframework.security.concurrent.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 18,
+      "elapsedSeconds": 27.18
+    },
+    {
+      "fqn": "org.springframework.security.core.context.SecurityContextHolder",
+      "targetTests": "org.springframework.security.core.context.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 12,
+      "elapsedSeconds": 26.17
+    },
+    {
+      "fqn": "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper",
+      "targetTests": "org.springframework.security.core.authority.mapping.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 25,
+      "elapsedSeconds": 14.39
+    },
+    {
+      "fqn": "org.springframework.security.core.session.SessionRegistryImpl",
+      "targetTests": "org.springframework.security.core.session.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 27,
+      "elapsedSeconds": 30.58
+    },
+    {
+      "fqn": "org.springframework.security.core.userdetails.User",
+      "targetTests": "org.springframework.security.core.userdetails.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 32,
+      "elapsedSeconds": 17.33
+    },
+    {
+      "fqn": "org.springframework.security.core.token.KeyBasedPersistenceTokenService",
+      "targetTests": "org.springframework.security.core.token.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 27,
+      "elapsedSeconds": 14.56
+    },
+    {
+      "fqn": "org.springframework.security.provisioning.InMemoryUserDetailsManager",
+      "targetTests": "org.springframework.security.provisioning.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 28,
+      "elapsedSeconds": 19.07
+    },
+    {
+      "fqn": "org.springframework.security.converter.RsaKeyConverters",
+      "targetTests": "org.springframework.security.converter.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 19,
+      "elapsedSeconds": 14.24
+    },
+    {
+      "fqn": "org.springframework.security.jackson2.SecurityJackson2Modules",
+      "targetTests": "org.springframework.security.jackson2.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 20,
+      "elapsedSeconds": 16.5
+    },
+    {
+      "fqn": "org.springframework.security.util.matcher.InetAddressMatchers",
+      "targetTests": "org.springframework.security.util.matcher.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 4,
+      "elapsedSeconds": 14.51
+    },
+    {
+      "fqn": "org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner",
+      "targetTests": "org.springframework.security.core.annotation.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 68,
+      "elapsedSeconds": 17.52
     }
   ],
-  "ok": 0,
-  "failed": 1,
+  "ok": 18,
+  "failed": 0,
   "timeout": 0,
-  "totalMutations": 0
+  "totalMutations": 520
 }

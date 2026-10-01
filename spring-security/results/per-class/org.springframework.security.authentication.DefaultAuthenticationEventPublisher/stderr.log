@@ -1,0 +1,150 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+23:25:38 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+23:25:38 PIT >> INFO : Created 1 mutation test units in pre scan
+23:25:38 PIT >> INFO : MINION : Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+23:25:38 PIT >> INFO : Sending 144 test classes to minion
+23:25:38 PIT >> INFO : Sent tests to minion
+23:25:39 PIT >> INFO : MINION : Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+23:25:39 PIT >> INFO : MINION : WARNING: A Java agent has been loaded dynamically (/Users/D061177/work/issta/spring-security-stp-qualification/gradle-home/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.18.2/62f38a6faf7f069d661b79a07d566f504b0b20c4/byte-buddy-agent-1.18.2.jar)
+23:25:39 PIT >> INFO : MINION : WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+23:25:39 PIT >> INFO : MINION : WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+23:25:39 PIT >> INFO : MINION : WARNING: Dynamic loading of agents will be disallowed by default in a future release
+23:25:39 PIT >> INFO : MINION : OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+23:25:40 PIT >> INFO : MINION : [ERROR] (main) Operator called default onErrorDropped - org.springframework.security.authentication.BadCredentialsException: Test
+23:25:40 PIT >> INFO : MINION : org.springframework.security.authentication.BadCredentialsException: Test
+23:25:40 PIT >> INFO : MINION : 	at org.springframework.security.authentication.DelegatingReactiveAuthenticationManagerTests.authenticateWhenContinueOnErrorAndBothDelegatesBadCredentialsThenError(DelegatingReactiveAuthenticationManagerTests.java:94)
+23:25:40 PIT >> INFO : MINION : 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+23:25:40 PIT >> INFO : MINION : 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:700)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:528)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.support.MethodReflectionUtils.invoke(MethodReflectionUtils.java:53)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:61)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:124)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:163)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:148)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:124)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:105)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:99)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:66)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:47)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:39)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:104)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:98)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invokeVoid(InterceptingExecutableInvoker.java:71)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$0(TestMethodTestDescriptor.java:219)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:215)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:157)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:70)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:176)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+23:25:40 PIT >> INFO : MINION : 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+23:25:40 PIT >> INFO : MINION : 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:256)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:228)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:189)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:109)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:168)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:126)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:100)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:57)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$0(InterceptingLauncher.java:46)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:45)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:57)
+23:25:40 PIT >> INFO : MINION : 	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:76)
+23:25:40 PIT >> INFO : MINION : 	at org.pitest.junit5.JUnit5TestUnitFinder.findTestUnits(JUnit5TestUnitFinder.java:84)
+23:25:40 PIT >> INFO : MINION : 	at org.pitest.mutationtest.config.PrioritisingTestUnitFinder.findTestUnits(PrioritisingTestUnitFinder.java:20)
+23:25:40 PIT >> INFO : MINION : 	at org.pitest.testapi.execute.FindTestUnits.findTestUnits(FindTestUnits.java:64)
+23:25:40 PIT >> INFO : MINION : 	at org.pitest.testapi.execute.FindTestUnits.getTestUnits(FindTestUnits.java:47)
+23:25:40 PIT >> INFO : MINION : 	at org.pitest.testapi.execute.FindTestUnits.findTestUnitsForAllSuppliedClasses(FindTestUnits.java:36)
+23:25:40 PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.discoverTests(CoverageMinion.java:168)
+23:25:40 PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.getTestsFromParent(CoverageMinion.java:154)
+23:25:40 PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.main(CoverageMinion.java:82)
+23:25:41 PIT >> INFO : MINION : Oct 01, 2026 11:25:41 PM org.springframework.security.core.userdetails.User withDefaultPasswordEncoder
+23:25:41 PIT >> INFO : MINION : WARNING: User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+23:25:41 PIT >> INFO : MINION : Oct 01, 2026 11:25:41 PM org.springframework.security.core.userdetails.User withDefaultPasswordEncoder
+23:25:41 PIT >> INFO : MINION : WARNING: User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+23:25:41 PIT >> INFO : MINION : Oct 01, 2026 11:25:41 PM org.springframework.security.authentication.event.LoggerListener onApplicationEvent
+23:25:41 PIT >> INFO : MINION : WARNING: Authentication event AuthenticationFailureDisabledEvent: Principal; details: 127.0.0.1; exception: TEST
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.security.authentication.jaas.SecurityContextLoginModule login
+23:25:42 PIT >> INFO : MINION : WARNING: Login cannot complete, authentication not found in security context
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory initDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Starting embedded database: url='jdbc:hsqldb:mem:1913c2f3-71b3-40f2-b5a5-df3d6dba5abc', username='sa'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory shutdownDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Shutting down embedded database: url='jdbc:hsqldb:mem:1913c2f3-71b3-40f2-b5a5-df3d6dba5abc'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory initDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Starting embedded database: url='jdbc:hsqldb:mem:db9e1901-e5b0-4343-8ecc-c19eb8f1b1f0', username='sa'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory shutdownDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Shutting down embedded database: url='jdbc:hsqldb:mem:db9e1901-e5b0-4343-8ecc-c19eb8f1b1f0'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory initDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Starting embedded database: url='jdbc:hsqldb:mem:2031c406-9a47-4373-b8fe-646efd86fbfd', username='sa'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory shutdownDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Shutting down embedded database: url='jdbc:hsqldb:mem:2031c406-9a47-4373-b8fe-646efd86fbfd'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory initDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Starting embedded database: url='jdbc:hsqldb:mem:41b581ae-9acc-42e7-91de-6495a052ede3', username='sa'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory shutdownDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Shutting down embedded database: url='jdbc:hsqldb:mem:41b581ae-9acc-42e7-91de-6495a052ede3'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory initDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Starting embedded database: url='jdbc:hsqldb:mem:b3a2ca41-b166-4566-b2aa-65edfcc3c224', username='sa'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory shutdownDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Shutting down embedded database: url='jdbc:hsqldb:mem:b3a2ca41-b166-4566-b2aa-65edfcc3c224'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory initDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Starting embedded database: url='jdbc:hsqldb:mem:3914207e-cb2d-4f10-8f82-fa8d2a5f4d4c', username='sa'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory shutdownDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Shutting down embedded database: url='jdbc:hsqldb:mem:3914207e-cb2d-4f10-8f82-fa8d2a5f4d4c'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory initDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Starting embedded database: url='jdbc:hsqldb:mem:a59d2fdb-631c-4f67-afa8-91a1eefb6f4d', username='sa'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory shutdownDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Shutting down embedded database: url='jdbc:hsqldb:mem:a59d2fdb-631c-4f67-afa8-91a1eefb6f4d'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory initDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Starting embedded database: url='jdbc:hsqldb:mem:24f53bf5-0426-41c4-9245-97bcc4eeb0f8', username='sa'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory shutdownDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Shutting down embedded database: url='jdbc:hsqldb:mem:24f53bf5-0426-41c4-9245-97bcc4eeb0f8'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory initDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Starting embedded database: url='jdbc:hsqldb:mem:d219de9c-993b-461a-8551-c69895b23de5', username='sa'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory shutdownDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Shutting down embedded database: url='jdbc:hsqldb:mem:d219de9c-993b-461a-8551-c69895b23de5'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory initDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Starting embedded database: url='jdbc:hsqldb:mem:95882f10-c5ae-4e4b-9d52-fdf701c7761b', username='sa'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory shutdownDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Shutting down embedded database: url='jdbc:hsqldb:mem:95882f10-c5ae-4e4b-9d52-fdf701c7761b'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory initDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Starting embedded database: url='jdbc:hsqldb:mem:028fe72e-1be1-4f1f-8ae5-c6ed2376c288', username='sa'
+23:25:42 PIT >> INFO : MINION : Oct 01, 2026 11:25:42 PM org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory shutdownDatabase
+23:25:42 PIT >> INFO : MINION : INFO: Shutting down embedded database: url='jdbc:hsqldb:mem:028fe72e-1be1-4f1f-8ae5-c6ed2376c288'
+23:25:42 PIT >> INFO : Calculated coverage in 4 seconds.
+23:25:42 PIT >> INFO : Created 1 mutation test units
+23:25:44 PIT >> INFO : Completed in 6 seconds

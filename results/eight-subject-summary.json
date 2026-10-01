@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "attemptedSubjects": 8,
-  "completedSubjects": 5,
-  "blockedSubjects": 3,
+  "completedSubjects": 6,
+  "blockedSubjects": 2,
   "projects": [
     {
       "project": "commons-lang",
@@ -253,6 +253,54 @@
       }
     },
     {
+      "project": "spring-security",
+      "status": "COMPLETE",
+      "logicalTests": 1440,
+      "sampledProductionClasses": 18,
+      "usableMutationProducingClasses": 18,
+      "totalPitMutations": 520,
+      "killedMutations": 340,
+      "stpInclusive": 330,
+      "inclusivenessPct": 97.06,
+      "avgSelected": 36.86,
+      "reductionPct": 97.44,
+      "classLevel": {
+        "name": "Class-level only",
+        "safe": 335,
+        "unsafe": 5,
+        "total": 340,
+        "inclusivenessPct": 98.53,
+        "avgSelected": 72.2,
+        "selectionRatePct": 5.01,
+        "reductionPct": 94.99
+      },
+      "randomEqualBudget": {
+        "name": "Random equal-budget",
+        "trials": 1000,
+        "seed": 42,
+        "inclusivenessPct": 17.42,
+        "inclusivenessStdPct": 1.35,
+        "analyticalInclusivenessPct": 17.46,
+        "avgSelected": 36.86,
+        "selectionRatePct": 2.56,
+        "reductionPct": 97.44
+      },
+      "falseNegatives": 10,
+      "failureTaxonomy": {
+        "A": 2,
+        "B": 3,
+        "C": 5,
+        "NEW_TYPE": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 2,
+        "avgSelected": 37.3,
+        "inclusivenessPct": 97.65,
+        "safe": 332,
+        "selectionRatePct": 2.59
+      }
+    },
+    {
       "project": "hibernate",
       "status": "PIT_GROUND_TRUTH_BLOCKED",
       "logicalTests": 1099,
@@ -335,50 +383,14 @@
         },
         "decision": "Stop Quarkus subject; do not narrow the predeclared full Arc targetTests policy"
       }
-    },
-    {
-      "project": "spring-security",
-      "status": "PIT_GROUND_TRUTH_BLOCKED",
-      "logicalTests": 1440,
-      "sampledProductionClasses": 18,
-      "usableMutationProducingClasses": null,
-      "totalPitMutations": null,
-      "killedMutations": null,
-      "stpInclusive": null,
-      "inclusivenessPct": null,
-      "avgSelected": null,
-      "reductionPct": null,
-      "classLevel": null,
-      "randomEqualBudget": null,
-      "falseNegatives": null,
-      "failureTaxonomy": null,
-      "mitigation": null,
-      "blocker": {
-        "status": "PIT_GROUND_TRUTH_BLOCKED",
-        "subject": "Spring Security 7.1.1",
-        "subjectCommit": "a825937b8175ee85872c49d9c7fc25eea8cff991",
-        "jdk": "SapMachine 25.0.4.1+1-LTS",
-        "classFileMajorVersion": 69,
-        "pitest": "1.17.4",
-        "pitestJunit5Plugin": "1.2.1",
-        "pilot": {
-          "targetClass": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
-          "testsExamined": 11,
-          "mutationsGenerated": 22,
-          "killed": 0,
-          "noCoverage": 22,
-          "rootCause": "PIT relocated ASM throws IllegalArgumentException: Unsupported class file major version 69"
-        },
-        "decision": "Stop Spring Security subject; do not change PIT version or qualified JDK"
-      }
     }
   ],
   "aggregateCompletedSubjectsOnly": {
-    "killedMutations": 2186,
-    "stpInclusive": 2173,
-    "falseNegatives": 13,
-    "inclusivenessPct": 99.41,
-    "mitigationRecoveries": 5,
+    "killedMutations": 2526,
+    "stpInclusive": 2503,
+    "falseNegatives": 23,
+    "inclusivenessPct": 99.09,
+    "mitigationRecoveries": 7,
     "newFailureTypeExists": false
   },
   "interpretation": "Blocked subjects are excluded from every mutation denominator; null is not zero."

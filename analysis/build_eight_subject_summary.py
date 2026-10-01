@@ -41,13 +41,13 @@ def old_project(name):
     }
 
 
-def flink():
-    summary = load("flink/results/aggregated/evaluation_summary.json")
-    pit = load("flink/results/pit-run-summary.json")
-    sample = load("flink/config/sample_classes.json")
+def new_project(name):
+    summary = load(f"{name}/results/aggregated/evaluation_summary.json")
+    pit = load(f"{name}/results/pit-run-summary.json")
+    sample = load(f"{name}/config/sample_classes.json")
     selectors = summary["selectors"]
     return {
-        "project": "flink",
+        "project": name,
         "status": "COMPLETE",
         "logicalTests": summary["logicalTests"],
         "sampledProductionClasses": len(sample["classes"]),
@@ -68,7 +68,7 @@ taxonomy = load("results/failure_taxonomy.json")
 mitigation = load("results/mitigation_comparison.json")
 mit_by_project = {row["project"]: row for row in mitigation["perProject"]}
 projects = [old_project(p) for p in ("commons-lang", "jgrapht", "spring-core", "petclinic")]
-projects.append(flink())
+projects.extend(new_project(p) for p in ("flink", "spring-security"))
 
 for row in projects:
     mutations = taxonomy["byProject"].get(row["project"], {}).get("mutations", [])
@@ -82,7 +82,7 @@ for row in projects:
     row["failureTaxonomy"] = exclusive
     row["mitigation"] = mit_by_project[row["project"]]["constructorOnlyRule"]
 
-for name in ("hibernate", "quarkus", "spring-security"):
+for name in ("hibernate", "quarkus"):
     blocked = load(f"{name}/results/blocked.json")
     sample = load(f"{name}/config/sample_classes.json")
     subject = load(f"{name}/config/subject.json")

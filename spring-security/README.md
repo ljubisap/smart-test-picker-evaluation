@@ -13,3 +13,13 @@ The preserved first attempt shows that PIT 1.17.4 cannot transform JDK 25 class
 files (major version 69). The official `-PtestToolchain=21` build mode preserves
 the native population and is re-frozen for the canonical mutation campaign;
 see `docs/JDK21_REFREEZE.md`. The original blocker evidence remains retained.
+
+## Canonical JDK 21 result
+
+All 18 pre-result-frozen production classes produced usable PIT matrices: 520
+mutations in total and 340 KILLED mutations. STP includes a killing test for
+330/340 (97.06%), selecting 36.86 of 1,440 logical tests on average (97.44%
+reduction). The unchanged constructor-only rule recovers two of the ten
+misses. Detailed causal analysis is in `docs/FAILURE_ANALYSIS.md`; every miss
+fits the existing early-exception Type A/B/C taxonomy and no `NEW_TYPE` was
+observed.
