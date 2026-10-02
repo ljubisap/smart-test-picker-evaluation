@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "attemptedSubjects": 8,
-  "completedSubjects": 7,
-  "blockedSubjects": 1,
+  "completedSubjects": 8,
+  "blockedSubjects": 0,
   "projects": [
     {
       "project": "commons-lang",
@@ -350,49 +350,58 @@
     },
     {
       "project": "quarkus",
-      "status": "PIT_GROUND_TRUTH_BLOCKED",
+      "status": "COMPLETE",
       "logicalTests": 684,
       "sampledProductionClasses": 16,
-      "usableMutationProducingClasses": null,
-      "totalPitMutations": null,
-      "killedMutations": null,
-      "stpInclusive": null,
-      "inclusivenessPct": null,
-      "avgSelected": null,
-      "reductionPct": null,
-      "classLevel": null,
-      "randomEqualBudget": null,
-      "falseNegatives": null,
-      "failureTaxonomy": null,
-      "mitigation": null,
-      "blocker": {
-        "status": "PIT_GROUND_TRUTH_BLOCKED",
-        "subject": "Quarkus Arc 3.40.1",
-        "subjectCommit": "6ce99878508d792f3c2a2a7f9520b086a1c32cab",
-        "pitest": "1.17.4",
-        "pitestJunit5Plugin": "1.2.1",
-        "splitModuleAdapter": "processor compiled output + sources supplied to Arc tests PIT execution",
-        "singleTestDiagnostic": {
-          "targetClass": "io.quarkus.arc.processor.Annotations",
-          "testClass": "io.quarkus.arc.test.interceptors.SimpleInterceptorTest",
-          "status": "PASS",
-          "mutationsGenerated": 101
-        },
-        "frozenScopeDiagnostic": {
-          "testClassesSent": 6044,
-          "status": "FAIL",
-          "stage": "PIT coverage generation minion",
-          "failure": "UNKNOWN_ERROR during Arc bean destruction lifecycle"
-        },
-        "decision": "Stop Quarkus subject; do not narrow the predeclared full Arc targetTests policy"
+      "usableMutationProducingClasses": 16,
+      "totalPitMutations": 1639,
+      "killedMutations": 1083,
+      "stpInclusive": 1083,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 260.65,
+      "reductionPct": 61.89,
+      "classLevel": {
+        "name": "Class-level only",
+        "safe": 1083,
+        "unsafe": 0,
+        "total": 1083,
+        "inclusivenessPct": 100.0,
+        "avgSelected": 539.93,
+        "selectionRatePct": 78.94,
+        "reductionPct": 21.06
+      },
+      "randomEqualBudget": {
+        "name": "Random equal-budget",
+        "trials": 1000,
+        "seed": 42,
+        "inclusivenessPct": 71.25,
+        "inclusivenessStdPct": 0.69,
+        "analyticalInclusivenessPct": 71.28,
+        "avgSelected": 260.65,
+        "selectionRatePct": 38.11,
+        "reductionPct": 61.89
+      },
+      "falseNegatives": 0,
+      "failureTaxonomy": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "NEW_TYPE": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 0,
+        "avgSelected": 383.6,
+        "inclusivenessPct": 100.0,
+        "safe": 1083,
+        "selectionRatePct": 56.08
       }
     }
   ],
   "aggregateCompletedSubjectsOnly": {
-    "killedMutations": 2928,
-    "stpInclusive": 2903,
+    "killedMutations": 4011,
+    "stpInclusive": 3986,
     "falseNegatives": 25,
-    "inclusivenessPct": 99.15,
+    "inclusivenessPct": 99.38,
     "mitigationRecoveries": 7,
     "newFailureTypeExists": true
   },

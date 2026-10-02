@@ -17,7 +17,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.7 | Done (pilot) | [petclinic/](petclinic/) |
 | Apache Flink (scheduler scope) | 665 | 349 | 100.00% | 94.55% | 36.23 | Done | [flink/](flink/) |
 | Hibernate ORM | 1099 | 402 | 99.50% | 73.02% | 296.53 | Done (JDK 21) | [hibernate/](hibernate/) |
-| Quarkus Arc | — | — | — | — | — | PIT oracle blocked | [quarkus/](quarkus/) |
+| Quarkus Arc | 684 | 1083 | 100.00% | 61.89% | 260.65 | Done (runnable-inventory scope translation) | [quarkus/](quarkus/) |
 | Spring Security | 1440 | 340 | 97.06% | 97.44% | 36.86 | Done (JDK 21) | [spring-security/](spring-security/) |
 
 ## Sampling Strategies
@@ -30,7 +30,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | PetClinic | all_classes | Small project; 17 classes mutated, 14 with killed mutants |
 | Flink | curated_stratified | 16 scheduler classes frozen before PIT/STP outcomes |
 | Hibernate | curated_stratified | 16 classes frozen before outcomes; official external JDK-minimum override used for JDK 21 replay |
-| Quarkus | curated_stratified | Frozen before execution; full Arc PIT scope blocked |
+| Quarkus | curated_stratified | 16 classes frozen before outcomes; full 684-test oracle translated to exact runnable classes |
 | Spring Security | curated_stratified | 18 classes frozen before outcomes; official JDK 21 toolchain mode |
 
 ## Repository Structure
@@ -62,7 +62,7 @@ smart-test-picker-evaluation/
 |   `-- docs/               # Methodology, reproduction, failure analysis
 |-- flink/                  # Independent validation: scheduler scope (665 tests)
 |-- hibernate/              # Independent validation: hibernate-core representative scope (1099 tests)
-|-- quarkus/                # Frozen attempt and PIT-oracle blocker evidence
+|-- quarkus/                # Independent validation: Arc processor/tests split (684 tests)
 |-- spring-security/        # Independent validation: spring-security-core (1440 tests)
 |-- analysis/               # Shared evaluation core, taxonomy and verification
 |   |-- evaluation_core.py  # Shared selectors, loading, resolution

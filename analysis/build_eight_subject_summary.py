@@ -70,7 +70,7 @@ mit_by_project = {row["project"]: row for row in mitigation["perProject"]}
 annotations = load("analysis/failure_annotations.json")
 annotations_by_id = {row["mutationId"]: row for row in annotations}
 projects = [old_project(p) for p in ("commons-lang", "jgrapht", "spring-core", "petclinic")]
-projects.extend(new_project(p) for p in ("flink", "spring-security", "hibernate"))
+projects.extend(new_project(p) for p in ("flink", "spring-security", "hibernate", "quarkus"))
 
 for row in projects:
     mutations = taxonomy["byProject"].get(row["project"], {}).get("mutations", [])
@@ -87,33 +87,6 @@ for row in projects:
             exclusive["NEW_TYPE"] += 1
     row["failureTaxonomy"] = exclusive
     row["mitigation"] = mit_by_project[row["project"]]["constructorOnlyRule"]
-
-for name in ("quarkus",):
-    blocked = load(f"{name}/results/blocked.json")
-    sample = load(f"{name}/config/sample_classes.json")
-    subject = load(f"{name}/config/subject.json")
-    qualified = subject.get("qualifiedLogicalPopulation")
-    if qualified is None:
-        qualified = subject.get("qualifiedPopulation", {}).get("stpRunnableLogical")
-    projects.append({
-        "project": name,
-        "status": blocked["status"],
-        "logicalTests": qualified,
-        "sampledProductionClasses": len(sample["classes"]),
-        "usableMutationProducingClasses": None,
-        "totalPitMutations": None,
-        "killedMutations": None,
-        "stpInclusive": None,
-        "inclusivenessPct": None,
-        "avgSelected": None,
-        "reductionPct": None,
-        "classLevel": None,
-        "randomEqualBudget": None,
-        "falseNegatives": None,
-        "failureTaxonomy": None,
-        "mitigation": None,
-        "blocker": blocked,
-    })
 
 complete = [row for row in projects if row["status"] == "COMPLETE"]
 output = {

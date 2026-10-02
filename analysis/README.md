@@ -6,7 +6,7 @@ Shared evaluation logic and cross-project failure taxonomy for the Smart Test Pi
 
 This module implements a **Python evaluation selector** (`select_original`) based on the documented selection rules.
 
-**Equivalence status:** For all 1,021 unique single-method change cases represented by the 2,928 evaluated killed mutations, `evaluation_core.select_original()` produces exactly the same selected-test sets as the modeled production Java `TestSelector` semantics (`verify_selector_equivalence.py`). Every case has at least one exact method-coverage hit, so Java's zero-hit class escalation never activates and the Python per-test fallback produces no additional candidates.
+**Equivalence status:** For all 1,351 unique single-method change cases represented by the 4,011 evaluated killed mutations, `evaluation_core.select_original()` produces exactly the same selected-test sets as the modeled production Java `TestSelector` semantics (`verify_selector_equivalence.py`). One occurrence has zero exact method-coverage hits; the modeled Java escalation and Python fallback still agree, with no Python-only candidate. The remaining 4,010 occurrences have exact method hits.
 
 A separate 21-case contract test (`commons-lang/scripts/contract_test.py`) confirms exact equality against the actual pinned Maven plugin (commit `70b3984626eb`).
 
@@ -54,8 +54,8 @@ python3 -m unittest discover -s analysis/tests
 ## Outputs
 
 - `results/failure_taxonomy.json` -- per-mutation Type A/B/C classification with full provenance
-- `results/mitigation_comparison.json` -- original vs constructor-only vs class-level for all 2,928 mutations
-- `results/selector_equivalence.json` -- dataset-wide Python/Java selector comparison (2,928 mutations, 1,021 unique cases)
+- `results/mitigation_comparison.json` -- original vs constructor-only vs class-level for all 4,011 mutations
+- `results/selector_equivalence.json` -- dataset-wide Python/Java selector comparison (4,011 mutations, 1,351 unique cases)
 - `results/recollection_comparison.json` -- old/new coverage map comparison after final recollection
 
 ## Manual Annotations
@@ -71,9 +71,9 @@ The per-project manifests record the exact Smart Test Picker revision used to co
 ## Canonical Results
 
 - 25 unsafe mutations: footprint taxonomy 7 Type A, 10 Type B, 7 Type C, and 1 mixed B/C case
-- Original: 99.15% (2903/2928)
-- Constructor-only rule: 99.39% (2910/2928, +7 recovered)
-- Class-level baseline: 99.76% (2921/2928)
+- Original: 99.38% (3986/4011)
+- Constructor-only rule: 99.55% (3993/4011, +7 recovered)
+- Class-level baseline: 99.83% (4004/4011)
 - Causal annotations identify two Hibernate misses as a new pre-leaf custom-engine enhancement mechanism
 - Both invariants hold: classPresentNoMethods=0, mutatedMethodPresent=0
-- Selector equivalence: 2928/2928 exact matches, 0 mismatches
+- Selector equivalence: 4011/4011 exact matches, 0 mismatches

@@ -1,0 +1,21 @@
+{
+  "status": "PIT_GROUND_TRUTH_READY",
+  "subject": "Quarkus Arc 3.40.1",
+  "subjectCommit": "6ce99878508d792f3c2a2a7f9520b086a1c32cab",
+  "pitest": "1.17.4",
+  "pitestJunit5Plugin": "1.2.1",
+  "rootCause": "Broad targetTests glob admitted a Quarkus-generated Arc bean to JUnit 5 test discovery; Class.getEnclosingClass raised IncompatibleClassChangeError because generated outer/inner classes disagreed on the InnerClasses attribute",
+  "firstBrokenStage": "PIT coverage-minion JUnit 5 test discovery",
+  "correction": "Translate the frozen 684-identity BASE runnable inventory to 572 exact PIT targetTests class entries",
+  "oracleNarrowed": false,
+  "sampleChanged": false,
+  "toolVersionsChanged": false,
+  "productionSourceChanged": false,
+  "testSourceChanged": false,
+  "classJobs": 16,
+  "successfulClassJobs": 16,
+  "failedClassJobs": 0,
+  "timedOutClassJobs": 0,
+  "totalMutations": 1639,
+  "killedMutations": 1083
+}

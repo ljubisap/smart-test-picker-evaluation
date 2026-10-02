@@ -1,0 +1,17 @@
+{
+  "project": "Quarkus Arc diagnostic only",
+  "classes": [
+    {
+      "fqn": "io.quarkus.arc.processor.Annotations",
+      "targetTests": "io.quarkus.arc.test.interceptors.SimpleInterceptorTest",
+      "status": "OK",
+      "reason": null,
+      "mutations": 101,
+      "elapsedSeconds": 309.27
+    }
+  ],
+  "ok": 1,
+  "failed": 0,
+  "timeout": 0,
+  "totalMutations": 101
+}

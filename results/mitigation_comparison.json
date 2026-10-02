@@ -1,19 +1,19 @@
 {
   "aggregated": {
     "classLevelBaseline": {
-      "inclusivenessPct": 99.76,
-      "safe": 2921
+      "inclusivenessPct": 99.83,
+      "safe": 4004
     },
     "constructorOnlyRule": {
       "additionalRecovered": 7,
-      "inclusivenessPct": 99.39,
-      "safe": 2910
+      "inclusivenessPct": 99.55,
+      "safe": 3993
     },
     "original": {
-      "inclusivenessPct": 99.15,
-      "safe": 2903
+      "inclusivenessPct": 99.38,
+      "safe": 3986
     },
-    "totalMutations": 2928
+    "totalMutations": 4011
   },
   "methodology": {
     "aggregation": "micro-average over all killed mutations across projects",
@@ -188,6 +188,30 @@
       "project": "hibernate",
       "totalMutations": 402,
       "totalTests": 1099
+    },
+    {
+      "classLevelBaseline": {
+        "avgSelected": 539.9,
+        "inclusivenessPct": 100.0,
+        "safe": 1083,
+        "selectionRatePct": 78.94
+      },
+      "constructorOnlyRule": {
+        "additionalRecovered": 0,
+        "avgSelected": 383.6,
+        "inclusivenessPct": 100.0,
+        "safe": 1083,
+        "selectionRatePct": 56.08
+      },
+      "original": {
+        "avgSelected": 260.7,
+        "inclusivenessPct": 100.0,
+        "safe": 1083,
+        "selectionRatePct": 38.11
+      },
+      "project": "quarkus",
+      "totalMutations": 1083,
+      "totalTests": 684
     }
   ],
   "schemaVersion": 1

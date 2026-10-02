@@ -4,14 +4,134 @@
     {
       "fqn": "io.quarkus.arc.processor.Annotations",
       "targetTests": "io.quarkus.arc.test.*",
-      "status": "FAILED",
-      "reason": "exit 1",
-      "mutations": 0,
-      "elapsedSeconds": 83.23
+      "status": "OK",
+      "reason": null,
+      "mutations": 101,
+      "elapsedSeconds": 235.29
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.BeanArchives",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 16,
+      "elapsedSeconds": 417.85
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.BeanResolverImpl",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 139,
+      "elapsedSeconds": 315.63
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.ClientProxyGenerator",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 84,
+      "elapsedSeconds": 699.65
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.InterceptorGenerator",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 94,
+      "elapsedSeconds": 1948.81
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.DecoratorGenerator",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 97,
+      "elapsedSeconds": 294.4
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.ObserverInfo",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 70,
+      "elapsedSeconds": 164.45
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.ObserverGenerator",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 143,
+      "elapsedSeconds": 292.51
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.InjectionPointInfo",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 101,
+      "elapsedSeconds": 402.27
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.Injection",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 150,
+      "elapsedSeconds": 1120.93
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.Types",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 205,
+      "elapsedSeconds": 906.54
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.ComponentsProviderGenerator",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 96,
+      "elapsedSeconds": 1179.81
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.ContextInstancesGenerator",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 80,
+      "elapsedSeconds": 100.96
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.AnnotationLiteralProcessor",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 61,
+      "elapsedSeconds": 336.62
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 115,
+      "elapsedSeconds": 74.03
+    },
+    {
+      "fqn": "io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint",
+      "targetTests": "io.quarkus.arc.test.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 87,
+      "elapsedSeconds": 375.06
     }
   ],
-  "ok": 0,
-  "failed": 1,
+  "ok": 16,
+  "failed": 0,
   "timeout": 0,
-  "totalMutations": 0
+  "totalMutations": 1639
 }

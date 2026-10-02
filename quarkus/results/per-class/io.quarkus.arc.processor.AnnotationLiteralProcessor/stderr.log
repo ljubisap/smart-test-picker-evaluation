@@ -1,0 +1,147 @@
+14:27:59 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+14:27:59 PIT >> INFO : Created 1 mutation test units in pre scan
+14:28:00 PIT >> INFO : Sending 572 test classes to minion
+14:28:00 PIT >> INFO : Sent tests to minion
+14:28:03 PIT >> INFO : MINION : Oct 02, 2026 2:28:03 PM io.quarkus.arc.test.bean.destroy.BeanPreDestroyErrorTest$DestroyBean_Bean destroy
+14:28:03 PIT >> INFO : MINION : ERROR: Error occurred while destroying instance of CLASS bean [types=[io.quarkus.arc.test.bean.destroy.BeanPreDestroyErrorTest$DestroyBean, java.lang.Object], qualifiers=[@Any, @Default], target=io.quarkus.arc.test.bean.destroy.BeanPreDestroyErrorTest$DestroyBean]: java.lang.IllegalStateException
+14:28:03 PIT >> INFO : MINION : Oct 02, 2026 2:28:03 PM io.quarkus.arc.test.bean.destroy.BeanPreDestroyErrorTest$DestroyProducerBean_ProducerMethod_produce_fZZvMyiJoRwWN5aR-68TTN81ggc_Bean destroy
+14:28:03 PIT >> INFO : MINION : ERROR: Error occurred while destroying instance of PRODUCER METHOD bean [types=[java.io.Serializable, java.lang.Comparable<java.math.BigDecimal>, java.lang.Number, java.lang.Object, java.math.BigDecimal], qualifiers=[@Any, @Default], target=java.math.BigDecimal produce(), declaringBean=io.quarkus.arc.test.bean.destroy.BeanPreDestroyErrorTest$DestroyProducerBean]: java.lang.IllegalStateException
+14:28:03 PIT >> INFO : MINION : Oct 02, 2026 2:28:03 PM io.quarkus.arc.test.bean.destroy.BeanPreDestroyErrorTest$DestroyBean_Bean destroy
+14:28:03 PIT >> INFO : MINION : ERROR: Error occurred while destroying instance of CLASS bean [types=[io.quarkus.arc.test.bean.destroy.BeanPreDestroyErrorTest$DestroyBean, java.lang.Object], qualifiers=[@Any, @Default], target=io.quarkus.arc.test.bean.destroy.BeanPreDestroyErrorTest$DestroyBean]: java.lang.IllegalStateException
+14:28:03 PIT >> INFO : MINION : Oct 02, 2026 2:28:03 PM io.quarkus.arc.test.bean.destroy.BeanPreDestroyErrorTest$DestroyProducerBean_ProducerMethod_produce_fZZvMyiJoRwWN5aR-68TTN81ggc_Bean destroy
+14:28:03 PIT >> INFO : MINION : ERROR: Error occurred while destroying instance of PRODUCER METHOD bean [types=[java.io.Serializable, java.lang.Comparable<java.math.BigDecimal>, java.lang.Number, java.lang.Object, java.math.BigDecimal], qualifiers=[@Any, @Default], target=java.math.BigDecimal produce(), declaringBean=io.quarkus.arc.test.bean.destroy.BeanPreDestroyErrorTest$DestroyProducerBean]: java.lang.IllegalStateException
+14:28:11 PIT >> INFO : MINION : Oct 02, 2026 2:28:11 PM io.quarkus.arc.test.cdi.bcextensions.SyntheticBeanInjectionPointTest$MyDependentBean_CH3WlQhXf9X4Qlo92ZZzJABCb5M_Synthetic_Bean destroy
+14:28:11 PIT >> INFO : MINION : ERROR: Error occurred while destroying instance of SYNTHETIC bean [types=[io.quarkus.arc.test.cdi.bcextensions.SyntheticBeanInjectionPointTest$MyDependentBean, java.lang.Object], qualifiers=[@Any, @Default], target=n/a]: java.lang.IllegalStateException: Cannot obtain InjectionPoint metadata for non-@Dependent bean
+14:28:11 PIT >> INFO : MINION : Oct 02, 2026 2:28:11 PM io.quarkus.arc.test.cdi.bcextensions.SyntheticBeanInjectionPointTest$MyDependentBean_CH3WlQhXf9X4Qlo92ZZzJABCb5M_Synthetic_Bean destroy
+14:28:11 PIT >> INFO : MINION : ERROR: Error occurred while destroying instance of SYNTHETIC bean [types=[io.quarkus.arc.test.cdi.bcextensions.SyntheticBeanInjectionPointTest$MyDependentBean, java.lang.Object], qualifiers=[@Any, @Default], target=n/a]: java.lang.IllegalStateException: Cannot obtain InjectionPoint metadata for non-@Dependent bean
+14:28:11 PIT >> INFO : MINION : Oct 02, 2026 2:28:11 PM io.quarkus.arc.processor.bcextensions.MessagesImpl info
+14:28:11 PIT >> INFO : MINION : INFO: observer has type java.util.List<io.quarkus.arc.test.cdi.bcextensions.SyntheticObserverOfParameterizedTypeTest$MyData> at ObserverInfo [beanClass=io.quarkus.arc.test.cdi.bcextensions.SyntheticObserverOfParameterizedTypeTest$MyExtension, priority=2500, isAsync=false, reception=ALWAYS, transactionPhase=IN_PROGRESS, observedType=java.util.List<io.quarkus.arc.test.cdi.bcextensions.SyntheticObserverOfParameterizedTypeTest$MyData>, qualifiers=[]]
+14:28:11 PIT >> INFO : MINION : Oct 02, 2026 2:28:11 PM io.quarkus.arc.processor.bcextensions.MessagesImpl info
+14:28:11 PIT >> INFO : MINION : INFO: observer has type io.quarkus.arc.test.cdi.bcextensions.SyntheticObserverTest$MyEvent at ObserverInfo [beanClass=io.quarkus.arc.test.cdi.bcextensions.SyntheticObserverTest$MyExtension, priority=10, isAsync=false, reception=ALWAYS, transactionPhase=IN_PROGRESS, observedType=io.quarkus.arc.test.cdi.bcextensions.SyntheticObserverTest$MyEvent, qualifiers=[]]
+14:28:11 PIT >> INFO : MINION : Oct 02, 2026 2:28:11 PM io.quarkus.arc.processor.bcextensions.MessagesImpl info
+14:28:11 PIT >> INFO : MINION : INFO: observer has type io.quarkus.arc.test.cdi.bcextensions.SyntheticObserverTest$MyEvent at ObserverInfo [beanClass=io.quarkus.arc.test.cdi.bcextensions.SyntheticObserverTest$MyExtension, priority=20, isAsync=false, reception=ALWAYS, transactionPhase=IN_PROGRESS, observedType=io.quarkus.arc.test.cdi.bcextensions.SyntheticObserverTest$MyEvent, qualifiers=[@io.quarkus.arc.test.cdi.bcextensions.SyntheticObserverTest$MyQualifier]]
+14:28:12 PIT >> INFO : MINION : Oct 02, 2026 2:28:12 PM io.quarkus.arc.processor.Methods skipForClientProxy
+14:28:12 PIT >> INFO : MINION : WARN: Final method io.quarkus.arc.test.clientproxy.finalmethod.FinalMethodIgnoredTest$Moo.getVal() is ignored during proxy generation and should never be invoked upon the proxy instance!
+14:28:13 PIT >> INFO : MINION : Oct 02, 2026 2:28:13 PM io.quarkus.arc.test.contexts.application.optimized.ApplicationContextInstancesTest$Boom_Bean destroy
+14:28:13 PIT >> INFO : MINION : ERROR: Error occurred while destroying instance of CLASS bean [types=[io.quarkus.arc.test.contexts.application.optimized.ApplicationContextInstancesTest$Boom, java.lang.Object], qualifiers=[@Any, @Default], target=io.quarkus.arc.test.contexts.application.optimized.ApplicationContextInstancesTest$Boom]: java.lang.IllegalStateException: Boom
+14:28:13 PIT >> INFO : MINION : Oct 02, 2026 2:28:13 PM io.quarkus.arc.test.contexts.application.optimized.ApplicationContextInstancesTest$Boom_Bean destroy
+14:28:13 PIT >> INFO : MINION : ERROR: Error occurred while destroying instance of CLASS bean [types=[io.quarkus.arc.test.contexts.application.optimized.ApplicationContextInstancesTest$Boom, java.lang.Object], qualifiers=[@Any, @Default], target=io.quarkus.arc.test.contexts.application.optimized.ApplicationContextInstancesTest$Boom]: java.lang.IllegalStateException: Boom
+14:28:13 PIT >> INFO : MINION : Oct 02, 2026 2:28:13 PM io.quarkus.arc.test.contexts.application.optimized.ApplicationContextInstancesTest$Boom_Bean destroy
+14:28:13 PIT >> INFO : MINION : ERROR: Error occurred while destroying instance of CLASS bean [types=[io.quarkus.arc.test.contexts.application.optimized.ApplicationContextInstancesTest$Boom, java.lang.Object], qualifiers=[@Any, @Default], target=io.quarkus.arc.test.contexts.application.optimized.ApplicationContextInstancesTest$Boom]: java.lang.IllegalStateException: Boom
+14:28:13 PIT >> INFO : MINION : Oct 02, 2026 2:28:13 PM io.quarkus.arc.test.contexts.request.optimized.RequestContextInstancesTest$Boom_Bean destroy
+14:28:13 PIT >> INFO : MINION : ERROR: Error occurred while destroying instance of CLASS bean [types=[io.quarkus.arc.test.contexts.request.optimized.RequestContextInstancesTest$Boom, java.lang.Object], qualifiers=[@Any, @Default], target=io.quarkus.arc.test.contexts.request.optimized.RequestContextInstancesTest$Boom]: java.lang.IllegalStateException: Boom
+14:28:13 PIT >> INFO : MINION : Oct 02, 2026 2:28:13 PM io.quarkus.arc.test.contexts.request.optimized.RequestContextInstancesTest$Boom_Bean destroy
+14:28:13 PIT >> INFO : MINION : ERROR: Error occurred while destroying instance of CLASS bean [types=[io.quarkus.arc.test.contexts.request.optimized.RequestContextInstancesTest$Boom, java.lang.Object], qualifiers=[@Any, @Default], target=io.quarkus.arc.test.contexts.request.optimized.RequestContextInstancesTest$Boom]: java.lang.IllegalStateException: Boom
+14:28:17 PIT >> INFO : MINION : Oct 02, 2026 2:28:17 PM io.quarkus.arc.processor.Decorators createDecorator
+14:28:17 PIT >> INFO : MINION : INFO: The decorator io.quarkus.arc.test.decorators.delegate.DelegateSubtypeTest$C does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:17 PIT >> INFO : MINION : Oct 02, 2026 2:28:17 PM io.quarkus.arc.processor.Decorators createDecorator
+14:28:17 PIT >> INFO : MINION : INFO: The decorator io.quarkus.arc.test.decorators.delegate.DelegateSubtypeTest$D does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:20 PIT >> INFO : MINION : Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+14:28:21 PIT >> INFO : MINION : WARNING: A Java agent has been loaded dynamically (/Users/D061177/work/issta/quarkus-stp-qualification/m2/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar)
+14:28:21 PIT >> INFO : MINION : WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+14:28:21 PIT >> INFO : MINION : WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+14:28:21 PIT >> INFO : MINION : WARNING: Dynamic loading of agents will be disallowed by default in a future release
+14:28:21 PIT >> INFO : MINION : OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+14:28:23 PIT >> INFO : MINION : Oct 02, 2026 2:28:23 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:23 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:23 PIT >> INFO : MINION : 	- @Inject initializer io.quarkus.arc.test.injection.assignability.ListJdkElementTypeTest$InjectList#setLists()
+14:28:23 PIT >> INFO : MINION : Oct 02, 2026 2:28:23 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:23 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:23 PIT >> INFO : MINION : 	- @Inject initializer io.quarkus.arc.test.injection.assignability.OptionalAssignabilityTest$InjectOptionals#setOptionals()
+14:28:24 PIT >> INFO : MINION : Oct 02, 2026 2:28:24 PM io.quarkus.arc.processor.Injection getAllInjectionPoints
+14:28:24 PIT >> INFO : MINION : WARN: An injection field must be non-static and non-final - ignoring: io.quarkus.arc.test.injection.finalfield.FinalFieldInjectionTest$CombineHarvester#head
+14:28:24 PIT >> INFO : MINION : Oct 02, 2026 2:28:24 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:24 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:24 PIT >> INFO : MINION : 	- @Inject field io.quarkus.arc.test.injection.order.InjectionOrderTest$ConsumerSuperclass#dependency,
+14:28:24 PIT >> INFO : MINION : 	- @Inject initializer io.quarkus.arc.test.injection.order.InjectionOrderTest$ConsumerSuperclass#privateInit(),
+14:28:24 PIT >> INFO : MINION : 	- @Inject field io.quarkus.arc.test.injection.order.InjectionOrderTest$Consumer#dependency
+14:28:24 PIT >> INFO : MINION : 	- and 1 more - to see the full list, add quarkus.log.category."io.quarkus.arc.processor.BeanProcessor".level=DEBUG to your application.properties
+14:28:24 PIT >> INFO : MINION : Oct 02, 2026 2:28:24 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:24 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:24 PIT >> INFO : MINION : 	- Bean constructor void <init>(io.quarkus.arc.test.injection.privateconstructor.PrivateConstructorInjectionTest$Head head) on io.quarkus.arc.test.injection.privateconstructor.PrivateConstructorInjectionTest$CombineHarvester
+14:28:24 PIT >> INFO : MINION : Oct 02, 2026 2:28:24 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:24 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:24 PIT >> INFO : MINION : 	- @Inject field io.quarkus.arc.test.injection.privatefield.PrivateFieldInjectionTest$CombineHarvester#head
+14:28:24 PIT >> INFO : MINION : Oct 02, 2026 2:28:24 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:24 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:24 PIT >> INFO : MINION : 	- @Inject initializer io.quarkus.arc.test.injection.privateinitializer.PrivateInitializerInjectionTest$CombineHarvester#setHead()
+14:28:24 PIT >> INFO : MINION : Oct 02, 2026 2:28:24 PM io.quarkus.arc.processor.BeanArchives index
+14:28:24 PIT >> INFO : MINION : WARN: Failed to index missing.NonNull: Class does not exist in ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528
+14:28:24 PIT >> INFO : MINION : Oct 02, 2026 2:28:24 PM io.quarkus.arc.processor.IndexClassLookupUtils getClassByName
+14:28:24 PIT >> INFO : MINION : INFO: Class for name: missing.NonNull was not found in Jandex index. Please ensure the class is part of the index.
+14:28:24 PIT >> INFO : MINION : Oct 02, 2026 2:28:24 PM io.quarkus.arc.processor.Injection getAllInjectionPoints
+14:28:24 PIT >> INFO : MINION : WARN: An injection field must be non-static and non-final - ignoring: io.quarkus.arc.test.injection.staticfield.StaticFieldInjectionTest$CombineHarvester#head
+14:28:24 PIT >> INFO : MINION : Oct 02, 2026 2:28:24 PM io.quarkus.arc.processor.Injection getAllInjectionPoints
+14:28:24 PIT >> INFO : MINION : WARN: An initializer method must be non-static - ignoring: io.quarkus.arc.test.injection.staticmethod.StaticMethodInjectionTest$CombineHarvester#init()
+14:28:27 PIT >> INFO : MINION : Oct 02, 2026 2:28:27 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:27 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:27 PIT >> INFO : MINION : 	- Interceptor method io.quarkus.arc.test.interceptors.arcInvContext.ArcContextInterceptorPrivate#aroundInvoke(),
+14:28:27 PIT >> INFO : MINION : 	- Interceptor method io.quarkus.arc.test.interceptors.arcInvContext.ArcContextLifecycleInterceptorPrivate#postConstruct(),
+14:28:27 PIT >> INFO : MINION : 	- Interceptor method io.quarkus.arc.test.interceptors.arcInvContext.ArcContextLifecycleInterceptorPrivate#preDestroy()
+14:28:27 PIT >> INFO : MINION : Oct 02, 2026 2:28:27 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:27 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.aroundconstruct.AroundConstructAppliedViaConstructorTest$SimpleInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:27 PIT >> INFO : MINION : Oct 02, 2026 2:28:27 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:27 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.aroundconstruct.AroundConstructAppliedViaConstructorTest$OtherInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:27 PIT >> INFO : MINION : Oct 02, 2026 2:28:27 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:27 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.aroundconstruct.AroundConstructAppliedViaConstructorTest$SimpleInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:27 PIT >> INFO : MINION : Oct 02, 2026 2:28:27 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:27 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.aroundconstruct.AroundConstructAppliedViaConstructorTest$OtherInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:27 PIT >> INFO : MINION : Oct 02, 2026 2:28:27 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:27 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.aroundconstruct.AroundConstructAppliedViaConstructorTest$SimpleInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:27 PIT >> INFO : MINION : Oct 02, 2026 2:28:27 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:27 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.aroundconstruct.AroundConstructAppliedViaConstructorTest$OtherInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:27 PIT >> INFO : MINION : Oct 02, 2026 2:28:27 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:27 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.aroundconstruct.AroundConstructReturningObjectTest$SimpleInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:27 PIT >> INFO : MINION : Oct 02, 2026 2:28:27 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:27 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.aroundconstruct.AroundConstructTest$SimpleInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:27 PIT >> INFO : MINION : Oct 02, 2026 2:28:27 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:27 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.aroundconstruct.AroundConstructTest$SomeAroundInvokeInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:28 PIT >> INFO : MINION : Oct 02, 2026 2:28:28 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:28 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.bindings.repeatable.InheritedRepeatableInterceptorBindingTest$IncrementingInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:29 PIT >> INFO : MINION : Oct 02, 2026 2:28:29 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:29 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.bindings.repeatable.RepeatableInterceptorBindingTest$IncrementingInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:29 PIT >> INFO : MINION : Oct 02, 2026 2:28:29 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:29 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.bindings.repeatable.RepeatableInterceptorBindingWithNonbindingAttributeTest$IncrementingInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:30 PIT >> INFO : MINION : Oct 02, 2026 2:28:30 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:30 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.defaultmethod.MessageInterceptor does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:31 PIT >> INFO : MINION : Oct 02, 2026 2:28:31 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:31 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.inheritance.Interceptor2 does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:31 PIT >> INFO : MINION : Oct 02, 2026 2:28:31 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:31 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.inheritance.Interceptor1 does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:31 PIT >> INFO : MINION : Oct 02, 2026 2:28:31 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:31 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:31 PIT >> INFO : MINION : 	- @Inject initializer io.quarkus.arc.test.interceptors.initializer.subpkg.MySuperclass#privateInject()
+14:28:34 PIT >> INFO : MINION : Oct 02, 2026 2:28:34 PM io.quarkus.arc.processor.Methods$SubclassSkipPredicate test
+14:28:34 PIT >> INFO : MINION : WARN: A method runWorker() declared on io.quarkus.arc.test.interceptors.methodargs.base.BaseExecutor has a non-public parameter of type io.quarkus.arc.test.interceptors.methodargs.base.BaseExecutor$Worker which prevents it from being intercepted. Please change the parameter type visibility in order to make it intercepted.
+14:28:34 PIT >> INFO : MINION : Oct 02, 2026 2:28:34 PM io.quarkus.arc.processor.Interceptors createInterceptor
+14:28:34 PIT >> INFO : MINION : INFO: The interceptor io.quarkus.arc.test.interceptors.no.priority.SimpleInterceptorWithNoPriority does not declare any @Priority. It will be assigned a default priority value of 0.
+14:28:34 PIT >> INFO : MINION : Oct 02, 2026 2:28:34 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:34 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:34 PIT >> INFO : MINION : 	- Interceptor method io.quarkus.arc.test.interceptors.offload.ThreadOffloadInterceptorTest$ThirdInterceptor#aroundInvoke(),
+14:28:34 PIT >> INFO : MINION : 	- Interceptor method io.quarkus.arc.test.interceptors.offload.ThreadOffloadInterceptorTest$FirstInterceptor#aroundInvoke(),
+14:28:34 PIT >> INFO : MINION : 	- Interceptor method io.quarkus.arc.test.interceptors.offload.ThreadOffloadInterceptorTest$SecondInterceptor#aroundInvoke()
+14:28:35 PIT >> INFO : MINION : Oct 02, 2026 2:28:35 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:35 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:35 PIT >> INFO : MINION : 	- Interceptor method io.quarkus.arc.test.interceptors.privatemethod.PrivateInterceptorMethodTest$SimpleInterceptor#mySuperCoolAroundInvoke()
+14:28:48 PIT >> INFO : MINION : Oct 02, 2026 2:28:48 PM io.quarkus.arc.impl.DefaultAsyncObserverExceptionHandler handle
+14:28:48 PIT >> INFO : MINION : ERROR: Failure occurred while notifying an async Observer [method=io.quarkus.arc.test.observers.async.AsyncObserverExceptionTest$StringObserver#observeAsync1(java.lang.String)] for event of type java.lang.String
+14:28:48 PIT >> INFO : MINION : - to see the full stack trace, add quarkus.log.category."io.quarkus.arc.impl.DefaultAsyncObserverExceptionHandler".level=DEBUG to your application.properties
+14:28:48 PIT >> INFO : MINION : Oct 02, 2026 2:28:48 PM io.quarkus.arc.impl.DefaultAsyncObserverExceptionHandler handle
+14:28:48 PIT >> INFO : MINION : ERROR: Failure occurred while notifying an async Observer [method=io.quarkus.arc.test.observers.async.AsyncObserverExceptionTest$StringObserver#observeAsync3(java.lang.String)] for event of type java.lang.String
+14:28:48 PIT >> INFO : MINION : - to see the full stack trace, add quarkus.log.category."io.quarkus.arc.impl.DefaultAsyncObserverExceptionHandler".level=DEBUG to your application.properties
+14:28:48 PIT >> INFO : MINION : Oct 02, 2026 2:28:48 PM io.quarkus.arc.impl.DefaultAsyncObserverExceptionHandler handle
+14:28:48 PIT >> INFO : MINION : ERROR: Failure occurred while notifying an async Observer [method=io.quarkus.arc.test.observers.async.AsyncObserverExceptionTest$StringObserver#observeAsync1(java.lang.String)] for event of type java.lang.String
+14:28:48 PIT >> INFO : MINION : - to see the full stack trace, add quarkus.log.category."io.quarkus.arc.impl.DefaultAsyncObserverExceptionHandler".level=DEBUG to your application.properties
+14:28:51 PIT >> INFO : MINION : Oct 02, 2026 2:28:51 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:51 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:51 PIT >> INFO : MINION : 	- Producer field io.quarkus.arc.test.producer.privatemember.PrivateProducerFieldTest$HeadProducer#head
+14:28:51 PIT >> INFO : MINION : Oct 02, 2026 2:28:51 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:51 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:51 PIT >> INFO : MINION : 	- Producer method io.quarkus.arc.test.producer.privatemember.PrivateProducerMethodTest$HeadProducer#produce()
+14:28:51 PIT >> INFO : MINION : Oct 02, 2026 2:28:51 PM io.quarkus.arc.processor.BeanProcessor$PrivateMembersCollector log
+14:28:51 PIT >> INFO : MINION : INFO: Found unrecommended usage of private members (use package-private instead) in application beans:
+14:28:51 PIT >> INFO : MINION : 	- Producer method io.quarkus.arc.test.producer.staticProducers.StaticProducerTest$SomeProducer#produceLong(),
+14:28:51 PIT >> INFO : MINION : 	- Producer field io.quarkus.arc.test.producer.staticProducers.StaticProducerTest$SomeProducer#longField
+14:28:53 PIT >> INFO : Calculated coverage in 54 seconds.
+14:28:54 PIT >> INFO : Created 1 mutation test units
+14:33:17 PIT >> INFO : Completed in 318 seconds

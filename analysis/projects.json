@@ -63,6 +63,15 @@
       ],
       "mutationFormat": "per-class",
       "expected": {"totalTests": 1099, "killedMutations": 402, "safeMutations": 400, "unsafeMutations": 2}
+    },
+    {
+      "name": "quarkus",
+      "coverageMap": "quarkus/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "quarkus/results/per-class/*/mutations.xml"
+      ],
+      "mutationFormat": "per-class",
+      "expected": {"totalTests": 684, "killedMutations": 1083, "safeMutations": 1083, "unsafeMutations": 0}
     }
   ]
 }

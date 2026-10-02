@@ -6,10 +6,15 @@ protocol to Quarkus 3.40.1. Tests come from
 processor module. Inputs were frozen in commit
 `47d0c42194c7e1dbd658530e3db9b3faa311897a` before outcomes were inspected.
 
-The test-module-wide `targetTests` policy is structural and was frozen because
-processor behavior crosses test-package boundaries. See `config/subject.json`
-and `config/sample_classes.json`.
+The test-module-wide oracle is structural and was frozen because processor
+behavior crosses test-package boundaries. PIT receives the exact 572 test
+classes represented by the already-frozen 684-identity BASE runnable
+inventory. This is a scope translation, not a narrower oracle. See
+`config/runnable-test-inventory.json` and `docs/PIT_BLOCKER.md`.
 
-The exact-test split-module diagnostic succeeds, but the predeclared complete
-Arc scope fails in PIT's coverage minion. See `docs/PIT_BLOCKER.md` and
-`results/blocked.json`. The scope was not narrowed after observing the failure.
+The original broad `io.quarkus.arc.test.*` translation admitted 6,044 compiled
+test, helper, and Quarkus-generated classes to PIT discovery. A generated Arc
+bean then crashed the JUnit 5 finder before mutation. Translating the same
+frozen oracle to exact runnable class names resolves the discovery defect:
+all 16 sampled classes complete, producing 1,639 mutations and 1,083 KILLED
+mutations.

@@ -190,6 +190,10 @@
       "mutations": [],
       "unsafeCount": 0
     },
+    "quarkus": {
+      "mutations": [],
+      "unsafeCount": 0
+    },
     "spring-core": {
       "mutations": [
         {
@@ -881,6 +885,11 @@
         "sha256": "fb8ace81fab33aac953a26fa6d340ce5f486771295f2ef50a779f4be0981152a",
         "tests": 52
       },
+      "quarkus": {
+        "commit": "6ce99878508d792f3c2a2a7f9520b086a1c32cab",
+        "sha256": "75a90982597df90940ad93995fe5e33a30011bcbddc85d46452a599dbea61717",
+        "tests": 684
+      },
       "spring-core": {
         "commit": "25838a334c037b68e614f6b571af03a1f6bfec19",
         "sha256": "936becf03857bfa0d22958ca88053f4c8bfabc85651f822f4ef51837bb2813b5",
@@ -1002,6 +1011,29 @@
         ],
         "killedMutations": 94
       },
+      "quarkus": {
+        "aggregateSha256": "780fa8bef9a0457c8fe48b9dcaefcf8b3c0bc390f5572a4e15d7f917816106f6",
+        "fileCount": 16,
+        "files": [
+          "quarkus/results/per-class/io.quarkus.arc.processor.AnnotationLiteralProcessor/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.Annotations/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.BeanArchives/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.BeanResolverImpl/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.ClientProxyGenerator/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.ComponentsProviderGenerator/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.ContextInstancesGenerator/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.DecoratorGenerator/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.Injection/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.InjectionPointInfo/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.InterceptorGenerator/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.ObserverGenerator/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.ObserverInfo/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.Types/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl/mutations.xml",
+          "quarkus/results/per-class/io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint/mutations.xml"
+        ],
+        "killedMutations": 1083
+      },
       "spring-core": {
         "aggregateSha256": "d6ec4175c35d12d721b661917b6347f3f5041d6d3ef2eb9e9ded1630f8ba81b2",
         "fileCount": 18,
@@ -1060,12 +1092,12 @@
   },
   "resolutionSummary": {
     "idOccurrencesWithMultipleCoverageEntries": 1828,
-    "idOccurrencesWithSingleCoverageEntry": 216199,
+    "idOccurrencesWithSingleCoverageEntry": 278387,
     "maxEntriesPerIdOccurrence": 28,
-    "pitKillingIdOccurrences": 218027,
-    "resolvedCoverageEntryOccurrences": 224557,
-    "uniqueNormalizedPitKillingIds": 4372,
-    "uniqueRawPitKillingIds": 7253
+    "pitKillingIdOccurrences": 280215,
+    "resolvedCoverageEntryOccurrences": 286745,
+    "uniqueNormalizedPitKillingIds": 5038,
+    "uniqueRawPitKillingIds": 7919
   },
   "schemaVersion": 1,
   "totalUnsafeMutations": 25,

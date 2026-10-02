@@ -1,0 +1,17 @@
+{
+  "project": "Quarkus Arc diagnostic",
+  "classes": [
+    {
+      "fqn": "io.quarkus.arc.processor.Annotations",
+      "targetTests": "io.quarkus.arc.test.bean.destroy.*",
+      "status": "FAILED",
+      "reason": "exit 1",
+      "mutations": 0,
+      "elapsedSeconds": 24.26
+    }
+  ],
+  "ok": 0,
+  "failed": 1,
+  "timeout": 0,
+  "totalMutations": 0
+}

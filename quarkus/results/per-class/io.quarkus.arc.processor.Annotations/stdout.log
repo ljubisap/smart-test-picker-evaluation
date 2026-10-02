@@ -5,14 +5,14 @@
 [INFO] No need for inlining
 [INFO] Scalpel 0.4.2 activated (mode=trim)
 [INFO] Scalpel: No base branch configured or detected, building all modules
-[INFO] Scalpel: analysis took 2661ms (repoOpen=2660ms)
+[INFO] Scalpel: analysis took 2762ms (repoOpen=2760ms)
 [WARNING] This build will only read from the build cache, since the clean lifecycle is not part of the build invocation.
-[INFO]
+[INFO] 
 [INFO] ----------------------< io.quarkus.arc:arc-tests >----------------------
 [INFO] Building ArC - Tests 3.40.1
 [INFO]   from pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
-[INFO]
+[INFO] 
 [INFO] --- pitest:1.17.4:mutationCoverage (default-cli) @ arc-tests ---
 [INFO] Adding source root /Users/D061177/work/issta/quarkus-stp-qualification/subject/independent-projects/arc/tests/../processor/src/main/java
 [INFO] Adding test root /Users/D061177/work/issta/quarkus-stp-qualification/subject/independent-projects/arc/tests/src/test/kotlin
@@ -65,58 +65,82 @@
 [INFO] Adding org.pitest:pitest to SUT classpath
 [INFO] Mutating from /Users/D061177/work/issta/quarkus-stp-qualification/subject/independent-projects/arc/tests/target/classes
 [INFO] Replacing properties in argLine -Djava.io.tmpdir="/Users/D061177/work/issta/quarkus-stp-qualification/subject/independent-projects/arc/tests/target"
-/-\|/-\|/-\|/-\|/-\|/-\|[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\/================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+>> Generated 8 Killed 1 (13%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 7 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 8 Killed 1 (13%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 7 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 1 Killed 1 (100%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 4 Killed 2 (50%)
+> KILLED 2 SURVIVED 2 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+>> Generated 41 Killed 17 (41%)
+> KILLED 17 SURVIVED 14 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 10 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 29 Killed 10 (34%)
+> KILLED 10 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 19 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 2 Killed 1 (50%)
+> KILLED 1 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 0 
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator
+>> Generated 8 Killed 6 (75%)
+> KILLED 6 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+> NO_COVERAGE 2 
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : < 1 second
+> scan classpath : 1 seconds
+> coverage and dependency analysis : 53 seconds
+> build mutation tests : < 1 second
+> run mutation analysis : 2 minutes and 30 seconds
+--------------------------------------------------------------------------------
+> Total  : 3 minutes and 26 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage (for mutated classes only): 97/180 (54%)
+>> 572 tests examined
+>> Generated 101 mutations Killed 39 (39%)
+>> Mutations with no coverage 45. Test strength 70%
+>> Ran 4017 tests (39.77 tests per mutation)
+Enhanced functionality available at https://www.arcmutate.com/
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:12 min
-[INFO] Finished at: 2026-10-01T22:20:11+02:00
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:36 min
+[INFO] Finished at: 2026-10-02T12:16:56+02:00
 [INFO] ------------------------------------------------------------------------
 [INFO] Njord session closed
 [INFO] 1 goals, 1 executed
-[ERROR] Failed to execute goal org.pitest:pitest-maven:1.17.4:mutationCoverage (default-cli) on project arc-tests: Execution default-cli of goal org.pitest:pitest-maven:1.17.4:mutationCoverage failed: Coverage generation minion exited abnormally! (UNKNOWN_ERROR)
-[ERROR]
-[ERROR] Please copy and paste the information and the complete stacktrace below when reporting an issue
-[ERROR] VM : OpenJDK 64-Bit Server VM
-[ERROR] Vendor : SAP SE
-[ERROR] Version : 21.0.12.1+1-LTS
-[ERROR] Uptime : 82274
-[ERROR] Input ->
-[ERROR]  1 : --enable-native-access=ALL-UNNAMED
-[ERROR]  2 : -Dmaven.wagon.httpconnectionManager.ttlSeconds=120
-[ERROR]  3 : -Dmaven.wagon.http.retryHandler.requestSentEnabled=true
-[ERROR]  4 : -Dmaven.wagon.http.retryHandler.count=10
-[ERROR]  5 : -Xmx5g
-[ERROR]  6 : -XX:ActiveProcessorCount=8
-[ERROR]  7 : -Xmx4g
-[ERROR]  8 : -Dclassworlds.conf=/Users/D061177/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/bin/m2.conf
-[ERROR]  9 : -Dmaven.home=/Users/D061177/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f
-[ERROR]  10 : -Dlibrary.jansi.path=/Users/D061177/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/lib/jansi-native
-[ERROR]  11 : -Dmaven.multiModuleProjectDirectory=/Users/D061177/work/issta/quarkus-stp-qualification/subject
-[ERROR] BootClassPathSupported : false
-[ERROR]
-[ERROR]
-[ERROR] Please copy and paste the information and the complete stacktrace below when reporting an issue
-[ERROR] VM : OpenJDK 64-Bit Server VM
-[ERROR] Vendor : SAP SE
-[ERROR] Version : 21.0.12.1+1-LTS
-[ERROR] Uptime : 82274
-[ERROR] Input ->
-[ERROR]  1 : --enable-native-access=ALL-UNNAMED
-[ERROR]  2 : -Dmaven.wagon.httpconnectionManager.ttlSeconds=120
-[ERROR]  3 : -Dmaven.wagon.http.retryHandler.requestSentEnabled=true
-[ERROR]  4 : -Dmaven.wagon.http.retryHandler.count=10
-[ERROR]  5 : -Xmx5g
-[ERROR]  6 : -XX:ActiveProcessorCount=8
-[ERROR]  7 : -Xmx4g
-[ERROR]  8 : -Dclassworlds.conf=/Users/D061177/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/bin/m2.conf
-[ERROR]  9 : -Dmaven.home=/Users/D061177/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f
-[ERROR]  10 : -Dlibrary.jansi.path=/Users/D061177/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/lib/jansi-native
-[ERROR]  11 : -Dmaven.multiModuleProjectDirectory=/Users/D061177/work/issta/quarkus-stp-qualification/subject
-[ERROR] BootClassPathSupported : false
-[ERROR] -> [Help 1]
-[ERROR]
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR]
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
