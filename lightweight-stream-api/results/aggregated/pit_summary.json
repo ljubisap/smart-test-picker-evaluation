@@ -1,0 +1,22 @@
+{
+  "project": "Lightweight-Stream-API",
+  "sampledClasses": 18,
+  "successfulClasses": 17,
+  "emptyClasses": 1,
+  "failedClasses": 0,
+  "timedOutClasses": 0,
+  "totalMutations": 496,
+  "statusCounts": {
+    "KILLED": 419,
+    "SURVIVED": 61,
+    "TIMED_OUT": 10,
+    "MEMORY_ERROR": 5,
+    "NO_COVERAGE": 1
+  },
+  "emptyClassDetails": [
+    {
+      "class": "com.annimon.stream.iterator.PrimitiveExtIterator",
+      "reason": "PIT reported no mutations for the frozen class"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "rule": "unchanged constructor-only mitigation",
+  "killedMutations": 419,
+  "safe": 419,
+  "inclusivenessPct": 100.0,
+  "avgSelected": 20.75,
+  "selectionRatePct": 1.57,
+  "reductionPct": 98.43,
+  "recoveries": 0,
+  "interpretation": "No original mutation miss existed to recover; the unchanged rule increases average selection from 19.19 to 20.75."
+}

@@ -39,10 +39,12 @@ for i,item in enumerate(items,1):
             if wrong: reason=f'{len(wrong)} wrong-class mutations'
             else: shutil.copy2(candidates[0],out/'mutations.xml'); status='OK'; reason=None; count=len(mutations)
         elif run.returncode==0: reason=f'expected one mutations.xml, found {len(candidates)}'
+        elif 'No mutations found.' in run.stdout or 'No mutations found.' in run.stderr:
+            status='EMPTY'; reason='PIT reported no mutations for the frozen class'
     except subprocess.TimeoutExpired as exc:
         (out/'stdout.log').write_text(exc.stdout or ''); (out/'stderr.log').write_text(exc.stderr or '')
         status='TIMEOUT'; reason=f'{a.timeout}s'; count=0
     records.append({'fqn':item['fqn'],'targetTests':item['targetTests'],'status':status,'reason':reason,'mutations':count,'elapsedSeconds':round(time.time()-started,2)})
     print(f"[{i}/{len(items)}] {item['fqn']}: {status} ({count})",flush=True)
-summary={'project':cfg['project'],'classes':records,'ok':sum(x['status']=='OK' for x in records),'failed':sum(x['status']=='FAILED' for x in records),'timeout':sum(x['status']=='TIMEOUT' for x in records),'totalMutations':sum(x['mutations'] for x in records)}
+summary={'project':cfg['project'],'classes':records,'ok':sum(x['status']=='OK' for x in records),'empty':sum(x['status']=='EMPTY' for x in records),'failed':sum(x['status']=='FAILED' for x in records),'timeout':sum(x['status']=='TIMEOUT' for x in records),'totalMutations':sum(x['mutations'] for x in records)}
 (a.results/'pit-run-summary.json').write_text(json.dumps(summary,indent=2)+'\n'); print(json.dumps(summary,indent=2))

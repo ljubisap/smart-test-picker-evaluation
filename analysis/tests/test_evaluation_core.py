@@ -180,6 +180,30 @@ class TestResolution(unittest.TestCase):
         self.assertEqual(killing.resolution_mode, "class-container-multiple")
         self.assertEqual(set(killing.coverage_keys), set(test_mappings))
 
+    def test_legacy_junit4_class_container_resolves_by_exact_fqn(self):
+        test_mappings = {
+            "RatingsTest#testRatings_aaa1111": {"classes": [], "methods": []},
+        }
+        identities = {
+            "RatingsTest#testRatings_aaa1111": {
+                "testClassFqn": "com.example.RatingsTest"
+            }
+        }
+        raw = [RawMutation(
+            mutation_id="test|Foo|bar|(V)|1|Mutator|indexes=unknown|blocks=unknown",
+            mutated_class="Foo", mutated_method="bar", method_description="(V)",
+            line_number=1, mutator="Mutator", indexes=None, blocks=None,
+            raw_killing_test_ids=("com.example.RatingsTest",),
+            source_xml="test.xml", xml_ordinal=0,
+        )]
+        resolved = resolve_killing_tests(
+            raw, test_mappings, build_base_to_keys(test_mappings),
+            build_class_to_keys(test_mappings, identities),
+        )
+        killing = resolved[0].killing_tests[0]
+        self.assertEqual(killing.normalized_id, "com.example.RatingsTest")
+        self.assertEqual(killing.coverage_keys, ("RatingsTest#testRatings_aaa1111",))
+
     def test_unparseable_pit_id_hard_fail(self):
         raw = [RawMutation(
             mutation_id="test|Foo|bar|(V)|1|Mutator|indexes=unknown|blocks=unknown",

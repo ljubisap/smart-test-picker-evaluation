@@ -1,0 +1,16 @@
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+    tasks.withType(JavaCompile).configureEach {
+        sourceCompatibility = '8'
+        targetCompatibility = '8'
+    }
+    plugins.withId('jacoco') {
+        tasks.withType(Test).configureEach {
+            maxParallelForks = 1
+            jvmArgs '-XX:ActiveProcessorCount=8'
+            extensions.getByType(org.gradle.testing.jacoco.plugins.JacocoTaskExtension).enabled = false
+        }
+    }
+}

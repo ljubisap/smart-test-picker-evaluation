@@ -301,6 +301,13 @@ def resolve_killing_tests(
                 # class; never infer from a simple class name.
                 class_match = re.search(r'\[class:([^\]]+)\]', raw_pit_id)
                 class_name = class_match.group(1) if class_match else None
+                # PIT's built-in JUnit 4 integration can expose a whole test
+                # class (for example a runner/container unit) as the killing
+                # identity. Accept only a syntactically exact Java FQN and
+                # resolve it through BASE execution metadata.
+                if class_name is None and re.fullmatch(
+                        r'[A-Za-z_$][\w$]*(?:\.[A-Za-z_$][\w$]*)+', raw_pit_id):
+                    class_name = raw_pit_id
                 container_keys = (class_to_keys or {}).get(class_name or "")
                 if not container_keys:
                     raise ValueError(

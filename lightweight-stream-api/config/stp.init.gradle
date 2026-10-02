@@ -1,0 +1,38 @@
+initscript {
+    repositories {
+        maven { url = uri('/Users/D061177/work/issta/quarkus-stp-qualification/stp-m2') }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.sap.oss.smart-test-picker:smart-test-picker:0.1.0'
+    }
+}
+
+gradle.beforeProject { project ->
+    if (project.path in [':stream', ':streamTest']) {
+        project.pluginManager.apply('jacoco')
+        project.pluginManager.apply(com.sap.oss.smarttestpicker.SmartTestPickerPlugin)
+    }
+}
+
+gradle.afterProject { project, state ->
+    if (project.path in [':stream', ':streamTest'] && !state.failure) {
+        project.repositories.maven { url = uri('/Users/D061177/work/issta/quarkus-stp-qualification/stp-m2') }
+        project.repositories.mavenCentral()
+        project.dependencies.add('testRuntimeOnly', project.files(
+            '/Users/D061177/work/issta/quarkus-stp-qualification/stp-m2/com/sap/oss/smart-test-picker/smart-test-picker-core/0.1.0/smart-test-picker-core-0.1.0.jar'))
+        project.dependencies.add('testRuntimeOnly', 'org.junit.vintage:junit-vintage-engine:5.9.3')
+        project.dependencies.add('testRuntimeOnly', 'org.junit.platform:junit-platform-launcher:1.9.3')
+        project.extensions.getByType(org.gradle.testing.jacoco.plugins.JacocoPluginExtension).toolVersion = '0.8.13'
+        project.tasks.withType(JavaCompile).configureEach {
+            sourceCompatibility = '8'
+            targetCompatibility = '8'
+        }
+        project.tasks.withType(Test).configureEach {
+            useJUnitPlatform()
+            maxParallelForks = 1
+            jvmArgs '-XX:ActiveProcessorCount=8'
+            reports.junitXml.required = true
+        }
+    }
+}

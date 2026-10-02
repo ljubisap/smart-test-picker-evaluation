@@ -1,0 +1,48 @@
+{
+  "project": "lightweight-stream-api",
+  "logicalTests": 1318,
+  "killedMutations": 419,
+  "selectors": {
+    "stp": {
+      "name": "STP",
+      "safe": 419,
+      "unsafe": 0,
+      "total": 419,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 19.19,
+      "selectionRatePct": 1.46,
+      "reductionPct": 98.54
+    },
+    "constructorOnlyMitigation": {
+      "name": "Constructor-only mitigation",
+      "safe": 419,
+      "unsafe": 0,
+      "total": 419,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 20.75,
+      "selectionRatePct": 1.57,
+      "reductionPct": 98.43
+    },
+    "classLevel": {
+      "name": "Class-level only",
+      "safe": 419,
+      "unsafe": 0,
+      "total": 419,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 180,
+      "selectionRatePct": 13.66,
+      "reductionPct": 86.34
+    },
+    "randomEqualBudget": {
+      "name": "Random equal-budget",
+      "trials": 1000,
+      "seed": 42,
+      "inclusivenessPct": 18.12,
+      "inclusivenessStdPct": 1.22,
+      "analyticalInclusivenessPct": 18.18,
+      "avgSelected": 19.19,
+      "selectionRatePct": 1.46,
+      "reductionPct": 98.54
+    }
+  }
+}

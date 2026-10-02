@@ -1,0 +1,26 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+22:45:45 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+22:45:45 PIT >> INFO : Created 0 mutation test units in pre scan
+Exception in thread "main" org.pitest.help.PitHelpError: No mutations found. This probably means there is an issue with either the supplied classpath or filters.
+See https://pitest.org for more details.
+	at org.pitest.mutationtest.tooling.MutationCoverage.checkMutationsFound(MutationCoverage.java:376)
+	at org.pitest.mutationtest.tooling.MutationCoverage.runReport(MutationCoverage.java:130)
+	at org.pitest.mutationtest.tooling.EntryPoint.execute(EntryPoint.java:138)
+	at org.pitest.mutationtest.tooling.EntryPoint.execute(EntryPoint.java:64)
+	at org.pitest.mutationtest.commandline.MutationCoverageReport.runReport(MutationCoverageReport.java:98)
+	at org.pitest.mutationtest.commandline.MutationCoverageReport.main(MutationCoverageReport.java:45)
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':stream:pitest'.
+> Process 'command '/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5s

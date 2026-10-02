@@ -1,0 +1,23 @@
+{
+  "killedMutations": 419,
+  "stpMisses": 0,
+  "footprintCounts": {"A": 0, "B": 0, "C": 0, "MIXED": 0},
+  "causalMechanismCounts": {
+    "EARLY_EXCEPTION_PROBE_SHADOWING": 0,
+    "PRE_TEST_ATTRIBUTION_GAP": 0,
+    "LEGACY_TEST_EXECUTION_ATTRIBUTION": 0,
+    "OTHER_KNOWN_MECHANISM": 0,
+    "NEW_CAUSAL_MECHANISM": 0
+  },
+  "misses": [],
+  "implementationDefectsOutsideMutationScope": [
+    {
+      "component": "TestClassFilter",
+      "affectedModule": "streamTest",
+      "symptom": "All 110 runnable streamTest identities become NO_COVERAGE although JaCoCo XML contains coverage of its published com.annimon.stream.test production classes.",
+      "cause": "The generic production-edge filter classifies every FQN containing .test. as test infrastructure.",
+      "treatmentChanged": false,
+      "effectOnFrozenMutationStudy": "None: the pre-frozen mutation module and sampled production population are stream, not the separately published streamTest helper library."
+    }
+  ]
+}

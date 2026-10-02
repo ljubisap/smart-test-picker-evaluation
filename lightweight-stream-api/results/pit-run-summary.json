@@ -1,0 +1,154 @@
+{
+  "project": "Lightweight-Stream-API",
+  "classes": [
+    {
+      "fqn": "com.annimon.stream.Stream",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 80,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.IntStream",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 64,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.LongStream",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 64,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.DoubleStream",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 63,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.Optional",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 40,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.Collectors",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 3,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.Exceptional",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 35,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.internal.Operators",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 10,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.internal.SpinedBuffer",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 73,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.iterator.LsaExtIterator",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 9,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.iterator.PrimitiveExtIterator",
+      "targetTests": "com.annimon.stream.*",
+      "status": "EMPTY",
+      "reason": "PIT reported no mutations for the frozen class",
+      "mutations": 0,
+      "elapsedSeconds": 5.37
+    },
+    {
+      "fqn": "com.annimon.stream.operator.ObjFilter",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 9,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.operator.ObjFlatMap",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 12,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.operator.ObjSorted",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 3,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.operator.ObjSlidingWindow",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 11,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.operator.IntRangeClosed",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 9,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.operator.LongScan",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 2,
+      "elapsedSeconds": 0
+    },
+    {
+      "fqn": "com.annimon.stream.operator.DoubleTakeWhile",
+      "targetTests": "com.annimon.stream.*",
+      "status": "OK",
+      "reason": "reused validated per-class output",
+      "mutations": 9,
+      "elapsedSeconds": 0
+    }
+  ],
+  "ok": 17,
+  "empty": 1,
+  "failed": 0,
+  "timeout": 0,
+  "totalMutations": 496
+}
