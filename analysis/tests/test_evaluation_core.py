@@ -130,6 +130,20 @@ class TestNormalization(unittest.TestCase):
     def test_unparseable_returns_none(self):
         self.assertIsNone(normalize_pit_test_name("some garbage"))
 
+    def test_junit3_legacy_identifier(self):
+        pit_id = (
+            "org.joda.time.TestDateTimeUtils.testSystemMillis"
+            "(org.joda.time.TestDateTimeUtils)"
+        )
+        self.assertEqual(
+            normalize_pit_test_name(pit_id),
+            "TestDateTimeUtils#testSystemMillis",
+        )
+
+    def test_junit3_legacy_identifier_rejects_mismatched_class(self):
+        pit_id = "example.FooTest.testThing(example.OtherTest)"
+        self.assertIsNone(normalize_pit_test_name(pit_id))
+
     def test_parameterized_multiple_coverage_keys(self):
         """One normalized ID can map to multiple hash-suffixed coverage keys."""
         test_mappings = {

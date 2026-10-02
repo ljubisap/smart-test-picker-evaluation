@@ -1,0 +1,8 @@
+{
+  "project": "Joda-Time",
+  "mutationOccurrences": 896,
+  "uniqueSelectorCases": 244,
+  "exactMatches": 244,
+  "mismatches": 0,
+  "differences": []
+}

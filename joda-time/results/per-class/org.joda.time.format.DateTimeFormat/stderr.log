@@ -1,0 +1,15 @@
+21:53:08 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+21:53:08 PIT >> INFO : Created 1 mutation test units in pre scan
+21:53:08 PIT >> INFO : Sending 65 test classes to minion
+21:53:08 PIT >> INFO : Sent tests to minion
+21:53:09 PIT >> INFO : Calculated coverage in 1 seconds.
+21:53:09 PIT >> INFO : Created 1 mutation test units
+21:53:13 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:53:17 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:53:20 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:53:24 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:53:28 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:53:31 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:53:35 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:53:40 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+21:53:41 PIT >> INFO : Completed in 32 seconds

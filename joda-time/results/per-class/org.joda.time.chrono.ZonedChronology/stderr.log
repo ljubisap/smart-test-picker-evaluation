@@ -1,0 +1,7 @@
+21:51:51 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+21:51:51 PIT >> INFO : Created 1 mutation test units in pre scan
+21:51:51 PIT >> INFO : Sending 68 test classes to minion
+21:51:51 PIT >> INFO : Sent tests to minion
+21:51:54 PIT >> INFO : Calculated coverage in 2 seconds.
+21:51:54 PIT >> INFO : Created 1 mutation test units
+21:51:55 PIT >> INFO : Completed in 4 seconds

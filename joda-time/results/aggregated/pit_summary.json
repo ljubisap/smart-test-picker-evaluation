@@ -1,0 +1,127 @@
+{
+  "timestamp": "2026-10-02T21:59:03.033765",
+  "project": "Joda-Time",
+  "commit": "5ffcf3c2bce34c95207ef2746229a40a932afeee",
+  "total_classes": 18,
+  "ok": 18,
+  "failed": 0,
+  "timeout": 0,
+  "total_mutations": 1241,
+  "status_counts": {
+    "KILLED": 896,
+    "SURVIVED": 199,
+    "NO_COVERAGE": 132,
+    "TIMED_OUT": 14
+  },
+  "total_elapsed_s": 514.9713735580444,
+  "results": [
+    {
+      "fqn": "org.joda.time.DateTimeUtils",
+      "status": "OK",
+      "mutations": 71,
+      "elapsed_s": 26.119056940078735
+    },
+    {
+      "fqn": "org.joda.time.Interval",
+      "status": "OK",
+      "mutations": 56,
+      "elapsed_s": 11.036211013793945
+    },
+    {
+      "fqn": "org.joda.time.MutablePeriod",
+      "status": "OK",
+      "mutations": 55,
+      "elapsed_s": 11.79996395111084
+    },
+    {
+      "fqn": "org.joda.time.Partial",
+      "status": "OK",
+      "mutations": 147,
+      "elapsed_s": 13.959989070892334
+    },
+    {
+      "fqn": "org.joda.time.chrono.GJChronology",
+      "status": "OK",
+      "mutations": 70,
+      "elapsed_s": 15.619686126708984
+    },
+    {
+      "fqn": "org.joda.time.chrono.ZonedChronology",
+      "status": "OK",
+      "mutations": 61,
+      "elapsed_s": 9.677841186523438
+    },
+    {
+      "fqn": "org.joda.time.chrono.IslamicChronology",
+      "status": "OK",
+      "mutations": 119,
+      "elapsed_s": 22.586378812789917
+    },
+    {
+      "fqn": "org.joda.time.convert.ConverterManager",
+      "status": "OK",
+      "mutations": 72,
+      "elapsed_s": 7.2769269943237305
+    },
+    {
+      "fqn": "org.joda.time.convert.ConverterSet",
+      "status": "OK",
+      "mutations": 82,
+      "elapsed_s": 11.10720705986023
+    },
+    {
+      "fqn": "org.joda.time.convert.StringConverter",
+      "status": "OK",
+      "mutations": 62,
+      "elapsed_s": 6.93580174446106
+    },
+    {
+      "fqn": "org.joda.time.field.FieldUtils",
+      "status": "OK",
+      "mutations": 107,
+      "elapsed_s": 6.9363439083099365
+    },
+    {
+      "fqn": "org.joda.time.field.OffsetDateTimeField",
+      "status": "OK",
+      "mutations": 33,
+      "elapsed_s": 6.5416717529296875
+    },
+    {
+      "fqn": "org.joda.time.field.UnsupportedDateTimeField",
+      "status": "OK",
+      "mutations": 19,
+      "elapsed_s": 5.88265323638916
+    },
+    {
+      "fqn": "org.joda.time.format.DateTimeFormat",
+      "status": "OK",
+      "mutations": 117,
+      "elapsed_s": 37.81416177749634
+    },
+    {
+      "fqn": "org.joda.time.format.DateTimeParserBucket",
+      "status": "OK",
+      "mutations": 84,
+      "elapsed_s": 296.0727729797363
+    },
+    {
+      "fqn": "org.joda.time.format.PeriodFormat",
+      "status": "OK",
+      "mutations": 23,
+      "elapsed_s": 7.5222859382629395
+    },
+    {
+      "fqn": "org.joda.time.tz.CachedDateTimeZone",
+      "status": "OK",
+      "mutations": 30,
+      "elapsed_s": 10.703700065612793
+    },
+    {
+      "fqn": "org.joda.time.tz.ZoneInfoProvider",
+      "status": "OK",
+      "mutations": 33,
+      "elapsed_s": 7.378720998764038
+    }
+  ]
+}

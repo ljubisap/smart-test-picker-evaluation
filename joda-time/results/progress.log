@@ -1,0 +1,54 @@
+[21:49:35] === PIT Evaluation Run  --  18 classes ===
+[21:49:35] [1/18] Starting: org.joda.time.DateTimeUtils (LOC=600, tests=org.joda.time.Test*)
+[21:49:44] [1/18] FAILED: org.joda.time.DateTimeUtils (9s)  --  exit code 1
+[21:49:44] [2/18] Starting: org.joda.time.Interval (LOC=565, tests=org.joda.time.Test*)
+[21:49:50] [2/18] FAILED: org.joda.time.Interval (5s)  --  exit code 1
+[21:49:50] [3/18] Starting: org.joda.time.MutablePeriod (LOC=1020, tests=org.joda.time.Test*)
+[21:49:59] [3/18] FAILED: org.joda.time.MutablePeriod (9s)  --  exit code 1
+[21:49:59] [4/18] Starting: org.joda.time.Partial (LOC=1041, tests=org.joda.time.Test*)
+[21:50:04] [4/18] FAILED: org.joda.time.Partial (6s)  --  exit code 1
+[21:50:04] [5/18] Starting: org.joda.time.chrono.GJChronology (LOC=1214, tests=org.joda.time.chrono.*)
+[21:50:10] [5/18] FAILED: org.joda.time.chrono.GJChronology (6s)  --  exit code 1
+[21:50:10] --- CHECKPOINT 5/18: OK=0, FAILED=5, TIMEOUT=0 ---
+[21:50:10] [6/18] Starting: org.joda.time.chrono.ZonedChronology (LOC=703, tests=org.joda.time.chrono.*)
+[21:50:27] === PIT Evaluation Run  --  18 classes ===
+[21:50:27] [1/18] Starting: org.joda.time.DateTimeUtils (LOC=600, tests=org.joda.time.Test*)
+[21:50:53] [1/18] DONE: org.joda.time.DateTimeUtils (26s, 71 mutations)
+[21:50:53] [2/18] Starting: org.joda.time.Interval (LOC=565, tests=org.joda.time.Test*)
+[21:51:04] [2/18] DONE: org.joda.time.Interval (11s, 56 mutations)
+[21:51:04] [3/18] Starting: org.joda.time.MutablePeriod (LOC=1020, tests=org.joda.time.Test*)
+[21:51:16] [3/18] DONE: org.joda.time.MutablePeriod (12s, 55 mutations)
+[21:51:16] [4/18] Starting: org.joda.time.Partial (LOC=1041, tests=org.joda.time.Test*)
+[21:51:30] [4/18] DONE: org.joda.time.Partial (14s, 147 mutations)
+[21:51:30] [5/18] Starting: org.joda.time.chrono.GJChronology (LOC=1214, tests=org.joda.time.chrono.*)
+[21:51:46] [5/18] DONE: org.joda.time.chrono.GJChronology (16s, 70 mutations)
+[21:51:46] --- CHECKPOINT 5/18: OK=5, FAILED=0, TIMEOUT=0 ---
+[21:51:46] [6/18] Starting: org.joda.time.chrono.ZonedChronology (LOC=703, tests=org.joda.time.chrono.*)
+[21:51:55] [6/18] DONE: org.joda.time.chrono.ZonedChronology (10s, 61 mutations)
+[21:51:55] [7/18] Starting: org.joda.time.chrono.IslamicChronology (LOC=603, tests=org.joda.time.chrono.*)
+[21:52:18] [7/18] DONE: org.joda.time.chrono.IslamicChronology (23s, 119 mutations)
+[21:52:18] [8/18] Starting: org.joda.time.convert.ConverterManager (LOC=607, tests=org.joda.time.convert.*)
+[21:52:25] [8/18] DONE: org.joda.time.convert.ConverterManager (7s, 72 mutations)
+[21:52:25] [9/18] Starting: org.joda.time.convert.ConverterSet (LOC=328, tests=org.joda.time.convert.*)
+[21:52:37] [9/18] DONE: org.joda.time.convert.ConverterSet (11s, 82 mutations)
+[21:52:37] [10/18] Starting: org.joda.time.convert.StringConverter (LOC=251, tests=org.joda.time.convert.*)
+[21:52:43] [10/18] DONE: org.joda.time.convert.StringConverter (7s, 62 mutations)
+[21:52:43] --- CHECKPOINT 10/18: OK=10, FAILED=0, TIMEOUT=0 ---
+[21:52:43] [11/18] Starting: org.joda.time.field.FieldUtils (LOC=372, tests=org.joda.time.field.*)
+[21:52:50] [11/18] DONE: org.joda.time.field.FieldUtils (7s, 107 mutations)
+[21:52:50] [12/18] Starting: org.joda.time.field.OffsetDateTimeField (LOC=235, tests=org.joda.time.field.*)
+[21:52:57] [12/18] DONE: org.joda.time.field.OffsetDateTimeField (7s, 33 mutations)
+[21:52:57] [13/18] Starting: org.joda.time.field.UnsupportedDateTimeField (LOC=599, tests=org.joda.time.field.*)
+[21:53:03] [13/18] DONE: org.joda.time.field.UnsupportedDateTimeField (6s, 19 mutations)
+[21:53:03] [14/18] Starting: org.joda.time.format.DateTimeFormat (LOC=907, tests=org.joda.time.format.*)
+[21:53:41] [14/18] DONE: org.joda.time.format.DateTimeFormat (38s, 117 mutations)
+[21:53:41] [15/18] Starting: org.joda.time.format.DateTimeParserBucket (LOC=622, tests=org.joda.time.format.*)
+[21:58:37] [15/18] DONE: org.joda.time.format.DateTimeParserBucket (296s, 84 mutations)
+[21:58:37] --- CHECKPOINT 15/18: OK=15, FAILED=0, TIMEOUT=0 ---
+[21:58:37] [16/18] Starting: org.joda.time.format.PeriodFormat (LOC=408, tests=org.joda.time.format.*)
+[21:58:44] [16/18] DONE: org.joda.time.format.PeriodFormat (8s, 23 mutations)
+[21:58:44] [17/18] Starting: org.joda.time.tz.CachedDateTimeZone (LOC=223, tests=org.joda.time.tz.*)
+[21:58:55] [17/18] DONE: org.joda.time.tz.CachedDateTimeZone (11s, 30 mutations)
+[21:58:55] [18/18] Starting: org.joda.time.tz.ZoneInfoProvider (LOC=305, tests=org.joda.time.tz.*)
+[21:59:03] [18/18] DONE: org.joda.time.tz.ZoneInfoProvider (7s, 33 mutations)
+[21:59:03] === DONE: OK=18, FAILED=0, TIMEOUT=0, mutations=1241 ===

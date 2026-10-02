@@ -1,0 +1,11 @@
+{
+  "rule": "unchanged constructor-only mitigation",
+  "killedMutations": 896,
+  "safe": 896,
+  "inclusivenessPct": 100.0,
+  "avgSelected": 157.88,
+  "selectionRatePct": 3.73,
+  "reductionPct": 96.27,
+  "recoveries": 0,
+  "interpretation": "There were no original STP misses to recover; the unchanged mitigation only increases average selection."
+}

@@ -225,6 +225,17 @@ def normalize_pit_test_name(pit_id: str) -> str | None:
 
     Returns SimpleClassName#methodName or None if unparseable.
     """
+    # PIT's built-in JUnit 3/4 plugin reports legacy tests as
+    # ``fully.qualified.TestClass.testMethod(fully.qualified.TestClass)``.
+    # Normalize that representation before trying Platform unique IDs.
+    legacy_match = re.fullmatch(r'(.+)\.([^.()]+)\(([^()]*)\)', pit_id)
+    if legacy_match:
+        test_class = legacy_match.group(1)
+        method = legacy_match.group(2)
+        reported_class = legacy_match.group(3)
+        if reported_class == test_class:
+            return f"{test_class.rsplit('.', 1)[-1]}#{method}"
+
     class_match = re.search(r'\[class:([^\]]+)\]', pit_id)
     method_match = re.search(r'\[method:([^\]]+)\]', pit_id)
     if not method_match:
