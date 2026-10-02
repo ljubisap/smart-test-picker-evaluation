@@ -23,11 +23,17 @@ test population.
 Across the eight completed subjects, STP includes a PIT-reported killing test
 for 3,986 of 4,011 KILLED mutants (99.38%). The unchanged constructor-only
 mitigation recovers seven of the twenty-five misses. Flink adds no false
-negative. Quarkus adds 1,083 KILLED mutants and no false negative. Spring Security adds ten misses, all instances of the existing
-Type A/B/C early-exception mechanism, including two Type A cases recovered by
+negative. Quarkus adds 1,083 KILLED mutants and no false negative. Spring
+Security adds ten misses, all instances of early-exception probe shadowing,
+with footprint shapes two Type A, three Type B, and five Type C; the two Type A cases are recovered by
 the unchanged rule. Hibernate adds two misses caused by enhancement work
 performed by its custom JUnit engine outside STP's leaf-test attribution
 window; this is a newly observed mechanism.
+
+Across all misses, the map-evidence footprint totals are A=7, B=10, C=7, and
+MIXED=1. These shapes are reported independently from causal mechanism:
+23 misses are `EARLY_EXCEPTION_PROBE_SHADOWING`, while the two Hibernate misses
+are `PRE_TEST_ATTRIBUTION_GAP`.
 
 ## Flink
 

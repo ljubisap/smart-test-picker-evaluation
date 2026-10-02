@@ -28,6 +28,30 @@ from analysis.evaluation_core import (
 )
 
 
+CAUSAL_MECHANISM_BY_ANNOTATION_CATEGORY = {
+    "early-exception-before-probe": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "pre-test-custom-engine-enhancement": "PRE_TEST_ATTRIBUTION_GAP",
+}
+
+
+def footprint_type_for(entry_types):
+    """Return the mutation-level footprint shape independently of root cause."""
+    unique = set(entry_types)
+    if not unique:
+        raise ValueError("cannot classify an empty footprint")
+    return next(iter(unique)) if len(unique) == 1 else "MIXED"
+
+
+def causal_mechanism_for(annotation_category):
+    """Map a manually audited cause category to the stable causal vocabulary."""
+    try:
+        return CAUSAL_MECHANISM_BY_ANNOTATION_CATEGORY[annotation_category]
+    except KeyError as exc:
+        raise ValueError(
+            f"unknown causal annotation category {annotation_category!r}"
+        ) from exc
+
+
 def classify_entry(test_mappings, coverage_key, mutated_class, mutated_method):
     """Classify a single resolved coverage entry for a killing test."""
     cov = test_mappings.get(coverage_key, {})
@@ -60,6 +84,12 @@ def classify_entry(test_mappings, coverage_key, mutated_class, mutated_method):
 
 def run_analysis(repo_root, projects_config, coverage_overrides=None):
     """Run complete analysis. Returns (taxonomy_dict, mitigation_dict)."""
+
+    annotations_path = repo_root / "analysis" / "failure_annotations.json"
+    annotations = json.loads(annotations_path.read_text())
+    annotations_by_id = {row["mutationId"]: row for row in annotations}
+    if len(annotations_by_id) != len(annotations):
+        raise ValueError("duplicate mutationId in failure annotations")
 
     all_resolved_mutations = {}  # project -> list[ResolvedMutation]
     inputs_coverage = {}
@@ -199,6 +229,12 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
             )
             recovered_by_constructor = bool(constructor_selected & killing_keys)
 
+            annotation = annotations_by_id.get(mut.mutation_id)
+            if annotation is None:
+                raise ValueError(f"missing causal annotation for {mut.mutation_id}")
+            causal_mechanism = causal_mechanism_for(annotation["category"])
+            footprint_type = footprint_type_for(mutation_types)
+
             unsafe_muts.append({
                 "mutationId": mut.mutation_id,
                 "mutatedClass": mut.mutated_class,
@@ -207,6 +243,9 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
                 "mutator": mut.mutator.split(".")[-1] if "." in mut.mutator else mut.mutator,
                 "killingTests": killing_test_details,
                 "mutationTypes": sorted(mutation_types),
+                "footprintType": footprint_type,
+                "causalMechanism": causal_mechanism,
+                "causalEvidence": annotation["cause"],
                 "recoveredByConstructorRule": recovered_by_constructor,
             })
 
@@ -246,9 +285,19 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
             exclusive_counts["mixed"] += 1
 
     total_unsafe = sum(len(v) for v in unsafe_by_project.values())
+    footprint_counter = Counter(
+        mutation["footprintType"]
+        for mutations in unsafe_by_project.values()
+        for mutation in mutations
+    )
+    causal_counter = Counter(
+        mutation["causalMechanism"]
+        for mutations in unsafe_by_project.values()
+        for mutation in mutations
+    )
 
     taxonomy = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "inputs": {
             "coverageMaps": inputs_coverage,
             "pitResults": inputs_pit,
@@ -272,9 +321,17 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
             "mutationCountsContainingType": dict(sorted(mutation_containing.items())),
             "exclusiveMutationTypes": dict(sorted(exclusive_counts.items())),
         },
+        "footprintSummary": dict(sorted(footprint_counter.items())),
+        "causalMechanismSummary": dict(sorted(causal_counter.items())),
         "byProject": {
             name: {
                 "unsafeCount": len(muts),
+                "footprintCounts": dict(sorted(Counter(
+                    mutation["footprintType"] for mutation in muts
+                ).items())),
+                "causalMechanismCounts": dict(sorted(Counter(
+                    mutation["causalMechanism"] for mutation in muts
+                ).items())),
                 "mutations": muts,
             }
             for name, muts in unsafe_by_project.items()

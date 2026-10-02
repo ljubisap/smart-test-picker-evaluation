@@ -17,13 +17,21 @@ A separate 21-case contract test (`commons-lang/scripts/contract_test.py`) confi
 - Cases where the mutated method is absent from all coverage (would trigger Java escalation)
 - Projects other than Commons Lang for the actual plugin contract test
 
-## Type Classification
+## Footprint and Causal Classification
 
-For each unsafe mutation (class C, method M), each killing test's coverage footprint is classified:
+For each unsafe mutation (class C, method M), every killing test's coverage footprint is classified independently of root cause:
 
 - **Type A**: C present in coverage, method footprint for C is non-empty and contains only `<init>`/`<clinit>`
 - **Type B**: C present in coverage, method footprint for C is non-empty, M is absent, but at least one non-constructor method exists
 - **Type C**: C is completely absent from the test's coverage entry
+- **MIXED**: different resolved killing-test entries exhibit different B/C shapes
+
+Each mutation also has one manually audited causal mechanism:
+
+- **EARLY_EXCEPTION_PROBE_SHADOWING**: execution enters the target method, but exceptional control flow prevents downstream probe attribution
+- **PRE_TEST_ATTRIBUTION_GAP**: dependency-relevant custom-engine work executes before the leaf-test coverage session opens
+
+The same footprint shape can arise from different causes. Footprint types must therefore not be presented as root-cause categories.
 
 ## Selectors
 
@@ -53,14 +61,14 @@ python3 -m unittest discover -s analysis/tests
 
 ## Outputs
 
-- `results/failure_taxonomy.json` -- per-mutation Type A/B/C classification with full provenance
+- `results/failure_taxonomy.json` -- per-mutation footprint and causal-mechanism classification with full provenance
 - `results/mitigation_comparison.json` -- original vs constructor-only vs class-level for all 4,011 mutations
 - `results/selector_equivalence.json` -- dataset-wide Python/Java selector comparison (4,011 mutations, 1,351 unique cases)
 - `results/recollection_comparison.json` -- old/new coverage map comparison after final recollection
 
 ## Manual Annotations
 
-`failure_annotations.json` provides root-cause explanations for all 25 unsafe mutations. These are manually authored based on source inspection and are NOT automatically derivable from the coverage footprint alone. The taxonomy script validates that every unsafe mutation has a corresponding annotation.
+`failure_annotations.json` provides root-cause explanations for all 25 unsafe mutations. These are manually authored based on source and lifecycle inspection and are NOT automatically derivable from the coverage footprint alone. The taxonomy script validates completeness and maps the audited annotation categories to stable causal-mechanism identifiers.
 
 ## Input Provenance
 
@@ -71,6 +79,7 @@ The per-project manifests record the exact Smart Test Picker revision used to co
 ## Canonical Results
 
 - 25 unsafe mutations: footprint taxonomy 7 Type A, 10 Type B, 7 Type C, and 1 mixed B/C case
+- Causal mechanisms: 23 early-exception/probe-shadowing and 2 pre-test attribution-gap cases
 - Original: 99.38% (3986/4011)
 - Constructor-only rule: 99.55% (3993/4011, +7 recovered)
 - Class-level baseline: 99.83% (4004/4011)

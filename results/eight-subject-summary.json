@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "attemptedSubjects": 8,
   "completedSubjects": 8,
   "blockedSubjects": 0,
@@ -15,36 +15,33 @@
       "stpInclusive": 771,
       "inclusivenessPct": 99.87,
       "avgSelected": 17.0,
+      "selectionRatePct": 0.36,
       "reductionPct": 99.64,
       "classLevel": {
-        "name": "Class-level only",
-        "safety_pct": 99.87,
         "safe": 771,
-        "unsafe": 1,
-        "total": 772,
-        "avg_selected": 50.1,
-        "selection_rate_pct": 1.07,
-        "test_reduction_pct": 98.93
+        "inclusivenessPct": 99.87,
+        "avgSelected": 50.1,
+        "selectionRatePct": 1.07,
+        "reductionPct": 98.93
       },
       "randomEqualBudget": {
-        "name": "Random (k=per-mutation)",
-        "safety_pct": 2.03,
-        "safety_std": 0.5,
-        "safety_analytical_pct": 2.02,
-        "num_trials": 1000,
-        "safe": 16,
-        "unsafe": 756,
-        "total": 772,
-        "avg_selected": 17.0,
-        "selection_rate_pct": 0.36,
-        "test_reduction_pct": 99.64
+        "inclusivenessPct": 2.03,
+        "analyticalInclusivenessPct": 2.02,
+        "avgSelected": 17.0,
+        "selectionRatePct": 0.36,
+        "reductionPct": 99.64,
+        "trials": 1000
       },
       "falseNegatives": 1,
-      "failureTaxonomy": {
+      "footprintTaxonomy": {
         "A": 0,
         "B": 0,
         "C": 1,
-        "NEW_TYPE": 0
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 1,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
       },
       "mitigation": {
         "additionalRecovered": 0,
@@ -65,36 +62,33 @@
       "stpInclusive": 516,
       "inclusivenessPct": 99.81,
       "avgSelected": 87.7,
+      "selectionRatePct": 3.8,
       "reductionPct": 96.2,
       "classLevel": {
-        "name": "Class-level only",
-        "safety_pct": 100.0,
         "safe": 517,
-        "unsafe": 0,
-        "total": 517,
-        "avg_selected": 207.8,
-        "selection_rate_pct": 9.0,
-        "test_reduction_pct": 91.0
+        "inclusivenessPct": 100.0,
+        "avgSelected": 207.8,
+        "selectionRatePct": 9.0,
+        "reductionPct": 91.0
       },
       "randomEqualBudget": {
-        "name": "Random (k=per-mutation)",
-        "safety_pct": 33.59,
-        "safety_std": 1.26,
-        "safety_analytical_pct": 33.63,
-        "num_trials": 1000,
-        "safe": 174,
-        "unsafe": 343,
-        "total": 517,
-        "avg_selected": 87.7,
-        "selection_rate_pct": 3.8,
-        "test_reduction_pct": 96.2
+        "inclusivenessPct": 33.59,
+        "analyticalInclusivenessPct": 33.63,
+        "avgSelected": 87.7,
+        "selectionRatePct": 3.8,
+        "reductionPct": 96.2,
+        "trials": 1000
       },
       "falseNegatives": 1,
-      "failureTaxonomy": {
+      "footprintTaxonomy": {
         "A": 1,
         "B": 0,
         "C": 0,
-        "NEW_TYPE": 0
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 1,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
       },
       "mitigation": {
         "additionalRecovered": 1,
@@ -115,36 +109,33 @@
       "stpInclusive": 443,
       "inclusivenessPct": 97.58,
       "avgSelected": 80.6,
+      "selectionRatePct": 2.22,
       "reductionPct": 97.78,
       "classLevel": {
-        "name": "Class-level only",
-        "safety_pct": 100.0,
         "safe": 454,
-        "unsafe": 0,
-        "total": 454,
-        "avg_selected": 529.2,
-        "selection_rate_pct": 14.6,
-        "test_reduction_pct": 85.4
+        "inclusivenessPct": 100.0,
+        "avgSelected": 529.2,
+        "selectionRatePct": 14.6,
+        "reductionPct": 85.4
       },
       "randomEqualBudget": {
-        "name": "Random (k=per-mutation)",
-        "safety_pct": 17.37,
-        "safety_std": 1.09,
-        "safety_analytical_pct": 17.36,
-        "num_trials": 1000,
-        "safe": 79,
-        "unsafe": 375,
-        "total": 454,
-        "avg_selected": 80.6,
-        "selection_rate_pct": 2.22,
-        "test_reduction_pct": 97.78
+        "inclusivenessPct": 17.37,
+        "analyticalInclusivenessPct": 17.36,
+        "avgSelected": 80.6,
+        "selectionRatePct": 2.22,
+        "reductionPct": 97.78,
+        "trials": 1000
       },
       "falseNegatives": 11,
-      "failureTaxonomy": {
+      "footprintTaxonomy": {
         "A": 4,
         "B": 7,
         "C": 0,
-        "NEW_TYPE": 0
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 11,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
       },
       "mitigation": {
         "additionalRecovered": 4,
@@ -165,36 +156,33 @@
       "stpInclusive": 94,
       "inclusivenessPct": 100.0,
       "avgSelected": 9.7,
+      "selectionRatePct": 18.7,
       "reductionPct": 81.3,
       "classLevel": {
-        "name": "Class-level only",
-        "safety_pct": 100.0,
         "safe": 94,
-        "unsafe": 0,
-        "total": 94,
-        "avg_selected": 18.4,
-        "selection_rate_pct": 35.29,
-        "test_reduction_pct": 64.71
+        "inclusivenessPct": 100.0,
+        "avgSelected": 18.4,
+        "selectionRatePct": 35.29,
+        "reductionPct": 64.71
       },
       "randomEqualBudget": {
-        "name": "Random (k=per-mutation)",
-        "safety_pct": 35.97,
-        "safety_std": 2.95,
-        "safety_analytical_pct": 35.88,
-        "num_trials": 1000,
-        "safe": 34,
-        "unsafe": 60,
-        "total": 94,
-        "avg_selected": 9.7,
-        "selection_rate_pct": 18.7,
-        "test_reduction_pct": 81.3
+        "inclusivenessPct": 35.97,
+        "analyticalInclusivenessPct": 35.88,
+        "avgSelected": 9.7,
+        "selectionRatePct": 18.7,
+        "reductionPct": 81.3,
+        "trials": 1000
       },
       "falseNegatives": 0,
-      "failureTaxonomy": {
+      "footprintTaxonomy": {
         "A": 0,
         "B": 0,
         "C": 0,
-        "NEW_TYPE": 0
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 0,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
       },
       "mitigation": {
         "additionalRecovered": 0,
@@ -215,6 +203,7 @@
       "stpInclusive": 349,
       "inclusivenessPct": 100.0,
       "avgSelected": 36.23,
+      "selectionRatePct": 5.45,
       "reductionPct": 94.55,
       "classLevel": {
         "name": "Class-level only",
@@ -238,11 +227,15 @@
         "reductionPct": 94.55
       },
       "falseNegatives": 0,
-      "failureTaxonomy": {
+      "footprintTaxonomy": {
         "A": 0,
         "B": 0,
         "C": 0,
-        "NEW_TYPE": 0
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 0,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
       },
       "mitigation": {
         "additionalRecovered": 0,
@@ -263,6 +256,7 @@
       "stpInclusive": 330,
       "inclusivenessPct": 97.06,
       "avgSelected": 36.86,
+      "selectionRatePct": 2.56,
       "reductionPct": 97.44,
       "classLevel": {
         "name": "Class-level only",
@@ -286,11 +280,15 @@
         "reductionPct": 97.44
       },
       "falseNegatives": 10,
-      "failureTaxonomy": {
+      "footprintTaxonomy": {
         "A": 2,
         "B": 3,
         "C": 5,
-        "NEW_TYPE": 0
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 10,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
       },
       "mitigation": {
         "additionalRecovered": 2,
@@ -311,6 +309,7 @@
       "stpInclusive": 400,
       "inclusivenessPct": 99.5,
       "avgSelected": 296.53,
+      "selectionRatePct": 26.98,
       "reductionPct": 73.02,
       "classLevel": {
         "name": "Class-level only",
@@ -334,11 +333,15 @@
         "reductionPct": 73.02
       },
       "falseNegatives": 2,
-      "failureTaxonomy": {
+      "footprintTaxonomy": {
         "A": 0,
         "B": 0,
-        "C": 0,
-        "NEW_TYPE": 2
+        "C": 1,
+        "MIXED": 1
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 0,
+        "PRE_TEST_ATTRIBUTION_GAP": 2
       },
       "mitigation": {
         "additionalRecovered": 0,
@@ -359,6 +362,7 @@
       "stpInclusive": 1083,
       "inclusivenessPct": 100.0,
       "avgSelected": 260.65,
+      "selectionRatePct": 38.11,
       "reductionPct": 61.89,
       "classLevel": {
         "name": "Class-level only",
@@ -382,11 +386,15 @@
         "reductionPct": 61.89
       },
       "falseNegatives": 0,
-      "failureTaxonomy": {
+      "footprintTaxonomy": {
         "A": 0,
         "B": 0,
         "C": 0,
-        "NEW_TYPE": 0
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 0,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
       },
       "mitigation": {
         "additionalRecovered": 0,
@@ -402,8 +410,18 @@
     "stpInclusive": 3986,
     "falseNegatives": 25,
     "inclusivenessPct": 99.38,
+    "footprintCounts": {
+      "A": 7,
+      "B": 10,
+      "C": 7,
+      "MIXED": 1
+    },
+    "causalMechanismCounts": {
+      "EARLY_EXCEPTION_PROBE_SHADOWING": 23,
+      "PRE_TEST_ATTRIBUTION_GAP": 2
+    },
     "mitigationRecoveries": 7,
-    "newFailureTypeExists": true
+    "distinctCausalMechanisms": 2
   },
-  "interpretation": "Blocked subjects are excluded from every mutation denominator; null is not zero."
+  "interpretation": "All eight attempted subjects have a valid PIT killing-test oracle; footprint shapes and causal mechanisms are reported independently."
 }

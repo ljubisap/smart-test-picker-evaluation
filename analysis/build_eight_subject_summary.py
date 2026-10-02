@@ -34,9 +34,23 @@ def old_project(name):
         "stpInclusive": summary["safe"],
         "inclusivenessPct": summary["inclusiveness_pct"],
         "avgSelected": summary["avg_selection_size"],
+        "selectionRatePct": summary["selection_rate_pct"],
         "reductionPct": summary["test_reduction_pct"],
-        "classLevel": class_level,
-        "randomEqualBudget": random,
+        "classLevel": {
+            "safe": class_level["safe"],
+            "inclusivenessPct": class_level["safety_pct"],
+            "avgSelected": class_level["avg_selected"],
+            "selectionRatePct": class_level["selection_rate_pct"],
+            "reductionPct": class_level["test_reduction_pct"],
+        },
+        "randomEqualBudget": {
+            "inclusivenessPct": random["safety_pct"],
+            "analyticalInclusivenessPct": random["safety_analytical_pct"],
+            "avgSelected": random["avg_selected"],
+            "selectionRatePct": random["selection_rate_pct"],
+            "reductionPct": random["test_reduction_pct"],
+            "trials": random["num_trials"],
+        },
         "falseNegatives": summary["unsafe"],
     }
 
@@ -57,6 +71,7 @@ def new_project(name):
         "stpInclusive": selectors["stp"]["safe"],
         "inclusivenessPct": selectors["stp"]["inclusivenessPct"],
         "avgSelected": selectors["stp"]["avgSelected"],
+        "selectionRatePct": selectors["stp"]["selectionRatePct"],
         "reductionPct": selectors["stp"]["reductionPct"],
         "classLevel": selectors["classLevel"],
         "randomEqualBudget": selectors["randomEqualBudget"],
@@ -67,30 +82,25 @@ def new_project(name):
 taxonomy = load("results/failure_taxonomy.json")
 mitigation = load("results/mitigation_comparison.json")
 mit_by_project = {row["project"]: row for row in mitigation["perProject"]}
-annotations = load("analysis/failure_annotations.json")
-annotations_by_id = {row["mutationId"]: row for row in annotations}
 projects = [old_project(p) for p in ("commons-lang", "jgrapht", "spring-core", "petclinic")]
 projects.extend(new_project(p) for p in ("flink", "spring-security", "hibernate", "quarkus"))
 
 for row in projects:
-    mutations = taxonomy["byProject"].get(row["project"], {}).get("mutations", [])
-    exclusive = {"A": 0, "B": 0, "C": 0, "NEW_TYPE": 0}
-    for mutation in mutations:
-        annotation = annotations_by_id.get(mutation.get("mutationId"), {})
-        if annotation.get("category") == "pre-test-custom-engine-enhancement":
-            exclusive["NEW_TYPE"] += 1
-            continue
-        kinds = mutation.get("mutationTypes", [])
-        if len(kinds) == 1 and kinds[0] in exclusive:
-            exclusive[kinds[0]] += 1
-        elif kinds:
-            exclusive["NEW_TYPE"] += 1
-    row["failureTaxonomy"] = exclusive
+    project_taxonomy = taxonomy["byProject"].get(row["project"], {})
+    footprint = {"A": 0, "B": 0, "C": 0, "MIXED": 0}
+    footprint.update(project_taxonomy.get("footprintCounts", {}))
+    mechanisms = {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 0,
+        "PRE_TEST_ATTRIBUTION_GAP": 0,
+    }
+    mechanisms.update(project_taxonomy.get("causalMechanismCounts", {}))
+    row["footprintTaxonomy"] = footprint
+    row["causalMechanisms"] = mechanisms
     row["mitigation"] = mit_by_project[row["project"]]["constructorOnlyRule"]
 
 complete = [row for row in projects if row["status"] == "COMPLETE"]
 output = {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "attemptedSubjects": 8,
     "completedSubjects": len(complete),
     "blockedSubjects": len(projects) - len(complete),
@@ -101,10 +111,12 @@ output = {
         "falseNegatives": sum(row["falseNegatives"] for row in complete),
         "inclusivenessPct": round(100 * sum(row["stpInclusive"] for row in complete) /
                                     sum(row["killedMutations"] for row in complete), 2),
+        "footprintCounts": taxonomy["footprintSummary"],
+        "causalMechanismCounts": taxonomy["causalMechanismSummary"],
         "mitigationRecoveries": sum(row["mitigation"]["additionalRecovered"] for row in complete),
-        "newFailureTypeExists": any(row["failureTaxonomy"]["NEW_TYPE"] for row in complete),
+        "distinctCausalMechanisms": len(taxonomy["causalMechanismSummary"]),
     },
-    "interpretation": "Blocked subjects are excluded from every mutation denominator; null is not zero.",
+    "interpretation": "All eight attempted subjects have a valid PIT killing-test oracle; footprint shapes and causal mechanisms are reported independently.",
 }
 
 path = ROOT / "results/eight-subject-summary.json"

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "analysisUnitTests": {
+    "testsRun": 51,
+    "failures": 0,
+    "errors": 0
+  },
+  "selectorEquivalence": {
+    "mutationOccurrences": 4011,
+    "uniqueSelectorCases": 1351,
+    "exactMatches": 4011,
+    "mismatches": 0
+  },
+  "failureAnalysis": {
+    "unsafeMutations": 25,
+    "footprintCounts": {
+      "A": 7,
+      "B": 10,
+      "C": 7,
+      "MIXED": 1
+    },
+    "causalMechanismCounts": {
+      "EARLY_EXCEPTION_PROBE_SHADOWING": 23,
+      "PRE_TEST_ATTRIBUTION_GAP": 2
+    },
+    "verification": "PASS"
+  },
+  "mitigation": {
+    "killedMutations": 4011,
+    "originalInclusive": 3986,
+    "mitigatedInclusive": 3993,
+    "additionalRecovered": 7,
+    "verification": "PASS"
+  },
+  "artifactChecksums": {
+    "hibernate": "PASS",
+    "flink": "PASS",
+    "quarkus": "PASS",
+    "spring-security": "PASS"
+  }
+}

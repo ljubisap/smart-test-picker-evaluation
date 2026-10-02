@@ -1,8 +1,17 @@
 {
   "byProject": {
     "commons-lang": {
+      "causalMechanismCounts": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 1
+      },
+      "footprintCounts": {
+        "C": 1
+      },
       "mutations": [
         {
+          "causalEvidence": "NPE before any FieldUtils probe activates (target class absent from coverage)",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "C",
           "killingTests": [
             {
               "pitNormalized": "FieldUtilsTest#testRemoveFinalModifierNullPointerException",
@@ -33,12 +42,24 @@
       "unsafeCount": 1
     },
     "flink": {
+      "causalMechanismCounts": {},
+      "footprintCounts": {},
       "mutations": [],
       "unsafeCount": 0
     },
     "hibernate": {
+      "causalMechanismCounts": {
+        "PRE_TEST_ATTRIBUTION_GAP": 2
+      },
+      "footprintCounts": {
+        "C": 1,
+        "MIXED": 1
+      },
       "mutations": [
         {
+          "causalEvidence": "Hibernate's custom bytecode-enhanced JUnit engine invokes the enhancement dependency while constructing enhanced test descriptors/classes, before STP opens a leaf-test JaCoCo session; both PIT-reported container methods therefore lack the target class entirely in their per-test footprints",
+          "causalMechanism": "PRE_TEST_ATTRIBUTION_GAP",
+          "footprintType": "C",
           "killingTests": [
             {
               "pitNormalized": "org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest",
@@ -73,6 +94,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Hibernate's custom bytecode-enhanced JUnit engine executes fieldReader during pre-leaf enhancement/class construction; two killing tests have no target-class footprint and the third records other transformer methods but not fieldReader, so the dependency is outside the leaf-test attribution window",
+          "causalMechanism": "PRE_TEST_ATTRIBUTION_GAP",
+          "footprintType": "MIXED",
           "killingTests": [
             {
               "pitNormalized": "DirtyTrackingDynamicUpdateTest#testDynamicUpdate",
@@ -137,8 +161,17 @@
       "unsafeCount": 2
     },
     "jgrapht": {
+      "causalMechanismCounts": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 1
+      },
+      "footprintCounts": {
+        "A": 1
+      },
       "mutations": [
         {
+          "causalEvidence": "checkGraph() guard throws before getTour probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "A",
           "killingTests": [
             {
               "pitNormalized": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2",
@@ -187,16 +220,30 @@
       "unsafeCount": 1
     },
     "petclinic": {
+      "causalMechanismCounts": {},
+      "footprintCounts": {},
       "mutations": [],
       "unsafeCount": 0
     },
     "quarkus": {
+      "causalMechanismCounts": {},
+      "footprintCounts": {},
       "mutations": [],
       "unsafeCount": 0
     },
     "spring-core": {
+      "causalMechanismCounts": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 11
+      },
+      "footprintCounts": {
+        "A": 4,
+        "B": 7
+      },
       "mutations": [
         {
+          "causalEvidence": "Assert.isAssignable guard throws before upcast probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "B",
           "killingTests": [
             {
               "pitNormalized": "TypeDescriptorTests#upCastNotSuper",
@@ -227,6 +274,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notNull(target) throws before canConvert probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "A",
           "killingTests": [
             {
               "pitNormalized": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass",
@@ -272,6 +322,9 @@
           "recoveredByConstructorRule": true
         },
         {
+          "causalEvidence": "Assert.notNull(target) throws before canConvert probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "A",
           "killingTests": [
             {
               "pitNormalized": "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType",
@@ -317,6 +370,9 @@
           "recoveredByConstructorRule": true
         },
         {
+          "causalEvidence": "Assert.notNull(target) throws before convert probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "A",
           "killingTests": [
             {
               "pitNormalized": "GenericConversionServiceTests#convertToNullTargetClass",
@@ -346,6 +402,9 @@
           "recoveredByConstructorRule": true
         },
         {
+          "causalEvidence": "Assert.notNull(target) throws before convert probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "A",
           "killingTests": [
             {
               "pitNormalized": "GenericConversionServiceTests#convertToNullTargetTypeDescriptor",
@@ -375,6 +434,9 @@
           "recoveredByConstructorRule": true
         },
         {
+          "causalEvidence": "Assert.notNull(task) throws before execute probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "B",
           "killingTests": [
             {
               "pitNormalized": "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable",
@@ -405,6 +467,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notNull/isAssignable throws before caller method probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "B",
           "killingTests": [
             {
               "pitNormalized": "AssertTests#isAssignableWithNullSupertype",
@@ -434,6 +499,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notNull/isAssignable throws before caller method probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "B",
           "killingTests": [
             {
               "pitNormalized": "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier",
@@ -463,6 +531,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notNull/isAssignable throws before caller method probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "B",
           "killingTests": [
             {
               "pitNormalized": "AssertTests#isInstanceOfWithNullType",
@@ -492,6 +563,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notNull/isAssignable throws before caller method probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "B",
           "killingTests": [
             {
               "pitNormalized": "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier",
@@ -521,6 +595,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "checkMultiplier() guard throws before setMultiplier probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "B",
           "killingTests": [
             {
               "pitNormalized": "ExponentialBackOffTests#invalidInterval",
@@ -555,8 +632,19 @@
       "unsafeCount": 11
     },
     "spring-security": {
+      "causalMechanismCounts": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 10
+      },
+      "footprintCounts": {
+        "A": 2,
+        "B": 3,
+        "C": 5
+      },
       "mutations": [
         {
+          "causalEvidence": "Assert.notNull(rolePrefix) throws before the withRolePrefix probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "C",
           "killingTests": [
             {
               "pitNormalized": "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull",
@@ -584,6 +672,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notEmpty(mappings) throws before the setter probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "B",
           "killingTests": [
             {
               "pitNormalized": "DefaultAuthenticationEventPublisherTests#emptyMapCausesException",
@@ -614,6 +705,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notNull(event class) throws before the setter probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "B",
           "killingTests": [
             {
               "pitNormalized": "DefaultAuthenticationEventPublisherTests#defaultAuthenticationFailureEventClassSetNullThen",
@@ -644,6 +738,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notNull(userCache) throws before the afterPropertiesSet probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "B",
           "killingTests": [
             {
               "pitNormalized": "DaoAuthenticationProviderTests#testStartupFailsIfNoUserCacheSet",
@@ -675,6 +772,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notEmpty(authorities) throws before any target-class probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "C",
           "killingTests": [
             {
               "pitNormalized": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException",
@@ -716,6 +816,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notNull(rolePrefix) throws before any target-class probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "C",
           "killingTests": [
             {
               "pitNormalized": "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException",
@@ -743,6 +846,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notNull(authority) throws before any target-class probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "C",
           "killingTests": [
             {
               "pitNormalized": "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException",
@@ -770,6 +876,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notNull(role) throws before any target-class probe fires",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "C",
           "killingTests": [
             {
               "pitNormalized": "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException",
@@ -797,6 +906,9 @@
           "recoveredByConstructorRule": false
         },
         {
+          "causalEvidence": "Assert.notNull(eventPublisher) throws before the setter probe fires; constructor-only footprint remains",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "A",
           "killingTests": [
             {
               "pitNormalized": "AuthorizationManagerBeforeMethodInterceptorTests#configureWhenAuthorizationEventPublisherIsNullThenIllegalArgument",
@@ -826,6 +938,9 @@
           "recoveredByConstructorRule": true
         },
         {
+          "causalEvidence": "Assert.notEmpty(map) throws before the setter probe fires; constructor-only footprint remains",
+          "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+          "footprintType": "A",
           "killingTests": [
             {
               "pitNormalized": "MapBasedAttributes2GrantedAuthoritiesMapperTests#testAfterPropertiesSetEmptyMap",
@@ -857,6 +972,16 @@
       ],
       "unsafeCount": 10
     }
+  },
+  "causalMechanismSummary": {
+    "EARLY_EXCEPTION_PROBE_SHADOWING": 23,
+    "PRE_TEST_ATTRIBUTION_GAP": 2
+  },
+  "footprintSummary": {
+    "A": 7,
+    "B": 10,
+    "C": 7,
+    "MIXED": 1
   },
   "inputs": {
     "coverageMaps": {
@@ -1099,7 +1224,7 @@
     "uniqueNormalizedPitKillingIds": 5038,
     "uniqueRawPitKillingIds": 7919
   },
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "totalUnsafeMutations": 25,
   "typeSummary": {
     "byResolvedEntry": {
