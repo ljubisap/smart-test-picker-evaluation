@@ -1,0 +1,39 @@
+{
+  "project": "Joda-Time",
+  "version": "2.15.0",
+  "repository": "https://github.com/JodaOrg/joda-time.git",
+  "commit": "5ffcf3c2bce34c95207ef2746229a40a932afeee",
+  "frozenAt": "2026-10-02",
+  "outcomesInspectedBeforeFreeze": false,
+  "sampling": {
+    "strategy": "curated_stratified_pre_result_freeze",
+    "candidatePopulation": "Concrete production Java classes in src/main/java, excluding interfaces, abstract bases, trivial constants and benchmark-only code",
+    "criteria": [
+      "Representation across root API, chronology, conversion, field, formatting and time-zone packages",
+      "Implementation-heavy mutable logic preferred",
+      "Direct or package-level functional test scope identifiable from project structure",
+      "No mutation yield or STP inclusiveness inspected before freeze"
+    ],
+    "totalSampled": 18
+  },
+  "classes": [
+    {"fqn":"org.joda.time.DateTimeUtils","sourcePath":"src/main/java/org/joda/time/DateTimeUtils.java","subpackage":"root","loc":600,"reason":"clock/provider and utility behavior","targetTests":"org.joda.time.Test*"},
+    {"fqn":"org.joda.time.Interval","sourcePath":"src/main/java/org/joda/time/Interval.java","subpackage":"root","loc":565,"reason":"core immutable interval operations","targetTests":"org.joda.time.Test*"},
+    {"fqn":"org.joda.time.MutablePeriod","sourcePath":"src/main/java/org/joda/time/MutablePeriod.java","subpackage":"root","loc":1020,"reason":"mutable period state transitions","targetTests":"org.joda.time.Test*"},
+    {"fqn":"org.joda.time.Partial","sourcePath":"src/main/java/org/joda/time/Partial.java","subpackage":"root","loc":1041,"reason":"partial date-time construction and matching","targetTests":"org.joda.time.Test*"},
+    {"fqn":"org.joda.time.chrono.GJChronology","sourcePath":"src/main/java/org/joda/time/chrono/GJChronology.java","subpackage":"chrono","loc":1214,"reason":"Gregorian/Julian cutover logic","targetTests":"org.joda.time.chrono.*"},
+    {"fqn":"org.joda.time.chrono.ZonedChronology","sourcePath":"src/main/java/org/joda/time/chrono/ZonedChronology.java","subpackage":"chrono","loc":703,"reason":"zone-aware chronology delegation","targetTests":"org.joda.time.chrono.*"},
+    {"fqn":"org.joda.time.chrono.IslamicChronology","sourcePath":"src/main/java/org/joda/time/chrono/IslamicChronology.java","subpackage":"chrono","loc":603,"reason":"non-ISO calendar implementation","targetTests":"org.joda.time.chrono.*"},
+    {"fqn":"org.joda.time.convert.ConverterManager","sourcePath":"src/main/java/org/joda/time/convert/ConverterManager.java","subpackage":"convert","loc":607,"reason":"converter registry and dispatch","targetTests":"org.joda.time.convert.*"},
+    {"fqn":"org.joda.time.convert.ConverterSet","sourcePath":"src/main/java/org/joda/time/convert/ConverterSet.java","subpackage":"convert","loc":328,"reason":"converter selection algorithm","targetTests":"org.joda.time.convert.*"},
+    {"fqn":"org.joda.time.convert.StringConverter","sourcePath":"src/main/java/org/joda/time/convert/StringConverter.java","subpackage":"convert","loc":251,"reason":"text-to-temporal conversion","targetTests":"org.joda.time.convert.*"},
+    {"fqn":"org.joda.time.field.FieldUtils","sourcePath":"src/main/java/org/joda/time/field/FieldUtils.java","subpackage":"field","loc":372,"reason":"arithmetic and bounds utility logic","targetTests":"org.joda.time.field.*"},
+    {"fqn":"org.joda.time.field.OffsetDateTimeField","sourcePath":"src/main/java/org/joda/time/field/OffsetDateTimeField.java","subpackage":"field","loc":235,"reason":"decorated field transformation","targetTests":"org.joda.time.field.*"},
+    {"fqn":"org.joda.time.field.UnsupportedDateTimeField","sourcePath":"src/main/java/org/joda/time/field/UnsupportedDateTimeField.java","subpackage":"field","loc":599,"reason":"unsupported-operation and cache paths","targetTests":"org.joda.time.field.*"},
+    {"fqn":"org.joda.time.format.DateTimeFormat","sourcePath":"src/main/java/org/joda/time/format/DateTimeFormat.java","subpackage":"format","loc":907,"reason":"pattern parsing and formatter construction","targetTests":"org.joda.time.format.*"},
+    {"fqn":"org.joda.time.format.DateTimeParserBucket","sourcePath":"src/main/java/org/joda/time/format/DateTimeParserBucket.java","subpackage":"format","loc":622,"reason":"mutable parse-state resolution","targetTests":"org.joda.time.format.*"},
+    {"fqn":"org.joda.time.format.PeriodFormat","sourcePath":"src/main/java/org/joda/time/format/PeriodFormat.java","subpackage":"format","loc":408,"reason":"locale-sensitive formatter selection","targetTests":"org.joda.time.format.*"},
+    {"fqn":"org.joda.time.tz.CachedDateTimeZone","sourcePath":"src/main/java/org/joda/time/tz/CachedDateTimeZone.java","subpackage":"tz","loc":223,"reason":"time-zone transition cache behavior","targetTests":"org.joda.time.tz.*"},
+    {"fqn":"org.joda.time.tz.ZoneInfoProvider","sourcePath":"src/main/java/org/joda/time/tz/ZoneInfoProvider.java","subpackage":"tz","loc":305,"reason":"zone data loading and lookup","targetTests":"org.joda.time.tz.*"}
+  ]
+}
