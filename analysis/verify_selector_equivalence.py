@@ -36,7 +36,7 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from analysis.evaluation_core import (
     load_coverage_map, discover_pit_files, load_pit_mutations,
-    build_base_to_keys, resolve_killing_tests,
+    build_base_to_keys, build_class_to_keys, resolve_killing_tests,
     select_original,
 )
 
@@ -109,7 +109,12 @@ def run_verification(repo_root: Path):
 
         pit_files = discover_pit_files(repo_root, proj["pitFiles"])
         raw_mutations = load_pit_mutations(name, repo_root, pit_files)
-        resolved = resolve_killing_tests(raw_mutations, test_mappings, base_to_keys)
+        resolved = resolve_killing_tests(
+            raw_mutations,
+            test_mappings,
+            base_to_keys,
+            build_class_to_keys(test_mappings, coverage_data.get("executionIdentities", {})),
+        )
 
         proj_exact = 0
         proj_mismatch = 0

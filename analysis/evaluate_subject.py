@@ -17,6 +17,7 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from analysis.evaluation_core import (  # noqa: E402
     build_base_to_keys,
+    build_class_to_keys,
     load_coverage_map,
     load_pit_mutations,
     resolve_killing_tests,
@@ -89,12 +90,18 @@ def main():
     parser.add_argument("--results-dir", type=Path, required=True)
     args = parser.parse_args()
 
-    mappings = load_coverage_map(args.coverage_map)["testMappings"]
+    coverage_map = load_coverage_map(args.coverage_map)
+    mappings = coverage_map["testMappings"]
     pit_files = tuple(sorted(args.results_dir.glob("per-class/*/mutations.xml")))
     if not pit_files:
         raise SystemExit("No PIT mutations.xml files found")
     raw = load_pit_mutations(args.subject, args.results_dir.parent, pit_files)
-    mutations = resolve_killing_tests(raw, mappings, build_base_to_keys(mappings))
+    mutations = resolve_killing_tests(
+        raw,
+        mappings,
+        build_base_to_keys(mappings),
+        build_class_to_keys(mappings, coverage_map.get("executionIdentities", {})),
+    )
     rows = []
     for mutation in mutations:
         killing = {key for test in mutation.killing_tests for key in test.coverage_keys}
@@ -122,7 +129,11 @@ def main():
     aggregate.mkdir(parents=True, exist_ok=True)
     (aggregate / "mutation_results.json").write_text(json.dumps(rows, indent=2) + "\n")
     with (aggregate / "evaluation_results.csv").open("w", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=["mutationId", "mutatedClass", "mutatedMethod", "line", "mutator", "selectedCount", "safe", "mitigatedSelectedCount", "mitigatedSafe", "classSelectedCount", "classSafe"])
+        writer = csv.DictWriter(
+            stream,
+            fieldnames=["mutationId", "mutatedClass", "mutatedMethod", "line", "mutator", "selectedCount", "safe", "mitigatedSelectedCount", "mitigatedSafe", "classSelectedCount", "classSafe"],
+            lineterminator="\n",
+        )
         writer.writeheader()
         for row in rows:
             writer.writerow({key: row[key] for key in writer.fieldnames})

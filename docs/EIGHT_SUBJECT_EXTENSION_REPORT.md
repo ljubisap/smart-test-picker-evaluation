@@ -2,8 +2,8 @@
 
 ## Outcome
 
-Eight subjects were attempted under the frozen protocol. Six produced a
-defensible common PIT/STP data set; two were stopped rather than changing a
+Eight subjects were attempted under the frozen protocol. Seven produced a
+defensible common PIT/STP data set; one was stopped rather than changing a
 frozen tool, release, or `targetTests` policy after observing results. Spring
 Security was recovered through its upstream-supported JDK 21 toolchain mode,
 which preserves the qualified native test population.
@@ -15,16 +15,18 @@ which preserves the qualified native test population.
 | spring-core | complete | 454 | 443 | 97.58% | 80.6 | 97.78% |
 | PetClinic | complete | 94 | 94 | 100.00% | 9.7 | 81.30% |
 | Flink | complete | 349 | 349 | 100.00% | 36.23 | 94.55% |
-| Hibernate ORM | PIT oracle blocked | — | — | — | — | — |
+| Hibernate ORM | complete | 402 | 400 | 99.50% | 296.53 | 73.02% |
 | Quarkus Arc | PIT oracle blocked | — | — | — | — | — |
 | Spring Security | complete | 340 | 330 | 97.06% | 36.86 | 97.44% |
 
-Across the six completed subjects, STP includes a PIT-reported killing test
-for 2,503 of 2,526 KILLED mutants (99.09%). The unchanged constructor-only
-mitigation recovers seven of the twenty-three misses. Flink adds no false
+Across the seven completed subjects, STP includes a PIT-reported killing test
+for 2,903 of 2,928 KILLED mutants (99.15%). The unchanged constructor-only
+mitigation recovers seven of the twenty-five misses. Flink adds no false
 negative. Spring Security adds ten misses, all instances of the existing
 Type A/B/C early-exception mechanism, including two Type A cases recovered by
-the unchanged rule. No new failure type appears.
+the unchanged rule. Hibernate adds two misses caused by enhancement work
+performed by its custom JUnit engine outside STP's leaf-test attribution
+window; this is a newly observed mechanism.
 
 ## Flink
 
@@ -40,15 +42,16 @@ and `*ITCaseBase` solely to implement the already-frozen `**/*Test` scope; the
 adjudication predates evaluation of STP outcomes and is documented in
 `flink/docs/SCOPE_ADJUDICATION.md`.
 
-## Stopped subjects
+## Hibernate JDK 21 replay
 
-### Hibernate ORM
+The original JDK 25 attempt remains preserved: PIT 1.17.4 cannot process class
+file major version 69. A JDK 21 replay kept Hibernate 7.4.11.Final, all 16
+sampled classes, PIT/JUnit plugin versions, mutators, and `targetTests` scopes
+unchanged. Hibernate's external `-Porm.jdk.min=21` property and its required
+bytecode-enhanced-engine system property enabled a valid run: 1,061 total PIT
+mutations and 402 KILLED. Details are in `hibernate/docs/JDK21_REFREEZE.md`.
 
-The native JDK 25 control passes. PIT 1.17.4 fails in its coverage-generation
-minion for both the frozen 932-test-class scope and a single-test diagnostic.
-Spring Security exposes the same PIT generation's concrete incompatibility
-with JDK 25 class files. The subject was stopped without changing PIT, JDK,
-release, or test scope.
+## Stopped subject
 
 ### Quarkus
 
@@ -60,12 +63,12 @@ violate the frozen `targetTests` policy, so the subject was stopped.
 
 ## Scientific interpretation
 
-The requested directly comparable eight-subject result was not attainable
-under the frozen versions. Reporting blocked subjects as zero-mutation or
-zero-miss projects would bias both denominator and apparent inclusiveness.
-Therefore headline aggregation covers only the six subjects with a valid PIT
-killing-test oracle. Detailed machine-readable blockers are stored in each
-blocked subject's `results/blocked.json`. Spring Security's preserved JDK 25
+The full eight-subject result remains unattainable because Quarkus is blocked.
+Reporting it as a zero-mutation or zero-miss project would bias both denominator
+and apparent inclusiveness. Therefore headline aggregation covers the seven
+subjects with a valid PIT killing-test oracle. Quarkus's machine-readable
+blocker is stored in `quarkus/results/blocked.json`. Historical Hibernate and
+Spring Security JDK 25 diagnostics remain preserved. Spring Security's JDK 25
 diagnostic is historical evidence; `spring-security/docs/JDK21_REFREEZE.md`
 records why the official JDK 21 mode is the canonical mutation environment.
 
@@ -75,7 +78,10 @@ The result answers the independent-validation questions only partially:
 - Flink exhibits no Type A/B/C or new observability failure.
 - Spring Security independently adds two Type A, three Type B, and five Type C
   misses; the two Type A misses are recovered by the frozen constructor rule.
-- No genuinely new JaCoCo failure type appears in the completed new subjects.
+- Hibernate exposes a new pre-leaf custom-engine attribution boundary: its
+  bytecode-enhancement dependencies execute while the custom JUnit engine
+  constructs enhanced descriptors/classes, before STP opens the leaf-test
+  coverage session. Both Hibernate misses follow this mechanism.
 
 PIT mutations remain fault approximations, and killing tests are an operational
 oracle only inside each predeclared `targetTests` scope.

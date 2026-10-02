@@ -1,0 +1,30 @@
+Downloading https://services.gradle.org/distributions/gradle-9.5.0-bin.zip
+.............10%.............20%..............30%.............40%.............50%..............60%.............70%..............80%.............90%.............100%
+
+Welcome to Gradle 9.5.0!
+
+Here are the highlights of this release:
+ - Task provenance in reports and failure messages
+ - Type-safe accessors for precompiled Kotlin Settings plugins
+
+For more details see https://docs.gradle.org/9.5.0/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+> Task :local-build-plugins:extractPluginRequests UP-TO-DATE
+> Task :local-build-plugins:generatePluginAdapters UP-TO-DATE
+> Task :local-build-plugins:spotlessJava UP-TO-DATE
+> Task :local-build-plugins:spotlessJavaApply UP-TO-DATE
+
+> Task :local-build-plugins:compileJava
+
+> Task :local-build-plugins:compileGroovy
+
+> Task :local-build-plugins:compileGroovyPlugins
+> Task :local-build-plugins:pluginDescriptors UP-TO-DATE
+> Task :local-build-plugins:processResources UP-TO-DATE
+> Task :local-build-plugins:classes
+> Task :local-build-plugins:jar
+
+[Incubating] Problems report is available at: file:///Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/build/reports/problems/problems-report.html
+10 actionable tasks: 4 executed, 6 up-to-date

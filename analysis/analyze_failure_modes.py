@@ -22,7 +22,7 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from analysis.evaluation_core import (
     load_coverage_map, discover_pit_files, load_pit_mutations,
-    build_base_to_keys, resolve_killing_tests,
+    build_base_to_keys, build_class_to_keys, resolve_killing_tests,
     select_original, select_constructor_only_rule, select_class_level,
     aggregate_sha256, file_sha256,
 )
@@ -88,7 +88,12 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
         base_to_keys = build_base_to_keys(test_mappings)
         pit_files = discover_pit_files(repo_root, proj["pitFiles"])
         raw_mutations = load_pit_mutations(name, repo_root, pit_files)
-        resolved = resolve_killing_tests(raw_mutations, test_mappings, base_to_keys)
+        resolved = resolve_killing_tests(
+            raw_mutations,
+            test_mappings,
+            base_to_keys,
+            build_class_to_keys(test_mappings, coverage_data.get("executionIdentities", {})),
+        )
 
         inputs_pit[name] = {
             "files": [p.relative_to(repo_root).as_posix() for p in pit_files],

@@ -1,0 +1,19 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+10:16:10 AM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+10:16:11 AM PIT >> INFO : Created 1 mutation test units in pre scan
+10:16:12 AM PIT >> INFO : MINION : Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+10:16:12 AM PIT >> INFO : Sending 73 test classes to minion
+10:16:12 AM PIT >> INFO : Sent tests to minion
+10:16:23 AM PIT >> INFO : MINION : created
+10:16:24 AM PIT >> INFO : Calculated coverage in 12 seconds.
+10:16:25 AM PIT >> INFO : Created 1 mutation test units
+10:18:06 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+10:18:56 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+10:21:37 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+10:22:59 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+10:23:25 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+10:23:49 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+10:26:33 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+10:27:31 AM PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+10:28:05 AM PIT >> INFO : Completed in 714 seconds

@@ -2,18 +2,18 @@
   "aggregated": {
     "classLevelBaseline": {
       "inclusivenessPct": 99.76,
-      "safe": 2520
+      "safe": 2921
     },
     "constructorOnlyRule": {
       "additionalRecovered": 7,
-      "inclusivenessPct": 99.37,
-      "safe": 2510
+      "inclusivenessPct": 99.39,
+      "safe": 2910
     },
     "original": {
-      "inclusivenessPct": 99.09,
-      "safe": 2503
+      "inclusivenessPct": 99.15,
+      "safe": 2903
     },
-    "totalMutations": 2526
+    "totalMutations": 2928
   },
   "methodology": {
     "aggregation": "micro-average over all killed mutations across projects",
@@ -164,6 +164,30 @@
       "project": "spring-security",
       "totalMutations": 340,
       "totalTests": 1440
+    },
+    {
+      "classLevelBaseline": {
+        "avgSelected": 487.6,
+        "inclusivenessPct": 99.75,
+        "safe": 401,
+        "selectionRatePct": 44.37
+      },
+      "constructorOnlyRule": {
+        "additionalRecovered": 0,
+        "avgSelected": 302.4,
+        "inclusivenessPct": 99.5,
+        "safe": 400,
+        "selectionRatePct": 27.52
+      },
+      "original": {
+        "avgSelected": 296.5,
+        "inclusivenessPct": 99.5,
+        "safe": 400,
+        "selectionRatePct": 26.98
+      },
+      "project": "hibernate",
+      "totalMutations": 402,
+      "totalTests": 1099
     }
   ],
   "schemaVersion": 1

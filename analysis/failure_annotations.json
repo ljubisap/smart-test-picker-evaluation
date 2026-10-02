@@ -113,5 +113,15 @@
     "mutationId": "spring-security|org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper|setAttributes2grantedAuthoritiesMap|(Ljava/util/Map;)V|85|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml:23",
     "cause": "Assert.notEmpty(map) throws before the setter probe fires; constructor-only footprint remains",
     "category": "early-exception-before-probe"
+  },
+  {
+    "mutationId": "hibernate|org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler|target|(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/description/type/TypeDescription$Generic;|180|NullReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml:52",
+    "cause": "Hibernate's custom bytecode-enhanced JUnit engine invokes the enhancement dependency while constructing enhanced test descriptors/classes, before STP opens a leaf-test JaCoCo session; both PIT-reported container methods therefore lack the target class entirely in their per-test footprints",
+    "category": "pre-test-custom-engine-enhancement"
+  },
+  {
+    "mutationId": "hibernate|org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer|fieldReader|(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/implementation/Implementation;|312|RemoveConditionalMutator_EQUAL_ELSE|indexes=unknown|blocks=unknown|ordinal=hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml:38",
+    "cause": "Hibernate's custom bytecode-enhanced JUnit engine executes fieldReader during pre-leaf enhancement/class construction; two killing tests have no target-class footprint and the third records other transformer methods but not fieldReader, so the dependency is outside the leaf-test attribution window",
+    "category": "pre-test-custom-engine-enhancement"
   }
 ]

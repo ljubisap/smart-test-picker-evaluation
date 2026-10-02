@@ -1,0 +1,159 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+> Task :local-build-plugins:extractPluginRequests UP-TO-DATE
+> Task :local-build-plugins:generatePluginAdapters UP-TO-DATE
+> Task :local-build-plugins:spotlessJava UP-TO-DATE
+> Task :local-build-plugins:spotlessJavaApply UP-TO-DATE
+> Task :local-build-plugins:compileJava UP-TO-DATE
+> Task :local-build-plugins:compileGroovy UP-TO-DATE
+> Task :local-build-plugins:compileGroovyPlugins UP-TO-DATE
+> Task :local-build-plugins:pluginDescriptors UP-TO-DATE
+> Task :local-build-plugins:processResources UP-TO-DATE
+> Task :local-build-plugins:classes UP-TO-DATE
+> Task :local-build-plugins:jar UP-TO-DATE
+Java versions for main code: [compiler: 21, release:17, explicit: false]
+Java versions for test code: [compiler: 21, release:17, launcher: 21, explicit: false]
+> Task :hibernate-core:generateDeprecated-graphParser UP-TO-DATE
+> Task :hibernate-core:generateGraphParser UP-TO-DATE
+> Task :hibernate-core:generateHqlParser UP-TO-DATE
+> Task :hibernate-core:generateOrderingParser UP-TO-DATE
+> Task :hibernate-core:generateSqlScriptParser UP-TO-DATE
+> Task :hibernate-core:generateParsers UP-TO-DATE
+> Task :hibernate-core:xjcCfg UP-TO-DATE
+> Task :hibernate-core:xjcConfiguration UP-TO-DATE
+> Task :hibernate-core:xjcHbm UP-TO-DATE
+> Task :hibernate-core:xjcMapping UP-TO-DATE
+> Task :hibernate-scan-jandex:spotlessJava UP-TO-DATE
+> Task :hibernate-scan-jandex:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-scan-jandex:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-scan-jandex:processResources UP-TO-DATE
+> Task :hibernate-ant:spotlessJava UP-TO-DATE
+> Task :hibernate-ant:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-ant:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-ant:processResources NO-SOURCE
+> Task :hibernate-community-dialects:spotlessJava UP-TO-DATE
+> Task :hibernate-community-dialects:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-community-dialects:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-community-dialects:processResources UP-TO-DATE
+> Task :hibernate-reveng:spotlessJava UP-TO-DATE
+> Task :hibernate-reveng:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-processor:spotlessJava UP-TO-DATE
+> Task :hibernate-reveng:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-processor:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-processor:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-processor:processResources UP-TO-DATE
+> Task :hibernate-testing:spotlessJava UP-TO-DATE
+> Task :hibernate-reveng:processResources UP-TO-DATE
+> Task :hibernate-testing:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-testing:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-testing:processResources UP-TO-DATE
+> Task :hibernate-core:spotlessJava UP-TO-DATE
+> Task :hibernate-core:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-core:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-core:compileJava UP-TO-DATE
+> Task :hibernate-core:processResources UP-TO-DATE
+> Task :hibernate-core:classes UP-TO-DATE
+> Task :hibernate-processor:compileJava UP-TO-DATE
+> Task :hibernate-scan-jandex:compileJava UP-TO-DATE
+> Task :hibernate-processor:classes UP-TO-DATE
+> Task :hibernate-scan-jandex:classes UP-TO-DATE
+> Task :hibernate-community-dialects:compileJava UP-TO-DATE
+> Task :hibernate-community-dialects:classes UP-TO-DATE
+> Task :hibernate-reveng:compileJava UP-TO-DATE
+> Task :hibernate-reveng:classes UP-TO-DATE
+> Task :hibernate-core:jar UP-TO-DATE
+> Task :hibernate-ant:compileJava UP-TO-DATE
+> Task :hibernate-ant:classes UP-TO-DATE
+> Task :hibernate-scan-jandex:jar UP-TO-DATE
+> Task :hibernate-reveng:jar UP-TO-DATE
+> Task :hibernate-community-dialects:jar UP-TO-DATE
+> Task :hibernate-processor:jar UP-TO-DATE
+> Task :hibernate-ant:jar UP-TO-DATE
+> Task :hibernate-core:copyBundleResourcesNonXml UP-TO-DATE
+> Task :hibernate-core:copyBundleResourcesXml UP-TO-DATE
+> Task :hibernate-core:copyBundleResources NO-SOURCE
+> Task :hibernate-testing:compileJava UP-TO-DATE
+> Task :hibernate-testing:classes UP-TO-DATE
+> Task :hibernate-testing:jar UP-TO-DATE
+> Task :hibernate-core:processTestResources UP-TO-DATE
+> Task :hibernate-core:compileTestJava UP-TO-DATE
+> Task :hibernate-core:testClasses UP-TO-DATE
+
+> Task :hibernate-core:pitest
+================================================================================
+- Mutators
+================================================================================
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE
+>> Generated 4 Killed 0 (0%)
+> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
+> NO_COVERAGE 4
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+>> Generated 4 Killed 0 (0%)
+> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
+> NO_COVERAGE 4
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator
+>> Generated 51 Killed 25 (49%)
+> KILLED 25 SURVIVED 6 TIMED_OUT 0 NON_VIABLE 0
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
+> NO_COVERAGE 20
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator
+>> Generated 6 Killed 2 (33%)
+> KILLED 2 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
+> NO_COVERAGE 4
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE
+>> Generated 54 Killed 13 (24%)
+> KILLED 13 SURVIVED 4 TIMED_OUT 0 NON_VIABLE 0
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
+> NO_COVERAGE 37
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator
+>> Generated 2 Killed 1 (50%)
+> KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
+> NO_COVERAGE 1
+--------------------------------------------------------------------------------
+> org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator
+>> Generated 2 Killed 0 (0%)
+> KILLED 0 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0
+> MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0
+> NO_COVERAGE 2
+--------------------------------------------------------------------------------
+================================================================================
+- Timings
+================================================================================
+> pre-scan for mutations : 1 seconds
+> scan classpath : < 1 second
+> coverage and dependency analysis : 10 seconds
+> build mutation tests : 1 seconds
+> run mutation analysis : 1 minutes and 31 seconds
+--------------------------------------------------------------------------------
+> Total  : 1 minutes and 44 seconds
+--------------------------------------------------------------------------------
+================================================================================
+- Statistics
+================================================================================
+>> Line Coverage (for mutated classes only): 111/210 (53%)
+>> 73 tests examined
+>> Generated 123 mutations Killed 41 (33%)
+>> Mutations with no coverage 72. Test strength 80%
+>> Ran 1376 tests (11.19 tests per mutation)
+Enhanced functionality available at https://www.arcmutate.com/
+
+[Incubating] Problems report is available at: file:///Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/target/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2m 11s
+65 actionable tasks: 1 executed, 64 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.5.0/userguide/configuration_cache_enabling.html

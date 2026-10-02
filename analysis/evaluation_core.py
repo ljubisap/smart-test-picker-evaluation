@@ -257,10 +257,23 @@ def build_base_to_keys(test_mappings: dict) -> dict[str, set[str]]:
     return base_to_keys
 
 
+def build_class_to_keys(test_mappings: dict, execution_identities: dict) -> dict[str, set[str]]:
+    """Build an exact test-class FQN lookup for PIT container test units."""
+    class_to_keys: dict[str, set[str]] = {}
+    for key, identity in execution_identities.items():
+        if key not in test_mappings or not isinstance(identity, dict):
+            continue
+        test_class = identity.get("testClassFqn")
+        if test_class:
+            class_to_keys.setdefault(test_class, set()).add(key)
+    return class_to_keys
+
+
 def resolve_killing_tests(
     mutations: list[RawMutation],
     test_mappings: dict,
     base_to_keys: dict[str, set[str]],
+    class_to_keys: dict[str, set[str]] | None = None,
 ) -> list[ResolvedMutation]:
     """Resolve raw PIT killing test IDs to coverage map keys. Returns new list."""
     resolved_mutations = []
@@ -271,13 +284,24 @@ def resolve_killing_tests(
         for raw_pit_id in mut.raw_killing_test_ids:
             normalized = normalize_pit_test_name(raw_pit_id)
             if normalized is None:
-                raise ValueError(
-                    f"Unparseable PIT killing test ID: {raw_pit_id}\n"
-                    f"  Mutation: {mut.mutation_id}"
-                )
+                # Custom JUnit Platform engines may expose a class/container as
+                # the executable PIT test unit instead of a leaf method. Map
+                # that unit to the exact runnable identities belonging to its
+                # class; never infer from a simple class name.
+                class_match = re.search(r'\[class:([^\]]+)\]', raw_pit_id)
+                class_name = class_match.group(1) if class_match else None
+                container_keys = (class_to_keys or {}).get(class_name or "")
+                if not container_keys:
+                    raise ValueError(
+                        f"Unparseable PIT killing test ID: {raw_pit_id}\n"
+                        f"  Mutation: {mut.mutation_id}"
+                    )
+                keys = tuple(sorted(container_keys))
+                normalized = class_name
+                mode = "class-container-single" if len(keys) == 1 else "class-container-multiple"
 
             # Resolve to coverage keys
-            if normalized in test_mappings:
+            elif normalized in test_mappings:
                 keys = (normalized,)
                 mode = "direct"
             elif normalized in base_to_keys:

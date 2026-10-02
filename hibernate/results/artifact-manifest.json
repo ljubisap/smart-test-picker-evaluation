@@ -3,8 +3,28 @@
   "project": "hibernate",
   "artifacts": {
     "hibernate/config/pit-diagnostic-single-test.json": "1a3b851c801ee2b80f80cc3d1292586cb6045c6ad01bfdee202ddc2931886e78",
-    "hibernate/config/pit.init.gradle": "96f247cb0c7e2bb53386e9c8c920883c316d6266670740c54c6ce17571ad0553",
+    "hibernate/config/pit.init.gradle": "3508e8d1735020a6d8216be7d792f1e8ef7065e88712359227e94e24ab5b1768",
     "hibernate/config/sample_classes.json": "d09264d2badf5fa3ef4d7354bb2f1108d6b19f142c6543b8c71123359ef611c3",
-    "hibernate/config/subject.json": "28a0f79d23fa1cd64879cbb1fb445fdd9a3edde44b83b5a870b13a5e6400453a"
+    "hibernate/config/subject.json": "6aade9004297ceee3c8dfd0292a0383cfe58e8c4c7f964cee545eba579fead76",
+    "hibernate/results/aggregated/evaluation_results.csv": "5a15c9abcf45337282c2a268816b94f43411404b7ab0054ae5f745830143ffa4",
+    "hibernate/results/aggregated/evaluation_summary.json": "feab424915103e36be4d5a3634c53765bd28bc0e87739175d6acdeb6b0376410",
+    "hibernate/results/aggregated/mutation_results.json": "470b421556bf6617fb9c5c2f1ce00c2c8412fc2b923a261579c995896377da7a",
+    "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml": "e12296cf9e0c139103f5b40e6caa0a39bd38a44ac9ffb8fd43d6f11b1c7249eb",
+    "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml": "b7d8cd8050d960a901e12fd206dce5002e4b568fea25ff79cdc7b730470a6054",
+    "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor/mutations.xml": "bc4d1ac42c61ee0c53e922f4da79184bb79f9fd884c445be28c31d163bcd6dc8",
+    "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor/mutations.xml": "07b55a78e2092b554fb645bd7627a934f27dae235b53aa735dcfbbce32b856cc",
+    "hibernate/results/per-class/org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl/mutations.xml": "bdf4fbdb67edb6164aaf09448d0a617ea194a3ff7a8f9c8292654616da1cb400",
+    "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml": "8bc1cff1460297429591832ccc2a656568c41fa8c0495c3309d1b804d8812428",
+    "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml": "bd9f151d93cb2d60f6e924ed931a98e20b2ff81ec7d3228b9e7806b17fdce4e0",
+    "hibernate/results/per-class/org.hibernate.event.internal.AbstractFlushingEventListener/mutations.xml": "1c4bc72d59aa4b7faf1db43fa7e0e31a7c50893a8d142a966a08beed3a46573c",
+    "hibernate/results/per-class/org.hibernate.event.internal.DefaultDeleteEventListener/mutations.xml": "aab8ede32bc1d56ba3fb7c577012536e8152ed63a6da3facafb6d1162665deab",
+    "hibernate/results/per-class/org.hibernate.event.internal.DefaultLoadEventListener/mutations.xml": "6b7e08732376ad76a9900c28cc570c4fdfc544ebf59e5c53c73919c148be75a5",
+    "hibernate/results/per-class/org.hibernate.event.internal.DefaultPersistEventListener/mutations.xml": "07818644350ffb1db529a36ec46024d7a415c1726fe12d6df2c13fb9ab35fef8",
+    "hibernate/results/per-class/org.hibernate.event.internal.DefaultRefreshEventListener/mutations.xml": "379ef82577f9a2d7a6007b7336a5add9d4b554929e2485335945272c2f9aebe7",
+    "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackDefinitionResolver/mutations.xml": "16128cbf907b1a0be05e95d6028336fedcf1c9a66f2b9417d5964aaab7e27040",
+    "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackRegistryImpl/mutations.xml": "66cd9990f7d3324ea194b4e36830cb93c91807b34260d5530f2b14ea9c4ae473",
+    "hibernate/results/per-class/org.hibernate.proxy.AbstractLazyInitializer/mutations.xml": "de724fd1d9491cafbab62e06d904e1d5cc041332692c60fcdbd0c61fd5e250fc",
+    "hibernate/results/per-class/org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory/mutations.xml": "7710b0517802e780e142eea06d9f24ab3d8a8e44fffa979d448f6e86863ba698",
+    "hibernate/results/test-coverage-map.json.gz": "ff735784a784662121d89f07e5493d937bc739f622bcce1aaef2ae79a618aa76"
   }
 }

@@ -54,6 +54,15 @@
       ],
       "mutationFormat": "per-class",
       "expected": {"totalTests": 1440, "killedMutations": 340, "safeMutations": 330, "unsafeMutations": 10}
+    },
+    {
+      "name": "hibernate",
+      "coverageMap": "hibernate/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "hibernate/results/per-class/*/mutations.xml"
+      ],
+      "mutationFormat": "per-class",
+      "expected": {"totalTests": 1099, "killedMutations": 402, "safeMutations": 400, "unsafeMutations": 2}
     }
   ]
 }

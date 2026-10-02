@@ -1,0 +1,140 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API that is marked for removal.
+Note: Recompile with -Xlint:removal for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Note: /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-scan-jandex/src/main/java/org/hibernate/archive/scan/internal/ScanResultCollector.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API that is marked for removal.
+Note: Recompile with -Xlint:removal for details.
+Note: /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/tooling/hibernate-ant/src/main/java/org/hibernate/tool/hbm2ddl/SchemaExportTask.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/tooling/hibernate-ant/src/main/java/org/hibernate/tool/ant/HibernateToolTask.java uses or overrides a deprecated API that is marked for removal.
+Note: Recompile with -Xlint:removal for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java:98: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [abstract]
+	abstract String containerType();
+	                ^
+/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/tooling/metamodel-generator/src/main/java/org/hibernate/processor/annotation/AbstractQueryMethod.java:98: warning: [type.anno.before.modifier] write type annotation @Nullable immediately before type, after modifiers [abstract]
+	abstract String containerType();
+	                ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API that is marked for removal.
+Note: Recompile with -Xlint:removal for details.
+Note: /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-community-dialects/src/main/java/org/hibernate/community/dialect/SingleStoreDialect.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API that is marked for removal.
+Note: Recompile with -Xlint:removal for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+2 warnings
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API that is marked for removal.
+Note: Recompile with -Xlint:removal for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use or override a deprecated API that is marked for removal.
+Note: Recompile with -Xlint:removal for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+8:32:18 AM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+8:32:19 AM PIT >> INFO : Created 1 mutation test units in pre scan
+8:32:19 AM PIT >> INFO : MINION : Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+8:32:19 AM PIT >> INFO : Sending 1 test classes to minion
+8:32:19 AM PIT >> INFO : Sent tests to minion
+8:32:20 AM PIT >> SEVERE : Coverage generator Minion exited abnormally due to UNKNOWN_ERROR
+Exception in thread "main" org.pitest.util.PitError: Coverage generation minion exited abnormally! (UNKNOWN_ERROR)
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : SAP SE
+Version : 21.0.12.1+1-LTS
+Uptime : 4554
+Input ->
+ 1 : -XX:ActiveProcessorCount=8
+ 2 : -Dfile.encoding=UTF-8
+ 3 : -Duser.country=US
+ 4 : -Duser.language=en
+ 5 : -Duser.variant
+BootClassPathSupported : false
+
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : SAP SE
+Version : 21.0.12.1+1-LTS
+Uptime : 4555
+Input ->
+ 1 : -XX:ActiveProcessorCount=8
+ 2 : -Dfile.encoding=UTF-8
+ 3 : -Duser.country=US
+ 4 : -Duser.language=en
+ 5 : -Duser.variant
+BootClassPathSupported : false
+
+	at org.pitest.util.Unchecked.translateCheckedException(Unchecked.java:20)
+	at org.pitest.coverage.execute.DefaultCoverageGenerator.calculateCoverage(DefaultCoverageGenerator.java:118)
+	at org.pitest.coverage.execute.DefaultCoverageGenerator.calculateCoverage(DefaultCoverageGenerator.java:53)
+	at org.pitest.mutationtest.tooling.MutationCoverage.runAnalysis(MutationCoverage.java:158)
+	at org.pitest.mutationtest.tooling.MutationCoverage.runReport(MutationCoverage.java:145)
+	at org.pitest.mutationtest.tooling.EntryPoint.execute(EntryPoint.java:138)
+	at org.pitest.mutationtest.tooling.EntryPoint.execute(EntryPoint.java:64)
+	at org.pitest.mutationtest.commandline.MutationCoverageReport.runReport(MutationCoverageReport.java:98)
+	at org.pitest.mutationtest.commandline.MutationCoverageReport.main(MutationCoverageReport.java:45)
+Caused by: org.pitest.util.PitError: Coverage generation minion exited abnormally! (UNKNOWN_ERROR)
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : OpenJDK 64-Bit Server VM
+Vendor : SAP SE
+Version : 21.0.12.1+1-LTS
+Uptime : 4554
+Input ->
+ 1 : -XX:ActiveProcessorCount=8
+ 2 : -Dfile.encoding=UTF-8
+ 3 : -Duser.country=US
+ 4 : -Duser.language=en
+ 5 : -Duser.variant
+BootClassPathSupported : false
+
+	at org.pitest.coverage.execute.DefaultCoverageGenerator.gatherCoverageData(DefaultCoverageGenerator.java:157)
+	at org.pitest.coverage.execute.DefaultCoverageGenerator.calculateCoverage(DefaultCoverageGenerator.java:101)
+	... 7 more
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':hibernate-core:pitest' (registered by plugin class 'info.solidsoft.gradle.pitest.PitestPlugin').
+> Process 'command '/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 16m 31s

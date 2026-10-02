@@ -12,7 +12,8 @@
     "org.hibernate.orm.test.event.*"
   ],
   "qualifiedPopulation": {"nativeRaw": 1495, "stpRunnableLogical": 1099},
-  "jdk": "SapMachine 25.0.4.1+1-LTS",
+  "jdk": "SapMachine 21.0.12.1+1-LTS",
+  "jdkConfiguration": "-Porm.jdk.min=21 (external Gradle property; bytecode release 17)",
   "buildTool": "Gradle 9.5.0",
   "junitPlatform": "6.0.1",
   "stpCommit": "2e0954b5b590fb0b9da979c28b0d053e4ce9e5c9",

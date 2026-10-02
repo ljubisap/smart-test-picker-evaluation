@@ -36,6 +36,106 @@
       "mutations": [],
       "unsafeCount": 0
     },
+    "hibernate": {
+      "mutations": [
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest",
+              "rawPitId": "org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest.[engine:bytecode-enhanced-engine]/[Enhanced:true]/[class:org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest]",
+              "resolutionMode": "class-container-multiple",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "MergeEnhancedDetachedOrphanRemovalTest#testMergeDetachedNonEmptyCollection_31f2b7c",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [],
+                  "targetClassPresent": false,
+                  "type": "C"
+                },
+                {
+                  "coverageKey": "MergeEnhancedDetachedOrphanRemovalTest#testMergeDetachedOrphanRemoval_238f0d7",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [],
+                  "targetClassPresent": false,
+                  "type": "C"
+                }
+              ]
+            }
+          ],
+          "line": 180,
+          "mutatedClass": "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+          "mutatedMethod": "target",
+          "mutationId": "hibernate|org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler|target|(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/description/type/TypeDescription$Generic;|180|NullReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml:52",
+          "mutationTypes": [
+            "C"
+          ],
+          "mutator": "NullReturnValsMutator",
+          "recoveredByConstructorRule": false
+        },
+        {
+          "killingTests": [
+            {
+              "pitNormalized": "DirtyTrackingDynamicUpdateTest#testDynamicUpdate",
+              "rawPitId": "org.hibernate.orm.test.bytecode.enhancement.dirty.DirtyTrackingDynamicUpdateTest.[engine:bytecode-enhanced-engine]/[Enhanced:true]/[class:org.hibernate.orm.test.bytecode.enhancement.dirty.DirtyTrackingDynamicUpdateTest]/[method:testDynamicUpdate(org.hibernate.testing.orm.junit.SessionFactoryScope)]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "DirtyTrackingDynamicUpdateTest#testDynamicUpdate_231e766",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [],
+                  "targetClassPresent": false,
+                  "type": "C"
+                }
+              ]
+            },
+            {
+              "pitNormalized": "LazyProxyOnEnhancedEntityTest#test",
+              "rawPitId": "org.hibernate.orm.test.bytecode.enhancement.lazy.LazyProxyOnEnhancedEntityTest.[engine:bytecode-enhanced-engine]/[Enhanced:NoLazyLoadingContext]/[class:org.hibernate.orm.test.bytecode.enhancement.lazy.LazyProxyOnEnhancedEntityTest]/[method:test(org.hibernate.testing.orm.junit.SessionFactoryScope)]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "LazyProxyOnEnhancedEntityTest#test_55dc7f8",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [
+                    "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#<init>",
+                    "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#applyExtended",
+                    "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#collectInheritPersistentFields",
+                    "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#collectPersistentFields"
+                  ],
+                  "targetClassPresent": true,
+                  "type": "B"
+                }
+              ]
+            },
+            {
+              "pitNormalized": "DirtyTrackingDynamicUpdateAndInheritanceTest#testDynamicUpdateWithInheritance",
+              "rawPitId": "org.hibernate.orm.test.bytecode.enhancement.dirty.DirtyTrackingDynamicUpdateAndInheritanceTest.[engine:bytecode-enhanced-engine]/[Enhanced:true]/[class:org.hibernate.orm.test.bytecode.enhancement.dirty.DirtyTrackingDynamicUpdateAndInheritanceTest]/[method:testDynamicUpdateWithInheritance(org.hibernate.testing.orm.junit.SessionFactoryScope)]",
+              "resolutionMode": "base-name-single",
+              "resolvedEntries": [
+                {
+                  "coverageKey": "DirtyTrackingDynamicUpdateAndInheritanceTest#testDynamicUpdateWithInheritance_3c4e2ac",
+                  "mutatedMethodPresent": false,
+                  "targetClassMethods": [],
+                  "targetClassPresent": false,
+                  "type": "C"
+                }
+              ]
+            }
+          ],
+          "line": 312,
+          "mutatedClass": "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+          "mutatedMethod": "fieldReader",
+          "mutationId": "hibernate|org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer|fieldReader|(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/implementation/Implementation;|312|RemoveConditionalMutator_EQUAL_ELSE|indexes=unknown|blocks=unknown|ordinal=hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml:38",
+          "mutationTypes": [
+            "B",
+            "C"
+          ],
+          "mutator": "RemoveConditionalMutator_EQUAL_ELSE",
+          "recoveredByConstructorRule": false
+        }
+      ],
+      "unsafeCount": 2
+    },
     "jgrapht": {
       "mutations": [
         {
@@ -766,6 +866,11 @@
         "sha256": "766a16502d728157639fe9180cf1d226106e2ef185e7419d41ed0eb69c777a02",
         "tests": 665
       },
+      "hibernate": {
+        "commit": "a95dd44cf654131e984682687cf1b2ec5d3e34cd",
+        "sha256": "ff735784a784662121d89f07e5493d937bc739f622bcce1aaef2ae79a618aa76",
+        "tests": 1099
+      },
       "jgrapht": {
         "commit": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
         "sha256": "851e4287a57b981d8a9af930e9774656987f8e5b8a392ec53bb0850422dbcdc5",
@@ -838,6 +943,29 @@
           "flink/results/per-class/org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy/mutations.xml"
         ],
         "killedMutations": 349
+      },
+      "hibernate": {
+        "aggregateSha256": "72bd6ca7a413d2b9c428affdbfd2ea892e5d23d531a40410c22beeb11d5ac1f8",
+        "fileCount": 16,
+        "files": [
+          "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.event.internal.AbstractFlushingEventListener/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.event.internal.DefaultDeleteEventListener/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.event.internal.DefaultLoadEventListener/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.event.internal.DefaultPersistEventListener/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.event.internal.DefaultRefreshEventListener/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackDefinitionResolver/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackRegistryImpl/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.proxy.AbstractLazyInitializer/mutations.xml",
+          "hibernate/results/per-class/org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory/mutations.xml"
+        ],
+        "killedMutations": 402
       },
       "jgrapht": {
         "aggregateSha256": "c915b60b0b7edadfe2e4286cd215461d44b334e7717c73ca24811f49fbcebe0f",
@@ -931,31 +1059,32 @@
     "mutatedMethodPresentAmongUnsafeEntries": 0
   },
   "resolutionSummary": {
-    "idOccurrencesWithMultipleCoverageEntries": 307,
-    "idOccurrencesWithSingleCoverageEntry": 176737,
-    "maxEntriesPerIdOccurrence": 3,
-    "pitKillingIdOccurrences": 177044,
-    "resolvedCoverageEntryOccurrences": 177375,
-    "uniqueNormalizedPitKillingIds": 3109,
-    "uniqueRawPitKillingIds": 5566
+    "idOccurrencesWithMultipleCoverageEntries": 1828,
+    "idOccurrencesWithSingleCoverageEntry": 216199,
+    "maxEntriesPerIdOccurrence": 28,
+    "pitKillingIdOccurrences": 218027,
+    "resolvedCoverageEntryOccurrences": 224557,
+    "uniqueNormalizedPitKillingIds": 4372,
+    "uniqueRawPitKillingIds": 7253
   },
   "schemaVersion": 1,
-  "totalUnsafeMutations": 23,
+  "totalUnsafeMutations": 25,
   "typeSummary": {
     "byResolvedEntry": {
       "A": 10,
-      "B": 10,
-      "C": 7
+      "B": 11,
+      "C": 11
     },
     "exclusiveMutationTypes": {
       "A_only": 7,
       "B_only": 10,
-      "C_only": 6
+      "C_only": 7,
+      "mixed": 1
     },
     "mutationCountsContainingType": {
       "A": 7,
-      "B": 10,
-      "C": 6
+      "B": 11,
+      "C": 8
     }
   }
 }

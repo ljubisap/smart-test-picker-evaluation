@@ -16,7 +16,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | Spring Framework (spring-core) | 3624 | 454 | 97.58% | 97.78% | 80.6 | Done | [spring-core/](spring-core/) |
 | Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.7 | Done (pilot) | [petclinic/](petclinic/) |
 | Apache Flink (scheduler scope) | 665 | 349 | 100.00% | 94.55% | 36.23 | Done | [flink/](flink/) |
-| Hibernate ORM | — | — | — | — | — | PIT oracle blocked | [hibernate/](hibernate/) |
+| Hibernate ORM | 1099 | 402 | 99.50% | 73.02% | 296.53 | Done (JDK 21) | [hibernate/](hibernate/) |
 | Quarkus Arc | — | — | — | — | — | PIT oracle blocked | [quarkus/](quarkus/) |
 | Spring Security | 1440 | 340 | 97.06% | 97.44% | 36.86 | Done (JDK 21) | [spring-security/](spring-security/) |
 
@@ -29,7 +29,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | Spring Framework | curated_stratified | One class per spring-core subpackage (22 subpackages), excl. infrastructure |
 | PetClinic | all_classes | Small project; 17 classes mutated, 14 with killed mutants |
 | Flink | curated_stratified | 16 scheduler classes frozen before PIT/STP outcomes |
-| Hibernate | curated_stratified | Frozen before execution; PIT oracle blocked |
+| Hibernate | curated_stratified | 16 classes frozen before outcomes; official external JDK-minimum override used for JDK 21 replay |
 | Quarkus | curated_stratified | Frozen before execution; full Arc PIT scope blocked |
 | Spring Security | curated_stratified | 18 classes frozen before outcomes; official JDK 21 toolchain mode |
 
@@ -61,7 +61,7 @@ smart-test-picker-evaluation/
 |   |-- results/            # PIT output + aggregated metrics
 |   `-- docs/               # Methodology, reproduction, failure analysis
 |-- flink/                  # Independent validation: scheduler scope (665 tests)
-|-- hibernate/              # Frozen attempt and PIT-oracle blocker evidence
+|-- hibernate/              # Independent validation: hibernate-core representative scope (1099 tests)
 |-- quarkus/                # Frozen attempt and PIT-oracle blocker evidence
 |-- spring-security/        # Independent validation: spring-security-core (1440 tests)
 |-- analysis/               # Shared evaluation core, taxonomy and verification

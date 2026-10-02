@@ -11,7 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from analysis.evaluation_core import (
     RawMutation, ResolvedKillingTest, ResolvedMutation,
-    normalize_pit_test_name, build_base_to_keys, resolve_killing_tests,
+    normalize_pit_test_name, build_base_to_keys, build_class_to_keys, resolve_killing_tests,
     select_original, select_constructor_only_rule, select_class_level,
     load_json, load_pit_mutations, discover_pit_files,
     selected_set_sha256,
@@ -141,6 +141,30 @@ class TestNormalization(unittest.TestCase):
 
 
 class TestResolution(unittest.TestCase):
+
+    def test_class_container_resolves_by_exact_execution_identity_fqn(self):
+        test_mappings = {
+            "FooTest#first_aaa1111": {"classes": [], "methods": []},
+            "FooTest#second_bbb2222": {"classes": [], "methods": []},
+        }
+        identities = {
+            key: {"testClassFqn": "com.example.FooTest"}
+            for key in test_mappings
+        }
+        pit_id = "[engine:custom]/[class:com.example.FooTest]"
+        raw = [RawMutation(
+            mutation_id="test|Foo|bar|(V)|1|Mutator|indexes=unknown|blocks=unknown",
+            mutated_class="Foo", mutated_method="bar", method_description="(V)",
+            line_number=1, mutator="Mutator", indexes=None, blocks=None,
+            raw_killing_test_ids=(pit_id,), source_xml="test.xml", xml_ordinal=0,
+        )]
+        resolved = resolve_killing_tests(
+            raw, test_mappings, build_base_to_keys(test_mappings),
+            build_class_to_keys(test_mappings, identities),
+        )
+        killing = resolved[0].killing_tests[0]
+        self.assertEqual(killing.resolution_mode, "class-container-multiple")
+        self.assertEqual(set(killing.coverage_keys), set(test_mappings))
 
     def test_unparseable_pit_id_hard_fail(self):
         raw = [RawMutation(

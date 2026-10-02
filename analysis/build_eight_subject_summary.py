@@ -67,13 +67,19 @@ def new_project(name):
 taxonomy = load("results/failure_taxonomy.json")
 mitigation = load("results/mitigation_comparison.json")
 mit_by_project = {row["project"]: row for row in mitigation["perProject"]}
+annotations = load("analysis/failure_annotations.json")
+annotations_by_id = {row["mutationId"]: row for row in annotations}
 projects = [old_project(p) for p in ("commons-lang", "jgrapht", "spring-core", "petclinic")]
-projects.extend(new_project(p) for p in ("flink", "spring-security"))
+projects.extend(new_project(p) for p in ("flink", "spring-security", "hibernate"))
 
 for row in projects:
     mutations = taxonomy["byProject"].get(row["project"], {}).get("mutations", [])
     exclusive = {"A": 0, "B": 0, "C": 0, "NEW_TYPE": 0}
     for mutation in mutations:
+        annotation = annotations_by_id.get(mutation.get("mutationId"), {})
+        if annotation.get("category") == "pre-test-custom-engine-enhancement":
+            exclusive["NEW_TYPE"] += 1
+            continue
         kinds = mutation.get("mutationTypes", [])
         if len(kinds) == 1 and kinds[0] in exclusive:
             exclusive[kinds[0]] += 1
@@ -82,7 +88,7 @@ for row in projects:
     row["failureTaxonomy"] = exclusive
     row["mitigation"] = mit_by_project[row["project"]]["constructorOnlyRule"]
 
-for name in ("hibernate", "quarkus"):
+for name in ("quarkus",):
     blocked = load(f"{name}/results/blocked.json")
     sample = load(f"{name}/config/sample_classes.json")
     subject = load(f"{name}/config/subject.json")

@@ -20,10 +20,15 @@ gradle.afterProject { project, state ->
             targetTests = [project.findProperty('pitestTargetTests') as String]
             mutators = ['DEFAULTS']
             fullMutationMatrix = true
+            verbose = System.getenv('STP_PIT_VERBOSE') == 'true'
             outputFormats = ['XML']
             timestampedReports = false
             threads = Integer.parseInt(System.getenv('STP_EVAL_CPUS') ?: '3')
-            jvmArgs = ["-XX:ActiveProcessorCount=${System.getenv('STP_EVAL_CPUS') ?: '3'}", '-Xmx4g']
+            jvmArgs = [
+                "-XX:ActiveProcessorCount=${System.getenv('STP_EVAL_CPUS') ?: '3'}",
+                '-Xmx4g',
+                '-Dhibernate.testing.bytecode.enhancement.extension.engine.enabled=true'
+            ]
             if (System.getenv('PIT_JVM_PATH')) {
                 jvmPath = System.getenv('PIT_JVM_PATH')
             }

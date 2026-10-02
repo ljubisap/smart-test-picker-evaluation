@@ -4,14 +4,134 @@
     {
       "fqn": "org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
       "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*",
-      "status": "FAILED",
-      "reason": "exit 1",
-      "mutations": 0,
-      "elapsedSeconds": 794.07
+      "status": "OK",
+      "reason": null,
+      "mutations": 46,
+      "elapsedSeconds": 1810.9
+    },
+    {
+      "fqn": "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 60,
+      "elapsedSeconds": 723.73
+    },
+    {
+      "fqn": "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 78,
+      "elapsedSeconds": 408.56
+    },
+    {
+      "fqn": "org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 53,
+      "elapsedSeconds": 900.09
+    },
+    {
+      "fqn": "org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 66,
+      "elapsedSeconds": 531.17
+    },
+    {
+      "fqn": "org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 23,
+      "elapsedSeconds": 299.51
+    },
+    {
+      "fqn": "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 85,
+      "elapsedSeconds": 999.89
+    },
+    {
+      "fqn": "org.hibernate.proxy.AbstractLazyInitializer",
+      "targetTests": "org.hibernate.orm.test.proxy.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 118,
+      "elapsedSeconds": 220.43
+    },
+    {
+      "fqn": "org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory",
+      "targetTests": "org.hibernate.orm.test.proxy.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 8,
+      "elapsedSeconds": 78.64
+    },
+    {
+      "fqn": "org.hibernate.event.internal.AbstractFlushingEventListener",
+      "targetTests": "org.hibernate.orm.test.event.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 83,
+      "elapsedSeconds": 742.76
+    },
+    {
+      "fqn": "org.hibernate.event.internal.DefaultPersistEventListener",
+      "targetTests": "org.hibernate.orm.test.event.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 29,
+      "elapsedSeconds": 172.54
+    },
+    {
+      "fqn": "org.hibernate.event.internal.DefaultDeleteEventListener",
+      "targetTests": "org.hibernate.orm.test.event.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 123,
+      "elapsedSeconds": 131.8
+    },
+    {
+      "fqn": "org.hibernate.event.internal.DefaultLoadEventListener",
+      "targetTests": "org.hibernate.orm.test.event.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 143,
+      "elapsedSeconds": 463.14
+    },
+    {
+      "fqn": "org.hibernate.event.internal.DefaultRefreshEventListener",
+      "targetTests": "org.hibernate.orm.test.event.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 67,
+      "elapsedSeconds": 36.75
+    },
+    {
+      "fqn": "org.hibernate.jpa.event.internal.CallbackRegistryImpl",
+      "targetTests": "org.hibernate.orm.test.jpa.callbacks.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 26,
+      "elapsedSeconds": 65.03
+    },
+    {
+      "fqn": "org.hibernate.jpa.event.internal.CallbackDefinitionResolver",
+      "targetTests": "org.hibernate.orm.test.jpa.callbacks.*",
+      "status": "OK",
+      "reason": null,
+      "mutations": 53,
+      "elapsedSeconds": 70.56
     }
   ],
-  "ok": 0,
-  "failed": 1,
+  "ok": 16,
+  "failed": 0,
   "timeout": 0,
-  "totalMutations": 0
+  "totalMutations": 1061
 }

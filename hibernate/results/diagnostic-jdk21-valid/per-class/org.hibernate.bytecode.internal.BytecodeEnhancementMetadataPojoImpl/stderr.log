@@ -1,0 +1,22 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Settings file '/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/settings.gradle' line: 22
+
+* What went wrong:
+An exception occurred applying plugin request [id: 'org.hibernate.orm.build.jdks-settings']
+> Failed to apply plugin 'org.hibernate.orm.build.jdks-settings'.
+   > This build requires at least JDK 25, but you are using JDK 21
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1m 2s

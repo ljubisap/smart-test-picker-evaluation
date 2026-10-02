@@ -1,0 +1,173 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+> Task :local-build-plugins:extractPluginRequests UP-TO-DATE
+> Task :local-build-plugins:generatePluginAdapters UP-TO-DATE
+> Task :local-build-plugins:spotlessJava UP-TO-DATE
+> Task :local-build-plugins:spotlessJavaApply UP-TO-DATE
+> Task :local-build-plugins:compileJava FROM-CACHE
+> Task :local-build-plugins:compileGroovy FROM-CACHE
+> Task :local-build-plugins:compileGroovyPlugins FROM-CACHE
+> Task :local-build-plugins:pluginDescriptors UP-TO-DATE
+> Task :local-build-plugins:processResources UP-TO-DATE
+> Task :local-build-plugins:classes UP-TO-DATE
+> Task :local-build-plugins:jar
+Java versions for main code: [compiler: 21, release:17, explicit: false]
+Java versions for test code: [compiler: 21, release:17, launcher: 21, explicit: false]
+> Task :hibernate-scan-jandex:spotlessJava
+> Task :hibernate-scan-jandex:spotlessJavaApply
+> Task :hibernate-scan-jandex:writeCheckerManifest
+> Task :hibernate-scan-jandex:processResources UP-TO-DATE
+
+> Task :hibernate-core:generateDeprecated-graphParser
+Starting Antlr lexer grammar generation `deprecated-graph` : `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/src/main/antlr/org/hibernate/grammars/graph/GraphLanguageLexer.g4` -> `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph`
+Starting Antlr parser grammar generation `deprecated-graph` : `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/src/main/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParser.g4` -> `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph`
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageParser.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParserBaseListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageParserListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageParserBaseVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParserBaseVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParserVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParser.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageLexer.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageParserBaseListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParserListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageParserVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+
+> Task :hibernate-ant:spotlessJava
+> Task :hibernate-ant:spotlessJavaApply
+> Task :hibernate-ant:writeCheckerManifest
+> Task :hibernate-ant:processResources NO-SOURCE
+
+> Task :hibernate-core:generateGraphParser
+Starting Antlr lexer grammar generation `graph` : `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/src/main/antlr/org/hibernate/grammars/graph/GraphLanguageLexer.g4` -> `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph`
+Starting Antlr parser grammar generation `graph` : `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/src/main/antlr/org/hibernate/grammars/graph/GraphLanguageParser.g4` -> `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph`
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageParser.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParserBaseListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageParserListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageParserBaseVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParserBaseVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParserVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParser.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageLexer.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageParserBaseListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParserListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/graph/GraphLanguageParserVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/graph
+
+> Task :hibernate-community-dialects:spotlessJava
+> Task :hibernate-community-dialects:spotlessJavaApply
+> Task :hibernate-community-dialects:writeCheckerManifest
+> Task :hibernate-community-dialects:processResources UP-TO-DATE
+> Task :hibernate-reveng:spotlessJava
+> Task :hibernate-reveng:spotlessJavaApply
+> Task :hibernate-reveng:writeCheckerManifest
+> Task :hibernate-reveng:processResources UP-TO-DATE
+> Task :hibernate-testing:spotlessJava
+> Task :hibernate-testing:spotlessJavaApply
+> Task :hibernate-testing:writeCheckerManifest
+> Task :hibernate-testing:processResources UP-TO-DATE
+
+> Task :hibernate-core:generateHqlParser
+Starting Antlr lexer grammar generation `hql` : `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/src/main/antlr/org/hibernate/grammars/hql/HqlLexer.g4` -> `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/hql`
+Starting Antlr parser grammar generation `hql` : `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/src/main/antlr/org/hibernate/grammars/hql/HqlParser.g4` -> `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/hql`
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/hql/HqlParser.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/hql
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/hql/HqlParserBaseListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/hql
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/hql/HqlParserBaseVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/hql
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/hql/HqlParserListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/hql
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/hql/HqlParserVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/hql
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/hql/HqlLexer.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/hql
+
+> Task :hibernate-processor:spotlessJava
+> Task :hibernate-processor:spotlessJavaApply
+> Task :hibernate-processor:writeCheckerManifest
+> Task :hibernate-processor:processResources UP-TO-DATE
+
+> Task :hibernate-core:generateOrderingParser
+Starting Antlr lexer grammar generation `ordering` : `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/src/main/antlr/org/hibernate/grammars/ordering/OrderingLexer.g4` -> `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/ordering`
+Starting Antlr parser grammar generation `ordering` : `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/src/main/antlr/org/hibernate/grammars/ordering/OrderingParser.g4` -> `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/ordering`
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/ordering/OrderingParserListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/ordering
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/ordering/OrderingParser.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/ordering
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/ordering/OrderingParserBaseVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/ordering
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/ordering/OrderingLexer.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/ordering
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/ordering/OrderingParserBaseListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/ordering
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/ordering/OrderingParserVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/ordering
+
+> Task :hibernate-core:generateSqlScriptParser
+Starting Antlr lexer grammar generation `sqlScript` : `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/src/main/antlr/org/hibernate/grammars/importsql/SqlScriptLexer.g4` -> `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/importsql`
+Starting Antlr parser grammar generation `sqlScript` : `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/src/main/antlr/org/hibernate/grammars/importsql/SqlScriptParser.g4` -> `/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/importsql`
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/importsql/SqlScriptParserVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/importsql
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/importsql/SqlScriptLexer.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/importsql
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/importsql/SqlScriptParserListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/importsql
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/importsql/SqlScriptParser.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/importsql
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/importsql/SqlScriptParserBaseListener.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/importsql
+Stripping silly generated-from line from /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/tmp/antlr/org/hibernate/grammars/importsql/SqlScriptParserBaseVisitor.java into /Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/hibernate-core/target/generated/sources/antlr/main/org/hibernate/grammars/importsql
+
+> Task :hibernate-core:generateParsers
+> Task :hibernate-core:xjcCfg
+> Task :hibernate-core:xjcConfiguration
+> Task :hibernate-core:xjcHbm
+> Task :hibernate-core:xjcMapping
+> Task :hibernate-core:spotlessJava
+> Task :hibernate-core:spotlessJavaApply
+> Task :hibernate-core:writeCheckerManifest
+
+> Task :hibernate-core:compileJava
+
+> Task :hibernate-core:processResources UP-TO-DATE
+> Task :hibernate-core:classes
+
+> Task :hibernate-community-dialects:compileJava
+
+> Task :hibernate-scan-jandex:compileJava
+
+> Task :hibernate-scan-jandex:classes
+
+> Task :hibernate-processor:compileJava
+
+> Task :hibernate-reveng:compileJava
+
+> Task :hibernate-reveng:classes
+
+> Task :hibernate-ant:compileJava
+
+> Task :hibernate-ant:classes
+
+> Task :hibernate-processor:compileJava
+
+> Task :hibernate-community-dialects:compileJava
+
+> Task :hibernate-community-dialects:classes
+> Task :hibernate-core:jar
+
+> Task :hibernate-processor:compileJava
+
+> Task :hibernate-processor:classes
+> Task :hibernate-core:copyBundleResourcesNonXml
+> Task :hibernate-core:copyBundleResourcesXml
+> Task :hibernate-core:copyBundleResources NO-SOURCE
+> Task :hibernate-scan-jandex:jar
+> Task :hibernate-processor:jar
+> Task :hibernate-community-dialects:jar
+> Task :hibernate-reveng:jar
+> Task :hibernate-ant:jar
+
+> Task :hibernate-testing:compileJava
+
+> Task :hibernate-testing:classes
+> Task :hibernate-testing:jar
+> Task :hibernate-core:processTestResources
+> Task :hibernate-core:compileTestJava
+
+> Task :hibernate-core:testClasses
+
+> Task :hibernate-core:pitest
+
+> Task :hibernate-core:pitest FAILED
+
+[Incubating] Problems report is available at: file:///Users/D061177/work/issta/hibernate-orm-stp-qualification/subject/target/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+65 actionable tasks: 50 executed, 3 from cache, 12 up-to-date

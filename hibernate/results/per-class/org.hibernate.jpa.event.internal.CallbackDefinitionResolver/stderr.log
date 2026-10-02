@@ -1,0 +1,10 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+10:42:56 AM PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+10:42:57 AM PIT >> INFO : Created 1 mutation test units in pre scan
+10:42:57 AM PIT >> INFO : MINION : Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=8
+10:42:57 AM PIT >> INFO : Sending 71 test classes to minion
+10:42:58 AM PIT >> INFO : Sent tests to minion
+10:43:04 AM PIT >> INFO : Calculated coverage in 6 seconds.
+10:43:04 AM PIT >> INFO : Created 1 mutation test units
+10:43:45 AM PIT >> INFO : Completed in 48 seconds

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "attemptedSubjects": 8,
-  "completedSubjects": 6,
-  "blockedSubjects": 2,
+  "completedSubjects": 7,
+  "blockedSubjects": 1,
   "projects": [
     {
       "project": "commons-lang",
@@ -302,47 +302,50 @@
     },
     {
       "project": "hibernate",
-      "status": "PIT_GROUND_TRUTH_BLOCKED",
+      "status": "COMPLETE",
       "logicalTests": 1099,
       "sampledProductionClasses": 16,
-      "usableMutationProducingClasses": null,
-      "totalPitMutations": null,
-      "killedMutations": null,
-      "stpInclusive": null,
-      "inclusivenessPct": null,
-      "avgSelected": null,
-      "reductionPct": null,
-      "classLevel": null,
-      "randomEqualBudget": null,
-      "falseNegatives": null,
-      "failureTaxonomy": null,
-      "mitigation": null,
-      "blocker": {
-        "status": "PIT_GROUND_TRUTH_BLOCKED",
-        "subject": "Hibernate ORM 7.4.11.Final",
-        "subjectCommit": "a95dd44cf654131e984682687cf1b2ec5d3e34cd",
-        "pitest": "1.17.4",
-        "pitestJunit5Plugin": "1.2.1",
-        "gradlePitIntegrationPlugin": "1.19.0",
-        "jdk": "SapMachine 25.0.4.1+1-LTS",
-        "nativeSingleTestControl": {
-          "testClass": "org.hibernate.orm.test.bytecode.enhancement.basic.BasicSessionTest",
-          "status": "PASS"
-        },
-        "pitSingleTestDiagnostic": {
-          "targetClass": "org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
-          "testClass": "org.hibernate.orm.test.bytecode.enhancement.basic.BasicSessionTest",
-          "status": "FAIL",
-          "stage": "PIT coverage generation minion",
-          "failure": "Coverage generation minion exited abnormally (UNKNOWN_ERROR)"
-        },
-        "pitFrozenScopeDiagnostic": {
-          "testClassesSent": 932,
-          "status": "FAIL",
-          "stage": "PIT coverage generation minion",
-          "failure": "Coverage generation minion exited abnormally (UNKNOWN_ERROR)"
-        },
-        "decision": "Stop Hibernate subject; do not change PIT version, subject release, or targetTests scope"
+      "usableMutationProducingClasses": 16,
+      "totalPitMutations": 1061,
+      "killedMutations": 402,
+      "stpInclusive": 400,
+      "inclusivenessPct": 99.5,
+      "avgSelected": 296.53,
+      "reductionPct": 73.02,
+      "classLevel": {
+        "name": "Class-level only",
+        "safe": 401,
+        "unsafe": 1,
+        "total": 402,
+        "inclusivenessPct": 99.75,
+        "avgSelected": 487.63,
+        "selectionRatePct": 44.37,
+        "reductionPct": 55.63
+      },
+      "randomEqualBudget": {
+        "name": "Random equal-budget",
+        "trials": 1000,
+        "seed": 42,
+        "inclusivenessPct": 71.12,
+        "inclusivenessStdPct": 1.34,
+        "analyticalInclusivenessPct": 71.13,
+        "avgSelected": 296.53,
+        "selectionRatePct": 26.98,
+        "reductionPct": 73.02
+      },
+      "falseNegatives": 2,
+      "failureTaxonomy": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "NEW_TYPE": 2
+      },
+      "mitigation": {
+        "additionalRecovered": 0,
+        "avgSelected": 302.4,
+        "inclusivenessPct": 99.5,
+        "safe": 400,
+        "selectionRatePct": 27.52
       }
     },
     {
@@ -386,12 +389,12 @@
     }
   ],
   "aggregateCompletedSubjectsOnly": {
-    "killedMutations": 2526,
-    "stpInclusive": 2503,
-    "falseNegatives": 23,
-    "inclusivenessPct": 99.09,
+    "killedMutations": 2928,
+    "stpInclusive": 2903,
+    "falseNegatives": 25,
+    "inclusivenessPct": 99.15,
     "mitigationRecoveries": 7,
-    "newFailureTypeExists": false
+    "newFailureTypeExists": true
   },
   "interpretation": "Blocked subjects are excluded from every mutation denominator; null is not zero."
 }
