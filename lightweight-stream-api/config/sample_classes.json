@@ -1,0 +1,48 @@
+{
+  "project": "Lightweight-Stream-API",
+  "version": "1.2.2",
+  "repository": "https://github.com/aNNiMON/Lightweight-Stream-API.git",
+  "commit": "c781b32690649993ae0dd7c48fca5591974d094c",
+  "frozenAt": "2026-10-02",
+  "outcomesInspectedBeforeFreeze": false,
+  "sampling": {
+    "strategy": "curated_stratified_pre_result_freeze",
+    "candidatePopulation": "204 production Java files in stream/src/main/java",
+    "criteria": [
+      "Represent root object and primitive stream APIs",
+      "Represent collection, optional, and exception helpers",
+      "Represent internal buffering and iterator machinery",
+      "Represent object, int, long, and double intermediate operators",
+      "Prefer concrete implementation-bearing classes over functional interfaces and constants",
+      "No PIT mutation yield or STP inclusiveness inspected before freeze"
+    ],
+    "exclusions": [
+      "functional interfaces",
+      "trivial constants or compatibility shims",
+      "benchmark-only code",
+      "streamTest helper-library production code outside the qualified mutation module"
+    ],
+    "targetTestsPolicy": "All native stream-module tests: com.annimon.stream.*",
+    "totalSampled": 18
+  },
+  "classes": [
+    {"fqn":"com.annimon.stream.Stream","sourcePath":"stream/src/main/java/com/annimon/stream/Stream.java","subpackage":"root-object-stream","loc":2452,"reason":"core object-stream factory, intermediate, and terminal orchestration","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.IntStream","sourcePath":"stream/src/main/java/com/annimon/stream/IntStream.java","subpackage":"root-int-stream","loc":1484,"reason":"primitive int stream operations","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.LongStream","sourcePath":"stream/src/main/java/com/annimon/stream/LongStream.java","subpackage":"root-long-stream","loc":1436,"reason":"primitive long stream operations","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.DoubleStream","sourcePath":"stream/src/main/java/com/annimon/stream/DoubleStream.java","subpackage":"root-double-stream","loc":1419,"reason":"primitive double stream operations","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.Optional","sourcePath":"stream/src/main/java/com/annimon/stream/Optional.java","subpackage":"optional","loc":422,"reason":"optional value and terminal helper behavior","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.Collectors","sourcePath":"stream/src/main/java/com/annimon/stream/Collectors.java","subpackage":"terminal-collection","loc":1241,"reason":"terminal collection and reduction construction","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.Exceptional","sourcePath":"stream/src/main/java/com/annimon/stream/Exceptional.java","subpackage":"exception-helper","loc":352,"reason":"exception-aware functional execution","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.internal.Operators","sourcePath":"stream/src/main/java/com/annimon/stream/internal/Operators.java","subpackage":"internal","loc":67,"reason":"shared terminal operator implementation","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.internal.SpinedBuffer","sourcePath":"stream/src/main/java/com/annimon/stream/internal/SpinedBuffer.java","subpackage":"internal-buffer","loc":479,"reason":"dynamic buffering used by terminal materialization","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.iterator.LsaExtIterator","sourcePath":"stream/src/main/java/com/annimon/stream/iterator/LsaExtIterator.java","subpackage":"iterator","loc":50,"reason":"lazy object iterator state machine","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.iterator.PrimitiveExtIterator","sourcePath":"stream/src/main/java/com/annimon/stream/iterator/PrimitiveExtIterator.java","subpackage":"primitive-iterator","loc":109,"reason":"primitive iterator state machinery","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.operator.ObjFilter","sourcePath":"stream/src/main/java/com/annimon/stream/operator/ObjFilter.java","subpackage":"object-operator","loc":58,"reason":"object intermediate filtering","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.operator.ObjFlatMap","sourcePath":"stream/src/main/java/com/annimon/stream/operator/ObjFlatMap.java","subpackage":"object-operator","loc":55,"reason":"nested-stream iterator orchestration","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.operator.ObjSorted","sourcePath":"stream/src/main/java/com/annimon/stream/operator/ObjSorted.java","subpackage":"object-operator","loc":37,"reason":"stateful sorting operator","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.operator.ObjSlidingWindow","sourcePath":"stream/src/main/java/com/annimon/stream/operator/ObjSlidingWindow.java","subpackage":"object-operator","loc":56,"reason":"stateful window operator","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.operator.IntRangeClosed","sourcePath":"stream/src/main/java/com/annimon/stream/operator/IntRangeClosed.java","subpackage":"int-operator","loc":30,"reason":"primitive range boundary behavior","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.operator.LongScan","sourcePath":"stream/src/main/java/com/annimon/stream/operator/LongScan.java","subpackage":"long-operator","loc":32,"reason":"stateful primitive scan behavior","targetTests":"com.annimon.stream.*"},
+    {"fqn":"com.annimon.stream.operator.DoubleTakeWhile","sourcePath":"stream/src/main/java/com/annimon/stream/operator/DoubleTakeWhile.java","subpackage":"double-operator","loc":45,"reason":"short-circuit primitive intermediate operation","targetTests":"com.annimon.stream.*"}
+  ]
+}

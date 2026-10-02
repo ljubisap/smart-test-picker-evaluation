@@ -14,6 +14,7 @@ p.add_argument('--results',type=Path,required=True); p.add_argument('--gradle-ho
 p.add_argument('--timeout',type=int,default=1800); p.add_argument('--class',dest='single'); p.add_argument('--resume',action='store_true'); p.add_argument('--cpus',type=int,default=3)
 p.add_argument('--gradle-arg',action='append',default=[],help='additional immutable Gradle argument, repeatable')
 p.add_argument('--report-module-dir',help='module directory when it differs from the Gradle project name')
+p.add_argument('--gradle-executable',default='./gradlew',help='Gradle launcher (default: subject wrapper)')
 a=p.parse_args(); cfg=json.loads(a.config.read_text()); items=[x for x in cfg['classes'] if not a.single or x['fqn']==a.single]
 a.results.mkdir(parents=True,exist_ok=True); records=[]
 for i,item in enumerate(items,1):
@@ -26,7 +27,7 @@ for i,item in enumerate(items,1):
     module_dir=a.report_module_dir or a.task.split(':')[1]
     report_root=a.root / module_dir / 'build/reports/pitest'
     shutil.rmtree(report_root,ignore_errors=True)
-    cmd=['./gradlew','--no-daemon',f'--max-workers={a.cpus}','--console=plain','-I',str(a.init_script.resolve()),a.task,
+    cmd=[a.gradle_executable,'--no-daemon',f'--max-workers={a.cpus}','--console=plain','-I',str(a.init_script.resolve()),a.task,
          f"-PpitestTargetClass={item['fqn']}",f"-PpitestTargetTests={item['targetTests']}",*a.gradle_arg]
     env={**os.environ,'GRADLE_USER_HOME':str(a.gradle_home),'JAVA_TOOL_OPTIONS':f'-XX:ActiveProcessorCount={a.cpus}', 'STP_EVAL_CPUS':str(a.cpus)}; started=time.time()
     try:
