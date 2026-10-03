@@ -16,7 +16,7 @@ It contains scripts, configurations, raw results, and documentation for reproduc
 | Spring Framework (spring-core) | 3624 | 454 | 97.58% | 97.78% | 80.6 | Done | [spring-core/](spring-core/) |
 | Spring PetClinic | 52 | 94 | 100.00% | 81.30% | 9.7 | Done (pilot) | [petclinic/](petclinic/) |
 | Apache Flink (scheduler scope) | 665 | 349 | 100.00% | 94.55% | 36.23 | Done | [flink/](flink/) |
-| Hibernate ORM | 1099 | 402 | 99.50% | 73.02% | 296.53 | Done (JDK 21) | [hibernate/](hibernate/) |
+| Hibernate ORM | 1099 | 401 leaf-oracle KILLED | 99.75% | 72.95% | 297.25 | Done (JDK 21; 1 container-only PIT outcome retained separately) | [hibernate/](hibernate/) |
 | Quarkus Arc | 684 | 1083 | 100.00% | 61.89% | 260.65 | Done (runnable-inventory scope translation) | [quarkus/](quarkus/) |
 | Spring Security | 1440 | 340 | 97.06% | 97.44% | 36.86 | Done (JDK 21) | [spring-security/](spring-security/) |
 

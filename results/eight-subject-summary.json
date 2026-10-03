@@ -305,50 +305,50 @@
       "sampledProductionClasses": 16,
       "usableMutationProducingClasses": 16,
       "totalPitMutations": 1061,
-      "killedMutations": 402,
+      "killedMutations": 401,
       "stpInclusive": 400,
-      "inclusivenessPct": 99.5,
-      "avgSelected": 296.53,
-      "selectionRatePct": 26.98,
-      "reductionPct": 73.02,
+      "inclusivenessPct": 99.75,
+      "avgSelected": 297.25,
+      "selectionRatePct": 27.05,
+      "reductionPct": 72.95,
       "classLevel": {
         "name": "Class-level only",
         "safe": 401,
-        "unsafe": 1,
-        "total": 402,
-        "inclusivenessPct": 99.75,
-        "avgSelected": 487.63,
-        "selectionRatePct": 44.37,
-        "reductionPct": 55.63
+        "unsafe": 0,
+        "total": 401,
+        "inclusivenessPct": 100.0,
+        "avgSelected": 488.77,
+        "selectionRatePct": 44.47,
+        "reductionPct": 55.53
       },
       "randomEqualBudget": {
         "name": "Random equal-budget",
         "trials": 1000,
         "seed": 42,
-        "inclusivenessPct": 71.12,
-        "inclusivenessStdPct": 1.34,
-        "analyticalInclusivenessPct": 71.13,
-        "avgSelected": 296.53,
-        "selectionRatePct": 26.98,
-        "reductionPct": 73.02
+        "inclusivenessPct": 71.33,
+        "inclusivenessStdPct": 1.27,
+        "analyticalInclusivenessPct": 71.3,
+        "avgSelected": 297.25,
+        "selectionRatePct": 27.05,
+        "reductionPct": 72.95
       },
-      "falseNegatives": 2,
+      "falseNegatives": 1,
       "footprintTaxonomy": {
         "A": 0,
         "B": 0,
-        "C": 1,
+        "C": 0,
         "MIXED": 1
       },
       "causalMechanisms": {
         "EARLY_EXCEPTION_PROBE_SHADOWING": 0,
-        "PRE_TEST_ATTRIBUTION_GAP": 2
+        "PRE_TEST_ATTRIBUTION_GAP": 1
       },
       "mitigation": {
         "additionalRecovered": 0,
-        "avgSelected": 302.4,
-        "inclusivenessPct": 99.5,
+        "avgSelected": 303.2,
+        "inclusivenessPct": 99.75,
         "safe": 400,
-        "selectionRatePct": 27.52
+        "selectionRatePct": 27.58
       }
     },
     {
@@ -406,19 +406,19 @@
     }
   ],
   "aggregateCompletedSubjectsOnly": {
-    "killedMutations": 4011,
+    "killedMutations": 4010,
     "stpInclusive": 3986,
-    "falseNegatives": 25,
-    "inclusivenessPct": 99.38,
+    "falseNegatives": 24,
+    "inclusivenessPct": 99.4,
     "footprintCounts": {
       "A": 7,
       "B": 10,
-      "C": 7,
+      "C": 6,
       "MIXED": 1
     },
     "causalMechanismCounts": {
       "EARLY_EXCEPTION_PROBE_SHADOWING": 23,
-      "PRE_TEST_ATTRIBUTION_GAP": 2
+      "PRE_TEST_ATTRIBUTION_GAP": 1
     },
     "mitigationRecoveries": 7,
     "distinctCausalMechanisms": 2

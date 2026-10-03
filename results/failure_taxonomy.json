@@ -49,50 +49,12 @@
     },
     "hibernate": {
       "causalMechanismCounts": {
-        "PRE_TEST_ATTRIBUTION_GAP": 2
+        "PRE_TEST_ATTRIBUTION_GAP": 1
       },
       "footprintCounts": {
-        "C": 1,
         "MIXED": 1
       },
       "mutations": [
-        {
-          "causalEvidence": "Hibernate's custom bytecode-enhanced JUnit engine invokes the enhancement dependency while constructing enhanced test descriptors/classes, before STP opens a leaf-test JaCoCo session; both PIT-reported container methods therefore lack the target class entirely in their per-test footprints",
-          "causalMechanism": "PRE_TEST_ATTRIBUTION_GAP",
-          "footprintType": "C",
-          "killingTests": [
-            {
-              "pitNormalized": "org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest",
-              "rawPitId": "org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest.[engine:bytecode-enhanced-engine]/[Enhanced:true]/[class:org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest]",
-              "resolutionMode": "class-container-multiple",
-              "resolvedEntries": [
-                {
-                  "coverageKey": "MergeEnhancedDetachedOrphanRemovalTest#testMergeDetachedNonEmptyCollection_31f2b7c",
-                  "mutatedMethodPresent": false,
-                  "targetClassMethods": [],
-                  "targetClassPresent": false,
-                  "type": "C"
-                },
-                {
-                  "coverageKey": "MergeEnhancedDetachedOrphanRemovalTest#testMergeDetachedOrphanRemoval_238f0d7",
-                  "mutatedMethodPresent": false,
-                  "targetClassMethods": [],
-                  "targetClassPresent": false,
-                  "type": "C"
-                }
-              ]
-            }
-          ],
-          "line": 180,
-          "mutatedClass": "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
-          "mutatedMethod": "target",
-          "mutationId": "hibernate|org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler|target|(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/description/type/TypeDescription$Generic;|180|NullReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml:52",
-          "mutationTypes": [
-            "C"
-          ],
-          "mutator": "NullReturnValsMutator",
-          "recoveredByConstructorRule": false
-        },
         {
           "causalEvidence": "Hibernate's custom bytecode-enhanced JUnit engine executes fieldReader during pre-leaf enhancement/class construction; two killing tests have no target-class footprint and the third records other transformer methods but not fieldReader, so the dependency is outside the leaf-test attribution window",
           "causalMechanism": "PRE_TEST_ATTRIBUTION_GAP",
@@ -158,7 +120,7 @@
           "recoveredByConstructorRule": false
         }
       ],
-      "unsafeCount": 2
+      "unsafeCount": 1
     },
     "jgrapht": {
       "causalMechanismCounts": {
@@ -975,12 +937,12 @@
   },
   "causalMechanismSummary": {
     "EARLY_EXCEPTION_PROBE_SHADOWING": 23,
-    "PRE_TEST_ATTRIBUTION_GAP": 2
+    "PRE_TEST_ATTRIBUTION_GAP": 1
   },
   "footprintSummary": {
     "A": 7,
     "B": 10,
-    "C": 7,
+    "C": 6,
     "MIXED": 1
   },
   "inputs": {
@@ -1099,7 +1061,7 @@
           "hibernate/results/per-class/org.hibernate.proxy.AbstractLazyInitializer/mutations.xml",
           "hibernate/results/per-class/org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory/mutations.xml"
         ],
-        "killedMutations": 402
+        "killedMutations": 401
       },
       "jgrapht": {
         "aggregateSha256": "c915b60b0b7edadfe2e4286cd215461d44b334e7717c73ca24811f49fbcebe0f",
@@ -1216,32 +1178,32 @@
     "mutatedMethodPresentAmongUnsafeEntries": 0
   },
   "resolutionSummary": {
-    "idOccurrencesWithMultipleCoverageEntries": 1828,
+    "idOccurrencesWithMultipleCoverageEntries": 1827,
     "idOccurrencesWithSingleCoverageEntry": 278387,
     "maxEntriesPerIdOccurrence": 28,
-    "pitKillingIdOccurrences": 280215,
-    "resolvedCoverageEntryOccurrences": 286745,
+    "pitKillingIdOccurrences": 280214,
+    "resolvedCoverageEntryOccurrences": 286743,
     "uniqueNormalizedPitKillingIds": 5038,
     "uniqueRawPitKillingIds": 7919
   },
   "schemaVersion": 2,
-  "totalUnsafeMutations": 25,
+  "totalUnsafeMutations": 24,
   "typeSummary": {
     "byResolvedEntry": {
       "A": 10,
       "B": 11,
-      "C": 11
+      "C": 9
     },
     "exclusiveMutationTypes": {
       "A_only": 7,
       "B_only": 10,
-      "C_only": 7,
+      "C_only": 6,
       "mixed": 1
     },
     "mutationCountsContainingType": {
       "A": 7,
       "B": 11,
-      "C": 8
+      "C": 7
     }
   }
 }

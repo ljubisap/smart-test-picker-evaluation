@@ -25,6 +25,7 @@ from analysis.evaluation_core import (
     build_base_to_keys, build_class_to_keys, resolve_killing_tests,
     select_original, select_constructor_only_rule, select_class_level,
     aggregate_sha256, file_sha256,
+    exclude_non_leaf_oracle_records,
 )
 
 
@@ -124,6 +125,7 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
             base_to_keys,
             build_class_to_keys(test_mappings, coverage_data.get("executionIdentities", {})),
         )
+        resolved = exclude_non_leaf_oracle_records(resolved, repo_root, name)
 
         inputs_pit[name] = {
             "files": [p.relative_to(repo_root).as_posix() for p in pit_files],

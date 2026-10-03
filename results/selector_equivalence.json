@@ -17,12 +17,12 @@
       "mutations": 349
     },
     "hibernate": {
-      "exactMatches": 402,
+      "exactMatches": 401,
       "mismatches": 0,
-      "mutationOccurrencesWithMethodHits": 402,
+      "mutationOccurrencesWithMethodHits": 401,
       "mutationOccurrencesWithPythonOnlyFallback": 0,
       "mutationOccurrencesWithZeroMethodHits": 0,
-      "mutations": 402
+      "mutations": 401
     },
     "jgrapht": {
       "exactMatches": 517,
@@ -67,7 +67,7 @@
   },
   "description": "Dataset-wide comparison of Python evaluation_core.select_original() vs modeled Java TestSelector.selectTests() semantics for single-method changes. The Java model is faithful to the production code for the exact experimental input shape: changedClasses={C}, changedMethods={C#M}.",
   "differences": [],
-  "exactMatches": 4011,
+  "exactMatches": 4010,
   "experimentalInputShape": {
     "changedClasses": "{C}",
     "changedMethods": "{C#M}",
@@ -75,8 +75,8 @@
     "classesWithMethodInfo": "{C}"
   },
   "mismatches": 0,
-  "mutationOccurrences": 4011,
-  "mutationOccurrencesWithMethodHits": 4010,
+  "mutationOccurrences": 4010,
+  "mutationOccurrencesWithMethodHits": 4009,
   "mutationOccurrencesWithPythonOnlyFallback": 0,
   "mutationOccurrencesWithZeroMethodHits": 1,
   "schemaVersion": 1,

@@ -1,0 +1,23 @@
+{
+  "subjectCommit": "a95dd44cf654131e984682687cf1b2ec5d3e34cd",
+  "jdk": "SapMachine 21.0.12.1+1-LTS",
+  "pitest": "1.17.4",
+  "pitestJunit5Plugin": "1.2.1",
+  "targetClass": "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+  "targetTestClass": "org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest",
+  "mutators": ["DEFAULTS"],
+  "fullMutationMatrix": true,
+  "pitExportDirectory": "hibernate-core/build/reports/pitest/export/org/hibernate/bytecode/enhance/internal/bytebuddy/BiDirectionalAssociationHandler/mutants/35",
+  "pitMutation": {
+    "index": 28,
+    "block": 9,
+    "line": 180,
+    "mutator": "NullReturnValsMutator"
+  },
+  "classSha256": {
+    "pristine": "b169295ec6daecfa5f47c811b3c4ca01ca89935112e185fa8a4eb6e030688713",
+    "mutant": "a1c1a0541b1c66364f974e934738ebc6c3c0c367d386c1caca3a3af462bced1f"
+  },
+  "sourceEditUsed": false,
+  "cpuLimit": 8
+}

@@ -16,24 +16,26 @@ test population.
 | spring-core | complete | 454 | 443 | 97.58% | 80.6 | 97.78% |
 | PetClinic | complete | 94 | 94 | 100.00% | 9.7 | 81.30% |
 | Flink | complete | 349 | 349 | 100.00% | 36.23 | 94.55% |
-| Hibernate ORM | complete | 402 | 400 | 99.50% | 296.53 | 73.02% |
+| Hibernate ORM | complete | 401 | 400 | 99.75% | 297.25 | 72.95% |
 | Quarkus Arc | complete | 1083 | 1083 | 100.00% | 260.65 | 61.89% |
 | Spring Security | complete | 340 | 330 | 97.06% | 36.86 | 97.44% |
 
 Across the eight completed subjects, STP includes a PIT-reported killing test
-for 3,986 of 4,011 KILLED mutants (99.38%). The unchanged constructor-only
-mitigation recovers seven of the twenty-five misses. Flink adds no false
+for 3,986 of 4,010 leaf-oracle KILLED mutants (99.40%). The unchanged constructor-only
+mitigation recovers seven of the twenty-four misses. Flink adds no false
 negative. Quarkus adds 1,083 KILLED mutants and no false negative. Spring
 Security adds ten misses, all instances of early-exception probe shadowing,
 with footprint shapes two Type A, three Type B, and five Type C; the two Type A cases are recovered by
-the unchanged rule. Hibernate adds two misses caused by enhancement work
-performed by its custom JUnit engine outside STP's leaf-test attribution
-window; this is a newly observed mechanism.
+the unchanged rule. Hibernate adds one leaf-oracle miss caused by enhancement
+work performed by its custom JUnit engine outside STP's leaf-test attribution
+window. A second PIT KILLED outcome was directly proven to fail at the engine
+container before either runnable leaf starts and is retained separately as a
+container-only outcome rather than normalized into an invented leaf killer.
 
-Across all misses, the map-evidence footprint totals are A=7, B=10, C=7, and
+Across all leaf-oracle misses, the map-evidence footprint totals are A=7, B=10, C=6, and
 MIXED=1. These shapes are reported independently from causal mechanism:
-23 misses are `EARLY_EXCEPTION_PROBE_SHADOWING`, while the two Hibernate misses
-are `PRE_TEST_ATTRIBUTION_GAP`.
+23 misses are `EARLY_EXCEPTION_PROBE_SHADOWING`, while one Hibernate miss is
+`PRE_TEST_ATTRIBUTION_GAP`.
 
 ## Flink
 
@@ -56,7 +58,9 @@ file major version 69. A JDK 21 replay kept Hibernate 7.4.11.Final, all 16
 sampled classes, PIT/JUnit plugin versions, mutators, and `targetTests` scopes
 unchanged. Hibernate's external `-Porm.jdk.min=21` property and its required
 bytecode-enhanced-engine system property enabled a valid run: 1,061 total PIT
-mutations and 402 KILLED. Details are in `hibernate/docs/JDK21_REFREEZE.md`.
+mutations and 402 raw PIT KILLED outcomes. One is now classified as container-only,
+leaving 401 in the leaf-level operational oracle. Details are in
+`hibernate/docs/JDK21_REFREEZE.md` and `hibernate/p0-container-oracle/report.md`.
 
 ## Quarkus scope-translation correction
 
@@ -91,10 +95,11 @@ The result answers the independent-validation questions as follows:
   and exhibits no new failure category.
 - Spring Security independently adds two Type A, three Type B, and five Type C
   misses; the two Type A misses are recovered by the frozen constructor rule.
-- Hibernate exposes a new pre-leaf custom-engine attribution boundary: its
+- Hibernate exposes a pre-leaf custom-engine attribution boundary: its
   bytecode-enhancement dependencies execute while the custom JUnit engine
   constructs enhanced descriptors/classes, before STP opens the leaf-test
-  coverage session. Both Hibernate misses follow this mechanism.
+  coverage session. One leaf-oracle miss follows this mechanism; the separately
+  retained container-only outcome occurs before any leaf invocation.
 
 PIT mutations remain fault approximations, and killing tests are an operational
 oracle only inside each predeclared `targetTests` scope.

@@ -1,0 +1,100 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :local-build-plugins:extractPluginRequests UP-TO-DATE
+> Task :local-build-plugins:generatePluginAdapters UP-TO-DATE
+> Task :local-build-plugins:spotlessJava UP-TO-DATE
+> Task :local-build-plugins:spotlessJavaApply UP-TO-DATE
+> Task :local-build-plugins:compileJava UP-TO-DATE
+> Task :local-build-plugins:compileGroovy UP-TO-DATE
+> Task :local-build-plugins:compileGroovyPlugins UP-TO-DATE
+> Task :local-build-plugins:pluginDescriptors UP-TO-DATE
+> Task :local-build-plugins:processResources UP-TO-DATE
+> Task :local-build-plugins:classes UP-TO-DATE
+> Task :local-build-plugins:jar UP-TO-DATE
+Java versions for main code: [compiler: 21, release:17, explicit: false]
+Java versions for test code: [compiler: 21, release:17, launcher: 21, explicit: false]
+> Task :hibernate-core:processResources UP-TO-DATE
+> Task :hibernate-core:classes
+> Task :hibernate-scan-jandex:spotlessJava UP-TO-DATE
+> Task :hibernate-scan-jandex:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-scan-jandex:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-ant:spotlessJava UP-TO-DATE
+> Task :hibernate-ant:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-reveng:spotlessJava UP-TO-DATE
+> Task :hibernate-reveng:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-ant:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-ant:processResources NO-SOURCE
+> Task :hibernate-reveng:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-community-dialects:spotlessJava UP-TO-DATE
+> Task :hibernate-community-dialects:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-community-dialects:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-core:jar UP-TO-DATE
+> Task :hibernate-testing:spotlessJava UP-TO-DATE
+> Task :hibernate-testing:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-testing:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-testing:processResources UP-TO-DATE
+> Task :hibernate-core:copyBundleResourcesNonXml UP-TO-DATE
+> Task :hibernate-core:copyBundleResourcesXml UP-TO-DATE
+> Task :hibernate-core:copyBundleResources NO-SOURCE
+> Task :hibernate-processor:spotlessJava UP-TO-DATE
+> Task :hibernate-processor:spotlessJavaApply UP-TO-DATE
+> Task :hibernate-processor:writeCheckerManifest UP-TO-DATE
+> Task :hibernate-scan-jandex:compileJava UP-TO-DATE
+> Task :hibernate-processor:compileJava UP-TO-DATE
+> Task :hibernate-reveng:compileJava UP-TO-DATE
+> Task :hibernate-community-dialects:compileJava UP-TO-DATE
+> Task :hibernate-scan-jandex:processResources UP-TO-DATE
+> Task :hibernate-community-dialects:processResources UP-TO-DATE
+> Task :hibernate-scan-jandex:classes UP-TO-DATE
+> Task :hibernate-community-dialects:classes UP-TO-DATE
+> Task :hibernate-processor:processResources UP-TO-DATE
+> Task :hibernate-processor:classes UP-TO-DATE
+> Task :hibernate-reveng:processResources UP-TO-DATE
+> Task :hibernate-reveng:classes UP-TO-DATE
+> Task :hibernate-scan-jandex:jar UP-TO-DATE
+> Task :hibernate-community-dialects:jar UP-TO-DATE
+> Task :hibernate-reveng:jar UP-TO-DATE
+> Task :hibernate-processor:jar UP-TO-DATE
+> Task :hibernate-ant:compileJava UP-TO-DATE
+> Task :hibernate-ant:classes UP-TO-DATE
+> Task :hibernate-ant:jar UP-TO-DATE
+> Task :hibernate-testing:compileJava UP-TO-DATE
+> Task :hibernate-testing:classes UP-TO-DATE
+> Task :hibernate-testing:jar UP-TO-DATE
+> Task :hibernate-core:processTestResources UP-TO-DATE
+> Task :hibernate-core:compileTestJava UP-TO-DATE
+> Task :hibernate-core:testClasses UP-TO-DATE
+
+> Task :hibernate-core:test
+P0_LEAF_START class=org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest name=initializationError
+P0_LEAF_FINISH class=org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest name=initializationError result=FAILURE
+
+Enhanced:MergeEnhancedDetachedOrphanRemovalTest > initializationError FAILED
+    java.lang.TypeNotPresentException at null:-1
+        Caused by: java.lang.ClassNotFoundException at BytecodeEnhancedClassUtils.java:250
+            Caused by: org.hibernate.bytecode.enhance.spi.EnhancementException at EnhancerImpl.java:163
+                Caused by: java.lang.NullPointerException at BiDirectionalAssociationHandler.java:265
+P0_SUITE_FINISH class=org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest name=org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest result=FAILURE tests=1 failures=1
+P0_SUITE_FINISH class=null name=Gradle Test Run :hibernate-core:test result=FAILURE tests=1 failures=1
+
+1 test completed, 1 failed
+
+> Task :hibernate-core:test FAILED
+> Task :hibernate-core:buildDashboard UP-TO-DATE
+
+[Incubating] Problems report is available at: file:///private/tmp/hibernate-p0.wazyj9/subject/target/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':hibernate-core:test'.
+> There were failing tests. See the report at: file:///private/tmp/hibernate-p0.wazyj9/subject/hibernate-core/target/reports/tests/test/index.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.5.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 18s
+53 actionable tasks: 1 executed, 52 up-to-date

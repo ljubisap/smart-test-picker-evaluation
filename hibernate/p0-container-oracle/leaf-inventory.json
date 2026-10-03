@@ -1,0 +1,28 @@
+{
+  "class": "org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest",
+  "engine": "bytecode-enhanced-engine",
+  "enhancementContext": "true",
+  "leafCount": 2,
+  "additionalDynamicOrTemplateDescendants": false,
+  "leaves": [
+    {
+      "method": "testMergeDetachedOrphanRemoval",
+      "parameter": "org.hibernate.testing.orm.junit.SessionFactoryScope",
+      "nativeDisplayName": "Enhanced:testMergeDetachedOrphanRemoval(SessionFactoryScope)",
+      "uniqueId": "[engine:bytecode-enhanced-engine]/[Enhanced:true]/[class:org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest]/[method:testMergeDetachedOrphanRemoval(org.hibernate.testing.orm.junit.SessionFactoryScope)]",
+      "stpLogicalIdentity": "MergeEnhancedDetachedOrphanRemovalTest#testMergeDetachedOrphanRemoval_238f0d7"
+    },
+    {
+      "method": "testMergeDetachedNonEmptyCollection",
+      "parameter": "org.hibernate.testing.orm.junit.SessionFactoryScope",
+      "nativeDisplayName": "Enhanced:testMergeDetachedNonEmptyCollection(SessionFactoryScope)",
+      "uniqueId": "[engine:bytecode-enhanced-engine]/[Enhanced:true]/[class:org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest]/[method:testMergeDetachedNonEmptyCollection(org.hibernate.testing.orm.junit.SessionFactoryScope)]",
+      "stpLogicalIdentity": "MergeEnhancedDetachedOrphanRemovalTest#testMergeDetachedNonEmptyCollection_31f2b7c"
+    }
+  ],
+  "evidence": [
+    "hibernate-core/src/test/java/org/hibernate/orm/test/bytecode/enhancement/merge/MergeEnhancedDetachedOrphanRemovalTest.java",
+    "hibernate/p0-container-oracle/raw/pristine-native-class.xml",
+    "hibernate-orm-stp-qualification/raw/full-module-post-fix/jacoco/session_MergeEnhancedDetachedOrphanRemovalTest*.identity.properties"
+  ]
+}

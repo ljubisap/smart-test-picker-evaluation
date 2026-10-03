@@ -62,7 +62,7 @@
         "hibernate/results/per-class/*/mutations.xml"
       ],
       "mutationFormat": "per-class",
-      "expected": {"totalTests": 1099, "killedMutations": 402, "safeMutations": 400, "unsafeMutations": 2}
+      "expected": {"totalTests": 1099, "killedMutations": 401, "safeMutations": 400, "unsafeMutations": 1}
     },
     {
       "name": "quarkus",

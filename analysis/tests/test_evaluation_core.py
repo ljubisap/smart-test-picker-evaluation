@@ -14,7 +14,7 @@ from analysis.evaluation_core import (
     normalize_pit_test_name, build_base_to_keys, build_class_to_keys, resolve_killing_tests,
     select_original, select_constructor_only_rule, select_class_level,
     load_json, load_pit_mutations, discover_pit_files,
-    selected_set_sha256,
+    selected_set_sha256, exclude_non_leaf_oracle_records,
 )
 
 
@@ -307,6 +307,55 @@ class TestSelectedSetHash(unittest.TestCase):
         s1 = selected_set_sha256({"a", "b"})
         s2 = selected_set_sha256({"a", "c"})
         self.assertNotEqual(s1, s2)
+
+
+class TestOracleExclusions(unittest.TestCase):
+
+    def test_excludes_only_audited_project_record(self):
+        first = ResolvedMutation(
+            mutation_id="keep", mutated_class="Foo", mutated_method="a",
+            method_description="()V", line_number=1, mutator="M",
+            indexes=None, blocks=None, killing_tests=(), source_xml="x", xml_ordinal=1,
+        )
+        second = ResolvedMutation(
+            mutation_id="exclude", mutated_class="Foo", mutated_method="b",
+            method_description="()V", line_number=2, mutator="M",
+            indexes=None, blocks=None, killing_tests=(), source_xml="x", xml_ordinal=2,
+        )
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            (root / "analysis").mkdir()
+            (root / "analysis" / "oracle_exclusions.json").write_text(json.dumps({
+                "records": [{"project": "subject", "mutationId": "exclude"}]
+            }))
+            result = exclude_non_leaf_oracle_records([first, second], root, "subject")
+        self.assertEqual([mutation.mutation_id for mutation in result], ["keep"])
+
+    def test_fails_closed_for_stale_exclusion(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            (root / "analysis").mkdir()
+            (root / "analysis" / "oracle_exclusions.json").write_text(json.dumps({
+                "records": [{"project": "subject", "mutationId": "missing"}]
+            }))
+            with self.assertRaisesRegex(ValueError, "configured oracle exclusions not present"):
+                exclude_non_leaf_oracle_records([], root, "subject")
+
+    def test_subject_local_legacy_path_matches_canonical_exclusion(self):
+        mutation = ResolvedMutation(
+            mutation_id="subject|Foo|m|()V|1|M|indexes=unknown|blocks=unknown|ordinal=results/per-class/Foo/mutations.xml:1",
+            mutated_class="Foo", mutated_method="m", method_description="()V",
+            line_number=1, mutator="M", indexes=None, blocks=None,
+            killing_tests=(), source_xml="results/per-class/Foo/mutations.xml", xml_ordinal=1,
+        )
+        canonical = mutation.mutation_id.replace("ordinal=results/", "ordinal=subject/results/")
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            (root / "analysis").mkdir()
+            (root / "analysis" / "oracle_exclusions.json").write_text(json.dumps({
+                "records": [{"project": "subject", "mutationId": canonical}]
+            }))
+            self.assertEqual(exclude_non_leaf_oracle_records([mutation], root, "subject"), [])
 
 
 if __name__ == "__main__":

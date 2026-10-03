@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Enhanced:MergeEnhancedDetachedOrphanRemovalTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-30T20:20:13.327Z" hostname="WDVJD22XQC" time="0.295">
+  <properties/>
+  <testcase name="Enhanced:testMergeDetachedNonEmptyCollection(SessionFactoryScope)" classname="org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest" time="0.218"/>
+  <testcase name="Enhanced:testMergeDetachedOrphanRemoval(SessionFactoryScope)" classname="org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest" time="0.003"/>
+  <system-out><![CDATA[[subsystem]  INFO org.hibernate.orm.beans ManagedBeanRegistryInitiator:85 - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate class loader
+20:20:13,330  WARN CachingRegionFactory:76 - org.hibernate.testing.cache.CachingRegionFactory should be only used for testing.
+[subsystem]  INFO org.hibernate.orm.cache RegionFactoryInitiator:49 - HHH90001028: Second-level cache region factory [org.hibernate.testing.cache.CachingRegionFactory]
+[subsystem]  WARN hibernate.orm.deprecation DialectFactoryImpl:152 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[subsystem]  INFO e.orm.connections.pooling JdbcEnvironmentInitiator:179 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:db1;DB_CLOSE_DELAY=-1;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DB1/PUBLIC
+	Autocommit mode: false
+	Isolation level: READ_COMMITTED
+	JDBC fetch size: 100
+	Pool: DriverManagerConnectionProvider
+	Minimum pool size: 1
+	Maximum pool size: 5
+20:20:13,477 TRACE GlobalTemporaryTableStrategy:103 - Creating global-temp ID table: HTE_Leaf
+Hibernate: 
+    create global temporary table HTE_Leaf(rn_ integer not null, ROOD_ID bigint, id bigint, name varchar(255), primary key (rn_)) transactional
+20:20:13,478 TRACE GlobalTemporaryTableStrategy:103 - Creating global-temp ID table: HTE_Root
+Hibernate: 
+    create global temporary table HTE_Root(rn_ integer not null, id bigint, NAME varchar(50), primary key (rn_)) transactional
+[subsystem]  INFO org.hibernate.orm.core JtaPlatformInitiator:56 - HHH000490: Using JTA platform [org.hibernate.engine.transaction.jta.platform.internal.WildFlyStandAloneJtaPlatform]
+[subsystem] TRACE .hibernate.orm.jdbc.batch BatchBuilderImpl:42 - Using standard JDBC batch builder
+Hibernate: 
+    drop table if exists Leaf cascade 
+Hibernate: 
+    drop table if exists Root cascade 
+Hibernate: 
+    drop table if exists Root_Leaf cascade 
+Hibernate: 
+    drop sequence if exists Leaf_SEQ
+Hibernate: 
+    drop sequence if exists Root_SEQ
+Hibernate: 
+    create sequence Leaf_SEQ start with 1 increment by 50
+Hibernate: 
+    create sequence Root_SEQ start with 1 increment by 50
+Hibernate: 
+    create table Leaf (
+        id bigint not null,
+        name varchar(255),
+        ROOD_ID bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table Root (
+        id bigint not null,
+        NAME varchar(50),
+        primary key (id)
+    )
+Hibernate: 
+    create table Root_Leaf (
+        Root_id bigint not null,
+        leaves_id bigint not null,
+        primary key (leaves_id)
+    )
+Hibernate: 
+    alter table if exists Leaf 
+       add constraint FK3ft0vwj27405qdj8tp09yqyx4 
+       foreign key (ROOD_ID) 
+       references Root
+Hibernate: 
+    alter table if exists Root_Leaf 
+       add constraint FKfbjm4lhjapu49sbkbl59rvrld 
+       foreign key (leaves_id) 
+       references Leaf
+Hibernate: 
+    alter table if exists Root_Leaf 
+       add constraint FKm9mpsbmmwgc93o1o37n9mc6lk 
+       foreign key (Root_id) 
+       references Root
+Hibernate: 
+    select
+        next value 
+    for
+        Root_SEQ
+Hibernate: 
+    select
+        next value 
+    for
+        Leaf_SEQ
+Hibernate: 
+    insert 
+    into
+        Root
+        (NAME, id) 
+    values
+        (?, ?)
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (1:VARCHAR) <- [new]
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (2:BIGINT) <- [1]
+Hibernate: 
+    insert 
+    into
+        Leaf
+        (name, ROOD_ID, id) 
+    values
+        (?, ?, ?)
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (1:VARCHAR) <- [null]
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (2:BIGINT) <- [1]
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (3:BIGINT) <- [1]
+Hibernate: 
+    insert 
+    into
+        Root_Leaf
+        (Root_id, leaves_id) 
+    values
+        (?, ?)
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (1:BIGINT) <- [1]
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (2:BIGINT) <- [1]
+Hibernate: 
+    select
+        r1_0.id,
+        l1_0.Root_id,
+        l1_1.id,
+        l1_1.name,
+        l1_1.ROOD_ID,
+        r2_0.id,
+        r2_0.NAME,
+        r1_0.NAME 
+    from
+        Root r1_0 
+    left join
+        Root_Leaf l1_0 
+            on r1_0.id=l1_0.Root_id 
+    left join
+        Leaf l1_1 
+            on l1_1.id=l1_0.leaves_id 
+    left join
+        Root r2_0 
+            on r2_0.id=l1_1.ROOD_ID 
+    where
+        r1_0.id=?
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (1:BIGINT) <- [1]
+[subsystem] TRACE ibernate.orm.jdbc.extract DelegatingLogger:103 - extracted value (2:BIGINT) -> [1]
+[subsystem] TRACE ibernate.orm.jdbc.extract DelegatingLogger:103 - extracted value (3:BIGINT) -> [1]
+[subsystem] TRACE ibernate.orm.jdbc.extract DelegatingLogger:103 - extracted value (6:BIGINT) -> [1]
+[subsystem] TRACE ibernate.orm.jdbc.extract DelegatingLogger:103 - extracted value (4:VARCHAR) -> [null]
+[subsystem] TRACE ibernate.orm.jdbc.extract DelegatingLogger:103 - extracted value (8:VARCHAR) -> [new]
+Hibernate: 
+    update
+        Root 
+    set
+        NAME=? 
+    where
+        id=?
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (1:VARCHAR) <- [updated]
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (2:BIGINT) <- [1]
+Hibernate: 
+    select
+        next value 
+    for
+        Root_SEQ
+Hibernate: 
+    insert 
+    into
+        Root
+        (NAME, id) 
+    values
+        (?, ?)
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (1:VARCHAR) <- [new]
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (2:BIGINT) <- [2]
+Hibernate: 
+    select
+        r1_0.id,
+        l1_0.Root_id,
+        l1_1.id,
+        l1_1.name,
+        l1_1.ROOD_ID,
+        r2_0.id,
+        r2_0.NAME,
+        r1_0.NAME 
+    from
+        Root r1_0 
+    left join
+        Root_Leaf l1_0 
+            on r1_0.id=l1_0.Root_id 
+    left join
+        Leaf l1_1 
+            on l1_1.id=l1_0.leaves_id 
+    left join
+        Root r2_0 
+            on r2_0.id=l1_1.ROOD_ID 
+    where
+        r1_0.id=?
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (1:BIGINT) <- [2]
+[subsystem] TRACE ibernate.orm.jdbc.extract DelegatingLogger:103 - extracted value (2:BIGINT) -> [null]
+[subsystem] TRACE ibernate.orm.jdbc.extract DelegatingLogger:103 - extracted value (8:VARCHAR) -> [new]
+Hibernate: 
+    update
+        Root 
+    set
+        NAME=? 
+    where
+        id=?
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (1:VARCHAR) <- [updated]
+[subsystem] TRACE g.hibernate.orm.jdbc.bind DelegatingLogger:103 - binding parameter (2:BIGINT) <- [2]
+Hibernate: 
+    drop table if exists Leaf cascade 
+Hibernate: 
+    drop table if exists Root cascade 
+Hibernate: 
+    drop table if exists Root_Leaf cascade 
+Hibernate: 
+    drop sequence if exists Leaf_SEQ
+Hibernate: 
+    drop sequence if exists Root_SEQ
+20:20:13,623 TRACE GlobalTemporaryTableStrategy:103 - Dropping global-temp ID table: HTE_Leaf
+Hibernate: 
+    drop table HTE_Leaf
+20:20:13,623 TRACE GlobalTemporaryTableStrategy:103 - Dropping global-temp ID table: HTE_Root
+Hibernate: 
+    drop table HTE_Root
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

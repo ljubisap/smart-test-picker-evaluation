@@ -1,0 +1,34 @@
+{
+  "mutation": {
+    "class": "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+    "method": "target",
+    "descriptor": "(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/description/type/TypeDescription$Generic;",
+    "line": 180,
+    "mutator": "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator",
+    "pitIndex": 28,
+    "pitBlock": 9
+  },
+  "rawPit": {
+    "status": "KILLED",
+    "numberOfTestsRun": 0,
+    "killingIdentity": "org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest.[engine:bytecode-enhanced-engine]/[Enhanced:true]/[class:org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest]",
+    "coveringTests": [
+      "org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest.[engine:bytecode-enhanced-engine]/[Enhanced:true]/[class:org.hibernate.orm.test.bytecode.enhancement.merge.MergeEnhancedDetachedOrphanRemovalTest]/[method:testMergeDetachedNonEmptyCollection(org.hibernate.testing.orm.junit.SessionFactoryScope)]"
+    ]
+  },
+  "previousEvaluatorNormalization": {
+    "mode": "class-container-multiple",
+    "expandedCoverageKeys": [
+      "MergeEnhancedDetachedOrphanRemovalTest#testMergeDetachedNonEmptyCollection_31f2b7c",
+      "MergeEnhancedDetachedOrphanRemovalTest#testMergeDetachedOrphanRemoval_238f0d7"
+    ],
+    "selectedSetIntersection": false,
+    "footprint": "C",
+    "causalAnnotation": "PRE_TEST_ATTRIBUTION_GAP"
+  },
+  "distinction": {
+    "containerKiller": "PIT evidence",
+    "coveringLeaf": "coverage evidence only, not killing evidence",
+    "normalizedLeaves": "evaluator mapping only, not killing evidence"
+  }
+}

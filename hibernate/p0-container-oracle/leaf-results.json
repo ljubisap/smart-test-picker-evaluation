@@ -1,0 +1,32 @@
+{
+  "exactMutantSha256": "a1c1a0541b1c66364f974e934738ebc6c3c0c367d386c1caca3a3af462bced1f",
+  "results": [
+    {
+      "leaf": "MergeEnhancedDetachedOrphanRemovalTest#testMergeDetachedOrphanRemoval_238f0d7",
+      "pristine": {"selectedAlone": true, "started": true, "outcome": "PASS"},
+      "mutant": {
+        "selectedAlone": true,
+        "leafStarted": false,
+        "outcome": "CONTAINER_INITIALIZATION_ERROR",
+        "syntheticGradleTest": "initializationError",
+        "exception": "TypeNotPresentException -> ClassNotFoundException -> EnhancementException -> NullPointerException",
+        "failureStage": "BytecodeEnhancedTestEngine.doDiscover / enhanceTestClass, before leaf invocation"
+      },
+      "independentLeafKiller": false
+    },
+    {
+      "leaf": "MergeEnhancedDetachedOrphanRemovalTest#testMergeDetachedNonEmptyCollection_31f2b7c",
+      "pristine": {"selectedAlone": true, "started": true, "outcome": "PASS"},
+      "mutant": {
+        "selectedAlone": true,
+        "leafStarted": false,
+        "outcome": "CONTAINER_INITIALIZATION_ERROR",
+        "syntheticGradleTest": "initializationError",
+        "exception": "TypeNotPresentException -> ClassNotFoundException -> EnhancementException -> NullPointerException",
+        "failureStage": "BytecodeEnhancedTestEngine.doDiscover / enhanceTestClass, before leaf invocation"
+      },
+      "independentLeafKiller": false
+    }
+  ],
+  "anyIndependentLeafKiller": false
+}

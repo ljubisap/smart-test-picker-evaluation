@@ -6,7 +6,7 @@ Shared evaluation logic and cross-project failure taxonomy for the Smart Test Pi
 
 This module implements a **Python evaluation selector** (`select_original`) based on the documented selection rules.
 
-**Equivalence status:** For all 1,351 unique single-method change cases represented by the 4,011 evaluated killed mutations, `evaluation_core.select_original()` produces exactly the same selected-test sets as the modeled production Java `TestSelector` semantics (`verify_selector_equivalence.py`). One occurrence has zero exact method-coverage hits; the modeled Java escalation and Python fallback still agree, with no Python-only candidate. The remaining 4,010 occurrences have exact method hits.
+**Equivalence status:** For all 1,351 unique single-method change cases represented by the 4,010 evaluated leaf-oracle KILLED mutations, `evaluation_core.select_original()` produces exactly the same selected-test sets as the modeled production Java `TestSelector` semantics (`verify_selector_equivalence.py`). One occurrence has zero exact method-coverage hits; the modeled Java escalation and Python fallback still agree, with no Python-only candidate. The remaining 4,009 occurrences have exact method hits.
 
 A separate 21-case contract test (`commons-lang/scripts/contract_test.py`) confirms exact equality against the actual pinned Maven plugin (commit `70b3984626eb`).
 
@@ -62,13 +62,14 @@ python3 -m unittest discover -s analysis/tests
 ## Outputs
 
 - `results/failure_taxonomy.json` -- per-mutation footprint and causal-mechanism classification with full provenance
-- `results/mitigation_comparison.json` -- original vs constructor-only vs class-level for all 4,011 mutations
-- `results/selector_equivalence.json` -- dataset-wide Python/Java selector comparison (4,011 mutations, 1,351 unique cases)
+- `results/mitigation_comparison.json` -- original vs constructor-only vs class-level for all 4,010 leaf-oracle mutations
+- `results/selector_equivalence.json` -- dataset-wide Python/Java selector comparison (4,010 mutations, 1,351 unique cases)
+- `oracle_exclusions.json` -- audited PIT outcomes that cannot be assigned to a runnable leaf; raw PIT evidence remains preserved
 - `results/recollection_comparison.json` -- old/new coverage map comparison after final recollection
 
 ## Manual Annotations
 
-`failure_annotations.json` provides root-cause explanations for all 25 unsafe mutations. These are manually authored based on source and lifecycle inspection and are NOT automatically derivable from the coverage footprint alone. The taxonomy script validates completeness and maps the audited annotation categories to stable causal-mechanism identifiers.
+`failure_annotations.json` provides root-cause explanations for all 24 unsafe leaf-oracle mutations. These are manually authored based on source and lifecycle inspection and are NOT automatically derivable from the coverage footprint alone. The taxonomy script validates completeness and maps the audited annotation categories to stable causal-mechanism identifiers.
 
 ## Input Provenance
 
@@ -78,11 +79,11 @@ The per-project manifests record the exact Smart Test Picker revision used to co
 
 ## Canonical Results
 
-- 25 unsafe mutations: footprint taxonomy 7 Type A, 10 Type B, 7 Type C, and 1 mixed B/C case
-- Causal mechanisms: 23 early-exception/probe-shadowing and 2 pre-test attribution-gap cases
-- Original: 99.38% (3986/4011)
-- Constructor-only rule: 99.55% (3993/4011, +7 recovered)
-- Class-level baseline: 99.83% (4004/4011)
-- Causal annotations identify two Hibernate misses as a new pre-leaf custom-engine enhancement mechanism
+- 24 unsafe mutations: footprint taxonomy 7 Type A, 10 Type B, 6 Type C, and 1 mixed B/C case
+- Causal mechanisms: 23 early-exception/probe-shadowing and 1 pre-test attribution-gap case
+- Original: 99.40% (3986/4010)
+- Constructor-only rule: 99.58% (3993/4010, +7 recovered)
+- Class-level baseline: 99.85% (4004/4010)
+- One Hibernate miss remains a pre-leaf custom-engine attribution gap; a second PIT KILLED outcome was directly proven container-only and is documented outside the leaf oracle
 - Both invariants hold: classPresentNoMethods=0, mutatedMethodPresent=0
-- Selector equivalence: 4011/4011 exact matches, 0 mismatches
+- Selector equivalence: 4010/4010 exact matches, 0 mismatches

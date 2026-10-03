@@ -87,6 +87,50 @@ def load_coverage_map(path: Path) -> dict:
     return data
 
 
+def load_oracle_exclusion_ids(repo_root: Path, project_name: str) -> set[str]:
+    """Return frozen records excluded from the leaf-test killing oracle.
+
+    Raw PIT artifacts remain unchanged. Exclusions require a separately audited
+    record proving that PIT's KILLED outcome cannot be assigned to a runnable
+    leaf identity under the evaluation's operational oracle.
+    """
+    path = repo_root / "analysis" / "oracle_exclusions.json"
+    if not path.exists():
+        return set()
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {
+        row["mutationId"]
+        for row in data.get("records", [])
+        if row.get("project") == project_name
+    }
+
+
+def exclude_non_leaf_oracle_records(mutations, repo_root: Path, project_name: str):
+    """Remove audited container-only outcomes from the leaf-test oracle."""
+    excluded = load_oracle_exclusion_ids(repo_root, project_name)
+    by_canonical_id = {
+        _canonicalize_mutation_source_path(mutation.mutation_id, project_name): mutation
+        for mutation in mutations
+    }
+    missing = excluded - set(by_canonical_id)
+    if missing:
+        raise ValueError(
+            f"{project_name}: configured oracle exclusions not present: {sorted(missing)}"
+        )
+    return [
+        mutation for mutation in mutations
+        if _canonicalize_mutation_source_path(mutation.mutation_id, project_name) not in excluded
+    ]
+
+
+def _canonicalize_mutation_source_path(mutation_id: str, project_name: str) -> str:
+    """Canonicalize the legacy subject-local PIT path used by evaluate_subject."""
+    marker = "|ordinal=results/"
+    if marker in mutation_id:
+        return mutation_id.replace(marker, f"|ordinal={project_name}/results/", 1)
+    return mutation_id
+
+
 def discover_pit_files(repo_root: Path, patterns: list[str]) -> tuple[Path, ...]:
     """Resolve glob patterns, deduplicate, sort, validate."""
     matched = set()

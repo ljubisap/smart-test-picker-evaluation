@@ -38,6 +38,7 @@ from analysis.evaluation_core import (
     load_coverage_map, discover_pit_files, load_pit_mutations,
     build_base_to_keys, build_class_to_keys, resolve_killing_tests,
     select_original,
+    exclude_non_leaf_oracle_records,
 )
 
 
@@ -115,6 +116,7 @@ def run_verification(repo_root: Path):
             base_to_keys,
             build_class_to_keys(test_mappings, coverage_data.get("executionIdentities", {})),
         )
+        resolved = exclude_non_leaf_oracle_records(resolved, repo_root, name)
 
         proj_exact = 0
         proj_mismatch = 0

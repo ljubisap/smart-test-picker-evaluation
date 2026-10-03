@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "project": "hibernate",
+      "mutationId": "hibernate|org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler|target|(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/description/type/TypeDescription$Generic;|180|NullReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml:52",
+      "classification": "CONTAINER_ONLY_KILL",
+      "reason": "PIT reports an enhanced-engine container failure with numberOfTestsRun=0. Exact-mutant diagnostics show initializationError during BytecodeEnhancedTestEngine discovery/preparation before either runnable leaf begins.",
+      "evidence": "hibernate/p0-container-oracle/final-decision.json"
+    }
+  ]
+}

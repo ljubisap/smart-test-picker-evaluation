@@ -18,6 +18,7 @@ sys.path.insert(0, str(REPO_ROOT))
 from analysis.evaluation_core import (  # noqa: E402
     build_base_to_keys,
     build_class_to_keys,
+    exclude_non_leaf_oracle_records,
     load_coverage_map,
     load_pit_mutations,
     resolve_killing_tests,
@@ -102,6 +103,7 @@ def main():
         build_base_to_keys(mappings),
         build_class_to_keys(mappings, coverage_map.get("executionIdentities", {})),
     )
+    mutations = exclude_non_leaf_oracle_records(mutations, REPO_ROOT, args.subject)
     rows = []
     for mutation in mutations:
         killing = {key for test in mutation.killing_tests for key in test.coverage_keys}

@@ -1,19 +1,19 @@
 {
   "aggregated": {
     "classLevelBaseline": {
-      "inclusivenessPct": 99.83,
+      "inclusivenessPct": 99.85,
       "safe": 4004
     },
     "constructorOnlyRule": {
       "additionalRecovered": 7,
-      "inclusivenessPct": 99.55,
+      "inclusivenessPct": 99.58,
       "safe": 3993
     },
     "original": {
-      "inclusivenessPct": 99.38,
+      "inclusivenessPct": 99.4,
       "safe": 3986
     },
-    "totalMutations": 4011
+    "totalMutations": 4010
   },
   "methodology": {
     "aggregation": "micro-average over all killed mutations across projects",
@@ -167,26 +167,26 @@
     },
     {
       "classLevelBaseline": {
-        "avgSelected": 487.6,
-        "inclusivenessPct": 99.75,
+        "avgSelected": 488.8,
+        "inclusivenessPct": 100.0,
         "safe": 401,
-        "selectionRatePct": 44.37
+        "selectionRatePct": 44.47
       },
       "constructorOnlyRule": {
         "additionalRecovered": 0,
-        "avgSelected": 302.4,
-        "inclusivenessPct": 99.5,
+        "avgSelected": 303.2,
+        "inclusivenessPct": 99.75,
         "safe": 400,
-        "selectionRatePct": 27.52
+        "selectionRatePct": 27.58
       },
       "original": {
-        "avgSelected": 296.5,
-        "inclusivenessPct": 99.5,
+        "avgSelected": 297.2,
+        "inclusivenessPct": 99.75,
         "safe": 400,
-        "selectionRatePct": 26.98
+        "selectionRatePct": 27.05
       },
       "project": "hibernate",
-      "totalMutations": 402,
+      "totalMutations": 401,
       "totalTests": 1099
     },
     {

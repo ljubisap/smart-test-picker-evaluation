@@ -1,0 +1,29 @@
+{
+  "outcome": "CONTAINER_ONLY_KILL",
+  "leafKillerProven": false,
+  "containerFailureProven": true,
+  "decision": "Exclude this one record from the leaf-level inclusiveness denominator and retain it as a separately documented container-only PIT outcome.",
+  "reason": "The exact PIT-exported mutant causes BytecodeEnhancedTestEngine discovery/enhancement to fail before either runnable leaf starts. Method-specific and class-specific selectors all yield only synthetic initializationError.",
+  "old": {
+    "hibernateKilled": 402,
+    "hibernateInclusive": 400,
+    "aggregateKilled": 4011,
+    "aggregateInclusive": 3986,
+    "misses": 25,
+    "footprints": {"A": 7, "B": 10, "C": 7, "MIXED": 1},
+    "causes": {"EARLY_EXCEPTION_PROBE_SHADOWING": 23, "PRE_TEST_ATTRIBUTION_GAP": 2},
+    "mitigation": {"safe": 3993, "total": 4011},
+    "classBaseline": {"safe": 4004, "total": 4011}
+  },
+  "newExpected": {
+    "hibernateKilled": 401,
+    "hibernateInclusive": 400,
+    "aggregateKilled": 4010,
+    "aggregateInclusive": 3986,
+    "misses": 24,
+    "footprints": {"A": 7, "B": 10, "C": 6, "MIXED": 1},
+    "causes": {"EARLY_EXCEPTION_PROBE_SHADOWING": 23, "PRE_TEST_ATTRIBUTION_GAP": 1},
+    "mitigation": {"safe": 3993, "total": 4010},
+    "classBaseline": {"safe": 4004, "total": 4010}
+  }
+}
