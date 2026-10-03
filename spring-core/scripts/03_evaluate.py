@@ -22,7 +22,7 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from analysis.evaluation_core import (
     load_coverage_map, load_pit_mutations,
-    build_base_to_keys, resolve_killing_tests, select_original,
+    build_base_to_keys, resolve_killing_tests, select_original_legacy_edge_only,
     normalize_pit_test_name,
 )
 
@@ -74,7 +74,7 @@ def main():
     class_safety = defaultdict(lambda: {"safe": 0, "unsafe": 0})
 
     for mut in mutations:
-        t_selected = select_original(test_mappings, mut.mutated_class, mut.mutated_method)
+        t_selected = select_original_legacy_edge_only(test_mappings, mut.mutated_class, mut.mutated_method)
         killing_keys = set(k for kt in mut.killing_tests for k in kt.coverage_keys)
         intersection = t_selected & killing_keys
         is_safe = len(intersection) > 0
@@ -130,7 +130,7 @@ def main():
     with open(csv_path, "w") as f:
         f.write("mutatedClass,mutatedMethod,lineNumber,mutator,numKillingTests,numSelectedTests,safe\n")
         for mut in mutations:
-            t_sel = select_original(test_mappings, mut.mutated_class, mut.mutated_method)
+            t_sel = select_original_legacy_edge_only(test_mappings, mut.mutated_class, mut.mutated_method)
             killing_keys = set(k for kt in mut.killing_tests for k in kt.coverage_keys)
             inter = t_sel & killing_keys
             num_killing = sum(len(kt.coverage_keys) for kt in mut.killing_tests)

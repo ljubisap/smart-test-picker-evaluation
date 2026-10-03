@@ -18,7 +18,7 @@ from analysis.evaluation_core import (  # noqa: E402
     load_coverage_map,
     load_pit_mutations,
     resolve_killing_tests,
-    select_original,
+    select_original_legacy_edge_only,
 )
 from analysis.verify_selector_equivalence import java_semantic_select  # noqa: E402
 
@@ -45,7 +45,7 @@ def main():
     for mutation in mutations:
         key = (mutation.mutated_class, mutation.mutated_method)
         if key not in cases:
-            actual = select_original(mappings, *key)
+            actual = select_original_legacy_edge_only(mappings, *key)
             expected = java_semantic_select(mappings, *key)
             cases[key] = actual == expected
             if actual != expected:

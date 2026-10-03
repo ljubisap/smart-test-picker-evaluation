@@ -23,7 +23,7 @@ sys.path.insert(0, str(REPO_ROOT))
 from analysis.evaluation_core import (
     load_coverage_map, discover_pit_files, load_pit_mutations,
     build_base_to_keys, build_class_to_keys, resolve_killing_tests,
-    select_original, select_constructor_only_rule, select_class_level,
+    select_original_legacy_edge_only, select_constructor_only_rule_legacy_edge_only, select_class_level_legacy_edge_only,
     aggregate_sha256, file_sha256,
     exclude_non_leaf_oracle_records,
 )
@@ -144,7 +144,7 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
         # Run original selector and verify expected safe/unsafe
         safe_count = 0
         for mut in resolved:
-            selected = select_original(test_mappings, mut.mutated_class, mut.mutated_method)
+            selected = select_original_legacy_edge_only(test_mappings, mut.mutated_class, mut.mutated_method)
             killing_keys = set(k for kt in mut.killing_tests for k in kt.coverage_keys)
             if selected & killing_keys:
                 safe_count += 1
@@ -175,7 +175,7 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
         unsafe_muts = []
 
         for mut in resolved:
-            selected = select_original(test_mappings, mut.mutated_class, mut.mutated_method)
+            selected = select_original_legacy_edge_only(test_mappings, mut.mutated_class, mut.mutated_method)
             killing_keys = set(k for kt in mut.killing_tests for k in kt.coverage_keys)
 
             # Resolution stats (all mutations)
@@ -226,7 +226,7 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
                 })
 
             # Check if constructor-only rule recovers this mutation
-            constructor_selected = select_constructor_only_rule(
+            constructor_selected = select_constructor_only_rule_legacy_edge_only(
                 test_mappings, mut.mutated_class, mut.mutated_method
             )
             recovered_by_constructor = bool(constructor_selected & killing_keys)
@@ -350,9 +350,9 @@ def run_analysis(repo_root, projects_config, coverage_overrides=None):
 
         results = {}
         for selector_name, selector_fn in [
-            ("original", select_original),
-            ("constructorOnlyRule", select_constructor_only_rule),
-            ("classLevelBaseline", select_class_level),
+            ("original", select_original_legacy_edge_only),
+            ("constructorOnlyRule", select_constructor_only_rule_legacy_edge_only),
+            ("classLevelBaseline", select_class_level_legacy_edge_only),
         ]:
             safe = 0
             sizes = []
@@ -425,6 +425,10 @@ def main():
 
     if args.verify and (args.commons_map or args.jgrapht_map or args.output_dir):
         parser.error("--verify always uses committed input and output artifacts; overrides are not allowed")
+    if args.write and args.output_dir is None:
+        parser.error(
+            "--write requires --output-dir and refuses to overwrite current results"
+        )
 
     # Load config
     config_path = REPO_ROOT / "analysis" / "projects.json"
@@ -444,9 +448,9 @@ def main():
     # Run analysis
     taxonomy, mitigation = run_analysis(REPO_ROOT, projects_config, overrides or None)
 
-    # Output -- verify always uses committed path
+    # Verification is intentionally pinned to the archived edge-only artifacts.
     if args.verify:
-        output_dir = REPO_ROOT / "results"
+        output_dir = REPO_ROOT / "analysis" / "history" / "pre_b2_8d4cc49" / "results"
     else:
         output_dir = args.output_dir or (REPO_ROOT / "results")
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -455,6 +459,12 @@ def main():
     mitigation_path = output_dir / "mitigation_comparison.json"
 
     if args.write:
+        current_mitigation = (REPO_ROOT / "results" / "mitigation_comparison.json").resolve()
+        if mitigation_path.resolve() == current_mitigation:
+            parser.error(
+                "--write refuses to overwrite current results/mitigation_comparison.json; "
+                "provide --output-dir for a separate legacy output"
+            )
         taxonomy_json = json.dumps(taxonomy, sort_keys=True, indent=2, ensure_ascii=False) + "\n"
         mitigation_json = json.dumps(mitigation, sort_keys=True, indent=2, ensure_ascii=False) + "\n"
 

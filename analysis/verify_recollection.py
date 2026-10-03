@@ -25,11 +25,12 @@ sys.path.insert(0, str(REPO_ROOT))
 from analysis.evaluation_core import (
     load_coverage_map, discover_pit_files, load_pit_mutations,
     build_base_to_keys, resolve_killing_tests,
-    select_original, select_constructor_only_rule, select_class_level,
+    select_original_legacy_edge_only, select_constructor_only_rule_legacy_edge_only, select_class_level_legacy_edge_only,
 )
 
 # The commit containing the pre-recollection maps
 OLD_MAP_COMMIT = "46b3cf44affe721b1b81633cad426b17ed333710"
+ORIGINAL_SUBJECTS = {"commons-lang", "jgrapht", "spring-core", "petclinic"}
 
 
 def strip_hash(key):
@@ -71,6 +72,8 @@ def compute_comparison():
 
     for proj in projects_config["projects"]:
         name = proj["name"]
+        if name not in ORIGINAL_SUBJECTS:
+            continue
         map_path_str = proj["coverageMap"]
 
         # Load old map from git
@@ -98,14 +101,14 @@ def compute_comparison():
         safety_flips = 0
 
         for old_mut, new_mut in zip(old_resolved, new_resolved):
-            old_orig = normalize_set(select_original(old_tm, old_mut.mutated_class, old_mut.mutated_method))
-            new_orig = normalize_set(select_original(new_tm, new_mut.mutated_class, new_mut.mutated_method))
+            old_orig = normalize_set(select_original_legacy_edge_only(old_tm, old_mut.mutated_class, old_mut.mutated_method))
+            new_orig = normalize_set(select_original_legacy_edge_only(new_tm, new_mut.mutated_class, new_mut.mutated_method))
 
-            old_constr = normalize_set(select_constructor_only_rule(old_tm, old_mut.mutated_class, old_mut.mutated_method))
-            new_constr = normalize_set(select_constructor_only_rule(new_tm, new_mut.mutated_class, new_mut.mutated_method))
+            old_constr = normalize_set(select_constructor_only_rule_legacy_edge_only(old_tm, old_mut.mutated_class, old_mut.mutated_method))
+            new_constr = normalize_set(select_constructor_only_rule_legacy_edge_only(new_tm, new_mut.mutated_class, new_mut.mutated_method))
 
-            old_class = normalize_set(select_class_level(old_tm, old_mut.mutated_class, old_mut.mutated_method))
-            new_class = normalize_set(select_class_level(new_tm, new_mut.mutated_class, new_mut.mutated_method))
+            old_class = normalize_set(select_class_level_legacy_edge_only(old_tm, old_mut.mutated_class, old_mut.mutated_method))
+            new_class = normalize_set(select_class_level_legacy_edge_only(new_tm, new_mut.mutated_class, new_mut.mutated_method))
 
             if old_orig != new_orig:
                 orig_diffs += 1
@@ -121,8 +124,8 @@ def compute_comparison():
             for kt in new_mut.killing_tests:
                 new_killing.update(kt.coverage_keys)
 
-            old_safe = bool(select_original(old_tm, old_mut.mutated_class, old_mut.mutated_method) & old_killing)
-            new_safe = bool(select_original(new_tm, new_mut.mutated_class, new_mut.mutated_method) & new_killing)
+            old_safe = bool(select_original_legacy_edge_only(old_tm, old_mut.mutated_class, old_mut.mutated_method) & old_killing)
+            new_safe = bool(select_original_legacy_edge_only(new_tm, new_mut.mutated_class, new_mut.mutated_method) & new_killing)
 
             if not old_safe:
                 old_unsafe += 1

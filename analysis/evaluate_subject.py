@@ -22,9 +22,9 @@ from analysis.evaluation_core import (  # noqa: E402
     load_coverage_map,
     load_pit_mutations,
     resolve_killing_tests,
-    select_class_level,
-    select_constructor_only_rule,
-    select_original,
+    select_class_level_legacy_edge_only,
+    select_constructor_only_rule_legacy_edge_only,
+    select_original_legacy_edge_only,
 )
 
 
@@ -56,7 +56,7 @@ def random_metrics(mutations, mappings, trials=1000, seed=42):
     rows = []
     expected = 0.0
     for mutation in mutations:
-        budget = len(select_original(mappings, mutation.mutated_class, mutation.mutated_method))
+        budget = len(select_original_legacy_edge_only(mappings, mutation.mutated_class, mutation.mutated_method))
         killing = {key for test in mutation.killing_tests for key in test.coverage_keys} & universe_set
         rows.append((budget, killing))
         if budget and killing:
@@ -107,9 +107,9 @@ def main():
     rows = []
     for mutation in mutations:
         killing = {key for test in mutation.killing_tests for key in test.coverage_keys}
-        original = select_original(mappings, mutation.mutated_class, mutation.mutated_method)
-        class_only = select_class_level(mappings, mutation.mutated_class, mutation.mutated_method)
-        mitigated = select_constructor_only_rule(mappings, mutation.mutated_class, mutation.mutated_method)
+        original = select_original_legacy_edge_only(mappings, mutation.mutated_class, mutation.mutated_method)
+        class_only = select_class_level_legacy_edge_only(mappings, mutation.mutated_class, mutation.mutated_method)
+        mitigated = select_constructor_only_rule_legacy_edge_only(mappings, mutation.mutated_class, mutation.mutated_method)
         rows.append({
             "mutationId": mutation.mutation_id,
             "mutatedClass": mutation.mutated_class,
@@ -145,9 +145,9 @@ def main():
         "logicalTests": len(mappings),
         "killedMutations": len(mutations),
         "selectors": {
-            "stp": selector_metrics("STP", select_original, mutations, mappings),
-            "constructorOnlyMitigation": selector_metrics("Constructor-only mitigation", select_constructor_only_rule, mutations, mappings),
-            "classLevel": selector_metrics("Class-level only", select_class_level, mutations, mappings),
+            "stp": selector_metrics("STP", select_original_legacy_edge_only, mutations, mappings),
+            "constructorOnlyMitigation": selector_metrics("Constructor-only mitigation", select_constructor_only_rule_legacy_edge_only, mutations, mappings),
+            "classLevel": selector_metrics("Class-level only", select_class_level_legacy_edge_only, mutations, mappings),
             "randomEqualBudget": random_metrics(mutations, mappings),
         },
     }

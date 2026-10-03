@@ -4,6 +4,9 @@
 
 `final-verification.json` incorporates that historical model-agreement check; its recorded bytes are preserved, and current production-selector verification is reported separately under `analysis/v14_4_rederivation/`.
 
+`recollection_comparison.json` is the historical four-original-subject,
+edge-only recollection comparison. It is not a current B2 result.
+
 `hibernate/p0-container-oracle/final-decision.json` and the quantitative block
 in its adjacent `report.md` record the historical edge-only aggregate at the
 time of the container-only adjudication. The adjudication remains valid; its

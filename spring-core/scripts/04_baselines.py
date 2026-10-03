@@ -27,7 +27,7 @@ sys.path.insert(0, str(REPO_ROOT))
 from analysis.evaluation_core import (
     load_coverage_map, load_pit_mutations,
     build_base_to_keys, resolve_killing_tests,
-    select_original, select_class_level,
+    select_original_legacy_edge_only, select_class_level_legacy_edge_only,
 )
 
 
@@ -75,7 +75,7 @@ def evaluate_random_per_mutation(mutations, test_mappings, seed=42, num_trials=1
     # Compute per-mutation budgets and killing test counts
     per_mutation_info = []
     for mut in mutations:
-        k_m = len(select_original(test_mappings, mut.mutated_class, mut.mutated_method))
+        k_m = len(select_original_legacy_edge_only(test_mappings, mut.mutated_class, mut.mutated_method))
         killing_keys = set(k for kt in mut.killing_tests for k in kt.coverage_keys)
         d_m = len(killing_keys & set(all_tests))
         per_mutation_info.append((k_m, d_m, killing_keys))
@@ -165,10 +165,10 @@ def main():
     print(f"Data: {total_tests} tests, {len(mutations)} KILLED mutations\n")
 
     # 1. Proposed coverage-based selector
-    res_coverage = evaluate_selector("Coverage (proposed)", select_original, mutations, test_mappings)
+    res_coverage = evaluate_selector("Coverage (proposed)", select_original_legacy_edge_only, mutations, test_mappings)
 
     # 2. Class-level baseline
-    res_class = evaluate_selector("Class-level only", select_class_level, mutations, test_mappings)
+    res_class = evaluate_selector("Class-level only", select_class_level_legacy_edge_only, mutations, test_mappings)
 
     # 3. Random selector
     res_random = evaluate_random_per_mutation(mutations, test_mappings, seed=args.seed)

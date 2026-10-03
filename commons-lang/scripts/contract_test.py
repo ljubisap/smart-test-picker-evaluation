@@ -4,7 +4,7 @@ contract_test.py -- Verify Python evaluation selector matches production Java se
 
 For each of 21 sampled classes, creates a minimal source change (comment insertion),
 commits it, runs the production select-tests Maven mojo, and compares its output with
-evaluation_core.select_original().
+evaluation_core.select_original_legacy_edge_only().
 
 Requires:
   - commons-lang checked out at smart-test-picker-eval branch
@@ -25,7 +25,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT))
 
 from analysis.evaluation_core import (
-    load_coverage_map, select_original, build_base_to_keys,
+    load_coverage_map, select_original_legacy_edge_only, build_base_to_keys,
     discover_pit_files, load_pit_mutations, resolve_killing_tests,
 )
 
@@ -137,7 +137,7 @@ def verify_artifact():
             continue
 
         # Recompute Python selected set
-        python_selected = select_original(test_mappings, mut.mutated_class, mut.mutated_method)
+        python_selected = select_original_legacy_edge_only(test_mappings, mut.mutated_class, mut.mutated_method)
 
         # Verify count
         if len(python_selected) != case["selectedCount"]:
@@ -315,7 +315,7 @@ def run_contract_test(project_dir, mvn, coverage_map_override):
             java_selected = set(java_output.get("selectedTests", []))
 
             # Python selection
-            python_selected = select_original(test_mappings, mut.mutated_class, mut.mutated_method)
+            python_selected = select_original_legacy_edge_only(test_mappings, mut.mutated_class, mut.mutated_method)
 
             # Compare: exact equality on selectedTests
             if java_selected == python_selected:

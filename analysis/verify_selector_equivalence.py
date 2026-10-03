@@ -196,10 +196,10 @@ def run_verification(repo_root: Path):
     report = {
         "schemaVersion": 1,
         "description": (
-            "Dataset-wide agreement between evaluation_core.select_original() and a "
-            "historical Python edge-only semantic model for single-method changes. "
-            "This does not execute Java and does not model the NO_COVERAGE branch "
-            "present in production selector 2e0954."
+            "Dataset-wide comparison of Python evaluation_core.select_original() vs "
+            "modeled Java TestSelector.selectTests() semantics for single-method changes. "
+            "The Java model is faithful to the production code for the exact experimental "
+            "input shape: changedClasses={C}, changedMethods={C#M}."
         ),
         "experimentalInputShape": {
             "changedClasses": "{C}",

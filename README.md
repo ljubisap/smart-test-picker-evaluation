@@ -125,14 +125,20 @@ See `<project>/docs/REQUIREMENTS.md` for project-specific prerequisites.
 # Unit tests (no external dependencies)
 python3 -m unittest discover -s analysis/tests
 
-# Verify taxonomy and mitigation outputs match committed artifacts
+# Historical edge-only taxonomy and mitigation verification
 python3 analysis/analyze_failure_modes.py --verify
 
-# Verify historical evaluator/model agreement (not Java execution)
+# Historical edge-only evaluator/model agreement (not Java execution)
 python3 analysis/verify_selector_equivalence.py --verify
 
 # Verify independent-subject artifact hashes
 python3 analysis/freeze_artifacts.py --verify
+
+# Historical four-subject recollection comparison
+python3 analysis/verify_recollection.py --verify
+
+# Current B2 policy: summaries and all selected-set IDs from frozen inputs
+python3 analysis/v14_4_rederivation/verify_b2.py --verify
 ```
 
 The current eight-subject results are
