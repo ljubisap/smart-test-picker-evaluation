@@ -4,11 +4,12 @@ evaluation_core.py - Shared evaluation logic for Smart Test Picker replication p
 Provides the Python evaluation selector (implementing the documented selection rules),
 PIT mutation loading, killing-test normalization and resolution, and coverage map I/O.
 
-This is NOT the production Java selector. Extensional equivalence has been verified
-for the 560 unique single-method-change cases represented by the committed evaluation
-dataset using a faithful model of the pinned Java selector semantics
-(verify_selector_equivalence.py). A separate 21-case Commons Lang contract test
-executes the actual Maven plugin. General algorithmic equivalence is not claimed.
+This is NOT the production Java selector. Agreement was historically checked against
+another Python edge-only semantic model for the committed single-method-change cases
+(verify_selector_equivalence.py). That model does not execute Java and omits the
+NO_COVERAGE branch later present in production selector 2e0954. A separate 21-case
+Commons Lang contract test executes the historical Maven plugin. General or current
+production-selector equivalence is not claimed.
 """
 
 from __future__ import annotations
@@ -409,25 +410,75 @@ def resolve_killing_tests(
 # Selectors
 # =============================================================================
 
-def select_original(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:
+def _coverage_lists(coverage: dict, test_name: str) -> tuple[list, list]:
+    """Return validated coverage lists, preserving missing/null as empty.
+
+    The production map schema permits missing or null list fields. Any present,
+    non-null value must remain a list; malformed values are never interpreted as
+    NO_COVERAGE.
     """
-    Frozen production TestSelector semantics for one changed method.
+    if not isinstance(coverage, dict):
+        raise ValueError(f"Coverage entry for {test_name!r} is not an object")
+    classes = coverage.get("classes")
+    methods = coverage.get("methods")
+    if classes is not None and not isinstance(classes, list):
+        raise ValueError(f"Coverage classes for {test_name!r} is not a list")
+    if methods is not None and not isinstance(methods, list):
+        raise ValueError(f"Coverage methods for {test_name!r} is not a list")
+    return classes or [], methods or []
+
+
+def select_original_legacy_edge_only(
+    test_mappings: dict, changed_class: str, changed_method: str
+) -> set[str]:
+    """
+    Historical edge-only evaluator semantics for one changed method.
 
     Select exact C#M method hits. If there are no method hits anywhere for C#M,
     escalate the changed class and select every test whose class footprint
     contains C. This is the production selector's class-level fallback.
     """
     method_fqn = f"{changed_class}#{changed_method}"
-    method_hits = {
-        test_name for test_name, coverage in test_mappings.items()
-        if method_fqn in coverage.get("methods", [])
+    validated = {
+        test_name: _coverage_lists(coverage, test_name)
+        for test_name, coverage in test_mappings.items()
     }
+    method_hits = {test_name for test_name, (_, methods) in validated.items()
+                   if method_fqn in methods}
     if method_hits:
         return method_hits
     return {
-        test_name for test_name, coverage in test_mappings.items()
-        if changed_class in coverage.get("classes", [])
+        test_name for test_name, (classes, _) in validated.items()
+        if changed_class in classes
     }
+
+
+def select_policy(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:
+    """Current adopted 2e0954 single-existing-method policy: U ∪ (H or G).
+
+    U contains only entries for which both coverage lists are missing, null, or
+    empty. U membership is structural and never counts as a method hit or
+    suppresses the zero-hit escalation to class coverage.
+    """
+    validated = {
+        test_name: _coverage_lists(coverage, test_name)
+        for test_name, coverage in test_mappings.items()
+    }
+    empty = {test_name for test_name, (classes, methods) in validated.items()
+             if not classes and not methods}
+    method_fqn = f"{changed_class}#{changed_method}"
+    method_hits = {test_name for test_name, (_, methods) in validated.items()
+                   if method_fqn in methods}
+    if method_hits:
+        return empty | method_hits
+    class_hits = {test_name for test_name, (classes, _) in validated.items()
+                  if changed_class in classes}
+    return empty | class_hits
+
+
+def select_original(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:
+    """Compatibility name for the current adopted production policy."""
+    return select_policy(test_mappings, changed_class, changed_method)
 
 
 def select_constructor_only_rule(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:
@@ -439,14 +490,13 @@ def select_constructor_only_rule(test_mappings: dict, changed_class: str, change
     - T has at least one C#... method (non-empty footprint)
     - EVERY C#... method is <init> or <clinit>
     """
-    selected = select_original(test_mappings, changed_class, changed_method)
+    selected = select_policy(test_mappings, changed_class, changed_method)
 
     for test_name, coverage in test_mappings.items():
         if test_name in selected:
             continue
 
-        classes = coverage.get("classes", [])
-        methods = coverage.get("methods", [])
+        classes, methods = _coverage_lists(coverage, test_name)
 
         if changed_class not in classes:
             continue
@@ -475,7 +525,36 @@ def select_class_level(test_mappings: dict, changed_class: str, changed_method: 
     """
     selected = set()
     for test_name, coverage in test_mappings.items():
-        if changed_class in coverage.get("classes", []):
+        classes, methods = _coverage_lists(coverage, test_name)
+        if (not classes and not methods) or changed_class in classes:
+            selected.add(test_name)
+    return selected
+
+
+def select_class_level_legacy_edge_only(
+    test_mappings: dict, changed_class: str, changed_method: str
+) -> set[str]:
+    """Historical class-presence baseline without structural empty entries."""
+    return {
+        test_name
+        for test_name, coverage in test_mappings.items()
+        if changed_class in _coverage_lists(coverage, test_name)[0]
+    }
+
+
+def select_constructor_only_rule_legacy_edge_only(
+    test_mappings: dict, changed_class: str, changed_method: str
+) -> set[str]:
+    """Historical constructor variant built on the legacy edge-only selector."""
+    selected = select_original_legacy_edge_only(test_mappings, changed_class, changed_method)
+    for test_name, coverage in test_mappings.items():
+        classes, methods = _coverage_lists(coverage, test_name)
+        if changed_class not in classes:
+            continue
+        class_methods = [method for method in methods if method.startswith(changed_class + "#")]
+        if class_methods and all(
+            "#<init>" in method or "#<clinit>" in method for method in class_methods
+        ):
             selected.add(test_name)
     return selected
 

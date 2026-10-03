@@ -1,0 +1,119 @@
+{
+  "scope": [
+    "README.md",
+    "docs/",
+    "analysis/",
+    "results/",
+    "joda-time/",
+    "lightweight-stream-api/"
+  ],
+  "finding": "The historical 4,010/4,010 check compares two Python implementations. It neither executes Java nor models the NO_COVERAGE branch present at 2e0954.",
+  "claimsLedgerFoundInEvaluationRepository": false,
+  "correctedOccurrences": [
+    {
+      "path": "README.md",
+      "originalLines": [70, 131],
+      "oldClaim": "Python/Java equivalence",
+      "newLines": [70, 131],
+      "correction": "Historical Python evaluator/model agreement; explicitly not Java execution."
+    },
+    {
+      "path": "analysis/README.md",
+      "originalLines": [9, 55, 66, 89],
+      "oldClaim": "Modeled production Java selector semantics / selector equivalence",
+      "newLines": [9, 55, 66, 89],
+      "correction": "Python edge-only model agreement, with explicit omission of the later NO_COVERAGE branch."
+    },
+    {
+      "path": "analysis/evaluation_core.py",
+      "originalLines": [7, 8, 9, 10, 414],
+      "oldClaim": "Faithful model of pinned Java selector; frozen production semantics",
+      "newLines": [7, 8, 9, 10, 11, 12, 415],
+      "correction": "Historical edge-only evaluator; model does not execute Java or establish current production equivalence."
+    },
+    {
+      "path": "analysis/verify_selector_equivalence.py",
+      "originalLines": [3, 8, 11, 21, 22, 47, 222, 243, 261, 262],
+      "oldClaim": "Python/Java selector equivalence and faithful production model",
+      "newLines": [3, 8, 10, 20, 21, 22, 23, 48, 223, 244, 262, 263],
+      "correction": "Historical Python evaluator/model agreement; not production-Java verification."
+    },
+    {
+      "path": "analysis/tests/test_selector_equivalence.py",
+      "originalLines": [151],
+      "oldClaim": "Canonical artifacts contain production-equivalent cases",
+      "newLines": [151],
+      "correction": "Historical artifacts contain edge-model-agreement cases."
+    },
+    {
+      "path": "results/selector_equivalence.json",
+      "originalLines": [68],
+      "oldClaim": "Java model faithful to production code",
+      "newLines": [68],
+      "correction": "Result metadata now identifies a historical Python edge-only model and its omitted branch."
+    },
+    {
+      "path": "results/final-verification.json",
+      "originalLines": [8],
+      "oldClaim": "selectorEquivalence label had no scope qualification",
+      "newLines": [9],
+      "correction": "Added scopeNote: Python model only, not actual Java/full 2e selector."
+    },
+    {
+      "path": "joda-time/scripts/04_verify_selector_equivalence.py",
+      "originalLines": [2, 47],
+      "oldClaim": "Production selector semantics / productionModelOnly",
+      "newLines": [2, 3, 4, 50],
+      "correction": "Historical Python edge-only model; renamed potential difference field."
+    },
+    {
+      "path": "lightweight-stream-api/scripts/04_verify_selector_equivalence.py",
+      "originalLines": [2, 53],
+      "oldClaim": "Unqualified selector semantics / productionModelOnly",
+      "newLines": [2, 3, 4, 56],
+      "correction": "Historical Python edge-only model; renamed potential difference field."
+    },
+    {
+      "path": "joda-time/REPORT.md",
+      "originalLines": [73],
+      "oldClaim": "Selector-equivalence verification",
+      "newLines": [73],
+      "correction": "Historical evaluator/model agreement, expressly not Java execution."
+    },
+    {
+      "path": "lightweight-stream-api/REPORT.md",
+      "originalLines": [83],
+      "oldClaim": "Selector-equivalence validation",
+      "newLines": [83],
+      "correction": "Historical evaluator/model agreement, expressly not Java execution."
+    },
+    {
+      "path": "joda-time/README.md",
+      "originalLines": [13],
+      "oldClaim": "selector equivalence",
+      "newLines": [13],
+      "correction": "Historical Python evaluator/model agreement."
+    },
+    {
+      "path": "lightweight-stream-api/README.md",
+      "originalLines": [13],
+      "oldClaim": "equivalence",
+      "newLines": [13],
+      "correction": "Historical Python evaluator/model agreement."
+    }
+  ],
+  "retainedQualifiedStatements": [
+    {
+      "path": "analysis/v14_4_checks/NO_COVERAGE_RECONCILIATION.md",
+      "reason": "Already explicitly states that the model is Python, not plugin execution, and excludes production 2e equivalence."
+    },
+    {
+      "path": "analysis/v14_4_checks/REPORT.md",
+      "reason": "Already explicitly states the same limitation."
+    },
+    {
+      "path": "analysis/README.md:11",
+      "reason": "Describes a separate actual 21-case Maven-plugin contract at historical commit 70b398; this is an execution claim with distinct evidence and was retained."
+    }
+  ]
+}

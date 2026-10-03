@@ -1,0 +1,903 @@
+{
+  "residualMisses": [
+    {
+      "causalEvidence": "NPE before any FieldUtils probe activates (target class absent from coverage)",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "C",
+      "killingTests": [
+        {
+          "pitNormalized": "FieldUtilsTest#testRemoveFinalModifierNullPointerException",
+          "rawPitId": "org.apache.commons.lang3.reflect.FieldUtilsTest.[engine:junit-jupiter]/[class:org.apache.commons.lang3.reflect.FieldUtilsTest]/[method:testRemoveFinalModifierNullPointerException()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "FieldUtilsTest#testRemoveFinalModifierNullPointerException_242d660",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [],
+              "targetClassPresent": false,
+              "type": "C"
+            }
+          ]
+        }
+      ],
+      "line": 563,
+      "mutatedClass": "org.apache.commons.lang3.reflect.FieldUtils",
+      "mutatedMethod": "removeFinalModifier",
+      "mutationId": "commons-lang|org.apache.commons.lang3.reflect.FieldUtils|removeFinalModifier|(Ljava/lang/reflect/Field;)V|563|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=commons-lang/results/per-class/org.apache.commons.lang3.reflect.FieldUtils/mutations.xml:40",
+      "mutationTypes": [
+        "C"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "commons-lang"
+    },
+    {
+      "causalEvidence": "checkGraph() guard throws before getTour probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "A",
+      "killingTests": [
+        {
+          "pitNormalized": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2",
+          "rawPitId": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest]/[method:testGetTour2()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2_3dc2465",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP#<init>"
+              ],
+              "targetClassPresent": true,
+              "type": "A"
+            }
+          ]
+        },
+        {
+          "pitNormalized": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0",
+          "rawPitId": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSPTest]/[method:testGetTour0()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0_3dc2465",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP#<init>"
+              ],
+              "targetClassPresent": true,
+              "type": "A"
+            }
+          ]
+        }
+      ],
+      "line": 97,
+      "mutatedClass": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+      "mutatedMethod": "getTour",
+      "mutationId": "jgrapht|org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP|getTour|(Lorg/jgrapht/Graph;)Lorg/jgrapht/GraphPath;|97|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=jgrapht/results/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml:1",
+      "mutationTypes": [
+        "A"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": true,
+      "project": "jgrapht"
+    },
+    {
+      "causalEvidence": "Assert.isAssignable guard throws before upcast probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "B",
+      "killingTests": [
+        {
+          "pitNormalized": "TypeDescriptorTests#upCastNotSuper",
+          "rawPitId": "org.springframework.core.convert.TypeDescriptorTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.TypeDescriptorTests]/[method:upCastNotSuper()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "TypeDescriptorTests#upCastNotSuper_1ce9511",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.core.convert.TypeDescriptor#<init>",
+                "org.springframework.core.convert.TypeDescriptor#getType"
+              ],
+              "targetClassPresent": true,
+              "type": "B"
+            }
+          ]
+        }
+      ],
+      "line": 235,
+      "mutatedClass": "org.springframework.core.convert.TypeDescriptor",
+      "mutatedMethod": "upcast",
+      "mutationId": "spring-core|org.springframework.core.convert.TypeDescriptor|upcast|(Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;|235|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml:121",
+      "mutationTypes": [
+        "B"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-core"
+    },
+    {
+      "causalEvidence": "Assert.notNull(target) throws before canConvert probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "A",
+      "killingTests": [
+        {
+          "pitNormalized": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass",
+          "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertIllegalArgumentNullTargetTypeFromClass()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.core.convert.support.GenericConversionService#<init>"
+              ],
+              "targetClassPresent": true,
+              "type": "A"
+            }
+          ]
+        },
+        {
+          "pitNormalized": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType",
+          "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertFromClassSourceTypeToNullTargetType()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.core.convert.support.GenericConversionService#<init>"
+              ],
+              "targetClassPresent": true,
+              "type": "A"
+            }
+          ]
+        }
+      ],
+      "line": 133,
+      "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+      "mutatedMethod": "canConvert",
+      "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Ljava/lang/Class;Ljava/lang/Class;)Z|133|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:17",
+      "mutationTypes": [
+        "A"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": true,
+      "project": "spring-core"
+    },
+    {
+      "causalEvidence": "Assert.notNull(target) throws before canConvert probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "A",
+      "killingTests": [
+        {
+          "pitNormalized": "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType",
+          "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertFromTypeDescriptorSourceTypeToNullTargetType()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType_1c4b620",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.core.convert.support.GenericConversionService#<init>"
+              ],
+              "targetClassPresent": true,
+              "type": "A"
+            }
+          ]
+        },
+        {
+          "pitNormalized": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor",
+          "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor_6518014",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.core.convert.support.GenericConversionService#<init>"
+              ],
+              "targetClassPresent": true,
+              "type": "A"
+            }
+          ]
+        }
+      ],
+      "line": 140,
+      "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+      "mutatedMethod": "canConvert",
+      "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z|140|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:22",
+      "mutationTypes": [
+        "A"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": true,
+      "project": "spring-core"
+    },
+    {
+      "causalEvidence": "Assert.notNull(target) throws before convert probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "A",
+      "killingTests": [
+        {
+          "pitNormalized": "GenericConversionServiceTests#convertToNullTargetClass",
+          "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:convertToNullTargetClass()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "GenericConversionServiceTests#convertToNullTargetClass_2b9458d",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.core.convert.support.GenericConversionService#<init>"
+              ],
+              "targetClassPresent": true,
+              "type": "A"
+            }
+          ]
+        }
+      ],
+      "line": 164,
+      "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+      "mutatedMethod": "convert",
+      "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;|164|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:24",
+      "mutationTypes": [
+        "A"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": true,
+      "project": "spring-core"
+    },
+    {
+      "causalEvidence": "Assert.notNull(target) throws before convert probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "A",
+      "killingTests": [
+        {
+          "pitNormalized": "GenericConversionServiceTests#convertToNullTargetTypeDescriptor",
+          "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:convertToNullTargetTypeDescriptor()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "GenericConversionServiceTests#convertToNullTargetTypeDescriptor_2a0041a",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.core.convert.support.GenericConversionService#<init>"
+              ],
+              "targetClassPresent": true,
+              "type": "A"
+            }
+          ]
+        }
+      ],
+      "line": 171,
+      "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+      "mutatedMethod": "convert",
+      "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;|171|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:31",
+      "mutationTypes": [
+        "A"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": true,
+      "project": "spring-core"
+    },
+    {
+      "causalEvidence": "Assert.notNull(task) throws before execute probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "B",
+      "killingTests": [
+        {
+          "pitNormalized": "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable",
+          "rawPitId": "org.springframework.core.task.SimpleAsyncTaskExecutorTests.[engine:junit-jupiter]/[class:org.springframework.core.task.SimpleAsyncTaskExecutorTests]/[method:throwsExceptionWhenSuppliedWithNullRunnable()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable_1b9ea4e",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.core.task.SimpleAsyncTaskExecutor#<init>",
+                "org.springframework.core.task.SimpleAsyncTaskExecutor#close"
+              ],
+              "targetClassPresent": true,
+              "type": "B"
+            }
+          ]
+        }
+      ],
+      "line": 264,
+      "mutatedClass": "org.springframework.core.task.SimpleAsyncTaskExecutor",
+      "mutatedMethod": "execute",
+      "mutationId": "spring-core|org.springframework.core.task.SimpleAsyncTaskExecutor|execute|(Ljava/lang/Runnable;J)V|264|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml:14",
+      "mutationTypes": [
+        "B"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-core"
+    },
+    {
+      "causalEvidence": "Assert.notNull/isAssignable throws before caller method probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "B",
+      "killingTests": [
+        {
+          "pitNormalized": "AssertTests#isAssignableWithNullSupertype",
+          "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isAssignableWithNullSupertype()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "AssertTests#isAssignableWithNullSupertype_49c6272",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.util.Assert#notNull"
+              ],
+              "targetClassPresent": true,
+              "type": "B"
+            }
+          ]
+        }
+      ],
+      "line": 539,
+      "mutatedClass": "org.springframework.util.Assert",
+      "mutatedMethod": "isAssignable",
+      "mutationId": "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)V|539|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:25",
+      "mutationTypes": [
+        "B"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-core"
+    },
+    {
+      "causalEvidence": "Assert.notNull/isAssignable throws before caller method probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "B",
+      "killingTests": [
+        {
+          "pitNormalized": "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier",
+          "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isAssignableWithNullSupertypeAndMessageSupplier()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier_7bdf456",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.util.Assert#notNull"
+              ],
+              "targetClassPresent": true,
+              "type": "B"
+            }
+          ]
+        }
+      ],
+      "line": 558,
+      "mutatedClass": "org.springframework.util.Assert",
+      "mutatedMethod": "isAssignable",
+      "mutationId": "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/util/function/Supplier;)V|558|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:29",
+      "mutationTypes": [
+        "B"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-core"
+    },
+    {
+      "causalEvidence": "Assert.notNull/isAssignable throws before caller method probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "B",
+      "killingTests": [
+        {
+          "pitNormalized": "AssertTests#isInstanceOfWithNullType",
+          "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isInstanceOfWithNullType()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "AssertTests#isInstanceOfWithNullType_7d9d1f6",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.util.Assert#notNull"
+              ],
+              "targetClassPresent": true,
+              "type": "B"
+            }
+          ]
+        }
+      ],
+      "line": 490,
+      "mutatedClass": "org.springframework.util.Assert",
+      "mutatedMethod": "isInstanceOf",
+      "mutationId": "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;)V|490|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:33",
+      "mutationTypes": [
+        "B"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-core"
+    },
+    {
+      "causalEvidence": "Assert.notNull/isAssignable throws before caller method probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "B",
+      "killingTests": [
+        {
+          "pitNormalized": "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier",
+          "rawPitId": "org.springframework.util.AssertTests.[engine:junit-jupiter]/[class:org.springframework.util.AssertTests]/[method:isInstanceOfWithNullTypeAndMessageSupplier()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier_3ad5712",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.util.Assert#notNull"
+              ],
+              "targetClassPresent": true,
+              "type": "B"
+            }
+          ]
+        }
+      ],
+      "line": 509,
+      "mutatedClass": "org.springframework.util.Assert",
+      "mutatedMethod": "isInstanceOf",
+      "mutationId": "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/util/function/Supplier;)V|509|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.Assert/mutations.xml:36",
+      "mutationTypes": [
+        "B"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-core"
+    },
+    {
+      "causalEvidence": "checkMultiplier() guard throws before setMultiplier probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "B",
+      "killingTests": [
+        {
+          "pitNormalized": "ExponentialBackOffTests#invalidInterval",
+          "rawPitId": "org.springframework.util.ExponentialBackOffTests.[engine:junit-jupiter]/[class:org.springframework.util.ExponentialBackOffTests]/[method:invalidInterval()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "ExponentialBackOffTests#invalidInterval_2fbef03",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.util.backoff.ExponentialBackOff#<init>",
+                "org.springframework.util.backoff.ExponentialBackOff#checkMultiplier",
+                "org.springframework.util.backoff.ExponentialBackOff#lambda$checkMultiplier$0"
+              ],
+              "targetClassPresent": true,
+              "type": "B"
+            }
+          ]
+        }
+      ],
+      "line": 141,
+      "mutatedClass": "org.springframework.util.backoff.ExponentialBackOff",
+      "mutatedMethod": "setMultiplier",
+      "mutationId": "spring-core|org.springframework.util.backoff.ExponentialBackOff|setMultiplier|(D)V|141|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml:10",
+      "mutationTypes": [
+        "B"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-core"
+    },
+    {
+      "causalEvidence": "Assert.notEmpty(mappings) throws before the setter probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "B",
+      "killingTests": [
+        {
+          "pitNormalized": "DefaultAuthenticationEventPublisherTests#emptyMapCausesException",
+          "rawPitId": "org.springframework.security.authentication.DefaultAuthenticationEventPublisherTests.[engine:junit-jupiter]/[class:org.springframework.security.authentication.DefaultAuthenticationEventPublisherTests]/[method:emptyMapCausesException()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "DefaultAuthenticationEventPublisherTests#emptyMapCausesException_73be958",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#<init>",
+                "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#addMapping"
+              ],
+              "targetClassPresent": true,
+              "type": "B"
+            }
+          ]
+        }
+      ],
+      "line": 174,
+      "mutatedClass": "org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+      "mutatedMethod": "setAdditionalExceptionMappings",
+      "mutationId": "spring-security|org.springframework.security.authentication.DefaultAuthenticationEventPublisher|setAdditionalExceptionMappings|(Ljava/util/Map;)V|174|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml:19",
+      "mutationTypes": [
+        "B"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-security"
+    },
+    {
+      "causalEvidence": "Assert.notNull(event class) throws before the setter probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "B",
+      "killingTests": [
+        {
+          "pitNormalized": "DefaultAuthenticationEventPublisherTests#defaultAuthenticationFailureEventClassSetNullThen",
+          "rawPitId": "org.springframework.security.authentication.DefaultAuthenticationEventPublisherTests.[engine:junit-jupiter]/[class:org.springframework.security.authentication.DefaultAuthenticationEventPublisherTests]/[method:defaultAuthenticationFailureEventClassSetNullThen()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "DefaultAuthenticationEventPublisherTests#defaultAuthenticationFailureEventClassSetNullThen_5ad692c",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#<init>",
+                "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#addMapping"
+              ],
+              "targetClassPresent": true,
+              "type": "B"
+            }
+          ]
+        }
+      ],
+      "line": 193,
+      "mutatedClass": "org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+      "mutatedMethod": "setDefaultAuthenticationFailureEvent",
+      "mutationId": "spring-security|org.springframework.security.authentication.DefaultAuthenticationEventPublisher|setDefaultAuthenticationFailureEvent|(Ljava/lang/Class;)V|193|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml:26",
+      "mutationTypes": [
+        "B"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-security"
+    },
+    {
+      "causalEvidence": "Assert.notNull(userCache) throws before the afterPropertiesSet probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "B",
+      "killingTests": [
+        {
+          "pitNormalized": "DaoAuthenticationProviderTests#testStartupFailsIfNoUserCacheSet",
+          "rawPitId": "org.springframework.security.authentication.dao.DaoAuthenticationProviderTests.[engine:junit-jupiter]/[class:org.springframework.security.authentication.dao.DaoAuthenticationProviderTests]/[method:testStartupFailsIfNoUserCacheSet()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "DaoAuthenticationProviderTests#testStartupFailsIfNoUserCacheSet_495e890",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider#<init>",
+                "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider#getUserCache",
+                "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider#setUserCache"
+              ],
+              "targetClassPresent": true,
+              "type": "B"
+            }
+          ]
+        }
+      ],
+      "line": 127,
+      "mutatedClass": "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider",
+      "mutatedMethod": "afterPropertiesSet",
+      "mutationId": "spring-security|org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider|afterPropertiesSet|()V|127|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider/mutations.xml:0",
+      "mutationTypes": [
+        "B"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-security"
+    },
+    {
+      "causalEvidence": "Assert.notNull(eventPublisher) throws before the setter probe fires; constructor-only footprint remains",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "A",
+      "killingTests": [
+        {
+          "pitNormalized": "AuthorizationManagerBeforeMethodInterceptorTests#configureWhenAuthorizationEventPublisherIsNullThenIllegalArgument",
+          "rawPitId": "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptorTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptorTests]/[method:configureWhenAuthorizationEventPublisherIsNullThenIllegalArgument()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "AuthorizationManagerBeforeMethodInterceptorTests#configureWhenAuthorizationEventPublisherIsNullThenIllegalArgument_2166c4c",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor#<init>"
+              ],
+              "targetClassPresent": true,
+              "type": "A"
+            }
+          ]
+        }
+      ],
+      "line": 216,
+      "mutatedClass": "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor",
+      "mutatedMethod": "setAuthorizationEventPublisher",
+      "mutationId": "spring-security|org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor|setAuthorizationEventPublisher|(Lorg/springframework/security/authorization/AuthorizationEventPublisher;)V|216|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor/mutations.xml:42",
+      "mutationTypes": [
+        "A"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": true,
+      "project": "spring-security"
+    },
+    {
+      "causalEvidence": "Assert.notEmpty(map) throws before the setter probe fires; constructor-only footprint remains",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "A",
+      "killingTests": [
+        {
+          "pitNormalized": "MapBasedAttributes2GrantedAuthoritiesMapperTests#testAfterPropertiesSetEmptyMap",
+          "rawPitId": "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapperTests.[engine:junit-jupiter]/[class:org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapperTests]/[method:testAfterPropertiesSetEmptyMap()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "MapBasedAttributes2GrantedAuthoritiesMapperTests#testAfterPropertiesSetEmptyMap_491a488",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper#<init>"
+              ],
+              "targetClassPresent": true,
+              "type": "A"
+            }
+          ]
+        }
+      ],
+      "line": 85,
+      "mutatedClass": "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper",
+      "mutatedMethod": "setAttributes2grantedAuthoritiesMap",
+      "mutationId": "spring-security|org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper|setAttributes2grantedAuthoritiesMap|(Ljava/util/Map;)V|85|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml:23",
+      "mutationTypes": [
+        "A"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": true,
+      "project": "spring-security"
+    },
+    {
+      "causalEvidence": "Hibernate's custom bytecode-enhanced JUnit engine executes fieldReader during pre-leaf enhancement/class construction; two killing tests have no target-class footprint and the third records other transformer methods but not fieldReader, so the dependency is outside the leaf-test attribution window",
+      "causalMechanism": "PRE_TEST_ATTRIBUTION_GAP",
+      "footprintType": "MIXED",
+      "killingTests": [
+        {
+          "pitNormalized": "DirtyTrackingDynamicUpdateTest#testDynamicUpdate",
+          "rawPitId": "org.hibernate.orm.test.bytecode.enhancement.dirty.DirtyTrackingDynamicUpdateTest.[engine:bytecode-enhanced-engine]/[Enhanced:true]/[class:org.hibernate.orm.test.bytecode.enhancement.dirty.DirtyTrackingDynamicUpdateTest]/[method:testDynamicUpdate(org.hibernate.testing.orm.junit.SessionFactoryScope)]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "DirtyTrackingDynamicUpdateTest#testDynamicUpdate_231e766",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [],
+              "targetClassPresent": false,
+              "type": "C"
+            }
+          ]
+        },
+        {
+          "pitNormalized": "LazyProxyOnEnhancedEntityTest#test",
+          "rawPitId": "org.hibernate.orm.test.bytecode.enhancement.lazy.LazyProxyOnEnhancedEntityTest.[engine:bytecode-enhanced-engine]/[Enhanced:NoLazyLoadingContext]/[class:org.hibernate.orm.test.bytecode.enhancement.lazy.LazyProxyOnEnhancedEntityTest]/[method:test(org.hibernate.testing.orm.junit.SessionFactoryScope)]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "LazyProxyOnEnhancedEntityTest#test_55dc7f8",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [
+                "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#<init>",
+                "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#applyExtended",
+                "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#collectInheritPersistentFields",
+                "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#collectPersistentFields"
+              ],
+              "targetClassPresent": true,
+              "type": "B"
+            }
+          ]
+        },
+        {
+          "pitNormalized": "DirtyTrackingDynamicUpdateAndInheritanceTest#testDynamicUpdateWithInheritance",
+          "rawPitId": "org.hibernate.orm.test.bytecode.enhancement.dirty.DirtyTrackingDynamicUpdateAndInheritanceTest.[engine:bytecode-enhanced-engine]/[Enhanced:true]/[class:org.hibernate.orm.test.bytecode.enhancement.dirty.DirtyTrackingDynamicUpdateAndInheritanceTest]/[method:testDynamicUpdateWithInheritance(org.hibernate.testing.orm.junit.SessionFactoryScope)]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "DirtyTrackingDynamicUpdateAndInheritanceTest#testDynamicUpdateWithInheritance_3c4e2ac",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [],
+              "targetClassPresent": false,
+              "type": "C"
+            }
+          ]
+        }
+      ],
+      "line": 312,
+      "mutatedClass": "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+      "mutatedMethod": "fieldReader",
+      "mutationId": "hibernate|org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer|fieldReader|(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/implementation/Implementation;|312|RemoveConditionalMutator_EQUAL_ELSE|indexes=unknown|blocks=unknown|ordinal=hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml:38",
+      "mutationTypes": [
+        "B",
+        "C"
+      ],
+      "mutator": "RemoveConditionalMutator_EQUAL_ELSE",
+      "recoveredByConstructorRule": false,
+      "project": "hibernate"
+    }
+  ],
+  "recoveredByNoCoverage": [
+    {
+      "causalEvidence": "Assert.notNull(rolePrefix) throws before the withRolePrefix probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "C",
+      "killingTests": [
+        {
+          "pitNormalized": "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull",
+          "rawPitId": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImplTests.[engine:junit-jupiter]/[class:org.springframework.security.access.hierarchicalroles.RoleHierarchyImplTests]/[method:testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull_5894d6c",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [],
+              "targetClassPresent": false,
+              "type": "C"
+            }
+          ]
+        }
+      ],
+      "line": 130,
+      "mutatedClass": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+      "mutatedMethod": "withRolePrefix",
+      "mutationId": "spring-security|org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl|withRolePrefix|(Ljava/lang/String;)Lorg/springframework/security/access/hierarchicalroles/RoleHierarchyImpl$Builder;|130|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml:20",
+      "mutationTypes": [
+        "C"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-security",
+      "recoveredBy": "NO_COVERAGE_BRANCH"
+    },
+    {
+      "causalEvidence": "Assert.notEmpty(authorities) throws before any target-class probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "C",
+      "killingTests": [
+        {
+          "pitNormalized": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException",
+          "rawPitId": "org.springframework.security.authorization.AuthorityAuthorizationManagerTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.AuthorityAuthorizationManagerTests]/[method:hasAnyAuthorityWhenEmptyThenException()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException_4acbb6d",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [],
+              "targetClassPresent": false,
+              "type": "C"
+            }
+          ]
+        },
+        {
+          "pitNormalized": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenNullThenException",
+          "rawPitId": "org.springframework.security.authorization.AuthorityAuthorizationManagerTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.AuthorityAuthorizationManagerTests]/[method:hasAnyAuthorityWhenNullThenException()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenNullThenException_666eb63",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [],
+              "targetClassPresent": false,
+              "type": "C"
+            }
+          ]
+        }
+      ],
+      "line": 122,
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasAnyAuthority",
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyAuthority|([Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|122|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:1",
+      "mutationTypes": [
+        "C"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-security",
+      "recoveredBy": "NO_COVERAGE_BRANCH"
+    },
+    {
+      "causalEvidence": "Assert.notNull(rolePrefix) throws before any target-class probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "C",
+      "killingTests": [
+        {
+          "pitNormalized": "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException",
+          "rawPitId": "org.springframework.security.authorization.AuthorityAuthorizationManagerTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.AuthorityAuthorizationManagerTests]/[method:hasAnyRoleWhenCustomRolePrefixNullThenException()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException_224748b",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [],
+              "targetClassPresent": false,
+              "type": "C"
+            }
+          ]
+        }
+      ],
+      "line": 108,
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasAnyRole",
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyRole|(Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|108|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:4",
+      "mutationTypes": [
+        "C"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-security",
+      "recoveredBy": "NO_COVERAGE_BRANCH"
+    },
+    {
+      "causalEvidence": "Assert.notNull(authority) throws before any target-class probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "C",
+      "killingTests": [
+        {
+          "pitNormalized": "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException",
+          "rawPitId": "org.springframework.security.authorization.AuthorityAuthorizationManagerTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.AuthorityAuthorizationManagerTests]/[method:hasAuthorityWhenNullThenException()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException_5281bf4",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [],
+              "targetClassPresent": false,
+              "type": "C"
+            }
+          ]
+        }
+      ],
+      "line": 83,
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasAuthority",
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAuthority|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|83|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:9",
+      "mutationTypes": [
+        "C"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-security",
+      "recoveredBy": "NO_COVERAGE_BRANCH"
+    },
+    {
+      "causalEvidence": "Assert.notNull(role) throws before any target-class probe fires",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "footprintType": "C",
+      "killingTests": [
+        {
+          "pitNormalized": "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException",
+          "rawPitId": "org.springframework.security.authorization.AuthorityAuthorizationManagerTests.[engine:junit-jupiter]/[class:org.springframework.security.authorization.AuthorityAuthorizationManagerTests]/[method:hasRoleWhenNullThenException()]",
+          "resolutionMode": "base-name-single",
+          "resolvedEntries": [
+            {
+              "coverageKey": "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException_85c3cde",
+              "mutatedMethodPresent": false,
+              "targetClassMethods": [],
+              "targetClassPresent": false,
+              "type": "C"
+            }
+          ]
+        }
+      ],
+      "line": 69,
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasRole",
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasRole|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|69|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:12",
+      "mutationTypes": [
+        "C"
+      ],
+      "mutator": "VoidMethodCallMutator",
+      "recoveredByConstructorRule": false,
+      "project": "spring-security",
+      "recoveredBy": "NO_COVERAGE_BRANCH"
+    }
+  ],
+  "residualFootprintCounts": {
+    "C": 1,
+    "A": 7,
+    "B": 10,
+    "MIXED": 1
+  },
+  "residualCausalMechanismCounts": {
+    "EARLY_EXCEPTION_PROBE_SHADOWING": 18,
+    "PRE_TEST_ATTRIBUTION_GAP": 1
+  }
+}

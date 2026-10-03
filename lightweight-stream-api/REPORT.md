@@ -80,7 +80,7 @@ Only the 419 KILLED mutants enter the unchanged denominator.
 | Class-level only | 419/419 | 100.00% | 180.00 | 13.66% | 86.34% |
 | Random equal-budget, 1,000 trials | descriptive | 18.12% mean (1.22 pp SD; 18.18% analytical) | 19.19 | 1.46% | 98.54% |
 
-Selector-equivalence validation covered all 419 mutation occurrences and 159 unique changed-method cases: 159/159 exact matches and zero mismatches. The shared analysis suite passes 54 tests.
+Historical evaluator/model agreement covered all 419 mutation occurrences and 159 unique changed-method cases: 159/159 exact matches and zero mismatches. This was a Python edge-only model check, not Java execution and not validation of the later NO_COVERAGE branch. The shared analysis suite passes 54 tests.
 
 PIT emitted one legitimate whole-class killing identity (`RatingsTest`) alongside ordinary `FQN.method(FQN)` identities. Resolution uses exact BASE `testClassFqn` metadata; it neither guesses a leaf nor changes the oracle.
 

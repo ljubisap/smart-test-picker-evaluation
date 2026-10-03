@@ -1,0 +1,140 @@
+{
+  "source": "results/contract_test.json",
+  "status": "FOUND",
+  "coverageMapCommit": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
+  "pluginCommit": "70b3984626ebed16db015c7c261eda132e999f10",
+  "pluginVersion": "0.1.0",
+  "totalCases": 21,
+  "passed": 21,
+  "mismatches": 0,
+  "infraFailures": 0,
+  "cases": [
+    {
+      "caseId": "Processor#is32Bit",
+      "status": "EXACT",
+      "selectedCount": 3,
+      "selectedSetHash": "c959938087d8cfc5"
+    },
+    {
+      "caseId": "HashCodeBuilder#<init>",
+      "status": "EXACT",
+      "selectedCount": 51,
+      "selectedSetHash": "d5d24a9f7bbe8173"
+    },
+    {
+      "caseId": "ComparableUtils#between",
+      "status": "EXACT",
+      "selectedCount": 9,
+      "selectedSetHash": "b034a9c9a9daee6b"
+    },
+    {
+      "caseId": "LockingVisitors#create",
+      "status": "EXACT",
+      "selectedCount": 5,
+      "selectedSetHash": "5badd98685679c55"
+    },
+    {
+      "caseId": "EventListenerSupport#<init>",
+      "status": "EXACT",
+      "selectedCount": 18,
+      "selectedSetHash": "314135873fffdc93"
+    },
+    {
+      "caseId": "EventUtils#bindEventsToMethod",
+      "status": "EXACT",
+      "selectedCount": 3,
+      "selectedSetHash": "d982094f90c32ffd"
+    },
+    {
+      "caseId": "Fraction#abs",
+      "status": "EXACT",
+      "selectedCount": 1,
+      "selectedSetHash": "70df86ee0d138adf"
+    },
+    {
+      "caseId": "IEEE754rUtils#max",
+      "status": "EXACT",
+      "selectedCount": 2,
+      "selectedSetHash": "3f641a4489b85e18"
+    },
+    {
+      "caseId": "MutableFloat#add",
+      "status": "EXACT",
+      "selectedCount": 2,
+      "selectedSetHash": "288e243469e29f7c"
+    },
+    {
+      "caseId": "MutableObject#equals",
+      "status": "EXACT",
+      "selectedCount": 1,
+      "selectedSetHash": "5230a47f90633ae2"
+    },
+    {
+      "caseId": "MethodUtils#distance",
+      "status": "EXACT",
+      "selectedCount": 4,
+      "selectedSetHash": "1cff118dff489a72"
+    },
+    {
+      "caseId": "FieldUtils#getAllFields",
+      "status": "EXACT",
+      "selectedCount": 21,
+      "selectedSetHash": "8b5dedef7b883f53"
+    },
+    {
+      "caseId": "Streams#failableStream",
+      "status": "EXACT",
+      "selectedCount": 13,
+      "selectedSetHash": "c13fc99fbf37c461"
+    },
+    {
+      "caseId": "LangCollectors#collect",
+      "status": "EXACT",
+      "selectedCount": 9,
+      "selectedSetHash": "ec6097931ced49ae"
+    },
+    {
+      "caseId": "FormattableUtils#append",
+      "status": "EXACT",
+      "selectedCount": 5,
+      "selectedSetHash": "d8857601ee6f9da1"
+    },
+    {
+      "caseId": "EntityArrays#HTML40_EXTENDED_ESCAPE",
+      "status": "EXACT",
+      "selectedCount": 2,
+      "selectedSetHash": "f7eaa78ea1a61855"
+    },
+    {
+      "caseId": "NumericEntityEscaper#above",
+      "status": "EXACT",
+      "selectedCount": 2,
+      "selectedSetHash": "735042d9dae1612e"
+    },
+    {
+      "caseId": "Pair#accept",
+      "status": "EXACT",
+      "selectedCount": 1,
+      "selectedSetHash": "6c83b1d56313e976"
+    },
+    {
+      "caseId": "ImmutablePair#emptyArray",
+      "status": "EXACT",
+      "selectedCount": 1,
+      "selectedSetHash": "43eac77ade49d4fc"
+    },
+    {
+      "caseId": "FluentBitSet#and",
+      "status": "EXACT",
+      "selectedCount": 2,
+      "selectedSetHash": "b8ee822466282919"
+    },
+    {
+      "caseId": "IterableStringTokenizer#iterator",
+      "status": "EXACT",
+      "selectedCount": 14,
+      "selectedSetHash": "62686cca57d334d4"
+    }
+  ],
+  "verifyCommand": "python3 commons-lang/scripts/contract_test.py --project-dir /path/to/commons-lang --mvn /path/to/mvn"
+}

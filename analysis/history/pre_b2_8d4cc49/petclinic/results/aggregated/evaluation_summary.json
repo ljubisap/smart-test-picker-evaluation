@@ -1,0 +1,14 @@
+{
+  "project": "Spring PetClinic",
+  "commit": "cbb884f01f7fef663fcff256e303d967494a4f8b",
+  "num_classes": 14,
+  "total_tests": 52,
+  "total_mutations": 94,
+  "inclusiveness_pct": 100.0,
+  "avg_selection_size": 9.7,
+  "selection_rate_pct": 18.7,
+  "test_reduction_pct": 81.3,
+  "safe": 94,
+  "unsafe": 0,
+  "unsafe_details": []
+}

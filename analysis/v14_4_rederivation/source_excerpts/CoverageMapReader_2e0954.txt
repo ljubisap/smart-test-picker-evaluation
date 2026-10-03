@@ -1,0 +1,106 @@
+    44	public class CoverageMapReader
+    45	{
+    46	
+    47		/**
+    48		 * Loads a coverage map from a file, auto-detecting the format.
+    49		 *
+    50		 * @param file the coverage map file (plain JSON, indexed JSON, or gzip)
+    51		 * @return the parsed {@link CoverageMap}, always in the standard string-based format
+    52		 * @throws IOException if the file cannot be read or parsed
+    53		 */
+    54		public static CoverageMap load(File file) throws IOException
+    55		{
+    56			try (Reader reader = openReader(file))
+    57			{
+    58				JsonObject root = JsonParser.parseReader(reader).getAsJsonObject();
+    59	
+    60				if (root.has("classIndex"))
+    61				{
+    62					CoverageMap map = resolveIndexed(root);
+    63					TestClassFilter.filterAll(map.getTestMappings());
+    64					return map;
+    65				}
+    66	
+    67				CoverageMap map = new Gson().fromJson(root, CoverageMap.class);
+    68				TestClassFilter.filterAll(map.getTestMappings());
+    69				return map;
+    70			}
+    71		}
+    72	
+    73		private static Reader openReader(File file)throws IOException
+    74		{
+    75			if (file.getName().endsWith(".gz"))
+    76			{
+    77				return new BufferedReader(new InputStreamReader(
+    78						new GZIPInputStream(new FileInputStream(file)), StandardCharsets.UTF_8));
+    79			}
+    80			return new BufferedReader(new FileReader(file));
+
+    88		private static CoverageMap resolveIndexed(JsonObject root)
+    89		{
+    90			Gson gson = new Gson();
+    91	
+    92			CoverageMapMetadata metadata = gson.fromJson(root.get("metadata"), CoverageMapMetadata.class);
+    93	
+    94			List<String> classIndex = new ArrayList<>();
+    95			for (JsonElement el : root.getAsJsonArray("classIndex"))
+    96			{
+    97				classIndex.add(el.getAsString());
+    98			}
+    99	
+   100			List<String> methodIndex = new ArrayList<>();
+   101			for (JsonElement el : root.getAsJsonArray("methodIndex"))
+   102			{
+   103				methodIndex.add(el.getAsString());
+   104			}
+   105	
+   106			Map<String, Map<String, List<String>>> testMappings = new TreeMap<>();
+   107			JsonObject mappings = root.getAsJsonObject("testMappings");
+   108	
+   109			for (String testName : mappings.keySet())
+   110			{
+   111				JsonObject ref = mappings.getAsJsonObject(testName);
+   112	
+   113				List<String> classes = new ArrayList<>();
+   114				if (ref.has("classes"))
+   115				{
+   116					for (JsonElement idx : ref.getAsJsonArray("classes"))
+   117					{
+   118						classes.add(classIndex.get(idx.getAsInt()));
+   119					}
+   120				}
+   121	
+   122				List<String> methods = new ArrayList<>();
+   123				if (ref.has("methods"))
+   124				{
+   125					for (JsonElement idx : ref.getAsJsonArray("methods"))
+   126					{
+   127						methods.add(methodIndex.get(idx.getAsInt()));
+   128					}
+   129				}
+   130	
+   131				Map<String, List<String>> coverage = new TreeMap<>();
+   132				coverage.put("classes", classes);
+   133				coverage.put("methods", methods);
+   134				testMappings.put(testName, coverage);
+   135			}
+   136	
+   137			CoverageMap map = new CoverageMap(metadata, testMappings);
+   138	
+   139			if (root.has("classMetrics"))
+   140			{
+   141				Map<String, ClassCoverageMetrics> metrics = gson.fromJson(
+   142						root.get("classMetrics"),
+   143						new TypeToken<Map<String, ClassCoverageMetrics>>(){}.getType());
+   144				map.setClassMetrics(metrics);
+   145			}
+   146			if (root.has("executionIdentities"))
+   147			{
+   148				Map<String, ExecutionIdentityMetadata> identities = gson.fromJson(root.get("executionIdentities"),
+   149						new TypeToken<Map<String, ExecutionIdentityMetadata>>(){}.getType());
+   150				map.setExecutionIdentities(identities);
+   151			}
+   152	
+   153			return map;
+   154		}
+   155	}

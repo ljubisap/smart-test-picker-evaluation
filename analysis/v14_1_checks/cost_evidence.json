@@ -1,0 +1,29 @@
+{
+  "scope": "retained files in smart-test-picker-evaluation; no command was run to obtain new timing",
+  "exactObservedCoverageOrConversionTimings": [],
+  "retainedEstimates": [
+    {
+      "project": "commons-lang",
+      "value": "coverage-map generation approximately 15–25 minutes",
+      "source": "commons-lang/docs/REPRODUCE.md:31 and commons-lang/docs/REQUIREMENTS.md:81"
+    },
+    {
+      "project": "jgrapht",
+      "value": "coverage-map generation approximately 7 minutes",
+      "source": "jgrapht/docs/REPRODUCE.md:28 and jgrapht/docs/REQUIREMENTS.md:86"
+    },
+    {
+      "project": "spring-core",
+      "value": "coverage-map generation approximately 5–10 minutes",
+      "source": "spring-core/docs/REQUIREMENTS.md:50"
+    },
+    {
+      "project": "petclinic",
+      "value": "coverage-map generation approximately 1 minute",
+      "source": "petclinic/docs/REQUIREMENTS.md:56"
+    }
+  ],
+  "mapConversionTiming": "NONE RETAINED",
+  "extensionSubjectCoverageTiming": "NONE RETAINED in the evaluation repository",
+  "note": "PIT elapsedSeconds and PIT coverage-scan timings were found but are not STP coverage-collection or map-conversion timings and are excluded."
+}

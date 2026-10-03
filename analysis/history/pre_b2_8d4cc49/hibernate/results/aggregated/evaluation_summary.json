@@ -1,0 +1,48 @@
+{
+  "project": "hibernate",
+  "logicalTests": 1099,
+  "killedMutations": 401,
+  "selectors": {
+    "stp": {
+      "name": "STP",
+      "safe": 400,
+      "unsafe": 1,
+      "total": 401,
+      "inclusivenessPct": 99.75,
+      "avgSelected": 297.25,
+      "selectionRatePct": 27.05,
+      "reductionPct": 72.95
+    },
+    "constructorOnlyMitigation": {
+      "name": "Constructor-only mitigation",
+      "safe": 400,
+      "unsafe": 1,
+      "total": 401,
+      "inclusivenessPct": 99.75,
+      "avgSelected": 303.16,
+      "selectionRatePct": 27.58,
+      "reductionPct": 72.42
+    },
+    "classLevel": {
+      "name": "Class-level only",
+      "safe": 401,
+      "unsafe": 0,
+      "total": 401,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 488.77,
+      "selectionRatePct": 44.47,
+      "reductionPct": 55.53
+    },
+    "randomEqualBudget": {
+      "name": "Random equal-budget",
+      "trials": 1000,
+      "seed": 42,
+      "inclusivenessPct": 71.33,
+      "inclusivenessStdPct": 1.27,
+      "analyticalInclusivenessPct": 71.3,
+      "avgSelected": 297.25,
+      "selectionRatePct": 27.05,
+      "reductionPct": 72.95
+    }
+  }
+}

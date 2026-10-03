@@ -148,7 +148,7 @@ class TestDatasetVerification(unittest.TestCase):
         self.assertIn("byProject", report)
         self.assertIn("differences", report)
 
-        # Canonical artifacts must contain only production-equivalent cases.
+        # Historical artifacts must contain only edge-model-agreement cases.
         self.assertEqual(report["mismatches"], 0)
         self.assertEqual(report["exactMatches"], report["mutationOccurrences"])
         self.assertGreaterEqual(report["mutationOccurrencesWithZeroMethodHits"], 0)

@@ -1,0 +1,105 @@
+   108				return testMap;
+   109	
+   110			for (File xml : xmlFiles)
+   111			{
+   112				if (xml.length() == 0)
+   113					continue;
+   114	
+   115				String testName = extractTestName(xml.getName());
+   116	
+   117				JacocoReport report = parseXml(xml);
+   118				if (report == null || report.getPackages() == null)
+   119					continue;
+   120	
+   121				Set<String> coveredClasses = new HashSet<>();
+   122				Set<String> coveredMethods = new HashSet<>();
+   123	
+   124				for (JacocoPackage pkg : report.getPackages())
+   125				{
+   126					if (pkg.getClasses() == null)
+   127						continue;
+   128	
+   129					for (JacocoClass cls : pkg.getClasses())
+   130					{
+   131						if (cls == null || cls.getName() == null || cls.getMethods() == null)
+   132							continue;
+   133	
+   134						String classFqn = cls.getName().replace('/', '.');
+   135						boolean classCovered = false;
+   136	
+   137						for (JacocoMethod method : cls.getMethods())
+   138						{
+   139							if (method == null || method.getName() == null)
+   140								continue;
+   141	
+   142							if (method.getCoveredCount() > 0)
+   143							{
+   144								coveredMethods.add(classFqn + "#" + method.getName());
+   145								classCovered = true;
+   146							}
+   147						}
+   148	
+   149						if (classCovered)
+   150							coveredClasses.add(classFqn);
+   151	
+   152						collectClassMetrics(classFqn, cls);
+   153					}
+   154				}
+   155	
+   156				List<String> sortedClasses = new ArrayList<>(coveredClasses);
+   157				Collections.sort(sortedClasses);
+   158				List<String> sortedMethods = new ArrayList<>(coveredMethods);
+   159				Collections.sort(sortedMethods);
+   160	
+   161				Map<String, List<String>> coverage = new HashMap<>();
+   162				coverage.put("classes", sortedClasses);
+   163				coverage.put("methods", sortedMethods);
+   164	
+   165				TestClassFilter.filterTestClasses(coverage);
+   166	
+   167				testMap.put(testName, coverage);
+   168			}
+
+   209		/**
+   210		 * Extracts the test name from a session XML filename.
+   211		 * E.g. {@code "session_MyTest#testFoo.xml"} becomes {@code "MyTest#testFoo"}.
+   212		 * Reverses the tilde-escaping applied by JacocoPerTestListener for case-insensitive filesystems.
+   213		 */
+   214		private String extractTestName(String filename)
+   215		{
+   216			String name = filename.replace(".xml", "");
+   217			if (name.startsWith("session_"))
+   218			{
+   219				name = name.substring("session_".length());
+   220			}
+   221			return unsanitizeSessionFileName(name);
+   222		}
+   223	
+   224		/**
+   225		 * Reverses filename sanitization: {@code ~X} becomes uppercase {@code X}.
+   226		 */
+   227		static String unsanitizeSessionFileName(String name)
+   228		{
+   229			int hashIdx = name.indexOf('#');
+   230			if (hashIdx < 0)
+   231			{
+   232				return name;
+   233			}
+   234			String className = name.substring(0, hashIdx);
+   235			String methodPart = name.substring(hashIdx + 1);
+   236	
+   237			StringBuilder sb = new StringBuilder(methodPart.length());
+   238			for (int i = 0; i < methodPart.length(); i++)
+   239			{
+   240				char c = methodPart.charAt(i);
+   241				if (c == '~' && i + 1 < methodPart.length())
+   242				{
+   243					sb.append(methodPart.charAt(i + 1));
+   244					i++;
+   245				}
+   246				else
+   247				{
+   248					sb.append(c);
+   249				}
+   250			}
+   251			return className + "#" + sb.toString();

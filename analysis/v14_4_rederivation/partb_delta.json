@@ -1,0 +1,84 @@
+{
+  "differences": [],
+  "differenceCount": 0,
+  "consistencyChecks": {
+    "base": {
+      "expected": [
+        3991,
+        4010
+      ],
+      "observed": [
+        3991,
+        4010
+      ],
+      "match": true
+    },
+    "constructor": {
+      "expected": [
+        3998,
+        4010
+      ],
+      "observed": [
+        3998,
+        4010
+      ],
+      "match": true
+    },
+    "class": {
+      "expected": [
+        4009,
+        4010
+      ],
+      "observed": [
+        4009,
+        4010
+      ],
+      "match": true
+    },
+    "springSecurity": {
+      "expected": [
+        335,
+        337,
+        340
+      ],
+      "observed": [
+        335,
+        337,
+        340
+      ],
+      "match": true
+    },
+    "flips": {
+      "expected": 5,
+      "observed": 5,
+      "match": true
+    },
+    "legacySizeIncrement": {
+      "expected": {
+        "commons-lang": 0,
+        "jgrapht": 1,
+        "spring-core": 0,
+        "petclinic": 0,
+        "flink": 1,
+        "spring-security": 23,
+        "hibernate": 0,
+        "quarkus": 9
+      },
+      "observed": {
+        "commons-lang": 0.0,
+        "jgrapht": 1.0,
+        "spring-core": 0.0,
+        "petclinic": 0.0,
+        "flink": 1.0,
+        "spring-security": 23.0,
+        "hibernate": 0.0,
+        "quarkus": 9.0
+      },
+      "match": true
+    },
+    "eligibleMutationIdsIdentical": {
+      "match": true,
+      "count": 4010
+    }
+  }
+}

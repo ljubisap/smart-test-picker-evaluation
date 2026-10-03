@@ -1,0 +1,288 @@
+{
+  "sources": {
+    "projectManifest": "analysis/projects.json",
+    "resolutionCode": "analysis/evaluation_core.py:327-390",
+    "oracleExclusionCode": "analysis/evaluation_core.py:90-123"
+  },
+  "originalSubjects": [
+    {
+      "project": "commons-lang",
+      "killedRecords": 772,
+      "rawKillingIdentityOccurrences": 3055,
+      "unresolvedOccurrenceCount": 0,
+      "unresolvedUniqueRawIdentityCount": 0,
+      "recordsWithAllKillersUnresolved": 0,
+      "unresolvedOccurrences": [],
+      "allUnresolvedMutationIds": []
+    },
+    {
+      "project": "jgrapht",
+      "killedRecords": 517,
+      "rawKillingIdentityOccurrences": 158802,
+      "unresolvedOccurrenceCount": 0,
+      "unresolvedUniqueRawIdentityCount": 0,
+      "recordsWithAllKillersUnresolved": 0,
+      "unresolvedOccurrences": [],
+      "allUnresolvedMutationIds": []
+    },
+    {
+      "project": "spring-core",
+      "killedRecords": 454,
+      "rawKillingIdentityOccurrences": 10307,
+      "unresolvedOccurrenceCount": 0,
+      "unresolvedUniqueRawIdentityCount": 0,
+      "recordsWithAllKillersUnresolved": 0,
+      "unresolvedOccurrences": [],
+      "allUnresolvedMutationIds": []
+    },
+    {
+      "project": "petclinic",
+      "killedRecords": 94,
+      "rawKillingIdentityOccurrences": 422,
+      "unresolvedOccurrenceCount": 0,
+      "unresolvedUniqueRawIdentityCount": 0,
+      "recordsWithAllKillersUnresolved": 0,
+      "unresolvedOccurrences": [],
+      "allUnresolvedMutationIds": []
+    }
+  ],
+  "extensionSubjects": [
+    {
+      "project": "flink",
+      "noCoverageTestCount": 1,
+      "appearingAsKillerCount": 0,
+      "tests": [
+        {
+          "coverageKey": "ExceptionHistoryEntryTest#testNullExecution_3ace619",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        }
+      ]
+    },
+    {
+      "project": "spring-security",
+      "noCoverageTestCount": 23,
+      "appearingAsKillerCount": 6,
+      "tests": [
+        {
+          "coverageKey": "AllAuthoritiesAuthorizationManagerTests#hasAllAuthoritiesWhenNullAuthoritiesThenIllegalArgumentException_5017ead",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "AllAuthoritiesAuthorizationManagerTests#hasAllAuthortiesWhenEmptyAuthoritiesThenIllegalArgumentException_a1b2fae",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "AllAuthoritiesReactiveAuthorizationManagerTests#hasAllAuthoritiesWhenNullAuthoritiesThenIllegalArgumentException_44c148a",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "AllAuthoritiesReactiveAuthorizationManagerTests#hasAllAuthortiesWhenEmptyAuthoritiesThenIllegalArgumentException_7ec48d8",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "AllRequiredFactorsAuthorizationManagerTests#anyOfWhenEmptyManagersThenIllegalArgumentException_497fa50",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "AnonymousAuthenticationTokenTests#testNoArgConstructorDoesntExist_4640351",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException_4acbb6d",
+          "appearsAsKiller": true,
+          "eligibleMutationOccurrenceCount": 1,
+          "mutationIds": [
+            "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyAuthority|([Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|122|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:1"
+          ]
+        },
+        {
+          "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenNullThenException_666eb63",
+          "appearsAsKiller": true,
+          "eligibleMutationOccurrenceCount": 1,
+          "mutationIds": [
+            "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyAuthority|([Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|122|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:1"
+          ]
+        },
+        {
+          "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException_224748b",
+          "appearsAsKiller": true,
+          "eligibleMutationOccurrenceCount": 1,
+          "mutationIds": [
+            "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyRole|(Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|108|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:4"
+          ]
+        },
+        {
+          "coverageKey": "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException_5281bf4",
+          "appearsAsKiller": true,
+          "eligibleMutationOccurrenceCount": 1,
+          "mutationIds": [
+            "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAuthority|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|83|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:9"
+          ]
+        },
+        {
+          "coverageKey": "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException_85c3cde",
+          "appearsAsKiller": true,
+          "eligibleMutationOccurrenceCount": 1,
+          "mutationIds": [
+            "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasRole|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|69|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:12"
+          ]
+        },
+        {
+          "coverageKey": "ConditionalAuthorizationManagerTests#whenWhenConditionIsNullThenThrowsException_69f789c",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "InMemoryConfigurationTests#jdk5Compatable_597fc95",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "JavaVersionTests#authenticationWhenJdk17ThenCorrectJdkCompatibility_6d1c60b",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull_5894d6c",
+          "appearsAsKiller": true,
+          "eligibleMutationOccurrenceCount": 1,
+          "mutationIds": [
+            "spring-security|org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl|withRolePrefix|(Ljava/lang/String;)Lorg/springframework/security/access/hierarchicalroles/RoleHierarchyImpl$Builder;|130|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml:20"
+          ]
+        },
+        {
+          "coverageKey": "RoleHierarchyUtilsTests#roleHierarchyFromMapWhenMapEmptyThenThrowsIllegalArgumentException_24ef6b7",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "RoleHierarchyUtilsTests#roleHierarchyFromMapWhenMapNullThenThrowsIllegalArgumentException_3f428aa",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "SpringSecurityCoreVersionTests#springVersionIsUpToDate_5872901",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "TestHelperTests#testCreateAuthorityList_f386994",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "TestingAuthenticationProviderTests#testSupports_7f3f346",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "TestingAuthenticationTokenTests#constructorObjectObjectStringVargsWhenNullAuthorities_5ff165d",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "UserTests#testNoArgConstructorDoesntExist_6e0cf1f",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "UsernamePasswordAuthenticationTokenTests#testNoArgConstructorDoesntExist_4665653",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        }
+      ]
+    },
+    {
+      "project": "hibernate",
+      "noCoverageTestCount": 0,
+      "appearingAsKillerCount": 0,
+      "tests": []
+    },
+    {
+      "project": "quarkus",
+      "noCoverageTestCount": 9,
+      "appearingAsKillerCount": 0,
+      "tests": [
+        {
+          "coverageKey": "ReproducibilityCheckTest#diffChanged_6e5aeca",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "ReproducibilityCheckTest#diffCombined_63205fc",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "ReproducibilityCheckTest#diffEmpty_4f3814c",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "ReproducibilityCheckTest#diffExtra_4f3d238",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "ReproducibilityCheckTest#diffIdentical_71ba492",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "ReproducibilityCheckTest#diffMissing_20e0b5c",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "ReproducibilityCheckTest#dumpMismatchCreatesFiles_3fc764e",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "ReproducibilityCheckTest#dumpMismatchIndexContainsSha256_525f819",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        },
+        {
+          "coverageKey": "ReproducibilityCheckTest#dumpMismatchMissingAndExtra_5b64db7",
+          "appearsAsKiller": false,
+          "eligibleMutationOccurrenceCount": 0,
+          "mutationIds": []
+        }
+      ]
+    }
+  ]
+}

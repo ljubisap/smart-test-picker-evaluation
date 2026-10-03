@@ -1,0 +1,10 @@
+{
+  "coverageMap": "spring-core/results/test-coverage-map.json",
+  "keys": [
+    {
+      "key": "org.springframework.core.convert.support.GenericConversionService#canConvert",
+      "logicalTestCount": 100
+    }
+  ],
+  "descriptorPresent": false
+}

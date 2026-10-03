@@ -1,0 +1,1713 @@
+{
+  "provenanceSource": "/Users/D061177/work/issta/rad1-v14-review-ready/RAD1_v14_REVIEW_READY_PROVENANCE.csv",
+  "projects": {
+    "commons-lang": {
+      "status": "INSPECTED",
+      "checkout": "/Users/D061177/work/issta/finerts-feasibility/subjects-full/apache_commons-lang",
+      "revision": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
+      "productionJavaFiles": 259,
+      "classes": [],
+      "count": 0,
+      "qualifiedScopePrefixes": [
+        "src/main/java/"
+      ],
+      "qualifiedScopeClasses": [],
+      "qualifiedScopeCount": 0
+    },
+    "jgrapht": {
+      "status": "INSPECTED",
+      "checkout": "/Users/D061177/work/issta/finerts-feasibility/subjects-corpus/jgrapht",
+      "revision": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+      "productionJavaFiles": 595,
+      "classes": [],
+      "count": 0,
+      "qualifiedScopePrefixes": [
+        "jgrapht-core/src/main/java/"
+      ],
+      "qualifiedScopeClasses": [],
+      "qualifiedScopeCount": 0
+    },
+    "spring-core": {
+      "status": "UNKNOWN",
+      "reason": "recorded revision not present in any retained local source checkout",
+      "classes": [],
+      "qualifiedScopePrefixes": [
+        "spring-core/src/main/java/"
+      ],
+      "qualifiedScopeClasses": [],
+      "qualifiedScopeCount": null
+    },
+    "petclinic": {
+      "status": "INSPECTED",
+      "checkout": "/Users/D061177/work/issta/finerts-feasibility/subjects-corpus/spring-petclinic",
+      "revision": "cbb884f01f7fef663fcff256e303d967494a4f8b",
+      "productionJavaFiles": 26,
+      "classes": [],
+      "count": 0,
+      "qualifiedScopePrefixes": [
+        "src/main/java/"
+      ],
+      "qualifiedScopeClasses": [],
+      "qualifiedScopeCount": 0
+    },
+    "flink": {
+      "status": "INSPECTED",
+      "checkout": "/Users/D061177/work/issta/flink-stp-qualification/subject",
+      "revision": "c0f8d1a1e09f209885a88f9c19ceb9d9e9870283",
+      "productionJavaFiles": 9551,
+      "classes": [
+        {
+          "fqn": "org.apache.flink.table.test.async.AsyncScalarFunctionExample",
+          "sourcePath": "flink-end-to-end-tests/flink-end-to-end-tests-table-api/src/main/java/org/apache/flink/table/test/async/AsyncScalarFunctionExample.java"
+        },
+        {
+          "fqn": "org.apache.flink.table.test.join.JoinWithCustomTypeExample",
+          "sourcePath": "flink-end-to-end-tests/flink-end-to-end-tests-table-api/src/main/java/org/apache/flink/table/test/join/JoinWithCustomTypeExample.java"
+        },
+        {
+          "fqn": "org.apache.flink.table.test.join.TestClass",
+          "sourcePath": "flink-end-to-end-tests/flink-end-to-end-tests-table-api/src/main/java/org/apache/flink/table/test/join/TestClass.java"
+        },
+        {
+          "fqn": "org.apache.flink.quickstarts.test.utils.Utils",
+          "sourcePath": "flink-end-to-end-tests/flink-quickstart-test-dummy-dependency/src/main/java/org/apache/flink/quickstarts/test/utils/Utils.java"
+        },
+        {
+          "fqn": "org.apache.flink.quickstarts.test.QuickstartExample",
+          "sourcePath": "flink-end-to-end-tests/flink-quickstart-test/src/main/java/org/apache/flink/quickstarts/test/QuickstartExample.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.StatefulStreamingJob",
+          "sourcePath": "flink-end-to-end-tests/flink-state-evolution-test/src/main/java/org/apache/flink/test/StatefulStreamingJob.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.migration.MigrationTestsSnapshotGenerator",
+          "sourcePath": "flink-test-utils-parent/flink-migration-test-utils/src/main/java/org/apache/flink/test/migration/MigrationTestsSnapshotGenerator.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.migration.PublishedVersionUtils",
+          "sourcePath": "flink-test-utils-parent/flink-migration-test-utils/src/main/java/org/apache/flink/test/migration/PublishedVersionUtils.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.migration.SnapshotGeneratorUtils",
+          "sourcePath": "flink-test-utils-parent/flink-migration-test-utils/src/main/java/org/apache/flink/test/migration/SnapshotGeneratorUtils.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.MigrationTest",
+          "sourcePath": "flink-test-utils-parent/flink-migration-test-utils/src/main/java/org/apache/flink/test/util/MigrationTest.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.source.AbstractTestSource",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils-connector/src/main/java/org/apache/flink/test/util/source/AbstractTestSource.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.source.AbstractTestSourceBase",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils-connector/src/main/java/org/apache/flink/test/util/source/AbstractTestSourceBase.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.source.SingleSplitEnumerator",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils-connector/src/main/java/org/apache/flink/test/util/source/SingleSplitEnumerator.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.source.TestReaderOutput",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils-connector/src/main/java/org/apache/flink/test/util/source/TestReaderOutput.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.source.TestSourceReader",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils-connector/src/main/java/org/apache/flink/test/util/source/TestSourceReader.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.source.TestSplit",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils-connector/src/main/java/org/apache/flink/test/util/source/TestSplit.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.source.TestSplitEnumerator",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils-connector/src/main/java/org/apache/flink/test/util/source/TestSplitEnumerator.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.source.VoidSerializer",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils-connector/src/main/java/org/apache/flink/test/util/source/VoidSerializer.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.junit5.InjectClusterClient",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/junit5/InjectClusterClient.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.junit5.MiniClusterExtension",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/junit5/MiniClusterExtension.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.parameters.ParameterProperty",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/parameters/ParameterProperty.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.resources.ResourceTestUtils",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/resources/ResourceTestUtils.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.streaming.runtime.util.TestListResultSink",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/streaming/runtime/util/TestListResultSink.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.streaming.runtime.util.TestListWrapper",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/streaming/runtime/util/TestListWrapper.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.testdata.ConnectedComponentsData",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/testdata/ConnectedComponentsData.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.testdata.EnumTriangleData",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/testdata/EnumTriangleData.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.testdata.KMeansData",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/testdata/KMeansData.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.testdata.PageRankData",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/testdata/PageRankData.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.testdata.TransitiveClosureData",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/testdata/TransitiveClosureData.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.testdata.WebLogAnalysisData",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/testdata/WebLogAnalysisData.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.testdata.WordCountData",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/testdata/WordCountData.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.AbstractTestBase",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/AbstractTestBase.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.AbstractTestBaseJUnit4",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/AbstractTestBaseJUnit4.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.FileUtils",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/FileUtils.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.JavaProgramTestBase",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/JavaProgramTestBase.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.JavaProgramTestBaseJUnit4",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/JavaProgramTestBaseJUnit4.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.JobSubmission",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/JobSubmission.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.MiniClusterPipelineExecutorServiceLoader",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/MiniClusterPipelineExecutorServiceLoader.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.MiniClusterWithClientResource",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/MiniClusterWithClientResource.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.MultipleProgramsTestBase",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/MultipleProgramsTestBase.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.MultipleProgramsTestBaseJUnit4",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/MultipleProgramsTestBaseJUnit4.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.SQLJobClientMode",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobClientMode.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.SQLJobSubmission",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.SecureTestEnvironment",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SecureTestEnvironment.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.ShellScript",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/ShellScript.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.SuccessException",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SuccessException.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.TestBaseUtils",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/TestBaseUtils.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.TestProcessBuilder",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/TestProcessBuilder.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.TestUtils",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/TestUtils.java"
+        },
+        {
+          "fqn": "org.apache.flink.test.util.TestingSecurityContext",
+          "sourcePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/TestingSecurityContext.java"
+        }
+      ],
+      "count": 50,
+      "qualifiedScopePrefixes": [
+        "flink-runtime/src/main/java/"
+      ],
+      "qualifiedScopeClasses": [],
+      "qualifiedScopeCount": 0
+    },
+    "spring-security": {
+      "status": "INSPECTED",
+      "checkout": "/Users/D061177/work/issta/spring-security-stp-qualification/subject",
+      "revision": "a825937b8175ee85872c49d9c7fc25eea8cff991",
+      "productionJavaFiles": 2558,
+      "classes": [
+        {
+          "fqn": "org.springframework.security.kerberos.test.KerberosSecurityTestcase",
+          "sourcePath": "kerberos/kerberos-test/src/main/java/org/springframework/security/kerberos/test/KerberosSecurityTestcase.java"
+        },
+        {
+          "fqn": "org.springframework.security.kerberos.test.MiniKdc",
+          "sourcePath": "kerberos/kerberos-test/src/main/java/org/springframework/security/kerberos/test/MiniKdc.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.aot.hint.WebTestUtilsRuntimeHints",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/aot/hint/WebTestUtilsRuntimeHints.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.aot.hint.WithSecurityContextTestRuntimeHints",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/aot/hint/WithSecurityContextTestRuntimeHints.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.TestSecurityContextHolder",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/TestSecurityContextHolder.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.TestSecurityContextHolderStrategyAdapter",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/TestSecurityContextHolderStrategyAdapter.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.annotation.SecurityTestExecutionListeners",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/annotation/SecurityTestExecutionListeners.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.DelegatingTestExecutionListener",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/DelegatingTestExecutionListener.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.ReactorContextTestExecutionListener",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/ReactorContextTestExecutionListener.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.TestExecutionEvent",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/TestExecutionEvent.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.WithAnonymousUser",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/WithAnonymousUser.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.WithAnonymousUserSecurityContextFactory",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/WithAnonymousUserSecurityContextFactory.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.WithMockUser",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/WithMockUser.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.WithMockUserSecurityContextFactory",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/WithMockUserSecurityContextFactory.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.WithSecurityContext",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/WithSecurityContext.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.WithSecurityContextFactory",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/WithSecurityContextFactory.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/WithSecurityContextTestExecutionListener.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.WithUserDetails",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/WithUserDetails.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.context.support.WithUserDetailsSecurityContextFactory",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/context/support/WithUserDetailsSecurityContextFactory.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.web.reactive.server.SecurityMockServerConfigurers",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/web/reactive/server/SecurityMockServerConfigurers.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/web/servlet/request/SecurityMockMvcRequestBuilders.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/web/servlet/request/SecurityMockMvcRequestPostProcessors.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.web.servlet.response.SecurityMockMvcResultHandlers",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/web/servlet/response/SecurityMockMvcResultHandlers.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/web/servlet/response/SecurityMockMvcResultMatchers.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurer",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/web/servlet/setup/SecurityMockMvcConfigurer.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/web/servlet/setup/SecurityMockMvcConfigurers.java"
+        },
+        {
+          "fqn": "org.springframework.security.test.web.support.WebTestUtils",
+          "sourcePath": "test/src/main/java/org/springframework/security/test/web/support/WebTestUtils.java"
+        }
+      ],
+      "count": 27,
+      "qualifiedScopePrefixes": [
+        "spring-security-core/src/main/java/"
+      ],
+      "qualifiedScopeClasses": [],
+      "qualifiedScopeCount": 0
+    },
+    "hibernate": {
+      "status": "INSPECTED",
+      "checkout": "/Users/D061177/work/issta/hibernate-orm-stp-qualification/subject",
+      "revision": "a95dd44cf654131e984682687cf1b2ec5d3e34cd",
+      "productionJavaFiles": 7404,
+      "classes": [],
+      "count": 0,
+      "qualifiedScopePrefixes": [
+        "hibernate-core/src/main/java/"
+      ],
+      "qualifiedScopeClasses": [],
+      "qualifiedScopeCount": 0
+    },
+    "quarkus": {
+      "status": "INSPECTED",
+      "checkout": "/Users/D061177/work/issta/quarkus-stp-qualification/subject",
+      "revision": "6ce99878508d792f3c2a2a7f9520b086a1c32cab",
+      "productionJavaFiles": 11073,
+      "classes": [
+        {
+          "fqn": "io.quarkus.runtime.test.TestApplicationClassPredicate",
+          "sourcePath": "core/runtime/src/main/java/io/quarkus/runtime/test/TestApplicationClassPredicate.java"
+        },
+        {
+          "fqn": "io.quarkus.runtime.test.TestHttpEndpointProvider",
+          "sourcePath": "core/runtime/src/main/java/io/quarkus/runtime/test/TestHttpEndpointProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.runtime.test.TestScopeSetup",
+          "sourcePath": "core/runtime/src/main/java/io/quarkus/runtime/test/TestScopeSetup.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.runtime.test.ActivateSessionContextInterceptor",
+          "sourcePath": "extensions/arc/runtime/src/main/java/io/quarkus/arc/runtime/test/ActivateSessionContextInterceptor.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.runtime.test.PreloadedTestApplicationClassPredicate",
+          "sourcePath": "extensions/arc/runtime/src/main/java/io/quarkus/arc/runtime/test/PreloadedTestApplicationClassPredicate.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.test.supplement.decorator.SomeDecorator",
+          "sourcePath": "extensions/arc/test-supplement-decorator/src/main/java/io/quarkus/arc/test/supplement/decorator/SomeDecorator.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.test.supplement.decorator.SomeInterface",
+          "sourcePath": "extensions/arc/test-supplement-decorator/src/main/java/io/quarkus/arc/test/supplement/decorator/SomeInterface.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.test.supplement.ConsumerOfSomeBeanInExternalLibrary",
+          "sourcePath": "extensions/arc/test-supplement/src/main/java/io/quarkus/arc/test/supplement/ConsumerOfSomeBeanInExternalLibrary.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.test.supplement.ConsumerOfSomeDepBeanInExternalLibrary",
+          "sourcePath": "extensions/arc/test-supplement/src/main/java/io/quarkus/arc/test/supplement/ConsumerOfSomeDepBeanInExternalLibrary.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.test.supplement.SomeBeanInExternalLibrary",
+          "sourcePath": "extensions/arc/test-supplement/src/main/java/io/quarkus/arc/test/supplement/SomeBeanInExternalLibrary.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.test.supplement.SomeClassInExternalLibrary",
+          "sourcePath": "extensions/arc/test-supplement/src/main/java/io/quarkus/arc/test/supplement/SomeClassInExternalLibrary.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.test.supplement.SomeDepBeanInExternalLibrary",
+          "sourcePath": "extensions/arc/test-supplement/src/main/java/io/quarkus/arc/test/supplement/SomeDepBeanInExternalLibrary.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.test.supplement.SomeDependencyInExternalLibrary",
+          "sourcePath": "extensions/arc/test-supplement/src/main/java/io/quarkus/arc/test/supplement/SomeDependencyInExternalLibrary.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.test.supplement.SomeEventInExternalLibrary",
+          "sourcePath": "extensions/arc/test-supplement/src/main/java/io/quarkus/arc/test/supplement/SomeEventInExternalLibrary.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.test.supplement.SomeInterfaceInExternalLibrary",
+          "sourcePath": "extensions/arc/test-supplement/src/main/java/io/quarkus/arc/test/supplement/SomeInterfaceInExternalLibrary.java"
+        },
+        {
+          "fqn": "io.quarkus.arc.test.supplement.SomeProducedDependencyInExternalLibrary",
+          "sourcePath": "extensions/arc/test-supplement/src/main/java/io/quarkus/arc/test/supplement/SomeProducedDependencyInExternalLibrary.java"
+        },
+        {
+          "fqn": "io.quarkus.hibernate.orm.deployment.test.HibernateTestTransactionCallback",
+          "sourcePath": "extensions/hibernate-orm/deployment/src/main/java/io/quarkus/hibernate/orm/deployment/test/HibernateTestTransactionCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.narayana.jta.runtime.test.TestTransactionCallback",
+          "sourcePath": "extensions/narayana-jta/runtime/src/main/java/io/quarkus/narayana/jta/runtime/test/TestTransactionCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.qute.runtime.test.RenderedResultsCreator",
+          "sourcePath": "extensions/qute/runtime/src/main/java/io/quarkus/qute/runtime/test/RenderedResultsCreator.java"
+        },
+        {
+          "fqn": "io.quarkus.security.test.utils.AuthData",
+          "sourcePath": "extensions/security/test-utils/src/main/java/io/quarkus/security/test/utils/AuthData.java"
+        },
+        {
+          "fqn": "io.quarkus.security.test.utils.IdentityMock",
+          "sourcePath": "extensions/security/test-utils/src/main/java/io/quarkus/security/test/utils/IdentityMock.java"
+        },
+        {
+          "fqn": "io.quarkus.security.test.utils.SecurityTestUtils",
+          "sourcePath": "extensions/security/test-utils/src/main/java/io/quarkus/security/test/utils/SecurityTestUtils.java"
+        },
+        {
+          "fqn": "io.quarkus.security.test.utils.TestIdentityController",
+          "sourcePath": "extensions/security/test-utils/src/main/java/io/quarkus/security/test/utils/TestIdentityController.java"
+        },
+        {
+          "fqn": "io.quarkus.security.test.utils.TestIdentityProvider",
+          "sourcePath": "extensions/security/test-utils/src/main/java/io/quarkus/security/test/utils/TestIdentityProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.virtual.ShouldNotPin",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit/virtual/ShouldNotPin.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.virtual.ShouldPin",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit/virtual/ShouldPin.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.virtual.ThreadPinnedEvents",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit/virtual/ThreadPinnedEvents.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.virtual.VirtualThreadUnit",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit/virtual/VirtualThreadUnit.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.virtual.internal.Collector",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit/virtual/internal/Collector.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.virtual.internal.InternalEvents",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit/virtual/internal/InternalEvents.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.virtual.internal.JfrCollector",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit/virtual/internal/JfrCollector.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.virtual.internal.NoJfrCollector",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit/virtual/internal/NoJfrCollector.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.virtual.internal.VirtualThreadExtension",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit/virtual/internal/VirtualThreadExtension.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit5.virtual.ShouldNotPin",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit5/virtual/ShouldNotPin.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit5.virtual.ShouldPin",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit5/virtual/ShouldPin.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit5.virtual.ThreadPinnedEvents",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit5/virtual/ThreadPinnedEvents.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit5.virtual.VirtualThreadUnit",
+          "sourcePath": "independent-projects/junit-virtual-threads/src/main/java/io/quarkus/test/junit5/virtual/VirtualThreadUnit.java"
+        },
+        {
+          "fqn": "io.quarkus.funqy.test.Greeting",
+          "sourcePath": "integration-tests/funqy-amazon-lambda/src/main/java/io/quarkus/funqy/test/Greeting.java"
+        },
+        {
+          "fqn": "io.quarkus.funqy.test.GreetingFunctions",
+          "sourcePath": "integration-tests/funqy-amazon-lambda/src/main/java/io/quarkus/funqy/test/GreetingFunctions.java"
+        },
+        {
+          "fqn": "io.quarkus.funqy.test.GreetingService",
+          "sourcePath": "integration-tests/funqy-amazon-lambda/src/main/java/io/quarkus/funqy/test/GreetingService.java"
+        },
+        {
+          "fqn": "io.quarkus.funqy.test.Identity",
+          "sourcePath": "integration-tests/funqy-amazon-lambda/src/main/java/io/quarkus/funqy/test/Identity.java"
+        },
+        {
+          "fqn": "io.quarkus.funqy.test.NoArgFun",
+          "sourcePath": "integration-tests/funqy-amazon-lambda/src/main/java/io/quarkus/funqy/test/NoArgFun.java"
+        },
+        {
+          "fqn": "io.quarkus.funqy.gcp.functions.test.GreetingFunctions",
+          "sourcePath": "integration-tests/funqy-google-cloud-functions/src/main/java/io/quarkus/funqy/gcp/functions/test/GreetingFunctions.java"
+        },
+        {
+          "fqn": "io.quarkus.funqy.gcp.functions.test.GreetingService",
+          "sourcePath": "integration-tests/funqy-google-cloud-functions/src/main/java/io/quarkus/funqy/gcp/functions/test/GreetingService.java"
+        },
+        {
+          "fqn": "io.quarkus.gcp.function.test.BackgroundFunctionStorageTest",
+          "sourcePath": "integration-tests/google-cloud-functions/src/main/java/io/quarkus/gcp/function/test/BackgroundFunctionStorageTest.java"
+        },
+        {
+          "fqn": "io.quarkus.gcp.function.test.CloudEventStorageTest",
+          "sourcePath": "integration-tests/google-cloud-functions/src/main/java/io/quarkus/gcp/function/test/CloudEventStorageTest.java"
+        },
+        {
+          "fqn": "io.quarkus.gcp.function.test.HttpFunctionTest",
+          "sourcePath": "integration-tests/google-cloud-functions/src/main/java/io/quarkus/gcp/function/test/HttpFunctionTest.java"
+        },
+        {
+          "fqn": "io.quarkus.gcp.function.test.RawBackgroundFunctionPubSubTest",
+          "sourcePath": "integration-tests/google-cloud-functions/src/main/java/io/quarkus/gcp/function/test/RawBackgroundFunctionPubSubTest.java"
+        },
+        {
+          "fqn": "io.quarkus.gcp.function.test.service.GreetingService",
+          "sourcePath": "integration-tests/google-cloud-functions/src/main/java/io/quarkus/gcp/function/test/service/GreetingService.java"
+        },
+        {
+          "fqn": "com.module.test.PersonFactory",
+          "sourcePath": "integration-tests/gradle/src/main/resources/test-with-sidecar-module/test-support/src/main/java/com/module/test/PersonFactory.java"
+        },
+        {
+          "fqn": "org.test.HelloResource",
+          "sourcePath": "integration-tests/jpa-without-entity/src/main/java/org/test/HelloResource.java"
+        },
+        {
+          "fqn": "org.acme.test.manipulator.deployment.TestManipulatorProcessor",
+          "sourcePath": "integration-tests/maven/src/test/resources-filtered/projects/path-filter-not-applied-test-classes/test-manipulator/deployment/src/main/java/org/acme/test/manipulator/deployment/TestManipulatorProcessor.java"
+        },
+        {
+          "fqn": "io.quarkus.it.mongodb.panache.test.TestImperativeEntity",
+          "sourcePath": "integration-tests/mongodb-panache/src/main/java/io/quarkus/it/mongodb/panache/test/TestImperativeEntity.java"
+        },
+        {
+          "fqn": "io.quarkus.it.mongodb.panache.test.TestImperativeRepository",
+          "sourcePath": "integration-tests/mongodb-panache/src/main/java/io/quarkus/it/mongodb/panache/test/TestImperativeRepository.java"
+        },
+        {
+          "fqn": "io.quarkus.it.mongodb.panache.test.TestReactiveEntity",
+          "sourcePath": "integration-tests/mongodb-panache/src/main/java/io/quarkus/it/mongodb/panache/test/TestReactiveEntity.java"
+        },
+        {
+          "fqn": "io.quarkus.it.mongodb.panache.test.TestReactiveRepository",
+          "sourcePath": "integration-tests/mongodb-panache/src/main/java/io/quarkus/it/mongodb/panache/test/TestReactiveRepository.java"
+        },
+        {
+          "fqn": "io.quarkus.it.mongodb.panache.test.TestResource",
+          "sourcePath": "integration-tests/mongodb-panache/src/main/java/io/quarkus/it/mongodb/panache/test/TestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.it.nat.test.profile.NativeConfigProfileResource",
+          "sourcePath": "integration-tests/native-config-profile/src/main/java/io/quarkus/it/nat/test/profile/NativeConfigProfileResource.java"
+        },
+        {
+          "fqn": "io.quarkus.it.nat.test.profile.UnusedRemovableBean",
+          "sourcePath": "integration-tests/native-config-profile/src/main/java/io/quarkus/it/nat/test/profile/UnusedRemovableBean.java"
+        },
+        {
+          "fqn": "io.quarkus.test.devservices.redis.TestResource",
+          "sourcePath": "integration-tests/redis-devservices/src/main/java/io/quarkus/test/devservices/redis/TestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.it.spring.data.jpa.test.MovieRating",
+          "sourcePath": "integration-tests/spring-data-jpa/src/main/java/io/quarkus/it/spring/data/jpa/test/MovieRating.java"
+        },
+        {
+          "fqn": "io.quarkus.it.spring.test.GreetingResource",
+          "sourcePath": "integration-tests/spring-test/src/main/java/io/quarkus/it/spring/test/GreetingResource.java"
+        },
+        {
+          "fqn": "io.quarkus.it.spring.test.GreetingService",
+          "sourcePath": "integration-tests/spring-test/src/main/java/io/quarkus/it/spring/test/GreetingService.java"
+        },
+        {
+          "fqn": "io.quarkus.test.aesh.AeshLauncher",
+          "sourcePath": "test-framework/aesh/src/main/java/io/quarkus/test/aesh/AeshLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.aesh.AeshLauncherImpl",
+          "sourcePath": "test-framework/aesh/src/main/java/io/quarkus/test/aesh/AeshLauncherImpl.java"
+        },
+        {
+          "fqn": "io.quarkus.test.aesh.ExecuteOptions",
+          "sourcePath": "test-framework/aesh/src/main/java/io/quarkus/test/aesh/ExecuteOptions.java"
+        },
+        {
+          "fqn": "io.quarkus.test.aesh.StageResult",
+          "sourcePath": "test-framework/aesh/src/main/java/io/quarkus/test/aesh/StageResult.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ActivateSessionContext",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/ActivateSessionContext.java"
+        },
+        {
+          "fqn": "io.quarkus.test.InjectMock",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/InjectMock.java"
+        },
+        {
+          "fqn": "io.quarkus.test.Mock",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/Mock.java"
+        },
+        {
+          "fqn": "io.quarkus.test.TestMethodInvoker",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/TestMethodInvoker.java"
+        },
+        {
+          "fqn": "io.quarkus.test.TestReactiveTransaction",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/TestReactiveTransaction.java"
+        },
+        {
+          "fqn": "io.quarkus.test.TestTransaction",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/TestTransaction.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.ArtifactLauncher",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/ArtifactLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.DefaultDockerContainerLauncher",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/DefaultDockerContainerLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.DefaultJarLauncher",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/DefaultJarLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.DefaultNativeImageLauncher",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/DefaultNativeImageLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.DevServicesContext",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/DevServicesContext.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.DockerContainerArtifactLauncher",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/DockerContainerArtifactLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.DockerImageNames",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/DockerImageNames.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.FacadeClassLoaderProvider",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/FacadeClassLoaderProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.GroovyClassValue",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/GroovyClassValue.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.IntegrationTestStartedNotifier",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/IntegrationTestStartedNotifier.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.JarArtifactLauncher",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/JarArtifactLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.LauncherUtil",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/LauncherUtil.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.ListeningAddress",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/ListeningAddress.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.ListeningAddresses",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/ListeningAddresses.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.NativeImageLauncher",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/NativeImageLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.PathTestHelper",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/PathTestHelper.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.ProcessReader",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/ProcessReader.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.PropertyTestUtil",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/PropertyTestUtil.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.QuarkusTestResource",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/QuarkusTestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.QuarkusTestResourceConfigurableLifecycleManager",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/QuarkusTestResourceConfigurableLifecycleManager.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.QuarkusTestResourceLifecycleManager",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/QuarkusTestResourceLifecycleManager.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.QuarkusTestResourceLifecycleManagerComparator",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/QuarkusTestResourceLifecycleManagerComparator.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.QuarkusTestResourceRepeatable",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/QuarkusTestResourceRepeatable.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.ResourceArg",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/ResourceArg.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.RestAssuredStateManager",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/RestAssuredStateManager.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.RestAssuredURLManager",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/RestAssuredURLManager.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.RunCommandLauncher",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/RunCommandLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.TestClassIndexer",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/TestClassIndexer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.TestConfigUtil",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/TestConfigUtil.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.TestHostLauncher",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/TestHostLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.TestInstantiator",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/TestInstantiator.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.TestResourceManager",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/TestResourceManager.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.TestResourceScope",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/TestResourceScope.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.TestScopeManager",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/TestScopeManager.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.TestStatus",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/TestStatus.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.WithTestResource",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/WithTestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.WithTestResourceRepeatable",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/WithTestResourceRepeatable.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.http.StringTestHTTPResourceProvider",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/http/StringTestHTTPResourceProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.http.TestHTTPConfigSourceInterceptor",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/http/TestHTTPConfigSourceInterceptor.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.http.TestHTTPConfigSourceProvider",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/http/TestHTTPConfigSourceProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.http.TestHTTPEndpoint",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/http/TestHTTPEndpoint.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.http.TestHTTPResource",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/http/TestHTTPResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.http.TestHTTPResourceManager",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/http/TestHTTPResourceManager.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.http.TestHTTPResourceProvider",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/http/TestHTTPResourceProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.http.URITestHTTPResourceProvider",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/http/URITestHTTPResourceProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.common.http.URLTestHTTPResourceProvider",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/common/http/URLTestHTTPResourceProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.util.annotations.AnnotationContainer",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/util/annotations/AnnotationContainer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.util.annotations.AnnotationUtils",
+          "sourcePath": "test-framework/common/src/main/java/io/quarkus/test/util/annotations/AnnotationUtils.java"
+        },
+        {
+          "fqn": "io.quarkus.test.devmode.util.DevModeClient",
+          "sourcePath": "test-framework/devmode-test-utils/src/main/java/io/quarkus/test/devmode/util/DevModeClient.java"
+        },
+        {
+          "fqn": "io.quarkus.google.cloud.functions.test.CloudFunctionTestResource",
+          "sourcePath": "test-framework/google-cloud-functions/src/main/java/io/quarkus/google/cloud/functions/test/CloudFunctionTestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.google.cloud.functions.test.CloudFunctionsInvoker",
+          "sourcePath": "test-framework/google-cloud-functions/src/main/java/io/quarkus/google/cloud/functions/test/CloudFunctionsInvoker.java"
+        },
+        {
+          "fqn": "io.quarkus.google.cloud.functions.test.FunctionType",
+          "sourcePath": "test-framework/google-cloud-functions/src/main/java/io/quarkus/google/cloud/functions/test/FunctionType.java"
+        },
+        {
+          "fqn": "io.quarkus.google.cloud.functions.test.SocketUtil",
+          "sourcePath": "test-framework/google-cloud-functions/src/main/java/io/quarkus/google/cloud/functions/test/SocketUtil.java"
+        },
+        {
+          "fqn": "io.quarkus.google.cloud.functions.test.WithFunction",
+          "sourcePath": "test-framework/google-cloud-functions/src/main/java/io/quarkus/google/cloud/functions/test/WithFunction.java"
+        },
+        {
+          "fqn": "io.quarkus.grpc.test.utils.GRPCTestUtils",
+          "sourcePath": "test-framework/grpc/src/main/java/io/quarkus/grpc/test/utils/GRPCTestUtils.java"
+        },
+        {
+          "fqn": "io.quarkus.grpc.test.utils.N2OGRPCTestProfile",
+          "sourcePath": "test-framework/grpc/src/main/java/io/quarkus/grpc/test/utils/N2OGRPCTestProfile.java"
+        },
+        {
+          "fqn": "io.quarkus.grpc.test.utils.O2NGRPCTestProfile",
+          "sourcePath": "test-framework/grpc/src/main/java/io/quarkus/grpc/test/utils/O2NGRPCTestProfile.java"
+        },
+        {
+          "fqn": "io.quarkus.grpc.test.utils.VertxGRPCTestProfile",
+          "sourcePath": "test-framework/grpc/src/main/java/io/quarkus/grpc/test/utils/VertxGRPCTestProfile.java"
+        },
+        {
+          "fqn": "io.quarkus.test.h2.H2DatabaseTestResource",
+          "sourcePath": "test-framework/h2/src/main/java/io/quarkus/test/h2/H2DatabaseTestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.hibernate.reactive.panache.TransactionalUniAsserter",
+          "sourcePath": "test-framework/hibernate-reactive-panache/src/main/java/io/quarkus/test/hibernate/reactive/panache/TransactionalUniAsserter.java"
+        },
+        {
+          "fqn": "io.quarkus.test.hibernate.reactive.panache.TransactionalUniAsserterTestMethodInvoker",
+          "sourcePath": "test-framework/hibernate-reactive-panache/src/main/java/io/quarkus/test/hibernate/reactive/panache/TransactionalUniAsserterTestMethodInvoker.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.common.ClearCache",
+          "sourcePath": "test-framework/junit-common/src/main/java/io/quarkus/test/junit/common/ClearCache.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.common.DisabledOnSemeru",
+          "sourcePath": "test-framework/junit-common/src/main/java/io/quarkus/test/junit/common/DisabledOnSemeru.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.common.DisabledOnSemeruCondition",
+          "sourcePath": "test-framework/junit-common/src/main/java/io/quarkus/test/junit/common/DisabledOnSemeruCondition.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.common.EnabledOnSemeru",
+          "sourcePath": "test-framework/junit-common/src/main/java/io/quarkus/test/junit/common/EnabledOnSemeru.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.common.EnabledOnSemeruCondition",
+          "sourcePath": "test-framework/junit-common/src/main/java/io/quarkus/test/junit/common/EnabledOnSemeruCondition.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.common.JdkUtil",
+          "sourcePath": "test-framework/junit-common/src/main/java/io/quarkus/test/junit/common/JdkUtil.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.condition.DisabledIfConfig",
+          "sourcePath": "test-framework/junit-common/src/main/java/io/quarkus/test/junit/condition/DisabledIfConfig.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.condition.DisabledIfConfigCondition",
+          "sourcePath": "test-framework/junit-common/src/main/java/io/quarkus/test/junit/condition/DisabledIfConfigCondition.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.condition.EnabledIfConfig",
+          "sourcePath": "test-framework/junit-common/src/main/java/io/quarkus/test/junit/condition/EnabledIfConfig.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.condition.EnabledIfConfigCondition",
+          "sourcePath": "test-framework/junit-common/src/main/java/io/quarkus/test/junit/condition/EnabledIfConfigCondition.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.condition.RepeatableAnnotationCondition",
+          "sourcePath": "test-framework/junit-common/src/main/java/io/quarkus/test/junit/condition/RepeatableAnnotationCondition.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.BuildResult",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/BuildResult.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.ComponentClassLoader",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/ComponentClassLoader.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.ComponentContainer",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/ComponentContainer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.ComponentLauncherSessionListener",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/ComponentLauncherSessionListener.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.Conditions",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/Conditions.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.ConfigBeanCreator",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/ConfigBeanCreator.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.ConfigMappingBeanCreator",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/ConfigMappingBeanCreator.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.ConfigPropertyBeanCreator",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/ConfigPropertyBeanCreator.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.InterceptorMethodCreator",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/InterceptorMethodCreator.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.JaxrsSingletonTransformer",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/JaxrsSingletonTransformer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.MockBeanConfigurator",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/MockBeanConfigurator.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.MockBeanConfiguratorImpl",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/MockBeanConfiguratorImpl.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.MockBeanCreator",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/MockBeanCreator.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.QuarkusComponentFacadeClassLoaderProvider",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/QuarkusComponentFacadeClassLoaderProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.QuarkusComponentTest",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/QuarkusComponentTest.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.QuarkusComponentTestCallbacks",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/QuarkusComponentTestCallbacks.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.QuarkusComponentTestClassLoader",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/QuarkusComponentTestClassLoader.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.QuarkusComponentTestConfigSource",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/QuarkusComponentTestConfigSource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.QuarkusComponentTestConfiguration",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/QuarkusComponentTestConfiguration.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.QuarkusComponentTestExtension",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/QuarkusComponentTestExtension.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.QuarkusComponentTestExtensionBuilder",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/QuarkusComponentTestExtensionBuilder.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.SkipInject",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/SkipInject.java"
+        },
+        {
+          "fqn": "io.quarkus.test.component.TestConfigProperty",
+          "sourcePath": "test-framework/junit-component/src/main/java/io/quarkus/test/component/TestConfigProperty.java"
+        },
+        {
+          "fqn": "io.quarkus.test.config.ConfigInjector",
+          "sourcePath": "test-framework/junit-config/src/main/java/io/quarkus/test/config/ConfigInjector.java"
+        },
+        {
+          "fqn": "io.quarkus.test.config.ConfigLauncherSession",
+          "sourcePath": "test-framework/junit-config/src/main/java/io/quarkus/test/config/ConfigLauncherSession.java"
+        },
+        {
+          "fqn": "io.quarkus.test.config.LoggingSetupExtension",
+          "sourcePath": "test-framework/junit-config/src/main/java/io/quarkus/test/config/LoggingSetupExtension.java"
+        },
+        {
+          "fqn": "io.quarkus.test.config.QuarkusClassOrderer",
+          "sourcePath": "test-framework/junit-config/src/main/java/io/quarkus/test/config/QuarkusClassOrderer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.config.TestConfigCustomizer",
+          "sourcePath": "test-framework/junit-config/src/main/java/io/quarkus/test/config/TestConfigCustomizer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.config.ThreadLocalConfigSourceProvider",
+          "sourcePath": "test-framework/junit-config/src/main/java/io/quarkus/test/config/ThreadLocalConfigSourceProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.config.ValueRegistryInjector",
+          "sourcePath": "test-framework/junit-config/src/main/java/io/quarkus/test/config/ValueRegistryInjector.java"
+        },
+        {
+          "fqn": "io.quarkus.test.AbstractQuarkusExtensionTest",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/AbstractQuarkusExtensionTest.java"
+        },
+        {
+          "fqn": "io.quarkus.test.BytecodeTools",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/BytecodeTools.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ContinuousTestingTestUtils",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/ContinuousTestingTestUtils.java"
+        },
+        {
+          "fqn": "io.quarkus.test.DevModeTestApplicationModel",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/DevModeTestApplicationModel.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ExclusivityChecker",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/ExclusivityChecker.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ExportUtil",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/ExportUtil.java"
+        },
+        {
+          "fqn": "io.quarkus.test.InMemoryLogHandler",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/InMemoryLogHandler.java"
+        },
+        {
+          "fqn": "io.quarkus.test.LogCollectingTestResource",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/LogCollectingTestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.LogFile",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/LogFile.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ProdBuildResults",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/ProdBuildResults.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ProdModeTestBuildChainBuilderConsumer",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/ProdModeTestBuildChainBuilderConsumer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ProdModeTestBuildChainCustomizerProducer",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/ProdModeTestBuildChainCustomizerProducer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ProdModeTestBuildStep",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/ProdModeTestBuildStep.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ProdModeTestResults",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/ProdModeTestResults.java"
+        },
+        {
+          "fqn": "io.quarkus.test.PropertiesAsset",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/PropertiesAsset.java"
+        },
+        {
+          "fqn": "io.quarkus.test.QuarkusDevModeTest",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/QuarkusDevModeTest.java"
+        },
+        {
+          "fqn": "io.quarkus.test.QuarkusExtensionTest",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/QuarkusExtensionTest.java"
+        },
+        {
+          "fqn": "io.quarkus.test.QuarkusProdModeTest",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/QuarkusProdModeTest.java"
+        },
+        {
+          "fqn": "io.quarkus.test.QuarkusUnitTest",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/QuarkusUnitTest.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ReproducibilityTestLauncher",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/ReproducibilityTestLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ports.SocketKit",
+          "sourcePath": "test-framework/junit-internal/src/main/java/io/quarkus/test/ports/SocketKit.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.mockito.InjectSpy",
+          "sourcePath": "test-framework/junit-mockito/src/main/java/io/quarkus/test/junit/mockito/InjectSpy.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.mockito.MockitoConfig",
+          "sourcePath": "test-framework/junit-mockito/src/main/java/io/quarkus/test/junit/mockito/MockitoConfig.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.mockito.internal.CreateMockitoMocksCallback",
+          "sourcePath": "test-framework/junit-mockito/src/main/java/io/quarkus/test/junit/mockito/internal/CreateMockitoMocksCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.mockito.internal.CreateMockitoSpiesCallback",
+          "sourcePath": "test-framework/junit-mockito/src/main/java/io/quarkus/test/junit/mockito/internal/CreateMockitoSpiesCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.mockito.internal.MockitoMocksTracker",
+          "sourcePath": "test-framework/junit-mockito/src/main/java/io/quarkus/test/junit/mockito/internal/MockitoMocksTracker.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.mockito.internal.MutinyAnswer",
+          "sourcePath": "test-framework/junit-mockito/src/main/java/io/quarkus/test/junit/mockito/internal/MutinyAnswer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.mockito.internal.ResetMockitoMocksAfterAllCallback",
+          "sourcePath": "test-framework/junit-mockito/src/main/java/io/quarkus/test/junit/mockito/internal/ResetMockitoMocksAfterAllCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.mockito.internal.ResetMockitoMocksAfterEachCallback",
+          "sourcePath": "test-framework/junit-mockito/src/main/java/io/quarkus/test/junit/mockito/internal/ResetMockitoMocksAfterEachCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.mockito.internal.SetMockitoMockAsBeanMockCallback",
+          "sourcePath": "test-framework/junit-mockito/src/main/java/io/quarkus/test/junit/mockito/internal/SetMockitoMockAsBeanMockCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.mockito.internal.SingletonToApplicationScopedTestBuildChainCustomizerProducer",
+          "sourcePath": "test-framework/junit-mockito/src/main/java/io/quarkus/test/junit/mockito/internal/SingletonToApplicationScopedTestBuildChainCustomizerProducer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.mockito.internal.UnremoveableMockTestBuildChainCustomizerProducer",
+          "sourcePath": "test-framework/junit-mockito/src/main/java/io/quarkus/test/junit/mockito/internal/UnremoveableMockTestBuildChainCustomizerProducer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.AbstractJvmQuarkusTestExtension",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/AbstractJvmQuarkusTestExtension.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.AbstractQuarkusTestWithContextExtension",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/AbstractQuarkusTestWithContextExtension.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.AbstractTestWithCallbacksExtension",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/AbstractTestWithCallbacksExtension.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.AppMakerHelper",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/AppMakerHelper.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.ArtifactTypeUtil",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/ArtifactTypeUtil.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.ClassCoercingTestProfile",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/ClassCoercingTestProfile.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.DisableIfBuiltWithGraalVMNewerThan",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/DisableIfBuiltWithGraalVMNewerThan.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.DisableIfBuiltWithGraalVMNewerThanCondition",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/DisableIfBuiltWithGraalVMNewerThanCondition.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.DisableIfBuiltWithGraalVMOlderThan",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/DisableIfBuiltWithGraalVMOlderThan.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.DisableIfBuiltWithGraalVMOlderThanCondition",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/DisableIfBuiltWithGraalVMOlderThanCondition.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.DisabledOnIntegrationTest",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/DisabledOnIntegrationTest.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.DisabledOnIntegrationTestCondition",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/DisabledOnIntegrationTestCondition.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.DotNames",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/DotNames.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.GraalVMVersion",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/GraalVMVersion.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.IntegrationTestExtensionState",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/IntegrationTestExtensionState.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.IntegrationTestUtil",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/IntegrationTestUtil.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.MockSupport",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/MockSupport.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.NativeDevServicesHandler",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/NativeDevServicesHandler.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.PrepareResult",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/PrepareResult.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.QuarkusIntegrationTest",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/QuarkusIntegrationTest.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.QuarkusIntegrationTestExtension",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/QuarkusIntegrationTestExtension.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.QuarkusMainIntegrationTestExtension",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/QuarkusMainIntegrationTestExtension.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.QuarkusMainTestExtension",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/QuarkusMainTestExtension.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.QuarkusMock",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/QuarkusMock.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.QuarkusTest",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/QuarkusTest.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.QuarkusTestExtension",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/QuarkusTestExtension.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.QuarkusTestExtensionState",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/QuarkusTestExtensionState.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.QuarkusTestProfile",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/QuarkusTestProfile.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.TestBuildChainFunction",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/TestBuildChainFunction.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.TestProfile",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/TestProfile.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.TestProfileAndProperties",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/TestProfileAndProperties.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.TestResourceUtil",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/TestResourceUtil.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.buildchain.TestBuildChainCustomizerProducer",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/buildchain/TestBuildChainCustomizerProducer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.callback.QuarkusTestAfterAllCallback",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/callback/QuarkusTestAfterAllCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.callback.QuarkusTestAfterConstructCallback",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/callback/QuarkusTestAfterConstructCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.callback.QuarkusTestAfterEachCallback",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/callback/QuarkusTestAfterEachCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.callback.QuarkusTestAfterTestExecutionCallback",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/callback/QuarkusTestAfterTestExecutionCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.callback.QuarkusTestBeforeClassCallback",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/callback/QuarkusTestBeforeClassCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.callback.QuarkusTestBeforeEachCallback",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/callback/QuarkusTestBeforeEachCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.callback.QuarkusTestBeforeTestExecutionCallback",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/callback/QuarkusTestBeforeTestExecutionCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.callback.QuarkusTestContext",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/callback/QuarkusTestContext.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.callback.QuarkusTestMethodContext",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/callback/QuarkusTestMethodContext.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.classloading.FacadeClassLoader",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/classloading/FacadeClassLoader.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.classloading.ParentLastURLClassLoader",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/classloading/ParentLastURLClassLoader.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.internal.TestInfoImpl",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/internal/TestInfoImpl.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.internal.VerifyMockitoMocksCallback",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/internal/VerifyMockitoMocksCallback.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.launcher.ArtifactLauncherProvider",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/launcher/ArtifactLauncherProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.launcher.CustomLauncherInterceptor",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/launcher/CustomLauncherInterceptor.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.launcher.DefaultInitContextBase",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/launcher/DefaultInitContextBase.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.launcher.DockerContainerLauncherProvider",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/launcher/DockerContainerLauncherProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.launcher.ExecutionListener",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/launcher/ExecutionListener.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.launcher.JarLauncherProvider",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/launcher/JarLauncherProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.launcher.NativeImageLauncherProvider",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/launcher/NativeImageLauncherProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.main.Launch",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/main/Launch.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.main.LaunchResult",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/main/LaunchResult.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.main.QuarkusMainIntegrationTest",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/main/QuarkusMainIntegrationTest.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.main.QuarkusMainLauncher",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/main/QuarkusMainLauncher.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.main.QuarkusMainTest",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/main/QuarkusMainTest.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.nativeimage.ClassInclusionReport",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/nativeimage/ClassInclusionReport.java"
+        },
+        {
+          "fqn": "io.quarkus.test.junit.util.QuarkusTestProfileAwareClassOrderer",
+          "sourcePath": "test-framework/junit/src/main/java/io/quarkus/test/junit/util/QuarkusTestProfileAwareClassOrderer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.kafka.InjectKafkaCompanion",
+          "sourcePath": "test-framework/kafka-companion/src/main/java/io/quarkus/test/kafka/InjectKafkaCompanion.java"
+        },
+        {
+          "fqn": "io.quarkus.test.kafka.InjectKafkaProxy",
+          "sourcePath": "test-framework/kafka-companion/src/main/java/io/quarkus/test/kafka/InjectKafkaProxy.java"
+        },
+        {
+          "fqn": "io.quarkus.test.kafka.KafkaCompanionResource",
+          "sourcePath": "test-framework/kafka-companion/src/main/java/io/quarkus/test/kafka/KafkaCompanionResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.kafka.ProxiedKafkaCompanionResource",
+          "sourcePath": "test-framework/kafka-companion/src/main/java/io/quarkus/test/kafka/ProxiedKafkaCompanionResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.keycloak.client.KeycloakTestClient",
+          "sourcePath": "test-framework/keycloak-server/src/main/java/io/quarkus/test/keycloak/client/KeycloakTestClient.java"
+        },
+        {
+          "fqn": "io.quarkus.test.keycloak.server.KeycloakContainer",
+          "sourcePath": "test-framework/keycloak-server/src/main/java/io/quarkus/test/keycloak/server/KeycloakContainer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.keycloak.server.KeycloakTestResourceLifecycleManager",
+          "sourcePath": "test-framework/keycloak-server/src/main/java/io/quarkus/test/keycloak/server/KeycloakTestResourceLifecycleManager.java"
+        },
+        {
+          "fqn": "io.quarkus.test.kubernetes.client.AbstractKubernetesTestResource",
+          "sourcePath": "test-framework/kubernetes-client/src/main/java/io/quarkus/test/kubernetes/client/AbstractKubernetesTestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.kubernetes.client.KubernetesServer",
+          "sourcePath": "test-framework/kubernetes-client/src/main/java/io/quarkus/test/kubernetes/client/KubernetesServer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.kubernetes.client.KubernetesServerTestResource",
+          "sourcePath": "test-framework/kubernetes-client/src/main/java/io/quarkus/test/kubernetes/client/KubernetesServerTestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.kubernetes.client.KubernetesTestServer",
+          "sourcePath": "test-framework/kubernetes-client/src/main/java/io/quarkus/test/kubernetes/client/KubernetesTestServer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.kubernetes.client.WithKubernetesTestServer",
+          "sourcePath": "test-framework/kubernetes-client/src/main/java/io/quarkus/test/kubernetes/client/WithKubernetesTestServer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.ldap.LdapServerTestResource",
+          "sourcePath": "test-framework/ldap/src/main/java/io/quarkus/test/ldap/LdapServerTestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.mongodb.MongoReplicaSetTestResource",
+          "sourcePath": "test-framework/mongodb/src/main/java/io/quarkus/test/mongodb/MongoReplicaSetTestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.mongodb.MongoTestResource",
+          "sourcePath": "test-framework/mongodb/src/main/java/io/quarkus/test/mongodb/MongoTestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.observability.test.utils.GrafanaClient",
+          "sourcePath": "test-framework/observability/src/main/java/io/quarkus/observability/test/utils/GrafanaClient.java"
+        },
+        {
+          "fqn": "io.quarkus.observability.test.utils.QueryResult",
+          "sourcePath": "test-framework/observability/src/main/java/io/quarkus/observability/test/utils/QueryResult.java"
+        },
+        {
+          "fqn": "io.quarkus.observability.test.utils.TempoResult",
+          "sourcePath": "test-framework/observability/src/main/java/io/quarkus/observability/test/utils/TempoResult.java"
+        },
+        {
+          "fqn": "io.quarkus.observability.test.utils.User",
+          "sourcePath": "test-framework/observability/src/main/java/io/quarkus/observability/test/utils/User.java"
+        },
+        {
+          "fqn": "io.quarkus.test.oidc.client.OidcTestClient",
+          "sourcePath": "test-framework/oidc-server/src/main/java/io/quarkus/test/oidc/client/OidcTestClient.java"
+        },
+        {
+          "fqn": "io.quarkus.test.oidc.server.OidcWireMock",
+          "sourcePath": "test-framework/oidc-server/src/main/java/io/quarkus/test/oidc/server/OidcWireMock.java"
+        },
+        {
+          "fqn": "io.quarkus.test.oidc.server.OidcWiremockTestResource",
+          "sourcePath": "test-framework/oidc-server/src/main/java/io/quarkus/test/oidc/server/OidcWiremockTestResource.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.jwt.Claim",
+          "sourcePath": "test-framework/security-jwt/src/main/java/io/quarkus/test/security/jwt/Claim.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.jwt.ClaimType",
+          "sourcePath": "test-framework/security-jwt/src/main/java/io/quarkus/test/security/jwt/ClaimType.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.jwt.JwtSecurity",
+          "sourcePath": "test-framework/security-jwt/src/main/java/io/quarkus/test/security/jwt/JwtSecurity.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.jwt.JwtTestSecurityIdentityAugmentor",
+          "sourcePath": "test-framework/security-jwt/src/main/java/io/quarkus/test/security/jwt/JwtTestSecurityIdentityAugmentor.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.jwt.JwtTestSecurityIdentityAugmentorProducer",
+          "sourcePath": "test-framework/security-jwt/src/main/java/io/quarkus/test/security/jwt/JwtTestSecurityIdentityAugmentorProducer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.oidc.Claim",
+          "sourcePath": "test-framework/security-oidc/src/main/java/io/quarkus/test/security/oidc/Claim.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.oidc.ClaimType",
+          "sourcePath": "test-framework/security-oidc/src/main/java/io/quarkus/test/security/oidc/ClaimType.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.oidc.ConfigMetadata",
+          "sourcePath": "test-framework/security-oidc/src/main/java/io/quarkus/test/security/oidc/ConfigMetadata.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.oidc.OidcSecurity",
+          "sourcePath": "test-framework/security-oidc/src/main/java/io/quarkus/test/security/oidc/OidcSecurity.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.oidc.OidcTestSecurityIdentityAugmentor",
+          "sourcePath": "test-framework/security-oidc/src/main/java/io/quarkus/test/security/oidc/OidcTestSecurityIdentityAugmentor.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.oidc.OidcTestSecurityIdentityAugmentorProducer",
+          "sourcePath": "test-framework/security-oidc/src/main/java/io/quarkus/test/security/oidc/OidcTestSecurityIdentityAugmentorProducer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.oidc.TokenIntrospection",
+          "sourcePath": "test-framework/security-oidc/src/main/java/io/quarkus/test/security/oidc/TokenIntrospection.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.oidc.UserInfo",
+          "sourcePath": "test-framework/security-oidc/src/main/java/io/quarkus/test/security/oidc/UserInfo.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.webauthn.WebAuthnEndpointHelper",
+          "sourcePath": "test-framework/security-webauthn/src/main/java/io/quarkus/test/security/webauthn/WebAuthnEndpointHelper.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.webauthn.WebAuthnHardware",
+          "sourcePath": "test-framework/security-webauthn/src/main/java/io/quarkus/test/security/webauthn/WebAuthnHardware.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.webauthn.WebAuthnHelper",
+          "sourcePath": "test-framework/security-webauthn/src/main/java/io/quarkus/test/security/webauthn/WebAuthnHelper.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.webauthn.WebAuthnTestUserProvider",
+          "sourcePath": "test-framework/security-webauthn/src/main/java/io/quarkus/test/security/webauthn/WebAuthnTestUserProvider.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.AbstractTestHttpAuthenticationMechanism",
+          "sourcePath": "test-framework/security/src/main/java/io/quarkus/test/security/AbstractTestHttpAuthenticationMechanism.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.AttributeType",
+          "sourcePath": "test-framework/security/src/main/java/io/quarkus/test/security/AttributeType.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.FallbackTestHttpAuthenticationMechanism",
+          "sourcePath": "test-framework/security/src/main/java/io/quarkus/test/security/FallbackTestHttpAuthenticationMechanism.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.PathBasedTestHttpAuthenticationMechanism",
+          "sourcePath": "test-framework/security/src/main/java/io/quarkus/test/security/PathBasedTestHttpAuthenticationMechanism.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.QuarkusSecurityTestExtension",
+          "sourcePath": "test-framework/security/src/main/java/io/quarkus/test/security/QuarkusSecurityTestExtension.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.SecurityAttribute",
+          "sourcePath": "test-framework/security/src/main/java/io/quarkus/test/security/SecurityAttribute.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.TestAuthController",
+          "sourcePath": "test-framework/security/src/main/java/io/quarkus/test/security/TestAuthController.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.TestIdentityAssociation",
+          "sourcePath": "test-framework/security/src/main/java/io/quarkus/test/security/TestIdentityAssociation.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.TestSecurity",
+          "sourcePath": "test-framework/security/src/main/java/io/quarkus/test/security/TestSecurity.java"
+        },
+        {
+          "fqn": "io.quarkus.test.security.TestSecurityIdentityAugmentor",
+          "sourcePath": "test-framework/security/src/main/java/io/quarkus/test/security/TestSecurityIdentityAugmentor.java"
+        },
+        {
+          "fqn": "io.quarkus.test.spring.SpringBootTestBuildChainCustomizerProducer",
+          "sourcePath": "test-framework/spring-test/src/main/java/io/quarkus/test/spring/SpringBootTestBuildChainCustomizerProducer.java"
+        },
+        {
+          "fqn": "io.quarkus.test.vertx.DefaultUniAsserter",
+          "sourcePath": "test-framework/vertx/src/main/java/io/quarkus/test/vertx/DefaultUniAsserter.java"
+        },
+        {
+          "fqn": "io.quarkus.test.vertx.RunOnVertxContext",
+          "sourcePath": "test-framework/vertx/src/main/java/io/quarkus/test/vertx/RunOnVertxContext.java"
+        },
+        {
+          "fqn": "io.quarkus.test.vertx.RunOnVertxContextTestMethodInvoker",
+          "sourcePath": "test-framework/vertx/src/main/java/io/quarkus/test/vertx/RunOnVertxContextTestMethodInvoker.java"
+        },
+        {
+          "fqn": "io.quarkus.test.vertx.UniAsserter",
+          "sourcePath": "test-framework/vertx/src/main/java/io/quarkus/test/vertx/UniAsserter.java"
+        },
+        {
+          "fqn": "io.quarkus.test.vertx.UniAsserterInterceptor",
+          "sourcePath": "test-framework/vertx/src/main/java/io/quarkus/test/vertx/UniAsserterInterceptor.java"
+        },
+        {
+          "fqn": "io.quarkus.test.vertx.UnwrappableUniAsserter",
+          "sourcePath": "test-framework/vertx/src/main/java/io/quarkus/test/vertx/UnwrappableUniAsserter.java"
+        },
+        {
+          "fqn": "io.quarkus.test.vertx.VirtualThreadsAssertions",
+          "sourcePath": "test-framework/vertx/src/main/java/io/quarkus/test/vertx/VirtualThreadsAssertions.java"
+        }
+      ],
+      "count": 324,
+      "qualifiedScopePrefixes": [
+        "independent-projects/arc/processor/src/main/java/"
+      ],
+      "qualifiedScopeClasses": [],
+      "qualifiedScopeCount": 0
+    }
+  }
+}

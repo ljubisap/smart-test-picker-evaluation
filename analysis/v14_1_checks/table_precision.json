@@ -1,0 +1,444 @@
+{
+  "sources": {
+    "commons-lang": {
+      "coverageMap": "commons-lang/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "commons-lang/results/per-class/org.apache.commons.lang3.arch.Processor/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.builder.HashCodeBuilder/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.compare.ComparableUtils/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.concurrent.locks.LockingVisitors/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.event.EventListenerSupport/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.event.EventUtils/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.math.Fraction/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.math.IEEE754rUtils/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.mutable.MutableFloat/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.mutable.MutableObject/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.reflect.FieldUtils/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.reflect.MethodUtils/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.stream.LangCollectors/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.stream.Streams/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.text.FormattableUtils/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.text.translate.EntityArrays/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.text.translate.NumericEntityEscaper/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.tuple.ImmutablePair/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.tuple.Pair/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.util.FluentBitSet/mutations.xml",
+        "commons-lang/results/per-class/org.apache.commons.lang3.util.IterableStringTokenizer/mutations.xml"
+      ],
+      "perRecordSelection": "commons-lang/results/aggregated/evaluation_results.csv"
+    },
+    "jgrapht": {
+      "coverageMap": "jgrapht/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "jgrapht/results/per-class/org.jgrapht.Graphs/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.clustering.LabelPropagationClustering/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.color.GreedyColoring/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.drawing.model.ListenableLayoutModel2D/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.flow.PushRelabelMFImpl/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.lca.BinaryLiftingLCAFinder/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml.gz",
+        "jgrapht/results/per-class/org.jgrapht.alg.scoring.ClosenessCentrality/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.util.UnorderedPair/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.alg.vertexcover.RecursiveExactVCImpl/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.generate.netgen.Distributor/mutations.xml",
+        "jgrapht/results/per-class/org.jgrapht.graph.specifics.UndirectedSpecifics/mutations.xml"
+      ],
+      "perRecordSelection": "jgrapht/results/aggregated/evaluation_results.csv"
+    },
+    "spring-core": {
+      "coverageMap": "spring-core/results/test-coverage-map.json",
+      "pitFiles": [
+        "spring-core/results/per-class/org.springframework.core.annotation.RepeatableContainers/mutations.xml",
+        "spring-core/results/per-class/org.springframework.core.codec.AbstractDataBufferDecoder/mutations.xml",
+        "spring-core/results/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml",
+        "spring-core/results/per-class/org.springframework.core.convert.converter.ConvertingComparator/mutations.xml",
+        "spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml",
+        "spring-core/results/per-class/org.springframework.core.env.PropertySource/mutations.xml",
+        "spring-core/results/per-class/org.springframework.core.log.LogMessage/mutations.xml",
+        "spring-core/results/per-class/org.springframework.core.style.DefaultValueStyler/mutations.xml",
+        "spring-core/results/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml",
+        "spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml",
+        "spring-core/results/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml",
+        "spring-core/results/per-class/org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter/mutations.xml",
+        "spring-core/results/per-class/org.springframework.util.Assert/mutations.xml",
+        "spring-core/results/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml",
+        "spring-core/results/per-class/org.springframework.util.concurrent.ListenableFutureCallbackRegistry/mutations.xml",
+        "spring-core/results/per-class/org.springframework.util.function.ThrowingConsumer/mutations.xml",
+        "spring-core/results/per-class/org.springframework.util.unit.DataSize/mutations.xml",
+        "spring-core/results/per-class/org.springframework.util.xml.AbstractStaxXMLReader/mutations.xml"
+      ],
+      "perRecordSelection": "spring-core/results/aggregated/evaluation_results.csv"
+    },
+    "petclinic": {
+      "coverageMap": "petclinic/results/test-coverage-map.json",
+      "pitFiles": [
+        "petclinic/results/mutations.xml"
+      ],
+      "perRecordSelection": "petclinic/results/aggregated/evaluation_results.csv"
+    },
+    "flink": {
+      "coverageMap": "flink/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.DefaultScheduler/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.ExecutionGraphHandler/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.Executing/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy/mutations.xml"
+      ],
+      "perRecordSelection": "flink/results/aggregated/evaluation_results.csv"
+    },
+    "spring-security": {
+      "coverageMap": "spring-security/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "spring-security/results/per-class/org.springframework.security.access.expression.SecurityExpressionRoot/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.authentication.ProviderManager/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.concurrent.DelegatingSecurityContextRunnable/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.converter.RsaKeyConverters/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.core.context.SecurityContextHolder/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.core.session.SessionRegistryImpl/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.core.token.KeyBasedPersistenceTokenService/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.core.userdetails.User/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.jackson2.SecurityJackson2Modules/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.provisioning.InMemoryUserDetailsManager/mutations.xml",
+        "spring-security/results/per-class/org.springframework.security.util.matcher.InetAddressMatchers/mutations.xml"
+      ],
+      "perRecordSelection": "spring-security/results/aggregated/evaluation_results.csv"
+    },
+    "hibernate": {
+      "coverageMap": "hibernate/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.event.internal.AbstractFlushingEventListener/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.event.internal.DefaultDeleteEventListener/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.event.internal.DefaultLoadEventListener/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.event.internal.DefaultPersistEventListener/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.event.internal.DefaultRefreshEventListener/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackDefinitionResolver/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackRegistryImpl/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.proxy.AbstractLazyInitializer/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory/mutations.xml"
+      ],
+      "perRecordSelection": "hibernate/results/aggregated/evaluation_results.csv"
+    },
+    "quarkus": {
+      "coverageMap": "quarkus/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "quarkus/results/per-class/io.quarkus.arc.processor.AnnotationLiteralProcessor/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.Annotations/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.BeanArchives/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.BeanResolverImpl/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.ClientProxyGenerator/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.ComponentsProviderGenerator/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.ContextInstancesGenerator/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.DecoratorGenerator/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.Injection/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.InjectionPointInfo/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.InterceptorGenerator/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.ObserverGenerator/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.ObserverInfo/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.Types/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl/mutations.xml",
+        "quarkus/results/per-class/io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint/mutations.xml"
+      ],
+      "perRecordSelection": "quarkus/results/aggregated/evaluation_results.csv"
+    }
+  },
+  "projects": {
+    "commons-lang": {
+      "logicalTests": 4692,
+      "stp": {
+        "safe": 771,
+        "total": 772,
+        "meanSelectedFullPrecision": 17.010362694300518,
+        "meanSelected2dp": 17.01,
+        "selectedFractionPctFullPrecision": 0.3625396993670187,
+        "selectedFractionPct2dp": 0.36,
+        "reductionPctFullPrecision": 99.63746030063298,
+        "reductionPct2dp": 99.64
+      },
+      "classBaseline": {
+        "safe": 771,
+        "total": 772,
+        "meanSelectedFullPrecision": 50.11658031088083,
+        "meanSelected2dp": 50.12,
+        "selectedFractionPctFullPrecision": 1.0681283101210748,
+        "selectedFractionPct2dp": 1.07,
+        "reductionPctFullPrecision": 98.93187168987893,
+        "reductionPct2dp": 98.93
+      },
+      "constructorOnly": {
+        "safe": 771,
+        "total": 772,
+        "meanSelectedFullPrecision": 19.80699481865285,
+        "meanSelected2dp": 19.81,
+        "selectedFractionPctFullPrecision": 0.4221439645919192,
+        "selectedFractionPct2dp": 0.42,
+        "reductionPctFullPrecision": 99.57785603540808,
+        "reductionPct2dp": 99.58
+      }
+    },
+    "jgrapht": {
+      "logicalTests": 2308,
+      "stp": {
+        "safe": 516,
+        "total": 517,
+        "meanSelectedFullPrecision": 87.70406189555126,
+        "meanSelected2dp": 87.7,
+        "selectedFractionPctFullPrecision": 3.8000026817829835,
+        "selectedFractionPct2dp": 3.8,
+        "reductionPctFullPrecision": 96.19999731821702,
+        "reductionPct2dp": 96.2
+      },
+      "classBaseline": {
+        "safe": 517,
+        "total": 517,
+        "meanSelectedFullPrecision": 207.80270793036752,
+        "meanSelected2dp": 207.8,
+        "selectedFractionPctFullPrecision": 9.003583532511591,
+        "selectedFractionPct2dp": 9.0,
+        "reductionPctFullPrecision": 90.99641646748842,
+        "reductionPct2dp": 91.0
+      },
+      "constructorOnly": {
+        "safe": 517,
+        "total": 517,
+        "meanSelectedFullPrecision": 96.94197292069633,
+        "meanSelected2dp": 96.94,
+        "selectedFractionPctFullPrecision": 4.2002587920579,
+        "selectedFractionPct2dp": 4.2,
+        "reductionPctFullPrecision": 95.7997412079421,
+        "reductionPct2dp": 95.8
+      }
+    },
+    "spring-core": {
+      "logicalTests": 3624,
+      "stp": {
+        "safe": 443,
+        "total": 454,
+        "meanSelectedFullPrecision": 80.62995594713657,
+        "meanSelected2dp": 80.63,
+        "selectedFractionPctFullPrecision": 2.2248884091373227,
+        "selectedFractionPct2dp": 2.22,
+        "reductionPctFullPrecision": 97.77511159086268,
+        "reductionPct2dp": 97.78
+      },
+      "classBaseline": {
+        "safe": 454,
+        "total": 454,
+        "meanSelectedFullPrecision": 529.1828193832599,
+        "meanSelected2dp": 529.18,
+        "selectedFractionPctFullPrecision": 14.602174927794147,
+        "selectedFractionPct2dp": 14.6,
+        "reductionPctFullPrecision": 85.39782507220585,
+        "reductionPct2dp": 85.4
+      },
+      "constructorOnly": {
+        "safe": 447,
+        "total": 454,
+        "meanSelectedFullPrecision": 84.931718061674,
+        "meanSelected2dp": 84.93,
+        "selectedFractionPctFullPrecision": 2.3435904542404526,
+        "selectedFractionPct2dp": 2.34,
+        "reductionPctFullPrecision": 97.65640954575954,
+        "reductionPct2dp": 97.66
+      }
+    },
+    "petclinic": {
+      "logicalTests": 52,
+      "stp": {
+        "safe": 94,
+        "total": 94,
+        "meanSelectedFullPrecision": 9.72340425531915,
+        "meanSelected2dp": 9.72,
+        "selectedFractionPctFullPrecision": 18.69885433715221,
+        "selectedFractionPct2dp": 18.7,
+        "reductionPctFullPrecision": 81.30114566284779,
+        "reductionPct2dp": 81.3
+      },
+      "classBaseline": {
+        "safe": 94,
+        "total": 94,
+        "meanSelectedFullPrecision": 18.351063829787233,
+        "meanSelected2dp": 18.35,
+        "selectedFractionPctFullPrecision": 35.29050736497545,
+        "selectedFractionPct2dp": 35.29,
+        "reductionPctFullPrecision": 64.70949263502456,
+        "reductionPct2dp": 64.71
+      },
+      "constructorOnly": {
+        "safe": 94,
+        "total": 94,
+        "meanSelectedFullPrecision": 11.712765957446809,
+        "meanSelected2dp": 11.71,
+        "selectedFractionPctFullPrecision": 22.52454991816694,
+        "selectedFractionPct2dp": 22.52,
+        "reductionPctFullPrecision": 77.47545008183306,
+        "reductionPct2dp": 77.48
+      }
+    },
+    "flink": {
+      "logicalTests": 665,
+      "stp": {
+        "safe": 349,
+        "total": 349,
+        "meanSelectedFullPrecision": 36.22636103151862,
+        "meanSelected2dp": 36.23,
+        "selectedFractionPctFullPrecision": 5.4475730874464094,
+        "selectedFractionPct2dp": 5.45,
+        "reductionPctFullPrecision": 94.55242691255359,
+        "reductionPct2dp": 94.55
+      },
+      "classBaseline": {
+        "safe": 349,
+        "total": 349,
+        "meanSelectedFullPrecision": 64.92836676217765,
+        "meanSelected2dp": 64.93,
+        "selectedFractionPctFullPrecision": 9.763664174763557,
+        "selectedFractionPct2dp": 9.76,
+        "reductionPctFullPrecision": 90.23633582523644,
+        "reductionPct2dp": 90.24
+      },
+      "constructorOnly": {
+        "safe": 349,
+        "total": 349,
+        "meanSelectedFullPrecision": 38.36962750716332,
+        "meanSelected2dp": 38.37,
+        "selectedFractionPctFullPrecision": 5.769868798069672,
+        "selectedFractionPct2dp": 5.77,
+        "reductionPctFullPrecision": 94.23013120193033,
+        "reductionPct2dp": 94.23
+      }
+    },
+    "spring-security": {
+      "logicalTests": 1440,
+      "stp": {
+        "safe": 330,
+        "total": 340,
+        "meanSelectedFullPrecision": 36.858823529411765,
+        "meanSelected2dp": 36.86,
+        "selectedFractionPctFullPrecision": 2.5596405228758172,
+        "selectedFractionPct2dp": 2.56,
+        "reductionPctFullPrecision": 97.44035947712419,
+        "reductionPct2dp": 97.44
+      },
+      "classBaseline": {
+        "safe": 335,
+        "total": 340,
+        "meanSelectedFullPrecision": 72.2,
+        "meanSelected2dp": 72.2,
+        "selectedFractionPctFullPrecision": 5.013888888888889,
+        "selectedFractionPct2dp": 5.01,
+        "reductionPctFullPrecision": 94.98611111111111,
+        "reductionPct2dp": 94.99
+      },
+      "constructorOnly": {
+        "safe": 332,
+        "total": 340,
+        "meanSelectedFullPrecision": 37.338235294117645,
+        "meanSelected2dp": 37.34,
+        "selectedFractionPctFullPrecision": 2.5929330065359477,
+        "selectedFractionPct2dp": 2.59,
+        "reductionPctFullPrecision": 97.40706699346406,
+        "reductionPct2dp": 97.41
+      }
+    },
+    "hibernate": {
+      "logicalTests": 1099,
+      "stp": {
+        "safe": 400,
+        "total": 401,
+        "meanSelectedFullPrecision": 297.24688279301745,
+        "meanSelected2dp": 297.25,
+        "selectedFractionPctFullPrecision": 27.047032101275473,
+        "selectedFractionPct2dp": 27.05,
+        "reductionPctFullPrecision": 72.95296789872452,
+        "reductionPct2dp": 72.95
+      },
+      "classBaseline": {
+        "safe": 401,
+        "total": 401,
+        "meanSelectedFullPrecision": 488.7730673316708,
+        "meanSelected2dp": 488.77,
+        "selectedFractionPctFullPrecision": 44.474346436002804,
+        "selectedFractionPct2dp": 44.47,
+        "reductionPctFullPrecision": 55.525653563997196,
+        "reductionPct2dp": 55.53
+      },
+      "constructorOnly": {
+        "safe": 400,
+        "total": 401,
+        "meanSelectedFullPrecision": 303.1571072319202,
+        "meanSelected2dp": 303.16,
+        "selectedFractionPctFullPrecision": 27.5848141248335,
+        "selectedFractionPct2dp": 27.58,
+        "reductionPctFullPrecision": 72.4151858751665,
+        "reductionPct2dp": 72.42
+      }
+    },
+    "quarkus": {
+      "logicalTests": 684,
+      "stp": {
+        "safe": 1083,
+        "total": 1083,
+        "meanSelectedFullPrecision": 260.65189289012005,
+        "meanSelected2dp": 260.65,
+        "selectedFractionPctFullPrecision": 38.10700188452048,
+        "selectedFractionPct2dp": 38.11,
+        "reductionPctFullPrecision": 61.89299811547952,
+        "reductionPct2dp": 61.89
+      },
+      "classBaseline": {
+        "safe": 1083,
+        "total": 1083,
+        "meanSelectedFullPrecision": 539.9335180055401,
+        "meanSelected2dp": 539.93,
+        "selectedFractionPctFullPrecision": 78.9376488312193,
+        "selectedFractionPct2dp": 78.94,
+        "reductionPctFullPrecision": 21.062351168780694,
+        "reductionPct2dp": 21.06
+      },
+      "constructorOnly": {
+        "safe": 1083,
+        "total": 1083,
+        "meanSelectedFullPrecision": 383.59926131117265,
+        "meanSelected2dp": 383.6,
+        "selectedFractionPctFullPrecision": 56.081763349586645,
+        "selectedFractionPct2dp": 56.08,
+        "reductionPctFullPrecision": 43.918236650413355,
+        "reductionPct2dp": 43.92
+      }
+    }
+  }
+}

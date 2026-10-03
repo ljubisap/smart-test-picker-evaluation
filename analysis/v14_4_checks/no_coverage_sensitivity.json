@@ -1,0 +1,715 @@
+{
+  "schemaVersion": 1,
+  "status": "NON_CANONICAL_FROZEN_DATA_SENSITIVITY",
+  "a3Gate": "PASSED: outcome (b)",
+  "variantCondition": "Union every map entry whose classes and methods are both null/missing/empty, matching production 2e0954 TestSelector.java:142-151.",
+  "canonicalInputsUnchanged": true,
+  "projects": {
+    "commons-lang": {
+      "logicalTests": 4692,
+      "emptyFootprintTests": 0,
+      "selectors": {
+        "stpNc": {
+          "inclusive": 771,
+          "total": 772,
+          "inclusivenessPctFullPrecision": 99.87046632124353,
+          "inclusivenessPct2dp": 99.87,
+          "meanSelectedFullPrecision": 17.010362694300518,
+          "meanSelected2dp": 17.01,
+          "selectedFractionPctFullPrecision": 0.3625396993670187,
+          "selectedFractionPct2dp": 0.36,
+          "reductionPctFullPrecision": 99.63746030063298,
+          "reductionPct2dp": 99.64
+        },
+        "constructorOnlyNc": {
+          "inclusive": 771,
+          "total": 772,
+          "inclusivenessPctFullPrecision": 99.87046632124353,
+          "inclusivenessPct2dp": 99.87,
+          "meanSelectedFullPrecision": 19.80699481865285,
+          "meanSelected2dp": 19.81,
+          "selectedFractionPctFullPrecision": 0.4221439645919192,
+          "selectedFractionPct2dp": 0.42,
+          "reductionPctFullPrecision": 99.57785603540808,
+          "reductionPct2dp": 99.58
+        },
+        "classLevelNc": {
+          "inclusive": 771,
+          "total": 772,
+          "inclusivenessPctFullPrecision": 99.87046632124353,
+          "inclusivenessPct2dp": 99.87,
+          "meanSelectedFullPrecision": 50.11658031088083,
+          "meanSelected2dp": 50.12,
+          "selectedFractionPctFullPrecision": 1.0681283101210748,
+          "selectedFractionPct2dp": 1.07,
+          "reductionPctFullPrecision": 98.93187168987893,
+          "reductionPct2dp": 98.93
+        },
+        "randomEqualBudgetNc": {
+          "trials": 1000,
+          "seed": 42,
+          "seedingFormula": "seed + trial * max(1, record_count) + record_index",
+          "monteCarloInclusivenessPctFullPrecision": 2.030699481865285,
+          "monteCarloInclusivenessPct2dp": 2.03,
+          "monteCarloStdPctFullPrecision": 0.49641441342853204,
+          "monteCarloStdPct2dp": 0.5,
+          "analyticalInclusivenessPctFullPrecision": 2.0249214128211848,
+          "analyticalInclusivenessPct2dp": 2.02,
+          "meanSelectedFullPrecision": 17.010362694300518,
+          "meanSelected2dp": 17.01,
+          "selectedFractionPctFullPrecision": 0.3625396993670187,
+          "selectedFractionPct2dp": 0.36
+        }
+      },
+      "deltaAgainstV14_1TablePrecision": {
+        "stpNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        },
+        "constructorOnlyNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        },
+        "classLevelNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        }
+      }
+    },
+    "jgrapht": {
+      "logicalTests": 2308,
+      "emptyFootprintTests": 1,
+      "selectors": {
+        "stpNc": {
+          "inclusive": 516,
+          "total": 517,
+          "inclusivenessPctFullPrecision": 99.80657640232108,
+          "inclusivenessPct2dp": 99.81,
+          "meanSelectedFullPrecision": 88.70406189555126,
+          "meanSelected2dp": 88.7,
+          "selectedFractionPctFullPrecision": 3.843330238108807,
+          "selectedFractionPct2dp": 3.84,
+          "reductionPctFullPrecision": 96.1566697618912,
+          "reductionPct2dp": 96.16
+        },
+        "constructorOnlyNc": {
+          "inclusive": 517,
+          "total": 517,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 97.94197292069633,
+          "meanSelected2dp": 97.94,
+          "selectedFractionPctFullPrecision": 4.243586348383723,
+          "selectedFractionPct2dp": 4.24,
+          "reductionPctFullPrecision": 95.75641365161627,
+          "reductionPct2dp": 95.76
+        },
+        "classLevelNc": {
+          "inclusive": 517,
+          "total": 517,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 208.80270793036752,
+          "meanSelected2dp": 208.8,
+          "selectedFractionPctFullPrecision": 9.046911088837414,
+          "selectedFractionPct2dp": 9.05,
+          "reductionPctFullPrecision": 90.95308891116258,
+          "reductionPct2dp": 90.95
+        },
+        "randomEqualBudgetNc": {
+          "trials": 1000,
+          "seed": 42,
+          "seedingFormula": "seed + trial * max(1, record_count) + record_index",
+          "monteCarloInclusivenessPctFullPrecision": 33.900580270793036,
+          "monteCarloInclusivenessPct2dp": 33.9,
+          "monteCarloStdPctFullPrecision": 1.263919894433756,
+          "monteCarloStdPct2dp": 1.26,
+          "analyticalInclusivenessPctFullPrecision": 33.94303486467723,
+          "analyticalInclusivenessPct2dp": 33.94,
+          "meanSelectedFullPrecision": 88.70406189555126,
+          "meanSelected2dp": 88.7,
+          "selectedFractionPctFullPrecision": 3.843330238108807,
+          "selectedFractionPct2dp": 3.84
+        }
+      },
+      "deltaAgainstV14_1TablePrecision": {
+        "stpNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 1.0,
+          "selectedFractionPctFullPrecision": 0.0433275563258233,
+          "reductionPctFullPrecision": -0.04332755632582064
+        },
+        "constructorOnlyNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 1.0,
+          "selectedFractionPctFullPrecision": 0.0433275563258233,
+          "reductionPctFullPrecision": -0.04332755632583485
+        },
+        "classLevelNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 1.0,
+          "selectedFractionPctFullPrecision": 0.043327556325822414,
+          "reductionPctFullPrecision": -0.04332755632583485
+        }
+      }
+    },
+    "spring-core": {
+      "logicalTests": 3624,
+      "emptyFootprintTests": 0,
+      "selectors": {
+        "stpNc": {
+          "inclusive": 443,
+          "total": 454,
+          "inclusivenessPctFullPrecision": 97.57709251101322,
+          "inclusivenessPct2dp": 97.58,
+          "meanSelectedFullPrecision": 80.62995594713657,
+          "meanSelected2dp": 80.63,
+          "selectedFractionPctFullPrecision": 2.2248884091373227,
+          "selectedFractionPct2dp": 2.22,
+          "reductionPctFullPrecision": 97.77511159086268,
+          "reductionPct2dp": 97.78
+        },
+        "constructorOnlyNc": {
+          "inclusive": 447,
+          "total": 454,
+          "inclusivenessPctFullPrecision": 98.45814977973568,
+          "inclusivenessPct2dp": 98.46,
+          "meanSelectedFullPrecision": 84.931718061674,
+          "meanSelected2dp": 84.93,
+          "selectedFractionPctFullPrecision": 2.3435904542404526,
+          "selectedFractionPct2dp": 2.34,
+          "reductionPctFullPrecision": 97.65640954575954,
+          "reductionPct2dp": 97.66
+        },
+        "classLevelNc": {
+          "inclusive": 454,
+          "total": 454,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 529.1828193832599,
+          "meanSelected2dp": 529.18,
+          "selectedFractionPctFullPrecision": 14.602174927794147,
+          "selectedFractionPct2dp": 14.6,
+          "reductionPctFullPrecision": 85.39782507220585,
+          "reductionPct2dp": 85.4
+        },
+        "randomEqualBudgetNc": {
+          "trials": 1000,
+          "seed": 42,
+          "seedingFormula": "seed + trial * max(1, record_count) + record_index",
+          "monteCarloInclusivenessPctFullPrecision": 17.372026431718062,
+          "monteCarloInclusivenessPct2dp": 17.37,
+          "monteCarloStdPctFullPrecision": 1.0909609358499606,
+          "monteCarloStdPct2dp": 1.09,
+          "analyticalInclusivenessPctFullPrecision": 17.364902633258875,
+          "analyticalInclusivenessPct2dp": 17.36,
+          "meanSelectedFullPrecision": 80.62995594713657,
+          "meanSelected2dp": 80.63,
+          "selectedFractionPctFullPrecision": 2.2248884091373227,
+          "selectedFractionPct2dp": 2.22
+        }
+      },
+      "deltaAgainstV14_1TablePrecision": {
+        "stpNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        },
+        "constructorOnlyNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        },
+        "classLevelNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        }
+      }
+    },
+    "petclinic": {
+      "logicalTests": 52,
+      "emptyFootprintTests": 0,
+      "selectors": {
+        "stpNc": {
+          "inclusive": 94,
+          "total": 94,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 9.72340425531915,
+          "meanSelected2dp": 9.72,
+          "selectedFractionPctFullPrecision": 18.69885433715221,
+          "selectedFractionPct2dp": 18.7,
+          "reductionPctFullPrecision": 81.30114566284779,
+          "reductionPct2dp": 81.3
+        },
+        "constructorOnlyNc": {
+          "inclusive": 94,
+          "total": 94,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 11.712765957446809,
+          "meanSelected2dp": 11.71,
+          "selectedFractionPctFullPrecision": 22.52454991816694,
+          "selectedFractionPct2dp": 22.52,
+          "reductionPctFullPrecision": 77.47545008183306,
+          "reductionPct2dp": 77.48
+        },
+        "classLevelNc": {
+          "inclusive": 94,
+          "total": 94,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 18.351063829787233,
+          "meanSelected2dp": 18.35,
+          "selectedFractionPctFullPrecision": 35.29050736497545,
+          "selectedFractionPct2dp": 35.29,
+          "reductionPctFullPrecision": 64.70949263502456,
+          "reductionPct2dp": 64.71
+        },
+        "randomEqualBudgetNc": {
+          "trials": 1000,
+          "seed": 42,
+          "seedingFormula": "seed + trial * max(1, record_count) + record_index",
+          "monteCarloInclusivenessPctFullPrecision": 35.967021276595744,
+          "monteCarloInclusivenessPct2dp": 35.97,
+          "monteCarloStdPctFullPrecision": 2.9482712016223984,
+          "monteCarloStdPct2dp": 2.95,
+          "analyticalInclusivenessPctFullPrecision": 35.875574408630825,
+          "analyticalInclusivenessPct2dp": 35.88,
+          "meanSelectedFullPrecision": 9.72340425531915,
+          "meanSelected2dp": 9.72,
+          "selectedFractionPctFullPrecision": 18.69885433715221,
+          "selectedFractionPct2dp": 18.7
+        }
+      },
+      "deltaAgainstV14_1TablePrecision": {
+        "stpNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        },
+        "constructorOnlyNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        },
+        "classLevelNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        }
+      }
+    },
+    "flink": {
+      "logicalTests": 665,
+      "emptyFootprintTests": 1,
+      "selectors": {
+        "stpNc": {
+          "inclusive": 349,
+          "total": 349,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 37.22636103151862,
+          "meanSelected2dp": 37.23,
+          "selectedFractionPctFullPrecision": 5.597949027296034,
+          "selectedFractionPct2dp": 5.6,
+          "reductionPctFullPrecision": 94.40205097270396,
+          "reductionPct2dp": 94.4
+        },
+        "constructorOnlyNc": {
+          "inclusive": 349,
+          "total": 349,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 39.36962750716332,
+          "meanSelected2dp": 39.37,
+          "selectedFractionPctFullPrecision": 5.920244737919297,
+          "selectedFractionPct2dp": 5.92,
+          "reductionPctFullPrecision": 94.07975526208071,
+          "reductionPct2dp": 94.08
+        },
+        "classLevelNc": {
+          "inclusive": 349,
+          "total": 349,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 65.92836676217765,
+          "meanSelected2dp": 65.93,
+          "selectedFractionPctFullPrecision": 9.91404011461318,
+          "selectedFractionPct2dp": 9.91,
+          "reductionPctFullPrecision": 90.08595988538681,
+          "reductionPct2dp": 90.09
+        },
+        "randomEqualBudgetNc": {
+          "trials": 1000,
+          "seed": 42,
+          "seedingFormula": "seed + trial * max(1, record_count) + record_index",
+          "monteCarloInclusivenessPctFullPrecision": 19.841547277936964,
+          "monteCarloInclusivenessPct2dp": 19.84,
+          "monteCarloStdPctFullPrecision": 1.6903499232498227,
+          "monteCarloStdPct2dp": 1.69,
+          "analyticalInclusivenessPctFullPrecision": 19.883193721087025,
+          "analyticalInclusivenessPct2dp": 19.88,
+          "meanSelectedFullPrecision": 37.22636103151862,
+          "meanSelected2dp": 37.23,
+          "selectedFractionPctFullPrecision": 5.597949027296034,
+          "selectedFractionPct2dp": 5.6
+        }
+      },
+      "deltaAgainstV14_1TablePrecision": {
+        "stpNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 1.0,
+          "selectedFractionPctFullPrecision": 0.15037593984962427,
+          "reductionPctFullPrecision": -0.15037593984962427
+        },
+        "constructorOnlyNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 1.0,
+          "selectedFractionPctFullPrecision": 0.15037593984962427,
+          "reductionPctFullPrecision": -0.15037593984962427
+        },
+        "classLevelNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 1.0,
+          "selectedFractionPctFullPrecision": 0.1503759398496225,
+          "reductionPctFullPrecision": -0.15037593984962427
+        }
+      }
+    },
+    "spring-security": {
+      "logicalTests": 1440,
+      "emptyFootprintTests": 23,
+      "selectors": {
+        "stpNc": {
+          "inclusive": 335,
+          "total": 340,
+          "inclusivenessPctFullPrecision": 98.52941176470588,
+          "inclusivenessPct2dp": 98.53,
+          "meanSelectedFullPrecision": 59.858823529411765,
+          "meanSelected2dp": 59.86,
+          "selectedFractionPctFullPrecision": 4.1568627450980395,
+          "selectedFractionPct2dp": 4.16,
+          "reductionPctFullPrecision": 95.84313725490196,
+          "reductionPct2dp": 95.84
+        },
+        "constructorOnlyNc": {
+          "inclusive": 337,
+          "total": 340,
+          "inclusivenessPctFullPrecision": 99.11764705882354,
+          "inclusivenessPct2dp": 99.12,
+          "meanSelectedFullPrecision": 60.338235294117645,
+          "meanSelected2dp": 60.34,
+          "selectedFractionPctFullPrecision": 4.1901552287581705,
+          "selectedFractionPct2dp": 4.19,
+          "reductionPctFullPrecision": 95.80984477124183,
+          "reductionPct2dp": 95.81
+        },
+        "classLevelNc": {
+          "inclusive": 340,
+          "total": 340,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 95.2,
+          "meanSelected2dp": 95.2,
+          "selectedFractionPctFullPrecision": 6.611111111111111,
+          "selectedFractionPct2dp": 6.61,
+          "reductionPctFullPrecision": 93.38888888888889,
+          "reductionPct2dp": 93.39
+        },
+        "randomEqualBudgetNc": {
+          "trials": 1000,
+          "seed": 42,
+          "seedingFormula": "seed + trial * max(1, record_count) + record_index",
+          "monteCarloInclusivenessPctFullPrecision": 22.880588235294116,
+          "monteCarloInclusivenessPct2dp": 22.88,
+          "monteCarloStdPctFullPrecision": 1.656004174810444,
+          "monteCarloStdPct2dp": 1.66,
+          "analyticalInclusivenessPctFullPrecision": 22.88793177034306,
+          "analyticalInclusivenessPct2dp": 22.89,
+          "meanSelectedFullPrecision": 59.858823529411765,
+          "meanSelected2dp": 59.86,
+          "selectedFractionPctFullPrecision": 4.1568627450980395,
+          "selectedFractionPct2dp": 4.16
+        }
+      },
+      "deltaAgainstV14_1TablePrecision": {
+        "stpNc": {
+          "inclusive": 5,
+          "meanSelectedFullPrecision": 23.0,
+          "selectedFractionPctFullPrecision": 1.5972222222222223,
+          "reductionPctFullPrecision": -1.5972222222222285
+        },
+        "constructorOnlyNc": {
+          "inclusive": 5,
+          "meanSelectedFullPrecision": 23.0,
+          "selectedFractionPctFullPrecision": 1.5972222222222228,
+          "reductionPctFullPrecision": -1.5972222222222285
+        },
+        "classLevelNc": {
+          "inclusive": 5,
+          "meanSelectedFullPrecision": 23.0,
+          "selectedFractionPctFullPrecision": 1.5972222222222214,
+          "reductionPctFullPrecision": -1.5972222222222285
+        }
+      }
+    },
+    "hibernate": {
+      "logicalTests": 1099,
+      "emptyFootprintTests": 0,
+      "selectors": {
+        "stpNc": {
+          "inclusive": 400,
+          "total": 401,
+          "inclusivenessPctFullPrecision": 99.75062344139651,
+          "inclusivenessPct2dp": 99.75,
+          "meanSelectedFullPrecision": 297.24688279301745,
+          "meanSelected2dp": 297.25,
+          "selectedFractionPctFullPrecision": 27.047032101275473,
+          "selectedFractionPct2dp": 27.05,
+          "reductionPctFullPrecision": 72.95296789872452,
+          "reductionPct2dp": 72.95
+        },
+        "constructorOnlyNc": {
+          "inclusive": 400,
+          "total": 401,
+          "inclusivenessPctFullPrecision": 99.75062344139651,
+          "inclusivenessPct2dp": 99.75,
+          "meanSelectedFullPrecision": 303.1571072319202,
+          "meanSelected2dp": 303.16,
+          "selectedFractionPctFullPrecision": 27.5848141248335,
+          "selectedFractionPct2dp": 27.58,
+          "reductionPctFullPrecision": 72.4151858751665,
+          "reductionPct2dp": 72.42
+        },
+        "classLevelNc": {
+          "inclusive": 401,
+          "total": 401,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 488.7730673316708,
+          "meanSelected2dp": 488.77,
+          "selectedFractionPctFullPrecision": 44.474346436002804,
+          "selectedFractionPct2dp": 44.47,
+          "reductionPctFullPrecision": 55.525653563997196,
+          "reductionPct2dp": 55.53
+        },
+        "randomEqualBudgetNc": {
+          "trials": 1000,
+          "seed": 42,
+          "seedingFormula": "seed + trial * max(1, record_count) + record_index",
+          "monteCarloInclusivenessPctFullPrecision": 71.33067331670823,
+          "monteCarloInclusivenessPct2dp": 71.33,
+          "monteCarloStdPctFullPrecision": 1.274328952484426,
+          "monteCarloStdPct2dp": 1.27,
+          "analyticalInclusivenessPctFullPrecision": 71.30474983204753,
+          "analyticalInclusivenessPct2dp": 71.3,
+          "meanSelectedFullPrecision": 297.24688279301745,
+          "meanSelected2dp": 297.25,
+          "selectedFractionPctFullPrecision": 27.047032101275473,
+          "selectedFractionPct2dp": 27.05
+        }
+      },
+      "deltaAgainstV14_1TablePrecision": {
+        "stpNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        },
+        "constructorOnlyNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        },
+        "classLevelNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 0.0,
+          "selectedFractionPctFullPrecision": 0.0,
+          "reductionPctFullPrecision": 0.0
+        }
+      }
+    },
+    "quarkus": {
+      "logicalTests": 684,
+      "emptyFootprintTests": 9,
+      "selectors": {
+        "stpNc": {
+          "inclusive": 1083,
+          "total": 1083,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 269.65189289012005,
+          "meanSelected2dp": 269.65,
+          "selectedFractionPctFullPrecision": 39.42279135820469,
+          "selectedFractionPct2dp": 39.42,
+          "reductionPctFullPrecision": 60.57720864179531,
+          "reductionPct2dp": 60.58
+        },
+        "constructorOnlyNc": {
+          "inclusive": 1083,
+          "total": 1083,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 392.59926131117265,
+          "meanSelected2dp": 392.6,
+          "selectedFractionPctFullPrecision": 57.39755282327086,
+          "selectedFractionPct2dp": 57.4,
+          "reductionPctFullPrecision": 42.60244717672914,
+          "reductionPct2dp": 42.6
+        },
+        "classLevelNc": {
+          "inclusive": 1083,
+          "total": 1083,
+          "inclusivenessPctFullPrecision": 100.0,
+          "inclusivenessPct2dp": 100.0,
+          "meanSelectedFullPrecision": 548.9335180055401,
+          "meanSelected2dp": 548.93,
+          "selectedFractionPctFullPrecision": 80.25343830490353,
+          "selectedFractionPct2dp": 80.25,
+          "reductionPctFullPrecision": 19.746561695096474,
+          "reductionPct2dp": 19.75
+        },
+        "randomEqualBudgetNc": {
+          "trials": 1000,
+          "seed": 42,
+          "seedingFormula": "seed + trial * max(1, record_count) + record_index",
+          "monteCarloInclusivenessPctFullPrecision": 72.85281625115421,
+          "monteCarloInclusivenessPct2dp": 72.85,
+          "monteCarloStdPctFullPrecision": 0.7133344021049414,
+          "monteCarloStdPct2dp": 0.71,
+          "analyticalInclusivenessPctFullPrecision": 72.87868844733181,
+          "analyticalInclusivenessPct2dp": 72.88,
+          "meanSelectedFullPrecision": 269.65189289012005,
+          "meanSelected2dp": 269.65,
+          "selectedFractionPctFullPrecision": 39.42279135820469,
+          "selectedFractionPct2dp": 39.42
+        }
+      },
+      "deltaAgainstV14_1TablePrecision": {
+        "stpNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 9.0,
+          "selectedFractionPctFullPrecision": 1.3157894736842124,
+          "reductionPctFullPrecision": -1.3157894736842124
+        },
+        "constructorOnlyNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 9.0,
+          "selectedFractionPctFullPrecision": 1.3157894736842124,
+          "reductionPctFullPrecision": -1.3157894736842124
+        },
+        "classLevelNc": {
+          "inclusive": 0,
+          "meanSelectedFullPrecision": 9.0,
+          "selectedFractionPctFullPrecision": 1.3157894736842195,
+          "reductionPctFullPrecision": -1.3157894736842195
+        }
+      }
+    }
+  },
+  "recordsWhoseStpInclusivenessChanges": [
+    {
+      "project": "spring-security",
+      "mutationId": "spring-security|org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl|withRolePrefix|(Ljava/lang/String;)Lorg/springframework/security/access/hierarchicalroles/RoleHierarchyImpl$Builder;|130|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml:20",
+      "mutatedClass": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+      "mutatedMethod": "withRolePrefix",
+      "oldInclusive": false,
+      "variantInclusive": true,
+      "oldSelectedCount": 9,
+      "variantSelectedCount": 32,
+      "newlySelectedKillingTests": [
+        "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull_5894d6c"
+      ],
+      "footprintType": "C",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "annotationFound": true
+    },
+    {
+      "project": "spring-security",
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyAuthority|([Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|122|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:1",
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasAnyAuthority",
+      "oldInclusive": false,
+      "variantInclusive": true,
+      "oldSelectedCount": 65,
+      "variantSelectedCount": 88,
+      "newlySelectedKillingTests": [
+        "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException_4acbb6d",
+        "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenNullThenException_666eb63"
+      ],
+      "footprintType": "C",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "annotationFound": true
+    },
+    {
+      "project": "spring-security",
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyRole|(Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|108|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:4",
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasAnyRole",
+      "oldInclusive": false,
+      "variantInclusive": true,
+      "oldSelectedCount": 63,
+      "variantSelectedCount": 86,
+      "newlySelectedKillingTests": [
+        "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException_224748b"
+      ],
+      "footprintType": "C",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "annotationFound": true
+    },
+    {
+      "project": "spring-security",
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAuthority|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|83|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:9",
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasAuthority",
+      "oldInclusive": false,
+      "variantInclusive": true,
+      "oldSelectedCount": 14,
+      "variantSelectedCount": 37,
+      "newlySelectedKillingTests": [
+        "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException_5281bf4"
+      ],
+      "footprintType": "C",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "annotationFound": true
+    },
+    {
+      "project": "spring-security",
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasRole|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|69|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:12",
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasRole",
+      "oldInclusive": false,
+      "variantInclusive": true,
+      "oldSelectedCount": 7,
+      "variantSelectedCount": 30,
+      "newlySelectedKillingTests": [
+        "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException_85c3cde"
+      ],
+      "footprintType": "C",
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "annotationFound": true
+    }
+  ],
+  "changedRecordCount": 5,
+  "randomBaseline": {
+    "trials": 1000,
+    "seed": 42,
+    "source": "analysis/evaluate_subject.py:53-84",
+    "budget": "variant STP selected-set size per record"
+  }
+}

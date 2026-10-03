@@ -1,0 +1,48 @@
+{
+  "project": "spring-security",
+  "logicalTests": 1440,
+  "killedMutations": 340,
+  "selectors": {
+    "stp": {
+      "name": "STP",
+      "safe": 330,
+      "unsafe": 10,
+      "total": 340,
+      "inclusivenessPct": 97.06,
+      "avgSelected": 36.86,
+      "selectionRatePct": 2.56,
+      "reductionPct": 97.44
+    },
+    "constructorOnlyMitigation": {
+      "name": "Constructor-only mitigation",
+      "safe": 332,
+      "unsafe": 8,
+      "total": 340,
+      "inclusivenessPct": 97.65,
+      "avgSelected": 37.34,
+      "selectionRatePct": 2.59,
+      "reductionPct": 97.41
+    },
+    "classLevel": {
+      "name": "Class-level only",
+      "safe": 335,
+      "unsafe": 5,
+      "total": 340,
+      "inclusivenessPct": 98.53,
+      "avgSelected": 72.2,
+      "selectionRatePct": 5.01,
+      "reductionPct": 94.99
+    },
+    "randomEqualBudget": {
+      "name": "Random equal-budget",
+      "trials": 1000,
+      "seed": 42,
+      "inclusivenessPct": 17.42,
+      "inclusivenessStdPct": 1.35,
+      "analyticalInclusivenessPct": 17.46,
+      "avgSelected": 36.86,
+      "selectionRatePct": 2.56,
+      "reductionPct": 97.44
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "stpCommit": "2e0954b5b590fb0b9da979c28b0d053e4ce9e5c9",
+  "maps": [
+    {
+      "project": "commons-lang",
+      "rawEntries": 4692,
+      "loadedEntries": 4692,
+      "differentEntryCount": 0,
+      "differences": [],
+      "rawU": [],
+      "loadedU": []
+    },
+    {
+      "project": "jgrapht",
+      "rawEntries": 2308,
+      "loadedEntries": 2308,
+      "differentEntryCount": 0,
+      "differences": [],
+      "rawU": [
+        "GraphTestsTest#failRequireIsWeightedOnNull_761695b"
+      ],
+      "loadedU": [
+        "GraphTestsTest#failRequireIsWeightedOnNull_761695b"
+      ]
+    },
+    {
+      "project": "spring-core",
+      "rawEntries": 3624,
+      "loadedEntries": 3624,
+      "differentEntryCount": 0,
+      "differences": [],
+      "rawU": [],
+      "loadedU": []
+    },
+    {
+      "project": "petclinic",
+      "rawEntries": 52,
+      "loadedEntries": 52,
+      "differentEntryCount": 0,
+      "differences": [],
+      "rawU": [],
+      "loadedU": []
+    },
+    {
+      "project": "flink",
+      "rawEntries": 665,
+      "loadedEntries": 665,
+      "differentEntryCount": 0,
+      "differences": [],
+      "rawU": [
+        "ExceptionHistoryEntryTest#testNullExecution_3ace619"
+      ],
+      "loadedU": [
+        "ExceptionHistoryEntryTest#testNullExecution_3ace619"
+      ]
+    },
+    {
+      "project": "spring-security",
+      "rawEntries": 1440,
+      "loadedEntries": 1440,
+      "differentEntryCount": 0,
+      "differences": [],
+      "rawU": [
+        "AllAuthoritiesAuthorizationManagerTests#hasAllAuthoritiesWhenNullAuthoritiesThenIllegalArgumentException_5017ead",
+        "AllAuthoritiesAuthorizationManagerTests#hasAllAuthortiesWhenEmptyAuthoritiesThenIllegalArgumentException_a1b2fae",
+        "AllAuthoritiesReactiveAuthorizationManagerTests#hasAllAuthoritiesWhenNullAuthoritiesThenIllegalArgumentException_44c148a",
+        "AllAuthoritiesReactiveAuthorizationManagerTests#hasAllAuthortiesWhenEmptyAuthoritiesThenIllegalArgumentException_7ec48d8",
+        "AllRequiredFactorsAuthorizationManagerTests#anyOfWhenEmptyManagersThenIllegalArgumentException_497fa50",
+        "AnonymousAuthenticationTokenTests#testNoArgConstructorDoesntExist_4640351",
+        "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException_4acbb6d",
+        "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenNullThenException_666eb63",
+        "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException_224748b",
+        "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException_5281bf4",
+        "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException_85c3cde",
+        "ConditionalAuthorizationManagerTests#whenWhenConditionIsNullThenThrowsException_69f789c",
+        "InMemoryConfigurationTests#jdk5Compatable_597fc95",
+        "JavaVersionTests#authenticationWhenJdk17ThenCorrectJdkCompatibility_6d1c60b",
+        "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull_5894d6c",
+        "RoleHierarchyUtilsTests#roleHierarchyFromMapWhenMapEmptyThenThrowsIllegalArgumentException_24ef6b7",
+        "RoleHierarchyUtilsTests#roleHierarchyFromMapWhenMapNullThenThrowsIllegalArgumentException_3f428aa",
+        "SpringSecurityCoreVersionTests#springVersionIsUpToDate_5872901",
+        "TestHelperTests#testCreateAuthorityList_f386994",
+        "TestingAuthenticationProviderTests#testSupports_7f3f346",
+        "TestingAuthenticationTokenTests#constructorObjectObjectStringVargsWhenNullAuthorities_5ff165d",
+        "UserTests#testNoArgConstructorDoesntExist_6e0cf1f",
+        "UsernamePasswordAuthenticationTokenTests#testNoArgConstructorDoesntExist_4665653"
+      ],
+      "loadedU": [
+        "AllAuthoritiesAuthorizationManagerTests#hasAllAuthoritiesWhenNullAuthoritiesThenIllegalArgumentException_5017ead",
+        "AllAuthoritiesAuthorizationManagerTests#hasAllAuthortiesWhenEmptyAuthoritiesThenIllegalArgumentException_a1b2fae",
+        "AllAuthoritiesReactiveAuthorizationManagerTests#hasAllAuthoritiesWhenNullAuthoritiesThenIllegalArgumentException_44c148a",
+        "AllAuthoritiesReactiveAuthorizationManagerTests#hasAllAuthortiesWhenEmptyAuthoritiesThenIllegalArgumentException_7ec48d8",
+        "AllRequiredFactorsAuthorizationManagerTests#anyOfWhenEmptyManagersThenIllegalArgumentException_497fa50",
+        "AnonymousAuthenticationTokenTests#testNoArgConstructorDoesntExist_4640351",
+        "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException_4acbb6d",
+        "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenNullThenException_666eb63",
+        "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException_224748b",
+        "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException_5281bf4",
+        "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException_85c3cde",
+        "ConditionalAuthorizationManagerTests#whenWhenConditionIsNullThenThrowsException_69f789c",
+        "InMemoryConfigurationTests#jdk5Compatable_597fc95",
+        "JavaVersionTests#authenticationWhenJdk17ThenCorrectJdkCompatibility_6d1c60b",
+        "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull_5894d6c",
+        "RoleHierarchyUtilsTests#roleHierarchyFromMapWhenMapEmptyThenThrowsIllegalArgumentException_24ef6b7",
+        "RoleHierarchyUtilsTests#roleHierarchyFromMapWhenMapNullThenThrowsIllegalArgumentException_3f428aa",
+        "SpringSecurityCoreVersionTests#springVersionIsUpToDate_5872901",
+        "TestHelperTests#testCreateAuthorityList_f386994",
+        "TestingAuthenticationProviderTests#testSupports_7f3f346",
+        "TestingAuthenticationTokenTests#constructorObjectObjectStringVargsWhenNullAuthorities_5ff165d",
+        "UserTests#testNoArgConstructorDoesntExist_6e0cf1f",
+        "UsernamePasswordAuthenticationTokenTests#testNoArgConstructorDoesntExist_4665653"
+      ]
+    },
+    {
+      "project": "hibernate",
+      "rawEntries": 1099,
+      "loadedEntries": 1099,
+      "differentEntryCount": 0,
+      "differences": [],
+      "rawU": [],
+      "loadedU": []
+    },
+    {
+      "project": "quarkus",
+      "rawEntries": 684,
+      "loadedEntries": 684,
+      "differentEntryCount": 0,
+      "differences": [],
+      "rawU": [
+        "ReproducibilityCheckTest#diffChanged_6e5aeca",
+        "ReproducibilityCheckTest#diffCombined_63205fc",
+        "ReproducibilityCheckTest#diffEmpty_4f3814c",
+        "ReproducibilityCheckTest#diffExtra_4f3d238",
+        "ReproducibilityCheckTest#diffIdentical_71ba492",
+        "ReproducibilityCheckTest#diffMissing_20e0b5c",
+        "ReproducibilityCheckTest#dumpMismatchCreatesFiles_3fc764e",
+        "ReproducibilityCheckTest#dumpMismatchIndexContainsSha256_525f819",
+        "ReproducibilityCheckTest#dumpMismatchMissingAndExtra_5b64db7"
+      ],
+      "loadedU": [
+        "ReproducibilityCheckTest#diffChanged_6e5aeca",
+        "ReproducibilityCheckTest#diffCombined_63205fc",
+        "ReproducibilityCheckTest#diffEmpty_4f3814c",
+        "ReproducibilityCheckTest#diffExtra_4f3d238",
+        "ReproducibilityCheckTest#diffIdentical_71ba492",
+        "ReproducibilityCheckTest#diffMissing_20e0b5c",
+        "ReproducibilityCheckTest#dumpMismatchCreatesFiles_3fc764e",
+        "ReproducibilityCheckTest#dumpMismatchIndexContainsSha256_525f819",
+        "ReproducibilityCheckTest#dumpMismatchMissingAndExtra_5b64db7"
+      ]
+    }
+  ],
+  "totalDifferentEntries": 0,
+  "totalRawU": 34,
+  "totalLoadedU": 34
+}

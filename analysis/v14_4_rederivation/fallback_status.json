@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-10-03",
+  "deadline": "2026-10-20",
+  "fallbackTriggered": false,
+  "reason": "The binding deadline has not been reached. Part I does not execute the main B2 re-derivation, Java selector comparison, promotion, or manuscript Part D, so no final B2 verdict is asserted here.",
+  "currentPartIStatus": "PART_I_COMPLETE",
+  "canonicalPromotion": false,
+  "manuscriptChanged": false
+}

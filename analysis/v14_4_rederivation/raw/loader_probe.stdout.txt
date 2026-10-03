@@ -1,0 +1,9 @@
+CODE_SOURCE	file:/Users/D061177/work/issta/joda-time-modern-study/stp/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar
+MAP_RESULT	commons-lang	ACCEPTED	4692	true
+MAP_RESULT	jgrapht	ACCEPTED	2308	true
+MAP_RESULT	spring-core	ACCEPTED	3624	true
+MAP_RESULT	petclinic	ACCEPTED	52	true
+MAP_RESULT	flink	ACCEPTED	665	true
+MAP_RESULT	spring-security	ACCEPTED	1440	true
+MAP_RESULT	hibernate	ACCEPTED	1099	true
+MAP_RESULT	quarkus	ACCEPTED	684	true

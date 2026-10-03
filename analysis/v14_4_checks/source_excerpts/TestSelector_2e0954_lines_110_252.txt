@@ -1,0 +1,143 @@
+   110					classesWithMethodInfo.add(method.substring(0, hashIdx));
+   111				}
+   112			}
+   113	
+   114			// Classes that need class-level fallback: changed but no method-level info available
+   115			Set<String> classLevelOnlyClasses = new HashSet<>(changedClasses);
+   116			classLevelOnlyClasses.removeAll(classesWithMethodInfo);
+   117	
+   118			logger.info("[SmartTestPicker] Selection strategy:");
+   119			logger.info("[SmartTestPicker]   Method-level matching: {} classes ({})",
+   120					classesWithMethodInfo.size(), classesWithMethodInfo);
+   121			logger.info("[SmartTestPicker]   Class-level fallback: {} classes ({})",
+   122					classLevelOnlyClasses.size(), classLevelOnlyClasses);
+   123	
+   124			Set<String> selectedTests = new HashSet<>();
+   125			Map<String, Set<SelectionCause>> selectionCauses = new HashMap<>();
+   126			int methodMatchCount = 0;
+   127			int classMatchCount = 0;
+   128			int noCoverageCount = 0;
+   129	
+   130			// Track which classesWithMethodInfo actually got method-level hits
+   131			Map<String, Integer> methodHitsPerClass = new HashMap<>();
+   132			for (String cls : classesWithMethodInfo)
+   133			{
+   134				methodHitsPerClass.put(cls, 0);
+   135			}
+   136	
+   137			// First pass: method-level and class-level matching
+   138			for (Map.Entry<String, Map<String, List<String>>> entry : coverageMap.getTestMappings().entrySet())
+   139			{
+   140				String testName = entry.getKey();
+   141				Map<String, List<String>> coverage = entry.getValue();
+   142				List<String> allCoveredClasses = coverage.get("classes");
+   143				List<String> allCoveredMethods = coverage.get("methods");
+   144				if ((allCoveredClasses == null || allCoveredClasses.isEmpty())
+   145						&& (allCoveredMethods == null || allCoveredMethods.isEmpty()))
+   146				{
+   147					selectedTests.add(testName);
+   148					addCause(selectionCauses, testName, new SelectionCause(SelectionCauseType.NO_COVERAGE, null));
+   149					noCoverageCount++;
+   150					logger.debug("[SmartTestPicker]   {} -> selected (NO_COVERAGE)", testName);
+   151					continue;
+   152				}
+   153	
+   154				// Method-level matching (precise)
+   155				if (!changedMethods.isEmpty())
+   156				{
+   157					List<String> coveredMethods = coverage.get("methods");
+   158					if (coveredMethods != null)
+   159					{
+   160						for (String coveredMethod : coveredMethods)
+   161						{
+   162							if (changedMethods.contains(coveredMethod))
+   163							{
+   164								if (selectedTests.add(testName)) methodMatchCount++;
+   165								addCause(selectionCauses, testName,
+   166										new SelectionCause(SelectionCauseType.METHOD_CHANGE, coveredMethod));
+   167								// Track which class got a hit
+   168								int hashIdx = coveredMethod.indexOf('#');
+   169								if (hashIdx > 0)
+   170								{
+   171									String cls = coveredMethod.substring(0, hashIdx);
+   172									methodHitsPerClass.computeIfPresent(cls, (k, v) -> v + 1);
+   173								}
+   174								logger.debug("[SmartTestPicker]   {} -> selected (method-level: covers {})",
+   175										testName, coveredMethod);
+   176							}
+   177						}
+   178					}
+   179				}
+   180	
+   181				// Class-level fallback for classes without method info
+   182				if (!classLevelOnlyClasses.isEmpty())
+   183				{
+   184					List<String> coveredClasses = coverage.get("classes");
+   185					if (coveredClasses != null)
+   186					{
+   187						for (String coveredClass : coveredClasses)
+   188						{
+   189							if (classLevelOnlyClasses.contains(coveredClass))
+   190							{
+   191								if (selectedTests.add(testName)) classMatchCount++;
+   192								addCause(selectionCauses, testName,
+   193										new SelectionCause(SelectionCauseType.CLASS_CHANGE, coveredClass));
+   194								logger.debug("[SmartTestPicker]   {} -> selected (class-level: covers {})",
+   195										testName, coveredClass);
+   196							}
+   197						}
+   198					}
+   199				}
+   200			}
+   201	
+   202			// Safety fallback: escalate to class-level for classes where method-level
+   203			// matching produced zero hits. A changed method not in the coverage map
+   204			// cannot be proven safe - selecting class-level tests is conservative but correct.
+   205			Set<String> escalatedClasses = new HashSet<>();
+   206			for (Map.Entry<String, Integer> entry : methodHitsPerClass.entrySet())
+   207			{
+   208				if (entry.getValue() == 0)
+   209				{
+   210					escalatedClasses.add(entry.getKey());
+   211				}
+   212			}
+   213	
+   214			int escalatedCount = 0;
+   215			if (!escalatedClasses.isEmpty())
+   216			{
+   217				logger.info("[SmartTestPicker]   Method-level produced 0 hits for: {} -> escalating to class-level",
+   218						escalatedClasses);
+   219	
+   220				for (Map.Entry<String, Map<String, List<String>>> entry : coverageMap.getTestMappings().entrySet())
+   221				{
+   222					String testName = entry.getKey();
+   223					Map<String, List<String>> coverage = entry.getValue();
+   224					List<String> coveredClasses = coverage.get("classes");
+   225					if (coveredClasses != null)
+   226					{
+   227						for (String coveredClass : coveredClasses)
+   228						{
+   229							if (escalatedClasses.contains(coveredClass))
+   230							{
+   231								if (selectedTests.add(testName)) escalatedCount++;
+   232								addCause(selectionCauses, testName,
+   233										new SelectionCause(SelectionCauseType.CLASS_CHANGE, coveredClass));
+   234							}
+   235						}
+   236					}
+   237				}
+   238	
+   239				logger.info("[SmartTestPicker]   Escalation added {} tests via class-level for: {}",
+   240						escalatedCount, escalatedClasses);
+   241			}
+   242	
+   243			int total = coverageMap.getTestMappings().size();
+   244			double reduction = total > 0 ? (1.0 - (double) selectedTests.size() / total) * 100 : 0;
+   245			logger.info("[SmartTestPicker] Selection complete: {} of {} tests selected ({} method-level, {} class-level, {} escalated, {} NO_COVERAGE, {}% reduction)",
+   246					selectedTests.size(), total, methodMatchCount, classMatchCount, escalatedCount,
+   247					noCoverageCount, String.format("%.1f", reduction));
+   248	
+   249			Map<String, List<SelectionCause>> orderedCauses = new LinkedHashMap<>();
+   250			selectionCauses.keySet().stream().sorted().forEach(test ->
+   251					orderedCauses.put(test, new ArrayList<>(selectionCauses.get(test))));
+   252			return SelectionResult.selectedWithCauses(selectedTests, orderedCauses);

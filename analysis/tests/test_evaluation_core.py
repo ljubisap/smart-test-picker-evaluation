@@ -12,7 +12,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from analysis.evaluation_core import (
     RawMutation, ResolvedKillingTest, ResolvedMutation,
     normalize_pit_test_name, build_base_to_keys, build_class_to_keys, resolve_killing_tests,
-    select_original, select_constructor_only_rule, select_class_level,
+    select_original, select_original_legacy_edge_only,
+    select_constructor_only_rule, select_class_level,
     load_json, load_pit_mutations, discover_pit_files,
     selected_set_sha256, exclude_non_leaf_oracle_records,
 )
@@ -111,6 +112,110 @@ class TestSelectors(unittest.TestCase):
         selected = select_original(self.test_mappings, "com.example.Foo", "missing")
         self.assertIn("ClassOnlyTest#test_jkl3456", selected)
         self.assertIn("MixedTest#test_stu5678", selected)
+
+
+class TestAdoptedNoCoveragePolicy(unittest.TestCase):
+    def test_method_hit_union_empty(self):
+        mappings = {
+            "hit": {"classes": ["C"], "methods": ["C#m"]},
+            "empty": {"classes": [], "methods": []},
+            "other": {"classes": ["D"], "methods": ["D#n"]},
+        }
+        self.assertEqual(select_original(mappings, "C", "m"), {"hit", "empty"})
+
+    def test_zero_method_hit_unions_class_and_empty(self):
+        mappings = {
+            "class": {"classes": ["C"], "methods": ["C#other"]},
+            "empty": {"classes": None, "methods": None},
+        }
+        self.assertEqual(select_original(mappings, "C", "m"), {"class", "empty"})
+
+    def test_zero_method_and_class_hits_still_selects_empty(self):
+        mappings = {
+            "empty": {},
+            "other": {"classes": ["D"], "methods": ["D#n"]},
+        }
+        self.assertEqual(select_original(mappings, "C", "m"), {"empty"})
+
+    def test_all_missing_null_empty_combinations_are_u(self):
+        absent = object()
+        values = [absent, None, []]
+        mappings = {}
+        expected = set()
+        for left_index, classes in enumerate(values):
+            for right_index, methods in enumerate(values):
+                key = f"u-{left_index}-{right_index}"
+                entry = {}
+                if classes is not absent:
+                    entry["classes"] = classes
+                if methods is not absent:
+                    entry["methods"] = methods
+                mappings[key] = entry
+                expected.add(key)
+        self.assertEqual(select_original(mappings, "C", "m"), expected)
+
+    def test_one_empty_list_other_nonempty_is_not_u(self):
+        mappings = {
+            "classes-only": {"classes": ["D"], "methods": []},
+            "methods-only": {"classes": [], "methods": ["D#n"]},
+        }
+        self.assertEqual(select_original(mappings, "C", "m"), set())
+
+    def test_type_c_with_other_coverage_is_not_u(self):
+        mappings = {"type-c": {"classes": ["D"], "methods": ["D#n"]}}
+        self.assertEqual(select_original(mappings, "C", "m"), set())
+
+    def test_constructor_rule_not_u_recovers_constructor_only(self):
+        mappings = {
+            "hit": {"classes": ["C"], "methods": ["C#m"]},
+            "ctor": {"classes": ["C"], "methods": ["C#<init>"]},
+        }
+        self.assertNotIn("ctor", select_original(mappings, "C", "m"))
+        self.assertIn("ctor", select_constructor_only_rule(mappings, "C", "m"))
+
+    def test_overloads_share_name_level_key(self):
+        mappings = {"hit": {"classes": ["C"], "methods": ["C#m"]}}
+        self.assertEqual(select_original(mappings, "C", "m"), {"hit"})
+
+    def test_malformed_non_list_values_raise(self):
+        with self.assertRaises(ValueError):
+            select_original({"bad": {"classes": "C", "methods": []}}, "C", "m")
+        with self.assertRaises(ValueError):
+            select_original({"bad": {"classes": [], "methods": "C#m"}}, "C", "m")
+
+    def test_control_without_empty_entries_equals_legacy(self):
+        mappings = {
+            "hit": {"classes": ["C"], "methods": ["C#m"]},
+            "other": {"classes": ["D"], "methods": ["D#n"]},
+        }
+        self.assertEqual(
+            select_original(mappings, "C", "m"),
+            select_original_legacy_edge_only(mappings, "C", "m"),
+        )
+
+    def test_five_spring_security_records_flip_via_six_empty_killers(self):
+        root = Path(__file__).resolve().parents[2]
+        with gzip.open(root / "spring-security/results/test-coverage-map.json.gz", "rt") as stream:
+            mappings = json.load(stream)["testMappings"]
+        sensitivity = json.loads(
+            (root / "analysis/v14_4_checks/no_coverage_sensitivity.json").read_text()
+        )
+        records = sensitivity["recordsWhoseStpInclusivenessChanges"]
+        self.assertEqual(len(records), 5)
+        killers = set()
+        for record in records:
+            new = select_original(mappings, record["mutatedClass"], record["mutatedMethod"])
+            legacy = select_original_legacy_edge_only(
+                mappings, record["mutatedClass"], record["mutatedMethod"]
+            )
+            record_killers = set(record["newlySelectedKillingTests"])
+            killers.update(record_killers)
+            self.assertTrue(new & record_killers)
+            self.assertFalse(legacy & record_killers)
+            for killer in record_killers:
+                self.assertFalse(mappings[killer].get("classes"))
+                self.assertFalse(mappings[killer].get("methods"))
+        self.assertEqual(len(killers), 6)
 
 
 class TestNormalization(unittest.TestCase):

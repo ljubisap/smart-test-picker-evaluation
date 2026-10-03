@@ -1,0 +1,42 @@
+{
+  "commons-lang": {
+    "version": "UNKNOWN",
+    "status": "UNRESOLVED_ACTUAL",
+    "evidence": "At 8538458e7aeb1455a5942f60fe0b4930da6c5d68, pom.xml inherits commons-parent 99 and declares junit-jupiter without a local version; no retained resolved dependency report proves the Platform version used in collection."
+  },
+  "jgrapht": {
+    "version": "6.0.3",
+    "status": "DECLARED_ONLY",
+    "evidence": "At 093b0c5ea006ba5b1d8b7a0212676bf8850cac6b, root pom.xml:81 declares junit.version 6.0.3 and applies it to junit-jupiter and junit-platform-suite; no retained resolved-runtime report upgrades this to actual-run evidence."
+  },
+  "spring-core": {
+    "version": "UNKNOWN",
+    "status": "UNRESOLVED_ACTUAL",
+    "evidence": "The recorded 25838a334c037b68e614f6b571af03a1f6bfec19 source revision is not present in a retained local source checkout and the evaluation artifacts do not record the resolved Platform version."
+  },
+  "petclinic": {
+    "version": "UNKNOWN",
+    "status": "UNRESOLVED_ACTUAL",
+    "evidence": "The cbb884f01f7fef663fcff256e303d967494a4f8b POM inherits Spring Boot 3.5.0 dependency management but no retained resolved dependency report establishes the collection-time Platform version."
+  },
+  "flink": {
+    "version": "5.11.4",
+    "status": "RUN_EVIDENCE",
+    "evidence": "flink/config/subject.json:junitPlatform"
+  },
+  "spring-security": {
+    "version": "6.1.3",
+    "status": "RUN_EVIDENCE",
+    "evidence": "spring-security/config/subject.json:junitPlatform"
+  },
+  "hibernate": {
+    "version": "6.0.1",
+    "status": "RUN_EVIDENCE",
+    "evidence": "hibernate/config/subject.json:junitPlatform"
+  },
+  "quarkus": {
+    "version": "6.1.3",
+    "status": "RUN_EVIDENCE",
+    "evidence": "quarkus/config/subject.json:junitPlatform"
+  }
+}

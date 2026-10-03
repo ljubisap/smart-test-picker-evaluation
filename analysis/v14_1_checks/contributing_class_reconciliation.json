@@ -1,0 +1,140 @@
+{
+  "sources": {
+    "flink": {
+      "frozenSample": "flink/config/sample_classes.json",
+      "eligiblePIT": [
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.DefaultScheduler/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.ExecutionGraphHandler/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.Executing/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl/mutations.xml",
+        "flink/results/per-class/org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy/mutations.xml"
+      ],
+      "tableSummary": "results/eight-subject-summary.json"
+    },
+    "hibernate": {
+      "frozenSample": "hibernate/config/sample_classes.json",
+      "eligiblePIT": [
+        "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.event.internal.AbstractFlushingEventListener/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.event.internal.DefaultDeleteEventListener/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.event.internal.DefaultLoadEventListener/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.event.internal.DefaultPersistEventListener/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.event.internal.DefaultRefreshEventListener/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackDefinitionResolver/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackRegistryImpl/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.proxy.AbstractLazyInitializer/mutations.xml",
+        "hibernate/results/per-class/org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory/mutations.xml"
+      ],
+      "tableSummary": "results/eight-subject-summary.json"
+    }
+  },
+  "projects": {
+    "flink": {
+      "tableSampledProductionClasses": 16,
+      "tableUsableMutationProducingClasses": 16,
+      "frozenClassCount": 16,
+      "frozenClasses": [
+        "org.apache.flink.runtime.scheduler.DefaultScheduler",
+        "org.apache.flink.runtime.scheduler.ExecutionGraphHandler",
+        "org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator",
+        "org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager",
+        "org.apache.flink.runtime.scheduler.adaptive.Executing",
+        "org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph",
+        "org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint",
+        "org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator",
+        "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider",
+        "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+        "org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer",
+        "org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology",
+        "org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry",
+        "org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector",
+        "org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl",
+        "org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy"
+      ],
+      "eligibleClusterCount": 15,
+      "eligibleClusters": [
+        "org.apache.flink.runtime.scheduler.DefaultScheduler",
+        "org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator",
+        "org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology",
+        "org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph",
+        "org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager",
+        "org.apache.flink.runtime.scheduler.adaptive.Executing",
+        "org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint",
+        "org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator",
+        "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+        "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider",
+        "org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer",
+        "org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry",
+        "org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector",
+        "org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl",
+        "org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy"
+      ],
+      "frozenButNotEligibleCluster": [
+        "org.apache.flink.runtime.scheduler.ExecutionGraphHandler"
+      ],
+      "eligibleClusterNotFrozen": []
+    },
+    "hibernate": {
+      "tableSampledProductionClasses": 16,
+      "tableUsableMutationProducingClasses": 16,
+      "frozenClassCount": 16,
+      "frozenClasses": [
+        "org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+        "org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor",
+        "org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor",
+        "org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState",
+        "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+        "org.hibernate.proxy.AbstractLazyInitializer",
+        "org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory",
+        "org.hibernate.event.internal.AbstractFlushingEventListener",
+        "org.hibernate.event.internal.DefaultPersistEventListener",
+        "org.hibernate.event.internal.DefaultDeleteEventListener",
+        "org.hibernate.event.internal.DefaultLoadEventListener",
+        "org.hibernate.event.internal.DefaultRefreshEventListener",
+        "org.hibernate.jpa.event.internal.CallbackRegistryImpl",
+        "org.hibernate.jpa.event.internal.CallbackDefinitionResolver"
+      ],
+      "eligibleClusterCount": 15,
+      "eligibleClusters": [
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+        "org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor",
+        "org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor",
+        "org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
+        "org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState",
+        "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+        "org.hibernate.event.internal.AbstractFlushingEventListener",
+        "org.hibernate.event.internal.DefaultDeleteEventListener",
+        "org.hibernate.event.internal.DefaultLoadEventListener",
+        "org.hibernate.event.internal.DefaultPersistEventListener",
+        "org.hibernate.jpa.event.internal.CallbackDefinitionResolver",
+        "org.hibernate.jpa.event.internal.CallbackRegistryImpl",
+        "org.hibernate.proxy.AbstractLazyInitializer",
+        "org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory"
+      ],
+      "frozenButNotEligibleCluster": [
+        "org.hibernate.event.internal.DefaultRefreshEventListener"
+      ],
+      "eligibleClusterNotFrozen": []
+    }
+  }
+}

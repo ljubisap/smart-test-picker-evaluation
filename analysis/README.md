@@ -6,7 +6,7 @@ Shared evaluation logic and cross-project failure taxonomy for the Smart Test Pi
 
 This module implements a **Python evaluation selector** (`select_original`) based on the documented selection rules.
 
-**Equivalence status:** For all 1,351 unique single-method change cases represented by the 4,010 evaluated leaf-oracle KILLED mutations, `evaluation_core.select_original()` produces exactly the same selected-test sets as the modeled production Java `TestSelector` semantics (`verify_selector_equivalence.py`). One occurrence has zero exact method-coverage hits; the modeled Java escalation and Python fallback still agree, with no Python-only candidate. The remaining 4,009 occurrences have exact method hits.
+**Historical model-agreement status:** For all 1,351 unique single-method change cases represented by the 4,010 evaluated leaf-oracle KILLED mutations, `evaluation_core.select_original()` produces exactly the same selected-test sets as the historical Python edge-only model (`verify_selector_equivalence.py`). The check does not execute Java and omits the later production NO_COVERAGE branch. One occurrence has zero exact method-coverage hits; the model escalation and evaluator fallback still agree, with no evaluator-only candidate. The remaining 4,009 occurrences have exact method hits.
 
 A separate 21-case contract test (`commons-lang/scripts/contract_test.py`) confirms exact equality against the actual pinned Maven plugin (commit `70b3984626eb`).
 
@@ -52,7 +52,7 @@ python3 analysis/analyze_failure_modes.py --write
 # Verify outputs match committed artifacts (no external dependencies)
 python3 analysis/analyze_failure_modes.py --verify
 
-# Verify selector equivalence (dataset-wide)
+# Verify historical evaluator/model agreement (dataset-wide; not Java execution)
 python3 analysis/verify_selector_equivalence.py --verify
 
 # Run unit tests (includes synthetic divergence tests)
@@ -63,7 +63,7 @@ python3 -m unittest discover -s analysis/tests
 
 - `results/failure_taxonomy.json` -- per-mutation footprint and causal-mechanism classification with full provenance
 - `results/mitigation_comparison.json` -- original vs constructor-only vs class-level for all 4,010 leaf-oracle mutations
-- `results/selector_equivalence.json` -- dataset-wide Python/Java selector comparison (4,010 mutations, 1,351 unique cases)
+- `results/selector_equivalence.json` -- dataset-wide agreement between the historical Python evaluator and its Python edge-only semantic model (4,010 mutations, 1,351 unique cases); this is not production-Java execution and omits the later NO_COVERAGE branch
 - `oracle_exclusions.json` -- audited PIT outcomes that cannot be assigned to a runnable leaf; raw PIT evidence remains preserved
 - `results/recollection_comparison.json` -- old/new coverage map comparison after final recollection
 
@@ -86,4 +86,4 @@ The per-project manifests record the exact Smart Test Picker revision used to co
 - Class-level baseline: 99.85% (4004/4010)
 - One Hibernate miss remains a pre-leaf custom-engine attribution gap; a second PIT KILLED outcome was directly proven container-only and is documented outside the leaf oracle
 - Both invariants hold: classPresentNoMethods=0, mutatedMethodPresent=0
-- Selector equivalence: 4010/4010 exact matches, 0 mismatches
+- Historical evaluator/model agreement: 4010/4010 exact matches, 0 mismatches (Python model only; not the full production selector at `2e0954...`)

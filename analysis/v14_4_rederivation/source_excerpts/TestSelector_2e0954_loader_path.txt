@@ -1,0 +1,59 @@
+    62		public SelectionResult selectTests(File coverageMapFile, Set<String> changedClasses,
+    63				Set<String> changedMethods, EngineLogger logger)
+    64		{
+    65			if (coverageMapFile == null || !coverageMapFile.exists())
+    66			{
+    67				logger.info("[SmartTestPicker] Coverage map file not found -> FULL_SUITE");
+    68				return SelectionResult.fullSuite("Coverage map file not found");
+    69			}
+    70	
+    71			logger.info("[SmartTestPicker] Loading coverage map: {}", coverageMapFile.getAbsolutePath());
+    72			CoverageMap coverageMap = loadCoverageMap(coverageMapFile, logger);
+    73			if (coverageMap == null)
+    74			{
+    75				logger.info("[SmartTestPicker] Failed to parse coverage map -> FULL_SUITE");
+    76				return SelectionResult.fullSuite("Failed to parse coverage map");
+    77			}
+    78	
+    79			if (coverageMap.getMetadata() == null)
+    80			{
+    81				logger.info("[SmartTestPicker] Coverage map has no metadata -> FULL_SUITE");
+    82				return SelectionResult.fullSuite("Coverage map has no metadata");
+    83			}
+    84	
+    85			if (coverageMap.getTestMappings() == null || coverageMap.getTestMappings().isEmpty())
+    86			{
+    87				logger.info("[SmartTestPicker] Coverage map has no test mappings -> FULL_SUITE");
+    88				return SelectionResult.fullSuite("Coverage map has no test mappings");
+    89			}
+    90	
+    91			logger.info("[SmartTestPicker] Coverage map loaded: {} tests, commitId={}",
+    92					coverageMap.getTestMappings().size(),
+    93					coverageMap.getMetadata().getCommitId() != null
+    94							? coverageMap.getMetadata().getCommitId().substring(0, Math.min(7, coverageMap.getMetadata().getCommitId().length()))
+    95							: "null");
+    96	
+    97			if (changedClasses.isEmpty() && changedMethods.isEmpty())
+    98			{
+    99				logger.info("[SmartTestPicker] No changed classes or methods -> selecting 0 tests");
+   100				return SelectionResult.selected(Set.of());
+
+   277		 * Loads and deserializes a coverage map JSON file.
+   278		 */
+   279		CoverageMap loadCoverageMap(File file, EngineLogger logger)
+   280		{
+   281			try
+   282			{
+   283				return CoverageMapReader.load(file);
+   284			}
+   285			catch (IOException e)
+   286			{
+   287				logger.warn("[SmartTestPicker] Failed to load coverage map {}: {}", file, e.getMessage());
+   288				return null;
+   289			}
+   290		}
+   291	
+   292		CoverageMap loadCoverageMap(File file)
+   293		{
+   294			return loadCoverageMap(file, NOOP_LOGGER);
+   295		}

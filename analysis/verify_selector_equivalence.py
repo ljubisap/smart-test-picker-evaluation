@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
-verify_selector_equivalence.py -- Dataset-wide Python/Java selector equivalence.
+verify_selector_equivalence.py -- Historical Python evaluator/model agreement.
 
 For every unique (project, changedClass, changedMethod) case represented by the
 killed-mutation dataset, compares:
   - Python: evaluation_core.select_original(coverage_map, C, M)
-  - Java semantic model: exact TestSelector.selectTests() semantics for
-    changedClasses={C}, changedMethods={C#M} (single-method scenario)
+  - Python edge-only model historically labeled as a Java semantic model
 
-The Java semantic model for this specific experimental scenario:
+The historical edge-only model for this specific experimental scenario:
   classesWithMethodInfo = {C}     (extracted from changedMethods)
   classLevelOnlyClasses = {}      (changedClasses - classesWithMethodInfo)
 
@@ -18,8 +17,10 @@ The Java semantic model for this specific experimental scenario:
   else:
       java_selected = {T : C in T.classes}   # escalation
 
-This is NOT running the actual Java binary; it is a faithful Python model of the
-production TestSelector.selectTests() for the exact experimental input shape.
+This does NOT run a Java binary. It models method hits and zero-hit class escalation,
+but omits the NO_COVERAGE branch present in production selector 2e0954. Therefore the
+4,010/4,010 result establishes evaluator/model agreement only, not equivalence to the
+full pinned production selector.
 
 Usage:
   python3 analysis/verify_selector_equivalence.py
@@ -37,14 +38,14 @@ sys.path.insert(0, str(REPO_ROOT))
 from analysis.evaluation_core import (
     load_coverage_map, discover_pit_files, load_pit_mutations,
     build_base_to_keys, build_class_to_keys, resolve_killing_tests,
-    select_original,
+    select_original_legacy_edge_only,
     exclude_non_leaf_oracle_records,
 )
 
 
 def java_semantic_select(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:
     """
-    Model the production Java TestSelector.selectTests() semantics for:
+    Historical Python model for the edge-only TestSelector path for:
         changedClasses = {changed_class}
         changedMethods = {changed_class#changed_method}
 
@@ -130,9 +131,11 @@ def run_verification(repo_root: Path):
             unique_cases.add(case_key)
 
             # Python selector
-            python_selected = select_original(test_mappings, mut.mutated_class, mut.mutated_method)
+            python_selected = select_original_legacy_edge_only(
+                test_mappings, mut.mutated_class, mut.mutated_method
+            )
 
-            # Java semantic model
+            # Historical Python edge-only semantic model
             java_selected = java_semantic_select(test_mappings, mut.mutated_class, mut.mutated_method)
 
             # Check method hits (for reporting)
@@ -193,10 +196,10 @@ def run_verification(repo_root: Path):
     report = {
         "schemaVersion": 1,
         "description": (
-            "Dataset-wide comparison of Python evaluation_core.select_original() "
-            "vs modeled Java TestSelector.selectTests() semantics for single-method "
-            "changes. The Java model is faithful to the production code for the exact "
-            "experimental input shape: changedClasses={C}, changedMethods={C#M}."
+            "Dataset-wide agreement between evaluation_core.select_original() and a "
+            "historical Python edge-only semantic model for single-method changes. "
+            "This does not execute Java and does not model the NO_COVERAGE branch "
+            "present in production selector 2e0954."
         ),
         "experimentalInputShape": {
             "changedClasses": "{C}",
@@ -219,7 +222,7 @@ def run_verification(repo_root: Path):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Verify Python/Java selector equivalence")
+    parser = argparse.ArgumentParser(description="Verify historical Python evaluator/model agreement")
     parser.add_argument("--verify", action="store_true",
                         help="Verify against committed results/selector_equivalence.json")
     parser.add_argument("--output", type=Path, default=None,
@@ -240,7 +243,7 @@ def main():
         if fresh_json != committed_json:
             print("VERIFY FAILED: selector_equivalence.json differs from fresh computation")
             sys.exit(1)
-        print("VERIFY PASSED: selector equivalence results match committed artifact")
+        print("VERIFY PASSED: historical evaluator/model agreement matches committed artifact")
     else:
         output_path.parent.mkdir(parents=True, exist_ok=True)
         with open(output_path, "w") as f:
@@ -258,8 +261,8 @@ def main():
 
         if report["mismatches"] == 0:
             print()
-            print("EQUIVALENCE CONFIRMED: Python select_original() == Java TestSelector")
-            print("for all evaluated single-method mutation cases.")
+            print("AGREEMENT CONFIRMED: Python select_original() == Python edge-only model")
+            print("for all evaluated cases; this is not production-Java verification.")
         else:
             print()
             print(f"EQUIVALENCE FAILED: {report['mismatches']} mismatches found")

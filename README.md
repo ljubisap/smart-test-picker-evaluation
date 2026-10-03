@@ -67,7 +67,7 @@ smart-test-picker-evaluation/
 |-- analysis/               # Shared evaluation core, taxonomy and verification
 |   |-- evaluation_core.py  # Shared selectors, loading, resolution
 |   |-- analyze_failure_modes.py  # Taxonomy and mitigation (--write, --verify)
-|   |-- verify_selector_equivalence.py  # Python/Java equivalence (--verify)
+|   |-- verify_selector_equivalence.py  # Historical Python evaluator/model agreement (--verify)
 |   |-- projects.json       # Project configuration
 |   |-- failure_annotations.json  # Manual root-cause annotations
 |   `-- tests/              # Unit tests including synthetic divergence tests
@@ -128,7 +128,7 @@ python3 -m unittest discover -s analysis/tests
 # Verify taxonomy and mitigation outputs match committed artifacts
 python3 analysis/analyze_failure_modes.py --verify
 
-# Verify Python/Java selector equivalence
+# Verify historical evaluator/model agreement (not Java execution)
 python3 analysis/verify_selector_equivalence.py --verify
 
 # Verify independent-subject artifact hashes

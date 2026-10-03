@@ -1,0 +1,26 @@
+{
+  "verdict": "B2_VERIFIED",
+  "gates": {
+    "G1": true,
+    "G2": true,
+    "G3": true,
+    "G4": true,
+    "G5": true,
+    "G6": true,
+    "G7": true
+  },
+  "promoted": {
+    "results/b2-summary-tables.json": "82c7f4b93e421194b9be9db92360e827ad5a557fb383363d023fe4e8ab887447",
+    "results/b2-per-record-outcomes.json": "570cb5b57d4d9b180f8e0361a654cb75c4f6b071390653f3afac2a48c21b8d7b",
+    "results/b2-residual-taxonomy.json": "23324b73987e38b4a1e5e979d702a25a65e0d2dda0dc371208b16fe892ad6b22",
+    "results/mitigation_comparison.json": "4619c66ff034f3e5f49fa89a3e85108ef0b8289117f7230112dbe7862413a857",
+    "results/b2-random-baseline.json": "3bc5103e0a66f57661c9d4aa935d4f26635aaa0f051bcdba788e8cb7965d9edb",
+    "results/b2-confidence-intervals.json": "bb656dc4366260fd51c291c41bc330d10b32616720cf02fab99fcfddbcbc08ee",
+    "results/b2-bootstrap-cluster-inputs.json": "32d5e734b5c90d1b70d904b3d3ff1eba059499300bd3dc1739528cc1444c3986",
+    "results/b2-java-comparison.json": "b40cbe20319dc2d9d3f33d86c21ffba0f2bb6cf20c1c6dec10926402cbd5e6c9",
+    "results/eight-subject-summary.json": "82c7f4b93e421194b9be9db92360e827ad5a557fb383363d023fe4e8ab887447"
+  },
+  "repositoryHead": "8d4cc49fa39a0587e5a0b745a4cca7d2b11bc580",
+  "committed": false,
+  "pushed": false
+}

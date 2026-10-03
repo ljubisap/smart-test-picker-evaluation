@@ -1,0 +1,19 @@
+   141					for (JacocoClass cls : pkg.getClasses())
+   142					{
+   143						if (cls == null || cls.getName() == null || cls.getMethods() == null)
+   144							continue;
+   145	
+   146						String classFqn = cls.getName().replace('/', '.');
+   147						boolean classCovered = false;
+   148	
+   149						for (JacocoMethod method : cls.getMethods())
+   150						{
+   151							if (method == null || method.getName() == null)
+   152								continue;
+   153	
+   154							if (method.getCoveredCount() > 0)
+   155							{
+   156								coveredMethods.add(classFqn + "#" + method.getName());
+   157								classCovered = true;
+   158							}
+   159						}

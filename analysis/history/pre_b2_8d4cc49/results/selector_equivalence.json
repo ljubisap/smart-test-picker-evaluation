@@ -1,0 +1,84 @@
+{
+  "byProject": {
+    "commons-lang": {
+      "exactMatches": 772,
+      "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 772,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
+      "mutations": 772
+    },
+    "flink": {
+      "exactMatches": 349,
+      "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 349,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
+      "mutations": 349
+    },
+    "hibernate": {
+      "exactMatches": 401,
+      "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 401,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
+      "mutations": 401
+    },
+    "jgrapht": {
+      "exactMatches": 517,
+      "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 517,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
+      "mutations": 517
+    },
+    "petclinic": {
+      "exactMatches": 94,
+      "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 94,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
+      "mutations": 94
+    },
+    "quarkus": {
+      "exactMatches": 1083,
+      "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 1083,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
+      "mutations": 1083
+    },
+    "spring-core": {
+      "exactMatches": 454,
+      "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 454,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 0,
+      "mutations": 454
+    },
+    "spring-security": {
+      "exactMatches": 340,
+      "mismatches": 0,
+      "mutationOccurrencesWithMethodHits": 339,
+      "mutationOccurrencesWithPythonOnlyFallback": 0,
+      "mutationOccurrencesWithZeroMethodHits": 1,
+      "mutations": 340
+    }
+  },
+  "description": "Dataset-wide agreement between evaluation_core.select_original() and a historical Python edge-only semantic model for single-method changes. This does not execute Java and does not model the NO_COVERAGE branch present in production selector 2e0954.",
+  "differences": [],
+  "exactMatches": 4010,
+  "experimentalInputShape": {
+    "changedClasses": "{C}",
+    "changedMethods": "{C#M}",
+    "classLevelOnlyClasses": "{}  (empty)",
+    "classesWithMethodInfo": "{C}"
+  },
+  "mismatches": 0,
+  "mutationOccurrences": 4010,
+  "mutationOccurrencesWithMethodHits": 4009,
+  "mutationOccurrencesWithPythonOnlyFallback": 0,
+  "mutationOccurrencesWithZeroMethodHits": 1,
+  "schemaVersion": 1,
+  "uniqueSelectorCases": 1351
+}

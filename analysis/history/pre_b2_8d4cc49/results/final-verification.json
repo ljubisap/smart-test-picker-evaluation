@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "analysisUnitTests": {
+    "testsRun": 57,
+    "failures": 0,
+    "errors": 0
+  },
+  "selectorEquivalence": {
+    "scopeNote": "Historical Python evaluator/model agreement only; not production-Java execution and not the full 2e0954 selector with NO_COVERAGE.",
+    "mutationOccurrences": 4010,
+    "uniqueSelectorCases": 1351,
+    "exactMatches": 4010,
+    "mismatches": 0
+  },
+  "failureAnalysis": {
+    "unsafeMutations": 24,
+    "footprintCounts": {
+      "A": 7,
+      "B": 10,
+      "C": 6,
+      "MIXED": 1
+    },
+    "causalMechanismCounts": {
+      "EARLY_EXCEPTION_PROBE_SHADOWING": 23,
+      "PRE_TEST_ATTRIBUTION_GAP": 1
+    },
+    "verification": "PASS"
+  },
+  "mitigation": {
+    "killedMutations": 4010,
+    "originalInclusive": 3986,
+    "mitigatedInclusive": 3993,
+    "additionalRecovered": 7,
+    "verification": "PASS"
+  },
+  "artifactChecksums": {
+    "hibernate": "PASS",
+    "flink": "PASS",
+    "quarkus": "PASS",
+    "spring-security": "PASS"
+  },
+  "oracleAdjudication": {
+    "containerOnlyRecords": 1,
+    "leafOracleRecordsExcluded": 1,
+    "verification": "PASS"
+  }
+}

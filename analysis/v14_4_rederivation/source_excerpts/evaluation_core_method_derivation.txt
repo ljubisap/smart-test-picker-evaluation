@@ -1,0 +1,29 @@
+   210	
+   211	        for ordinal, mut_elem in enumerate(tree.getroot().findall("mutation")):
+   212	            if mut_elem.get("status") != "KILLED":
+   213	                continue
+   214	
+   215	            mutated_class = mut_elem.findtext("mutatedClass") or ""
+   216	            mutated_method = mut_elem.findtext("mutatedMethod") or ""
+   217	            method_desc = mut_elem.findtext("methodDescription") or "(unknown)"
+   218	            line = int(mut_elem.findtext("lineNumber") or "0")
+   219	            mutator = mut_elem.findtext("mutator") or ""
+   220	            indexes = _parse_int_list(mut_elem.findtext("indexes"))
+   221	            blocks = _parse_int_list(mut_elem.findtext("blocks"))
+   222	
+   223	            mutation_id = _build_mutation_id(
+   224	                project_name, mutated_class, mutated_method,
+   225	                method_desc, line, mutator, indexes, blocks,
+
+   412	
+   413	def select_original(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:
+   414	    """
+   415	    Historical edge-only evaluator semantics for one changed method.
+   416	
+   417	    Select exact C#M method hits. If there are no method hits anywhere for C#M,
+   418	    escalate the changed class and select every test whose class footprint
+   419	    contains C. This is the production selector's class-level fallback.
+   420	    """
+   421	    method_fqn = f"{changed_class}#{changed_method}"
+   422	    method_hits = {
+   423	        test_name for test_name, coverage in test_mappings.items()

@@ -1,0 +1,53 @@
+{
+  "source": "spring-security/results/test-coverage-map.json.gz and eligible PIT records from analysis/projects.json",
+  "result": "NOT_CONFIRMED",
+  "summary": {
+    "eligibleRecordsWhoseKillersIncludeNoCoverageTests": 5,
+    "distinctNoCoverageKillingTests": 6,
+    "inclusiveRecords": 0,
+    "recordsWhoseInclusionDependsOnlyOnNoCoverageObligation": 0
+  },
+  "records": [
+    {
+      "mutatedMethod": "RoleHierarchyImpl#withRolePrefix",
+      "emptyFootprintKillerCount": 1,
+      "selectedCount": 9,
+      "inclusive": false,
+      "selectedKillingTests": [],
+      "dependsOnlyOnNoCoverageObligation": false
+    },
+    {
+      "mutatedMethod": "AuthorityAuthorizationManager#hasAnyAuthority",
+      "emptyFootprintKillerCount": 2,
+      "selectedCount": 65,
+      "inclusive": false,
+      "selectedKillingTests": [],
+      "dependsOnlyOnNoCoverageObligation": false
+    },
+    {
+      "mutatedMethod": "AuthorityAuthorizationManager#hasAnyRole",
+      "emptyFootprintKillerCount": 1,
+      "selectedCount": 63,
+      "inclusive": false,
+      "selectedKillingTests": [],
+      "dependsOnlyOnNoCoverageObligation": false
+    },
+    {
+      "mutatedMethod": "AuthorityAuthorizationManager#hasAuthority",
+      "emptyFootprintKillerCount": 1,
+      "selectedCount": 14,
+      "inclusive": false,
+      "selectedKillingTests": [],
+      "dependsOnlyOnNoCoverageObligation": false
+    },
+    {
+      "mutatedMethod": "AuthorityAuthorizationManager#hasRole",
+      "emptyFootprintKillerCount": 1,
+      "selectedCount": 7,
+      "inclusive": false,
+      "selectedKillingTests": [],
+      "dependsOnlyOnNoCoverageObligation": false
+    }
+  ],
+  "manuscriptAction": "Do not add the pending Section 6.4 sentence. The frozen selector does not select these empty-footprint killers as conservative obligations in the five records."
+}

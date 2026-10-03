@@ -1,0 +1,69 @@
+   412	def select_original(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:
+   413	    """
+   414	    Frozen production TestSelector semantics for one changed method.
+   415	
+   416	    Select exact C#M method hits. If there are no method hits anywhere for C#M,
+   417	    escalate the changed class and select every test whose class footprint
+   418	    contains C. This is the production selector's class-level fallback.
+   419	    """
+   420	    method_fqn = f"{changed_class}#{changed_method}"
+   421	    method_hits = {
+   422	        test_name for test_name, coverage in test_mappings.items()
+   423	        if method_fqn in coverage.get("methods", [])
+   424	    }
+   425	    if method_hits:
+   426	        return method_hits
+   427	    return {
+   428	        test_name for test_name, coverage in test_mappings.items()
+   429	        if changed_class in coverage.get("classes", [])
+   430	    }
+   431	
+   432	
+   433	def select_constructor_only_rule(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:
+   434	    """
+   435	    Original UNION constructor-only footprint tests.
+   436	
+   437	    Additionally select T if:
+   438	    - C is in T.classes
+   439	    - T has at least one C#... method (non-empty footprint)
+   440	    - EVERY C#... method is <init> or <clinit>
+   441	    """
+   442	    selected = select_original(test_mappings, changed_class, changed_method)
+   443	
+   444	    for test_name, coverage in test_mappings.items():
+   445	        if test_name in selected:
+   446	            continue
+   447	
+   448	        classes = coverage.get("classes", [])
+   449	        methods = coverage.get("methods", [])
+   450	
+   451	        if changed_class not in classes:
+   452	            continue
+   453	
+   454	        class_methods = [m for m in methods if m.startswith(changed_class + "#")]
+   455	        if not class_methods:
+   456	            continue  # empty footprint -- already handled by original fallback
+   457	
+   458	        all_constructors = all(
+   459	            m.endswith("#<init>") or m.endswith("#<clinit>")
+   460	            or "#<init>" in m or "#<clinit>" in m
+   461	            for m in class_methods
+   462	        )
+   463	        if all_constructors:
+   464	            selected.add(test_name)
+   465	
+   466	    return selected
+   467	
+   468	
+   469	def select_class_level(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:
+   470	    """
+   471	    Class-level baseline: select all tests covering the changed class.
+   472	
+   473	    This is the class-presence upper bound, limited to dependencies
+   474	    represented in the coverage map. Cannot recover Type C cases.
+   475	    """
+   476	    selected = set()
+   477	    for test_name, coverage in test_mappings.items():
+   478	        if changed_class in coverage.get("classes", []):
+   479	            selected.add(test_name)
+   480	    return selected

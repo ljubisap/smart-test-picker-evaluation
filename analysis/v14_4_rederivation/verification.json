@@ -1,0 +1,27 @@
+{
+  "scope": "Part I regression verification only; no builds, PIT, or collection",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "analysis/tests"
+      ],
+      "exitCode": 0,
+      "output": ".........................................................\n----------------------------------------------------------------------\nRan 57 tests in 0.158s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "analysis/verify_selector_equivalence.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "output": "VERIFY PASSED: historical evaluator/model agreement matches committed artifact\n"
+    }
+  ],
+  "passed": true
+}

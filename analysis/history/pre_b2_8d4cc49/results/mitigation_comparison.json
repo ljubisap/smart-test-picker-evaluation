@@ -1,0 +1,218 @@
+{
+  "aggregated": {
+    "classLevelBaseline": {
+      "inclusivenessPct": 99.85,
+      "safe": 4004
+    },
+    "constructorOnlyRule": {
+      "additionalRecovered": 7,
+      "inclusivenessPct": 99.58,
+      "safe": 3993
+    },
+    "original": {
+      "inclusivenessPct": 99.4,
+      "safe": 3986
+    },
+    "totalMutations": 4010
+  },
+  "methodology": {
+    "aggregation": "micro-average over all killed mutations across projects",
+    "inclusivenessPct": "100 * safe / total killed mutations",
+    "selectionRatePct": "100 * mean(selected / totalTests)"
+  },
+  "perProject": [
+    {
+      "classLevelBaseline": {
+        "avgSelected": 50.1,
+        "inclusivenessPct": 99.87,
+        "safe": 771,
+        "selectionRatePct": 1.07
+      },
+      "constructorOnlyRule": {
+        "additionalRecovered": 0,
+        "avgSelected": 19.8,
+        "inclusivenessPct": 99.87,
+        "safe": 771,
+        "selectionRatePct": 0.42
+      },
+      "original": {
+        "avgSelected": 17.0,
+        "inclusivenessPct": 99.87,
+        "safe": 771,
+        "selectionRatePct": 0.36
+      },
+      "project": "commons-lang",
+      "totalMutations": 772,
+      "totalTests": 4692
+    },
+    {
+      "classLevelBaseline": {
+        "avgSelected": 207.8,
+        "inclusivenessPct": 100.0,
+        "safe": 517,
+        "selectionRatePct": 9.0
+      },
+      "constructorOnlyRule": {
+        "additionalRecovered": 1,
+        "avgSelected": 96.9,
+        "inclusivenessPct": 100.0,
+        "safe": 517,
+        "selectionRatePct": 4.2
+      },
+      "original": {
+        "avgSelected": 87.7,
+        "inclusivenessPct": 99.81,
+        "safe": 516,
+        "selectionRatePct": 3.8
+      },
+      "project": "jgrapht",
+      "totalMutations": 517,
+      "totalTests": 2308
+    },
+    {
+      "classLevelBaseline": {
+        "avgSelected": 529.2,
+        "inclusivenessPct": 100.0,
+        "safe": 454,
+        "selectionRatePct": 14.6
+      },
+      "constructorOnlyRule": {
+        "additionalRecovered": 4,
+        "avgSelected": 84.9,
+        "inclusivenessPct": 98.46,
+        "safe": 447,
+        "selectionRatePct": 2.34
+      },
+      "original": {
+        "avgSelected": 80.6,
+        "inclusivenessPct": 97.58,
+        "safe": 443,
+        "selectionRatePct": 2.22
+      },
+      "project": "spring-core",
+      "totalMutations": 454,
+      "totalTests": 3624
+    },
+    {
+      "classLevelBaseline": {
+        "avgSelected": 18.4,
+        "inclusivenessPct": 100.0,
+        "safe": 94,
+        "selectionRatePct": 35.29
+      },
+      "constructorOnlyRule": {
+        "additionalRecovered": 0,
+        "avgSelected": 11.7,
+        "inclusivenessPct": 100.0,
+        "safe": 94,
+        "selectionRatePct": 22.52
+      },
+      "original": {
+        "avgSelected": 9.7,
+        "inclusivenessPct": 100.0,
+        "safe": 94,
+        "selectionRatePct": 18.7
+      },
+      "project": "petclinic",
+      "totalMutations": 94,
+      "totalTests": 52
+    },
+    {
+      "classLevelBaseline": {
+        "avgSelected": 64.9,
+        "inclusivenessPct": 100.0,
+        "safe": 349,
+        "selectionRatePct": 9.76
+      },
+      "constructorOnlyRule": {
+        "additionalRecovered": 0,
+        "avgSelected": 38.4,
+        "inclusivenessPct": 100.0,
+        "safe": 349,
+        "selectionRatePct": 5.77
+      },
+      "original": {
+        "avgSelected": 36.2,
+        "inclusivenessPct": 100.0,
+        "safe": 349,
+        "selectionRatePct": 5.45
+      },
+      "project": "flink",
+      "totalMutations": 349,
+      "totalTests": 665
+    },
+    {
+      "classLevelBaseline": {
+        "avgSelected": 72.2,
+        "inclusivenessPct": 98.53,
+        "safe": 335,
+        "selectionRatePct": 5.01
+      },
+      "constructorOnlyRule": {
+        "additionalRecovered": 2,
+        "avgSelected": 37.3,
+        "inclusivenessPct": 97.65,
+        "safe": 332,
+        "selectionRatePct": 2.59
+      },
+      "original": {
+        "avgSelected": 36.9,
+        "inclusivenessPct": 97.06,
+        "safe": 330,
+        "selectionRatePct": 2.56
+      },
+      "project": "spring-security",
+      "totalMutations": 340,
+      "totalTests": 1440
+    },
+    {
+      "classLevelBaseline": {
+        "avgSelected": 488.8,
+        "inclusivenessPct": 100.0,
+        "safe": 401,
+        "selectionRatePct": 44.47
+      },
+      "constructorOnlyRule": {
+        "additionalRecovered": 0,
+        "avgSelected": 303.2,
+        "inclusivenessPct": 99.75,
+        "safe": 400,
+        "selectionRatePct": 27.58
+      },
+      "original": {
+        "avgSelected": 297.2,
+        "inclusivenessPct": 99.75,
+        "safe": 400,
+        "selectionRatePct": 27.05
+      },
+      "project": "hibernate",
+      "totalMutations": 401,
+      "totalTests": 1099
+    },
+    {
+      "classLevelBaseline": {
+        "avgSelected": 539.9,
+        "inclusivenessPct": 100.0,
+        "safe": 1083,
+        "selectionRatePct": 78.94
+      },
+      "constructorOnlyRule": {
+        "additionalRecovered": 0,
+        "avgSelected": 383.6,
+        "inclusivenessPct": 100.0,
+        "safe": 1083,
+        "selectionRatePct": 56.08
+      },
+      "original": {
+        "avgSelected": 260.7,
+        "inclusivenessPct": 100.0,
+        "safe": 1083,
+        "selectionRatePct": 38.11
+      },
+      "project": "quarkus",
+      "totalMutations": 1083,
+      "totalTests": 684
+    }
+  ],
+  "schemaVersion": 1
+}

@@ -10,4 +10,4 @@ Mutation result: 496 PIT mutations, 419 KILLED, and 419/419 STP-inclusive KILLED
 - `COMMANDS.md`: reproduction commands
 - `results/test-coverage-map.json.gz`: frozen `stream` per-test map
 - `results/per-class/`: per-class PIT matrices and logs
-- `results/aggregated/`: per-mutant results, baselines, mitigation, and equivalence
+- `results/aggregated/`: per-mutant results, baselines, mitigation, and historical Python evaluator/model agreement

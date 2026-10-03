@@ -70,7 +70,7 @@ The evaluator initially failed closed on PIT's standard JUnit 3 identifier form,
 | Class-level only | 896/896 | 100.00% | 667.49 | 15.76% | 84.24% |
 | Random equal-budget (1,000 trials) | descriptive | 19.51% mean (0.90 pp SD; 19.50% analytical) | 146.76 | 3.47% | 96.53% |
 
-Selector-equivalence verification covered all 896 mutation occurrences and 244 unique `(class, method)` cases: 244/244 exact matches, zero mismatches. The shared analysis suite passes 53 tests.
+Historical evaluator/model agreement covered all 896 mutation occurrences and 244 unique `(class, method)` cases: 244/244 exact matches, zero mismatches. This was a Python edge-only model check, not Java execution and not validation of the later NO_COVERAGE branch. The shared analysis suite passes 53 tests.
 
 ## Failure analysis
 

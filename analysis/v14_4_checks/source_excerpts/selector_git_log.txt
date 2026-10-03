@@ -1,0 +1,3 @@
+a17f2bc Complete deterministic test selection reasons
+7c69ec0 Implement JZC-02A method-exact Maven execution
+1151bbd fix: preserve zero-coverage tests in JaCoCo selection

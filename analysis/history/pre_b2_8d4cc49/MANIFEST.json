@@ -1,0 +1,99 @@
+{
+  "files": [
+    {
+      "path": "results/eight-subject-summary.json",
+      "sha256": "cd646596a2d0d8ac94c7c2f575c04d2daa567c482ae3f3e90f4e18c51db8b5ef",
+      "size": 11358
+    },
+    {
+      "path": "results/failure_taxonomy.json",
+      "sha256": "b3d7949b175541dadbcccb8eac9049af31bd2c3608e21b63d59029438a7a5705",
+      "size": 70194
+    },
+    {
+      "path": "results/mitigation_comparison.json",
+      "sha256": "28380586860dbb6476415d2b92d8dd558e6ca7a4b811aa53ee2433ed512ec185",
+      "size": 5360
+    },
+    {
+      "path": "results/selector_equivalence.json",
+      "sha256": "e0ecb0cb25a8d7a1cb4eae06d87c64c486f529ed86cef8373c4138756ee8437e",
+      "size": 2767
+    },
+    {
+      "path": "results/final-verification.json",
+      "sha256": "2e27b99a2177d8f6e1b6200b7452438b9774d1e5b6d9bf4b57bb7c6686c1513b",
+      "size": 1124
+    },
+    {
+      "path": "analysis/v14_4_checks/no_coverage_sensitivity.json",
+      "sha256": "88336444127ab2000e46f4734df2879af18c3bb7687fb004ac95c44dc988113c",
+      "size": 29301
+    },
+    {
+      "path": "analysis/v14_1_checks/confidence_intervals.json",
+      "sha256": "68dfb24349de96ea5b9f3f2b6c610be07282f8bd8fba2ae689e1b22495c9965c",
+      "size": 3422
+    },
+    {
+      "path": "commons-lang/results/aggregated/evaluation_summary.json",
+      "sha256": "d4a12103c8ce0e5e7f9f441d4e7e322b38c5d44ff922d761e094aaf9d4bc1b2c",
+      "size": 475
+    },
+    {
+      "path": "commons-lang/results/aggregated/baseline_comparison.json",
+      "sha256": "eeb33c410f69b246bd668d40c8819776bbcbc873ff56ba80ed707287072d403f",
+      "size": 866
+    },
+    {
+      "path": "jgrapht/results/aggregated/evaluation_summary.json",
+      "sha256": "11d9aa2dc1cbf5d65e09dbca4a1ab2d55e882c24e0438b8c082152c45b5f4088",
+      "size": 464
+    },
+    {
+      "path": "jgrapht/results/aggregated/baseline_comparison.json",
+      "sha256": "00ee2e6ec9443ea414533e6ca18704cbd04ab6aef47834220ea5fcf24f9d2100",
+      "size": 865
+    },
+    {
+      "path": "spring-core/results/aggregated/evaluation_summary.json",
+      "sha256": "04763eac703d1310a68b765984c7df88029d2f5d13bb910f96c7a95ff322b461",
+      "size": 1788
+    },
+    {
+      "path": "spring-core/results/aggregated/baseline_comparison.json",
+      "sha256": "f9fa6e871d75f3116aa4f8717e12fc98059c0dba1fe72d5cb3e83f7361226166",
+      "size": 870
+    },
+    {
+      "path": "petclinic/results/aggregated/evaluation_summary.json",
+      "sha256": "ec6db6ae86a7f0e6912292fbfcf1b7b807cd8695125a89ca398e34fa5ce19074",
+      "size": 330
+    },
+    {
+      "path": "petclinic/results/aggregated/baseline_comparison.json",
+      "sha256": "67cf1151b193ac4fe3fa2eddfa893fe62522eb676fea7c7956a9cae0d65d9041",
+      "size": 857
+    },
+    {
+      "path": "flink/results/aggregated/evaluation_summary.json",
+      "sha256": "ae7c98ff25ee4a2f29f4feaddba4e10eb7a5c1858c005db0566a18843bd7665f",
+      "size": 1131
+    },
+    {
+      "path": "spring-security/results/aggregated/evaluation_summary.json",
+      "sha256": "9f80297341f3b378f570e0100da7d48eb92df7d390dd93ba8003e78bd1500151",
+      "size": 1142
+    },
+    {
+      "path": "hibernate/results/aggregated/evaluation_summary.json",
+      "sha256": "f6faf74ff13871cf81c4c37c40b5d1f7ebaf165600a0096722e6d70a55c08fb0",
+      "size": 1143
+    },
+    {
+      "path": "quarkus/results/aggregated/evaluation_summary.json",
+      "sha256": "dbb1ecb27ff8ca860ea932763bb25aa2ad4f3f7fdede6c319ffdaeaa6ae13b0d",
+      "size": 1147
+    }
+  ]
+}

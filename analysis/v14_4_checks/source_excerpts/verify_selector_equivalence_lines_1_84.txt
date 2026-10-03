@@ -1,0 +1,84 @@
+     1	#!/usr/bin/env python3
+     2	"""
+     3	verify_selector_equivalence.py -- Dataset-wide Python/Java selector equivalence.
+     4	
+     5	For every unique (project, changedClass, changedMethod) case represented by the
+     6	killed-mutation dataset, compares:
+     7	  - Python: evaluation_core.select_original(coverage_map, C, M)
+     8	  - Java semantic model: exact TestSelector.selectTests() semantics for
+     9	    changedClasses={C}, changedMethods={C#M} (single-method scenario)
+    10	
+    11	The Java semantic model for this specific experimental scenario:
+    12	  classesWithMethodInfo = {C}     (extracted from changedMethods)
+    13	  classLevelOnlyClasses = {}      (changedClasses - classesWithMethodInfo)
+    14	
+    15	  method_hits = {T : C#M in T.methods}
+    16	  if method_hits is non-empty:
+    17	      java_selected = method_hits
+    18	  else:
+    19	      java_selected = {T : C in T.classes}   # escalation
+    20	
+    21	This is NOT running the actual Java binary; it is a faithful Python model of the
+    22	production TestSelector.selectTests() for the exact experimental input shape.
+    23	
+    24	Usage:
+    25	  python3 analysis/verify_selector_equivalence.py
+    26	  python3 analysis/verify_selector_equivalence.py --verify
+    27	"""
+    28	
+    29	import argparse
+    30	import json
+    31	import sys
+    32	from pathlib import Path
+    33	
+    34	REPO_ROOT = Path(__file__).resolve().parent.parent
+    35	sys.path.insert(0, str(REPO_ROOT))
+    36	
+    37	from analysis.evaluation_core import (
+    38	    load_coverage_map, discover_pit_files, load_pit_mutations,
+    39	    build_base_to_keys, build_class_to_keys, resolve_killing_tests,
+    40	    select_original,
+    41	    exclude_non_leaf_oracle_records,
+    42	)
+    43	
+    44	
+    45	def java_semantic_select(test_mappings: dict, changed_class: str, changed_method: str) -> set[str]:
+    46	    """
+    47	    Model the production Java TestSelector.selectTests() semantics for:
+    48	        changedClasses = {changed_class}
+    49	        changedMethods = {changed_class#changed_method}
+    50	
+    51	    This means:
+    52	        classesWithMethodInfo = {changed_class}
+    53	        classLevelOnlyClasses = {} (empty)
+    54	
+    55	    Step 1: method-level matching
+    56	        For each test, if changed_class#changed_method is in the test's covered methods,
+    57	        select the test and count a method-hit for changed_class.
+    58	
+    59	    Step 2: escalation check
+    60	        If zero tests were selected via method-level for changed_class,
+    61	        escalate: select ALL tests that cover changed_class at class level.
+    62	
+    63	    No class-level-only fallback applies because classLevelOnlyClasses is empty.
+    64	    """
+    65	    method_fqn = f"{changed_class}#{changed_method}"
+    66	
+    67	    # Step 1: method-level matching
+    68	    method_hits = set()
+    69	    for test_name, coverage in test_mappings.items():
+    70	        methods = coverage.get("methods", [])
+    71	        if method_fqn in methods:
+    72	            method_hits.add(test_name)
+    73	
+    74	    # Step 2: escalation
+    75	    if method_hits:
+    76	        return method_hits
+    77	    else:
+    78	        # Zero method-level hits for the class -> escalate to class-level
+    79	        class_selected = set()
+    80	        for test_name, coverage in test_mappings.items():
+    81	            classes = coverage.get("classes", [])
+    82	            if changed_class in classes:
+    83	                class_selected.add(test_name)
+    84	        return class_selected

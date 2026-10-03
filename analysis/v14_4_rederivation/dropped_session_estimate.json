@@ -1,0 +1,66 @@
+{
+  "evidenceDefinition": "Retained per-test session JaCoCo XML filenames are the logical execution-session inventory consumed by CoverageMapperJaxb; compare exact extracted session identity to frozen map key.",
+  "collectorDropCondition": "At 70b398 CoverageMapperJaxb.java:117-119 skips a parsed report when report.getPackages() is null.",
+  "subjects": {
+    "commons-lang": {
+      "mapPath": "commons-lang/results/test-coverage-map.json.gz",
+      "mapSha256": "75198f3e41ccbfd090295c7a1defa02380cde7618e9ac71cd7b7fa9b35f04384",
+      "mapCommitId": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
+      "retainedSessionInventoryPath": "/Users/D061177/work/moje/commons-lang/target/jacoco-xml",
+      "inventoryStatus": "AVAILABLE_EXACT_SESSION_IDENTITY",
+      "nativeLogicalTests": 4692,
+      "retainedSessionIdentitySetSha256": "17e4609d050f576f8cfb2be8e73e716106aa3022ebf6136bb8b002a1c48bc566",
+      "mapIdentitySetSha256": "17e4609d050f576f8cfb2be8e73e716106aa3022ebf6136bb8b002a1c48bc566",
+      "mapEntries": 4692,
+      "identitiesMissingFromMap": [],
+      "mapIdentitiesMissingFromInventory": [],
+      "droppedZeroPackageSessions": 0,
+      "interpretation": "Exact identity equality; no retained session was dropped by the null-package branch."
+    },
+    "jgrapht": {
+      "mapPath": "jgrapht/results/test-coverage-map.json.gz",
+      "mapSha256": "851e4287a57b981d8a9af930e9774656987f8e5b8a392ec53bb0850422dbcdc5",
+      "mapCommitId": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+      "retainedSessionInventoryPath": "/Users/D061177/work/moje/jgrapht/jgrapht-core/target/jacoco-xml",
+      "inventoryStatus": "AVAILABLE_EXACT_SESSION_IDENTITY",
+      "nativeLogicalTests": 2308,
+      "retainedSessionIdentitySetSha256": "44dd8eabc8d478386d060af31b1cab89b4fb76910727c2ce39ece872b2879c3e",
+      "mapIdentitySetSha256": "44dd8eabc8d478386d060af31b1cab89b4fb76910727c2ce39ece872b2879c3e",
+      "mapEntries": 2308,
+      "identitiesMissingFromMap": [],
+      "mapIdentitiesMissingFromInventory": [],
+      "droppedZeroPackageSessions": 0,
+      "interpretation": "Exact identity equality; no retained session was dropped by the null-package branch."
+    },
+    "spring-core": {
+      "mapPath": "spring-core/results/test-coverage-map.json",
+      "mapSha256": "936becf03857bfa0d22958ca88053f4c8bfabc85651f822f4ef51837bb2813b5",
+      "mapCommitId": "25838a334c037b68e614f6b571af03a1f6bfec19",
+      "retainedSessionInventoryPath": "/Users/D061177/work/moje/spring-framework-6/spring-core/build/jacoco-xml",
+      "inventoryStatus": "AVAILABLE_EXACT_SESSION_IDENTITY",
+      "nativeLogicalTests": 3624,
+      "retainedSessionIdentitySetSha256": "53837ea8a67da700e276f343d083fcc492304f0fc2f327d53551a03797aee149",
+      "mapIdentitySetSha256": "53837ea8a67da700e276f343d083fcc492304f0fc2f327d53551a03797aee149",
+      "mapEntries": 3624,
+      "identitiesMissingFromMap": [],
+      "mapIdentitiesMissingFromInventory": [],
+      "droppedZeroPackageSessions": 0,
+      "interpretation": "Exact identity equality; no retained session was dropped by the null-package branch."
+    },
+    "petclinic": {
+      "mapPath": "petclinic/results/test-coverage-map.json",
+      "mapSha256": "fb8ace81fab33aac953a26fa6d340ce5f486771295f2ef50a779f4be0981152a",
+      "mapCommitId": "cbb884f01f7fef663fcff256e303d967494a4f8b",
+      "retainedSessionInventoryPath": "/Users/D061177/work/moje/spring-petclinic/build/jacoco-xml",
+      "inventoryStatus": "AVAILABLE_EXACT_SESSION_IDENTITY",
+      "nativeLogicalTests": 52,
+      "retainedSessionIdentitySetSha256": "911c49784cee73763121478a122b2e75470c08efd5e0e2d024c5624220ccaf7d",
+      "mapIdentitySetSha256": "911c49784cee73763121478a122b2e75470c08efd5e0e2d024c5624220ccaf7d",
+      "mapEntries": 52,
+      "identitiesMissingFromMap": [],
+      "mapIdentitiesMissingFromInventory": [],
+      "droppedZeroPackageSessions": 0,
+      "interpretation": "Exact identity equality; no retained session was dropped by the null-package branch."
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "implementationSource": "analysis/evaluate_subject.py:53-84",
+  "inputManifest": "analysis/projects.json",
+  "projects": {
+    "commons-lang": {
+      "coverageMap": "commons-lang/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "commons-lang/results/per-class/*/mutations.xml"
+      ],
+      "trials": 1000,
+      "seed": 42,
+      "records": 772,
+      "successfulTrialRecordPairs": 15677,
+      "monteCarloInclusivenessPctFullPrecision": 2.030699481865285,
+      "monteCarloInclusivenessPct2dp": 2.03,
+      "monteCarloStdPctFullPrecision": 0.49641441342853204,
+      "analyticalInclusivenessPctFullPrecision": 2.0249214128211848,
+      "analyticalInclusivenessPct2dp": 2.02,
+      "formula": "mean_m [1 - C(N-r_m,k_m)/C(N,k_m)], with probability 1 when N-r_m < k_m"
+    },
+    "jgrapht": {
+      "coverageMap": "jgrapht/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "jgrapht/results/per-class/*/mutations.xml",
+        "jgrapht/results/per-class/*/mutations.xml.gz"
+      ],
+      "trials": 1000,
+      "seed": 42,
+      "records": 517,
+      "successfulTrialRecordPairs": 173642,
+      "monteCarloInclusivenessPctFullPrecision": 33.586460348162475,
+      "monteCarloInclusivenessPct2dp": 33.59,
+      "monteCarloStdPctFullPrecision": 1.258975698740198,
+      "analyticalInclusivenessPctFullPrecision": 33.62501962758073,
+      "analyticalInclusivenessPct2dp": 33.63,
+      "formula": "mean_m [1 - C(N-r_m,k_m)/C(N,k_m)], with probability 1 when N-r_m < k_m"
+    },
+    "spring-core": {
+      "coverageMap": "spring-core/results/test-coverage-map.json",
+      "pitFiles": [
+        "spring-core/results/per-class/*/mutations.xml"
+      ],
+      "trials": 1000,
+      "seed": 42,
+      "records": 454,
+      "successfulTrialRecordPairs": 78869,
+      "monteCarloInclusivenessPctFullPrecision": 17.372026431718062,
+      "monteCarloInclusivenessPct2dp": 17.37,
+      "monteCarloStdPctFullPrecision": 1.0909609358499606,
+      "analyticalInclusivenessPctFullPrecision": 17.364902633258875,
+      "analyticalInclusivenessPct2dp": 17.36,
+      "formula": "mean_m [1 - C(N-r_m,k_m)/C(N,k_m)], with probability 1 when N-r_m < k_m"
+    },
+    "petclinic": {
+      "coverageMap": "petclinic/results/test-coverage-map.json",
+      "pitFiles": [
+        "petclinic/results/mutations.xml"
+      ],
+      "trials": 1000,
+      "seed": 42,
+      "records": 94,
+      "successfulTrialRecordPairs": 33809,
+      "monteCarloInclusivenessPctFullPrecision": 35.967021276595744,
+      "monteCarloInclusivenessPct2dp": 35.97,
+      "monteCarloStdPctFullPrecision": 2.9482712016223984,
+      "analyticalInclusivenessPctFullPrecision": 35.875574408630825,
+      "analyticalInclusivenessPct2dp": 35.88,
+      "formula": "mean_m [1 - C(N-r_m,k_m)/C(N,k_m)], with probability 1 when N-r_m < k_m"
+    },
+    "flink": {
+      "coverageMap": "flink/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "flink/results/per-class/*/mutations.xml"
+      ],
+      "trials": 1000,
+      "seed": 42,
+      "records": 349,
+      "successfulTrialRecordPairs": 67467,
+      "monteCarloInclusivenessPctFullPrecision": 19.331518624641834,
+      "monteCarloInclusivenessPct2dp": 19.33,
+      "monteCarloStdPctFullPrecision": 1.685897917358033,
+      "analyticalInclusivenessPctFullPrecision": 19.378562190147086,
+      "analyticalInclusivenessPct2dp": 19.38,
+      "formula": "mean_m [1 - C(N-r_m,k_m)/C(N,k_m)], with probability 1 when N-r_m < k_m"
+    },
+    "spring-security": {
+      "coverageMap": "spring-security/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "spring-security/results/per-class/*/mutations.xml"
+      ],
+      "trials": 1000,
+      "seed": 42,
+      "records": 340,
+      "successfulTrialRecordPairs": 59231,
+      "monteCarloInclusivenessPctFullPrecision": 17.420882352941177,
+      "monteCarloInclusivenessPct2dp": 17.42,
+      "monteCarloStdPctFullPrecision": 1.3549741439584182,
+      "analyticalInclusivenessPctFullPrecision": 17.464735493933787,
+      "analyticalInclusivenessPct2dp": 17.46,
+      "formula": "mean_m [1 - C(N-r_m,k_m)/C(N,k_m)], with probability 1 when N-r_m < k_m"
+    },
+    "hibernate": {
+      "coverageMap": "hibernate/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "hibernate/results/per-class/*/mutations.xml"
+      ],
+      "trials": 1000,
+      "seed": 42,
+      "records": 401,
+      "successfulTrialRecordPairs": 286036,
+      "monteCarloInclusivenessPctFullPrecision": 71.33067331670823,
+      "monteCarloInclusivenessPct2dp": 71.33,
+      "monteCarloStdPctFullPrecision": 1.274328952484426,
+      "analyticalInclusivenessPctFullPrecision": 71.30474983204753,
+      "analyticalInclusivenessPct2dp": 71.3,
+      "formula": "mean_m [1 - C(N-r_m,k_m)/C(N,k_m)], with probability 1 when N-r_m < k_m"
+    },
+    "quarkus": {
+      "coverageMap": "quarkus/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "quarkus/results/per-class/*/mutations.xml"
+      ],
+      "trials": 1000,
+      "seed": 42,
+      "records": 1083,
+      "successfulTrialRecordPairs": 771673,
+      "monteCarloInclusivenessPctFullPrecision": 71.25327793167129,
+      "monteCarloInclusivenessPct2dp": 71.25,
+      "monteCarloStdPctFullPrecision": 0.6879137059552658,
+      "analyticalInclusivenessPctFullPrecision": 71.27926540032158,
+      "analyticalInclusivenessPct2dp": 71.28,
+      "formula": "mean_m [1 - C(N-r_m,k_m)/C(N,k_m)], with probability 1 when N-r_m < k_m"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "baseCommit": "8d4cc49fa39a0587e5a0b745a4cca7d2b11bc580",
+  "files": [
+    {
+      "path": "results/selector_equivalence.json",
+      "baseSha256": "439aba9c0f0d8366fbcd34b81b60643d2cd6e9f9822c2f33b4fe730e3751a8e2",
+      "preRestoreSha256": "e0ecb0cb25a8d7a1cb4eae06d87c64c486f529ed86cef8373c4138756ee8437e",
+      "postRestoreSha256": "439aba9c0f0d8366fbcd34b81b60643d2cd6e9f9822c2f33b4fe730e3751a8e2",
+      "fullDiff": "--- 8d4cc49fa39a0587e5a0b745a4cca7d2b11bc580:results/selector_equivalence.json\n+++ working-tree:results/selector_equivalence.json\n@@ -65,7 +65,7 @@\n       \"mutations\": 340\n     }\n   },\n-  \"description\": \"Dataset-wide comparison of Python evaluation_core.select_original() vs modeled Java TestSelector.selectTests() semantics for single-method changes. The Java model is faithful to the production code for the exact experimental input shape: changedClasses={C}, changedMethods={C#M}.\",\n+  \"description\": \"Dataset-wide agreement between evaluation_core.select_original() and a historical Python edge-only semantic model for single-method changes. This does not execute Java and does not model the NO_COVERAGE branch present in production selector 2e0954.\",\n   \"differences\": [],\n   \"exactMatches\": 4010,\n   \"experimentalInputShape\": {\n",
+      "onlyMetadataOrDescriptionChanged": true
+    },
+    {
+      "path": "results/final-verification.json",
+      "baseSha256": "70a08cbebee09c0c129999f4ca6c3cc217703018cc6b257bd898e214add4bda1",
+      "preRestoreSha256": "2e27b99a2177d8f6e1b6200b7452438b9774d1e5b6d9bf4b57bb7c6686c1513b",
+      "postRestoreSha256": "70a08cbebee09c0c129999f4ca6c3cc217703018cc6b257bd898e214add4bda1",
+      "fullDiff": "--- 8d4cc49fa39a0587e5a0b745a4cca7d2b11bc580:results/final-verification.json\n+++ working-tree:results/final-verification.json\n@@ -6,6 +6,7 @@\n     \"errors\": 0\n   },\n   \"selectorEquivalence\": {\n+    \"scopeNote\": \"Historical Python evaluator/model agreement only; not production-Java execution and not the full 2e0954 selector with NO_COVERAGE.\",\n     \"mutationOccurrences\": 4010,\n     \"uniqueSelectorCases\": 1351,\n     \"exactMatches\": 4010,\n",
+      "onlyMetadataOrDescriptionChanged": true
+    }
+  ]
+}

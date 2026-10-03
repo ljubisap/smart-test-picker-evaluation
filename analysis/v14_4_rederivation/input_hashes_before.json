@@ -1,0 +1,685 @@
+{
+  "files": [
+    {
+      "path": "analysis/oracle_exclusions.json",
+      "sha256": "6931108631cef28a39712a72123746faf21e5fc77198b37255bc14a6be87c093",
+      "size": 902
+    },
+    {
+      "path": "analysis/projects.json",
+      "sha256": "4108051bbb37a0671c342e4a7d8de67dcfb5b0eada9913d7f07e7af4a5c3338d",
+      "size": 2750
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.arch.Processor/mutations.xml",
+      "sha256": "5c6a6a1fa27af797a300dd7c48d3e06d58090df8c6379f4ec4631e46fa7ce713",
+      "size": 15268
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.builder.HashCodeBuilder/mutations.xml",
+      "sha256": "626e8f342f08ceeb9c6ae7978c252f2e39e1c6a162fdccdd4af4a4ae0d328af8",
+      "size": 314964
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.compare.ComparableUtils/mutations.xml",
+      "sha256": "456fe2b22eb1b8dd76b0444961ec4cd594f394408abc11212fc9bb0068a71670",
+      "size": 93767
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.concurrent.locks.LockingVisitors/mutations.xml",
+      "sha256": "3bf6abec0cdd96f78755e6c05b2c0f518f347d88ab5ea59227ebc68213e3ce5d",
+      "size": 9036
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.event.EventListenerSupport/mutations.xml",
+      "sha256": "776ce7ea03b8b548692aa9ed80dde9d8db09919adc39a3cc1f70ce078a9dde84",
+      "size": 52210
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.event.EventUtils/mutations.xml",
+      "sha256": "8cb7caea60499360834ee88e3f725aee40361f0764105ae19501fa520d79b7ec",
+      "size": 1800
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.math.Fraction/mutations.xml",
+      "sha256": "7b3decc14eafd58ef505b12061de0e937ad266f7fbb22beb5727e753417e59f7",
+      "size": 475874
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.math.IEEE754rUtils/mutations.xml",
+      "sha256": "9a7ee473a6a1b5e66de31fbecdde6e47bcf13a907958dfb7c46f858be556a656",
+      "size": 43090
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.mutable.MutableFloat/mutations.xml",
+      "sha256": "34bf840b924f9f6474184e6ec4fbbcae05096100b76f44c7275160f30eb9ef36",
+      "size": 44506
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.mutable.MutableObject/mutations.xml",
+      "sha256": "172b3355949b0671f71cbd3c489bb976ed8ca6c2ae5209773f432f462c051aac",
+      "size": 10413
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.reflect.FieldUtils/mutations.xml",
+      "sha256": "75eb6084a58554ba0d7993ecbd4b4116933f8d291efc965d785cc77fc2c7e876",
+      "size": 176419
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.reflect.MethodUtils/mutations.xml",
+      "sha256": "2d4e311266158651cdd8d04d56a19520fbde96904c615faa41d8a981b682cc0f",
+      "size": 584255
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.stream.LangCollectors/mutations.xml",
+      "sha256": "89c33d4ebe702e10c6d5de042e4dd0267b8935a3aaea4e1fc88a1fcf6a968794",
+      "size": 13500
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.stream.Streams/mutations.xml",
+      "sha256": "fe250df3b91d283686c167490ed6c5b2ee7e67a710cf6c06891850512ad7f2d9",
+      "size": 54921
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.text.FormattableUtils/mutations.xml",
+      "sha256": "774d601d800d84cfd9d48375780d16ea2cb13b95a0b4c65f30e6e09f3040d163",
+      "size": 38351
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.text.translate.EntityArrays/mutations.xml",
+      "sha256": "fb36b9fa08dfcb448678218a390202b56aa75700f07ae2f0bceaa35935881810",
+      "size": 11272
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.text.translate.NumericEntityEscaper/mutations.xml",
+      "sha256": "089058aea0a108040dff95f7f188712c634155d7b8eea557e656ae16b17427ad",
+      "size": 29598
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.tuple.ImmutablePair/mutations.xml",
+      "sha256": "e298669396b497e8b992c82c6ee43fedcdf08b1109e813676234c1368db5abbf",
+      "size": 62203
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.tuple.Pair/mutations.xml",
+      "sha256": "8ba74ec79b635779fa324e8b9b6a3b5938d1aab6670e47cb9b810e9bcee8ebbc",
+      "size": 70395
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.util.FluentBitSet/mutations.xml",
+      "sha256": "7a059f35d7d47960d92273bd3c5cfcb14e5a7b6d0fc0edc1c63f8c8f437dacda",
+      "size": 154614
+    },
+    {
+      "path": "commons-lang/results/per-class/org.apache.commons.lang3.util.IterableStringTokenizer/mutations.xml",
+      "sha256": "2633a5bfc3fc404a299854527e5ba415c4c830eb7899526d40567640612a5014",
+      "size": 37548
+    },
+    {
+      "path": "commons-lang/results/test-coverage-map.json.gz",
+      "sha256": "75198f3e41ccbfd090295c7a1defa02380cde7618e9ac71cd7b7fa9b35f04384",
+      "size": 400117
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.DefaultScheduler/mutations.xml",
+      "sha256": "8b9628d04d469dcad5615750aff7ceb0f91ac1be35f6a6f04d67b419af109712",
+      "size": 1401001
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.ExecutionGraphHandler/mutations.xml",
+      "sha256": "ebe4f46564cd69e7287c924680007bb0fb2c224d648a982fe9ed02e85ba7006a",
+      "size": 26373
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator/mutations.xml",
+      "sha256": "460bdd44efadfd90f2ed95e2175161469e49001d91c364a11f40ea5d4781d23f",
+      "size": 308272
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology/mutations.xml",
+      "sha256": "eff94c5d36d51f056bd5118dc2051a6a57c497d695bc35ac24950b1c67209e9f",
+      "size": 241552
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph/mutations.xml",
+      "sha256": "35ea07856e87d92c12b100cd61ea6555f46046ad6290ec47e3bde6ebff35855a",
+      "size": 132714
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager/mutations.xml",
+      "sha256": "5082632f9bf3571d5c72261b280d3a0ecfbe7a87d4ee658a8a0f1582f4083a20",
+      "size": 300288
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.Executing/mutations.xml",
+      "sha256": "e1b7dd4c214cf55793009ee784bb974cb0918a7abd1fa2be4e26f61507c20339",
+      "size": 369309
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint/mutations.xml",
+      "sha256": "eb30e0938a190d1c051a20153305cd464fb1ce9907b90f682b55a0a5985bf2fa",
+      "size": 75271
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator/mutations.xml",
+      "sha256": "253e11140eac75807cd306a766362de8d83aa94f2703c5b92e1c210f4753b475",
+      "size": 132054
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler/mutations.xml",
+      "sha256": "1c5da026b8e06384cc5e12ae88b636bd063052d6e599090a358dfd3568b6d455",
+      "size": 411082
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider/mutations.xml",
+      "sha256": "72a09c92048b9a01608fcd124f5d715bda645e435528a91f2e3c4b521c539adc",
+      "size": 621917
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer/mutations.xml",
+      "sha256": "6a9b791f37817d45ff2e79c79d89cd0add0a293059446131885ea4af7276d575",
+      "size": 189213
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry/mutations.xml",
+      "sha256": "70344a5f51733f2df74e964e04cf448cd6d55630a7a14c557e0c7debfe4ff3eb",
+      "size": 20956
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector/mutations.xml",
+      "sha256": "e703b8f1602ae5b9a0785ef33a29bc745fa4baa94740e2eaa8db1c35c3599510",
+      "size": 393047
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl/mutations.xml",
+      "sha256": "fdcb96f92462cf1fcf28989c4389038e393aa2b48ae62d9d4a3293f512b8a9a2",
+      "size": 36526
+    },
+    {
+      "path": "flink/results/per-class/org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy/mutations.xml",
+      "sha256": "0bba36f2ffa023a65c6eec96f886f74a03b6a0d45120056e74615092092293d2",
+      "size": 358839
+    },
+    {
+      "path": "flink/results/test-coverage-map.json.gz",
+      "sha256": "766a16502d728157639fe9180cf1d226106e2ef185e7419d41ed0eb69c777a02",
+      "size": 1358505
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml",
+      "sha256": "e12296cf9e0c139103f5b40e6caa0a39bd38a44ac9ffb8fd43d6f11b1c7249eb",
+      "size": 4172763
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml",
+      "sha256": "b7d8cd8050d960a901e12fd206dce5002e4b568fea25ff79cdc7b730470a6054",
+      "size": 7579768
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor/mutations.xml",
+      "sha256": "bc4d1ac42c61ee0c53e922f4da79184bb79f9fd884c445be28c31d163bcd6dc8",
+      "size": 5751814
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor/mutations.xml",
+      "sha256": "07b55a78e2092b554fb645bd7627a934f27dae235b53aa735dcfbbce32b856cc",
+      "size": 10738262
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl/mutations.xml",
+      "sha256": "bdf4fbdb67edb6164aaf09448d0a617ea194a3ff7a8f9c8292654616da1cb400",
+      "size": 20128721
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml",
+      "sha256": "8bc1cff1460297429591832ccc2a656568c41fa8c0495c3309d1b804d8812428",
+      "size": 2805601
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml",
+      "sha256": "bd9f151d93cb2d60f6e924ed931a98e20b2ff81ec7d3228b9e7806b17fdce4e0",
+      "size": 8781389
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.event.internal.AbstractFlushingEventListener/mutations.xml",
+      "sha256": "1c4bc72d59aa4b7faf1db43fa7e0e31a7c50893a8d142a966a08beed3a46573c",
+      "size": 9683634
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.event.internal.DefaultDeleteEventListener/mutations.xml",
+      "sha256": "aab8ede32bc1d56ba3fb7c577012536e8152ed63a6da3facafb6d1162665deab",
+      "size": 1085347
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.event.internal.DefaultLoadEventListener/mutations.xml",
+      "sha256": "6b7e08732376ad76a9900c28cc570c4fdfc544ebf59e5c53c73919c148be75a5",
+      "size": 5199377
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.event.internal.DefaultPersistEventListener/mutations.xml",
+      "sha256": "07818644350ffb1db529a36ec46024d7a415c1726fe12d6df2c13fb9ab35fef8",
+      "size": 2084580
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.event.internal.DefaultRefreshEventListener/mutations.xml",
+      "sha256": "379ef82577f9a2d7a6007b7336a5add9d4b554929e2485335945272c2f9aebe7",
+      "size": 57064
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackDefinitionResolver/mutations.xml",
+      "sha256": "16128cbf907b1a0be05e95d6028336fedcf1c9a66f2b9417d5964aaab7e27040",
+      "size": 218232
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackRegistryImpl/mutations.xml",
+      "sha256": "66cd9990f7d3324ea194b4e36830cb93c91807b34260d5530f2b14ea9c4ae473",
+      "size": 194411
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.proxy.AbstractLazyInitializer/mutations.xml",
+      "sha256": "de724fd1d9491cafbab62e06d904e1d5cc041332692c60fcdbd0c61fd5e250fc",
+      "size": 1061438
+    },
+    {
+      "path": "hibernate/results/per-class/org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory/mutations.xml",
+      "sha256": "7710b0517802e780e142eea06d9f24ab3d8a8e44fffa979d448f6e86863ba698",
+      "size": 161063
+    },
+    {
+      "path": "hibernate/results/test-coverage-map.json.gz",
+      "sha256": "ff735784a784662121d89f07e5493d937bc739f622bcce1aaef2ae79a618aa76",
+      "size": 38222702
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.Graphs/mutations.xml",
+      "sha256": "f344698e88f4e247b6c63042090d1eb271f0a02b11a1eb4701c7cefce9b602f7",
+      "size": 96938
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder/mutations.xml",
+      "sha256": "f08c63912ac0472dc72255a08cbe18c086607a0d1a2fb1afcc2dc01486a27aff",
+      "size": 28098
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.clustering.LabelPropagationClustering/mutations.xml",
+      "sha256": "e6c52161f9acb17f39856f16b1429f21c38c8506ad2b76db5acc8e3f4b11589c",
+      "size": 8256
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.color.GreedyColoring/mutations.xml",
+      "sha256": "7f08a041a1603013d65a065ceb129eaa85b47679556e88c26e6a2e7a9c5b202e",
+      "size": 93863
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector/mutations.xml",
+      "sha256": "3eda44dee99782008fe19ebfb1f2bf69202154be622cf543f910fb8b47d4e631",
+      "size": 107227
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles/mutations.xml",
+      "sha256": "aa74bf988b260927698173c2fd217a7b43c01aa39254a812701d823df1f2c702",
+      "size": 31672
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.drawing.model.ListenableLayoutModel2D/mutations.xml",
+      "sha256": "58ee5b99e039bf3de55ac0fecf25c133d3440f374ff43882c43f79b1eae7a4c7",
+      "size": 15290
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.flow.PushRelabelMFImpl/mutations.xml",
+      "sha256": "aa0177ba9550e014a52f5eff6378dd8082425c3526aada463f86103f3ec11bfe",
+      "size": 1503635
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector/mutations.xml",
+      "sha256": "f7aa75fb91ba5951b81965d747cb508017066f2bd98aa55f4396dc9bd7e126c1",
+      "size": 82873
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.lca.BinaryLiftingLCAFinder/mutations.xml",
+      "sha256": "3d0bc1b969aaf4f20e5656ca5673bd8712ddd3c861d7724a0a4b754b06692946",
+      "size": 307409
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction/mutations.xml",
+      "sha256": "66a05b42f50c91ba7b253b27b2abf1c066446ec41a1a5e6b3a8e2f9a19757701",
+      "size": 6024
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml.gz",
+      "sha256": "706efa686f6adef5358e192e225724593ff1e5e533a3d0d13dc4a573fb1b3cca",
+      "size": 3242402
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.scoring.ClosenessCentrality/mutations.xml",
+      "sha256": "3677a5bf9d8bde4dce32d8c9d0cd506b0bbfb3c98c4ec57cd84c1a24bb74e60b",
+      "size": 68853
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml",
+      "sha256": "cfeda573815f3893f2263405a6b5300cc5af3a2c66fb4c9fd6cb4974a755237b",
+      "size": 123561
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree/mutations.xml",
+      "sha256": "307b99d06fb49cebd9df0318833f43e80b97648c90440dfcab6e40ffa82741c1",
+      "size": 245241
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml",
+      "sha256": "df04c5b13bfdc5943b2800456207aaf86618345afd7ec8c1e55fdb95fc3746f4",
+      "size": 34748
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.util.UnorderedPair/mutations.xml",
+      "sha256": "15aba542e9c3e51fc37dd7725297724149c2f0f8c9e9322ec92aa42709eca2fb",
+      "size": 162219
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.vertexcover.RecursiveExactVCImpl/mutations.xml",
+      "sha256": "6d2c6564184b1d754a443b9bda81602eb442cfb9100bcec145e79b50046244e0",
+      "size": 1280148
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.generate.netgen.Distributor/mutations.xml",
+      "sha256": "76de04bef8c4e4da939a4c54461a7c9fb354a1d50c29c70e92d740464baed43b",
+      "size": 143154
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.graph.specifics.UndirectedSpecifics/mutations.xml",
+      "sha256": "d2e15b3b2a9e8b0bfbb72a0e1334435e5b3f988f540691d7ae283b3f26a50eab",
+      "size": 216101
+    },
+    {
+      "path": "jgrapht/results/test-coverage-map.json.gz",
+      "sha256": "851e4287a57b981d8a9af930e9774656987f8e5b8a392ec53bb0850422dbcdc5",
+      "size": 329870
+    },
+    {
+      "path": "petclinic/results/mutations.xml",
+      "sha256": "752972e47c85b64c68f83e400eee9a2aed54b5b4e2ed1c48ca9418c8864047f4",
+      "size": 285189
+    },
+    {
+      "path": "petclinic/results/test-coverage-map.json",
+      "sha256": "fb8ace81fab33aac953a26fa6d340ce5f486771295f2ef50a779f4be0981152a",
+      "size": 115109
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.AnnotationLiteralProcessor/mutations.xml",
+      "sha256": "4fbbf379431f51a1318172a8aca572e92e5cfc82f2451e44d6ead9c4b7124b26",
+      "size": 3424456
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.Annotations/mutations.xml",
+      "sha256": "805294913acb4f25ab4c811dd583e4f1a8671e3feaba5a56d952ad810b93f30a",
+      "size": 1660389
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.BeanArchives/mutations.xml",
+      "sha256": "efd600bc5a983346ba9ae45857425b9162993e968d2fa06ebcb7893ab33d6c70",
+      "size": 3727307
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.BeanResolverImpl/mutations.xml",
+      "sha256": "e9792b4b53d31a09f799448aa7f4c5c7b3e8bd27d19b3732b53a6b61e36d0535",
+      "size": 2438817
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.ClientProxyGenerator/mutations.xml",
+      "sha256": "041870158fa3781099d210cd425b1ba03fb827b56017aa6b9f795224870a220a",
+      "size": 4740564
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.ComponentsProviderGenerator/mutations.xml",
+      "sha256": "4d85dfdea4fc0aa68f43cfff4bab7b5bcd347ecb95b09a0cb991ec3ea467d610",
+      "size": 8427622
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.ContextInstancesGenerator/mutations.xml",
+      "sha256": "ae525c85535b7cf4c2abc61e2fe230539f64a85674da5cd4fd5ebce1384dc6c9",
+      "size": 132152
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.DecoratorGenerator/mutations.xml",
+      "sha256": "c8a208bb134a57204516e83e40733c7e6e35edfbe7acb7f7b3bdd2a8eacb282c",
+      "size": 1615074
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.Injection/mutations.xml",
+      "sha256": "2ae69c0864df72e4682edcfd437f8bc1fdc4e13c5f7541ee3e745aa41b83d365",
+      "size": 10976169
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.InjectionPointInfo/mutations.xml",
+      "sha256": "8d928a679204d5b3c4a6887882be3c57005e376b45742d00fbf596a65909cba4",
+      "size": 4778485
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.InterceptorGenerator/mutations.xml",
+      "sha256": "1a22d915e0a94a0f67028f0d25249f2c3d36d81357f0b903c0de51fcc704c4a8",
+      "size": 14983274
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.ObserverGenerator/mutations.xml",
+      "sha256": "d61fa7a8d46fb09b3548859c215086446d0313ffe061d1be6008f627b77dea46",
+      "size": 2543417
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.ObserverInfo/mutations.xml",
+      "sha256": "66041e83e28a15f9785fbe047b2003a35f78fc5c81c014cf76aac3b2109eba9e",
+      "size": 1412118
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.Types/mutations.xml",
+      "sha256": "e8f255c380b2f1ced6f8b9894d36c79f7beb7b1e0db42c65910eb1b0a70b4e9d",
+      "size": 9979435
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl/mutations.xml",
+      "sha256": "169cd52bcb1be809df07a654f3b5c56ebc1db07051767c5afe3101508872fd02",
+      "size": 100267
+    },
+    {
+      "path": "quarkus/results/per-class/io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint/mutations.xml",
+      "sha256": "81e2c34cd0d74803ba245bcb713627f5e770b4766d104c424b0a1c1a8719620c",
+      "size": 2898455
+    },
+    {
+      "path": "quarkus/results/test-coverage-map.json.gz",
+      "sha256": "75a90982597df90940ad93995fe5e33a30011bcbddc85d46452a599dbea61717",
+      "size": 2253536
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.annotation.RepeatableContainers/mutations.xml",
+      "sha256": "c0455d81da44c93b6010b347d0b08a0157b8595b7ede9ade8186526d5d9a5fe5",
+      "size": 518326
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.codec.AbstractDataBufferDecoder/mutations.xml",
+      "sha256": "a3d8df85f74d2cf33c56e8e2991978435d927919c0b9bba00db2b15816314d6c",
+      "size": 26731
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml",
+      "sha256": "7283b0e6e6d56b4aa119fa4c9b1c547bd9f95cce192657de5b498b6c5315c13f",
+      "size": 2596466
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.convert.converter.ConvertingComparator/mutations.xml",
+      "sha256": "9edde7ab1dd3cc67666182c0b3953dad98691e972be015da1429a0a265e02cf6",
+      "size": 12174
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml",
+      "sha256": "f4a14aa5309d4c662083c599b1fcfb26d62253b5aa78164a91312e2602c1f4ee",
+      "size": 2829212
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.env.PropertySource/mutations.xml",
+      "sha256": "8ae91ea8406fc63ea80d570e9567ecf9a4231b1d72bbf92ff4bafdc08f6c7bd8",
+      "size": 215679
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.log.LogMessage/mutations.xml",
+      "sha256": "71df125dec68c2138101d5d8457b93cc27c35ef2c8b75eba8c1aa9a05c1c7fdd",
+      "size": 13433
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.style.DefaultValueStyler/mutations.xml",
+      "sha256": "81f647bd2591f0dccb5b9fa4ed9f8db14f8beac9b4f9ebaca62f4a5c11488bf0",
+      "size": 151174
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml",
+      "sha256": "0b348ae58b43701fa54f0bf0e75c2e737e726525c6aeea5999e28f8f931afc00",
+      "size": 49485
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml",
+      "sha256": "faedd1cae313d694f522fb2939e438f236def61251abba684f5f279ba89235b6",
+      "size": 105789
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml",
+      "sha256": "1e76e868036770226fe50a2c25cb0746dc6e36bb8db043ae5407d3aa8f3d77ea",
+      "size": 114582
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter/mutations.xml",
+      "sha256": "d258d152e8f0fd4c8c50d13fe27594b78c8c8f2b8465fe664874974486022a60",
+      "size": 55347
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.util.Assert/mutations.xml",
+      "sha256": "e10a8e4746a1610685f1058dac40419594033d4a13013f667701a5aad9f61414",
+      "size": 388779
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml",
+      "sha256": "3b69308eb9c1dc5a67695798409eb5af6952b4c181d9926cb71fff194b608780",
+      "size": 37859
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.util.concurrent.ListenableFutureCallbackRegistry/mutations.xml",
+      "sha256": "fd62f08a120ffeb095fb6967b0d5ecac4a04b51327f75e96ae328078fef31c5f",
+      "size": 39976
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.util.function.ThrowingConsumer/mutations.xml",
+      "sha256": "2a0f35e7164a806bb0ea97f26b7154cedc0a005e73cfa568c0e648ed932e519b",
+      "size": 8233
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.util.unit.DataSize/mutations.xml",
+      "sha256": "514243c9b548be66ff94b18c5172b00aabcbe7dd0e03736ca01058ea9d040901",
+      "size": 147160
+    },
+    {
+      "path": "spring-core/results/per-class/org.springframework.util.xml.AbstractStaxXMLReader/mutations.xml",
+      "sha256": "53917b5a75de369d47e38ee58ec7b282fc37d92b8e29295c80e3af03880aafd4",
+      "size": 90600
+    },
+    {
+      "path": "spring-core/results/test-coverage-map.json",
+      "sha256": "936becf03857bfa0d22958ca88053f4c8bfabc85651f822f4ef51837bb2813b5",
+      "size": 17719303
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.access.expression.SecurityExpressionRoot/mutations.xml",
+      "sha256": "e242716ac1f2b273be6087a036f5eac5909b43a2bfcd681dd51ab9261f6d19c8",
+      "size": 176506
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml",
+      "sha256": "6a08dac2b5a2869e3644a2a957b0f0c6e17671515e642566e57742d8f4f4e123",
+      "size": 147795
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml",
+      "sha256": "b249a3b8ca03391a6472bec07d9b0416fe4c51dc1facff3511f04a43dd0164df",
+      "size": 113580
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.authentication.ProviderManager/mutations.xml",
+      "sha256": "c38ced06651f25fb5953d6022642c37ca84f803e4c4ebaf3f990671e693a6bb8",
+      "size": 197753
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider/mutations.xml",
+      "sha256": "331205ade1496497a42d5bee1ddc5eba52a23299073d21da8de27278b32a2952",
+      "size": 169339
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml",
+      "sha256": "9ddd5d02e55c3d8ed90cd16b862bebb2e412136da24d38f81bbf2a0b835242b2",
+      "size": 458860
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor/mutations.xml",
+      "sha256": "bb3f6ca96ed3dac652549eefc51728c214b1c0c0a1071f4258af35a66ffaff77",
+      "size": 68414
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.concurrent.DelegatingSecurityContextRunnable/mutations.xml",
+      "sha256": "d6cd0a8c3c2040669525415f7d783183591ef966a38c5858ad7cf285148e9112",
+      "size": 83063
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.converter.RsaKeyConverters/mutations.xml",
+      "sha256": "11ac631c71854bb04d71d8056ebf2591f04533b44f3335744aa62580f0003113",
+      "size": 48573
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner/mutations.xml",
+      "sha256": "2ec07ec69d13ea7c18a8a22c39fa8ae258fd9203213d049400db1e83568e3aa0",
+      "size": 657849
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml",
+      "sha256": "76f0d1ee39246dde685dc7066587ee2bb71986c4078994e44b43fec0c59d6e10",
+      "size": 185474
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.core.context.SecurityContextHolder/mutations.xml",
+      "sha256": "3c70a2f44b321cd7848d9c4550c5915f8797c174706dde5e92ba1f63d2d3d437",
+      "size": 24338
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.core.session.SessionRegistryImpl/mutations.xml",
+      "sha256": "a9d406941194e47f0ad559491ad89f1ab41296ca9aad9a6342b00490653b743f",
+      "size": 58912
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.core.token.KeyBasedPersistenceTokenService/mutations.xml",
+      "sha256": "525185e9c89692975165f62d5f40e294556b149a378caaaf73a2fe6b7d38ea93",
+      "size": 71817
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.core.userdetails.User/mutations.xml",
+      "sha256": "54b59e55bb9e294c739057384a6dbc38c6c91e0651a72a87183ae182bddf4754",
+      "size": 275277
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.jackson2.SecurityJackson2Modules/mutations.xml",
+      "sha256": "5ad8f8378a29105b5849b79fd9ec59caca01418d6529780110ce5cc7e8b7a046",
+      "size": 312725
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.provisioning.InMemoryUserDetailsManager/mutations.xml",
+      "sha256": "fdce8b8437ccf0c514b841485e82ce54cfc4923d560d7ed5fd56009ae65559b7",
+      "size": 115187
+    },
+    {
+      "path": "spring-security/results/per-class/org.springframework.security.util.matcher.InetAddressMatchers/mutations.xml",
+      "sha256": "48b54f9e898ec15ebc40761ffa2898710dc42f8de7b43637d1abe626ec787b8a",
+      "size": 102070
+    },
+    {
+      "path": "spring-security/results/test-coverage-map.json.gz",
+      "sha256": "f63447db288566e5b3d86a9ffd1051843328cd3bb5d14c9c93aa1e14e7de86ac",
+      "size": 160991
+    }
+  ],
+  "aggregateSha256": "3042e480bc73e2ef0559da6ac6ba6e47a6608a5a441817a0ae481c02dfb96109"
+}

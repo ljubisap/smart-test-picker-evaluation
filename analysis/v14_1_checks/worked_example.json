@@ -1,0 +1,41 @@
+{
+  "source": "results/failure_taxonomy.json",
+  "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Ljava/lang/Class;Ljava/lang/Class;)Z|133|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:17",
+  "footprintType": "A",
+  "recoveredByConstructorRule": true,
+  "killingTests": [
+    {
+      "pitNormalized": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass",
+      "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertIllegalArgumentNullTargetTypeFromClass()]",
+      "resolutionMode": "base-name-single",
+      "resolvedEntries": [
+        {
+          "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467",
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.convert.support.GenericConversionService#<init>"
+          ],
+          "targetClassPresent": true,
+          "type": "A"
+        }
+      ]
+    },
+    {
+      "pitNormalized": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType",
+      "rawPitId": "org.springframework.core.convert.support.GenericConversionServiceTests.[engine:junit-jupiter]/[class:org.springframework.core.convert.support.GenericConversionServiceTests]/[method:canConvertFromClassSourceTypeToNullTargetType()]",
+      "resolutionMode": "base-name-single",
+      "resolvedEntries": [
+        {
+          "coverageKey": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.convert.support.GenericConversionService#<init>"
+          ],
+          "targetClassPresent": true,
+          "type": "A"
+        }
+      ]
+    }
+  ],
+  "mitigationSource": "results/mitigation_comparison.json"
+}

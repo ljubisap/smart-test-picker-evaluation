@@ -1,0 +1,91 @@
+{
+  "stpCommit": "2e0954b5b590fb0b9da979c28b0d053e4ce9e5c9",
+  "stpTree": "7a61a4933a7f2b6a64aa06e4893ba61c9d26da33",
+  "worktree": "/Users/D061177/work/issta/joda-time-modern-study/stp",
+  "worktreeStatus": "",
+  "entryPoint": "com.sap.oss.smarttestpicker.mapper.CoverageMapReader.load(File)",
+  "loadedClassCodeSource": "file:/Users/D061177/work/issta/joda-time-modern-study/stp/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar",
+  "productionCallSite": "TestSelector.java:71-76,277-295 at 2e0954b5b590",
+  "adapterUsed": false,
+  "buildPerformed": false,
+  "artifactNote": "Pre-existing common JAR in the detached exact-commit worktree; no Gradle/Maven build was run for Part I.",
+  "javaVersion": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment SapMachine (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM SapMachine (build 21.0.12.1+1-LTS, mixed mode, sharing)",
+  "classpath": [
+    "/Users/D061177/work/issta/joda-time-modern-study/stp/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar",
+    "/Users/D061177/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar"
+  ],
+  "hashes": {
+    "stpCommonJarSha256": "0550a96f59375eb6baa04e361aa0321213a632bf7a2b62f34615c0a8cf4a8472",
+    "coverageMapReaderClassSha256": "8935230f792e67bdaa8129bb7d3d998b1fe4ac09d9f91ddc2acadfe1d47299da",
+    "coverageMapReaderSourceAtPinSha256": "3be0fd097bac350ad6aa58c9dc999c56a6a2d36cd8c331ef2cf084de763a669a",
+    "gsonJarSha256": "4241c14a7727c34feea6507ec801318a3d4a90f070e4525681079fb94ee4c593",
+    "probeSourceSha256": "e6ebd04b19c770e43b6cb4c8015c9404b21d71cb0e980160a456b20224c99357"
+  },
+  "command": [
+    "jshell",
+    "-J-Djava.util.prefs.userRoot=/tmp/stp-v14-4-jshell-prefs",
+    "--feedback",
+    "verbose",
+    "--class-path",
+    "/Users/D061177/work/issta/joda-time-modern-study/stp/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar:/Users/D061177/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar",
+    "/Users/D061177/work/issta/smart-test-picker-evaluation/analysis/v14_4_rederivation/loader_probe.jsh"
+  ],
+  "maps": [
+    {
+      "project": "commons-lang",
+      "status": "ACCEPTED",
+      "loadedTestMappings": 4692,
+      "metadataNonNull": true,
+      "error": null
+    },
+    {
+      "project": "jgrapht",
+      "status": "ACCEPTED",
+      "loadedTestMappings": 2308,
+      "metadataNonNull": true,
+      "error": null
+    },
+    {
+      "project": "spring-core",
+      "status": "ACCEPTED",
+      "loadedTestMappings": 3624,
+      "metadataNonNull": true,
+      "error": null
+    },
+    {
+      "project": "petclinic",
+      "status": "ACCEPTED",
+      "loadedTestMappings": 52,
+      "metadataNonNull": true,
+      "error": null
+    },
+    {
+      "project": "flink",
+      "status": "ACCEPTED",
+      "loadedTestMappings": 665,
+      "metadataNonNull": true,
+      "error": null
+    },
+    {
+      "project": "spring-security",
+      "status": "ACCEPTED",
+      "loadedTestMappings": 1440,
+      "metadataNonNull": true,
+      "error": null
+    },
+    {
+      "project": "hibernate",
+      "status": "ACCEPTED",
+      "loadedTestMappings": 1099,
+      "metadataNonNull": true,
+      "error": null
+    },
+    {
+      "project": "quarkus",
+      "status": "ACCEPTED",
+      "loadedTestMappings": 684,
+      "metadataNonNull": true,
+      "error": null
+    }
+  ]
+}

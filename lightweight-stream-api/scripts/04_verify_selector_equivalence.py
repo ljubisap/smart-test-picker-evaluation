@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Verify Lightweight-Stream-API evaluator selection against selector semantics."""
+"""Verify evaluator selection against the historical Python edge-only model.
+
+This does not execute Java and does not cover the production NO_COVERAGE branch.
+"""
 
 import argparse
 import json
@@ -50,7 +53,7 @@ def main():
                     "class": key[0],
                     "method": key[1],
                     "evaluatorOnly": sorted(actual - expected),
-                    "productionModelOnly": sorted(expected - actual),
+                    "edgeOnlyModelOnly": sorted(expected - actual),
                 })
 
     report = {

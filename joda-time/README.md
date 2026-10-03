@@ -10,4 +10,4 @@ Result: 1,241 PIT mutations, 896 KILLED, and 896/896 STP-inclusive KILLED mutant
 - `COMMANDS.md`: reproduction commands
 - `results/test-coverage-map.json.gz`: canonical per-test map
 - `results/per-class/`: one PIT full-matrix run per frozen class
-- `results/aggregated/`: per-mutant results, baselines, mitigation, and selector equivalence
+- `results/aggregated/`: per-mutant results, baselines, mitigation, and historical Python evaluator/model agreement

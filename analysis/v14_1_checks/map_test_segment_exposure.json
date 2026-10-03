@@ -1,0 +1,98 @@
+{
+  "projects": {
+    "commons-lang": {
+      "coverageMap": "commons-lang/results/test-coverage-map.json.gz",
+      "mappedProductionClassesWithTestSegment": [],
+      "mappedProductionClassCount": 0,
+      "noCoverageLogicalTests": 0,
+      "noCoverageIdentities": []
+    },
+    "jgrapht": {
+      "coverageMap": "jgrapht/results/test-coverage-map.json.gz",
+      "mappedProductionClassesWithTestSegment": [],
+      "mappedProductionClassCount": 0,
+      "noCoverageLogicalTests": 1,
+      "noCoverageIdentities": [
+        "GraphTestsTest#failRequireIsWeightedOnNull_761695b"
+      ]
+    },
+    "spring-core": {
+      "coverageMap": "spring-core/results/test-coverage-map.json",
+      "mappedProductionClassesWithTestSegment": [],
+      "mappedProductionClassCount": 0,
+      "noCoverageLogicalTests": 0,
+      "noCoverageIdentities": []
+    },
+    "petclinic": {
+      "coverageMap": "petclinic/results/test-coverage-map.json",
+      "mappedProductionClassesWithTestSegment": [],
+      "mappedProductionClassCount": 0,
+      "noCoverageLogicalTests": 0,
+      "noCoverageIdentities": []
+    },
+    "flink": {
+      "coverageMap": "flink/results/test-coverage-map.json.gz",
+      "mappedProductionClassesWithTestSegment": [],
+      "mappedProductionClassCount": 0,
+      "noCoverageLogicalTests": 1,
+      "noCoverageIdentities": [
+        "ExceptionHistoryEntryTest#testNullExecution_3ace619"
+      ]
+    },
+    "spring-security": {
+      "coverageMap": "spring-security/results/test-coverage-map.json.gz",
+      "mappedProductionClassesWithTestSegment": [],
+      "mappedProductionClassCount": 0,
+      "noCoverageLogicalTests": 23,
+      "noCoverageIdentities": [
+        "AllAuthoritiesAuthorizationManagerTests#hasAllAuthoritiesWhenNullAuthoritiesThenIllegalArgumentException_5017ead",
+        "AllAuthoritiesAuthorizationManagerTests#hasAllAuthortiesWhenEmptyAuthoritiesThenIllegalArgumentException_a1b2fae",
+        "AllAuthoritiesReactiveAuthorizationManagerTests#hasAllAuthoritiesWhenNullAuthoritiesThenIllegalArgumentException_44c148a",
+        "AllAuthoritiesReactiveAuthorizationManagerTests#hasAllAuthortiesWhenEmptyAuthoritiesThenIllegalArgumentException_7ec48d8",
+        "AllRequiredFactorsAuthorizationManagerTests#anyOfWhenEmptyManagersThenIllegalArgumentException_497fa50",
+        "AnonymousAuthenticationTokenTests#testNoArgConstructorDoesntExist_4640351",
+        "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException_4acbb6d",
+        "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenNullThenException_666eb63",
+        "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException_224748b",
+        "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException_5281bf4",
+        "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException_85c3cde",
+        "ConditionalAuthorizationManagerTests#whenWhenConditionIsNullThenThrowsException_69f789c",
+        "InMemoryConfigurationTests#jdk5Compatable_597fc95",
+        "JavaVersionTests#authenticationWhenJdk17ThenCorrectJdkCompatibility_6d1c60b",
+        "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull_5894d6c",
+        "RoleHierarchyUtilsTests#roleHierarchyFromMapWhenMapEmptyThenThrowsIllegalArgumentException_24ef6b7",
+        "RoleHierarchyUtilsTests#roleHierarchyFromMapWhenMapNullThenThrowsIllegalArgumentException_3f428aa",
+        "SpringSecurityCoreVersionTests#springVersionIsUpToDate_5872901",
+        "TestHelperTests#testCreateAuthorityList_f386994",
+        "TestingAuthenticationProviderTests#testSupports_7f3f346",
+        "TestingAuthenticationTokenTests#constructorObjectObjectStringVargsWhenNullAuthorities_5ff165d",
+        "UserTests#testNoArgConstructorDoesntExist_6e0cf1f",
+        "UsernamePasswordAuthenticationTokenTests#testNoArgConstructorDoesntExist_4665653"
+      ]
+    },
+    "hibernate": {
+      "coverageMap": "hibernate/results/test-coverage-map.json.gz",
+      "mappedProductionClassesWithTestSegment": [],
+      "mappedProductionClassCount": 0,
+      "noCoverageLogicalTests": 0,
+      "noCoverageIdentities": []
+    },
+    "quarkus": {
+      "coverageMap": "quarkus/results/test-coverage-map.json.gz",
+      "mappedProductionClassesWithTestSegment": [],
+      "mappedProductionClassCount": 0,
+      "noCoverageLogicalTests": 9,
+      "noCoverageIdentities": [
+        "ReproducibilityCheckTest#diffChanged_6e5aeca",
+        "ReproducibilityCheckTest#diffCombined_63205fc",
+        "ReproducibilityCheckTest#diffEmpty_4f3814c",
+        "ReproducibilityCheckTest#diffExtra_4f3d238",
+        "ReproducibilityCheckTest#diffIdentical_71ba492",
+        "ReproducibilityCheckTest#diffMissing_20e0b5c",
+        "ReproducibilityCheckTest#dumpMismatchCreatesFiles_3fc764e",
+        "ReproducibilityCheckTest#dumpMismatchIndexContainsSha256_525f819",
+        "ReproducibilityCheckTest#dumpMismatchMissingAndExtra_5b64db7"
+      ]
+    }
+  }
+}
