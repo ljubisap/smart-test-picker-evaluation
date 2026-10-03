@@ -1,481 +1,427 @@
 {
-  "schemaVersion": 1,
-  "sourcePolicy": "STP 2e0954 U union (H if H else G)",
-  "projects": {
-    "commons-lang": {
+  "schemaVersion": 2,
+  "attemptedSubjects": 8,
+  "completedSubjects": 8,
+  "blockedSubjects": 0,
+  "projects": [
+    {
+      "project": "commons-lang",
+      "status": "COMPLETE",
       "logicalTests": 4692,
-      "emptyFootprintTests": 0,
-      "policies": {
-        "base": {
-          "eligible": 772,
-          "inclusive": 771,
-          "inclusivenessPctFullPrecision": 99.87046632124353,
-          "inclusivenessPct2dp": 99.87,
-          "meanSelectedFullPrecision": 17.010362694300518,
-          "meanSelected2dp": 17.01,
-          "selectedFractionPctFullPrecision": 0.3625396993670187,
-          "selectedFractionPct2dp": 0.36,
-          "reductionPctFullPrecision": 99.63746030063298,
-          "reductionPct2dp": 99.64
-        },
-        "constructor": {
-          "eligible": 772,
-          "inclusive": 771,
-          "inclusivenessPctFullPrecision": 99.87046632124353,
-          "inclusivenessPct2dp": 99.87,
-          "meanSelectedFullPrecision": 19.80699481865285,
-          "meanSelected2dp": 19.81,
-          "selectedFractionPctFullPrecision": 0.4221439645919192,
-          "selectedFractionPct2dp": 0.42,
-          "reductionPctFullPrecision": 99.57785603540808,
-          "reductionPct2dp": 99.58
-        },
-        "class": {
-          "eligible": 772,
-          "inclusive": 771,
-          "inclusivenessPctFullPrecision": 99.87046632124353,
-          "inclusivenessPct2dp": 99.87,
-          "meanSelectedFullPrecision": 50.11658031088083,
-          "meanSelected2dp": 50.12,
-          "selectedFractionPctFullPrecision": 1.0681283101210748,
-          "selectedFractionPct2dp": 1.07,
-          "reductionPctFullPrecision": 98.93187168987893,
-          "reductionPct2dp": 98.93
-        }
+      "sampledProductionClasses": 21,
+      "usableMutationProducingClasses": 21,
+      "totalPitMutations": 932,
+      "killedMutations": 772,
+      "stpInclusive": 771,
+      "inclusivenessPct": 99.87,
+      "avgSelected": 17.0,
+      "selectionRatePct": 0.36,
+      "reductionPct": 99.64,
+      "classLevel": {
+        "safe": 771,
+        "inclusivenessPct": 99.87,
+        "avgSelected": 50.1,
+        "selectionRatePct": 1.07,
+        "reductionPct": 98.93
       },
       "randomEqualBudget": {
-        "trials": 1000,
-        "seed": 42,
-        "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
-        "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
-        "monteCarloPctFullPrecision": 2.002979274611399,
-        "monteCarloPct2dp": 2.0,
-        "monteCarloStdPctFullPrecision": 0.4454269584418074,
-        "analyticalPctFullPrecision": 2.0249214128211848,
-        "analyticalPct2dp": 2.02,
-        "absoluteDifferencePercentagePoints": 0.021942138209785966
+        "inclusivenessPct": 2.03,
+        "analyticalInclusivenessPct": 2.02,
+        "avgSelected": 17.0,
+        "selectionRatePct": 0.36,
+        "reductionPct": 99.64,
+        "trials": 1000
+      },
+      "falseNegatives": 1,
+      "footprintTaxonomy": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 1,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 0,
+        "avgSelected": 19.8,
+        "inclusivenessPct": 99.87,
+        "safe": 771,
+        "selectionRatePct": 0.42
       }
     },
-    "jgrapht": {
+    {
+      "project": "jgrapht",
+      "status": "COMPLETE",
       "logicalTests": 2308,
-      "emptyFootprintTests": 1,
-      "policies": {
-        "base": {
-          "eligible": 517,
-          "inclusive": 516,
-          "inclusivenessPctFullPrecision": 99.80657640232108,
-          "inclusivenessPct2dp": 99.81,
-          "meanSelectedFullPrecision": 88.70406189555126,
-          "meanSelected2dp": 88.7,
-          "selectedFractionPctFullPrecision": 3.843330238108807,
-          "selectedFractionPct2dp": 3.84,
-          "reductionPctFullPrecision": 96.1566697618912,
-          "reductionPct2dp": 96.16
-        },
-        "constructor": {
-          "eligible": 517,
-          "inclusive": 517,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 97.94197292069633,
-          "meanSelected2dp": 97.94,
-          "selectedFractionPctFullPrecision": 4.243586348383723,
-          "selectedFractionPct2dp": 4.24,
-          "reductionPctFullPrecision": 95.75641365161627,
-          "reductionPct2dp": 95.76
-        },
-        "class": {
-          "eligible": 517,
-          "inclusive": 517,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 208.80270793036752,
-          "meanSelected2dp": 208.8,
-          "selectedFractionPctFullPrecision": 9.046911088837414,
-          "selectedFractionPct2dp": 9.05,
-          "reductionPctFullPrecision": 90.95308891116258,
-          "reductionPct2dp": 90.95
-        }
+      "sampledProductionClasses": 20,
+      "usableMutationProducingClasses": 20,
+      "totalPitMutations": 804,
+      "killedMutations": 517,
+      "stpInclusive": 516,
+      "inclusivenessPct": 99.81,
+      "avgSelected": 87.7,
+      "selectionRatePct": 3.8,
+      "reductionPct": 96.2,
+      "classLevel": {
+        "safe": 517,
+        "inclusivenessPct": 100.0,
+        "avgSelected": 207.8,
+        "selectionRatePct": 9.0,
+        "reductionPct": 91.0
       },
       "randomEqualBudget": {
-        "trials": 1000,
-        "seed": 42,
-        "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
-        "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
-        "monteCarloPctFullPrecision": 33.92727272727273,
-        "monteCarloPct2dp": 33.93,
-        "monteCarloStdPctFullPrecision": 1.3581144490811283,
-        "analyticalPctFullPrecision": 33.94303486467723,
-        "analyticalPct2dp": 33.94,
-        "absoluteDifferencePercentagePoints": 0.01576213740450072
+        "inclusivenessPct": 33.59,
+        "analyticalInclusivenessPct": 33.63,
+        "avgSelected": 87.7,
+        "selectionRatePct": 3.8,
+        "reductionPct": 96.2,
+        "trials": 1000
+      },
+      "falseNegatives": 1,
+      "footprintTaxonomy": {
+        "A": 1,
+        "B": 0,
+        "C": 0,
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 1,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 1,
+        "avgSelected": 96.9,
+        "inclusivenessPct": 100.0,
+        "safe": 517,
+        "selectionRatePct": 4.2
       }
     },
-    "spring-core": {
+    {
+      "project": "spring-core",
+      "status": "COMPLETE",
       "logicalTests": 3624,
-      "emptyFootprintTests": 0,
-      "policies": {
-        "base": {
-          "eligible": 454,
-          "inclusive": 443,
-          "inclusivenessPctFullPrecision": 97.57709251101322,
-          "inclusivenessPct2dp": 97.58,
-          "meanSelectedFullPrecision": 80.62995594713657,
-          "meanSelected2dp": 80.63,
-          "selectedFractionPctFullPrecision": 2.2248884091373227,
-          "selectedFractionPct2dp": 2.22,
-          "reductionPctFullPrecision": 97.77511159086268,
-          "reductionPct2dp": 97.78
-        },
-        "constructor": {
-          "eligible": 454,
-          "inclusive": 447,
-          "inclusivenessPctFullPrecision": 98.45814977973568,
-          "inclusivenessPct2dp": 98.46,
-          "meanSelectedFullPrecision": 84.931718061674,
-          "meanSelected2dp": 84.93,
-          "selectedFractionPctFullPrecision": 2.3435904542404526,
-          "selectedFractionPct2dp": 2.34,
-          "reductionPctFullPrecision": 97.65640954575954,
-          "reductionPct2dp": 97.66
-        },
-        "class": {
-          "eligible": 454,
-          "inclusive": 454,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 529.1828193832599,
-          "meanSelected2dp": 529.18,
-          "selectedFractionPctFullPrecision": 14.602174927794147,
-          "selectedFractionPct2dp": 14.6,
-          "reductionPctFullPrecision": 85.39782507220585,
-          "reductionPct2dp": 85.4
-        }
+      "sampledProductionClasses": 22,
+      "usableMutationProducingClasses": 18,
+      "totalPitMutations": 563,
+      "killedMutations": 454,
+      "stpInclusive": 443,
+      "inclusivenessPct": 97.58,
+      "avgSelected": 80.6,
+      "selectionRatePct": 2.22,
+      "reductionPct": 97.78,
+      "classLevel": {
+        "safe": 454,
+        "inclusivenessPct": 100.0,
+        "avgSelected": 529.2,
+        "selectionRatePct": 14.6,
+        "reductionPct": 85.4
       },
       "randomEqualBudget": {
-        "trials": 1000,
-        "seed": 42,
-        "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
-        "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
-        "monteCarloPctFullPrecision": 17.381277533039647,
-        "monteCarloPct2dp": 17.38,
-        "monteCarloStdPctFullPrecision": 1.0276004151837046,
-        "analyticalPctFullPrecision": 17.364902633258875,
-        "analyticalPct2dp": 17.36,
-        "absoluteDifferencePercentagePoints": 0.016374899780771557
+        "inclusivenessPct": 17.37,
+        "analyticalInclusivenessPct": 17.36,
+        "avgSelected": 80.6,
+        "selectionRatePct": 2.22,
+        "reductionPct": 97.78,
+        "trials": 1000
+      },
+      "falseNegatives": 11,
+      "footprintTaxonomy": {
+        "A": 4,
+        "B": 7,
+        "C": 0,
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 11,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 4,
+        "avgSelected": 84.9,
+        "inclusivenessPct": 98.46,
+        "safe": 447,
+        "selectionRatePct": 2.34
       }
     },
-    "petclinic": {
+    {
+      "project": "petclinic",
+      "status": "COMPLETE",
       "logicalTests": 52,
-      "emptyFootprintTests": 0,
-      "policies": {
-        "base": {
-          "eligible": 94,
-          "inclusive": 94,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 9.72340425531915,
-          "meanSelected2dp": 9.72,
-          "selectedFractionPctFullPrecision": 18.69885433715221,
-          "selectedFractionPct2dp": 18.7,
-          "reductionPctFullPrecision": 81.30114566284779,
-          "reductionPct2dp": 81.3
-        },
-        "constructor": {
-          "eligible": 94,
-          "inclusive": 94,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 11.712765957446809,
-          "meanSelected2dp": 11.71,
-          "selectedFractionPctFullPrecision": 22.52454991816694,
-          "selectedFractionPct2dp": 22.52,
-          "reductionPctFullPrecision": 77.47545008183306,
-          "reductionPct2dp": 77.48
-        },
-        "class": {
-          "eligible": 94,
-          "inclusive": 94,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 18.351063829787233,
-          "meanSelected2dp": 18.35,
-          "selectedFractionPctFullPrecision": 35.29050736497545,
-          "selectedFractionPct2dp": 35.29,
-          "reductionPctFullPrecision": 64.70949263502456,
-          "reductionPct2dp": 64.71
-        }
+      "sampledProductionClasses": 14,
+      "usableMutationProducingClasses": 14,
+      "totalPitMutations": 139,
+      "killedMutations": 94,
+      "stpInclusive": 94,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 9.7,
+      "selectionRatePct": 18.7,
+      "reductionPct": 81.3,
+      "classLevel": {
+        "safe": 94,
+        "inclusivenessPct": 100.0,
+        "avgSelected": 18.4,
+        "selectionRatePct": 35.29,
+        "reductionPct": 64.71
       },
       "randomEqualBudget": {
-        "trials": 1000,
-        "seed": 42,
-        "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
-        "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
-        "monteCarloPctFullPrecision": 35.88085106382979,
-        "monteCarloPct2dp": 35.88,
-        "monteCarloStdPctFullPrecision": 3.067450579175043,
-        "analyticalPctFullPrecision": 35.875574408630825,
-        "analyticalPct2dp": 35.88,
-        "absoluteDifferencePercentagePoints": 0.0052766551989620325
+        "inclusivenessPct": 35.97,
+        "analyticalInclusivenessPct": 35.88,
+        "avgSelected": 9.7,
+        "selectionRatePct": 18.7,
+        "reductionPct": 81.3,
+        "trials": 1000
+      },
+      "falseNegatives": 0,
+      "footprintTaxonomy": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 0,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 0,
+        "avgSelected": 11.7,
+        "inclusivenessPct": 100.0,
+        "safe": 94,
+        "selectionRatePct": 22.52
       }
     },
-    "flink": {
+    {
+      "project": "flink",
+      "status": "COMPLETE",
       "logicalTests": 665,
-      "emptyFootprintTests": 1,
-      "policies": {
-        "base": {
-          "eligible": 349,
-          "inclusive": 349,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 37.22636103151862,
-          "meanSelected2dp": 37.23,
-          "selectedFractionPctFullPrecision": 5.597949027296034,
-          "selectedFractionPct2dp": 5.6,
-          "reductionPctFullPrecision": 94.40205097270396,
-          "reductionPct2dp": 94.4
-        },
-        "constructor": {
-          "eligible": 349,
-          "inclusive": 349,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 39.36962750716332,
-          "meanSelected2dp": 39.37,
-          "selectedFractionPctFullPrecision": 5.920244737919297,
-          "selectedFractionPct2dp": 5.92,
-          "reductionPctFullPrecision": 94.07975526208071,
-          "reductionPct2dp": 94.08
-        },
-        "class": {
-          "eligible": 349,
-          "inclusive": 349,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 65.92836676217765,
-          "meanSelected2dp": 65.93,
-          "selectedFractionPctFullPrecision": 9.91404011461318,
-          "selectedFractionPct2dp": 9.91,
-          "reductionPctFullPrecision": 90.08595988538681,
-          "reductionPct2dp": 90.09
-        }
+      "sampledProductionClasses": 16,
+      "usableMutationProducingClasses": 16,
+      "totalPitMutations": 681,
+      "killedMutations": 349,
+      "stpInclusive": 349,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 36.23,
+      "selectionRatePct": 5.45,
+      "reductionPct": 94.55,
+      "classLevel": {
+        "name": "Class-level only",
+        "safe": 349,
+        "unsafe": 0,
+        "total": 349,
+        "inclusivenessPct": 100.0,
+        "avgSelected": 64.93,
+        "selectionRatePct": 9.76,
+        "reductionPct": 90.24
       },
       "randomEqualBudget": {
+        "name": "Random equal-budget",
         "trials": 1000,
         "seed": 42,
-        "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
-        "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
-        "monteCarloPctFullPrecision": 19.906303724928367,
-        "monteCarloPct2dp": 19.91,
-        "monteCarloStdPctFullPrecision": 1.7386027817415728,
-        "analyticalPctFullPrecision": 19.883193721087025,
-        "analyticalPct2dp": 19.88,
-        "absoluteDifferencePercentagePoints": 0.02311000384134232
+        "inclusivenessPct": 19.33,
+        "inclusivenessStdPct": 1.69,
+        "analyticalInclusivenessPct": 19.38,
+        "avgSelected": 36.23,
+        "selectionRatePct": 5.45,
+        "reductionPct": 94.55
+      },
+      "falseNegatives": 0,
+      "footprintTaxonomy": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 0,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 0,
+        "avgSelected": 38.4,
+        "inclusivenessPct": 100.0,
+        "safe": 349,
+        "selectionRatePct": 5.77
       }
     },
-    "spring-security": {
+    {
+      "project": "spring-security",
+      "status": "COMPLETE",
       "logicalTests": 1440,
-      "emptyFootprintTests": 23,
-      "policies": {
-        "base": {
-          "eligible": 340,
-          "inclusive": 335,
-          "inclusivenessPctFullPrecision": 98.52941176470588,
-          "inclusivenessPct2dp": 98.53,
-          "meanSelectedFullPrecision": 59.858823529411765,
-          "meanSelected2dp": 59.86,
-          "selectedFractionPctFullPrecision": 4.1568627450980395,
-          "selectedFractionPct2dp": 4.16,
-          "reductionPctFullPrecision": 95.84313725490196,
-          "reductionPct2dp": 95.84
-        },
-        "constructor": {
-          "eligible": 340,
-          "inclusive": 337,
-          "inclusivenessPctFullPrecision": 99.11764705882354,
-          "inclusivenessPct2dp": 99.12,
-          "meanSelectedFullPrecision": 60.338235294117645,
-          "meanSelected2dp": 60.34,
-          "selectedFractionPctFullPrecision": 4.1901552287581705,
-          "selectedFractionPct2dp": 4.19,
-          "reductionPctFullPrecision": 95.80984477124183,
-          "reductionPct2dp": 95.81
-        },
-        "class": {
-          "eligible": 340,
-          "inclusive": 340,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 95.2,
-          "meanSelected2dp": 95.2,
-          "selectedFractionPctFullPrecision": 6.611111111111111,
-          "selectedFractionPct2dp": 6.61,
-          "reductionPctFullPrecision": 93.38888888888889,
-          "reductionPct2dp": 93.39
-        }
+      "sampledProductionClasses": 18,
+      "usableMutationProducingClasses": 18,
+      "totalPitMutations": 520,
+      "killedMutations": 340,
+      "stpInclusive": 330,
+      "inclusivenessPct": 97.06,
+      "avgSelected": 36.86,
+      "selectionRatePct": 2.56,
+      "reductionPct": 97.44,
+      "classLevel": {
+        "name": "Class-level only",
+        "safe": 335,
+        "unsafe": 5,
+        "total": 340,
+        "inclusivenessPct": 98.53,
+        "avgSelected": 72.2,
+        "selectionRatePct": 5.01,
+        "reductionPct": 94.99
       },
       "randomEqualBudget": {
+        "name": "Random equal-budget",
         "trials": 1000,
         "seed": 42,
-        "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
-        "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
-        "monteCarloPctFullPrecision": 22.938529411764705,
-        "monteCarloPct2dp": 22.94,
-        "monteCarloStdPctFullPrecision": 1.573156057960863,
-        "analyticalPctFullPrecision": 22.88793177034306,
-        "analyticalPct2dp": 22.89,
-        "absoluteDifferencePercentagePoints": 0.050597641421646244
+        "inclusivenessPct": 17.42,
+        "inclusivenessStdPct": 1.35,
+        "analyticalInclusivenessPct": 17.46,
+        "avgSelected": 36.86,
+        "selectionRatePct": 2.56,
+        "reductionPct": 97.44
+      },
+      "falseNegatives": 10,
+      "footprintTaxonomy": {
+        "A": 2,
+        "B": 3,
+        "C": 5,
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 10,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 2,
+        "avgSelected": 37.3,
+        "inclusivenessPct": 97.65,
+        "safe": 332,
+        "selectionRatePct": 2.59
       }
     },
-    "hibernate": {
+    {
+      "project": "hibernate",
+      "status": "COMPLETE",
       "logicalTests": 1099,
-      "emptyFootprintTests": 0,
-      "policies": {
-        "base": {
-          "eligible": 401,
-          "inclusive": 400,
-          "inclusivenessPctFullPrecision": 99.75062344139651,
-          "inclusivenessPct2dp": 99.75,
-          "meanSelectedFullPrecision": 297.24688279301745,
-          "meanSelected2dp": 297.25,
-          "selectedFractionPctFullPrecision": 27.047032101275473,
-          "selectedFractionPct2dp": 27.05,
-          "reductionPctFullPrecision": 72.95296789872452,
-          "reductionPct2dp": 72.95
-        },
-        "constructor": {
-          "eligible": 401,
-          "inclusive": 400,
-          "inclusivenessPctFullPrecision": 99.75062344139651,
-          "inclusivenessPct2dp": 99.75,
-          "meanSelectedFullPrecision": 303.1571072319202,
-          "meanSelected2dp": 303.16,
-          "selectedFractionPctFullPrecision": 27.5848141248335,
-          "selectedFractionPct2dp": 27.58,
-          "reductionPctFullPrecision": 72.4151858751665,
-          "reductionPct2dp": 72.42
-        },
-        "class": {
-          "eligible": 401,
-          "inclusive": 401,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 488.7730673316708,
-          "meanSelected2dp": 488.77,
-          "selectedFractionPctFullPrecision": 44.474346436002804,
-          "selectedFractionPct2dp": 44.47,
-          "reductionPctFullPrecision": 55.525653563997196,
-          "reductionPct2dp": 55.53
-        }
+      "sampledProductionClasses": 16,
+      "usableMutationProducingClasses": 16,
+      "totalPitMutations": 1061,
+      "killedMutations": 401,
+      "stpInclusive": 400,
+      "inclusivenessPct": 99.75,
+      "avgSelected": 297.25,
+      "selectionRatePct": 27.05,
+      "reductionPct": 72.95,
+      "classLevel": {
+        "name": "Class-level only",
+        "safe": 401,
+        "unsafe": 0,
+        "total": 401,
+        "inclusivenessPct": 100.0,
+        "avgSelected": 488.77,
+        "selectionRatePct": 44.47,
+        "reductionPct": 55.53
       },
       "randomEqualBudget": {
+        "name": "Random equal-budget",
         "trials": 1000,
         "seed": 42,
-        "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
-        "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
-        "monteCarloPctFullPrecision": 71.33940149625936,
-        "monteCarloPct2dp": 71.34,
-        "monteCarloStdPctFullPrecision": 1.2484767617134103,
-        "analyticalPctFullPrecision": 71.30474983204753,
-        "analyticalPct2dp": 71.3,
-        "absoluteDifferencePercentagePoints": 0.03465166421182175
+        "inclusivenessPct": 71.33,
+        "inclusivenessStdPct": 1.27,
+        "analyticalInclusivenessPct": 71.3,
+        "avgSelected": 297.25,
+        "selectionRatePct": 27.05,
+        "reductionPct": 72.95
+      },
+      "falseNegatives": 1,
+      "footprintTaxonomy": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "MIXED": 1
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 0,
+        "PRE_TEST_ATTRIBUTION_GAP": 1
+      },
+      "mitigation": {
+        "additionalRecovered": 0,
+        "avgSelected": 303.2,
+        "inclusivenessPct": 99.75,
+        "safe": 400,
+        "selectionRatePct": 27.58
       }
     },
-    "quarkus": {
+    {
+      "project": "quarkus",
+      "status": "COMPLETE",
       "logicalTests": 684,
-      "emptyFootprintTests": 9,
-      "policies": {
-        "base": {
-          "eligible": 1083,
-          "inclusive": 1083,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 269.65189289012005,
-          "meanSelected2dp": 269.65,
-          "selectedFractionPctFullPrecision": 39.42279135820469,
-          "selectedFractionPct2dp": 39.42,
-          "reductionPctFullPrecision": 60.57720864179531,
-          "reductionPct2dp": 60.58
-        },
-        "constructor": {
-          "eligible": 1083,
-          "inclusive": 1083,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 392.59926131117265,
-          "meanSelected2dp": 392.6,
-          "selectedFractionPctFullPrecision": 57.39755282327086,
-          "selectedFractionPct2dp": 57.4,
-          "reductionPctFullPrecision": 42.60244717672914,
-          "reductionPct2dp": 42.6
-        },
-        "class": {
-          "eligible": 1083,
-          "inclusive": 1083,
-          "inclusivenessPctFullPrecision": 100.0,
-          "inclusivenessPct2dp": 100.0,
-          "meanSelectedFullPrecision": 548.9335180055401,
-          "meanSelected2dp": 548.93,
-          "selectedFractionPctFullPrecision": 80.25343830490353,
-          "selectedFractionPct2dp": 80.25,
-          "reductionPctFullPrecision": 19.746561695096474,
-          "reductionPct2dp": 19.75
-        }
+      "sampledProductionClasses": 16,
+      "usableMutationProducingClasses": 16,
+      "totalPitMutations": 1639,
+      "killedMutations": 1083,
+      "stpInclusive": 1083,
+      "inclusivenessPct": 100.0,
+      "avgSelected": 260.65,
+      "selectionRatePct": 38.11,
+      "reductionPct": 61.89,
+      "classLevel": {
+        "name": "Class-level only",
+        "safe": 1083,
+        "unsafe": 0,
+        "total": 1083,
+        "inclusivenessPct": 100.0,
+        "avgSelected": 539.93,
+        "selectionRatePct": 78.94,
+        "reductionPct": 21.06
       },
       "randomEqualBudget": {
+        "name": "Random equal-budget",
         "trials": 1000,
         "seed": 42,
-        "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
-        "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
-        "monteCarloPctFullPrecision": 72.8836565096953,
-        "monteCarloPct2dp": 72.88,
-        "monteCarloStdPctFullPrecision": 0.6906413401232533,
-        "analyticalPctFullPrecision": 72.87868844733181,
-        "analyticalPct2dp": 72.88,
-        "absoluteDifferencePercentagePoints": 0.004968062363488457
+        "inclusivenessPct": 71.25,
+        "inclusivenessStdPct": 0.69,
+        "analyticalInclusivenessPct": 71.28,
+        "avgSelected": 260.65,
+        "selectionRatePct": 38.11,
+        "reductionPct": 61.89
+      },
+      "falseNegatives": 0,
+      "footprintTaxonomy": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "MIXED": 0
+      },
+      "causalMechanisms": {
+        "EARLY_EXCEPTION_PROBE_SHADOWING": 0,
+        "PRE_TEST_ATTRIBUTION_GAP": 0
+      },
+      "mitigation": {
+        "additionalRecovered": 0,
+        "avgSelected": 383.6,
+        "inclusivenessPct": 100.0,
+        "safe": 1083,
+        "selectionRatePct": 56.08
       }
     }
-  },
-  "aggregate": {
-    "base": {
-      "eligible": 4010,
-      "inclusive": 3991,
-      "inclusivenessPctFullPrecision": 99.52618453865337,
-      "inclusivenessPct2dp": 99.53
+  ],
+  "aggregateCompletedSubjectsOnly": {
+    "killedMutations": 4010,
+    "stpInclusive": 3986,
+    "falseNegatives": 24,
+    "inclusivenessPct": 99.4,
+    "footprintCounts": {
+      "A": 7,
+      "B": 10,
+      "C": 6,
+      "MIXED": 1
     },
-    "constructor": {
-      "eligible": 4010,
-      "inclusive": 3998,
-      "inclusivenessPctFullPrecision": 99.70074812967582,
-      "inclusivenessPct2dp": 99.7
+    "causalMechanismCounts": {
+      "EARLY_EXCEPTION_PROBE_SHADOWING": 23,
+      "PRE_TEST_ATTRIBUTION_GAP": 1
     },
-    "class": {
-      "eligible": 4010,
-      "inclusive": 4009,
-      "inclusivenessPctFullPrecision": 99.97506234413964,
-      "inclusivenessPct2dp": 99.98
-    }
+    "mitigationRecoveries": 7,
+    "distinctCausalMechanisms": 2
   },
-  "methodKinds": {
-    "source": "analysis/v14_4_rederivation/method_kind_audit.json",
-    "counts": {
-      "regular_method": 3408,
-      "constructor": 70,
-      "class_initializer": 0,
-      "lambda": 532,
-      "other_synthetic_or_bridge_name_detectable": 0
-    }
-  },
-  "regressionTests": {
-    "source": "analysis/v14_4_rederivation/regression_output.txt",
-    "count": 68,
-    "passed": true
-  },
-  "confidenceIntervalsSource": "analysis/v14_4_rederivation/confidence_intervals.json",
-  "javaVerification": {
-    "source": "analysis/v14_4_rederivation/java_comparison.json",
-    "uniqueInvocations": 1351,
-    "weightedOccurrences": 4010,
-    "mismatches": 0,
-    "nonSelectedModes": 0
-  }
+  "interpretation": "All eight attempted subjects have a valid PIT killing-test oracle; footprint shapes and causal mechanisms are reported independently."
 }

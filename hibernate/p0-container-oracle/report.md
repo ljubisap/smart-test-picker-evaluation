@@ -1,3 +1,5 @@
+# HISTORICAL EDGE-ONLY REPORT — quantitative totals superseded by `results/b2-*.json`
+
 # Hibernate container-to-leaf P0 resolution
 
 ## Decision

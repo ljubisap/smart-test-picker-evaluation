@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Build the attempted eight-subject summary without inventing blocked results."""
+"""Rebuild the historical edge-only eight-subject summary.
+
+This script is retained for historical reproducibility only.  Current B2
+results are produced by the v14.4 re-derivation and live in
+``results/b2-summary-tables.json``.  The guard below prevents this legacy
+builder from overwriting any current-results path.
+"""
 
 import json
 from pathlib import Path
@@ -119,6 +125,12 @@ output = {
     "interpretation": "All eight attempted subjects have a valid PIT killing-test oracle; footprint shapes and causal mechanisms are reported independently.",
 }
 
-path = ROOT / "results/eight-subject-summary.json"
+path = ROOT / "results/legacy-eight-subject-summary.json"
+current_results_paths = {
+    (ROOT / "results/eight-subject-summary.json").resolve(),
+    (ROOT / "results/b2-summary-tables.json").resolve(),
+}
+if path.resolve() in current_results_paths:
+    raise RuntimeError(f"legacy builder refuses to overwrite current results: {path}")
 path.write_text(json.dumps(output, indent=2) + "\n")
 print(path.relative_to(ROOT))

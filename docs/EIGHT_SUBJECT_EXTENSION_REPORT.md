@@ -1,3 +1,5 @@
+# HISTORICAL EDGE-ONLY REPORT — superseded by `results/b2-*.json`
+
 # Independent-subject evaluation extension
 
 ## Outcome

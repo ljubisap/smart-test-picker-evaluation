@@ -135,11 +135,13 @@ python3 analysis/verify_selector_equivalence.py --verify
 python3 analysis/freeze_artifacts.py --verify
 ```
 
-The attempted eight-subject summary is
-[`results/eight-subject-summary.json`](results/eight-subject-summary.json).
-Two new subjects are explicitly PIT-oracle blocked and are excluded from
-mutation denominators; see
-[`docs/EIGHT_SUBJECT_EXTENSION_REPORT.md`](docs/EIGHT_SUBJECT_EXTENSION_REPORT.md).
+The current eight-subject results are
+[`results/b2-summary-tables.json`](results/b2-summary-tables.json): the base
+policy is inclusive for 3,991/4,010 records, the constructor variant for
+3,998/4,010, and the class baseline for 4,009/4,010. The pinned Java selector
+comparison covers 1,351 unique cases and all 4,010 weighted occurrences with
+zero selected-set mismatches. Historical edge-only summaries are identified
+in [`results/HISTORICAL_SCOPE_NOTES.md`](results/HISTORICAL_SCOPE_NOTES.md).
 
 ## Quick Start
 

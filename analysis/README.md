@@ -77,7 +77,7 @@ Both output files include SHA-256 hashes of all input coverage maps and PIT XML 
 
 The per-project manifests record the exact Smart Test Picker revision used to collect each coverage map. The independent extension subjects use the frozen JaCoCo evaluation tree `7a61a4933a7f2b6a64aa06e4893ba61c9d26da33`.
 
-## Canonical Results
+## Historical edge-only results (superseded by `results/b2-*.json`)
 
 - 24 unsafe mutations: footprint taxonomy 7 Type A, 10 Type B, 6 Type C, and 1 mixed B/C case
 - Causal mechanisms: 23 early-exception/probe-shadowing and 1 pre-test attribution-gap case
