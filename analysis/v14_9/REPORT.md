@@ -62,9 +62,9 @@ PIT, coverage collection, subject build, or subject test ran.
 
 ## Repository completion
 
-The evidence commit SHA is recorded after the initial commit. The final
-follow-up commit only records completion metadata and logs; tag `rad1-v14.9`
-resolves that final commit.
+The evidence commit is
+`42bc9d0e438ff26b4e8be4825e866b32c73b8f89`. Tag `rad1-v14.9` resolves the
+follow-up commit that records this completion metadata.
 
 Push command:
 
