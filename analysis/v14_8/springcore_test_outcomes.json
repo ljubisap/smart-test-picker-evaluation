@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "scope": "spring-core adopted 2e0954 collection run 1",
+  "adoptedMap": {
+    "path": "recollection_2e0954/spring-core/test-coverage-map.json",
+    "sha256": "bfeafc4bb2a7221243c1f7fb407938472b582462a8cad071cbc90152eb83e32d",
+    "collectionRun": "run1",
+    "collectionRecord": "recollection_2e0954/spring-core/collection_v14_6.json",
+    "recordedSha256": "bfeafc4bb2a7221243c1f7fb407938472b582462a8cad071cbc90152eb83e32d"
+  },
+  "testRunSummary": {
+    "executed": 4704,
+    "failed": 3,
+    "skipped": 28,
+    "source": "recollection_2e0954/spring-core-run1-test.log:65-78"
+  },
+  "failures": [
+    {
+      "class": "BridgeMethodResolverTests",
+      "method": "testInterfaceHierarchy",
+      "failureType": "org.opentest4j.AssertionFailedError",
+      "messageHead": "org.opentest4j.AssertionFailedError at BridgeMethodResolverTests.java:351",
+      "logLines": [
+        65,
+        66
+      ],
+      "identity": "BridgeMethodResolverTests#testInterfaceHierarchy",
+      "adoptedMap": {
+        "present": true,
+        "matchingKeys": [
+          "BridgeMethodResolverTests#testInterfaceHierarchy_71ff548"
+        ],
+        "footprints": [
+          {
+            "coverageKey": "BridgeMethodResolverTests#testInterfaceHierarchy_71ff548",
+            "classEdges": 21,
+            "methodEdges": 92
+          }
+        ]
+      },
+      "frozen70b398Map": {
+        "present": true,
+        "matchingKeys": [
+          "BridgeMethodResolverTests#testInterfaceHierarchy_71ff548"
+        ]
+      },
+      "eligiblePitKiller": false,
+      "eligibleMutationIds": [],
+      "originalCollectionFailure": {
+        "status": "CLASS_LEVEL_FAILURE_CATEGORY_DOCUMENTED_EXACT_METHOD_UNKNOWN",
+        "source": "spring-core/docs/REPRODUCE.md:94,182",
+        "explanation": "The retained original-collection instructions name the BridgeMethodResolverTests and AnnotationMetadataTests failure categories, but do not retain an exact per-method failure list."
+      },
+      "adoptedFailureSource": "recollection_2e0954/spring-core-run1-test.log:65-66"
+    },
+    {
+      "class": "BridgeMethodResolverTests",
+      "method": "testClassHierarchy",
+      "failureType": "org.opentest4j.AssertionFailedError",
+      "messageHead": "org.opentest4j.AssertionFailedError at BridgeMethodResolverTests.java:351",
+      "logLines": [
+        68,
+        69
+      ],
+      "identity": "BridgeMethodResolverTests#testClassHierarchy",
+      "adoptedMap": {
+        "present": true,
+        "matchingKeys": [
+          "BridgeMethodResolverTests#testClassHierarchy_543a15e"
+        ],
+        "footprints": [
+          {
+            "coverageKey": "BridgeMethodResolverTests#testClassHierarchy_543a15e",
+            "classEdges": 20,
+            "methodEdges": 87
+          }
+        ]
+      },
+      "frozen70b398Map": {
+        "present": true,
+        "matchingKeys": [
+          "BridgeMethodResolverTests#testClassHierarchy_543a15e"
+        ]
+      },
+      "eligiblePitKiller": false,
+      "eligibleMutationIds": [],
+      "originalCollectionFailure": {
+        "status": "CLASS_LEVEL_FAILURE_CATEGORY_DOCUMENTED_EXACT_METHOD_UNKNOWN",
+        "source": "spring-core/docs/REPRODUCE.md:94,182",
+        "explanation": "The retained original-collection instructions name the BridgeMethodResolverTests and AnnotationMetadataTests failure categories, but do not retain an exact per-method failure list."
+      },
+      "adoptedFailureSource": "recollection_2e0954/spring-core-run1-test.log:68-69"
+    },
+    {
+      "class": "AnnotationMetadataTests",
+      "method": "standardAnnotationMetadata",
+      "failureType": "java.lang.AssertionError",
+      "messageHead": "java.lang.AssertionError at AnnotationMetadataTests.java:506",
+      "logLines": [
+        71,
+        72
+      ],
+      "identity": "AnnotationMetadataTests#standardAnnotationMetadata",
+      "adoptedMap": {
+        "present": true,
+        "matchingKeys": [
+          "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+        ],
+        "footprints": [
+          {
+            "coverageKey": "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "classEdges": 51,
+            "methodEdges": 249
+          }
+        ]
+      },
+      "frozen70b398Map": {
+        "present": true,
+        "matchingKeys": [
+          "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+        ]
+      },
+      "eligiblePitKiller": true,
+      "eligibleMutationIds": [
+        "spring-core|org.springframework.core.type.StandardClassMetadata|getClassName|()Ljava/lang/String;|60|EmptyObjectReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:5",
+        "spring-core|org.springframework.core.type.StandardClassMetadata|getInterfaceNames|()[Ljava/lang/String;|108|ConditionalsBoundaryMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:8",
+        "spring-core|org.springframework.core.type.StandardClassMetadata|getInterfaceNames|()[Ljava/lang/String;|108|NegateConditionalsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:9",
+        "spring-core|org.springframework.core.type.StandardClassMetadata|getInterfaceNames|()[Ljava/lang/String;|111|NullReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:10",
+        "spring-core|org.springframework.core.type.StandardClassMetadata|getIntrospectedClass|()Ljava/lang/Class;|54|NullReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:11",
+        "spring-core|org.springframework.core.type.StandardClassMetadata|getSuperClassName|()Ljava/lang/String;|101|EmptyObjectReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:14",
+        "spring-core|org.springframework.core.type.StandardClassMetadata|getSuperClassName|()Ljava/lang/String;|101|NegateConditionalsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:13",
+        "spring-core|org.springframework.core.type.StandardClassMetadata|isAbstract|()Z|75|BooleanTrueReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:17",
+        "spring-core|org.springframework.core.type.StandardClassMetadata|isAnnotation|()Z|70|BooleanTrueReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:19",
+        "spring-core|org.springframework.core.type.StandardClassMetadata|isInterface|()Z|65|BooleanTrueReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:27"
+      ],
+      "originalCollectionFailure": {
+        "status": "CLASS_LEVEL_FAILURE_CATEGORY_DOCUMENTED_EXACT_METHOD_UNKNOWN",
+        "source": "spring-core/docs/REPRODUCE.md:94,182",
+        "explanation": "The retained original-collection instructions name the BridgeMethodResolverTests and AnnotationMetadataTests failure categories, but do not retain an exact per-method failure list."
+      },
+      "adoptedFailureSource": "recollection_2e0954/spring-core-run1-test.log:71-72"
+    }
+  ],
+  "eligibleRecordsWithFailingKiller": [
+    "spring-core|org.springframework.core.type.StandardClassMetadata|getClassName|()Ljava/lang/String;|60|EmptyObjectReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:5",
+    "spring-core|org.springframework.core.type.StandardClassMetadata|getInterfaceNames|()[Ljava/lang/String;|108|ConditionalsBoundaryMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:8",
+    "spring-core|org.springframework.core.type.StandardClassMetadata|getInterfaceNames|()[Ljava/lang/String;|108|NegateConditionalsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:9",
+    "spring-core|org.springframework.core.type.StandardClassMetadata|getInterfaceNames|()[Ljava/lang/String;|111|NullReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:10",
+    "spring-core|org.springframework.core.type.StandardClassMetadata|getIntrospectedClass|()Ljava/lang/Class;|54|NullReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:11",
+    "spring-core|org.springframework.core.type.StandardClassMetadata|getSuperClassName|()Ljava/lang/String;|101|EmptyObjectReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:14",
+    "spring-core|org.springframework.core.type.StandardClassMetadata|getSuperClassName|()Ljava/lang/String;|101|NegateConditionalsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:13",
+    "spring-core|org.springframework.core.type.StandardClassMetadata|isAbstract|()Z|75|BooleanTrueReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:17",
+    "spring-core|org.springframework.core.type.StandardClassMetadata|isAnnotation|()Z|70|BooleanTrueReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:19",
+    "spring-core|org.springframework.core.type.StandardClassMetadata|isInterface|()Z|65|BooleanTrueReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml:27"
+  ],
+  "eligibleRecordsWithFailingKillerCount": 10,
+  "allFailuresPresentInAdoptedMap": true,
+  "noneIsEligiblePitKiller": false,
+  "originalExactMethodOutcomesEstablished": false,
+  "originalEvidence": {
+    "source": "spring-core/docs/REPRODUCE.md:94,182",
+    "finding": "Original instructions document 3-5 instrumentation-sensitive failures in the same test classes, with a varying exact count; they do not establish the exact failed methods."
+  }
+}

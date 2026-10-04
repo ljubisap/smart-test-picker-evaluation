@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "commands": [
+    {
+      "name": "unittest",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "analysis/tests"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "OK",
+      "log": "analysis/v14_8/verify_unittest.log",
+      "reusedCompletedLog": true
+    },
+    {
+      "name": "failure_modes",
+      "command": [
+        "python3",
+        "analysis/analyze_failure_modes.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: all outputs match committed artifacts",
+      "log": "analysis/v14_8/verify_failure_modes.log",
+      "reusedCompletedLog": true
+    },
+    {
+      "name": "selector_equivalence",
+      "command": [
+        "python3",
+        "analysis/verify_selector_equivalence.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: historical evaluator/model agreement matches committed artifact",
+      "log": "analysis/v14_8/verify_selector_equivalence.log",
+      "reusedCompletedLog": true
+    },
+    {
+      "name": "freeze_artifacts",
+      "command": [
+        "python3",
+        "analysis/freeze_artifacts.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "verified spring-security: 25 artifacts",
+      "log": "analysis/v14_8/verify_freeze_artifacts.log",
+      "reusedCompletedLog": true
+    },
+    {
+      "name": "recollection",
+      "command": [
+        "python3",
+        "analysis/verify_recollection.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: recollection_comparison.json (1837 mutations, 187 selected-set differences, 0 safety flips)",
+      "log": "analysis/v14_8/verify_recollection.log"
+    },
+    {
+      "name": "b2",
+      "command": [
+        "python3",
+        "analysis/v14_4_rederivation/verify_b2.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: B2 base/constructor/class summaries and selected-set IDs match frozen inputs",
+      "log": "analysis/v14_8/verify_b2.log"
+    },
+    {
+      "name": "v14_6",
+      "command": [
+        "python3",
+        "analysis/v14_6/verify_v14_6.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: v14.6 outcomes, summaries, random baseline, intervals, mitigation, taxonomy, and selected-set IDs match recollected maps and frozen PIT inputs",
+      "log": "analysis/v14_8/verify_v14_6.log"
+    },
+    {
+      "name": "v14_7",
+      "command": [
+        "python3",
+        "analysis/v14_7/verify_v14_7.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: v14.7 spring-core sensitivity, worked example, and eight-subject test-segment scan match inputs",
+      "log": "analysis/v14_8/verify_v14_7.log"
+    },
+    {
+      "name": "v14_8",
+      "command": [
+        "python3",
+        "analysis/v14_8/verify_v14_8.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "PASS: v14.8 evidence verified; failures=3; eligible killer records=10",
+      "log": "analysis/v14_8/verify_v14_8.log",
+      "reusedCompletedLog": true
+    }
+  ],
+  "allPassed": true
+}
