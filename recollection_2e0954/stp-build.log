@@ -1,0 +1,178 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :smart-test-picker-common:compileJava UP-TO-DATE
+> Task :smart-test-picker-common:processResources NO-SOURCE
+> Task :smart-test-picker-common:classes UP-TO-DATE
+> Task :smart-test-picker-common:jar UP-TO-DATE
+> Task :smart-test-picker-core:compileJava
+> Task :smart-test-picker-core:processResources
+> Task :smart-test-picker-core:classes
+> Task :smart-test-picker-core:jar
+
+> Task :smart-test-picker:compileJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :smart-test-picker:pluginDescriptors
+> Task :smart-test-picker:processResources
+> Task :smart-test-picker:classes
+> Task :smart-test-picker:jar
+> Task :smart-test-picker:generateMetadataFileForMavenJavaPublication
+> Task :smart-test-picker:generatePomFileForMavenJavaPublication
+> Task :smart-test-picker:publishMavenJavaPublicationToMavenLocal
+> Task :smart-test-picker:generateMetadataFileForPluginMavenPublication
+> Task :smart-test-picker:generatePomFileForPluginMavenPublication
+
+> Task :smart-test-picker:publishPluginMavenPublicationToMavenLocal
+Multiple publications with coordinates 'com.sap.oss.smart-test-picker:smart-test-picker:0.1.0' are published to repository 'mavenLocal'. The publications 'mavenJava' in project ':smart-test-picker' and 'pluginMaven' in project ':smart-test-picker' will overwrite each other!
+
+> Task :smart-test-picker:generatePomFileForSmartTestPickerPluginMarkerMavenPublication
+> Task :smart-test-picker:publishSmartTestPickerPluginMarkerMavenPublicationToMavenLocal
+> Task :smart-test-picker:publishToMavenLocal
+> Task :smart-test-picker-maven:generateMavenPluginHelpMojoSources
+
+> Task :smart-test-picker-maven:compileJava
+Note: /private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/SmartTestMojo.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :smart-test-picker-maven:processResources NO-SOURCE
+> Task :smart-test-picker-maven:classes
+
+> Task :smart-test-picker-maven:generateMavenPluginDescriptor
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/GenerateCoverageMapMojo.java:28
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/GenerateCoverageMapMojo.java:28
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/SmartTestMojo.java:63
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/SmartTestMojo.java:63
+Found unsupported javadoc inline tag 'link' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/SmartTestMojo.java:78
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/PullCoverageMapMojo.java:29
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/GenerateReportMojo.java:27
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/GenerateReportMojo.java:27
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/PushCoverageMapMojo.java:27
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/GenerateReportsMojo.java:27
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/GenerateReportsMojo.java:27
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/GenerateReportsMojo.java:27
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/GenerateReportsMojo.java:27
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/GenerateReportsMojo.java:32
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/MergeTestMetricsMojo.java:38
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/MergeTestMetricsMojo.java:38
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/MergeTestMetricsMojo.java:38
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/RootSelectTestsMojo.java:36
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/RootSelectTestsMojo.java:36
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/RootSelectTestsMojo.java:36
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/RootSelectTestsMojo.java:36
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/RootGenerateReportMojo.java:39
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/RootGenerateReportMojo.java:39
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/MergeCoverageMapsMojo.java:40
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/MergeCoverageMapsMojo.java:40
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/MergeCoverageMapsMojo.java:40
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/SelectTestsMojo.java:36
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/SelectTestsMojo.java:36
+Found unsupported javadoc inline tag 'code' in file:/private/tmp/stp-rad1442-replay/smart-test-picker-maven/src/main/java/com/sap/oss/smarttestpicker/maven/SelectTestsMojo.java:36
+
+Deprecated extractor java-javadoc extracted 1 descriptor. Upgrade your Mojo definitions.
+You should use Mojo Annotations instead of Javadoc tags.
+
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 2 column 110 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 69 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 90 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 64 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 58 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 2 column 110 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 69 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 90 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 64 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 58 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 2 column 110 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 69 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 90 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 64 - Warning: inserting missing 'title' element
+line 1 column 1 - Warning: missing <!DOCTYPE> declaration
+line 1 column 1 - Warning: plain text isn't allowed in <head> elements
+line 1 column 58 - Warning: inserting missing 'title' element
+
+> Task :smart-test-picker-maven:jar
+> Task :smart-test-picker-maven:generateMetadataFileForMavenPluginPublication
+> Task :smart-test-picker-maven:generatePomFileForMavenPluginPublication
+> Task :smart-test-picker-maven:publishMavenPluginPublicationToMavenLocal
+> Task :smart-test-picker-maven:publishToMavenLocal
+
+[Incubating] Problems report is available at: file:///private/tmp/stp-rad1442-replay/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 11s
+24 actionable tasks: 22 executed, 2 up-to-date
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :smart-test-picker-common:compileJava UP-TO-DATE
+> Task :smart-test-picker-common:processResources NO-SOURCE
+> Task :smart-test-picker-common:classes UP-TO-DATE
+> Task :smart-test-picker-common:jar UP-TO-DATE
+> Task :smart-test-picker-common:generateMetadataFileForMavenJavaPublication
+> Task :smart-test-picker-common:generatePomFileForMavenJavaPublication
+> Task :smart-test-picker-common:publishMavenJavaPublicationToMavenLocal
+> Task :smart-test-picker-common:publishToMavenLocal
+> Task :smart-test-picker-core:compileJava UP-TO-DATE
+> Task :smart-test-picker-core:processResources UP-TO-DATE
+> Task :smart-test-picker-core:classes UP-TO-DATE
+> Task :smart-test-picker-core:jar UP-TO-DATE
+> Task :smart-test-picker-core:generateMetadataFileForMavenJavaPublication
+> Task :smart-test-picker-core:generatePomFileForMavenJavaPublication
+> Task :smart-test-picker-core:publishMavenJavaPublicationToMavenLocal
+> Task :smart-test-picker-core:publishToMavenLocal
+> Task :smart-test-picker:compileJava UP-TO-DATE
+> Task :smart-test-picker:pluginDescriptors UP-TO-DATE
+> Task :smart-test-picker:processResources UP-TO-DATE
+> Task :smart-test-picker:classes UP-TO-DATE
+> Task :smart-test-picker:jar UP-TO-DATE
+> Task :smart-test-picker:generateMetadataFileForMavenJavaPublication
+> Task :smart-test-picker:generatePomFileForMavenJavaPublication
+> Task :smart-test-picker:publishMavenJavaPublicationToMavenLocal
+> Task :smart-test-picker:generateMetadataFileForPluginMavenPublication
+> Task :smart-test-picker:generatePomFileForPluginMavenPublication
+
+> Task :smart-test-picker:publishPluginMavenPublicationToMavenLocal
+Multiple publications with coordinates 'com.sap.oss.smart-test-picker:smart-test-picker:0.1.0' are published to repository 'mavenLocal'. The publications 'mavenJava' in project ':smart-test-picker' and 'pluginMaven' in project ':smart-test-picker' will overwrite each other!
+
+> Task :smart-test-picker:generatePomFileForSmartTestPickerPluginMarkerMavenPublication
+> Task :smart-test-picker:publishSmartTestPickerPluginMarkerMavenPublicationToMavenLocal
+> Task :smart-test-picker:publishToMavenLocal
+> Task :smart-test-picker-maven:generateMavenPluginHelpMojoSources UP-TO-DATE
+> Task :smart-test-picker-maven:compileJava UP-TO-DATE
+> Task :smart-test-picker-maven:processResources NO-SOURCE
+> Task :smart-test-picker-maven:classes UP-TO-DATE
+> Task :smart-test-picker-maven:generateMavenPluginDescriptor UP-TO-DATE
+> Task :smart-test-picker-maven:jar UP-TO-DATE
+> Task :smart-test-picker-maven:generateMetadataFileForMavenPluginPublication
+> Task :smart-test-picker-maven:generatePomFileForMavenPluginPublication
+> Task :smart-test-picker-maven:publishMavenPluginPublicationToMavenLocal
+> Task :smart-test-picker-maven:publishToMavenLocal
+
+BUILD SUCCESSFUL in 9s
+30 actionable tasks: 17 executed, 13 up-to-date

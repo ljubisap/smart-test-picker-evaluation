@@ -1,0 +1,740 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=5
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+[SmartTestPickerPlugin] Plugin applied.
+
+> Task :clean
+> Task :compileJava
+
+> Task :cyclonedxBom
+Unknown keyword meta:enum - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
+Unknown keyword deprecated - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
+
+> Task :processResources
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources
+> Task :testClasses
+
+> Task :processTestAot
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=5
+11:10:19.428 [main] INFO org.springframework.test.context.aot.TestClassScanner -- Scanning for Spring test classes in all packages in classpath roots [/private/tmp/recollect-petclinic/build/classes/java/test, /private/tmp/recollect-petclinic/build/resources/test]
+11:10:19.657 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.MySqlIntegrationTests]: MySqlIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:10:19.682 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+11:10:19.683 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+11:10:19.777 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.MySqlIntegrationTests
+11:10:19.811 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.PetClinicIntegrationTests]: PetClinicIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:10:19.815 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.PetClinicIntegrationTests
+11:10:19.817 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.PostgresIntegrationTests]: PostgresIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:10:19.820 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.PostgresIntegrationTests
+11:10:19.823 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.OwnerControllerTests]: OwnerControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:10:19.862 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.OwnerControllerTests
+11:10:19.865 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests]: PetControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:10:19.873 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests
+11:10:19.876 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors]: ProcessCreationFormHasErrors does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:10:19.883 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors
+11:10:19.885 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors]: ProcessUpdateFormHasErrors does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:10:19.891 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors
+11:10:19.892 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.VisitControllerTests]: VisitControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:10:19.898 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.VisitControllerTests
+11:10:19.900 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.service.ClinicServiceTests]: ClinicServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:10:19.913 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.service.ClinicServiceTests
+11:10:19.921 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.vet.VetControllerTests]: VetControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:10:19.934 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.vet.VetControllerTests
+11:10:19.935 [main] INFO org.springframework.test.context.aot.TestContextAotGenerator -- Skipping AOT processing due to the presence of @DisabledInAotMode for test classes [org.springframework.samples.petclinic.MySqlIntegrationTests]
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 3.5.0
+
+
+2026-10-04T11:10:20.098+02:00  INFO 16164 --- [           main] o.s.s.p.PetClinicIntegrationTests        : Starting PetClinicIntegrationTests using Java 21.0.12.1 with PID 16164 (/private/tmp/recollect-petclinic/build/classes/java/test started by D061177 in /private/tmp/recollect-petclinic)
+2026-10-04T11:10:20.099+02:00  INFO 16164 --- [           main] o.s.s.p.PetClinicIntegrationTests        : No active profile set, falling back to 1 default profile: "default"
+2026-10-04T11:10:20.547+02:00  INFO 16164 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-04T11:10:20.579+02:00  INFO 16164 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 3.5.0
+
+
+2026-10-04T11:10:22.048+02:00  INFO 16164 --- [           main] o.s.s.p.PostgresIntegrationTests         : Starting PostgresIntegrationTests using Java 21.0.12.1 with PID 16164 (/private/tmp/recollect-petclinic/build/classes/java/test started by D061177 in /private/tmp/recollect-petclinic)
+2026-10-04T11:10:22.048+02:00  INFO 16164 --- [           main] o.s.s.p.PostgresIntegrationTests         : The following 1 profile is active: "postgres"
+2026-10-04T11:10:22.174+02:00  INFO 16164 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-04T11:10:22.183+02:00  INFO 16164 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2026-10-04T11:10:22.650+02:00  INFO 16164 --- [           main] o.s.t.c.aot.TestContextAotGenerator      : Skipping AOT processing due to the presence of @DisabledInAotMode for test classes [org.springframework.samples.petclinic.owner.OwnerControllerTests]
+2026-10-04T11:10:22.650+02:00  INFO 16164 --- [           main] o.s.t.c.aot.TestContextAotGenerator      : Skipping AOT processing due to the presence of @DisabledInAotMode for test classes [org.springframework.samples.petclinic.owner.PetControllerTests, org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors, org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors]
+2026-10-04T11:10:22.650+02:00  INFO 16164 --- [           main] o.s.t.c.aot.TestContextAotGenerator      : Skipping AOT processing due to the presence of @DisabledInAotMode for test classes [org.springframework.samples.petclinic.owner.VisitControllerTests]
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 3.5.0
+
+
+2026-10-04T11:10:22.664+02:00  INFO 16164 --- [           main] o.s.s.p.service.ClinicServiceTests       : Starting ClinicServiceTests using Java 21.0.12.1 with PID 16164 (/private/tmp/recollect-petclinic/build/classes/java/test started by D061177 in /private/tmp/recollect-petclinic)
+2026-10-04T11:10:22.664+02:00  INFO 16164 --- [           main] o.s.s.p.service.ClinicServiceTests       : No active profile set, falling back to 1 default profile: "default"
+2026-10-04T11:10:22.701+02:00  INFO 16164 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-04T11:10:22.710+02:00  INFO 16164 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 3.5.0
+
+
+2026-10-04T11:10:22.830+02:00  INFO 16164 --- [           main] .s.s.p.s.CrashControllerIntegrationTests : Starting CrashControllerIntegrationTests using Java 21.0.12.1 with PID 16164 (/private/tmp/recollect-petclinic/build/classes/java/test started by D061177 in /private/tmp/recollect-petclinic)
+2026-10-04T11:10:22.830+02:00  INFO 16164 --- [           main] .s.s.p.s.CrashControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2026-10-04T11:10:23.179+02:00  INFO 16164 --- [           main] o.s.t.c.aot.TestContextAotGenerator      : Skipping AOT processing due to the presence of @DisabledInAotMode for test classes [org.springframework.samples.petclinic.vet.VetControllerTests]
+
+> Task :compileAotTestJava
+warning: unknown enum constant Status.STABLE
+  reason: class file for org.apiguardian.api.API$Status not found
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+> Task :processAotTestResources
+> Task :aotTestClasses
+
+> Task :test
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=5
+
+DummyTest > simpleTest() STANDARD_OUT
+    ===> HelloExtensionTest executed
+
+DummyTest > simpleTest() PASSED
+
+DummyTest > demo() STANDARD_OUT
+    running dummy test
+
+DummyTest > demo() PASSED
+
+Gradle Test Executor 1 STANDARD_OUT
+    11:10:28.600 [Test worker] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.21.0
+    11:10:28.865 [Test worker] INFO org.testcontainers.dockerclient.DockerMachineClientProviderStrategy -- docker-machine executable was not found on PATH ([/opt/homebrew/bin, /opt/homebrew/sbin, /usr/local/bin, /System/Cryptexes/App/usr/bin, /usr/bin, /bin, /usr/sbin, /sbin, /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin, /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin, /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin, /pkg/env/global/bin, /Library/Apple/usr/bin, /Applications/Privileges.app/Contents/MacOS, /usr/local/share/dotnet, ~/.dotnet/tools, /Users/D061177/.codex/packages/standalone/releases/0.150.1-aarch64-apple-darwin/codex-path, /Users/D061177/.codex/tmp/arg0/codex-arg0OxsRI0, /Users/D061177/.local/bin, /opt/homebrew/Cellar/pyenv-virtualenv/1.2.4/shims, /Users/D061177/.pyenv/shims, /Users/D061177/.pyenv/bin, /opt/anaconda3/bin, /opt/anaconda3/condabin, /opt/homebrew/bin, /Users/D061177/Programs/apache-maven-3.8.6/bin, /usr/local/homebrew/bin, /Users/D061177/.dotnet/tools, /Applications/Privileges.app/Contents/Resources, /Users/D061177/work/hamsters/ec-pipeline/flutter/bin])
+    11:10:28.866 [Test worker] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy -- Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+    	UnixSocketClientProviderStrategy: failed with exception InvalidConfigurationException (Could not find unix domain socket). Root cause NoSuchFileException (/var/run/docker.sock)
+    	DockerDesktopClientProviderStrategy: failed with exception NullPointerException (Cannot invoke "java.nio.file.Path.toString()" because the return value of "org.testcontainers.dockerclient.DockerDesktopClientProviderStrategy.getSocketPath()" is null)As no valid configuration was found, execution cannot continue.
+    See https://java.testcontainers.org/on_failure.html for more details.
+
+MySqlIntegrationTests > testFindAll() SKIPPED
+
+MySqlIntegrationTests > testOwnerDetails() SKIPPED
+
+PetClinicIntegrationTests STANDARD_OUT
+    11:10:28.935 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.PetClinicIntegrationTests]: PetClinicIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    11:10:29.083 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.PetClinicIntegrationTests
+
+
+                  |\      _,,,--,,_
+                 /,`.-'`'   ._  \-;;,_
+      _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+     |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+     |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+     |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+     |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+     |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+     |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+     ==================================================================/_/_/_/
+
+    :: Built with Spring Boot :: 3.5.0
+
+
+    2026-10-04T11:10:29.573+02:00  INFO 16166 --- [    Test worker] o.s.s.p.PetClinicIntegrationTests        : Starting PetClinicIntegrationTests using Java 21.0.12.1 with PID 16166 (started by D061177 in /private/tmp/recollect-petclinic)
+    2026-10-04T11:10:29.574+02:00  INFO 16166 --- [    Test worker] o.s.s.p.PetClinicIntegrationTests        : No active profile set, falling back to 1 default profile: "default"
+    2026-10-04T11:10:30.278+02:00  INFO 16166 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2026-10-04T11:10:30.330+02:00  INFO 16166 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 3 JPA repository interfaces.
+    2026-10-04T11:10:30.753+02:00  INFO 16166 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+    2026-10-04T11:10:30.765+02:00  INFO 16166 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+    2026-10-04T11:10:30.765+02:00  INFO 16166 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+    2026-10-04T11:10:30.820+02:00  INFO 16166 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+    2026-10-04T11:10:30.821+02:00  INFO 16166 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1227 ms
+    2026-10-04T11:10:30.970+02:00  INFO 16166 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+    2026-10-04T11:10:31.179+02:00  INFO 16166 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:8c8a7ab9-3af1-403f-a680-6a2d7b644479 user=SA
+    2026-10-04T11:10:31.180+02:00  INFO 16166 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+    2026-10-04T11:10:31.316+02:00  INFO 16166 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2026-10-04T11:10:31.354+02:00  INFO 16166 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+    2026-10-04T11:10:31.382+02:00  INFO 16166 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+    2026-10-04T11:10:31.594+02:00  INFO 16166 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2026-10-04T11:10:31.657+02:00  INFO 16166 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+    	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+    	Database driver: undefined/unknown
+    	Database version: 2.3.232
+    	Autocommit mode: undefined/unknown
+    	Isolation level: undefined/unknown
+    	Minimum pool size: undefined/unknown
+    	Maximum pool size: undefined/unknown
+    2026-10-04T11:10:32.446+02:00  INFO 16166 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    2026-10-04T11:10:32.447+02:00  INFO 16166 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2026-10-04T11:10:32.653+02:00  INFO 16166 --- [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+    2026-10-04T11:10:33.391+02:00  INFO 16166 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+    2026-10-04T11:10:33.561+02:00  INFO 16166 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 65029 (http) with context path '/'
+    2026-10-04T11:10:33.571+02:00  INFO 16166 --- [    Test worker] o.s.s.p.PetClinicIntegrationTests        : Started PetClinicIntegrationTests in 4.223 seconds (process running for 6.102)
+
+PetClinicIntegrationTests > testFindAll() STANDARD_ERROR
+    Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+    WARNING: A Java agent has been loaded dynamically (/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.5/58f9507f5f28d1d3e7adfb4ec2fe37c29d332c9b/byte-buddy-agent-1.17.5.jar)
+    WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+    WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+    WARNING: Dynamic loading of agents will be disallowed by default in a future release
+
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :test
+
+PetClinicIntegrationTests > testFindAll() PASSED
+
+PetClinicIntegrationTests > testOwnerDetails() STANDARD_OUT
+    2026-10-04T11:10:34.728+02:00  INFO 16166 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+    2026-10-04T11:10:34.729+02:00  INFO 16166 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+    2026-10-04T11:10:34.729+02:00  INFO 16166 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+
+PetClinicIntegrationTests > testOwnerDetails() PASSED
+
+PostgresIntegrationTests STANDARD_OUT
+    2026-10-04T11:10:35.221+02:00  INFO 16166 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.PostgresIntegrationTests]: PostgresIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2026-10-04T11:10:35.224+02:00  INFO 16166 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.PostgresIntegrationTests
+    2026-10-04T11:10:35.226+02:00  INFO 16166 --- [    Test worker] org.testcontainers.DockerClientFactory   : Testcontainers version: 1.21.0
+
+PostgresIntegrationTests > testFindAll() SKIPPED
+
+PostgresIntegrationTests > testOwnerDetails() SKIPPED
+
+ValidatorTests > shouldNotValidateWhenFirstNameEmpty() PASSED
+
+OwnerControllerTests STANDARD_OUT
+    2026-10-04T11:10:35.318+02:00  INFO 16166 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.OwnerControllerTests]: OwnerControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2026-10-04T11:10:35.341+02:00  INFO 16166 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.OwnerControllerTests
+
+
+                  |\      _,,,--,,_
+                 /,`.-'`'   ._  \-;;,_
+      _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+     |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+     |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+     |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+     |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+     |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+     |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+     ==================================================================/_/_/_/
+
+    :: Built with Spring Boot :: 3.5.0
+
+
+    2026-10-04T11:10:35.367+02:00  INFO 16166 --- [    Test worker] o.s.s.p.owner.OwnerControllerTests       : Starting OwnerControllerTests using Java 21.0.12.1 with PID 16166 (started by D061177 in /private/tmp/recollect-petclinic)
+    2026-10-04T11:10:35.368+02:00  INFO 16166 --- [    Test worker] o.s.s.p.owner.OwnerControllerTests       : No active profile set, falling back to 1 default profile: "default"
+    2026-10-04T11:10:35.859+02:00  INFO 16166 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2026-10-04T11:10:35.860+02:00  INFO 16166 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2026-10-04T11:10:35.860+02:00  INFO 16166 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+    2026-10-04T11:10:35.884+02:00  INFO 16166 --- [    Test worker] o.s.s.p.owner.OwnerControllerTests       : Started OwnerControllerTests in 0.537 seconds (process running for 8.415)
+
+OwnerControllerTests > testProcessUpdateOwnerFormHasErrors() PASSED
+
+OwnerControllerTests > testProcessCreationFormSuccess() PASSED
+
+OwnerControllerTests > testInitFindForm() PASSED
+
+OwnerControllerTests > testShowOwner() PASSED
+
+OwnerControllerTests > testProcessUpdateOwnerFormWithIdMismatch() PASSED
+
+OwnerControllerTests > testInitUpdateOwnerForm() PASSED
+
+OwnerControllerTests > testInitCreationForm() PASSED
+
+OwnerControllerTests > testProcessFindFormByLastName() PASSED
+
+OwnerControllerTests > testProcessFindFormNoOwnersFound() PASSED
+
+OwnerControllerTests > testProcessFindFormSuccess() PASSED
+
+OwnerControllerTests > testProcessUpdateOwnerFormSuccess() PASSED
+
+OwnerControllerTests > testProcessCreationFormHasErrors() PASSED
+
+OwnerControllerTests > testProcessUpdateOwnerFormUnchangedSuccess() PASSED
+
+PetControllerTests STANDARD_OUT
+    2026-10-04T11:10:36.822+02:00  INFO 16166 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests]: PetControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2026-10-04T11:10:36.834+02:00  INFO 16166 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests
+
+
+                  |\      _,,,--,,_
+                 /,`.-'`'   ._  \-;;,_
+      _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+     |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+     |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+     |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+     |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+     |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+     |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+     ==================================================================/_/_/_/
+
+    :: Built with Spring Boot :: 3.5.0
+
+
+    2026-10-04T11:10:36.865+02:00  INFO 16166 --- [    Test worker] o.s.s.p.owner.PetControllerTests         : Starting PetControllerTests using Java 21.0.12.1 with PID 16166 (started by D061177 in /private/tmp/recollect-petclinic)
+    2026-10-04T11:10:36.865+02:00  INFO 16166 --- [    Test worker] o.s.s.p.owner.PetControllerTests         : No active profile set, falling back to 1 default profile: "default"
+    2026-10-04T11:10:37.111+02:00  INFO 16166 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2026-10-04T11:10:37.111+02:00  INFO 16166 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2026-10-04T11:10:37.111+02:00  INFO 16166 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+    2026-10-04T11:10:37.116+02:00  INFO 16166 --- [    Test worker] o.s.s.p.owner.PetControllerTests         : Started PetControllerTests in 0.276 seconds (process running for 9.647)
+
+PetControllerTests > testProcessCreationFormSuccess() PASSED
+
+PetControllerTests > testProcessUpdateFormSuccess() PASSED
+
+PetControllerTests > testInitCreationForm() PASSED
+
+PetControllerTests > ProcessUpdateFormHasErrors STANDARD_OUT
+    2026-10-04T11:10:37.347+02:00  INFO 16166 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors]: ProcessUpdateFormHasErrors does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2026-10-04T11:10:37.357+02:00  INFO 16166 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors
+
+PetControllerTests > ProcessUpdateFormHasErrors > testProcessUpdateFormWithInvalidBirthDate() PASSED
+
+PetControllerTests > ProcessUpdateFormHasErrors > testProcessUpdateFormWithBlankName() PASSED
+
+PetControllerTests > ProcessCreationFormHasErrors STANDARD_OUT
+    2026-10-04T11:10:37.488+02:00  INFO 16166 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors]: ProcessCreationFormHasErrors does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2026-10-04T11:10:37.497+02:00  INFO 16166 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors
+
+PetControllerTests > ProcessCreationFormHasErrors > testProcessCreationFormWithBlankName() PASSED
+
+PetControllerTests > ProcessCreationFormHasErrors > testInitUpdateForm() PASSED
+
+PetControllerTests > ProcessCreationFormHasErrors > testProcessCreationFormWithMissingPetType() PASSED
+
+PetControllerTests > ProcessCreationFormHasErrors > testProcessCreationFormWithDuplicateName() PASSED
+
+PetControllerTests > ProcessCreationFormHasErrors > testProcessCreationFormWithInvalidBirthDate() PASSED
+
+PetTypeFormatterTests > shouldThrowParseException() PASSED
+
+PetTypeFormatterTests > testPrint() PASSED
+
+PetTypeFormatterTests > shouldParse() PASSED
+
+PetValidatorTests > testValidate() PASSED
+
+PetValidatorTests > ValidateHasErrors > testValidateWithInvalidPetName() PASSED
+
+PetValidatorTests > ValidateHasErrors > testValidateWithInvalidPetType() PASSED
+
+PetValidatorTests > ValidateHasErrors > testValidateWithInvalidBirthDate() PASSED
+
+VisitControllerTests STANDARD_OUT
+    2026-10-04T11:10:37.945+02:00  INFO 16166 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.VisitControllerTests]: VisitControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2026-10-04T11:10:37.951+02:00  INFO 16166 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.VisitControllerTests
+
+
+                  |\      _,,,--,,_
+                 /,`.-'`'   ._  \-;;,_
+      _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+     |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+     |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+     |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+     |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+     |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+     |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+     ==================================================================/_/_/_/
+
+    :: Built with Spring Boot :: 3.5.0
+
+
+    2026-10-04T11:10:37.967+02:00  INFO 16166 --- [    Test worker] o.s.s.p.owner.VisitControllerTests       : Starting VisitControllerTests using Java 21.0.12.1 with PID 16166 (started by D061177 in /private/tmp/recollect-petclinic)
+    2026-10-04T11:10:37.968+02:00  INFO 16166 --- [    Test worker] o.s.s.p.owner.VisitControllerTests       : No active profile set, falling back to 1 default profile: "default"
+    2026-10-04T11:10:38.086+02:00  INFO 16166 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2026-10-04T11:10:38.087+02:00  INFO 16166 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2026-10-04T11:10:38.087+02:00  INFO 16166 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+    2026-10-04T11:10:38.091+02:00  INFO 16166 --- [    Test worker] o.s.s.p.owner.VisitControllerTests       : Started VisitControllerTests in 0.137 seconds (process running for 10.622)
+
+VisitControllerTests > testProcessNewVisitFormHasErrors() PASSED
+
+VisitControllerTests > testProcessNewVisitFormSuccess() PASSED
+
+VisitControllerTests > testInitNewVisitForm() PASSED
+
+ClinicServiceTests STANDARD_OUT
+    2026-10-04T11:10:38.287+02:00  INFO 16166 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.service.ClinicServiceTests]: ClinicServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2026-10-04T11:10:38.306+02:00  INFO 16166 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.service.ClinicServiceTests
+
+
+                  |\      _,,,--,,_
+                 /,`.-'`'   ._  \-;;,_
+      _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+     |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+     |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+     |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+     |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+     |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+     |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+     ==================================================================/_/_/_/
+
+    :: Built with Spring Boot :: 3.5.0
+
+
+    2026-10-04T11:10:38.322+02:00  INFO 16166 --- [    Test worker] o.s.s.p.service.ClinicServiceTests       : Starting ClinicServiceTests using Java 21.0.12.1 with PID 16166 (started by D061177 in /private/tmp/recollect-petclinic)
+    2026-10-04T11:10:38.323+02:00  INFO 16166 --- [    Test worker] o.s.s.p.service.ClinicServiceTests       : No active profile set, falling back to 1 default profile: "default"
+    2026-10-04T11:10:38.367+02:00  INFO 16166 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+    2026-10-04T11:10:38.379+02:00  INFO 16166 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+    2026-10-04T11:10:38.398+02:00  INFO 16166 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+    2026-10-04T11:10:38.400+02:00  INFO 16166 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:c33a41fc-8711-4894-b5ec-67b5cf85cf47 user=SA
+    2026-10-04T11:10:38.400+02:00  INFO 16166 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+    2026-10-04T11:10:38.428+02:00  INFO 16166 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+    2026-10-04T11:10:38.430+02:00  INFO 16166 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+    2026-10-04T11:10:38.441+02:00  INFO 16166 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+    2026-10-04T11:10:38.442+02:00  INFO 16166 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+    	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+    	Database driver: undefined/unknown
+    	Database version: 2.3.232
+    	Autocommit mode: undefined/unknown
+    	Isolation level: undefined/unknown
+    	Minimum pool size: undefined/unknown
+    	Maximum pool size: undefined/unknown
+    2026-10-04T11:10:38.480+02:00  INFO 16166 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+    2026-10-04T11:10:38.480+02:00  INFO 16166 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+    2026-10-04T11:10:38.518+02:00  INFO 16166 --- [    Test worker] o.s.s.p.service.ClinicServiceTests       : Started ClinicServiceTests in 0.209 seconds (process running for 11.049)
+
+ClinicServiceTests > shouldFindVets() STANDARD_OUT
+    Hibernate: select v1_0.id,v1_0.first_name,v1_0.last_name from vets v1_0
+    Hibernate: select s1_0.vet_id,s1_1.id,s1_1.name from vet_specialties s1_0 join specialties s1_1 on s1_1.id=s1_0.specialty_id where s1_0.vet_id=?
+    Hibernate: select s1_0.vet_id,s1_1.id,s1_1.name from vet_specialties s1_0 join specialties s1_1 on s1_1.id=s1_0.specialty_id where s1_0.vet_id=?
+    Hibernate: select s1_0.vet_id,s1_1.id,s1_1.name from vet_specialties s1_0 join specialties s1_1 on s1_1.id=s1_0.specialty_id where s1_0.vet_id=?
+    Hibernate: select s1_0.vet_id,s1_1.id,s1_1.name from vet_specialties s1_0 join specialties s1_1 on s1_1.id=s1_0.specialty_id where s1_0.vet_id=?
+    Hibernate: select s1_0.vet_id,s1_1.id,s1_1.name from vet_specialties s1_0 join specialties s1_1 on s1_1.id=s1_0.specialty_id where s1_0.vet_id=?
+    Hibernate: select s1_0.vet_id,s1_1.id,s1_1.name from vet_specialties s1_0 join specialties s1_1 on s1_1.id=s1_0.specialty_id where s1_0.vet_id=?
+
+ClinicServiceTests > shouldFindVets() PASSED
+
+ClinicServiceTests > shouldFindOwnersByLastName() STANDARD_OUT
+    Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.last_name like ? escape '\'
+    Hibernate: select p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from pets p1_0 left join types t1_0 on t1_0.id=p1_0.type_id where p1_0.owner_id=? order by p1_0.name
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+    Hibernate: select p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from pets p1_0 left join types t1_0 on t1_0.id=p1_0.type_id where p1_0.owner_id=? order by p1_0.name
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+    Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.last_name like ? escape '\'
+
+ClinicServiceTests > shouldFindOwnersByLastName() PASSED
+
+ClinicServiceTests > shouldAddNewVisitForPet() STANDARD_OUT
+    Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+    Hibernate: insert into visits (visit_date,description,id) values (?,?,default)
+
+ClinicServiceTests > shouldAddNewVisitForPet() PASSED
+
+ClinicServiceTests > shouldUpdateOwner() STANDARD_OUT
+    Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+
+ClinicServiceTests > shouldUpdateOwner() PASSED
+
+ClinicServiceTests > shouldFindVisitsByPetId() STANDARD_OUT
+    Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+
+ClinicServiceTests > shouldFindVisitsByPetId() PASSED
+
+ClinicServiceTests > shouldInsertPetIntoDatabaseAndGenerateId() STANDARD_OUT
+    Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+    Hibernate: select pt1_0.id,pt1_0.name from types pt1_0 order by pt1_0.name
+    Hibernate: insert into pets (birth_date,name,type_id,id) values (?,?,?,default)
+
+ClinicServiceTests > shouldInsertPetIntoDatabaseAndGenerateId() PASSED
+
+ClinicServiceTests > shouldInsertOwner() STANDARD_OUT
+    Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.last_name like ? escape '\'
+    Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+    Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.last_name like ? escape '\'
+
+ClinicServiceTests > shouldInsertOwner() PASSED
+
+ClinicServiceTests > shouldFindSingleOwnerWithPet() STANDARD_OUT
+    Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+
+ClinicServiceTests > shouldFindSingleOwnerWithPet() PASSED
+
+ClinicServiceTests > shouldUpdatePetName() STANDARD_OUT
+    Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+    Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+
+ClinicServiceTests > shouldUpdatePetName() PASSED
+
+ClinicServiceTests > shouldFindAllPetTypes() STANDARD_OUT
+    Hibernate: select pt1_0.id,pt1_0.name from types pt1_0 order by pt1_0.name
+
+ClinicServiceTests > shouldFindAllPetTypes() PASSED
+
+CrashControllerIntegrationTests STANDARD_OUT
+
+
+                  |\      _,,,--,,_
+                 /,`.-'`'   ._  \-;;,_
+      _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+     |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+     |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+     |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+     |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+     |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+     |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+     ==================================================================/_/_/_/
+
+    :: Built with Spring Boot :: 3.5.0
+
+
+    2026-10-04T11:10:39.222+02:00  INFO 16166 --- [    Test worker] .s.s.p.s.CrashControllerIntegrationTests : Starting CrashControllerIntegrationTests using Java 21.0.12.1 with PID 16166 (started by D061177 in /private/tmp/recollect-petclinic)
+    2026-10-04T11:10:39.222+02:00  INFO 16166 --- [    Test worker] .s.s.p.s.CrashControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+    2026-10-04T11:10:39.346+02:00  INFO 16166 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+    2026-10-04T11:10:39.346+02:00  INFO 16166 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+    2026-10-04T11:10:39.346+02:00  INFO 16166 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+    2026-10-04T11:10:39.362+02:00  INFO 16166 --- [    Test worker] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+    2026-10-04T11:10:39.363+02:00  INFO 16166 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 140 ms
+    2026-10-04T11:10:39.450+02:00  INFO 16166 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 0 endpoints beneath base path '/actuator'
+    2026-10-04T11:10:39.460+02:00  INFO 16166 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 65036 (http) with context path '/'
+    2026-10-04T11:10:39.464+02:00  INFO 16166 --- [    Test worker] .s.s.p.s.CrashControllerIntegrationTests : Started CrashControllerIntegrationTests in 0.252 seconds (process running for 11.995)
+
+CrashControllerIntegrationTests > testTriggerExceptionHtml() STANDARD_OUT
+    2026-10-04T11:10:39.471+02:00  INFO 16166 --- [o-auto-2-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+    2026-10-04T11:10:39.471+02:00  INFO 16166 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+    2026-10-04T11:10:39.472+02:00  INFO 16166 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+    2026-10-04T11:10:39.476+02:00 ERROR 16166 --- [o-auto-2-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Expected: controller used to showcase what happens when an exception is thrown] with root cause
+
+    java.lang.RuntimeException: Expected: controller used to showcase what happens when an exception is thrown
+    	at org.springframework.samples.petclinic.system.CrashController.triggerException(CrashController.java:33) ~[main/:na]
+    	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+    	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+    	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+    	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+
+CrashControllerIntegrationTests > testTriggerExceptionHtml() PASSED
+
+CrashControllerIntegrationTests > testTriggerExceptionJson() STANDARD_OUT
+    2026-10-04T11:10:39.639+02:00 ERROR 16166 --- [o-auto-2-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Expected: controller used to showcase what happens when an exception is thrown] with root cause
+
+    java.lang.RuntimeException: Expected: controller used to showcase what happens when an exception is thrown
+    	at org.springframework.samples.petclinic.system.CrashController.triggerException(CrashController.java:33) ~[main/:na]
+    	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+    	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+    	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.41.jar:6.0]
+    	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.41.jar:6.0]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.2.7.jar:6.2.7]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.7.jar:6.2.7]
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.41.jar:10.1.41]
+    	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+
+CrashControllerIntegrationTests > testTriggerExceptionJson() PASSED
+
+CrashControllerTests > testTriggerException() PASSED
+
+I18nPropertiesSyncTest > checkNonInternationalizedStrings() PASSED
+
+I18nPropertiesSyncTest > checkI18nPropertyFilesAreInSync() PASSED
+
+VetControllerTests STANDARD_OUT
+    2026-10-04T11:10:39.831+02:00  INFO 16166 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.vet.VetControllerTests]: VetControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    2026-10-04T11:10:39.843+02:00  INFO 16166 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.vet.VetControllerTests
+
+
+                  |\      _,,,--,,_
+                 /,`.-'`'   ._  \-;;,_
+      _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+     |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+     |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+     |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+     |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+     |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+     |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+     ==================================================================/_/_/_/
+
+    :: Built with Spring Boot :: 3.5.0
+
+
+    2026-10-04T11:10:39.855+02:00  INFO 16166 --- [    Test worker] o.s.s.petclinic.vet.VetControllerTests   : Starting VetControllerTests using Java 21.0.12.1 with PID 16166 (started by D061177 in /private/tmp/recollect-petclinic)
+    2026-10-04T11:10:39.855+02:00  INFO 16166 --- [    Test worker] o.s.s.petclinic.vet.VetControllerTests   : No active profile set, falling back to 1 default profile: "default"
+    2026-10-04T11:10:39.980+02:00  INFO 16166 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+    2026-10-04T11:10:39.980+02:00  INFO 16166 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+    2026-10-04T11:10:39.980+02:00  INFO 16166 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+    2026-10-04T11:10:39.982+02:00  INFO 16166 --- [    Test worker] o.s.s.petclinic.vet.VetControllerTests   : Started VetControllerTests in 0.136 seconds (process running for 12.513)
+
+VetControllerTests > testShowVetListHtml() PASSED
+
+VetControllerTests > testShowResourcesVetList() PASSED
+
+VetTests > testSerialization() PASSED
+
+2026-10-04T11:10:40.220+02:00  INFO 16166 --- [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-04T11:10:40.225+02:00  INFO 16166 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-10-04T11:10:40.231+02:00  INFO 16166 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-04T11:10:40.232+02:00  INFO 16166 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-04T11:10:40.233+02:00  INFO 16166 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-04T11:10:40.238+02:00  INFO 16166 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-04T11:10:40.238+02:00  INFO 16166 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-10-04T11:10:40.239+02:00  INFO 16166 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-10-04T11:10:40.239+02:00  INFO 16166 --- [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-04T11:10:40.241+02:00  INFO 16166 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+
+> Task :generateSmartReports
+[SmartTestPicker] Generating XML reports for 56 exec files using 5 threads across 1 classes directories
+[SmartTestPicker] Preloaded 25 class files (0MB) in 5ms
+[SmartTestPicker] Report generation complete: 52 covered, 4 empty (no production coverage), 0 failed, 204ms elapsed
+
+> Task :generateTestCoverageJson
+Generated test coverage map: /private/tmp/recollect-petclinic/build/test-coverage-map.json (56 tests, commitId: cbb884f01f7fef663fcff256e303d967494a4f8b)
+
+[Incubating] Problems report is available at: file:///private/tmp/recollect-petclinic/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 41s
+12 actionable tasks: 12 executed

@@ -1,0 +1,24 @@
+{
+  "commons-lang": {
+    "status": "NOT_RECOLLECTED",
+    "classification": null
+  },
+  "jgrapht": {
+    "status": "NOT_RECOLLECTED",
+    "classification": null
+  },
+  "spring-core": {
+    "status": "RECOLLECTED_POPULATION_MISMATCH",
+    "classification": "DIFFERENT",
+    "frozenIdentityCount": 3624,
+    "recollectedIdentityCount": 3638,
+    "differingIdentityCount": 450
+  },
+  "petclinic": {
+    "status": "RECOLLECTED_POPULATION_MISMATCH",
+    "classification": "DIFFERENT",
+    "frozenIdentityCount": 52,
+    "recollectedIdentityCount": 56,
+    "differingIdentityCount": 4
+  }
+}

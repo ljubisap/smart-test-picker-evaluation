@@ -38,7 +38,7 @@ Logs are preserved beside this report. No PIT, mutation, or extension-subject co
 
 ## Repository state
 
-Evidence commit: recorded by the follow-up metadata commit after this report's initial commit. Tag: `rad1-v14.5`. Push was not performed.
+Evidence payload commit: `d46b1ca064ec69b2d3b8baf06ccf6e7fb6a489cc`. A follow-up commit adds the ignored raw logs and this fixed reference. Tag: `rad1-v14.5`. Push was not performed.
 
 Manual publication command after review:
 
