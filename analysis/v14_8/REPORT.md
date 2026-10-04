@@ -88,7 +88,10 @@ The required manuscript grep is empty. `git diff --check` passes. No file under
 
 ## Repository finish
 
-Commit and tag are recorded after this report is committed. Nothing is pushed.
+The evidence implementation and report were committed as
+`358a81e59557b91b04a8896bdbea043c7dd3d58a`; the `rad1-v14.8` tag points to the
+follow-up that records these completion details and retained logs. Nothing is
+pushed.
 The manual push command is:
 
 ```text
