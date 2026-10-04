@@ -96,11 +96,12 @@ selector-equivalence, freeze, and recollection checks; B2; v14.6; v14.7;
 v14.8; v14.9; and v15. Exact commands, exit codes, last lines, and individual
 logs are in `verification_results.json` and `verify_*.log`.
 
-The repository changes are limited to `analysis/v15/`. The final commit and
-push confirmation are appended after the commit/tag operation.
+The repository changes are limited to `analysis/v15/`. The evidence commit is
+`8a7ae59513278992eecbbdb346b38deba75487d8`; `rad1-v15` is the authoritative
+tag and includes this report-only follow-up. The task authorizes pushing
+`main` and `rad1-v15`; remote confirmation is reported in the final handoff.
 
 ## Author actions
 
 1. Replace `ANON_URL` after uploading the exact ZIP.
 2. Confirm or edit the AI-use acknowledgment against the conference policy.
-
