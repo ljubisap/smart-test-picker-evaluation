@@ -72,4 +72,11 @@ Push command:
 git push origin main rad1-v14.6 rad1-v14.7 rad1-v14.8 rad1-v14.9
 ```
 
-The confirmed remote tag references are appended after push.
+Confirmed `git ls-remote --tags origin` output after push:
+
+```text
+df63a8feba445e1bd9cba46b24d6a6abf75139c9 refs/tags/rad1-v14.6
+4b36dc449386430c11a3373cccd9c8db7df12547 refs/tags/rad1-v14.7
+d13b243063b6fa6a3451f854f14941298a272564 refs/tags/rad1-v14.8
+6815adb5b73adb3284001ac8bc930d938d3912e3 refs/tags/rad1-v14.9
+```
