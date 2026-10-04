@@ -1,0 +1,213 @@
+{
+  "subjects": {
+    "commons-lang": {
+      "frozenIdentities": 4692,
+      "recollectedIdentities": 4697,
+      "gIdPass": true,
+      "removedNormalizedIdentities": [],
+      "gAddPass": true,
+      "addedIdentities": [
+        {
+          "key": "ByteSupplierTest#testGetAsByte_b391d72",
+          "normalized": "ByteSupplierTest#testGetAsByte",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "SystemPropertiesTest#testActualKeys_550dddd",
+          "normalized": "SystemPropertiesTest#testActualKeys",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "SystemPropertiesTest#testGetJavaCompiler_60e9a79",
+          "normalized": "SystemPropertiesTest#testGetJavaCompiler",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "UncheckedFutureTest#testGetInterruptedException_744fb5b",
+          "normalized": "UncheckedFutureTest#testGetInterruptedException",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "UncheckedFutureTest#testGetLongInterruptedException_381c815",
+          "normalized": "UncheckedFutureTest#testGetLongInterruptedException",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        }
+      ],
+      "pass": true
+    },
+    "jgrapht": {
+      "frozenIdentities": 2308,
+      "recollectedIdentities": 2309,
+      "gIdPass": true,
+      "removedNormalizedIdentities": [],
+      "gAddPass": true,
+      "addedIdentities": [
+        {
+          "key": "RadixSortTest#testRandomArrays_835c122",
+          "normalized": "RadixSortTest#testRandomArrays",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        }
+      ],
+      "pass": true
+    },
+    "spring-core": {
+      "frozenIdentities": 3624,
+      "recollectedIdentities": 3638,
+      "gIdPass": true,
+      "removedNormalizedIdentities": [],
+      "gAddPass": true,
+      "addedIdentities": [
+        {
+          "key": "AnnotationAwareOrderComparatorTests#instanceVariableIsAnAnnotationAwareOrderComparator_32df85c",
+          "normalized": "AnnotationAwareOrderComparatorTests#instanceVariableIsAnAnnotationAwareOrderComparator",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "JdkProxyHintExtensionsTests#proxiedInterfaces builder extension_c71395f",
+          "normalized": "JdkProxyHintExtensionsTests#proxiedInterfaces builder extension",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "PropertyResolverExtensionsKotlinTests#get operator_1d0622c",
+          "normalized": "PropertyResolverExtensionsKotlinTests#get operator",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "PropertyResolverExtensionsKotlinTests#getProperty extension_4bf3af6",
+          "normalized": "PropertyResolverExtensionsKotlinTests#getProperty extension",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "PropertyResolverExtensionsKotlinTests#getProperty with default extension_7bd2a31",
+          "normalized": "PropertyResolverExtensionsKotlinTests#getProperty with default extension",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "PropertyResolverExtensionsKotlinTests#getRequiredProperty extension_d3ca26e",
+          "normalized": "PropertyResolverExtensionsKotlinTests#getRequiredProperty extension",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "ProxyHintsExtensionsTests#registerJdkProxy extension_628ed8e",
+          "normalized": "ProxyHintsExtensionsTests#registerJdkProxy extension",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "ReflectionHintsExtensionsTests#getTypeHint extension_5495925",
+          "normalized": "ReflectionHintsExtensionsTests#getTypeHint extension",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "ReflectionHintsExtensionsTests#registerType extension with Consumer_14c12ab",
+          "normalized": "ReflectionHintsExtensionsTests#registerType extension with Consumer",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "ReflectionHintsExtensionsTests#registerType extension with MemberCategory_122964a",
+          "normalized": "ReflectionHintsExtensionsTests#registerType extension with MemberCategory",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "ResourceHintsExtensionsTests#registerType extension_1b4cb61",
+          "normalized": "ResourceHintsExtensionsTests#registerType extension",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "SerializationHintsExtensionsTests#registerType extension with Consumer_223719b",
+          "normalized": "SerializationHintsExtensionsTests#registerType extension with Consumer",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "SerializationHintsExtensionsTests#registerType extension_eb90a26",
+          "normalized": "SerializationHintsExtensionsTests#registerType extension",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "TypeHintExtensionsTests#onReachableType builder extension_9a1f2d3",
+          "normalized": "TypeHintExtensionsTests#onReachableType builder extension",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        }
+      ],
+      "pass": true
+    },
+    "petclinic": {
+      "frozenIdentities": 52,
+      "recollectedIdentities": 56,
+      "gIdPass": true,
+      "removedNormalizedIdentities": [],
+      "gAddPass": true,
+      "addedIdentities": [
+        {
+          "key": "DummyTest#demo_73daa15",
+          "normalized": "DummyTest#demo",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "DummyTest#simpleTest_2955d7e",
+          "normalized": "DummyTest#simpleTest",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "I18nPropertiesSyncTest#checkI18nPropertyFilesAreInSync_5b351f1",
+          "normalized": "I18nPropertiesSyncTest#checkI18nPropertyFilesAreInSync",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        },
+        {
+          "key": "I18nPropertiesSyncTest#checkNonInternationalizedStrings_3b9e6f4",
+          "normalized": "I18nPropertiesSyncTest#checkNonInternationalizedStrings",
+          "classes": [],
+          "methods": [],
+          "empty": true
+        }
+      ],
+      "pass": true
+    }
+  },
+  "allPass": true
+}

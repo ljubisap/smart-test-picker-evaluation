@@ -1,0 +1,337 @@
+{
+  "differences": [
+    {
+      "project": "commons-lang",
+      "policy": "base",
+      "field": "meanSelectedFullPrecision",
+      "partB": 17.010362694300518,
+      "derived": 22.010362694300518
+    },
+    {
+      "project": "commons-lang",
+      "policy": "base",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 0.3625396993670187,
+      "derived": 0.46860469862253606
+    },
+    {
+      "project": "commons-lang",
+      "policy": "base",
+      "field": "reductionPctFullPrecision",
+      "partB": 99.63746030063298,
+      "derived": 99.53139530137746
+    },
+    {
+      "project": "commons-lang",
+      "policy": "constructor",
+      "field": "meanSelectedFullPrecision",
+      "partB": 19.80699481865285,
+      "derived": 24.80699481865285
+    },
+    {
+      "project": "commons-lang",
+      "policy": "constructor",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 0.4221439645919192,
+      "derived": 0.5281455145550958
+    },
+    {
+      "project": "commons-lang",
+      "policy": "constructor",
+      "field": "reductionPctFullPrecision",
+      "partB": 99.57785603540808,
+      "derived": 99.47185448544491
+    },
+    {
+      "project": "commons-lang",
+      "policy": "class",
+      "field": "meanSelectedFullPrecision",
+      "partB": 50.11658031088083,
+      "derived": 55.11658031088083
+    },
+    {
+      "project": "commons-lang",
+      "policy": "class",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 1.0681283101210748,
+      "derived": 1.1734422037658256
+    },
+    {
+      "project": "commons-lang",
+      "policy": "class",
+      "field": "reductionPctFullPrecision",
+      "partB": 98.93187168987893,
+      "derived": 98.82655779623417
+    },
+    {
+      "project": "jgrapht",
+      "policy": "base",
+      "field": "meanSelectedFullPrecision",
+      "partB": 88.70406189555126,
+      "derived": 89.70406189555126
+    },
+    {
+      "project": "jgrapht",
+      "policy": "base",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 3.843330238108807,
+      "derived": 3.8849745299069407
+    },
+    {
+      "project": "jgrapht",
+      "policy": "base",
+      "field": "reductionPctFullPrecision",
+      "partB": 96.1566697618912,
+      "derived": 96.11502547009306
+    },
+    {
+      "project": "jgrapht",
+      "policy": "constructor",
+      "field": "meanSelectedFullPrecision",
+      "partB": 97.94197292069633,
+      "derived": 98.94197292069633
+    },
+    {
+      "project": "jgrapht",
+      "policy": "constructor",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 4.243586348383723,
+      "derived": 4.285057294096853
+    },
+    {
+      "project": "jgrapht",
+      "policy": "constructor",
+      "field": "reductionPctFullPrecision",
+      "partB": 95.75641365161627,
+      "derived": 95.71494270590314
+    },
+    {
+      "project": "jgrapht",
+      "policy": "class",
+      "field": "meanSelectedFullPrecision",
+      "partB": 208.80270793036752,
+      "derived": 209.80270793036752
+    },
+    {
+      "project": "jgrapht",
+      "policy": "class",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 9.046911088837414,
+      "derived": 9.08630177264476
+    },
+    {
+      "project": "jgrapht",
+      "policy": "class",
+      "field": "reductionPctFullPrecision",
+      "partB": 90.95308891116258,
+      "derived": 90.91369822735524
+    },
+    {
+      "project": "spring-core",
+      "policy": "base",
+      "field": "meanSelectedFullPrecision",
+      "partB": 80.62995594713657,
+      "derived": 94.61453744493392
+    },
+    {
+      "project": "spring-core",
+      "policy": "base",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 2.2248884091373227,
+      "derived": 2.6007294514825157
+    },
+    {
+      "project": "spring-core",
+      "policy": "base",
+      "field": "reductionPctFullPrecision",
+      "partB": 97.77511159086268,
+      "derived": 97.39927054851748
+    },
+    {
+      "project": "spring-core",
+      "policy": "constructor",
+      "field": "meanSelectedFullPrecision",
+      "partB": 84.931718061674,
+      "derived": 98.91629955947137
+    },
+    {
+      "project": "spring-core",
+      "policy": "constructor",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 2.3435904542404526,
+      "derived": 2.718974699270791
+    },
+    {
+      "project": "spring-core",
+      "policy": "constructor",
+      "field": "reductionPctFullPrecision",
+      "partB": 97.65640954575954,
+      "derived": 97.28102530072921
+    },
+    {
+      "project": "spring-core",
+      "policy": "class",
+      "field": "meanSelectedFullPrecision",
+      "partB": 529.1828193832599,
+      "derived": 543.1828193832599
+    },
+    {
+      "project": "spring-core",
+      "policy": "class",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 14.602174927794147,
+      "derived": 14.930808669138536
+    },
+    {
+      "project": "spring-core",
+      "policy": "class",
+      "field": "reductionPctFullPrecision",
+      "partB": 85.39782507220585,
+      "derived": 85.06919133086146
+    },
+    {
+      "project": "petclinic",
+      "policy": "base",
+      "field": "meanSelectedFullPrecision",
+      "partB": 9.72340425531915,
+      "derived": 13.72340425531915
+    },
+    {
+      "project": "petclinic",
+      "policy": "base",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 18.69885433715221,
+      "derived": 24.50607902735562
+    },
+    {
+      "project": "petclinic",
+      "policy": "base",
+      "field": "reductionPctFullPrecision",
+      "partB": 81.30114566284779,
+      "derived": 75.49392097264437
+    },
+    {
+      "project": "petclinic",
+      "policy": "constructor",
+      "field": "meanSelectedFullPrecision",
+      "partB": 11.712765957446809,
+      "derived": 15.712765957446809
+    },
+    {
+      "project": "petclinic",
+      "policy": "constructor",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 22.52454991816694,
+      "derived": 28.05851063829787
+    },
+    {
+      "project": "petclinic",
+      "policy": "constructor",
+      "field": "reductionPctFullPrecision",
+      "partB": 77.47545008183306,
+      "derived": 71.94148936170212
+    },
+    {
+      "project": "petclinic",
+      "policy": "class",
+      "field": "meanSelectedFullPrecision",
+      "partB": 18.351063829787233,
+      "derived": 22.351063829787233
+    },
+    {
+      "project": "petclinic",
+      "policy": "class",
+      "field": "selectedFractionPctFullPrecision",
+      "partB": 35.29050736497545,
+      "derived": 39.91261398176291
+    },
+    {
+      "project": "petclinic",
+      "policy": "class",
+      "field": "reductionPctFullPrecision",
+      "partB": 64.70949263502456,
+      "derived": 60.08738601823709
+    }
+  ],
+  "differenceCount": 36,
+  "consistencyChecks": {
+    "base": {
+      "expected": [
+        3991,
+        4010
+      ],
+      "observed": [
+        3991,
+        4010
+      ],
+      "match": true
+    },
+    "constructor": {
+      "expected": [
+        3998,
+        4010
+      ],
+      "observed": [
+        3998,
+        4010
+      ],
+      "match": true
+    },
+    "class": {
+      "expected": [
+        4009,
+        4010
+      ],
+      "observed": [
+        4009,
+        4010
+      ],
+      "match": true
+    },
+    "springSecurity": {
+      "expected": [
+        335,
+        337,
+        340
+      ],
+      "observed": [
+        335,
+        337,
+        340
+      ],
+      "match": true
+    },
+    "flips": {
+      "expected": 5,
+      "observed": 5,
+      "match": true
+    },
+    "legacySizeIncrement": {
+      "expected": {
+        "commons-lang": 0,
+        "jgrapht": 1,
+        "spring-core": 0,
+        "petclinic": 0,
+        "flink": 1,
+        "spring-security": 23,
+        "hibernate": 0,
+        "quarkus": 9
+      },
+      "observed": {
+        "commons-lang": 5.0,
+        "jgrapht": 2.0,
+        "spring-core": 14.0,
+        "petclinic": 4.0,
+        "flink": 1.0,
+        "spring-security": 23.0,
+        "hibernate": 0.0,
+        "quarkus": 9.0
+      },
+      "match": false
+    },
+    "eligibleMutationIdsIdentical": {
+      "match": true,
+      "count": 4010
+    }
+  }
+}

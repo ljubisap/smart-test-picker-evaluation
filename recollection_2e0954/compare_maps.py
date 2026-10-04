@@ -18,8 +18,8 @@ def footprint(entry):
     return set(entry.get('classes') or []), set(entry.get('methods') or [])
 
 specs = {
-    'commons-lang': ('commons-lang/results/test-coverage-map.json.gz', None),
-    'jgrapht': ('jgrapht/results/test-coverage-map.json.gz', None),
+    'commons-lang': ('commons-lang/results/test-coverage-map.json.gz', 'recollection_2e0954/commons-lang/test-coverage-map.json'),
+    'jgrapht': ('jgrapht/results/test-coverage-map.json.gz', 'recollection_2e0954/jgrapht/test-coverage-map.json'),
     'spring-core': ('spring-core/results/test-coverage-map.json', 'recollection_2e0954/spring-core/test-coverage-map.json'),
     'petclinic': ('petclinic/results/test-coverage-map.json', 'recollection_2e0954/petclinic/test-coverage-map.json'),
 }
@@ -47,15 +47,20 @@ for name, (old_rel, new_rel) in specs.items():
                 'addedMethods': sorted(nm-om), 'removedMethods': sorted(om-nm)})
     old_u=sorted(k for k,v in old.items() if not (v.get('classes') or []) and not (v.get('methods') or []))
     new_u=sorted(k for k,v in new.items() if not (v.get('classes') or []) and not (v.get('methods') or []))
-    row.update({'status':'RECOLLECTED_POPULATION_MISMATCH' if len(new)!=len(old) else 'RECOLLECTED',
+    normalized_removed=sorted(set(old_norm)-set(new_norm))
+    normalized_added=sorted(set(new_norm)-set(old_norm))
+    added_nonempty=[new_norm[x] for x in normalized_added if any(footprint(new[new_norm[x]]))]
+    row.update({'status':'RECOLLECTED_GATE_PASS' if not normalized_removed and not added_nonempty else 'RECOLLECTED_GATE_FAIL',
         'classification':'IDENTICAL' if not details and old_keys==new_keys else 'DIFFERENT',
         'frozenIdentityCount':len(old), 'recollectedIdentityCount':len(new),
         'exactAddedIdentities':sorted(new_keys-old_keys), 'exactRemovedIdentities':sorted(old_keys-new_keys),
-        'normalizedAddedIdentities':sorted(set(new_norm)-set(old_norm)),
-        'normalizedRemovedIdentities':sorted(set(old_norm)-set(new_norm)),
+        'normalizedAddedIdentities':normalized_added,
+        'normalizedRemovedIdentities':normalized_removed,
+        'G-ID':not normalized_removed, 'G-ADD':not added_nonempty,
+        'addedNonEmptyIdentities':added_nonempty,
         'frozenU':old_u, 'recollectedU':new_u, 'differingIdentityCount':len(details),
         'differences':details})
     result['subjects'][name]=row
-result['decisionBranch']='C'
+result['decisionBranch']='ADOPT' if all(x.get('G-ID') and x.get('G-ADD') for x in result['subjects'].values()) else 'KEEP'
 (OUT/'map_comparison.json').write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps({k:{x:v for x,v in r.items() if x in ('status','classification','frozenIdentityCount','recollectedIdentityCount','differingIdentityCount')} for k,r in result['subjects'].items()},indent=2))

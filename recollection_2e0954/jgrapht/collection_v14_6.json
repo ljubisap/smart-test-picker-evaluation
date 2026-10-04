@@ -1,0 +1,1 @@
+{"checkout":"093b0c5ea006ba5b1d8b7a0212676bf8850cac6b","jdk":"SapMachine 21.0.12.1+1-LTS","buildTool":"Maven 3.9.15","cpuLimit":5,"reusedSessions":2309,"failed":0,"errors":0,"skipped":15,"map":"recollection_2e0954/jgrapht/test-coverage-map.json","mapSha256":"0f38d66f02a4ba1bf4b62fe4b6fde52df0a3b46208c2aa39cc6355a4dd741a43","gate":{"G-ID":true,"G-ADD":true,"addedEmpty":1}}

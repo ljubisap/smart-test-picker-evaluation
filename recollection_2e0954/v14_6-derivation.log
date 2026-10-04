@@ -1,0 +1,29 @@
+{
+  "aggregate": {
+    "base": {
+      "eligible": 4010,
+      "inclusive": 3991,
+      "inclusivenessPctFullPrecision": 99.52618453865337,
+      "inclusivenessPct2dp": 99.53
+    },
+    "constructor": {
+      "eligible": 4010,
+      "inclusive": 3998,
+      "inclusivenessPctFullPrecision": 99.70074812967582,
+      "inclusivenessPct2dp": 99.7
+    },
+    "class": {
+      "eligible": 4010,
+      "inclusive": 4009,
+      "inclusivenessPctFullPrecision": 99.97506234413964,
+      "inclusivenessPct2dp": 99.98
+    }
+  },
+  "residual": {
+    "C": 1,
+    "A": 7,
+    "B": 10,
+    "MIXED": 1
+  },
+  "clusters": 137
+}

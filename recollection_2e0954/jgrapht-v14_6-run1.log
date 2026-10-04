@@ -1,0 +1,11 @@
+Project commit: 093b0c5ea006
+[Skip] Using 2309 existing .exec files
+[Generate per-test XML reports] Running...
+[Generate per-test XML reports] OK (45s)
+[Generate coverage map JSON] Running...
+[Generate coverage map JSON] OK (13s)
+
+SUCCESS: Coverage map generated
+  Tests: 2309
+  Commit: 093b0c5ea006
+  File: /tmp/recollect-jgrapht/jgrapht-core/target/test-coverage-map.json

@@ -1,0 +1,17 @@
+{
+  "commit": "2e0954b5b590fb0b9da979c28b0d053e4ce9e5c9",
+  "republished": false,
+  "localRepository": "/Users/D061177/.m2/repository/com/sap/oss/smart-test-picker",
+  "complete": true,
+  "artifacts": {
+    "commonJar": "91a1e0507a0f7532a803c44301ebfa10643d1687c27d68e1b4e31765226e5237",
+    "commonPom": "460db6e12380b0483db37512e659fb86192dcaa8e6ffa3c39c2746b074d3ddca",
+    "coreJar": "8dbc85182539dc053f964b69f339ec728f6d3b3312cc3a469620be72c49d1a31",
+    "corePom": "085bb9e04bb558fe7ce6c3ebf8e214f11f1587a5ef9a3ca99479bb1b19be08d4",
+    "gradlePluginJar": "42b4c3b642e68838a6de6258076be7b975b0ce9dcf781a5308570c0104030919",
+    "gradlePluginPom": "b259884a6f91aee58372f373310ae5ea1b868add406c5809eaeaa6880bffb5b7",
+    "gradleMarkerPom": "4d7dc7d1e48a13d6c79ea8acc0ff4a4997bf69dd94801da3f6bca80195a7aa2a",
+    "mavenPluginJar": "e55fbbd6fa6e46da059c19c7c0edee1f95c1e4007a32df10434017cb44552795",
+    "mavenPluginPom": "c20ac9b8386796a0f75ada5d72ec655f56f0c07763515d2e60a24b27762a8b26"
+  }
+}

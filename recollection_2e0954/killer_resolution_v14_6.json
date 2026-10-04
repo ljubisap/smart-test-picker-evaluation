@@ -1,0 +1,29 @@
+{
+  "projects": {
+    "commons-lang": {
+      "killedRecords": 772,
+      "killerOccurrences": 3055,
+      "unresolved": [],
+      "unresolvedCount": 0
+    },
+    "jgrapht": {
+      "killedRecords": 517,
+      "killerOccurrences": 158802,
+      "unresolved": [],
+      "unresolvedCount": 0
+    },
+    "spring-core": {
+      "killedRecords": 454,
+      "killerOccurrences": 10307,
+      "unresolved": [],
+      "unresolvedCount": 0
+    },
+    "petclinic": {
+      "killedRecords": 94,
+      "killerOccurrences": 422,
+      "unresolved": [],
+      "unresolvedCount": 0
+    }
+  },
+  "unresolvedTotal": 0
+}

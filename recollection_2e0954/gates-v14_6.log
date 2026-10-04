@@ -1,0 +1,20 @@
+{
+  "gates": {
+    "commons-lang": true,
+    "jgrapht": true,
+    "spring-core": true,
+    "petclinic": true
+  },
+  "added": {
+    "commons-lang": 5,
+    "jgrapht": 1,
+    "spring-core": 14,
+    "petclinic": 4
+  },
+  "springRunToRun": 262,
+  "springClasses": {
+    "added_empty_identity": 14,
+    "run_to_run_nondeterministic": 139,
+    "stable_footprint_difference": 297
+  }
+}

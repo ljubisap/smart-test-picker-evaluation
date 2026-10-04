@@ -1,0 +1,44 @@
+diff --git a/pom.xml b/pom.xml
+index 7d474fcb6..9ff810a26 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -594,6 +594,39 @@
+         <systemProperties>-Dtest.large.heap=true</systemProperties>
+       </properties>
+     </profile>
++    <profile>
++      <id>smart-test-picker</id>
++      <properties>
++        <argLine>${heapSize} ${extraArgs} ${systemProperties} -Djdk.attach.allowAttachSelf=true -XX:+EnableDynamicAgentLoading -Dstp.exec.dir=${project.build.directory}/jacoco/</argLine>
++      </properties>
++      <dependencies>
++        <dependency>
++          <groupId>com.sap.oss.smart-test-picker</groupId>
++          <artifactId>smart-test-picker-core</artifactId>
++          <version>0.1.0</version>
++          <scope>test</scope>
++        </dependency>
++      </dependencies>
++      <build>
++        <plugins>
++          <plugin>
++            <groupId>org.jacoco</groupId>
++            <artifactId>jacoco-maven-plugin</artifactId>
++            <version>0.8.13</version>
++            <executions>
++              <execution>
++                <id>prepare-agent</id>
++                <goals><goal>prepare-agent</goal></goals>
++                <configuration>
++                  <destFile>${project.build.directory}/jacoco/test.exec</destFile>
++                  <append>false</append>
++                </configuration>
++              </execution>
++            </executions>
++          </plugin>
++        </plugins>
++      </build>
++    </profile>
+   </profiles>
+   <developers>
+     <developer>

@@ -2,22 +2,187 @@
   "subjects": {
     "commons-lang": {
       "frozenMap": "commons-lang/results/test-coverage-map.json.gz",
-      "recollectedMap": null,
-      "status": "NOT_RECOLLECTED",
-      "classification": null
+      "recollectedMap": "recollection_2e0954/commons-lang/test-coverage-map.json",
+      "frozenSha256": "75198f3e41ccbfd090295c7a1defa02380cde7618e9ac71cd7b7fa9b35f04384",
+      "recollectedSha256": "3411f99ebf02fe18114e64df5aa77663f25a18cf18f52ac8a3cf5dea66e5f657",
+      "status": "RECOLLECTED_GATE_PASS",
+      "classification": "DIFFERENT",
+      "frozenIdentityCount": 4692,
+      "recollectedIdentityCount": 4697,
+      "exactAddedIdentities": [
+        "ByteSupplierTest#testGetAsByte_b391d72",
+        "SystemPropertiesTest#testActualKeys_550dddd",
+        "SystemPropertiesTest#testGetJavaCompiler_60e9a79",
+        "UncheckedFutureTest#testGetInterruptedException_744fb5b",
+        "UncheckedFutureTest#testGetLongInterruptedException_381c815"
+      ],
+      "exactRemovedIdentities": [],
+      "normalizedAddedIdentities": [
+        "ByteSupplierTest#testGetAsByte",
+        "SystemPropertiesTest#testActualKeys",
+        "SystemPropertiesTest#testGetJavaCompiler",
+        "UncheckedFutureTest#testGetInterruptedException",
+        "UncheckedFutureTest#testGetLongInterruptedException"
+      ],
+      "normalizedRemovedIdentities": [],
+      "G-ID": true,
+      "G-ADD": true,
+      "addedNonEmptyIdentities": [],
+      "frozenU": [],
+      "recollectedU": [
+        "ByteSupplierTest#testGetAsByte_b391d72",
+        "SystemPropertiesTest#testActualKeys_550dddd",
+        "SystemPropertiesTest#testGetJavaCompiler_60e9a79",
+        "UncheckedFutureTest#testGetInterruptedException_744fb5b",
+        "UncheckedFutureTest#testGetLongInterruptedException_381c815"
+      ],
+      "differingIdentityCount": 5,
+      "differences": [
+        {
+          "logicalIdentity": "ByteSupplierTest#testGetAsByte",
+          "frozenKey": null,
+          "recollectedKey": "ByteSupplierTest#testGetAsByte_b391d72",
+          "addedClasses": [],
+          "removedClasses": [],
+          "addedMethods": [],
+          "removedMethods": []
+        },
+        {
+          "logicalIdentity": "SystemPropertiesTest#testActualKeys",
+          "frozenKey": null,
+          "recollectedKey": "SystemPropertiesTest#testActualKeys_550dddd",
+          "addedClasses": [],
+          "removedClasses": [],
+          "addedMethods": [],
+          "removedMethods": []
+        },
+        {
+          "logicalIdentity": "SystemPropertiesTest#testGetJavaCompiler",
+          "frozenKey": null,
+          "recollectedKey": "SystemPropertiesTest#testGetJavaCompiler_60e9a79",
+          "addedClasses": [],
+          "removedClasses": [],
+          "addedMethods": [],
+          "removedMethods": []
+        },
+        {
+          "logicalIdentity": "UncheckedFutureTest#testGetInterruptedException",
+          "frozenKey": null,
+          "recollectedKey": "UncheckedFutureTest#testGetInterruptedException_744fb5b",
+          "addedClasses": [],
+          "removedClasses": [],
+          "addedMethods": [],
+          "removedMethods": []
+        },
+        {
+          "logicalIdentity": "UncheckedFutureTest#testGetLongInterruptedException",
+          "frozenKey": null,
+          "recollectedKey": "UncheckedFutureTest#testGetLongInterruptedException_381c815",
+          "addedClasses": [],
+          "removedClasses": [],
+          "addedMethods": [],
+          "removedMethods": []
+        }
+      ]
     },
     "jgrapht": {
       "frozenMap": "jgrapht/results/test-coverage-map.json.gz",
-      "recollectedMap": null,
-      "status": "NOT_RECOLLECTED",
-      "classification": null
+      "recollectedMap": "recollection_2e0954/jgrapht/test-coverage-map.json",
+      "frozenSha256": "851e4287a57b981d8a9af930e9774656987f8e5b8a392ec53bb0850422dbcdc5",
+      "recollectedSha256": "0f38d66f02a4ba1bf4b62fe4b6fde52df0a3b46208c2aa39cc6355a4dd741a43",
+      "status": "RECOLLECTED_GATE_PASS",
+      "classification": "DIFFERENT",
+      "frozenIdentityCount": 2308,
+      "recollectedIdentityCount": 2309,
+      "exactAddedIdentities": [
+        "RadixSortTest#testRandomArrays_835c122"
+      ],
+      "exactRemovedIdentities": [],
+      "normalizedAddedIdentities": [
+        "RadixSortTest#testRandomArrays"
+      ],
+      "normalizedRemovedIdentities": [],
+      "G-ID": true,
+      "G-ADD": true,
+      "addedNonEmptyIdentities": [],
+      "frozenU": [
+        "GraphTestsTest#failRequireIsWeightedOnNull_761695b"
+      ],
+      "recollectedU": [
+        "GraphTestsTest#failRequireIsWeightedOnNull_761695b",
+        "RadixSortTest#testRandomArrays_835c122"
+      ],
+      "differingIdentityCount": 5,
+      "differences": [
+        {
+          "logicalIdentity": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour10",
+          "frozenKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour10_7a86847",
+          "recollectedKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour10_7a86847",
+          "addedClasses": [],
+          "removedClasses": [],
+          "addedMethods": [
+            "org.jgrapht.alg.cycle.HierholzerEulerianCycle#moveToFront",
+            "org.jgrapht.alg.util.Pair#getSecond"
+          ],
+          "removedMethods": []
+        },
+        {
+          "logicalIdentity": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour7",
+          "frozenKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour7_3dc2465",
+          "recollectedKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour7_3dc2465",
+          "addedClasses": [],
+          "removedClasses": [],
+          "addedMethods": [],
+          "removedMethods": [
+            "org.jgrapht.alg.cycle.HierholzerEulerianCycle#moveToFront",
+            "org.jgrapht.alg.util.Pair#getSecond"
+          ]
+        },
+        {
+          "logicalIdentity": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour9",
+          "frozenKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour9_3dc2465",
+          "recollectedKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour9_3dc2465",
+          "addedClasses": [],
+          "removedClasses": [],
+          "addedMethods": [],
+          "removedMethods": [
+            "org.jgrapht.alg.cycle.HierholzerEulerianCycle#moveToFront",
+            "org.jgrapht.alg.util.Pair#getSecond"
+          ]
+        },
+        {
+          "logicalIdentity": "HopcroftKarpMaximumCardinalityBipartiteMatchingTest#testBipartiteMatchingIssue233",
+          "frozenKey": "HopcroftKarpMaximumCardinalityBipartiteMatchingTest#testBipartiteMatchingIssue233_54a310f",
+          "recollectedKey": "HopcroftKarpMaximumCardinalityBipartiteMatchingTest#testBipartiteMatchingIssue233_54a310f",
+          "addedClasses": [],
+          "removedClasses": [],
+          "addedMethods": [],
+          "removedMethods": [
+            "org.jgrapht.alg.matching.HopcroftKarpMaximumCardinalityBipartiteMatching#bfs",
+            "org.jgrapht.alg.matching.HopcroftKarpMaximumCardinalityBipartiteMatching#dfs",
+            "org.jgrapht.alg.util.FixedSizeIntegerQueue#clear",
+            "org.jgrapht.alg.util.FixedSizeIntegerQueue#enqueue",
+            "org.jgrapht.alg.util.FixedSizeIntegerQueue#isEmpty",
+            "org.jgrapht.alg.util.FixedSizeIntegerQueue#poll"
+          ]
+        },
+        {
+          "logicalIdentity": "RadixSortTest#testRandomArrays",
+          "frozenKey": null,
+          "recollectedKey": "RadixSortTest#testRandomArrays_835c122",
+          "addedClasses": [],
+          "removedClasses": [],
+          "addedMethods": [],
+          "removedMethods": []
+        }
+      ]
     },
     "spring-core": {
       "frozenMap": "spring-core/results/test-coverage-map.json",
       "recollectedMap": "recollection_2e0954/spring-core/test-coverage-map.json",
       "frozenSha256": "936becf03857bfa0d22958ca88053f4c8bfabc85651f822f4ef51837bb2813b5",
       "recollectedSha256": "bfeafc4bb2a7221243c1f7fb407938472b582462a8cad071cbc90152eb83e32d",
-      "status": "RECOLLECTED_POPULATION_MISMATCH",
+      "status": "RECOLLECTED_GATE_PASS",
       "classification": "DIFFERENT",
       "frozenIdentityCount": 3624,
       "recollectedIdentityCount": 3638,
@@ -55,6 +220,9 @@
         "TypeHintExtensionsTests#onReachableType builder extension"
       ],
       "normalizedRemovedIdentities": [],
+      "G-ID": true,
+      "G-ADD": true,
+      "addedNonEmptyIdentities": [],
       "frozenU": [],
       "recollectedU": [
         "AnnotationAwareOrderComparatorTests#instanceVariableIsAnAnnotationAwareOrderComparator_32df85c",
@@ -5644,7 +5812,7 @@
       "recollectedMap": "recollection_2e0954/petclinic/test-coverage-map.json",
       "frozenSha256": "fb8ace81fab33aac953a26fa6d340ce5f486771295f2ef50a779f4be0981152a",
       "recollectedSha256": "d157cae04c617ef1c7632608a7e957794e9bb94bb8aeaf0123e01d6eebda6d82",
-      "status": "RECOLLECTED_POPULATION_MISMATCH",
+      "status": "RECOLLECTED_GATE_PASS",
       "classification": "DIFFERENT",
       "frozenIdentityCount": 52,
       "recollectedIdentityCount": 56,
@@ -5662,6 +5830,9 @@
         "I18nPropertiesSyncTest#checkNonInternationalizedStrings"
       ],
       "normalizedRemovedIdentities": [],
+      "G-ID": true,
+      "G-ADD": true,
+      "addedNonEmptyIdentities": [],
       "frozenU": [],
       "recollectedU": [
         "DummyTest#demo_73daa15",
@@ -5710,5 +5881,5 @@
       ]
     }
   },
-  "decisionBranch": "C"
+  "decisionBranch": "ADOPT"
 }

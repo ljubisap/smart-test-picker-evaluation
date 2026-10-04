@@ -1,0 +1,13 @@
+Project commit: 8538458e7aeb
+[Clean] Removed stale /tmp/recollect-commons-lang/target/jacoco
+[Verify] Running test suite (failures will abort)...
+[Verify] OK (1337s)  --  all tests pass
+[Generate per-test XML reports] Running...
+[Generate per-test XML reports] OK (73s)
+[Generate coverage map JSON] Running...
+[Generate coverage map JSON] OK (60s)
+
+SUCCESS: Coverage map generated
+  Tests: 4697
+  Commit: 8538458e7aeb
+  File: /tmp/recollect-commons-lang/target/test-coverage-map.json

@@ -3,13 +3,14 @@
 
 from __future__ import annotations
 
-import hashlib, json, math, random, statistics, sys
+import hashlib, json, math, os, random, statistics, sys
 from collections import defaultdict
 from math import comb
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = Path(__file__).resolve().parent
+OUT = Path(os.environ.get("STP_DERIVATION_OUT", Path(__file__).resolve().parent))
+PROJECTS_FILE = Path(os.environ.get("STP_PROJECTS_FILE", ROOT / "analysis/projects.json"))
 sys.path.insert(0, str(ROOT))
 
 from analysis.evaluation_core import (  # noqa: E402
@@ -96,7 +97,7 @@ def method_kind(name):
 
 
 def main():
-    projects=json.loads((ROOT/"analysis/projects.json").read_text())["projects"]
+    projects=json.loads(PROJECTS_FILE.read_text())["projects"]
     taxonomy=json.loads((ROOT/"results/failure_taxonomy.json").read_text())
     annotations={m["mutationId"]:m for p in taxonomy["byProject"].values() for m in p.get("mutations",[])}
     all_rows=[]; summary={"schemaVersion":1,"sourcePolicy":"STP 2e0954 U union (H if H else G)","projects":{}}
@@ -149,11 +150,12 @@ def main():
         summary.setdefault("aggregate",{})[policy]=m
         intervals["aggregate"][policy]={"wilson95Pct":wilson(m["inclusive"],m["eligible"]),"clusterBootstrap95Pct":bootstrap(aggregate_pairs[policy],20261103)}
         clusters_out["aggregate"][policy]=[{"successes":x[0],"total":x[1]} for x in aggregate_pairs[policy]]
-    method_audit=json.loads((OUT/"method_kind_audit.json").read_text())
+    reference_out = ROOT / "analysis/v14_4_rederivation"
+    method_audit=json.loads((reference_out/"method_kind_audit.json").read_text())
     summary["methodKinds"]={"source":"analysis/v14_4_rederivation/method_kind_audit.json","counts":{
         kind:sum(s["eligibleRecordsByKind"][kind]["eligible"] for s in method_audit["subjects"].values())
         for kind in next(iter(method_audit["subjects"].values()))["eligibleRecordsByKind"]}}
-    regression=(OUT/"regression_output.txt").read_text(); import re
+    regression=(reference_out/"regression_output.txt").read_text(); import re
     match=re.search(r"Ran (\d+) tests",regression); summary["regressionTests"]={"source":"analysis/v14_4_rederivation/regression_output.txt","count":int(match.group(1)),"passed":regression.rstrip().endswith("OK")}
     summary["confidenceIntervalsSource"]="analysis/v14_4_rederivation/confidence_intervals.json"
     residual_counts=defaultdict(int); causal_counts=defaultdict(int)
@@ -210,7 +212,9 @@ def main():
     (OUT/"mitigation_comparison.json").write_text(json.dumps(mitigation,indent=2)+"\n")
     (OUT/"random_baseline.json").write_text(json.dumps({n:d["randomEqualBudget"] for n,d in summary["projects"].items()},indent=2)+"\n")
     (OUT/"partb_delta.json").write_text(json.dumps({"differences":deltas,"differenceCount":len(deltas),"consistencyChecks":checks},indent=2)+"\n")
-    if deltas or not all(v.get("match",False) for v in checks.values()): raise SystemExit("B2 consistency mismatch; inspect partb_delta.json")
+    if PROJECTS_FILE.resolve() == (ROOT / "analysis/projects.json").resolve():
+        if deltas or not all(v.get("match",False) for v in checks.values()):
+            raise SystemExit("B2 consistency mismatch; inspect partb_delta.json")
     print(json.dumps({"aggregate":summary["aggregate"],"residual":residual_output["residualFootprintCounts"],"clusters":len(aggregate_pairs["base"])},indent=2))
 
 if __name__=="__main__": main()

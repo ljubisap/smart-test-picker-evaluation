@@ -1,0 +1,30 @@
+{
+  "commons-lang": {
+    "status": "RECOLLECTED_GATE_PASS",
+    "classification": "DIFFERENT",
+    "frozenIdentityCount": 4692,
+    "recollectedIdentityCount": 4697,
+    "differingIdentityCount": 5
+  },
+  "jgrapht": {
+    "status": "RECOLLECTED_GATE_PASS",
+    "classification": "DIFFERENT",
+    "frozenIdentityCount": 2308,
+    "recollectedIdentityCount": 2309,
+    "differingIdentityCount": 5
+  },
+  "spring-core": {
+    "status": "RECOLLECTED_GATE_PASS",
+    "classification": "DIFFERENT",
+    "frozenIdentityCount": 3624,
+    "recollectedIdentityCount": 3638,
+    "differingIdentityCount": 450
+  },
+  "petclinic": {
+    "status": "RECOLLECTED_GATE_PASS",
+    "classification": "DIFFERENT",
+    "frozenIdentityCount": 52,
+    "recollectedIdentityCount": 56,
+    "differingIdentityCount": 4
+  }
+}

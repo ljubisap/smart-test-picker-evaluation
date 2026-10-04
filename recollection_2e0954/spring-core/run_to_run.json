@@ -1,0 +1,3345 @@
+{
+  "run1Identities": 3638,
+  "run2Identities": 3638,
+  "differingIdentityCount": 262,
+  "differences": [
+    {
+      "identity": "AnnotatedElementUtilsTests#findMergedAnnotationAttributesOnClassWithBothAttributesOfAnAliasPairDeclared_9447eec",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#findMergedAnnotationAttributesOnInheritedAnnotationInterface_7f8becf",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#findMergedAnnotationAttributesOnMethodWithComposedMetaTransactionalAnnotation_4a67a97",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#findMergedAnnotationAttributesOnSubInheritedAnnotationInterface_4c26d54",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#findMergedAnnotationWithAttributeAliasesInTargetAnnotation_2601245",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#findMergedRepeatableAnnotationsWithContainerWithMultipleAttributes_39745ad",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#findMethodAnnotationFromGenericSuperclass_6d9d1e0",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#getAllAnnotationAttributesOnClassWithLocalAnnotationThatShadowsAnnotationFromSuperclass_2355c79",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#getMergedAnnotationAttributesFavorsInheritedComposedAnnotationsOverMoreLocallyDeclaredComposedAnnotations_14e047e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#getMergedAnnotationAttributesFavorsLocalComposedAnnotationOverInheritedAnnotation_37fbee4",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#getMergedAnnotationAttributesOnClassWithLocalAnnotationThatShadowsAnnotationFromSuperclass_666f383",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#getMergedAnnotationAttributesOnClassWithLocalAnnotation_564ccec",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#getMergedAnnotationAttributesOnInheritedAnnotationInterface_1757861",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#getMergedAnnotationWithAliasedValueComposedAnnotation_4f3e324",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#getMergedAnnotationWithImplicitAliasesInMetaAnnotationOnComposedAnnotation_46510cb",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#getMergedAnnotationWithTransitiveImplicitAliasesWithSkippedLevel_53a1644",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#javaxAnnotationTypeViaFindMergedAnnotation_9e4ab7b",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotatedElementUtilsTests#nullableAnnotationTypeViaFindMergedAnnotation_3a64942",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "AnnotationAwareOrderComparatorTests#sortClassesWithSubclass_5dd60b1",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationAwareOrderComparatorTests#sortInstancesWithPriority_58af16d",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationIntrospectionFailureTests#filteredTypeInMetaAnnotationWhenUsingMergedAnnotationsHandlesException_3fd7619",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationMetadataTests#composedAnnotationWithMetaAnnotationsWithIdenticalAttributeNamesUsingSimpleAnnotationMetadata_2884eda",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationMetadataTests#metaAnnotationOverridesUsingSimpleAnnotationMetadata_6cf6200",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationMetadataTests#metaAnnotationOverridesUsingStandardAnnotationMetadata_8352518",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationMetadataTests#multipleRepeatableAnnotationsInContainersUsingAnnotatedElementUtils_72b0dc7",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference"
+      ],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#forAnnotationTypeWhenAliasForHasMixedImplicitAndExplicitAliases_571667f",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#forAnnotationTypeWhenAliasForSelfWithDifferentDefaults_370f605",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#forAnnotationTypeWhenAliasForSelfWithMissingDefault_11b5294",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#forAnnotationTypeWhenAliasForToSelfAnnotatedToOtherAttribute_54ea541",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#forAnnotationTypeWhenAliasForToSelfNonExistingAttribute_2b73b28",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#forAnnotationTypeWhenRepeatableMetaAnnotationIsFiltered_701486f",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#getAliasMappingWhenHasWithMultipleRoutesToAliasReturnsMappedAttributes_3683a6e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#getAliasMappingsWhenHasDefinedAttributesReturnsMappedAttributes_0280f87",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#getAnnotationWhenRootReturnsNull_3f2066b",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#getAttributesReturnsAttributes_ccef474",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#isEquivalentToDefaultValueWhenClassAndStringNamesMatchReturnsTrue_6415ac2",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#isEquivalentToDefaultValueWhenClassArrayAndStringArrayNamesMatchReturnsTrue_22335b0",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "AnnotationTypeMappingsTests#isEquivalentToDefaultValueWhenNestedAnnotationAndExtractedValuesMatchReturnsTrueAndValueSuppliedAsTypeMappedAnnotation_2099203",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "AnnotationUtilsTests#findClassAnnotationFavorsMoreLocallyDeclaredComposedAnnotationsOverAnnotationsOnInterfaces_4a263cf",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationUtilsTests#findClassAnnotationFavorsMoreLocallyDeclaredComposedAnnotationsOverInheritedAnnotations_31e41d6",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationUtilsTests#findClassAnnotationFavorsMoreLocallyDeclaredComposedAnnotationsOverInheritedComposedAnnotations_1821eff",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationUtilsTests#findClassAnnotationOnMetaMetaAnnotatedClass_2e65af6",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationUtilsTests#findMethodAnnotationWithMetaMetaAnnotationOnLeaf_4256313",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationUtilsTests#getRepeatableAnnotationsDeclaredOnClassWithAttributeAliases_5bcb60c",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "AnnotationUtilsTests#synthesizeAnnotationFromDefaultsWithAttributeAliases_19a6fba",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationUtilsTests#synthesizeAnnotationFromMapWithImplicitAttributeAliases_c4f3899",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationUtilsTests#synthesizeAnnotationFromMapWithMinimalAttributesWithAttributeAliases_1453dd0",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "AnnotationUtilsTests#synthesizeAnnotationWithImplicitAliasesWithDuplicateValues_6c6470f",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "BindingReflectionHintsRegistrarKotlinTests#Register reflection hints for Kotlin data class_1db28ec",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "BridgeMethodResolverKotlinTests#findBridgedMethod_665f90e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": [
+        "org.springframework.core.ResolvableType#equals",
+        "org.springframework.core.ResolvableType#equalsType",
+        "org.springframework.core.ResolvableType#getComponentType"
+      ]
+    },
+    {
+      "identity": "BridgeMethodResolverTests#findBridgedMethodFromMultipleBridges_6faab8e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "BridgeMethodResolverTests#findBridgedMethodInHierarchyWithBoundedGenerics_118ab06",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "BridgeMethodResolverTests#onAllMethods_5b557aa",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [
+        "org.springframework.util.CollectionUtils"
+      ],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.core.BridgeMethodResolver#findGenericDeclaration",
+        "org.springframework.core.BridgeMethodResolver#searchForMatch",
+        "org.springframework.core.BridgeMethodResolver#searchInterfaces",
+        "org.springframework.core.ResolvableType#calculateHashCode",
+        "org.springframework.core.ResolvableType#getInterfaces",
+        "org.springframework.core.ResolvableType#hashCode",
+        "org.springframework.core.ResolvableType#resolveType",
+        "org.springframework.core.ResolvableType$DefaultVariableResolver#getSource",
+        "org.springframework.util.ClassUtils#getAllInterfacesForClass",
+        "org.springframework.util.ClassUtils#getAllInterfacesForClassAsSet",
+        "org.springframework.util.ClassUtils#isVisible",
+        "org.springframework.util.ClassUtils#toClassArray",
+        "org.springframework.util.CollectionUtils#isEmpty",
+        "org.springframework.util.ConcurrentReferenceHashMap#purgeUnreferencedEntries",
+        "org.springframework.util.ObjectUtils#nullSafeHashCode"
+      ]
+    },
+    {
+      "identity": "BridgeMethodResolverTests#testClassHierarchy_543a15e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [
+        "org.springframework.core.MethodParameter",
+        "org.springframework.core.NativeDetector",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.core.ResolvableType$DefaultVariableResolver",
+        "org.springframework.core.SerializableTypeWrapper",
+        "org.springframework.core.SerializableTypeWrapper$MethodInvokeTypeProvider",
+        "org.springframework.core.SerializableTypeWrapper$MethodParameterTypeProvider",
+        "org.springframework.core.SerializableTypeWrapper$TypeProxyInvocationHandler",
+        "org.springframework.util.Assert",
+        "org.springframework.util.ConcurrentReferenceHashMap",
+        "org.springframework.util.ConcurrentReferenceHashMap$1",
+        "org.springframework.util.ConcurrentReferenceHashMap$Entry",
+        "org.springframework.util.ConcurrentReferenceHashMap$ReferenceManager",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference",
+        "org.springframework.util.ConcurrentReferenceHashMap$Task",
+        "org.springframework.util.ObjectUtils",
+        "org.springframework.util.ReflectionUtils"
+      ],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.core.BridgeMethodResolver#findGenericDeclaration",
+        "org.springframework.core.BridgeMethodResolver#isBridgeMethodFor",
+        "org.springframework.core.BridgeMethodResolver#isBridgedCandidateFor",
+        "org.springframework.core.BridgeMethodResolver#isResolvedTypeMatch",
+        "org.springframework.core.BridgeMethodResolver#lambda$resolveBridgeMethod$0",
+        "org.springframework.core.BridgeMethodResolver#searchCandidates",
+        "org.springframework.core.BridgeMethodResolver#searchForMatch",
+        "org.springframework.core.MethodParameter#<init>",
+        "org.springframework.core.MethodParameter#getContainingClass",
+        "org.springframework.core.MethodParameter#getDeclaringClass",
+        "org.springframework.core.MethodParameter#getExecutable",
+        "org.springframework.core.MethodParameter#getGenericParameterType",
+        "org.springframework.core.MethodParameter#getMethod",
+        "org.springframework.core.MethodParameter#getNestingLevel",
+        "org.springframework.core.MethodParameter#getParameterIndex",
+        "org.springframework.core.MethodParameter#validateIndex",
+        "org.springframework.core.NativeDetector#inNativeImage",
+        "org.springframework.core.ResolvableType#<init>",
+        "org.springframework.core.ResolvableType#as",
+        "org.springframework.core.ResolvableType#asVariableResolver",
+        "org.springframework.core.ResolvableType#calculateHashCode",
+        "org.springframework.core.ResolvableType#equals",
+        "org.springframework.core.ResolvableType#equalsType",
+        "org.springframework.core.ResolvableType#forMethodParameter",
+        "org.springframework.core.ResolvableType#forType",
+        "org.springframework.core.ResolvableType#getInterfaces",
+        "org.springframework.core.ResolvableType#getNested",
+        "org.springframework.core.ResolvableType#getSuperType",
+        "org.springframework.core.ResolvableType#hashCode",
+        "org.springframework.core.ResolvableType#resolve",
+        "org.springframework.core.ResolvableType#resolveBounds",
+        "org.springframework.core.ResolvableType#resolveClass",
+        "org.springframework.core.ResolvableType#resolveType",
+        "org.springframework.core.ResolvableType#resolveVariable",
+        "org.springframework.core.ResolvableType#toClass",
+        "org.springframework.core.ResolvableType$DefaultVariableResolver#<init>",
+        "org.springframework.core.ResolvableType$DefaultVariableResolver#getSource",
+        "org.springframework.core.ResolvableType$DefaultVariableResolver#resolveVariable",
+        "org.springframework.core.SerializableTypeWrapper#forTypeProvider",
+        "org.springframework.core.SerializableTypeWrapper$MethodInvokeTypeProvider#<init>",
+        "org.springframework.core.SerializableTypeWrapper$MethodInvokeTypeProvider#getType",
+        "org.springframework.core.SerializableTypeWrapper$MethodParameterTypeProvider#<init>",
+        "org.springframework.core.SerializableTypeWrapper$MethodParameterTypeProvider#getType",
+        "org.springframework.core.SerializableTypeWrapper$TypeProxyInvocationHandler#<init>",
+        "org.springframework.core.SerializableTypeWrapper$TypeProxyInvocationHandler#invoke",
+        "org.springframework.util.Assert#isTrue",
+        "org.springframework.util.Assert#notNull",
+        "org.springframework.util.Assert#state",
+        "org.springframework.util.ClassUtils#resolvePrimitiveIfNecessary",
+        "org.springframework.util.ConcurrentReferenceHashMap#doTask",
+        "org.springframework.util.ConcurrentReferenceHashMap#get",
+        "org.springframework.util.ConcurrentReferenceHashMap#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap#getReference",
+        "org.springframework.util.ConcurrentReferenceHashMap#getSegmentForHash",
+        "org.springframework.util.ConcurrentReferenceHashMap#purgeUnreferencedEntries",
+        "org.springframework.util.ConcurrentReferenceHashMap#put",
+        "org.springframework.util.ConcurrentReferenceHashMap$1#<init>",
+        "org.springframework.util.ConcurrentReferenceHashMap$1#execute",
+        "org.springframework.util.ConcurrentReferenceHashMap$Entry#<init>",
+        "org.springframework.util.ConcurrentReferenceHashMap$Entry#getKey",
+        "org.springframework.util.ConcurrentReferenceHashMap$Entry#getValue",
+        "org.springframework.util.ConcurrentReferenceHashMap$ReferenceManager#createReference",
+        "org.springframework.util.ConcurrentReferenceHashMap$ReferenceManager#pollForPurge",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#doTask",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#findInChain",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#getIndex",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#getReference",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#lambda$doTask$0",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructureIfNecessary",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#<init>",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext",
+        "org.springframework.util.ConcurrentReferenceHashMap$Task#<init>",
+        "org.springframework.util.ConcurrentReferenceHashMap$Task#hasOption",
+        "org.springframework.util.ObjectUtils#isEmpty",
+        "org.springframework.util.ObjectUtils#nullSafeEquals",
+        "org.springframework.util.ObjectUtils#nullSafeHashCode",
+        "org.springframework.util.ReflectionUtils#doWithMethods",
+        "org.springframework.util.ReflectionUtils#findDefaultMethodsOnInterfaces",
+        "org.springframework.util.ReflectionUtils#getDeclaredMethods",
+        "org.springframework.util.ReflectionUtils#invokeMethod"
+      ]
+    },
+    {
+      "identity": "BridgeMethodResolverTests#testInterfaceHierarchy_71ff548",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [
+        "org.springframework.core.MethodParameter",
+        "org.springframework.core.NativeDetector",
+        "org.springframework.core.ResolvableType",
+        "org.springframework.core.ResolvableType$DefaultVariableResolver",
+        "org.springframework.core.SerializableTypeWrapper",
+        "org.springframework.core.SerializableTypeWrapper$MethodInvokeTypeProvider",
+        "org.springframework.core.SerializableTypeWrapper$MethodParameterTypeProvider",
+        "org.springframework.core.SerializableTypeWrapper$TypeProxyInvocationHandler",
+        "org.springframework.util.Assert",
+        "org.springframework.util.CollectionUtils",
+        "org.springframework.util.ConcurrentReferenceHashMap",
+        "org.springframework.util.ConcurrentReferenceHashMap$1",
+        "org.springframework.util.ConcurrentReferenceHashMap$Entry",
+        "org.springframework.util.ConcurrentReferenceHashMap$ReferenceManager",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference",
+        "org.springframework.util.ConcurrentReferenceHashMap$Task",
+        "org.springframework.util.ObjectUtils",
+        "org.springframework.util.ReflectionUtils"
+      ],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.core.BridgeMethodResolver#findGenericDeclaration",
+        "org.springframework.core.BridgeMethodResolver#isBridgeMethodFor",
+        "org.springframework.core.BridgeMethodResolver#isBridgedCandidateFor",
+        "org.springframework.core.BridgeMethodResolver#isResolvedTypeMatch",
+        "org.springframework.core.BridgeMethodResolver#lambda$resolveBridgeMethod$0",
+        "org.springframework.core.BridgeMethodResolver#searchCandidates",
+        "org.springframework.core.BridgeMethodResolver#searchForMatch",
+        "org.springframework.core.BridgeMethodResolver#searchInterfaces",
+        "org.springframework.core.MethodParameter#<init>",
+        "org.springframework.core.MethodParameter#getContainingClass",
+        "org.springframework.core.MethodParameter#getDeclaringClass",
+        "org.springframework.core.MethodParameter#getExecutable",
+        "org.springframework.core.MethodParameter#getGenericParameterType",
+        "org.springframework.core.MethodParameter#getMethod",
+        "org.springframework.core.MethodParameter#getNestingLevel",
+        "org.springframework.core.MethodParameter#getParameterIndex",
+        "org.springframework.core.MethodParameter#validateIndex",
+        "org.springframework.core.NativeDetector#inNativeImage",
+        "org.springframework.core.ResolvableType#<init>",
+        "org.springframework.core.ResolvableType#as",
+        "org.springframework.core.ResolvableType#asVariableResolver",
+        "org.springframework.core.ResolvableType#calculateHashCode",
+        "org.springframework.core.ResolvableType#equals",
+        "org.springframework.core.ResolvableType#equalsType",
+        "org.springframework.core.ResolvableType#forMethodParameter",
+        "org.springframework.core.ResolvableType#forType",
+        "org.springframework.core.ResolvableType#getInterfaces",
+        "org.springframework.core.ResolvableType#getNested",
+        "org.springframework.core.ResolvableType#hashCode",
+        "org.springframework.core.ResolvableType#resolve",
+        "org.springframework.core.ResolvableType#resolveBounds",
+        "org.springframework.core.ResolvableType#resolveClass",
+        "org.springframework.core.ResolvableType#resolveType",
+        "org.springframework.core.ResolvableType#resolveVariable",
+        "org.springframework.core.ResolvableType#toClass",
+        "org.springframework.core.ResolvableType$DefaultVariableResolver#<init>",
+        "org.springframework.core.ResolvableType$DefaultVariableResolver#getSource",
+        "org.springframework.core.ResolvableType$DefaultVariableResolver#resolveVariable",
+        "org.springframework.core.SerializableTypeWrapper#forTypeProvider",
+        "org.springframework.core.SerializableTypeWrapper$MethodInvokeTypeProvider#<init>",
+        "org.springframework.core.SerializableTypeWrapper$MethodInvokeTypeProvider#getType",
+        "org.springframework.core.SerializableTypeWrapper$MethodParameterTypeProvider#<init>",
+        "org.springframework.core.SerializableTypeWrapper$MethodParameterTypeProvider#getType",
+        "org.springframework.core.SerializableTypeWrapper$TypeProxyInvocationHandler#<init>",
+        "org.springframework.core.SerializableTypeWrapper$TypeProxyInvocationHandler#invoke",
+        "org.springframework.util.Assert#isTrue",
+        "org.springframework.util.Assert#notNull",
+        "org.springframework.util.Assert#state",
+        "org.springframework.util.ClassUtils#getAllInterfacesForClass",
+        "org.springframework.util.ClassUtils#getAllInterfacesForClassAsSet",
+        "org.springframework.util.ClassUtils#isVisible",
+        "org.springframework.util.ClassUtils#resolvePrimitiveIfNecessary",
+        "org.springframework.util.ClassUtils#toClassArray",
+        "org.springframework.util.CollectionUtils#isEmpty",
+        "org.springframework.util.ConcurrentReferenceHashMap#doTask",
+        "org.springframework.util.ConcurrentReferenceHashMap#get",
+        "org.springframework.util.ConcurrentReferenceHashMap#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap#getReference",
+        "org.springframework.util.ConcurrentReferenceHashMap#getSegmentForHash",
+        "org.springframework.util.ConcurrentReferenceHashMap#purgeUnreferencedEntries",
+        "org.springframework.util.ConcurrentReferenceHashMap#put",
+        "org.springframework.util.ConcurrentReferenceHashMap$1#<init>",
+        "org.springframework.util.ConcurrentReferenceHashMap$1#execute",
+        "org.springframework.util.ConcurrentReferenceHashMap$Entry#<init>",
+        "org.springframework.util.ConcurrentReferenceHashMap$Entry#getKey",
+        "org.springframework.util.ConcurrentReferenceHashMap$Entry#getValue",
+        "org.springframework.util.ConcurrentReferenceHashMap$ReferenceManager#createReference",
+        "org.springframework.util.ConcurrentReferenceHashMap$ReferenceManager#pollForPurge",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#doTask",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#findInChain",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#getIndex",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#getReference",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#lambda$doTask$0",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructureIfNecessary",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#<init>",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext",
+        "org.springframework.util.ConcurrentReferenceHashMap$Task#<init>",
+        "org.springframework.util.ConcurrentReferenceHashMap$Task#hasOption",
+        "org.springframework.util.ObjectUtils#isEmpty",
+        "org.springframework.util.ObjectUtils#nullSafeEquals",
+        "org.springframework.util.ObjectUtils#nullSafeHashCode",
+        "org.springframework.util.ReflectionUtils#doWithMethods",
+        "org.springframework.util.ReflectionUtils#findDefaultMethodsOnInterfaces",
+        "org.springframework.util.ReflectionUtils#getDeclaredMethods",
+        "org.springframework.util.ReflectionUtils#invokeMethod"
+      ]
+    },
+    {
+      "identity": "CollectionToCollectionConverterTests#arrayCollectionToObjectInteraction_5abab1e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "CollectionToCollectionConverterTests#listToCollectionNoCopyRequired_572a075",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "CollectionToCollectionConverterTests#mixedInNulls_ac93315",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "CollectionToCollectionConverterTests#nothingInCommon_179d43d",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "CollectionToCollectionConverterTests#objectToCollection_20ff638",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "CollectionToCollectionConverterTests#stringToCollection_6b15755",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ConventionBasedAnnotationAttributeOverrideTests#findMergedAnnotationWithLocalAliasesThatConflictWithAttributesInMetaAnnotationByConvention_6e6719d",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ConventionBasedAnnotationAttributeOverrideTests#findMergedAnnotationWithSingleElementOverridingAnArrayViaConvention_2e7b7c0",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ConventionsTests#list_56a77c1",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ConvertingComparatorTests#shouldGetForConverter_13d3d84",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ConvertingComparatorTests#shouldGetMapEntryKeys_34dc4cf",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ConvertingComparatorTests#shouldGetMapEntryValues_183ffe3",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ConvertingComparatorTests#shouldThrowOnNullComparator_7f8c03b",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ConvertingComparatorTests#shouldThrowOnNullConversionService_22704eb",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ConvertingComparatorTests#shouldThrowOnNullConverter_1e4ff29",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ConvertingComparatorTests#shouldThrowOnNullType_4e2242d",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ConvertingComparatorTests#shouldUseConversionServiceOnCompare_c2eed23",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ConvertingComparatorTests#shouldUseConverterOnCompare_e408162",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#bigDecimalToString_7f5a750",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#bigIntegerToString_36c0a5f",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#booleanToString_e017303",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertArrayToAbstractCollection_66b24b5",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertArrayToObjectAssignableTargetType_2f20c2e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertArrayToObjectWithElementConversion_2a79c05",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertArrayToSetInterface_43a14f6",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertCannotOptimizeArray_121dc4d",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertCollectionToObjectWithElementConversion_3963a32",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertEmptyArrayToString_7da6443",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertIntArrayToFloatArray_4aa1e72",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertIntArrayToIntegerArray_286a2fc",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertIntArrayToPrimitiveFloatArray_12bcfbd",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertIntegerArrayToIntArray_32ca090",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertObjectToArray_55e6f67",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertObjectToCollection_6d3c20f",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertObjectToObjectFinderMethodWithNull_3d79e16",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertObjectToObjectUsingObjectConstructor_19fc449",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertObjectToOptional_50c1a4b",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertObjectToStringNotSupported_6c5a402",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertObjectToStringUsingToString_444337a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertObjectToStringWithJavaTimeOfMethodPresent_75acc3a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertObjectToStringWithValueOfMethodPresentUsingToString_6910354",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertPrimitiveByteArrayToByteWrapperArray_2aeb215",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertPropertiesToString_66e1756",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertStringToArray_2b3d896",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertStringToProperties_67ea116",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#convertStringToTimezone_3f6affa",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#integerToEnum_5cc7290",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#numberToCharacter_61ec1c7",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#stringToBigDecimal_47cef0e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#stringToBigInteger_1d455cf",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#stringToCharset_a23f58f",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#stringToEnumEmptyString_397d1d4",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#stringToFloat_59f4eb5",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#stringToInteger_52cc158",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#stringToLocaleWithCountry_7964db9",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#stringToLocaleWithLanguageTag_25eb01c",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#stringToNumberEmptyString_147f553",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#stringToPatternEmptyString_1814f9e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "DefaultConversionServiceTests#stringToShort_5aaa4d7",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "GenericConversionServiceTests#addConverterNoSourceTargetClassInfoAvailable_38f5eff",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "GenericConversionServiceTests#conditionalConverter_7d073ba",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "GenericConversionServiceTests#enumWithInterfaceToStringConversion_2781286",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "GenericConversionServiceTests#stringToEnumWithBaseInterfaceConversion_40c0c9b",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "GenericConversionServiceTests#stringToEnumWithInterfaceConversion_47107cd",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "GenericConversionServiceTests#wildcardMap_5cf09db",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "GenericTypeResolverTests#getGenericsCannotBeResolved_33692bb",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "GenericTypeResolverTests#nullIfNotResolvable_3ce4ff1",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "GenericTypeResolverTests#resolveMethodParameterWithNestedGenerics_10b875c",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "GenericTypeResolverTests#resolveTransitiveTypeVariableWithDifferentName_4baf680",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "GenericTypeResolverTests#resolveTypeArgumentsOfAbstractType_db6e9f4",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "GenericTypeResolverTests#simpleInterfaceType_4cb3b07",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "InheritedAnnotationsAnnotationMetadataTests#isAnnotated_50281b7",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "KotlinMergedAnnotationsTests#recursiveAnnotationWithoutAlias_5d8906c",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MapToMapConverterTests#collectionMapSourceTarget_5bff386",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.core.SerializableTypeWrapper#unwrap"
+      ]
+    },
+    {
+      "identity": "MapToMapConverterTests#emptyMap_2ab5644",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "MapToMapConverterTests#multiValueMapToMultiValueMap_24e1f0a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MapToMapConverterTests#noDefaultConstructorCopyNotRequired_2f3c828",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationMetadataVisitorTests#visitWhenHasEnumAttributesCreatesAnnotation_1a5d141",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationMetadataVisitorTests#visitWhenHasSimpleArrayTypesCreatesAnnotation_5c8fb40",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationMetadataVisitorTests#visitWhenHasSimpleTypesCreatesAnnotation_16da592",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "MergedAnnotationsTests#getDefaultValueFromAnnotationType_32e36a7",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "MergedAnnotationsTests#getDefaultValueFromNonPublicAnnotation_121f701",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#getDirectFromClassFavorsMoreLocallyDeclaredComposedAnnotationsOverAnnotationsOnInterfaces_7a5fe84",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "MergedAnnotationsTests#getDirectFromClassFavorsMoreLocallyDeclaredComposedAnnotationsOverInheritedComposedAnnotations_7709fe0",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "MergedAnnotationsTests#getDirectWithAttributeAliases1_1674a2a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#getDirectWithJavaxAnnotationType_3d467eb",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#getDirectWithoutAttributeAliases_3048bbc",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#getFromMethodWithGenericSuperclass_78b2b09",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#getFromMethodWithInterface_4588e5b",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#getValueWhenThreeDeepMetaWithValue_653de77",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#getWithAnnotationOnRoot_4f6ed56",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#getWithInheritedAnnotationsFromImplicitAliasesInMetaAnnotationOnComposedAnnotation_40b08f6",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#getWithInheritedAnnotationsFromTransitiveImplicitAliasesWithSkippedLevel_7c913d8",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "MergedAnnotationsTests#streamDirectRepeatablesDeclaredOnClass_31d5cfe",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#streamDirectRepeatablesDeclaredOnSuperclass_2b6a498",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#streamRepeatableDeclaredOnClassAndSuperclass_10340c4",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "MergedAnnotationsTests#streamRepeatableDeclaredOnClassWithAttributeAliases_7c2fd34",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "MergedAnnotationsTests#synthesizeFromAnnotationAttributesWithoutAttributeAliases_56d112a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "MergedAnnotationsTests#synthesizeFromDefaultsWithAttributeAliases_2514987",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "MergedAnnotationsTests#synthesizeFromDefaultsWithoutAttributeAliases_7c2a8e4",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#synthesizeWhenAliasForHasDuplicateAttributeDeclaration_1abfa94",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#synthesizeWhenUsingMergedAnnotationsFromApi_17982f3",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#synthesizeWithArrayOfAnnotations_51e13b2",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "MergedAnnotationsTests#synthesizeWithImplicitAliasesForAliasPair_677a5ba",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MergedAnnotationsTests#synthesizeWithImplicitAliasesWithImpliedAliasNamesOmitted_e3baa36",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "MethodParameterTests#genericConstructorParameterInInnerClass_10ccf44",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "MultipleComposedAnnotationsOnSingleAnnotatedElementTests#findMultipleComposedAnnotationsOnInterface_74fc360",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "MultipleRepeatableAnnotationsTests#findMergedRepeatableAnnotationsWithExplicitContainer_AnnotatedElementUtils_52ae2a8",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "OrderUtilsTests#getPriorityOrder_6f05c71",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ReflectionUtilsTests#findMethodWithVarArgs_5bd66dc",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ReflectionUtilsTests#validCopyToSubTypeWithFinalField_831b8fb",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ReflectiveRuntimeHintsRegistrarTests#shouldProcessAnnotationOnConstructor_34bae2a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#asCollection_71d6a22",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#asFromInheritedInterface_15c4c2d",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#asFromInheritedSuperType_63f892e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#asFromInterface_4e3ae88",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#asFromSuperType_1c6eb8a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#asNotFound_57c00a3",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#classWithGenericsAs_1378ee3",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#doesResolveFromOuterOwner_583ba1f",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#forArrayComponent_c177c76",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.core.SerializableTypeWrapper#unwrap",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#forClassWithGenerics_6bf2e2e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#forConstructorParameter_18e54d2",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#forInstanceProvider_783f8af",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#forMethodParameterWithNestingAndLevels_3ac7fcf",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#forMethodParameterWithNesting_126d68c",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#forMethodParameterWithSameSignatureAndGenerics_4bf8b05",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#getInterfaces_319a077",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#hasUnresolvableGenerics_7e5b2b0",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.core.SerializableTypeWrapper#unwrap",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#isAssignableFromForArrays_7d1051a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#isAssignableFromForComplexWildcards_4dc8b13",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#isAssignableFromForDifferentClassesWithGenerics_5048596",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#isAssignableFromForUnresolvedWildcards_92364f3",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#javaDocSample_7574ee2",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#nestedWithIndexes_1262148",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveGenericArrayFromGeneric_2846591",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveGenericMultiArrayType_4fe35ad",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveParameterizedType_20ece23",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveTypeVariableFromClassWithImplementsClass_2759c31",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveTypeVariableFromMethodParameterTypeWithImplementsClass_9b8b875",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveTypeVariableFromMethodParameterType_68f5c4d",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveTypeVariableFromMethodParameter_3d07ca7",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveTypeVariableFromMethodReturn_7ee7aaa",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveTypeVariableFromSimpleCollectionSuperclassType_273903b",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveTypeVariableFromTypeWithVariableResolver_1ccbb79",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveTypeWithCustomVariableResolver_725af2a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveUnknownTypeVariableFromConstructorParameter_57e7a3e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveVariableFromInheritedField_53e2edd",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveVariableGenericArray_1d6e34d",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#resolveWildcardLowerBounds_57bccac",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "ResolvableTypeTests#serialize_9957889",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#spr11219_2a41a85",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#spr14648_2a4314d",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "ResolvableTypeTests#spr16456_2a43f63",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "SerializableTypeWrapperTests#typeVariableType_2602de0",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "SimpleAnnotationMetadataTests#getAnnotatedMethodsReturnsMatchingAnnotatedAndMetaAnnotatedMethods_726d66a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "SimpleAnnotationMetadataTests#getAnnotationAttributesReturnsAttributes_71d1ecd",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "SimpleAnnotationMetadataTests#getMetaAnnotationTypesReturnsMetaAnnotations_4e3ec66",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "SimpleAnnotationMetadataTests#hasAnnotatedMethodsWhenMatchesMetaAnnotationReturnsTrue_3794af1",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "SimpleAnnotationMetadataTests#hasAnnotationWhenMatchesMetaAnnotationReturnsFalse_3da2074",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "SimpleAnnotationMetadataTests#hasMetaAnnotationWhenMatchesMetaAnnotationReturnsTrue_5174a3b",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "SimpleAnnotationMetadataTests#isAnnotatedWhenMatchesMetaAnnotationReturnsTrue_7a6631f",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "StandardAnnotationMetadataTests#getAllAnnotationAttributesReturnsAllAttributes_43c62d4",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "StandardAnnotationMetadataTests#getAnnotationAttributesReturnsAttributes_5401082",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "StandardAnnotationMetadataTests#getAnnotationTypesReturnsDirectAnnotations_5485d2d",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "StandardAnnotationMetadataTests#hasAnnotationWhenMatchesMetaAnnotationReturnsFalse_5225b4d",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "StandardAnnotationMetadataTests#hasMetaAnnotationWhenMatchesDirectReturnsFalse_5cc6745",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "StandardAnnotationMetadataTests#isIndependentWhenNotIndependentReturnsFalse_27452c0",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference"
+      ],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "StandardMethodMetadataTests#getAnnotationsReturnsDirectAnnotations_5c841c2",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "StandardMethodMetadataTests#getMethodNameReturnsMethodName_558a146",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "StandardMethodMetadataTests#getReturnTypeReturnsReturnType_4691802",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "StandardMethodMetadataTests#isAbstractWhenNotAbstractReturnsFalse_7c3073b",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "StandardMethodMetadataTests#isAnnotatedWhenDoesNotMatchDirectOrMetaAnnotationReturnsFalse_4d37cc5",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "StandardMethodMetadataTests#isAnnotatedWhenMatchesDirectAnnotationReturnsTrue_304dafb",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "StandardMethodMetadataTests#isAnnotatedWhenMatchesMetaAnnotationReturnsTrue_49a46d9",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "StandardMethodMetadataTests#isFinalWhenNonFinalReturnsFalse_30f6d49",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "StandardMethodMetadataTests#isOverridableWhenNonOverridableReturnsFalse_2cb24fc",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "StandardMethodMetadataTests#isOverridableWhenOverridableReturnsTrue_71851a6",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "StandardMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_c462e74",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "StandardMethodMetadataTests#metadataLoadsForNestedAnnotations_14fc96e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "StandardMethodMetadataTests#verifyToString_337266a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#collectionNested_208efc3",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "TypeDescriptorTests#createCollectionWithNullElement_2c30966",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "TypeDescriptorTests#createMapArray_deb4d87",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "TypeDescriptorTests#createMapWithNullElements_2a87b96",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#elementTypeForMapSubclass_3ff9135",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#elementType_6719810",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#equalityWithGenerics_75772e0",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#equality_2a57c58",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#fieldComplexTypeDescriptor2_7429b68",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#fieldListOfListOfString_4fe9ef8",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.core.SerializableTypeWrapper#unwrap"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#fieldListOfListUnknown_2de745a",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#fieldList_39bf79e",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#fieldMap_5050829",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#isAssignableElementTypes_4db34e9",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#isAssignableMapKeyValueTypes_5496c48",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "TypeDescriptorTests#mapKeyType_3333324",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#mapValueTypePreserveContext_7f5c842",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "TypeDescriptorTests#mapValueType_7a148fd",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#parameterListNoParamTypes_194b746",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "TypeDescriptorTests#parameterList_25b0b41",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "TypeDescriptorTests#parameterMap_4347c68",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ],
+      "removedMethods": []
+    },
+    {
+      "identity": "TypeDescriptorTests#valueOfCollection_37902b1",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getHash",
+        "org.springframework.util.ConcurrentReferenceHashMap$SoftEntryReference#getNext"
+      ]
+    },
+    {
+      "identity": "TypeMappedAnnotationTests#mappingExplicitAliasToMetaAnnotationReturnsMappedValues_4ec40c0",
+      "run1Present": true,
+      "run2Present": true,
+      "addedClasses": [],
+      "removedClasses": [],
+      "addedMethods": [],
+      "removedMethods": [
+        "org.springframework.util.ConcurrentReferenceHashMap#getLoadFactor",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#createReferenceArray",
+        "org.springframework.util.ConcurrentReferenceHashMap$Segment#restructure"
+      ]
+    }
+  ]
+}
