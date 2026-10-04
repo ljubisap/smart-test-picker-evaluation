@@ -1,0 +1,45 @@
+{
+  "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Ljava/lang/Class;Ljava/lang/Class;)Z|133|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-core/results/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml:17",
+  "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+  "mutatedMethod": "canConvert",
+  "line": 133,
+  "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+  "pitOrdinal": 17,
+  "methodKey": "org.springframework.core.convert.support.GenericConversionService#canConvert",
+  "nameLevelHitCount": 100,
+  "emptyFootprintCount": 14,
+  "baseSelectedCount": 114,
+  "baseComposition": {
+    "H": 100,
+    "U": 14,
+    "other": 0
+  },
+  "killingTests": [
+    "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+    "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467"
+  ],
+  "killerTargetClassFootprints": [
+    {
+      "coverageKey": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+      "type": "A",
+      "targetClassPresent": true,
+      "mutatedMethodPresent": false,
+      "targetClassMethods": [
+        "org.springframework.core.convert.support.GenericConversionService#<init>"
+      ]
+    },
+    {
+      "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467",
+      "type": "A",
+      "targetClassPresent": true,
+      "mutatedMethodPresent": false,
+      "targetClassMethods": [
+        "org.springframework.core.convert.support.GenericConversionService#<init>"
+      ]
+    }
+  ],
+  "footprintType": "A",
+  "baseInclusive": false,
+  "constructorInclusive": true,
+  "constructorRecovers": true
+}

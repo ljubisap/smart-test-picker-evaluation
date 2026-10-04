@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "definition": "literal package segment equal to test; class simple name excluded",
+  "projects": {
+    "commons-lang": {
+      "mapPath": "recollection_2e0954/commons-lang/test-coverage-map.json",
+      "mapTestSegmentClasses": [],
+      "mapCount": 0,
+      "sourceCommit": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
+      "qualifiedSourcePrefix": "src/main/java/",
+      "sourceStatus": "INSPECTED",
+      "sourceTestSegmentClasses": [],
+      "sourceCount": 0
+    },
+    "jgrapht": {
+      "mapPath": "recollection_2e0954/jgrapht/test-coverage-map.json",
+      "mapTestSegmentClasses": [],
+      "mapCount": 0,
+      "sourceCommit": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+      "qualifiedSourcePrefix": "jgrapht-core/src/main/java/",
+      "sourceStatus": "INSPECTED",
+      "sourceTestSegmentClasses": [],
+      "sourceCount": 0
+    },
+    "spring-core": {
+      "mapPath": "recollection_2e0954/spring-core/test-coverage-map.json",
+      "mapTestSegmentClasses": [],
+      "mapCount": 0,
+      "sourceCommit": "25838a334c037b68e614f6b571af03a1f6bfec19",
+      "qualifiedSourcePrefix": "spring-core/src/main/java/",
+      "sourceStatus": "INSPECTED",
+      "sourceTestSegmentClasses": [],
+      "sourceCount": 0
+    },
+    "petclinic": {
+      "mapPath": "recollection_2e0954/petclinic/test-coverage-map.json",
+      "mapTestSegmentClasses": [],
+      "mapCount": 0,
+      "sourceCommit": "cbb884f01f7fef663fcff256e303d967494a4f8b",
+      "qualifiedSourcePrefix": "src/main/java/",
+      "sourceStatus": "INSPECTED",
+      "sourceTestSegmentClasses": [],
+      "sourceCount": 0
+    },
+    "flink": {
+      "mapPath": "flink/results/test-coverage-map.json.gz",
+      "mapTestSegmentClasses": [],
+      "mapCount": 0,
+      "sourceCommit": "c0f8d1a1e09f209885a88f9c19ceb9d9e9870283",
+      "qualifiedSourcePrefix": "flink-runtime/src/main/java/",
+      "sourceStatus": "INSPECTED",
+      "sourceTestSegmentClasses": [],
+      "sourceCount": 0
+    },
+    "spring-security": {
+      "mapPath": "spring-security/results/test-coverage-map.json.gz",
+      "mapTestSegmentClasses": [],
+      "mapCount": 0,
+      "sourceCommit": "a825937b8175ee85872c49d9c7fc25eea8cff991",
+      "qualifiedSourcePrefix": "spring-security-core/src/main/java/",
+      "sourceStatus": "INSPECTED",
+      "sourceTestSegmentClasses": [],
+      "sourceCount": 0
+    },
+    "hibernate": {
+      "mapPath": "hibernate/results/test-coverage-map.json.gz",
+      "mapTestSegmentClasses": [],
+      "mapCount": 0,
+      "sourceCommit": "a95dd44cf654131e984682687cf1b2ec5d3e34cd",
+      "qualifiedSourcePrefix": "hibernate-core/src/main/java/",
+      "sourceStatus": "INSPECTED",
+      "sourceTestSegmentClasses": [],
+      "sourceCount": 0
+    },
+    "quarkus": {
+      "mapPath": "quarkus/results/test-coverage-map.json.gz",
+      "mapTestSegmentClasses": [],
+      "mapCount": 0,
+      "sourceCommit": "6ce99878508d792f3c2a2a7f9520b086a1c32cab",
+      "qualifiedSourcePrefix": "independent-projects/arc/processor/src/main/java/",
+      "sourceStatus": "INSPECTED",
+      "sourceTestSegmentClasses": [],
+      "sourceCount": 0
+    }
+  },
+  "allMapsClear": true,
+  "allQualifiedSourceScopesClear": true,
+  "remainingGaps": []
+}

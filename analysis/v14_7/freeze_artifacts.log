@@ -1,0 +1,4 @@
+verified hibernate: 24 artifacts
+verified flink: 23 artifacts
+verified quarkus: 26 artifacts
+verified spring-security: 25 artifacts
