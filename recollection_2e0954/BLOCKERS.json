@@ -1,0 +1,25 @@
+{
+  "decisionBranch": "C",
+  "blockers": [
+    {
+      "subject": "commons-lang",
+      "status": "NOT_RECOLLECTED",
+      "reason": "Attempt 1 used unsupported Maven 3.8.6. Attempt 2 collected 4,697 session files but the native test task failed because ArrayUtilsConcatTest could not initialize the Mockito MockMaker; conversion was not run."
+    },
+    {
+      "subject": "jgrapht",
+      "status": "NOT_RECOLLECTED",
+      "reason": "Tests passed and 2,309 sessions were collected. Conversion attempt 1 was denied local-Maven-repository write access; attempt 2 exposed an incomplete initial local publication of smart-test-picker-common 0.2.0. The fixed publication occurred only after the subject attempt limit."
+    },
+    {
+      "subject": "spring-core",
+      "status": "RECOLLECTED_POPULATION_MISMATCH",
+      "reason": "The documented three instrumentation-sensitive failures occurred. Converter output retained 3,624 covered and 14 empty sessions, yielding 3,638 map identities rather than the frozen 3,624."
+    },
+    {
+      "subject": "petclinic",
+      "status": "RECOLLECTED_POPULATION_MISMATCH",
+      "reason": "The JDK 21 run was green. Converter output retained 52 covered and 4 empty sessions, yielding 56 map identities rather than the frozen 52."
+    }
+  ]
+}

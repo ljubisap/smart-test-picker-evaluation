@@ -1,0 +1,25 @@
+{
+  "checkout": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+  "jdk": "SapMachine 21.0.12.1+1-LTS",
+  "buildTool": "Maven 3.9.15",
+  "commands": [
+    "Maven verify -Psmart-test-picker -pl jgrapht-core",
+    "STP Maven generate-reports",
+    "STP Maven generate-coverage-map"
+  ],
+  "attempts": 2,
+  "wallClockSeconds": [
+    403,
+    42
+  ],
+  "sessions": 2309,
+  "rawInvocations": 6875,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 15,
+  "expectedPopulation": 2308,
+  "mapPath": null,
+  "mapSha256": null,
+  "status": "NOT_RECOLLECTED",
+  "reason": "Tests passed and 2,309 sessions were collected. Conversion attempt 1 was denied local-Maven-repository write access; attempt 2 exposed an incomplete initial local publication of smart-test-picker-common 0.2.0. The fixed publication occurred only after the subject attempt limit."
+}

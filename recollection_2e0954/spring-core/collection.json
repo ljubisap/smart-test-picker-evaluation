@@ -1,0 +1,24 @@
+{
+  "checkout": "25838a334c037b68e614f6b571af03a1f6bfec19",
+  "jdk": "SapMachine 21.0.12.1+1-LTS",
+  "buildTool": "Gradle 8.14.2",
+  "commands": [
+    "./gradlew :spring-core:test --no-daemon --max-workers=5",
+    "./gradlew :spring-core:generateTestCoverageJson --no-daemon --max-workers=5"
+  ],
+  "attempts": 2,
+  "wallClockSeconds": [
+    355,
+    79
+  ],
+  "sessions": 3638,
+  "rawInvocations": 4704,
+  "failures": 3,
+  "errors": 0,
+  "skipped": 28,
+  "expectedPopulation": 3624,
+  "mapPath": "recollection_2e0954/spring-core/test-coverage-map.json",
+  "status": "RECOLLECTED_POPULATION_MISMATCH",
+  "reason": "The documented three instrumentation-sensitive failures occurred. Converter output retained 3,624 covered and 14 empty sessions, yielding 3,638 map identities rather than the frozen 3,624.",
+  "mapSha256": "bfeafc4bb2a7221243c1f7fb407938472b582462a8cad071cbc90152eb83e32d"
+}

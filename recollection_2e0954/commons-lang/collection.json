@@ -1,0 +1,25 @@
+{
+  "checkout": "8538458e7aeb1455a5942f60fe0b4930da6c5d68",
+  "jdk": "SapMachine 21.0.12.1+1-LTS",
+  "buildTool": "Maven 3.9.15 (attempt 2; attempt 1 used 3.8.6 and was rejected)",
+  "commands": [
+    "Maven test -Psmart-test-picker",
+    "STP Maven generate-reports",
+    "STP Maven generate-coverage-map"
+  ],
+  "attempts": 2,
+  "wallClockSeconds": [
+    7,
+    1254
+  ],
+  "sessions": 4697,
+  "rawInvocations": 60294,
+  "failures": 0,
+  "errors": 1,
+  "skipped": 16,
+  "expectedPopulation": 4692,
+  "mapPath": null,
+  "mapSha256": null,
+  "status": "NOT_RECOLLECTED",
+  "reason": "Attempt 1 used unsupported Maven 3.8.6. Attempt 2 collected 4,697 session files but the native test task failed because ArrayUtilsConcatTest could not initialize the Mockito MockMaker; conversion was not run."
+}

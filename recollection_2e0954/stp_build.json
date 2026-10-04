@@ -1,0 +1,30 @@
+{
+  "commit": "2e0954b5b590fb0b9da979c28b0d053e4ce9e5c9",
+  "tree": "7a61a4933a7f2b6a64aa06e4893ba61c9d26da33",
+  "jdk": "SapMachine 21.0.12.1+1-LTS",
+  "commands": [
+    "./gradlew :smart-test-picker-common:jar :smart-test-picker-core:jar :smart-test-picker:publishToMavenLocal :smart-test-picker-maven:publishToMavenLocal -x test --offline --no-daemon --max-workers=5 --console=plain",
+    "./gradlew :smart-test-picker-common:publishToMavenLocal :smart-test-picker-core:publishToMavenLocal :smart-test-picker:publishToMavenLocal :smart-test-picker-maven:publishToMavenLocal -x test --offline --no-daemon --max-workers=5 --console=plain"
+  ],
+  "attempts": 2,
+  "result": "SUCCESS",
+  "artifacts": [
+    {
+      "path": "/tmp/stp-rad1442-replay/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar",
+      "sha256": "f6d1b687b74e504345695427baaacf427bc7a57245ecbe69722f087080dd9372"
+    },
+    {
+      "path": "/tmp/stp-rad1442-replay/smart-test-picker-core/build/libs/smart-test-picker-core-0.1.0.jar",
+      "sha256": "8dbc85182539dc053f964b69f339ec728f6d3b3312cc3a469620be72c49d1a31"
+    },
+    {
+      "path": "/tmp/stp-rad1442-replay/smart-test-picker/build/libs/smart-test-picker-0.1.0.jar",
+      "sha256": "42b4c3b642e68838a6de6258076be7b975b0ce9dcf781a5308570c0104030919"
+    },
+    {
+      "path": "/tmp/stp-rad1442-replay/smart-test-picker-maven/build/libs/smart-test-picker-maven-0.1.0.jar",
+      "sha256": "e55fbbd6fa6e46da059c19c7c0edee1f95c1e4007a32df10434017cb44552795"
+    }
+  ],
+  "log": "recollection_2e0954/stp-build.log"
+}

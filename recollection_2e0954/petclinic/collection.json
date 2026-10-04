@@ -1,0 +1,24 @@
+{
+  "checkout": "cbb884f01f7fef663fcff256e303d967494a4f8b",
+  "jdk": "SapMachine 21.0.12.1+1-LTS",
+  "buildTool": "Gradle 8.14.3",
+  "commands": [
+    "./gradlew clean test generateSmartReports generateTestCoverageJson --no-daemon --max-workers=5 (attempt 1, project Java 17 toolchain)",
+    "same command after generic toolchain configuration to Java 21 (attempt 2)"
+  ],
+  "attempts": 2,
+  "wallClockSeconds": [
+    155,
+    41
+  ],
+  "sessions": 56,
+  "rawInvocations": 60,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 4,
+  "expectedPopulation": 52,
+  "mapPath": "recollection_2e0954/petclinic/test-coverage-map.json",
+  "status": "RECOLLECTED_POPULATION_MISMATCH",
+  "reason": "The JDK 21 run was green. Converter output retained 52 covered and 4 empty sessions, yielding 56 map identities rather than the frozen 52.",
+  "mapSha256": "d157cae04c617ef1c7632608a7e957794e9bb94bb8aeaf0123e01d6eebda6d82"
+}
