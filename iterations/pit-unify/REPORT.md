@@ -75,3 +75,12 @@ Current-results verification logs are separate from the unified verification. Hi
 ## Repository publication
 
 Commit identity is recorded in the final publication note below. Only `iterations/pit-unify/` is added. `main` and all tags remain untouched. Publication command: `git push origin iteration-pit-unify`.
+
+Evidence commit: `b362ef703af097fe1547faa4311428e52ac79e1d`.
+This identifies the complete results and verification snapshot; a documentation-only
+follow-up records publication metadata. Both disposable subject checkouts are clean.
+The scoped Python/Markdown whitespace check passes; raw build/PIT logs deliberately
+retain tool-emitted trailing spaces. No manuscript DOCX/PDF is included, including
+inside the preserved intermediate-attempt archive. See `publication.json` for
+publication state and commands; neither this commit nor numerical verification
+resolves the recorded CPU environment confound.
