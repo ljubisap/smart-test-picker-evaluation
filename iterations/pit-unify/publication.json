@@ -3,7 +3,10 @@
   "branch": "iteration-pit-unify",
   "baselineMainCommit": "3bdf61c0b7481fe6da25e4bd335b91a348a4f837",
   "publicationCommand": "git push origin iteration-pit-unify",
-  "pushStatusAtRecording": "NOT_YET_EXECUTED",
+  "pushStatusAtRecording": "PUSHED_AND_REMOTE_VERIFIED",
+  "verifiedRemoteEvidenceHead": "bbf4c02ac86b32a4af3961ccf93b0e6e0f94b353",
+  "verifiedRemoteMain": "3bdf61c0b7481fe6da25e4bd335b91a348a4f837",
+  "publicationNote": "Remote verification precedes the documentation-only commit containing this confirmation; the evidence commit is its ancestor.",
   "scope": "Only iterations/pit-unify/ added; main and tags unchanged; no manuscript binaries.",
   "subjectCheckoutStatus": {
     "jgrapht": "CLEAN",

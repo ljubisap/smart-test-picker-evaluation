@@ -84,3 +84,8 @@ retain tool-emitted trailing spaces. No manuscript DOCX/PDF is included, includi
 inside the preserved intermediate-attempt archive. See `publication.json` for
 publication state and commands; neither this commit nor numerical verification
 resolves the recorded CPU environment confound.
+
+Push confirmed: `origin/iteration-pit-unify` was independently read with
+`git ls-remote` at `bbf4c02ac86b32a4af3961ccf93b0e6e0f94b353` before this
+documentation-only confirmation. Remote `main` and peeled `rad1-v15` remain
+`3bdf61c0b7481fe6da25e4bd335b91a348a4f837`. Only the iteration branch was pushed.
