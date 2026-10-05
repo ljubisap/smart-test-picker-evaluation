@@ -1,0 +1,347 @@
+{
+  "reason": "Lossless compression for GitHub single-file size limit; all original XML bytes preserved.",
+  "files": [
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.Graphs/mutations.xml.gz",
+      "rawSha256": "d766603ac55fe90397807fa5baf73dfba7e2ded02b665fbd30851682cab4c4fe",
+      "gzipSha256": "82d619f2f5e48f2dfcccdbb3b132578d826c6c41652cf6340de12328ca96672a",
+      "rawBytes": 98114,
+      "gzipBytes": 3085,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.Graphs/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder/mutations.xml.gz",
+      "rawSha256": "9348202051700658d19c35b8abd0938bec4e029026c2cd7a184ff71a42bea5b9",
+      "gzipSha256": "7c7c6dfe464d55d2a39b92a1968d1215356901afd2370acdae16d70ef21f4f01",
+      "rawBytes": 28431,
+      "gzipBytes": 1061,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.clustering.LabelPropagationClustering/mutations.xml.gz",
+      "rawSha256": "887508999dcba8bc0b7aa7ed8db1fee8208d24d047da9822db637e4a26bbbe1b",
+      "gzipSha256": "0fad7b11530bdf57294128b465cb02722e93e080023aa91f69df614778e13711",
+      "rawBytes": 8355,
+      "gzipBytes": 751,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.clustering.LabelPropagationClustering/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.color.GreedyColoring/mutations.xml.gz",
+      "rawSha256": "9a560cffce4cbc0cecb97704fcf3f0a9cb23279a7ea98cc8f542fb1ccc71ca51",
+      "gzipSha256": "af4400cddfd431d987606b9215472c55f792ce9513c0edb8cf4be391b8f2278e",
+      "rawBytes": 100631,
+      "gzipBytes": 1926,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.color.GreedyColoring/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector/mutations.xml.gz",
+      "rawSha256": "a04ed695a1da5aa2eda80929648067616068da12874c259b9b7a21430c48bc54",
+      "gzipSha256": "2d4e3980ee2fc8cb09d957e8d642313f40c2ceedac90e8b58dd14ad7e3f739f2",
+      "rawBytes": 107650,
+      "gzipBytes": 1827,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles/mutations.xml.gz",
+      "rawSha256": "8833cdfc8ff98647c8cf632e432972b54ea94f232c6359537e06e511048d2830",
+      "gzipSha256": "3076aa8e0dd4998da861f49ec1297c81b57211e1be305c82dbc1ce8dee839481",
+      "rawBytes": 32301,
+      "gzipBytes": 1482,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.drawing.model.ListenableLayoutModel2D/mutations.xml.gz",
+      "rawSha256": "bb6a69ff32b32ba04c9db6639a1c24da7164c1e60fa80b5319efc458538f9373",
+      "gzipSha256": "0f28eb76ef1890f66e42bafcbb7b207c89b187f31ba2d41e7026d7a1538c0721",
+      "rawBytes": 15337,
+      "gzipBytes": 1032,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.drawing.model.ListenableLayoutModel2D/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.flow.PushRelabelMFImpl/mutations.xml.gz",
+      "rawSha256": "3e11b9b0c7444b9db22262bef73bda8bd85f9660c90fce6459efe6fc82116445",
+      "gzipSha256": "45c934732cbd9769310f48038387992c531eee2ad5b2fb374b7c0a9151b1c67c",
+      "rawBytes": 1511142,
+      "gzipBytes": 17111,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.flow.PushRelabelMFImpl/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector/mutations.xml.gz",
+      "rawSha256": "b8c344c07b8b1359ecc6e95774c3d34bae0e825b06b3c40c41d72b088f1199b4",
+      "gzipSha256": "5516bebaf726496821e1fbd065e5ec311f16d95f2d074c9b9ed1c14948f5a489",
+      "rawBytes": 83351,
+      "gzipBytes": 1899,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.lca.BinaryLiftingLCAFinder/mutations.xml.gz",
+      "rawSha256": "252b76a38594521fc161ad71b42273a51de2e29f4c5e6b262905aab6fd4d59a9",
+      "gzipSha256": "b7967596ec760cf1ae71061478b845dbebbc313d0a19afaf87ec08e371ba8ffd",
+      "rawBytes": 308418,
+      "gzipBytes": 4509,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.lca.BinaryLiftingLCAFinder/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction/mutations.xml.gz",
+      "rawSha256": "5bc816fd28a89858142b17807f723322295764488e2f0e9259a687dcbe6d4a8d",
+      "gzipSha256": "b4c7f1d94c333ce1b25c3227013e089616c948926b675104de97479549b6012f",
+      "rawBytes": 6121,
+      "gzipBytes": 691,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml.gz",
+      "rawSha256": "e594ead95ce05338d381c60216b824c5f8228c016abb23a10a4f0f37c7552804",
+      "gzipSha256": "c2f4e1ce65bdde8a481e4c34d6532fcdfc4253d102e080693cc50bd52cc1fd6f",
+      "rawBytes": 199104776,
+      "gzipBytes": 2521076,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.scoring.ClosenessCentrality/mutations.xml.gz",
+      "rawSha256": "3cc5c89af7ae45405590f7db845b8314f46aa07dab821b636b04d6e6f3d3d01f",
+      "gzipSha256": "24746dfd443c8d89a92fd1925d7177d4690db2ad38fe7270b4a97db23f141152",
+      "rawBytes": 69281,
+      "gzipBytes": 1815,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.scoring.ClosenessCentrality/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml.gz",
+      "rawSha256": "1700a578a80530fb053c7ede507d238a4327e2d9fa3444dc8d3baf67ea657fd0",
+      "gzipSha256": "26e9fa8e36ac3668800f3e3458f4e30f200fc4117187438ea9fc129a5dc27992",
+      "rawBytes": 123884,
+      "gzipBytes": 2646,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree/mutations.xml.gz",
+      "rawSha256": "1f2d88e70e64657e6a9aeb0191643795cda57e6742c7810723880a4918fdf0e8",
+      "gzipSha256": "466c1119e4ee5dd3edfeb8ba9d66cfed90aef29488e4c50e0d3f5eec670b4660",
+      "rawBytes": 249148,
+      "gzipBytes": 4019,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml.gz",
+      "rawSha256": "69a98b561015e0b34e07b4cd253b3fb4eb1026b3f78045eb382b104790253758",
+      "gzipSha256": "9fa516ec56076c20e2d13f3a7bd979bd53e09ee2897bd570df973fee6f46ebe7",
+      "rawBytes": 34845,
+      "gzipBytes": 1170,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.util.UnorderedPair/mutations.xml.gz",
+      "rawSha256": "5f4814af2dc4202e5e5c9274297a564a97876f40bee8bffa264d892e1b3fad21",
+      "gzipSha256": "e576399c8033a56f48e0c7f7fdff8db3766352af5ccd5be55de6eb7e3ab500fc",
+      "rawBytes": 152268,
+      "gzipBytes": 2566,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.util.UnorderedPair/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.vertexcover.RecursiveExactVCImpl/mutations.xml.gz",
+      "rawSha256": "fe79f962d875584725c54577976225c00eb3dc7917d40dcafc116c819ab68821",
+      "gzipSha256": "81d9490edf556accba4368a6067243c2142d4c48c9fa567c63daeb06d25e8f4f",
+      "rawBytes": 1281613,
+      "gzipBytes": 12095,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.alg.vertexcover.RecursiveExactVCImpl/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.generate.netgen.Distributor/mutations.xml.gz",
+      "rawSha256": "7dde9a13ccb07a3aa2e479db3d27d42c8de6f8423e8ff362a5f964f45b58fc6b",
+      "gzipSha256": "5f0b81a0448154da17209f939b1a684babd69acd6940fe8be54fc33be4f23c78",
+      "rawBytes": 143409,
+      "gzipBytes": 2472,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.generate.netgen.Distributor/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.graph.specifics.UndirectedSpecifics/mutations.xml.gz",
+      "rawSha256": "8cab963d14ecdb3511809d7546d574a36f3df642740ceaddef1f5cc16f2b756c",
+      "gzipSha256": "96a9d8fa068124c63b6fcae0361852ce70cfbb9d2cd5906f19538296e9da6832",
+      "rawBytes": 217045,
+      "gzipBytes": 5309,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-0s2ohpb3/jgrapht/org.jgrapht.graph.specifics.UndirectedSpecifics/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.annotation.RepeatableContainers/mutations.xml.gz",
+      "rawSha256": "22b2a0e91c0b39fda21c1b4d60c98752cf647f57e8df41d1a3133adcf14deaa7",
+      "gzipSha256": "ff07e4d45bc91fcbcf0ecdd44598c09bf762595f4c623dfb8991da035a9ca4bb",
+      "rawBytes": 517467,
+      "gzipBytes": 24526,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.annotation.RepeatableContainers/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.codec.AbstractDataBufferDecoder/mutations.xml.gz",
+      "rawSha256": "50a3445db142fa43954231b97714b3d6d8b506ff59d81804f68c21abbfa1157f",
+      "gzipSha256": "f7b3a31462857b6271c3640f0546c77264e4645de40996b642f5a660c7503b97",
+      "rawBytes": 26731,
+      "gzipBytes": 1310,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.codec.AbstractDataBufferDecoder/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml.gz",
+      "rawSha256": "0f601a4c4b96613702d147e369f167e14ffedd1f700ab96cde676e52b797542d",
+      "gzipSha256": "c854c01829625d7ab07bd39facadb4a907bcfc74bf11383a99737717c520415e",
+      "rawBytes": 2555735,
+      "gzipBytes": 76602,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.convert.TypeDescriptor/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.converter.ConvertingComparator/mutations.xml.gz",
+      "rawSha256": "23254b27a68962a9fedbaf98a97c2eb16e66e14fb61e3083249acc4a8e9ed6eb",
+      "gzipSha256": "cc10e812084bd9165e2ce5e2ead05511e4c85a89c99c73a158cc90302d0094ac",
+      "rawBytes": 12174,
+      "gzipBytes": 834,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.convert.converter.ConvertingComparator/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz",
+      "rawSha256": "920bac9ddb3c4effe12bb62e79c9022642c22c80c5a739d757c4c2e1fcc9878e",
+      "gzipSha256": "3e02f69a3c228635bcc25c30c1a85ccb70dd3752aa1f15cc3eaf2389226d7079",
+      "rawBytes": 2830691,
+      "gzipBytes": 104856,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.convert.support.GenericConversionService/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.env.PropertySource/mutations.xml.gz",
+      "rawSha256": "c70e52ca18c06f43bbec54edde028f1f0fcba17e659af4774d473366cdd765e9",
+      "gzipSha256": "0cadcf3e6e910b9144289b10237b733914bc888755eec97a7de41764b195d3da",
+      "rawBytes": 192632,
+      "gzipBytes": 4478,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.env.PropertySource/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.log.LogMessage/mutations.xml.gz",
+      "rawSha256": "ee58d83a1dcbe2024a981220cf9ea34e437ee7519213d305b427b9e4df189821",
+      "gzipSha256": "0c6104929fbf55a0151d08ba9b0f661b01d8166c9c3b964606354575f5b25219",
+      "rawBytes": 13480,
+      "gzipBytes": 971,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.log.LogMessage/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.style.DefaultValueStyler/mutations.xml.gz",
+      "rawSha256": "652762e8193185a0de2bca7f52f46759f815f0fb291ecbed652305013f5e7bbf",
+      "gzipSha256": "7b7b56b77df6170e8f77a9685c01096295523382d52d2e8589a3600edbb01272",
+      "rawBytes": 151775,
+      "gzipBytes": 3059,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.style.DefaultValueStyler/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml.gz",
+      "rawSha256": "0509353dcd1b07d5063aa28b49aa5ef624e994693029aa96f7616aebef799455",
+      "gzipSha256": "eac833ac46689e5fb1b42fbe50f59a20c22efbf4bde7520b35cc5025bd36edf3",
+      "rawBytes": 50113,
+      "gzipBytes": 1946,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz",
+      "rawSha256": "c0384e3b05e715016dfbe6d7ea0fc2fa7335014df0fb7b2e0d17da4ceca20cab",
+      "gzipSha256": "2b0c01a359651c98623c8dc756b41d688f39a79fa148788e4f43bdbd16b876c3",
+      "rawBytes": 105175,
+      "gzipBytes": 3387,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.type.StandardClassMetadata/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml.gz",
+      "rawSha256": "2bf5566eac5292ad39b577c67b2bb4c6530c8964a6e80d11a7510e378fb08df0",
+      "gzipSha256": "1959176270cccb7e399c88dc03f1cc0596f04846b2a4f2d840eb317277ac33a6",
+      "rawBytes": 113995,
+      "gzipBytes": 3363,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter/mutations.xml.gz",
+      "rawSha256": "8cbf14aea0fca8cfd20a37478414f731e75aee28e1419729646e14843148df3e",
+      "gzipSha256": "443558ec26847e7a3c22b5d0ad37a165e6467cfba110ba4ae4301a87172c4ba5",
+      "rawBytes": 55872,
+      "gzipBytes": 1739,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz",
+      "rawSha256": "fe534a64848d3838f3c946a55a978526eb1b1239c2e9b3f4a59d8c5dd1e2887b",
+      "gzipSha256": "4750672e6a5dd7acc84367dd2422bde7ce01d136dfb43ad3f6abd19448f67a4d",
+      "rawBytes": 391618,
+      "gzipBytes": 16440,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.util.Assert/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml.gz",
+      "rawSha256": "dfc42cee27e6f56a659bd7b516699b3a4e803caef790649b931f4e22e97b4196",
+      "gzipSha256": "378efa240a6236b457c90e44780fd60a5beb1f984ed2f7023f8b1436d1d3a992",
+      "rawBytes": 37907,
+      "gzipBytes": 1405,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.util.backoff.ExponentialBackOff/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.concurrent.ListenableFutureCallbackRegistry/mutations.xml.gz",
+      "rawSha256": "7ee5791e0c6a5f807d5827ce3d2fbcde078ad51d1467692139581ac0509ebdda",
+      "gzipSha256": "adc5ea17eaa728ae9f594d05b31ee1afae559ba15e915f277ba5f88320d8a9b0",
+      "rawBytes": 46835,
+      "gzipBytes": 1674,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.util.concurrent.ListenableFutureCallbackRegistry/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.function.ThrowingConsumer/mutations.xml.gz",
+      "rawSha256": "2a0f35e7164a806bb0ea97f26b7154cedc0a005e73cfa568c0e648ed932e519b",
+      "gzipSha256": "b1057b3ad793c6aa1b6a968ab8227e2dd63cb6833f1694ef82806e8fe520869b",
+      "rawBytes": 8233,
+      "gzipBytes": 771,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.util.function.ThrowingConsumer/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.unit.DataSize/mutations.xml.gz",
+      "rawSha256": "6cf70689039b222c9074158ca8391346ebf889a421054bcfe9410313cb5d6d0f",
+      "gzipSha256": "ea8188e884c4227d993549f171d68d6d1cf3fb0e34c2869d5e46d71dbd2a1adc",
+      "rawBytes": 137737,
+      "gzipBytes": 3046,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.util.unit.DataSize/mutations.xml",
+      "decompressedBytesIdentical": true
+    },
+    {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.xml.AbstractStaxXMLReader/mutations.xml.gz",
+      "rawSha256": "449cdeb80db51927e94f985cde9f703c2d6ce3e2accb7357b43174ff6c134fd1",
+      "gzipSha256": "c14cb9fcf424ef9ed662dbea419c365da10c2547e41138f3cd774f1a8cac54f0",
+      "rawBytes": 91168,
+      "gzipBytes": 2070,
+      "rawOriginal": "/private/tmp/pit-unify-raw-matrices-75r1a16t/spring-core/org.springframework.util.xml.AbstractStaxXMLReader/mutations.xml",
+      "decompressedBytesIdentical": true
+    }
+  ]
+}

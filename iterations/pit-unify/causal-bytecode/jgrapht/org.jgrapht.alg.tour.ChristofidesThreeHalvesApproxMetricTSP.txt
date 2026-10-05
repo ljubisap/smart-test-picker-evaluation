@@ -1,0 +1,213 @@
+Compiled from "ChristofidesThreeHalvesApproxMetricTSP.java"
+public class org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP<V, E> extends org.jgrapht.alg.tour.HamiltonianCycleAlgorithmBase<V, E> {
+  public org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method org/jgrapht/alg/tour/HamiltonianCycleAlgorithmBase."<init>":()V
+       4: return
+    LineNumberTable:
+      line 82: 0
+      line 83: 4
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lorg/jgrapht/alg/tour/ChristofidesThreeHalvesApproxMetricTSP;
+
+  public org.jgrapht.GraphPath<V, E> getTour(org.jgrapht.Graph<V, E>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #7                  // Method checkGraph:(Lorg/jgrapht/Graph;)V
+       5: aload_1
+       6: invokeinterface #13,  1           // InterfaceMethod org/jgrapht/Graph.vertexSet:()Ljava/util/Set;
+      11: invokeinterface #19,  1           // InterfaceMethod java/util/Set.size:()I
+      16: istore_2
+      17: iload_2
+      18: iconst_1
+      19: if_icmpne     28
+      22: aload_0
+      23: aload_1
+      24: invokevirtual #25                 // Method getSingletonTour:(Lorg/jgrapht/Graph;)Lorg/jgrapht/GraphPath;
+      27: areturn
+      28: new           #29                 // class org/jgrapht/graph/Pseudograph
+      31: dup
+      32: aconst_null
+      33: invokedynamic #31,  0             // InvokeDynamic #0:get:()Ljava/util/function/Supplier;
+      38: iconst_0
+      39: invokespecial #35                 // Method org/jgrapht/graph/Pseudograph."<init>":(Ljava/util/function/Supplier;Ljava/util/function/Supplier;Z)V
+      42: astore_3
+      43: aload_1
+      44: invokeinterface #13,  1           // InterfaceMethod org/jgrapht/Graph.vertexSet:()Ljava/util/Set;
+      49: aload_3
+      50: dup
+      51: invokestatic  #38                 // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+      54: pop
+      55: invokedynamic #44,  0             // InvokeDynamic #1:accept:(Lorg/jgrapht/Graph;)Ljava/util/function/Consumer;
+      60: invokeinterface #48,  2           // InterfaceMethod java/util/Set.forEach:(Ljava/util/function/Consumer;)V
+      65: new           #52                 // class org/jgrapht/alg/spanning/KruskalMinimumSpanningTree
+      68: dup
+      69: aload_1
+      70: invokespecial #54                 // Method org/jgrapht/alg/spanning/KruskalMinimumSpanningTree."<init>":(Lorg/jgrapht/Graph;)V
+      73: astore        4
+      75: aload         4
+      77: invokeinterface #56,  1           // InterfaceMethod org/jgrapht/alg/interfaces/SpanningTreeAlgorithm.getSpanningTree:()Lorg/jgrapht/alg/interfaces/SpanningTreeAlgorithm$SpanningTree;
+      82: invokeinterface #62,  1           // InterfaceMethod org/jgrapht/alg/interfaces/SpanningTreeAlgorithm$SpanningTree.getEdges:()Ljava/util/Set;
+      87: aload_3
+      88: aload_1
+      89: invokedynamic #67,  0             // InvokeDynamic #2:accept:(Lorg/jgrapht/Graph;Lorg/jgrapht/Graph;)Ljava/util/function/Consumer;
+      94: invokeinterface #48,  2           // InterfaceMethod java/util/Set.forEach:(Ljava/util/function/Consumer;)V
+      99: aload_3
+     100: invokeinterface #13,  1           // InterfaceMethod org/jgrapht/Graph.vertexSet:()Ljava/util/Set;
+     105: invokeinterface #70,  1           // InterfaceMethod java/util/Set.stream:()Ljava/util/stream/Stream;
+     110: aload_3
+     111: invokedynamic #74,  0             // InvokeDynamic #3:test:(Lorg/jgrapht/Graph;)Ljava/util/function/Predicate;
+     116: invokeinterface #78,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+     121: invokestatic  #84                 // Method java/util/stream/Collectors.toSet:()Ljava/util/stream/Collector;
+     124: invokeinterface #90,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+     129: checkcast     #20                 // class java/util/Set
+     132: astore        5
+     134: new           #94                 // class org/jgrapht/graph/AsSubgraph
+     137: dup
+     138: aload_1
+     139: aload         5
+     141: invokespecial #96                 // Method org/jgrapht/graph/AsSubgraph."<init>":(Lorg/jgrapht/Graph;Ljava/util/Set;)V
+     144: astore        6
+     146: new           #99                 // class org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching
+     149: dup
+     150: aload         6
+     152: invokespecial #101                // Method org/jgrapht/alg/matching/blossom/v5/KolmogorovWeightedPerfectMatching."<init>":(Lorg/jgrapht/Graph;)V
+     155: astore        7
+     157: aload         7
+     159: invokeinterface #102,  1          // InterfaceMethod org/jgrapht/alg/interfaces/MatchingAlgorithm.getMatching:()Lorg/jgrapht/alg/interfaces/MatchingAlgorithm$Matching;
+     164: invokeinterface #108,  1          // InterfaceMethod org/jgrapht/alg/interfaces/MatchingAlgorithm$Matching.getEdges:()Ljava/util/Set;
+     169: aload_3
+     170: aload_1
+     171: invokedynamic #111,  0            // InvokeDynamic #4:accept:(Lorg/jgrapht/Graph;Lorg/jgrapht/Graph;)Ljava/util/function/Consumer;
+     176: invokeinterface #48,  2           // InterfaceMethod java/util/Set.forEach:(Ljava/util/function/Consumer;)V
+     181: new           #112                // class org/jgrapht/alg/cycle/HierholzerEulerianCycle
+     184: dup
+     185: invokespecial #114                // Method org/jgrapht/alg/cycle/HierholzerEulerianCycle."<init>":()V
+     188: astore        8
+     190: aload         8
+     192: aload_3
+     193: invokeinterface #115,  2          // InterfaceMethod org/jgrapht/alg/interfaces/EulerianCycleAlgorithm.getEulerianCycle:(Lorg/jgrapht/Graph;)Lorg/jgrapht/GraphPath;
+     198: astore        9
+     200: iload_2
+     201: invokestatic  #120                // Method java/util/HashSet.newHashSet:(I)Ljava/util/HashSet;
+     204: astore        10
+     206: aload         9
+     208: invokeinterface #126,  1          // InterfaceMethod org/jgrapht/GraphPath.getVertexList:()Ljava/util/List;
+     213: invokeinterface #132,  1          // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+     218: aload         10
+     220: dup
+     221: invokestatic  #38                 // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+     224: pop
+     225: invokedynamic #135,  0            // InvokeDynamic #5:test:(Ljava/util/Set;)Ljava/util/function/Predicate;
+     230: invokeinterface #78,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+     235: invokestatic  #138                // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+     238: invokeinterface #90,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+     243: checkcast     #133                // class java/util/List
+     246: astore        11
+     248: aload_0
+     249: aload         11
+     251: aload_1
+     252: invokevirtual #141                // Method vertexListToTour:(Ljava/util/List;Lorg/jgrapht/Graph;)Lorg/jgrapht/GraphPath;
+     255: areturn
+    LineNumberTable:
+      line 97: 0
+      line 98: 5
+      line 99: 17
+      line 100: 22
+      line 104: 28
+      line 105: 43
+      line 108: 65
+      line 109: 75
+      line 110: 94
+      line 113: 99
+      line 114: 116
+      line 120: 134
+      line 121: 146
+      line 123: 157
+      line 124: 176
+      line 127: 181
+      line 129: 190
+      line 130: 193
+      line 133: 200
+      line 134: 206
+      line 135: 235
+      line 137: 248
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0     256     0  this   Lorg/jgrapht/alg/tour/ChristofidesThreeHalvesApproxMetricTSP;
+          0     256     1 graph   Lorg/jgrapht/Graph;
+         17     239     2     n   I
+         43     213     3 mstAndMatching   Lorg/jgrapht/Graph;
+         75     181     4 spanningTreeAlgorithm   Lorg/jgrapht/alg/interfaces/SpanningTreeAlgorithm;
+        134     122     5 oddDegreeVertices   Ljava/util/Set;
+        146     110     6 subgraph   Lorg/jgrapht/Graph;
+        157      99     7 matchingAlgorithm   Lorg/jgrapht/alg/interfaces/MatchingAlgorithm;
+        190      66     8 eulerianCycleAlgorithm   Lorg/jgrapht/alg/interfaces/EulerianCycleAlgorithm;
+        200      56     9 eulerianCycle   Lorg/jgrapht/GraphPath;
+        206      50    10 visited   Ljava/util/Set;
+        248       8    11 tourVertices   Ljava/util/List;
+
+  private static void lambda$getTour$2(org.jgrapht.Graph, org.jgrapht.Graph, java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokeinterface #145,  2          // InterfaceMethod org/jgrapht/Graph.getEdgeSource:(Ljava/lang/Object;)Ljava/lang/Object;
+       8: aload_1
+       9: aload_2
+      10: invokeinterface #148,  2          // InterfaceMethod org/jgrapht/Graph.getEdgeTarget:(Ljava/lang/Object;)Ljava/lang/Object;
+      15: invokeinterface #151,  3          // InterfaceMethod org/jgrapht/Graph.addEdge:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      20: pop
+      21: return
+    LineNumberTable:
+      line 124: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      22     0 mstAndMatching   Lorg/jgrapht/Graph;
+          0      22     1 graph   Lorg/jgrapht/Graph;
+          0      22     2     e   Ljava/lang/Object;
+
+  private static boolean lambda$getTour$1(org.jgrapht.Graph, java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokeinterface #155,  2          // InterfaceMethod org/jgrapht/Graph.edgesOf:(Ljava/lang/Object;)Ljava/util/Set;
+       7: invokeinterface #19,  1           // InterfaceMethod java/util/Set.size:()I
+      12: iconst_1
+      13: iand
+      14: iconst_1
+      15: if_icmpne     22
+      18: iconst_1
+      19: goto          23
+      22: iconst_0
+      23: ireturn
+    LineNumberTable:
+      line 114: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      24     0 mstAndMatching   Lorg/jgrapht/Graph;
+          0      24     1     v   Ljava/lang/Object;
+
+  private static void lambda$getTour$0(org.jgrapht.Graph, org.jgrapht.Graph, java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokeinterface #145,  2          // InterfaceMethod org/jgrapht/Graph.getEdgeSource:(Ljava/lang/Object;)Ljava/lang/Object;
+       8: aload_1
+       9: aload_2
+      10: invokeinterface #148,  2          // InterfaceMethod org/jgrapht/Graph.getEdgeTarget:(Ljava/lang/Object;)Ljava/lang/Object;
+      15: invokeinterface #151,  3          // InterfaceMethod org/jgrapht/Graph.addEdge:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      20: pop
+      21: return
+    LineNumberTable:
+      line 110: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      22     0 mstAndMatching   Lorg/jgrapht/Graph;
+          0      22     1 graph   Lorg/jgrapht/Graph;
+          0      22     2     e   Ljava/lang/Object;
+}

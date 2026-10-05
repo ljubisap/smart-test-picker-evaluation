@@ -1,0 +1,373 @@
+{
+  "projects": {
+    "commons-lang": {
+      "base": {
+        "wilson95Pct": [
+          99.26995039813829,
+          99.97713046428775
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261003,
+          "trials": 10000,
+          "clusters": 21,
+          "lowerPct": 99.5253164556962,
+          "upperPct": 100.0
+        }
+      },
+      "constructor": {
+        "wilson95Pct": [
+          99.26995039813829,
+          99.97713046428775
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261003,
+          "trials": 10000,
+          "clusters": 21,
+          "lowerPct": 99.5253164556962,
+          "upperPct": 100.0
+        }
+      },
+      "class": {
+        "wilson95Pct": [
+          99.26995039813829,
+          99.97713046428775
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261003,
+          "trials": 10000,
+          "clusters": 21,
+          "lowerPct": 99.5253164556962,
+          "upperPct": 100.0
+        }
+      }
+    },
+    "jgrapht": {
+      "base": {
+        "wilson95Pct": [
+          98.79971583839094,
+          99.96227111474919
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261004,
+          "trials": 10000,
+          "clusters": 20,
+          "lowerPct": 99.1044776119403,
+          "upperPct": 100.0
+        }
+      },
+      "constructor": {
+        "wilson95Pct": [
+          99.18585814178022,
+          99.99999999999999
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261004,
+          "trials": 10000,
+          "clusters": 20,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      },
+      "class": {
+        "wilson95Pct": [
+          99.18585814178022,
+          99.99999999999999
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261004,
+          "trials": 10000,
+          "clusters": 20,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      }
+    },
+    "spring-core": {
+      "base": {
+        "wilson95Pct": [
+          95.36074560333006,
+          98.52787191947246
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261005,
+          "trials": 10000,
+          "clusters": 18,
+          "lowerPct": 95.0920245398773,
+          "upperPct": 99.40711462450592
+        }
+      },
+      "constructor": {
+        "wilson95Pct": [
+          96.59214465062193,
+          99.18843493813125
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261005,
+          "trials": 10000,
+          "clusters": 18,
+          "lowerPct": 96.3963963963964,
+          "upperPct": 99.72144846796657
+        }
+      },
+      "class": {
+        "wilson95Pct": [
+          99.0915132041669,
+          100.00000000000003
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261005,
+          "trials": 10000,
+          "clusters": 18,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      }
+    },
+    "petclinic": {
+      "base": {
+        "wilson95Pct": [
+          96.07379237084551,
+          99.99999999999999
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261006,
+          "trials": 10000,
+          "clusters": 14,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      },
+      "constructor": {
+        "wilson95Pct": [
+          96.07379237084551,
+          99.99999999999999
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261006,
+          "trials": 10000,
+          "clusters": 14,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      },
+      "class": {
+        "wilson95Pct": [
+          96.07379237084551,
+          99.99999999999999
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261006,
+          "trials": 10000,
+          "clusters": 14,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      }
+    },
+    "flink": {
+      "base": {
+        "wilson95Pct": [
+          98.91127906750712,
+          100.0
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261007,
+          "trials": 10000,
+          "clusters": 15,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      },
+      "constructor": {
+        "wilson95Pct": [
+          98.91127906750712,
+          100.0
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261007,
+          "trials": 10000,
+          "clusters": 15,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      },
+      "class": {
+        "wilson95Pct": [
+          98.91127906750712,
+          100.0
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261007,
+          "trials": 10000,
+          "clusters": 15,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      }
+    },
+    "spring-security": {
+      "base": {
+        "wilson95Pct": [
+          96.60420499279995,
+          99.37025984684811
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261008,
+          "trials": 10000,
+          "clusters": 18,
+          "lowerPct": 96.80232558139535,
+          "upperPct": 99.73190348525469
+        }
+      },
+      "constructor": {
+        "wilson95Pct": [
+          97.43831614246955,
+          99.6994755437197
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261008,
+          "trials": 10000,
+          "clusters": 18,
+          "lowerPct": 97.65886287625418,
+          "upperPct": 100.0
+        }
+      },
+      "class": {
+        "wilson95Pct": [
+          98.88278195600103,
+          100.0
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261008,
+          "trials": 10000,
+          "clusters": 18,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      }
+    },
+    "hibernate": {
+      "base": {
+        "wilson95Pct": [
+          98.60113430937605,
+          99.95596534200098
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261009,
+          "trials": 10000,
+          "clusters": 15,
+          "lowerPct": 99.24433249370277,
+          "upperPct": 100.0
+        }
+      },
+      "constructor": {
+        "wilson95Pct": [
+          98.60113430937605,
+          99.95596534200098
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261009,
+          "trials": 10000,
+          "clusters": 15,
+          "lowerPct": 99.24433249370277,
+          "upperPct": 100.0
+        }
+      },
+      "class": {
+        "wilson95Pct": [
+          99.05112020100799,
+          100.0
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261009,
+          "trials": 10000,
+          "clusters": 15,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      }
+    },
+    "quarkus": {
+      "base": {
+        "wilson95Pct": [
+          99.64654837285444,
+          99.99999999999999
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261010,
+          "trials": 10000,
+          "clusters": 16,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      },
+      "constructor": {
+        "wilson95Pct": [
+          99.64654837285444,
+          99.99999999999999
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261010,
+          "trials": 10000,
+          "clusters": 16,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      },
+      "class": {
+        "wilson95Pct": [
+          99.64654837285444,
+          99.99999999999999
+        ],
+        "clusterBootstrap95Pct": {
+          "seed": 20261010,
+          "trials": 10000,
+          "clusters": 16,
+          "lowerPct": 100.0,
+          "upperPct": 100.0
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "base": {
+      "wilson95Pct": [
+        99.2453366647752,
+        99.68995222005297
+      ],
+      "clusterBootstrap95Pct": {
+        "seed": 20261103,
+        "trials": 10000,
+        "clusters": 137,
+        "lowerPct": 99.13683676059914,
+        "upperPct": 99.80092899800928
+      }
+    },
+    "constructor": {
+      "wilson95Pct": [
+        99.46647446760134,
+        99.82506288543352
+      ],
+      "clusterBootstrap95Pct": {
+        "seed": 20261103,
+        "trials": 10000,
+        "clusters": 137,
+        "lowerPct": 99.40405244338498,
+        "upperPct": 99.90489776509747
+      }
+    },
+    "class": {
+      "wilson95Pct": [
+        99.8558528113496,
+        99.99550356315288
+      ],
+      "clusterBootstrap95Pct": {
+        "seed": 20261103,
+        "trials": 10000,
+        "clusters": 137,
+        "lowerPct": 99.91482112436115,
+        "upperPct": 100.0
+      }
+    }
+  }
+}

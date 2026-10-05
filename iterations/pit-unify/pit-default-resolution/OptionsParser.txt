@@ -1,0 +1,1448 @@
+Compiled from "OptionsParser.java"
+public class org.pitest.mutationtest.commandline.OptionsParser {
+  private final java.util.function.Predicate<java.lang.String> dependencyFilter;
+
+  private static final java.util.logging.Logger LOG;
+
+  private final joptsimple.OptionParser parser;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.String> reportDirSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> targetClassesSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> targetTestsSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> avoidCallsSpec;
+
+  private final joptsimple.OptionSpec<java.lang.Integer> threadsSpec;
+
+  private final joptsimple.OptionSpec<java.io.File> sourceDirSpec;
+
+  private final joptsimple.OptionSpec<java.io.File> historyOutputSpec;
+
+  private final joptsimple.OptionSpec<java.io.File> historyInputSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> mutators;
+
+  private final joptsimple.OptionSpec<java.lang.String> features;
+
+  private final joptsimple.OptionSpec<java.lang.String> argLine;
+
+  private final joptsimple.OptionSpec<java.lang.String> jvmArgs;
+
+  private final org.pitest.mutationtest.commandline.CommaAwareArgsProcessor jvmArgsProcessor;
+
+  private final joptsimple.OptionSpec<java.lang.Float> timeoutFactorSpec;
+
+  private final joptsimple.OptionSpec<java.lang.Long> timeoutConstSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> excludedMethodsSpec;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Boolean> verboseSpec;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.String> verbositySpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> excludedClassesSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> excludedTestClassesSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> outputFormatSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> additionalClassPathSpec;
+
+  private final joptsimple.OptionSpec<java.io.File> classPathFile;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Boolean> failWhenNoMutations;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Boolean> skipFailingTests;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.String> codePaths;
+
+  private final joptsimple.OptionSpec<java.lang.String> excludedRunnersSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> excludedGroupsSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> includedGroupsSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> includedTestMethodsSpec;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Boolean> fullMutationMatrixSpec;
+
+  private final joptsimple.OptionSpec<java.lang.Integer> mutationUnitSizeSpec;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Boolean> timestampedReportsSpec;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Boolean> detectInlinedCode;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Integer> mutationThreshHoldSpec;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Integer> testStrengthThreshHoldSpec;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Integer> coverageThreshHoldSpec;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Integer> maxSurvivingSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> mutationEngine;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Boolean> exportLineCoverageSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> javaExecutable;
+
+  private final joptsimple.OptionSpec<joptsimple.util.KeyValuePair> pluginPropertiesSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> testPluginSpec;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Boolean> includeLaunchClasspathSpec;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Boolean> useClasspathJarSpec;
+
+  private final joptsimple.OptionSpec<java.io.File> projectBaseSpec;
+
+  private final joptsimple.OptionSpec<java.lang.String> inputEncoding;
+
+  private final joptsimple.OptionSpec<java.lang.String> outputEncoding;
+
+  private final joptsimple.ArgumentAcceptingOptionSpec<java.lang.Boolean> dryRunSpec;
+
+  public org.pitest.mutationtest.commandline.OptionsParser(java.util.function.Predicate<java.lang.String>);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #2                  // Field dependencyFilter:Ljava/util/function/Predicate;
+       9: aload_0
+      10: new           #3                  // class joptsimple/OptionParser
+      13: dup
+      14: invokespecial #4                  // Method joptsimple/OptionParser."<init>":()V
+      17: putfield      #5                  // Field parser:Ljoptsimple/OptionParser;
+      20: aload_0
+      21: getfield      #5                  // Field parser:Ljoptsimple/OptionParser;
+      24: iconst_2
+      25: anewarray     #6                  // class java/lang/String
+      28: dup
+      29: iconst_0
+      30: ldc           #7                  // String h
+      32: aastore
+      33: dup
+      34: iconst_1
+      35: ldc           #8                  // String ?
+      37: aastore
+      38: invokestatic  #9                  // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+      41: ldc           #10                 // String show help
+      43: invokevirtual #11                 // Method joptsimple/OptionParser.acceptsAll:(Ljava/util/List;Ljava/lang/String;)Ljoptsimple/OptionSpecBuilder;
+      46: pop
+      47: aload_0
+      48: aload_0
+      49: getstatic     #12                 // Field org/pitest/mutationtest/config/ConfigOption.TEST_PLUGIN:Lorg/pitest/mutationtest/config/ConfigOption;
+      52: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+      55: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+      58: ldc           #6                  // class java/lang/String
+      60: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+      63: ldc           #16                 // String junit
+      65: iconst_0
+      66: anewarray     #6                  // class java/lang/String
+      69: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+      72: ldc           #18                 // String this parameter is ignored and will be removed in a future release
+      74: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+      77: putfield      #20                 // Field testPluginSpec:Ljoptsimple/OptionSpec;
+      80: aload_0
+      81: aload_0
+      82: getstatic     #21                 // Field org/pitest/mutationtest/config/ConfigOption.REPORT_DIR:Lorg/pitest/mutationtest/config/ConfigOption;
+      85: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+      88: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+      91: ldc           #22                 // String directory to create report folder in
+      93: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+      96: invokevirtual #23                 // Method joptsimple/ArgumentAcceptingOptionSpec.required:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+      99: putfield      #24                 // Field reportDirSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     102: aload_0
+     103: aload_0
+     104: getstatic     #25                 // Field org/pitest/mutationtest/config/ConfigOption.TARGET_CLASSES:Lorg/pitest/mutationtest/config/ConfigOption;
+     107: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     110: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     113: ldc           #6                  // class java/lang/String
+     115: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     118: bipush        44
+     120: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     123: ldc           #27                 // String comma separated list of filters to match against classes to test
+     125: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     128: invokevirtual #23                 // Method joptsimple/ArgumentAcceptingOptionSpec.required:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     131: putfield      #28                 // Field targetClassesSpec:Ljoptsimple/OptionSpec;
+     134: aload_0
+     135: aload_0
+     136: getstatic     #29                 // Field org/pitest/mutationtest/config/ConfigOption.AVOID_CALLS:Lorg/pitest/mutationtest/config/ConfigOption;
+     139: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     142: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     145: ldc           #6                  // class java/lang/String
+     147: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     150: bipush        44
+     152: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     155: ldc           #30                 // String comma separated list of packages to consider as untouchable logging calls
+     157: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     160: putfield      #31                 // Field avoidCallsSpec:Ljoptsimple/OptionSpec;
+     163: aload_0
+     164: aload_0
+     165: getstatic     #32                 // Field org/pitest/mutationtest/config/ConfigOption.TEST_FILTER:Lorg/pitest/mutationtest/config/ConfigOption;
+     168: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     171: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     174: ldc           #6                  // class java/lang/String
+     176: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     179: bipush        44
+     181: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     184: ldc           #33                 // String comma separated list of filters to match against tests to run
+     186: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     189: putfield      #34                 // Field targetTestsSpec:Ljoptsimple/OptionSpec;
+     192: aload_0
+     193: aload_0
+     194: getstatic     #35                 // Field org/pitest/mutationtest/config/ConfigOption.THREADS:Lorg/pitest/mutationtest/config/ConfigOption;
+     197: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     200: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     203: ldc           #36                 // class java/lang/Integer
+     205: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     208: getstatic     #35                 // Field org/pitest/mutationtest/config/ConfigOption.THREADS:Lorg/pitest/mutationtest/config/ConfigOption;
+     211: ldc           #36                 // class java/lang/Integer
+     213: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     216: iconst_0
+     217: anewarray     #36                 // class java/lang/Integer
+     220: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     223: ldc           #38                 // String number of threads to use for testing
+     225: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     228: putfield      #39                 // Field threadsSpec:Ljoptsimple/OptionSpec;
+     231: aload_0
+     232: getstatic     #40                 // Field org/pitest/mutationtest/config/ConfigOption.MAX_MUTATIONS_PER_CLASS:Lorg/pitest/mutationtest/config/ConfigOption;
+     235: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     238: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     241: ldc           #36                 // class java/lang/Integer
+     243: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     246: getstatic     #40                 // Field org/pitest/mutationtest/config/ConfigOption.MAX_MUTATIONS_PER_CLASS:Lorg/pitest/mutationtest/config/ConfigOption;
+     249: ldc           #36                 // class java/lang/Integer
+     251: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     254: iconst_0
+     255: anewarray     #36                 // class java/lang/Integer
+     258: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     261: ldc           #41                 // String No longer supported. Use CLASSLIMIT(limit[42]) feature instead
+     263: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     266: pop
+     267: aload_0
+     268: aload_0
+     269: getstatic     #42                 // Field org/pitest/mutationtest/config/ConfigOption.SOURCE_DIR:Lorg/pitest/mutationtest/config/ConfigOption;
+     272: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     275: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     278: ldc           #43                 // class java/io/File
+     280: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     283: bipush        44
+     285: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     288: ldc           #44                 // String comma separated list of source directories
+     290: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     293: invokevirtual #23                 // Method joptsimple/ArgumentAcceptingOptionSpec.required:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     296: putfield      #45                 // Field sourceDirSpec:Ljoptsimple/OptionSpec;
+     299: aload_0
+     300: aload_0
+     301: getstatic     #46                 // Field org/pitest/mutationtest/config/ConfigOption.MUTATIONS:Lorg/pitest/mutationtest/config/ConfigOption;
+     304: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     307: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     310: ldc           #6                  // class java/lang/String
+     312: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     315: bipush        44
+     317: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     320: ldc           #47                 // String comma separated list of mutation operators
+     322: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     325: putfield      #48                 // Field mutators:Ljoptsimple/OptionSpec;
+     328: aload_0
+     329: aload_0
+     330: getstatic     #49                 // Field org/pitest/mutationtest/config/ConfigOption.FEATURES:Lorg/pitest/mutationtest/config/ConfigOption;
+     333: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     336: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     339: ldc           #6                  // class java/lang/String
+     341: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     344: bipush        44
+     346: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     349: ldc           #50                 // String comma separated list of features to enable/disable.
+     351: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     354: putfield      #51                 // Field features:Ljoptsimple/OptionSpec;
+     357: aload_0
+     358: aload_0
+     359: getstatic     #52                 // Field org/pitest/mutationtest/config/ConfigOption.ARG_LINE:Lorg/pitest/mutationtest/config/ConfigOption;
+     362: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     365: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     368: ldc           #53                 // String argline for child JVMs
+     370: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     373: putfield      #54                 // Field argLine:Ljoptsimple/OptionSpec;
+     376: aload_0
+     377: aload_0
+     378: getstatic     #55                 // Field org/pitest/mutationtest/config/ConfigOption.CHILD_JVM:Lorg/pitest/mutationtest/config/ConfigOption;
+     381: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     384: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     387: ldc           #56                 // String comma separated list of child JVM args
+     389: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     392: putfield      #57                 // Field jvmArgs:Ljoptsimple/OptionSpec;
+     395: aload_0
+     396: new           #58                 // class org/pitest/mutationtest/commandline/CommaAwareArgsProcessor
+     399: dup
+     400: aload_0
+     401: getfield      #57                 // Field jvmArgs:Ljoptsimple/OptionSpec;
+     404: invokespecial #59                 // Method org/pitest/mutationtest/commandline/CommaAwareArgsProcessor."<init>":(Ljoptsimple/OptionSpec;)V
+     407: putfield      #60                 // Field jvmArgsProcessor:Lorg/pitest/mutationtest/commandline/CommaAwareArgsProcessor;
+     410: aload_0
+     411: aload_0
+     412: getstatic     #61                 // Field org/pitest/mutationtest/config/ConfigOption.USE_INLINED_CODE_DETECTION:Lorg/pitest/mutationtest/config/ConfigOption;
+     415: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     418: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     421: ldc           #63                 // class java/lang/Boolean
+     423: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     426: getstatic     #61                 // Field org/pitest/mutationtest/config/ConfigOption.USE_INLINED_CODE_DETECTION:Lorg/pitest/mutationtest/config/ConfigOption;
+     429: ldc           #63                 // class java/lang/Boolean
+     431: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     434: iconst_0
+     435: anewarray     #63                 // class java/lang/Boolean
+     438: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     441: ldc           #64                 // String whether or not to try and detect code inlined from finally blocks
+     443: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     446: putfield      #65                 // Field detectInlinedCode:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     449: aload_0
+     450: aload_0
+     451: getstatic     #66                 // Field org/pitest/mutationtest/config/ConfigOption.TIME_STAMPED_REPORTS:Lorg/pitest/mutationtest/config/ConfigOption;
+     454: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     457: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     460: ldc           #63                 // class java/lang/Boolean
+     462: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     465: getstatic     #66                 // Field org/pitest/mutationtest/config/ConfigOption.TIME_STAMPED_REPORTS:Lorg/pitest/mutationtest/config/ConfigOption;
+     468: ldc           #63                 // class java/lang/Boolean
+     470: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     473: iconst_0
+     474: anewarray     #63                 // class java/lang/Boolean
+     477: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     480: ldc           #67                 // String whether or not to generated timestamped directories
+     482: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     485: putfield      #68                 // Field timestampedReportsSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     488: aload_0
+     489: aload_0
+     490: getstatic     #69                 // Field org/pitest/mutationtest/config/ConfigOption.TIMEOUT_FACTOR:Lorg/pitest/mutationtest/config/ConfigOption;
+     493: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     496: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     499: ldc           #70                 // class java/lang/Float
+     501: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     504: ldc           #71                 // String factor to apply to calculate maximum test duration
+     506: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     509: getstatic     #69                 // Field org/pitest/mutationtest/config/ConfigOption.TIMEOUT_FACTOR:Lorg/pitest/mutationtest/config/ConfigOption;
+     512: ldc           #70                 // class java/lang/Float
+     514: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     517: iconst_0
+     518: anewarray     #70                 // class java/lang/Float
+     521: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     524: putfield      #72                 // Field timeoutFactorSpec:Ljoptsimple/OptionSpec;
+     527: aload_0
+     528: aload_0
+     529: getstatic     #73                 // Field org/pitest/mutationtest/config/ConfigOption.TIMEOUT_CONST:Lorg/pitest/mutationtest/config/ConfigOption;
+     532: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     535: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     538: ldc           #74                 // class java/lang/Long
+     540: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     543: ldc           #75                 // String constant to apply to calculate maximum test duration
+     545: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     548: getstatic     #73                 // Field org/pitest/mutationtest/config/ConfigOption.TIMEOUT_CONST:Lorg/pitest/mutationtest/config/ConfigOption;
+     551: ldc           #74                 // class java/lang/Long
+     553: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     556: iconst_0
+     557: anewarray     #74                 // class java/lang/Long
+     560: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     563: putfield      #76                 // Field timeoutConstSpec:Ljoptsimple/OptionSpec;
+     566: aload_0
+     567: aload_0
+     568: getstatic     #77                 // Field org/pitest/mutationtest/config/ConfigOption.EXCLUDED_METHOD:Lorg/pitest/mutationtest/config/ConfigOption;
+     571: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     574: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     577: ldc           #6                  // class java/lang/String
+     579: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     582: bipush        44
+     584: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     587: ldc           #78                 // String comma separated list of filters to match against methods to exclude from mutation analysis
+     589: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     592: putfield      #79                 // Field excludedMethodsSpec:Ljoptsimple/OptionSpec;
+     595: aload_0
+     596: aload_0
+     597: getstatic     #80                 // Field org/pitest/mutationtest/config/ConfigOption.EXCLUDED_CLASSES:Lorg/pitest/mutationtest/config/ConfigOption;
+     600: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     603: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     606: ldc           #6                  // class java/lang/String
+     608: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     611: bipush        44
+     613: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     616: ldc           #81                 // String comma separated list of globs for classes to exclude when mutating
+     618: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     621: putfield      #82                 // Field excludedClassesSpec:Ljoptsimple/OptionSpec;
+     624: aload_0
+     625: aload_0
+     626: getstatic     #83                 // Field org/pitest/mutationtest/config/ConfigOption.EXCLUDED_TEST_CLASSES:Lorg/pitest/mutationtest/config/ConfigOption;
+     629: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     632: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     635: ldc           #6                  // class java/lang/String
+     637: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     640: bipush        44
+     642: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     645: ldc           #84                 // String comma separated list of globs of test classes to exclude
+     647: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     650: putfield      #85                 // Field excludedTestClassesSpec:Ljoptsimple/OptionSpec;
+     653: aload_0
+     654: aload_0
+     655: getstatic     #86                 // Field org/pitest/mutationtest/config/ConfigOption.VERBOSE:Lorg/pitest/mutationtest/config/ConfigOption;
+     658: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     661: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     664: ldc           #63                 // class java/lang/Boolean
+     666: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     669: getstatic     #86                 // Field org/pitest/mutationtest/config/ConfigOption.VERBOSE:Lorg/pitest/mutationtest/config/ConfigOption;
+     672: ldc           #63                 // class java/lang/Boolean
+     674: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     677: iconst_0
+     678: anewarray     #63                 // class java/lang/Boolean
+     681: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     684: ldc           #87                 // String whether or not to generate verbose output
+     686: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     689: putfield      #88                 // Field verboseSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     692: aload_0
+     693: aload_0
+     694: getstatic     #89                 // Field org/pitest/mutationtest/config/ConfigOption.VERBOSITY:Lorg/pitest/mutationtest/config/ConfigOption;
+     697: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     700: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     703: ldc           #6                  // class java/lang/String
+     705: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     708: ldc           #90                 // String DEFAULT
+     710: iconst_0
+     711: anewarray     #6                  // class java/lang/String
+     714: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     717: ldc           #91                 // String the verbosity of output
+     719: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     722: putfield      #92                 // Field verbositySpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     725: aload_0
+     726: aload_0
+     727: getstatic     #93                 // Field org/pitest/mutationtest/config/ConfigOption.EXPORT_LINE_COVERAGE:Lorg/pitest/mutationtest/config/ConfigOption;
+     730: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     733: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     736: ldc           #63                 // class java/lang/Boolean
+     738: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     741: getstatic     #93                 // Field org/pitest/mutationtest/config/ConfigOption.EXPORT_LINE_COVERAGE:Lorg/pitest/mutationtest/config/ConfigOption;
+     744: ldc           #63                 // class java/lang/Boolean
+     746: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     749: iconst_0
+     750: anewarray     #63                 // class java/lang/Boolean
+     753: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     756: ldc           #94                 // String whether or not to dump per test line coverage data to disk
+     758: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     761: putfield      #95                 // Field exportLineCoverageSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     764: aload_0
+     765: aload_0
+     766: getstatic     #96                 // Field org/pitest/mutationtest/config/ConfigOption.USE_CLASSPATH_JAR:Lorg/pitest/mutationtest/config/ConfigOption;
+     769: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     772: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     775: ldc           #63                 // class java/lang/Boolean
+     777: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     780: getstatic     #96                 // Field org/pitest/mutationtest/config/ConfigOption.USE_CLASSPATH_JAR:Lorg/pitest/mutationtest/config/ConfigOption;
+     783: ldc           #63                 // class java/lang/Boolean
+     785: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     788: iconst_0
+     789: anewarray     #63                 // class java/lang/Boolean
+     792: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     795: ldc           #97                 // String support large classpaths by creating a classpath jar
+     797: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     800: putfield      #98                 // Field useClasspathJarSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     803: aload_0
+     804: aload_0
+     805: getstatic     #99                 // Field org/pitest/mutationtest/config/ConfigOption.INCLUDE_LAUNCH_CLASSPATH:Lorg/pitest/mutationtest/config/ConfigOption;
+     808: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     811: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     814: ldc           #63                 // class java/lang/Boolean
+     816: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     819: getstatic     #99                 // Field org/pitest/mutationtest/config/ConfigOption.INCLUDE_LAUNCH_CLASSPATH:Lorg/pitest/mutationtest/config/ConfigOption;
+     822: ldc           #63                 // class java/lang/Boolean
+     824: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     827: iconst_0
+     828: anewarray     #63                 // class java/lang/Boolean
+     831: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     834: ldc           #100                // String whether or not to analyse launch classpath
+     836: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     839: putfield      #101                // Field includeLaunchClasspathSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     842: aload_0
+     843: aload_0
+     844: getstatic     #102                // Field org/pitest/mutationtest/config/ConfigOption.OUTPUT_FORMATS:Lorg/pitest/mutationtest/config/ConfigOption;
+     847: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     850: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     853: ldc           #6                  // class java/lang/String
+     855: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     858: bipush        44
+     860: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     863: ldc           #103                // String comma separated list of listeners to receive mutation results
+     865: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     868: ldc           #104                // String HTML
+     870: iconst_0
+     871: anewarray     #6                  // class java/lang/String
+     874: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     877: putfield      #105                // Field outputFormatSpec:Ljoptsimple/OptionSpec;
+     880: aload_0
+     881: aload_0
+     882: getstatic     #106                // Field org/pitest/mutationtest/config/ConfigOption.CLASSPATH:Lorg/pitest/mutationtest/config/ConfigOption;
+     885: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     888: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     891: ldc           #6                  // class java/lang/String
+     893: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     896: bipush        44
+     898: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     901: ldc           #107                // String coma separated list of additional classpath elements
+     903: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     906: putfield      #108                // Field additionalClassPathSpec:Ljoptsimple/OptionSpec;
+     909: aload_0
+     910: aload_0
+     911: getstatic     #109                // Field org/pitest/mutationtest/config/ConfigOption.CLASSPATH_FILE:Lorg/pitest/mutationtest/config/ConfigOption;
+     914: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     917: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     920: ldc           #43                 // class java/io/File
+     922: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     925: ldc           #110                // String File with a list of additional classpath elements (one per line)
+     927: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     930: putfield      #111                // Field classPathFile:Ljoptsimple/OptionSpec;
+     933: aload_0
+     934: aload_0
+     935: getstatic     #112                // Field org/pitest/mutationtest/config/ConfigOption.FAIL_WHEN_NOT_MUTATIONS:Lorg/pitest/mutationtest/config/ConfigOption;
+     938: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     941: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     944: ldc           #63                 // class java/lang/Boolean
+     946: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     949: getstatic     #112                // Field org/pitest/mutationtest/config/ConfigOption.FAIL_WHEN_NOT_MUTATIONS:Lorg/pitest/mutationtest/config/ConfigOption;
+     952: ldc           #63                 // class java/lang/Boolean
+     954: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     957: iconst_0
+     958: anewarray     #63                 // class java/lang/Boolean
+     961: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     964: ldc           #113                // String whether to throw error if no mutations found
+     966: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     969: putfield      #114                // Field failWhenNoMutations:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     972: aload_0
+     973: aload_0
+     974: getstatic     #115                // Field org/pitest/mutationtest/config/ConfigOption.SKIP_FAILING_TESTS:Lorg/pitest/mutationtest/config/ConfigOption;
+     977: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+     980: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+     983: ldc           #63                 // class java/lang/Boolean
+     985: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+     988: getstatic     #115                // Field org/pitest/mutationtest/config/ConfigOption.SKIP_FAILING_TESTS:Lorg/pitest/mutationtest/config/ConfigOption;
+     991: ldc           #63                 // class java/lang/Boolean
+     993: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+     996: iconst_0
+     997: anewarray     #63                 // class java/lang/Boolean
+    1000: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1003: ldc           #116                // String whether to ignore failing tests when computing coverage
+    1005: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1008: putfield      #117                // Field skipFailingTests:Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1011: aload_0
+    1012: aload_0
+    1013: getstatic     #118                // Field org/pitest/mutationtest/config/ConfigOption.CODE_PATHS:Lorg/pitest/mutationtest/config/ConfigOption;
+    1016: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1019: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1022: ldc           #6                  // class java/lang/String
+    1024: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1027: bipush        44
+    1029: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1032: ldc           #119                // String Globs identifying classpath roots containing mutable code
+    1034: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1037: putfield      #120                // Field codePaths:Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1040: aload_0
+    1041: aload_0
+    1042: getstatic     #121                // Field org/pitest/mutationtest/config/ConfigOption.EXCLUDED_RUNNERS:Lorg/pitest/mutationtest/config/ConfigOption;
+    1045: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1048: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1051: ldc           #6                  // class java/lang/String
+    1053: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1056: bipush        44
+    1058: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1061: ldc           #122                // String JUnit4 runners to exclude
+    1063: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1066: putfield      #123                // Field excludedRunnersSpec:Ljoptsimple/OptionSpec;
+    1069: aload_0
+    1070: aload_0
+    1071: getstatic     #124                // Field org/pitest/mutationtest/config/ConfigOption.INCLUDED_GROUPS:Lorg/pitest/mutationtest/config/ConfigOption;
+    1074: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1077: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1080: ldc           #6                  // class java/lang/String
+    1082: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1085: bipush        44
+    1087: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1090: ldc           #125                // String TestNG groups/JUnit categories to include
+    1092: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1095: putfield      #126                // Field includedGroupsSpec:Ljoptsimple/OptionSpec;
+    1098: aload_0
+    1099: aload_0
+    1100: getstatic     #127                // Field org/pitest/mutationtest/config/ConfigOption.INCLUDED_TEST_METHODS:Lorg/pitest/mutationtest/config/ConfigOption;
+    1103: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1106: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1109: ldc           #6                  // class java/lang/String
+    1111: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1114: bipush        44
+    1116: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1119: ldc           #128                // String Test methods that should be included for challenging the mutants
+    1121: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1124: putfield      #129                // Field includedTestMethodsSpec:Ljoptsimple/OptionSpec;
+    1127: aload_0
+    1128: aload_0
+    1129: getstatic     #130                // Field org/pitest/mutationtest/config/ConfigOption.EXCLUDED_GROUPS:Lorg/pitest/mutationtest/config/ConfigOption;
+    1132: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1135: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1138: ldc           #6                  // class java/lang/String
+    1140: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1143: bipush        44
+    1145: invokevirtual #26                 // Method joptsimple/ArgumentAcceptingOptionSpec.withValuesSeparatedBy:(C)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1148: ldc           #125                // String TestNG groups/JUnit categories to include
+    1150: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1153: putfield      #131                // Field excludedGroupsSpec:Ljoptsimple/OptionSpec;
+    1156: aload_0
+    1157: aload_0
+    1158: getstatic     #132                // Field org/pitest/mutationtest/config/ConfigOption.FULL_MUTATION_MATRIX:Lorg/pitest/mutationtest/config/ConfigOption;
+    1161: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1164: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1167: ldc           #63                 // class java/lang/Boolean
+    1169: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1172: ldc           #133                // String Whether to create a full mutation matrix
+    1174: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1177: getstatic     #132                // Field org/pitest/mutationtest/config/ConfigOption.FULL_MUTATION_MATRIX:Lorg/pitest/mutationtest/config/ConfigOption;
+    1180: ldc           #63                 // class java/lang/Boolean
+    1182: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+    1185: iconst_0
+    1186: anewarray     #63                 // class java/lang/Boolean
+    1189: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1192: putfield      #134                // Field fullMutationMatrixSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1195: aload_0
+    1196: aload_0
+    1197: getstatic     #135                // Field org/pitest/mutationtest/config/ConfigOption.MUTATION_UNIT_SIZE:Lorg/pitest/mutationtest/config/ConfigOption;
+    1200: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1203: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1206: ldc           #36                 // class java/lang/Integer
+    1208: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1211: ldc           #136                // String Maximum number of mutations to include within a single unit of analysis
+    1213: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1216: getstatic     #135                // Field org/pitest/mutationtest/config/ConfigOption.MUTATION_UNIT_SIZE:Lorg/pitest/mutationtest/config/ConfigOption;
+    1219: ldc           #36                 // class java/lang/Integer
+    1221: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+    1224: iconst_0
+    1225: anewarray     #36                 // class java/lang/Integer
+    1228: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1231: putfield      #137                // Field mutationUnitSizeSpec:Ljoptsimple/OptionSpec;
+    1234: aload_0
+    1235: aload_0
+    1236: getstatic     #138                // Field org/pitest/mutationtest/config/ConfigOption.HISTORY_INPUT_LOCATION:Lorg/pitest/mutationtest/config/ConfigOption;
+    1239: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1242: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1245: ldc           #43                 // class java/io/File
+    1247: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1250: ldc           #139                // String File to read history from for incremental analysis
+    1252: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1255: putfield      #140                // Field historyInputSpec:Ljoptsimple/OptionSpec;
+    1258: aload_0
+    1259: aload_0
+    1260: getstatic     #141                // Field org/pitest/mutationtest/config/ConfigOption.HISTORY_OUTPUT_LOCATION:Lorg/pitest/mutationtest/config/ConfigOption;
+    1263: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1266: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1269: ldc           #43                 // class java/io/File
+    1271: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1274: ldc           #142                // String File to write history to for incremental analysis
+    1276: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1279: putfield      #143                // Field historyOutputSpec:Ljoptsimple/OptionSpec;
+    1282: aload_0
+    1283: aload_0
+    1284: getstatic     #144                // Field org/pitest/mutationtest/config/ConfigOption.MUTATION_THRESHOLD:Lorg/pitest/mutationtest/config/ConfigOption;
+    1287: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1290: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1293: ldc           #36                 // class java/lang/Integer
+    1295: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1298: ldc           #145                // String Mutation score below which to throw an error
+    1300: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1303: getstatic     #144                // Field org/pitest/mutationtest/config/ConfigOption.MUTATION_THRESHOLD:Lorg/pitest/mutationtest/config/ConfigOption;
+    1306: ldc           #36                 // class java/lang/Integer
+    1308: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+    1311: iconst_0
+    1312: anewarray     #36                 // class java/lang/Integer
+    1315: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1318: putfield      #146                // Field mutationThreshHoldSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1321: aload_0
+    1322: aload_0
+    1323: getstatic     #147                // Field org/pitest/mutationtest/config/ConfigOption.TEST_STRENGTH_THRESHOLD:Lorg/pitest/mutationtest/config/ConfigOption;
+    1326: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1329: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1332: ldc           #36                 // class java/lang/Integer
+    1334: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1337: ldc           #148                // String Test strength score below which to throw an error
+    1339: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1342: getstatic     #147                // Field org/pitest/mutationtest/config/ConfigOption.TEST_STRENGTH_THRESHOLD:Lorg/pitest/mutationtest/config/ConfigOption;
+    1345: ldc           #36                 // class java/lang/Integer
+    1347: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+    1350: iconst_0
+    1351: anewarray     #36                 // class java/lang/Integer
+    1354: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1357: putfield      #149                // Field testStrengthThreshHoldSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1360: aload_0
+    1361: aload_0
+    1362: getstatic     #150                // Field org/pitest/mutationtest/config/ConfigOption.MAX_SURVIVING:Lorg/pitest/mutationtest/config/ConfigOption;
+    1365: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1368: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1371: ldc           #36                 // class java/lang/Integer
+    1373: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1376: ldc           #151                // String Maximum number of surviving mutants to allow without throwing an error
+    1378: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1381: getstatic     #150                // Field org/pitest/mutationtest/config/ConfigOption.MAX_SURVIVING:Lorg/pitest/mutationtest/config/ConfigOption;
+    1384: ldc           #36                 // class java/lang/Integer
+    1386: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+    1389: iconst_0
+    1390: anewarray     #36                 // class java/lang/Integer
+    1393: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1396: putfield      #152                // Field maxSurvivingSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1399: aload_0
+    1400: aload_0
+    1401: getstatic     #153                // Field org/pitest/mutationtest/config/ConfigOption.COVERAGE_THRESHOLD:Lorg/pitest/mutationtest/config/ConfigOption;
+    1404: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1407: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1410: ldc           #36                 // class java/lang/Integer
+    1412: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1415: ldc           #154                // String Line coverage below which to throw an error
+    1417: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1420: getstatic     #153                // Field org/pitest/mutationtest/config/ConfigOption.COVERAGE_THRESHOLD:Lorg/pitest/mutationtest/config/ConfigOption;
+    1423: ldc           #36                 // class java/lang/Integer
+    1425: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+    1428: iconst_0
+    1429: anewarray     #36                 // class java/lang/Integer
+    1432: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1435: putfield      #155                // Field coverageThreshHoldSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1438: aload_0
+    1439: aload_0
+    1440: getstatic     #156                // Field org/pitest/mutationtest/config/ConfigOption.MUTATION_ENGINE:Lorg/pitest/mutationtest/config/ConfigOption;
+    1443: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1446: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1449: ldc           #6                  // class java/lang/String
+    1451: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1454: ldc           #157                // String mutation engine to use
+    1456: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1459: getstatic     #156                // Field org/pitest/mutationtest/config/ConfigOption.MUTATION_ENGINE:Lorg/pitest/mutationtest/config/ConfigOption;
+    1462: ldc           #6                  // class java/lang/String
+    1464: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+    1467: iconst_0
+    1468: anewarray     #6                  // class java/lang/String
+    1471: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1474: putfield      #158                // Field mutationEngine:Ljoptsimple/OptionSpec;
+    1477: aload_0
+    1478: aload_0
+    1479: getstatic     #159                // Field org/pitest/mutationtest/config/ConfigOption.JVM_PATH:Lorg/pitest/mutationtest/config/ConfigOption;
+    1482: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1485: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1488: ldc           #6                  // class java/lang/String
+    1490: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1493: ldc           #160                // String path to java executable
+    1495: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1498: putfield      #161                // Field javaExecutable:Ljoptsimple/OptionSpec;
+    1501: aload_0
+    1502: aload_0
+    1503: getstatic     #162                // Field org/pitest/mutationtest/config/ConfigOption.INPUT_ENCODING:Lorg/pitest/mutationtest/config/ConfigOption;
+    1506: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1509: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1512: ldc           #6                  // class java/lang/String
+    1514: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1517: ldc           #163                // String input encoding
+    1519: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1522: getstatic     #162                // Field org/pitest/mutationtest/config/ConfigOption.INPUT_ENCODING:Lorg/pitest/mutationtest/config/ConfigOption;
+    1525: ldc           #6                  // class java/lang/String
+    1527: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+    1530: iconst_0
+    1531: anewarray     #6                  // class java/lang/String
+    1534: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1537: putfield      #164                // Field inputEncoding:Ljoptsimple/OptionSpec;
+    1540: aload_0
+    1541: aload_0
+    1542: getstatic     #165                // Field org/pitest/mutationtest/config/ConfigOption.OUTPUT_ENCODING:Lorg/pitest/mutationtest/config/ConfigOption;
+    1545: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1548: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1551: ldc           #6                  // class java/lang/String
+    1553: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1556: ldc           #166                // String output encoding
+    1558: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1561: getstatic     #165                // Field org/pitest/mutationtest/config/ConfigOption.OUTPUT_ENCODING:Lorg/pitest/mutationtest/config/ConfigOption;
+    1564: ldc           #6                  // class java/lang/String
+    1566: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+    1569: iconst_0
+    1570: anewarray     #6                  // class java/lang/String
+    1573: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1576: putfield      #167                // Field outputEncoding:Ljoptsimple/OptionSpec;
+    1579: aload_0
+    1580: aload_0
+    1581: getstatic     #168                // Field org/pitest/mutationtest/config/ConfigOption.PLUGIN_CONFIGURATION:Lorg/pitest/mutationtest/config/ConfigOption;
+    1584: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1587: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1590: ldc           #169                // class joptsimple/util/KeyValuePair
+    1592: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1595: ldc           #170                // String custom plugin properties
+    1597: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1600: putfield      #171                // Field pluginPropertiesSpec:Ljoptsimple/OptionSpec;
+    1603: aload_0
+    1604: aload_0
+    1605: getstatic     #172                // Field org/pitest/mutationtest/config/ConfigOption.PROJECT_BASE:Lorg/pitest/mutationtest/config/ConfigOption;
+    1608: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1611: invokevirtual #14                 // Method joptsimple/OptionSpecBuilder.withRequiredArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1614: ldc           #43                 // class java/io/File
+    1616: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1619: putfield      #173                // Field projectBaseSpec:Ljoptsimple/OptionSpec;
+    1622: aload_0
+    1623: aload_0
+    1624: getstatic     #174                // Field org/pitest/mutationtest/config/ConfigOption.DRY_RUN:Lorg/pitest/mutationtest/config/ConfigOption;
+    1627: invokespecial #13                 // Method parserAccepts:(Lorg/pitest/mutationtest/config/ConfigOption;)Ljoptsimple/OptionSpecBuilder;
+    1630: invokevirtual #62                 // Method joptsimple/OptionSpecBuilder.withOptionalArg:()Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1633: ldc           #63                 // class java/lang/Boolean
+    1635: invokevirtual #15                 // Method joptsimple/ArgumentAcceptingOptionSpec.ofType:(Ljava/lang/Class;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1638: getstatic     #86                 // Field org/pitest/mutationtest/config/ConfigOption.VERBOSE:Lorg/pitest/mutationtest/config/ConfigOption;
+    1641: ldc           #63                 // class java/lang/Boolean
+    1643: invokevirtual #37                 // Method org/pitest/mutationtest/config/ConfigOption.getDefault:(Ljava/lang/Class;)Ljava/lang/Object;
+    1646: iconst_0
+    1647: anewarray     #63                 // class java/lang/Boolean
+    1650: invokevirtual #17                 // Method joptsimple/ArgumentAcceptingOptionSpec.defaultsTo:(Ljava/lang/Object;[Ljava/lang/Object;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1653: ldc           #175                // String enable or disable dry run mode
+    1655: invokevirtual #19                 // Method joptsimple/ArgumentAcceptingOptionSpec.describedAs:(Ljava/lang/String;)Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1658: putfield      #176                // Field dryRunSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+    1661: return
+
+  private joptsimple.OptionSpecBuilder parserAccepts(org.pitest.mutationtest.config.ConfigOption);
+    Code:
+       0: aload_0
+       1: getfield      #5                  // Field parser:Ljoptsimple/OptionParser;
+       4: aload_1
+       5: invokevirtual #177                // Method org/pitest/mutationtest/config/ConfigOption.getParamName:()Ljava/lang/String;
+       8: invokevirtual #178                // Method joptsimple/OptionParser.accepts:(Ljava/lang/String;)Ljoptsimple/OptionSpecBuilder;
+      11: areturn
+
+  public org.pitest.mutationtest.commandline.ParseResult parse(java.lang.String[]);
+    Code:
+       0: new           #179                // class org/pitest/mutationtest/config/ReportOptions
+       3: dup
+       4: invokespecial #180                // Method org/pitest/mutationtest/config/ReportOptions."<init>":()V
+       7: astore_2
+       8: aload_0
+       9: getfield      #5                  // Field parser:Ljoptsimple/OptionParser;
+      12: aload_1
+      13: invokevirtual #181                // Method joptsimple/OptionParser.parse:([Ljava/lang/String;)Ljoptsimple/OptionSet;
+      16: astore_3
+      17: aload_0
+      18: aload_2
+      19: aload_3
+      20: invokespecial #182                // Method parseCommandLine:(Lorg/pitest/mutationtest/config/ReportOptions;Ljoptsimple/OptionSet;)Lorg/pitest/mutationtest/commandline/ParseResult;
+      23: areturn
+      24: astore_3
+      25: new           #184                // class org/pitest/mutationtest/commandline/ParseResult
+      28: dup
+      29: aload_2
+      30: aload_3
+      31: invokevirtual #185                // Method joptsimple/OptionException.getLocalizedMessage:()Ljava/lang/String;
+      34: invokespecial #186                // Method org/pitest/mutationtest/commandline/ParseResult."<init>":(Lorg/pitest/mutationtest/config/ReportOptions;Ljava/lang/String;)V
+      37: areturn
+    Exception table:
+       from    to  target type
+           8    23    24   Class joptsimple/OptionException
+
+  private org.pitest.mutationtest.commandline.ParseResult parseCommandLine(org.pitest.mutationtest.config.ReportOptions, joptsimple.OptionSet);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #24                 // Field reportDirSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+       5: aload_2
+       6: invokevirtual #187                // Method joptsimple/ArgumentAcceptingOptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+       9: checkcast     #6                  // class java/lang/String
+      12: invokevirtual #188                // Method org/pitest/mutationtest/config/ReportOptions.setReportDir:(Ljava/lang/String;)V
+      15: aload_1
+      16: aload_0
+      17: getfield      #28                 // Field targetClassesSpec:Ljoptsimple/OptionSpec;
+      20: aload_2
+      21: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+      26: invokevirtual #190                // Method org/pitest/mutationtest/config/ReportOptions.setTargetClasses:(Ljava/util/Collection;)V
+      29: aload_1
+      30: aload_0
+      31: getfield      #34                 // Field targetTestsSpec:Ljoptsimple/OptionSpec;
+      34: aload_2
+      35: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+      40: invokestatic  #191                // Method org/pitest/functional/Streams.asStream:(Ljava/util/Collection;)Ljava/util/stream/Stream;
+      43: invokestatic  #192                // Method org/pitest/util/Glob.toGlobPredicate:()Ljava/util/function/Function;
+      46: invokeinterface #193,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      51: invokestatic  #194                // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+      54: invokeinterface #195,  2          // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      59: checkcast     #196                // class java/util/Collection
+      62: invokevirtual #197                // Method org/pitest/mutationtest/config/ReportOptions.setTargetTests:(Ljava/util/Collection;)V
+      65: aload_1
+      66: aload_0
+      67: aload_0
+      68: getfield      #45                 // Field sourceDirSpec:Ljoptsimple/OptionSpec;
+      71: aload_2
+      72: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+      77: invokespecial #198                // Method asPaths:(Ljava/util/List;)Ljava/util/Collection;
+      80: invokevirtual #199                // Method org/pitest/mutationtest/config/ReportOptions.setSourceDirs:(Ljava/util/Collection;)V
+      83: aload_1
+      84: aload_0
+      85: getfield      #48                 // Field mutators:Ljoptsimple/OptionSpec;
+      88: aload_2
+      89: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+      94: invokevirtual #200                // Method org/pitest/mutationtest/config/ReportOptions.setMutators:(Ljava/util/Collection;)V
+      97: aload_1
+      98: aload_0
+      99: getfield      #51                 // Field features:Ljoptsimple/OptionSpec;
+     102: aload_2
+     103: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     108: invokevirtual #201                // Method org/pitest/mutationtest/config/ReportOptions.setFeatures:(Ljava/util/Collection;)V
+     111: aload_1
+     112: aload_0
+     113: getfield      #54                 // Field argLine:Ljoptsimple/OptionSpec;
+     116: aload_2
+     117: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     122: checkcast     #6                  // class java/lang/String
+     125: invokevirtual #203                // Method org/pitest/mutationtest/config/ReportOptions.setArgLine:(Ljava/lang/String;)V
+     128: aload_1
+     129: aload_0
+     130: getfield      #60                 // Field jvmArgsProcessor:Lorg/pitest/mutationtest/commandline/CommaAwareArgsProcessor;
+     133: aload_2
+     134: invokevirtual #204                // Method org/pitest/mutationtest/commandline/CommaAwareArgsProcessor.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     137: invokevirtual #205                // Method org/pitest/mutationtest/config/ReportOptions.addChildJVMArgs:(Ljava/util/List;)V
+     140: aload_1
+     141: aload_0
+     142: aload_0
+     143: getfield      #134                // Field fullMutationMatrixSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     146: aload_2
+     147: invokespecial #206                // Method booleanValue:(Ljoptsimple/ArgumentAcceptingOptionSpec;Ljoptsimple/OptionSet;)Z
+     150: invokevirtual #207                // Method org/pitest/mutationtest/config/ReportOptions.setFullMutationMatrix:(Z)V
+     153: aload_1
+     154: aload_0
+     155: aload_0
+     156: getfield      #65                 // Field detectInlinedCode:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     159: aload_2
+     160: invokespecial #206                // Method booleanValue:(Ljoptsimple/ArgumentAcceptingOptionSpec;Ljoptsimple/OptionSet;)Z
+     163: invokevirtual #208                // Method org/pitest/mutationtest/config/ReportOptions.setDetectInlinedCode:(Z)V
+     166: aload_1
+     167: aload_0
+     168: aload_0
+     169: getfield      #101                // Field includeLaunchClasspathSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     172: aload_2
+     173: invokespecial #206                // Method booleanValue:(Ljoptsimple/ArgumentAcceptingOptionSpec;Ljoptsimple/OptionSet;)Z
+     176: invokevirtual #209                // Method org/pitest/mutationtest/config/ReportOptions.setIncludeLaunchClasspath:(Z)V
+     179: aload_1
+     180: aload_0
+     181: aload_0
+     182: getfield      #98                 // Field useClasspathJarSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     185: aload_2
+     186: invokespecial #206                // Method booleanValue:(Ljoptsimple/ArgumentAcceptingOptionSpec;Ljoptsimple/OptionSet;)Z
+     189: invokevirtual #210                // Method org/pitest/mutationtest/config/ReportOptions.setUseClasspathJar:(Z)V
+     192: aload_1
+     193: aload_0
+     194: aload_0
+     195: getfield      #68                 // Field timestampedReportsSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     198: aload_2
+     199: invokespecial #206                // Method booleanValue:(Ljoptsimple/ArgumentAcceptingOptionSpec;Ljoptsimple/OptionSet;)Z
+     202: invokevirtual #211                // Method org/pitest/mutationtest/config/ReportOptions.setShouldCreateTimestampedReports:(Z)V
+     205: aload_1
+     206: aload_0
+     207: getfield      #39                 // Field threadsSpec:Ljoptsimple/OptionSpec;
+     210: aload_2
+     211: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     216: checkcast     #36                 // class java/lang/Integer
+     219: invokevirtual #212                // Method java/lang/Integer.intValue:()I
+     222: invokevirtual #213                // Method org/pitest/mutationtest/config/ReportOptions.setNumberOfThreads:(I)V
+     225: aload_1
+     226: aload_0
+     227: getfield      #72                 // Field timeoutFactorSpec:Ljoptsimple/OptionSpec;
+     230: aload_2
+     231: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     236: checkcast     #70                 // class java/lang/Float
+     239: invokevirtual #214                // Method java/lang/Float.floatValue:()F
+     242: invokevirtual #215                // Method org/pitest/mutationtest/config/ReportOptions.setTimeoutFactor:(F)V
+     245: aload_1
+     246: aload_0
+     247: getfield      #76                 // Field timeoutConstSpec:Ljoptsimple/OptionSpec;
+     250: aload_2
+     251: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     256: checkcast     #74                 // class java/lang/Long
+     259: invokevirtual #216                // Method java/lang/Long.longValue:()J
+     262: invokevirtual #217                // Method org/pitest/mutationtest/config/ReportOptions.setTimeoutConstant:(J)V
+     265: aload_1
+     266: aload_0
+     267: getfield      #31                 // Field avoidCallsSpec:Ljoptsimple/OptionSpec;
+     270: aload_2
+     271: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     276: invokevirtual #218                // Method org/pitest/mutationtest/config/ReportOptions.setLoggingClasses:(Ljava/util/Collection;)V
+     279: aload_1
+     280: aload_0
+     281: getfield      #79                 // Field excludedMethodsSpec:Ljoptsimple/OptionSpec;
+     284: aload_2
+     285: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     290: invokevirtual #219                // Method org/pitest/mutationtest/config/ReportOptions.setExcludedMethods:(Ljava/util/Collection;)V
+     293: aload_1
+     294: aload_0
+     295: getfield      #82                 // Field excludedClassesSpec:Ljoptsimple/OptionSpec;
+     298: aload_2
+     299: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     304: invokevirtual #220                // Method org/pitest/mutationtest/config/ReportOptions.setExcludedClasses:(Ljava/util/Collection;)V
+     307: aload_1
+     308: aload_0
+     309: getfield      #85                 // Field excludedTestClassesSpec:Ljoptsimple/OptionSpec;
+     312: aload_2
+     313: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     318: invokestatic  #191                // Method org/pitest/functional/Streams.asStream:(Ljava/util/Collection;)Ljava/util/stream/Stream;
+     321: invokestatic  #192                // Method org/pitest/util/Glob.toGlobPredicate:()Ljava/util/function/Function;
+     324: invokeinterface #193,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+     329: invokestatic  #194                // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+     332: invokeinterface #195,  2          // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+     337: checkcast     #196                // class java/util/Collection
+     340: invokevirtual #221                // Method org/pitest/mutationtest/config/ReportOptions.setExcludedTestClasses:(Ljava/util/Collection;)V
+     343: aload_0
+     344: aload_1
+     345: aload_2
+     346: invokespecial #222                // Method configureVerbosity:(Lorg/pitest/mutationtest/config/ReportOptions;Ljoptsimple/OptionSet;)V
+     349: aload_1
+     350: aload_0
+     351: getfield      #105                // Field outputFormatSpec:Ljoptsimple/OptionSpec;
+     354: aload_2
+     355: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     360: invokevirtual #223                // Method org/pitest/mutationtest/config/ReportOptions.addOutputFormats:(Ljava/util/Collection;)V
+     363: aload_1
+     364: aload_0
+     365: aload_0
+     366: getfield      #114                // Field failWhenNoMutations:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     369: aload_2
+     370: invokespecial #206                // Method booleanValue:(Ljoptsimple/ArgumentAcceptingOptionSpec;Ljoptsimple/OptionSet;)Z
+     373: invokevirtual #224                // Method org/pitest/mutationtest/config/ReportOptions.setFailWhenNoMutations:(Z)V
+     376: aload_1
+     377: aload_0
+     378: aload_0
+     379: getfield      #117                // Field skipFailingTests:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     382: aload_2
+     383: invokespecial #206                // Method booleanValue:(Ljoptsimple/ArgumentAcceptingOptionSpec;Ljoptsimple/OptionSet;)Z
+     386: invokevirtual #225                // Method org/pitest/mutationtest/config/ReportOptions.setSkipFailingTests:(Z)V
+     389: aload_1
+     390: aload_0
+     391: getfield      #120                // Field codePaths:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     394: aload_2
+     395: invokevirtual #226                // Method joptsimple/ArgumentAcceptingOptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     398: invokevirtual #227                // Method org/pitest/mutationtest/config/ReportOptions.setCodePaths:(Ljava/util/Collection;)V
+     401: aload_1
+     402: aload_0
+     403: getfield      #137                // Field mutationUnitSizeSpec:Ljoptsimple/OptionSpec;
+     406: aload_2
+     407: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     412: checkcast     #36                 // class java/lang/Integer
+     415: invokevirtual #212                // Method java/lang/Integer.intValue:()I
+     418: invokevirtual #228                // Method org/pitest/mutationtest/config/ReportOptions.setMutationUnitSize:(I)V
+     421: aload_1
+     422: aload_0
+     423: getfield      #140                // Field historyInputSpec:Ljoptsimple/OptionSpec;
+     426: aload_2
+     427: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     432: checkcast     #43                 // class java/io/File
+     435: invokevirtual #229                // Method org/pitest/mutationtest/config/ReportOptions.setHistoryInputLocation:(Ljava/io/File;)V
+     438: aload_1
+     439: aload_0
+     440: getfield      #143                // Field historyOutputSpec:Ljoptsimple/OptionSpec;
+     443: aload_2
+     444: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     449: checkcast     #43                 // class java/io/File
+     452: invokevirtual #230                // Method org/pitest/mutationtest/config/ReportOptions.setHistoryOutputLocation:(Ljava/io/File;)V
+     455: aload_1
+     456: aload_0
+     457: getfield      #146                // Field mutationThreshHoldSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     460: aload_2
+     461: invokevirtual #187                // Method joptsimple/ArgumentAcceptingOptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     464: checkcast     #36                 // class java/lang/Integer
+     467: invokevirtual #212                // Method java/lang/Integer.intValue:()I
+     470: invokevirtual #231                // Method org/pitest/mutationtest/config/ReportOptions.setMutationThreshold:(I)V
+     473: aload_1
+     474: aload_0
+     475: getfield      #149                // Field testStrengthThreshHoldSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     478: aload_2
+     479: invokevirtual #187                // Method joptsimple/ArgumentAcceptingOptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     482: checkcast     #36                 // class java/lang/Integer
+     485: invokevirtual #212                // Method java/lang/Integer.intValue:()I
+     488: invokevirtual #232                // Method org/pitest/mutationtest/config/ReportOptions.setTestStrengthThreshold:(I)V
+     491: aload_1
+     492: aload_0
+     493: getfield      #152                // Field maxSurvivingSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     496: aload_2
+     497: invokevirtual #187                // Method joptsimple/ArgumentAcceptingOptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     500: checkcast     #36                 // class java/lang/Integer
+     503: invokevirtual #212                // Method java/lang/Integer.intValue:()I
+     506: invokevirtual #233                // Method org/pitest/mutationtest/config/ReportOptions.setMaximumAllowedSurvivors:(I)V
+     509: aload_1
+     510: aload_0
+     511: getfield      #155                // Field coverageThreshHoldSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     514: aload_2
+     515: invokevirtual #187                // Method joptsimple/ArgumentAcceptingOptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     518: checkcast     #36                 // class java/lang/Integer
+     521: invokevirtual #212                // Method java/lang/Integer.intValue:()I
+     524: invokevirtual #234                // Method org/pitest/mutationtest/config/ReportOptions.setCoverageThreshold:(I)V
+     527: aload_1
+     528: aload_0
+     529: getfield      #158                // Field mutationEngine:Ljoptsimple/OptionSpec;
+     532: aload_2
+     533: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     538: checkcast     #6                  // class java/lang/String
+     541: invokevirtual #235                // Method org/pitest/mutationtest/config/ReportOptions.setMutationEngine:(Ljava/lang/String;)V
+     544: aload_1
+     545: aload_0
+     546: aload_0
+     547: getfield      #171                // Field pluginPropertiesSpec:Ljoptsimple/OptionSpec;
+     550: aload_2
+     551: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     556: invokespecial #236                // Method listToProperties:(Ljava/util/List;)Ljava/util/Properties;
+     559: invokevirtual #237                // Method org/pitest/mutationtest/config/ReportOptions.setFreeFormProperties:(Ljava/util/Properties;)V
+     562: aload_1
+     563: aload_0
+     564: aload_0
+     565: getfield      #95                 // Field exportLineCoverageSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+     568: aload_2
+     569: invokespecial #206                // Method booleanValue:(Ljoptsimple/ArgumentAcceptingOptionSpec;Ljoptsimple/OptionSet;)Z
+     572: invokevirtual #238                // Method org/pitest/mutationtest/config/ReportOptions.setExportLineCoverage:(Z)V
+     575: aload_0
+     576: aload_2
+     577: aload_1
+     578: invokespecial #239                // Method setClassPath:(Ljoptsimple/OptionSet;Lorg/pitest/mutationtest/config/ReportOptions;)V
+     581: aload_0
+     582: aload_2
+     583: aload_1
+     584: invokespecial #240                // Method setTestGroups:(Ljoptsimple/OptionSet;Lorg/pitest/mutationtest/config/ReportOptions;)V
+     587: aload_1
+     588: aload_0
+     589: getfield      #123                // Field excludedRunnersSpec:Ljoptsimple/OptionSpec;
+     592: aload_2
+     593: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     598: invokevirtual #241                // Method org/pitest/mutationtest/config/ReportOptions.setExcludedRunners:(Ljava/util/Collection;)V
+     601: aload_1
+     602: aload_0
+     603: getfield      #129                // Field includedTestMethodsSpec:Ljoptsimple/OptionSpec;
+     606: aload_2
+     607: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     612: invokevirtual #242                // Method org/pitest/mutationtest/config/ReportOptions.setIncludedTestMethods:(Ljava/util/Collection;)V
+     615: aload_1
+     616: aload_0
+     617: getfield      #161                // Field javaExecutable:Ljoptsimple/OptionSpec;
+     620: aload_2
+     621: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     626: checkcast     #6                  // class java/lang/String
+     629: invokevirtual #243                // Method org/pitest/mutationtest/config/ReportOptions.setJavaExecutable:(Ljava/lang/String;)V
+     632: aload_0
+     633: aload_1
+     634: aload_2
+     635: invokespecial #244                // Method setEncoding:(Lorg/pitest/mutationtest/config/ReportOptions;Ljoptsimple/OptionSet;)V
+     638: aload_0
+     639: aload_1
+     640: aload_2
+     641: invokespecial #245                // Method configureExecutionMode:(Lorg/pitest/mutationtest/config/ReportOptions;Ljoptsimple/OptionSet;)V
+     644: aload_2
+     645: aload_0
+     646: getfield      #173                // Field projectBaseSpec:Ljoptsimple/OptionSpec;
+     649: invokevirtual #246                // Method joptsimple/OptionSet.has:(Ljoptsimple/OptionSpec;)Z
+     652: ifeq          675
+     655: aload_1
+     656: aload_0
+     657: getfield      #173                // Field projectBaseSpec:Ljoptsimple/OptionSpec;
+     660: aload_2
+     661: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     666: checkcast     #43                 // class java/io/File
+     669: invokevirtual #247                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+     672: invokevirtual #248                // Method org/pitest/mutationtest/config/ReportOptions.setProjectBase:(Ljava/nio/file/Path;)V
+     675: aload_2
+     676: ldc           #8                  // String ?
+     678: invokevirtual #249                // Method joptsimple/OptionSet.has:(Ljava/lang/String;)Z
+     681: ifeq          695
+     684: new           #184                // class org/pitest/mutationtest/commandline/ParseResult
+     687: dup
+     688: aload_1
+     689: ldc           #250                // String See above for supported parameters.
+     691: invokespecial #186                // Method org/pitest/mutationtest/commandline/ParseResult."<init>":(Lorg/pitest/mutationtest/config/ReportOptions;Ljava/lang/String;)V
+     694: areturn
+     695: new           #184                // class org/pitest/mutationtest/commandline/ParseResult
+     698: dup
+     699: aload_1
+     700: aconst_null
+     701: invokespecial #186                // Method org/pitest/mutationtest/commandline/ParseResult."<init>":(Lorg/pitest/mutationtest/config/ReportOptions;Ljava/lang/String;)V
+     704: areturn
+
+  private void setEncoding(org.pitest.mutationtest.config.ReportOptions, joptsimple.OptionSet);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #164                // Field inputEncoding:Ljoptsimple/OptionSpec;
+       5: aload_2
+       6: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+      11: checkcast     #6                  // class java/lang/String
+      14: invokestatic  #251                // Method java/nio/charset/Charset.forName:(Ljava/lang/String;)Ljava/nio/charset/Charset;
+      17: invokevirtual #252                // Method org/pitest/mutationtest/config/ReportOptions.setInputEncoding:(Ljava/nio/charset/Charset;)V
+      20: aload_1
+      21: aload_0
+      22: getfield      #167                // Field outputEncoding:Ljoptsimple/OptionSpec;
+      25: aload_2
+      26: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+      31: checkcast     #6                  // class java/lang/String
+      34: invokestatic  #251                // Method java/nio/charset/Charset.forName:(Ljava/lang/String;)Ljava/nio/charset/Charset;
+      37: invokevirtual #253                // Method org/pitest/mutationtest/config/ReportOptions.setOutputEncoding:(Ljava/nio/charset/Charset;)V
+      40: return
+
+  private void configureVerbosity(org.pitest.mutationtest.config.ReportOptions, joptsimple.OptionSet);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #88                 // Field verboseSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+       5: aload_2
+       6: invokespecial #206                // Method booleanValue:(Ljoptsimple/ArgumentAcceptingOptionSpec;Ljoptsimple/OptionSet;)Z
+       9: ifeq          22
+      12: aload_1
+      13: getstatic     #254                // Field org/pitest/util/Verbosity.VERBOSE:Lorg/pitest/util/Verbosity;
+      16: invokevirtual #255                // Method org/pitest/mutationtest/config/ReportOptions.setVerbosity:(Lorg/pitest/util/Verbosity;)V
+      19: goto          40
+      22: aload_1
+      23: aload_0
+      24: getfield      #92                 // Field verbositySpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+      27: aload_2
+      28: invokevirtual #187                // Method joptsimple/ArgumentAcceptingOptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+      31: checkcast     #6                  // class java/lang/String
+      34: invokestatic  #256                // Method org/pitest/util/Verbosity.fromString:(Ljava/lang/String;)Lorg/pitest/util/Verbosity;
+      37: invokevirtual #255                // Method org/pitest/mutationtest/config/ReportOptions.setVerbosity:(Lorg/pitest/util/Verbosity;)V
+      40: return
+
+  private void configureExecutionMode(org.pitest.mutationtest.config.ReportOptions, joptsimple.OptionSet);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #176                // Field dryRunSpec:Ljoptsimple/ArgumentAcceptingOptionSpec;
+       5: aload_2
+       6: invokespecial #206                // Method booleanValue:(Ljoptsimple/ArgumentAcceptingOptionSpec;Ljoptsimple/OptionSet;)Z
+       9: ifeq          19
+      12: aload_1
+      13: getstatic     #257                // Field org/pitest/mutationtest/config/ExecutionMode.DRY_RUN:Lorg/pitest/mutationtest/config/ExecutionMode;
+      16: invokevirtual #258                // Method org/pitest/mutationtest/config/ReportOptions.setExecutionMode:(Lorg/pitest/mutationtest/config/ExecutionMode;)V
+      19: return
+
+  private void setClassPath(joptsimple.OptionSet, org.pitest.mutationtest.config.ReportOptions);
+    Code:
+       0: new           #259                // class java/util/ArrayList
+       3: dup
+       4: invokespecial #260                // Method java/util/ArrayList."<init>":()V
+       7: astore_3
+       8: aload_2
+       9: invokevirtual #261                // Method org/pitest/mutationtest/config/ReportOptions.isIncludeLaunchClasspath:()Z
+      12: ifeq          28
+      15: aload_3
+      16: invokestatic  #262                // Method org/pitest/classpath/ClassPath.getClassPathElementsAsPaths:()Ljava/util/Collection;
+      19: invokeinterface #263,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+      24: pop
+      25: goto          45
+      28: aload_3
+      29: invokestatic  #262                // Method org/pitest/classpath/ClassPath.getClassPathElementsAsPaths:()Ljava/util/Collection;
+      32: aload_0
+      33: getfield      #2                  // Field dependencyFilter:Ljava/util/function/Predicate;
+      36: invokestatic  #264                // Method org/pitest/functional/FCollection.filter:(Ljava/lang/Iterable;Ljava/util/function/Predicate;)Ljava/util/List;
+      39: invokeinterface #263,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+      44: pop
+      45: aload_1
+      46: aload_0
+      47: getfield      #111                // Field classPathFile:Ljoptsimple/OptionSpec;
+      50: invokevirtual #246                // Method joptsimple/OptionSet.has:(Ljoptsimple/OptionSpec;)Z
+      53: ifeq          266
+      56: new           #265                // class java/io/BufferedReader
+      59: dup
+      60: new           #266                // class java/io/FileReader
+      63: dup
+      64: aload_0
+      65: getfield      #111                // Field classPathFile:Ljoptsimple/OptionSpec;
+      68: aload_1
+      69: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+      74: checkcast     #43                 // class java/io/File
+      77: invokevirtual #267                // Method java/io/File.getAbsoluteFile:()Ljava/io/File;
+      80: invokespecial #268                // Method java/io/FileReader."<init>":(Ljava/io/File;)V
+      83: invokespecial #269                // Method java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+      86: astore        4
+      88: aconst_null
+      89: astore        5
+      91: aload         4
+      93: invokevirtual #270                // Method java/io/BufferedReader.readLine:()Ljava/lang/String;
+      96: dup
+      97: astore        6
+      99: ifnull        114
+     102: aload_3
+     103: aload         6
+     105: invokeinterface #271,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     110: pop
+     111: goto          91
+     114: aload         4
+     116: ifnull        201
+     119: aload         5
+     121: ifnull        144
+     124: aload         4
+     126: invokevirtual #272                // Method java/io/BufferedReader.close:()V
+     129: goto          201
+     132: astore        6
+     134: aload         5
+     136: aload         6
+     138: invokevirtual #274                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+     141: goto          201
+     144: aload         4
+     146: invokevirtual #272                // Method java/io/BufferedReader.close:()V
+     149: goto          201
+     152: astore        6
+     154: aload         6
+     156: astore        5
+     158: aload         6
+     160: athrow
+     161: astore        7
+     163: aload         4
+     165: ifnull        198
+     168: aload         5
+     170: ifnull        193
+     173: aload         4
+     175: invokevirtual #272                // Method java/io/BufferedReader.close:()V
+     178: goto          198
+     181: astore        8
+     183: aload         5
+     185: aload         8
+     187: invokevirtual #274                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+     190: goto          198
+     193: aload         4
+     195: invokevirtual #272                // Method java/io/BufferedReader.close:()V
+     198: aload         7
+     200: athrow
+     201: goto          261
+     204: astore        4
+     206: getstatic     #276                // Field LOG:Ljava/util/logging/Logger;
+     209: new           #277                // class java/lang/StringBuilder
+     212: dup
+     213: invokespecial #278                // Method java/lang/StringBuilder."<init>":()V
+     216: ldc_w         #279                // String Unable to read class path file:
+     219: invokevirtual #280                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     222: aload_0
+     223: getfield      #111                // Field classPathFile:Ljoptsimple/OptionSpec;
+     226: aload_1
+     227: invokeinterface #202,  2          // InterfaceMethod joptsimple/OptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+     232: checkcast     #43                 // class java/io/File
+     235: invokevirtual #281                // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+     238: invokevirtual #280                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     241: ldc_w         #282                // String  -
+     244: invokevirtual #280                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     247: aload         4
+     249: invokevirtual #283                // Method java/io/IOException.getMessage:()Ljava/lang/String;
+     252: invokevirtual #280                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     255: invokevirtual #284                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     258: invokevirtual #285                // Method java/util/logging/Logger.warning:(Ljava/lang/String;)V
+     261: aload_2
+     262: iconst_1
+     263: invokevirtual #210                // Method org/pitest/mutationtest/config/ReportOptions.setUseClasspathJar:(Z)V
+     266: aload_3
+     267: aload_0
+     268: getfield      #108                // Field additionalClassPathSpec:Ljoptsimple/OptionSpec;
+     271: aload_1
+     272: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+     277: invokeinterface #263,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     282: pop
+     283: aload_2
+     284: aload_3
+     285: invokevirtual #286                // Method org/pitest/mutationtest/config/ReportOptions.setClassPathElements:(Ljava/util/Collection;)V
+     288: return
+    Exception table:
+       from    to  target type
+         124   129   132   Class java/lang/Throwable
+          91   114   152   Class java/lang/Throwable
+          91   114   161   any
+         173   178   181   Class java/lang/Throwable
+         152   163   161   any
+          56   201   204   Class java/io/IOException
+
+  private void setTestGroups(joptsimple.OptionSet, org.pitest.mutationtest.config.ReportOptions);
+    Code:
+       0: new           #287                // class org/pitest/testapi/TestGroupConfig
+       3: dup
+       4: aload_0
+       5: getfield      #131                // Field excludedGroupsSpec:Ljoptsimple/OptionSpec;
+       8: aload_1
+       9: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+      14: aload_0
+      15: getfield      #126                // Field includedGroupsSpec:Ljoptsimple/OptionSpec;
+      18: aload_1
+      19: invokeinterface #189,  2          // InterfaceMethod joptsimple/OptionSpec.values:(Ljoptsimple/OptionSet;)Ljava/util/List;
+      24: invokespecial #288                // Method org/pitest/testapi/TestGroupConfig."<init>":(Ljava/util/List;Ljava/util/List;)V
+      27: astore_3
+      28: aload_2
+      29: aload_3
+      30: invokevirtual #289                // Method org/pitest/mutationtest/config/ReportOptions.setGroupConfig:(Lorg/pitest/testapi/TestGroupConfig;)V
+      33: return
+
+  private java.util.Properties listToProperties(java.util.List<joptsimple.util.KeyValuePair>);
+    Code:
+       0: new           #290                // class java/util/Properties
+       3: dup
+       4: invokespecial #291                // Method java/util/Properties."<init>":()V
+       7: astore_2
+       8: aload_1
+       9: invokeinterface #292,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      14: astore_3
+      15: aload_3
+      16: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      21: ifeq          53
+      24: aload_3
+      25: invokeinterface #294,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      30: checkcast     #169                // class joptsimple/util/KeyValuePair
+      33: astore        4
+      35: aload_2
+      36: aload         4
+      38: getfield      #295                // Field joptsimple/util/KeyValuePair.key:Ljava/lang/String;
+      41: aload         4
+      43: getfield      #296                // Field joptsimple/util/KeyValuePair.value:Ljava/lang/String;
+      46: invokevirtual #297                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      49: pop
+      50: goto          15
+      53: aload_2
+      54: areturn
+
+  private java.util.Collection<java.nio.file.Path> asPaths(java.util.List<java.io.File>);
+    Code:
+       0: aload_1
+       1: invokeinterface #298,  1          // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+       6: invokedynamic #299,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      11: invokeinterface #193,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      16: invokestatic  #194                // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+      19: invokeinterface #195,  2          // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      24: checkcast     #196                // class java/util/Collection
+      27: areturn
+
+  public void printHelp();
+    Code:
+       0: aload_0
+       1: getfield      #5                  // Field parser:Ljoptsimple/OptionParser;
+       4: getstatic     #300                // Field java/lang/System.out:Ljava/io/PrintStream;
+       7: invokevirtual #301                // Method joptsimple/OptionParser.printHelpOn:(Ljava/io/OutputStream;)V
+      10: goto          19
+      13: astore_1
+      14: aload_1
+      15: invokestatic  #302                // Method org/pitest/util/Unchecked.translateCheckedException:(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
+      18: athrow
+      19: return
+    Exception table:
+       from    to  target type
+           0    10    13   Class java/io/IOException
+
+  private boolean booleanValue(joptsimple.ArgumentAcceptingOptionSpec<java.lang.Boolean>, joptsimple.OptionSet);
+    Code:
+       0: aload_2
+       1: aload_1
+       2: invokevirtual #246                // Method joptsimple/OptionSet.has:(Ljoptsimple/OptionSpec;)Z
+       5: ifeq          16
+       8: aload_2
+       9: aload_1
+      10: invokevirtual #303                // Method joptsimple/OptionSet.hasArgument:(Ljoptsimple/OptionSpec;)Z
+      13: ifeq          30
+      16: aload_1
+      17: aload_2
+      18: invokevirtual #187                // Method joptsimple/ArgumentAcceptingOptionSpec.value:(Ljoptsimple/OptionSet;)Ljava/lang/Object;
+      21: checkcast     #63                 // class java/lang/Boolean
+      24: invokevirtual #304                // Method java/lang/Boolean.booleanValue:()Z
+      27: ifeq          34
+      30: iconst_1
+      31: goto          35
+      34: iconst_0
+      35: ireturn
+
+  static {};
+    Code:
+       0: invokestatic  #305                // Method org/pitest/util/Log.getLogger:()Ljava/util/logging/Logger;
+       3: putstatic     #276                // Field LOG:Ljava/util/logging/Logger;
+       6: return
+}

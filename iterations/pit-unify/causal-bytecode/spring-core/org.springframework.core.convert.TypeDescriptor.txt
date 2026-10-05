@@ -1,0 +1,1348 @@
+Compiled from "TypeDescriptor.java"
+public class org.springframework.core.convert.TypeDescriptor implements java.io.Serializable {
+  private static final java.util.Map<java.lang.Class<?>, org.springframework.core.convert.TypeDescriptor> commonTypesCache;
+
+  private static final java.lang.Class<?>[] CACHED_COMMON_TYPES;
+
+  private final java.lang.Class<?> type;
+
+  private final org.springframework.core.ResolvableType resolvableType;
+
+  private final org.springframework.core.convert.TypeDescriptor$AnnotatedElementAdapter annotatedElement;
+
+  public org.springframework.core.convert.TypeDescriptor(org.springframework.core.MethodParameter);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: invokestatic  #7                  // Method org/springframework/core/ResolvableType.forMethodParameter:(Lorg/springframework/core/MethodParameter;)Lorg/springframework/core/ResolvableType;
+       9: putfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+      12: aload_0
+      13: aload_0
+      14: getfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+      17: aload_1
+      18: invokevirtual #19                 // Method org/springframework/core/MethodParameter.getNestedParameterType:()Ljava/lang/Class;
+      21: invokevirtual #25                 // Method org/springframework/core/ResolvableType.resolve:(Ljava/lang/Class;)Ljava/lang/Class;
+      24: putfield      #29                 // Field type:Ljava/lang/Class;
+      27: aload_0
+      28: aload_1
+      29: invokevirtual #33                 // Method org/springframework/core/MethodParameter.getParameterIndex:()I
+      32: iconst_m1
+      33: if_icmpne     43
+      36: aload_1
+      37: invokevirtual #37                 // Method org/springframework/core/MethodParameter.getMethodAnnotations:()[Ljava/lang/annotation/Annotation;
+      40: goto          47
+      43: aload_1
+      44: invokevirtual #41                 // Method org/springframework/core/MethodParameter.getParameterAnnotations:()[Ljava/lang/annotation/Annotation;
+      47: invokestatic  #44                 // Method org/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter.from:([Ljava/lang/annotation/Annotation;)Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+      50: putfield      #50                 // Field annotatedElement:Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+      53: return
+    LineNumberTable:
+      line 82: 0
+      line 83: 4
+      line 84: 12
+      line 85: 27
+      line 86: 36
+      line 85: 47
+      line 87: 53
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      54     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      54     1 methodParameter   Lorg/springframework/core/MethodParameter;
+
+  public org.springframework.core.convert.TypeDescriptor(java.lang.reflect.Field);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: invokestatic  #54                 // Method org/springframework/core/ResolvableType.forField:(Ljava/lang/reflect/Field;)Lorg/springframework/core/ResolvableType;
+       9: putfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+      12: aload_0
+      13: aload_0
+      14: getfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+      17: aload_1
+      18: invokevirtual #58                 // Method java/lang/reflect/Field.getType:()Ljava/lang/Class;
+      21: invokevirtual #25                 // Method org/springframework/core/ResolvableType.resolve:(Ljava/lang/Class;)Ljava/lang/Class;
+      24: putfield      #29                 // Field type:Ljava/lang/Class;
+      27: aload_0
+      28: aload_1
+      29: invokevirtual #63                 // Method java/lang/reflect/Field.getAnnotations:()[Ljava/lang/annotation/Annotation;
+      32: invokestatic  #44                 // Method org/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter.from:([Ljava/lang/annotation/Annotation;)Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+      35: putfield      #50                 // Field annotatedElement:Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+      38: return
+    LineNumberTable:
+      line 94: 0
+      line 95: 4
+      line 96: 12
+      line 97: 27
+      line 98: 38
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      39     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      39     1 field   Ljava/lang/reflect/Field;
+
+  public org.springframework.core.convert.TypeDescriptor(org.springframework.core.convert.Property);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_1
+       5: ldc           #66                 // String Property must not be null
+       7: invokestatic  #68                 // Method org/springframework/util/Assert.notNull:(Ljava/lang/Object;Ljava/lang/String;)V
+      10: aload_0
+      11: aload_1
+      12: invokevirtual #74                 // Method org/springframework/core/convert/Property.getMethodParameter:()Lorg/springframework/core/MethodParameter;
+      15: invokestatic  #7                  // Method org/springframework/core/ResolvableType.forMethodParameter:(Lorg/springframework/core/MethodParameter;)Lorg/springframework/core/ResolvableType;
+      18: putfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+      21: aload_0
+      22: aload_0
+      23: getfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+      26: aload_1
+      27: invokevirtual #80                 // Method org/springframework/core/convert/Property.getType:()Ljava/lang/Class;
+      30: invokevirtual #25                 // Method org/springframework/core/ResolvableType.resolve:(Ljava/lang/Class;)Ljava/lang/Class;
+      33: putfield      #29                 // Field type:Ljava/lang/Class;
+      36: aload_0
+      37: aload_1
+      38: invokevirtual #81                 // Method org/springframework/core/convert/Property.getAnnotations:()[Ljava/lang/annotation/Annotation;
+      41: invokestatic  #44                 // Method org/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter.from:([Ljava/lang/annotation/Annotation;)Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+      44: putfield      #50                 // Field annotatedElement:Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+      47: return
+    LineNumberTable:
+      line 106: 0
+      line 107: 4
+      line 108: 10
+      line 109: 21
+      line 110: 36
+      line 111: 47
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      48     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      48     1 property   Lorg/springframework/core/convert/Property;
+
+  public org.springframework.core.convert.TypeDescriptor(org.springframework.core.ResolvableType, java.lang.Class<?>, java.lang.annotation.Annotation[]);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+       9: aload_0
+      10: aload_2
+      11: ifnull        18
+      14: aload_2
+      15: goto          22
+      18: aload_1
+      19: invokevirtual #82                 // Method org/springframework/core/ResolvableType.toClass:()Ljava/lang/Class;
+      22: putfield      #29                 // Field type:Ljava/lang/Class;
+      25: aload_0
+      26: aload_3
+      27: invokestatic  #44                 // Method org/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter.from:([Ljava/lang/annotation/Annotation;)Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+      30: putfield      #50                 // Field annotatedElement:Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+      33: return
+    LineNumberTable:
+      line 123: 0
+      line 124: 4
+      line 125: 9
+      line 126: 25
+      line 127: 33
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      34     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      34     1 resolvableType   Lorg/springframework/core/ResolvableType;
+          0      34     2  type   Ljava/lang/Class;
+          0      34     3 annotations   [Ljava/lang/annotation/Annotation;
+
+  public java.lang.Class<?> getObjectType();
+    Code:
+       0: aload_0
+       1: invokevirtual #85                 // Method getType:()Ljava/lang/Class;
+       4: invokestatic  #86                 // Method org/springframework/util/ClassUtils.resolvePrimitiveIfNecessary:(Ljava/lang/Class;)Ljava/lang/Class;
+       7: areturn
+    LineNumberTable:
+      line 137: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       8     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public java.lang.Class<?> getType();
+    Code:
+       0: aload_0
+       1: getfield      #29                 // Field type:Ljava/lang/Class;
+       4: areturn
+    LineNumberTable:
+      line 149: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public org.springframework.core.ResolvableType getResolvableType();
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+       4: areturn
+    LineNumberTable:
+      line 157: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public java.lang.Object getSource();
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+       4: invokevirtual #91                 // Method org/springframework/core/ResolvableType.getSource:()Ljava/lang/Object;
+       7: areturn
+    LineNumberTable:
+      line 168: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       8     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public org.springframework.core.convert.TypeDescriptor nested(int);
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+       4: astore_2
+       5: iconst_0
+       6: istore_3
+       7: iload_3
+       8: iload_1
+       9: if_icmpge     36
+      12: ldc           #2                  // class java/lang/Object
+      14: aload_2
+      15: invokevirtual #95                 // Method org/springframework/core/ResolvableType.getType:()Ljava/lang/reflect/Type;
+      18: if_acmpne     24
+      21: goto          30
+      24: aload_2
+      25: iconst_2
+      26: invokevirtual #98                 // Method org/springframework/core/ResolvableType.getNested:(I)Lorg/springframework/core/ResolvableType;
+      29: astore_2
+      30: iinc          3, 1
+      33: goto          7
+      36: aload_2
+      37: getstatic     #102                // Field org/springframework/core/ResolvableType.NONE:Lorg/springframework/core/ResolvableType;
+      40: if_acmpne     45
+      43: aconst_null
+      44: areturn
+      45: aload_0
+      46: aload_2
+      47: invokevirtual #105                // Method getRelatedIfResolvable:(Lorg/springframework/core/ResolvableType;)Lorg/springframework/core/convert/TypeDescriptor;
+      50: areturn
+    LineNumberTable:
+      line 182: 0
+      line 183: 5
+      line 184: 12
+      line 189: 24
+      line 183: 30
+      line 192: 36
+      line 193: 43
+      line 195: 45
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          7      29     3     i   I
+          0      51     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      51     1 nestingLevel   I
+          5      46     2 nested   Lorg/springframework/core/ResolvableType;
+
+  public org.springframework.core.convert.TypeDescriptor narrow(java.lang.Object);
+    Code:
+       0: aload_1
+       1: ifnonnull     6
+       4: aload_0
+       5: areturn
+       6: aload_1
+       7: invokevirtual #109                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      10: aload_0
+      11: invokevirtual #112                // Method getResolvableType:()Lorg/springframework/core/ResolvableType;
+      14: invokestatic  #116                // Method org/springframework/core/ResolvableType.forType:(Ljava/lang/reflect/Type;Lorg/springframework/core/ResolvableType;)Lorg/springframework/core/ResolvableType;
+      17: astore_2
+      18: new           #14                 // class org/springframework/core/convert/TypeDescriptor
+      21: dup
+      22: aload_2
+      23: aload_1
+      24: invokevirtual #109                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      27: aload_0
+      28: invokevirtual #120                // Method getAnnotations:()[Ljava/lang/annotation/Annotation;
+      31: invokespecial #121                // Method "<init>":(Lorg/springframework/core/ResolvableType;Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)V
+      34: areturn
+    LineNumberTable:
+      line 215: 0
+      line 216: 4
+      line 218: 6
+      line 219: 18
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      35     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      35     1 value   Ljava/lang/Object;
+         18      17     2 narrowed   Lorg/springframework/core/ResolvableType;
+
+  public org.springframework.core.convert.TypeDescriptor upcast(java.lang.Class<?>);
+    Code:
+       0: aload_1
+       1: ifnonnull     6
+       4: aconst_null
+       5: areturn
+       6: aload_1
+       7: aload_0
+       8: invokevirtual #85                 // Method getType:()Ljava/lang/Class;
+      11: invokestatic  #124                // Method org/springframework/util/Assert.isAssignable:(Ljava/lang/Class;Ljava/lang/Class;)V
+      14: new           #14                 // class org/springframework/core/convert/TypeDescriptor
+      17: dup
+      18: aload_0
+      19: invokevirtual #112                // Method getResolvableType:()Lorg/springframework/core/ResolvableType;
+      22: aload_1
+      23: invokevirtual #128                // Method org/springframework/core/ResolvableType.as:(Ljava/lang/Class;)Lorg/springframework/core/ResolvableType;
+      26: aload_1
+      27: aload_0
+      28: invokevirtual #120                // Method getAnnotations:()[Ljava/lang/annotation/Annotation;
+      31: invokespecial #121                // Method "<init>":(Lorg/springframework/core/ResolvableType;Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)V
+      34: areturn
+    LineNumberTable:
+      line 232: 0
+      line 233: 4
+      line 235: 6
+      line 236: 14
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      35     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      35     1 superType   Ljava/lang/Class;
+
+  public java.lang.String getName();
+    Code:
+       0: aload_0
+       1: invokevirtual #85                 // Method getType:()Ljava/lang/Class;
+       4: invokestatic  #132                // Method org/springframework/util/ClassUtils.getQualifiedName:(Ljava/lang/Class;)Ljava/lang/String;
+       7: areturn
+    LineNumberTable:
+      line 243: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       8     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public boolean isPrimitive();
+    Code:
+       0: aload_0
+       1: invokevirtual #85                 // Method getType:()Ljava/lang/Class;
+       4: invokevirtual #136                // Method java/lang/Class.isPrimitive:()Z
+       7: ireturn
+    LineNumberTable:
+      line 250: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       8     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public java.lang.annotation.Annotation[] getAnnotations();
+    Code:
+       0: aload_0
+       1: getfield      #50                 // Field annotatedElement:Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+       4: invokevirtual #142                // Method org/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter.getAnnotations:()[Ljava/lang/annotation/Annotation;
+       7: areturn
+    LineNumberTable:
+      line 258: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       8     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public boolean hasAnnotation(java.lang.Class<? extends java.lang.annotation.Annotation>);
+    Code:
+       0: aload_0
+       1: getfield      #50                 // Field annotatedElement:Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+       4: invokevirtual #143                // Method org/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter.isEmpty:()Z
+       7: ifeq          12
+      10: iconst_0
+      11: ireturn
+      12: aload_0
+      13: getfield      #50                 // Field annotatedElement:Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+      16: aload_1
+      17: invokestatic  #146                // Method org/springframework/core/annotation/AnnotatedElementUtils.isAnnotated:(Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class;)Z
+      20: ireturn
+    LineNumberTable:
+      line 269: 0
+      line 272: 10
+      line 274: 12
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      21     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      21     1 annotationType   Ljava/lang/Class;
+
+  public <T extends java.lang.annotation.Annotation> T getAnnotation(java.lang.Class<T>);
+    Code:
+       0: aload_0
+       1: getfield      #50                 // Field annotatedElement:Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+       4: invokevirtual #143                // Method org/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter.isEmpty:()Z
+       7: ifeq          12
+      10: aconst_null
+      11: areturn
+      12: aload_0
+      13: getfield      #50                 // Field annotatedElement:Lorg/springframework/core/convert/TypeDescriptor$AnnotatedElementAdapter;
+      16: aload_1
+      17: invokestatic  #152                // Method org/springframework/core/annotation/AnnotatedElementUtils.getMergedAnnotation:(Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+      20: areturn
+    LineNumberTable:
+      line 285: 0
+      line 288: 10
+      line 290: 12
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      21     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      21     1 annotationType   Ljava/lang/Class;
+
+  public boolean isAssignableTo(org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_1
+       1: invokevirtual #156                // Method getObjectType:()Ljava/lang/Class;
+       4: aload_0
+       5: invokevirtual #156                // Method getObjectType:()Ljava/lang/Class;
+       8: invokevirtual #159                // Method java/lang/Class.isAssignableFrom:(Ljava/lang/Class;)Z
+      11: istore_2
+      12: iload_2
+      13: ifne          18
+      16: iconst_0
+      17: ireturn
+      18: aload_0
+      19: invokevirtual #163                // Method isArray:()Z
+      22: ifeq          45
+      25: aload_1
+      26: invokevirtual #163                // Method isArray:()Z
+      29: ifeq          45
+      32: aload_0
+      33: aload_0
+      34: invokevirtual #166                // Method getElementTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+      37: aload_1
+      38: invokevirtual #166                // Method getElementTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+      41: invokevirtual #170                // Method isNestedAssignable:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+      44: ireturn
+      45: aload_0
+      46: invokevirtual #174                // Method isCollection:()Z
+      49: ifeq          72
+      52: aload_1
+      53: invokevirtual #174                // Method isCollection:()Z
+      56: ifeq          72
+      59: aload_0
+      60: aload_0
+      61: invokevirtual #166                // Method getElementTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+      64: aload_1
+      65: invokevirtual #166                // Method getElementTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+      68: invokevirtual #170                // Method isNestedAssignable:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+      71: ireturn
+      72: aload_0
+      73: invokevirtual #177                // Method isMap:()Z
+      76: ifeq          122
+      79: aload_1
+      80: invokevirtual #177                // Method isMap:()Z
+      83: ifeq          122
+      86: aload_0
+      87: aload_0
+      88: invokevirtual #180                // Method getMapKeyTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+      91: aload_1
+      92: invokevirtual #180                // Method getMapKeyTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+      95: invokevirtual #170                // Method isNestedAssignable:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+      98: ifeq          120
+     101: aload_0
+     102: aload_0
+     103: invokevirtual #183                // Method getMapValueTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+     106: aload_1
+     107: invokevirtual #183                // Method getMapValueTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+     110: invokevirtual #170                // Method isNestedAssignable:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+     113: ifeq          120
+     116: iconst_1
+     117: goto          121
+     120: iconst_0
+     121: ireturn
+     122: iconst_1
+     123: ireturn
+    LineNumberTable:
+      line 308: 0
+      line 309: 12
+      line 310: 16
+      line 312: 18
+      line 313: 32
+      line 315: 45
+      line 316: 59
+      line 318: 72
+      line 319: 86
+      line 320: 103
+      line 319: 121
+      line 323: 122
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0     124     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0     124     1 typeDescriptor   Lorg/springframework/core/convert/TypeDescriptor;
+         12     112     2 typesAssignable   Z
+
+  private boolean isNestedAssignable(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_1
+       1: ifnull        16
+       4: aload_2
+       5: ifnull        16
+       8: aload_1
+       9: aload_2
+      10: invokevirtual #186                // Method isAssignableTo:(Lorg/springframework/core/convert/TypeDescriptor;)Z
+      13: ifeq          20
+      16: iconst_1
+      17: goto          21
+      20: iconst_0
+      21: ireturn
+    LineNumberTable:
+      line 330: 0
+      line 331: 10
+      line 330: 21
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      22     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      22     1 nestedTypeDescriptor   Lorg/springframework/core/convert/TypeDescriptor;
+          0      22     2 otherNestedTypeDescriptor   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public boolean isCollection();
+    Code:
+       0: ldc           #190                // class java/util/Collection
+       2: aload_0
+       3: invokevirtual #85                 // Method getType:()Ljava/lang/Class;
+       6: invokevirtual #159                // Method java/lang/Class.isAssignableFrom:(Ljava/lang/Class;)Z
+       9: ireturn
+    LineNumberTable:
+      line 338: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public boolean isArray();
+    Code:
+       0: aload_0
+       1: invokevirtual #85                 // Method getType:()Ljava/lang/Class;
+       4: invokevirtual #192                // Method java/lang/Class.isArray:()Z
+       7: ireturn
+    LineNumberTable:
+      line 345: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       8     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public org.springframework.core.convert.TypeDescriptor getElementTypeDescriptor();
+    Code:
+       0: aload_0
+       1: invokevirtual #112                // Method getResolvableType:()Lorg/springframework/core/ResolvableType;
+       4: invokevirtual #193                // Method org/springframework/core/ResolvableType.isArray:()Z
+       7: ifeq          30
+      10: new           #14                 // class org/springframework/core/convert/TypeDescriptor
+      13: dup
+      14: aload_0
+      15: invokevirtual #112                // Method getResolvableType:()Lorg/springframework/core/ResolvableType;
+      18: invokevirtual #194                // Method org/springframework/core/ResolvableType.getComponentType:()Lorg/springframework/core/ResolvableType;
+      21: aconst_null
+      22: aload_0
+      23: invokevirtual #120                // Method getAnnotations:()[Ljava/lang/annotation/Annotation;
+      26: invokespecial #121                // Method "<init>":(Lorg/springframework/core/ResolvableType;Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)V
+      29: areturn
+      30: ldc           #197                // class java/util/stream/Stream
+      32: aload_0
+      33: invokevirtual #85                 // Method getType:()Ljava/lang/Class;
+      36: invokevirtual #159                // Method java/lang/Class.isAssignableFrom:(Ljava/lang/Class;)Z
+      39: ifeq          66
+      42: aload_0
+      43: aload_0
+      44: invokevirtual #112                // Method getResolvableType:()Lorg/springframework/core/ResolvableType;
+      47: ldc           #197                // class java/util/stream/Stream
+      49: invokevirtual #128                // Method org/springframework/core/ResolvableType.as:(Ljava/lang/Class;)Lorg/springframework/core/ResolvableType;
+      52: iconst_1
+      53: newarray       int
+      55: dup
+      56: iconst_0
+      57: iconst_0
+      58: iastore
+      59: invokevirtual #199                // Method org/springframework/core/ResolvableType.getGeneric:([I)Lorg/springframework/core/ResolvableType;
+      62: invokevirtual #105                // Method getRelatedIfResolvable:(Lorg/springframework/core/ResolvableType;)Lorg/springframework/core/convert/TypeDescriptor;
+      65: areturn
+      66: aload_0
+      67: aload_0
+      68: invokevirtual #112                // Method getResolvableType:()Lorg/springframework/core/ResolvableType;
+      71: invokevirtual #203                // Method org/springframework/core/ResolvableType.asCollection:()Lorg/springframework/core/ResolvableType;
+      74: iconst_1
+      75: newarray       int
+      77: dup
+      78: iconst_0
+      79: iconst_0
+      80: iastore
+      81: invokevirtual #199                // Method org/springframework/core/ResolvableType.getGeneric:([I)Lorg/springframework/core/ResolvableType;
+      84: invokevirtual #105                // Method getRelatedIfResolvable:(Lorg/springframework/core/ResolvableType;)Lorg/springframework/core/convert/TypeDescriptor;
+      87: areturn
+    LineNumberTable:
+      line 359: 0
+      line 360: 10
+      line 362: 30
+      line 363: 42
+      line 365: 66
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      88     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public org.springframework.core.convert.TypeDescriptor elementTypeDescriptor(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_0
+       3: invokevirtual #166                // Method getElementTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+       6: invokevirtual #206                // Method narrow:(Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/TypeDescriptor;
+       9: areturn
+    LineNumberTable:
+      line 387: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      10     1 element   Ljava/lang/Object;
+
+  public boolean isMap();
+    Code:
+       0: ldc           #210                // class java/util/Map
+       2: aload_0
+       3: invokevirtual #85                 // Method getType:()Ljava/lang/Class;
+       6: invokevirtual #159                // Method java/lang/Class.isAssignableFrom:(Ljava/lang/Class;)Z
+       9: ireturn
+    LineNumberTable:
+      line 394: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public org.springframework.core.convert.TypeDescriptor getMapKeyTypeDescriptor();
+    Code:
+       0: aload_0
+       1: invokevirtual #177                // Method isMap:()Z
+       4: ldc           #212                // String Not a [java.util.Map]
+       6: invokestatic  #214                // Method org/springframework/util/Assert.state:(ZLjava/lang/String;)V
+       9: aload_0
+      10: aload_0
+      11: invokevirtual #112                // Method getResolvableType:()Lorg/springframework/core/ResolvableType;
+      14: invokevirtual #218                // Method org/springframework/core/ResolvableType.asMap:()Lorg/springframework/core/ResolvableType;
+      17: iconst_1
+      18: newarray       int
+      20: dup
+      21: iconst_0
+      22: iconst_0
+      23: iastore
+      24: invokevirtual #199                // Method org/springframework/core/ResolvableType.getGeneric:([I)Lorg/springframework/core/ResolvableType;
+      27: invokevirtual #105                // Method getRelatedIfResolvable:(Lorg/springframework/core/ResolvableType;)Lorg/springframework/core/convert/TypeDescriptor;
+      30: areturn
+    LineNumberTable:
+      line 407: 0
+      line 408: 9
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      31     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public org.springframework.core.convert.TypeDescriptor getMapKeyTypeDescriptor(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_0
+       3: invokevirtual #180                // Method getMapKeyTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+       6: invokevirtual #206                // Method narrow:(Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/TypeDescriptor;
+       9: areturn
+    LineNumberTable:
+      line 430: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      10     1 mapKey   Ljava/lang/Object;
+
+  public org.springframework.core.convert.TypeDescriptor getMapValueTypeDescriptor();
+    Code:
+       0: aload_0
+       1: invokevirtual #177                // Method isMap:()Z
+       4: ldc           #212                // String Not a [java.util.Map]
+       6: invokestatic  #214                // Method org/springframework/util/Assert.state:(ZLjava/lang/String;)V
+       9: aload_0
+      10: aload_0
+      11: invokevirtual #112                // Method getResolvableType:()Lorg/springframework/core/ResolvableType;
+      14: invokevirtual #218                // Method org/springframework/core/ResolvableType.asMap:()Lorg/springframework/core/ResolvableType;
+      17: iconst_1
+      18: newarray       int
+      20: dup
+      21: iconst_0
+      22: iconst_1
+      23: iastore
+      24: invokevirtual #199                // Method org/springframework/core/ResolvableType.getGeneric:([I)Lorg/springframework/core/ResolvableType;
+      27: invokevirtual #105                // Method getRelatedIfResolvable:(Lorg/springframework/core/ResolvableType;)Lorg/springframework/core/convert/TypeDescriptor;
+      30: areturn
+    LineNumberTable:
+      line 444: 0
+      line 445: 9
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      31     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public org.springframework.core.convert.TypeDescriptor getMapValueTypeDescriptor(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_0
+       3: invokevirtual #183                // Method getMapValueTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+       6: invokevirtual #206                // Method narrow:(Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/TypeDescriptor;
+       9: areturn
+    LineNumberTable:
+      line 467: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      10     1 mapValue   Ljava/lang/Object;
+
+  private org.springframework.core.convert.TypeDescriptor getRelatedIfResolvable(org.springframework.core.ResolvableType);
+    Code:
+       0: aload_1
+       1: invokevirtual #221                // Method org/springframework/core/ResolvableType.resolve:()Ljava/lang/Class;
+       4: ifnonnull     9
+       7: aconst_null
+       8: areturn
+       9: new           #14                 // class org/springframework/core/convert/TypeDescriptor
+      12: dup
+      13: aload_1
+      14: aconst_null
+      15: aload_0
+      16: invokevirtual #120                // Method getAnnotations:()[Ljava/lang/annotation/Annotation;
+      19: invokespecial #121                // Method "<init>":(Lorg/springframework/core/ResolvableType;Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)V
+      22: areturn
+    LineNumberTable:
+      line 472: 0
+      line 473: 7
+      line 475: 9
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      23     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      23     1  type   Lorg/springframework/core/ResolvableType;
+
+  private org.springframework.core.convert.TypeDescriptor narrow(java.lang.Object, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_2
+       1: ifnull        10
+       4: aload_2
+       5: aload_1
+       6: invokevirtual #223                // Method narrow:(Ljava/lang/Object;)Lorg/springframework/core/convert/TypeDescriptor;
+       9: areturn
+      10: aload_1
+      11: ifnull        20
+      14: aload_0
+      15: aload_1
+      16: invokevirtual #223                // Method narrow:(Ljava/lang/Object;)Lorg/springframework/core/convert/TypeDescriptor;
+      19: areturn
+      20: aconst_null
+      21: areturn
+    LineNumberTable:
+      line 480: 0
+      line 481: 4
+      line 483: 10
+      line 484: 14
+      line 486: 20
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      22     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      22     1 value   Ljava/lang/Object;
+          0      22     2 typeDescriptor   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: if_acmpne     7
+       5: iconst_1
+       6: ireturn
+       7: aload_1
+       8: instanceof    #14                 // class org/springframework/core/convert/TypeDescriptor
+      11: ifeq          22
+      14: aload_1
+      15: checkcast     #14                 // class org/springframework/core/convert/TypeDescriptor
+      18: astore_2
+      19: goto          24
+      22: iconst_0
+      23: ireturn
+      24: aload_0
+      25: invokevirtual #85                 // Method getType:()Ljava/lang/Class;
+      28: aload_2
+      29: invokevirtual #85                 // Method getType:()Ljava/lang/Class;
+      32: if_acmpeq     37
+      35: iconst_0
+      36: ireturn
+      37: aload_0
+      38: aload_2
+      39: invokevirtual #226                // Method annotationsMatch:(Lorg/springframework/core/convert/TypeDescriptor;)Z
+      42: ifne          47
+      45: iconst_0
+      46: ireturn
+      47: aload_0
+      48: invokevirtual #174                // Method isCollection:()Z
+      51: ifne          61
+      54: aload_0
+      55: invokevirtual #163                // Method isArray:()Z
+      58: ifeq          73
+      61: aload_0
+      62: invokevirtual #166                // Method getElementTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+      65: aload_2
+      66: invokevirtual #166                // Method getElementTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+      69: invokestatic  #229                // Method org/springframework/util/ObjectUtils.nullSafeEquals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+      72: ireturn
+      73: aload_0
+      74: invokevirtual #177                // Method isMap:()Z
+      77: ifeq          114
+      80: aload_0
+      81: invokevirtual #180                // Method getMapKeyTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+      84: aload_2
+      85: invokevirtual #180                // Method getMapKeyTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+      88: invokestatic  #229                // Method org/springframework/util/ObjectUtils.nullSafeEquals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+      91: ifeq          112
+      94: aload_0
+      95: invokevirtual #183                // Method getMapValueTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+      98: aload_2
+      99: invokevirtual #183                // Method getMapValueTypeDescriptor:()Lorg/springframework/core/convert/TypeDescriptor;
+     102: invokestatic  #229                // Method org/springframework/util/ObjectUtils.nullSafeEquals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+     105: ifeq          112
+     108: iconst_1
+     109: goto          113
+     112: iconst_0
+     113: ireturn
+     114: aload_0
+     115: invokevirtual #112                // Method getResolvableType:()Lorg/springframework/core/ResolvableType;
+     118: invokevirtual #235                // Method org/springframework/core/ResolvableType.getGenerics:()[Lorg/springframework/core/ResolvableType;
+     121: aload_2
+     122: invokevirtual #112                // Method getResolvableType:()Lorg/springframework/core/ResolvableType;
+     125: invokevirtual #235                // Method org/springframework/core/ResolvableType.getGenerics:()[Lorg/springframework/core/ResolvableType;
+     128: invokestatic  #239                // Method java/util/Arrays.equals:([Ljava/lang/Object;[Ljava/lang/Object;)Z
+     131: ireturn
+    LineNumberTable:
+      line 491: 0
+      line 492: 5
+      line 494: 7
+      line 495: 22
+      line 497: 24
+      line 498: 35
+      line 500: 37
+      line 501: 45
+      line 503: 47
+      line 504: 61
+      line 506: 73
+      line 507: 80
+      line 508: 95
+      line 507: 113
+      line 511: 114
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         19       3     2 otherDesc   Lorg/springframework/core/convert/TypeDescriptor;
+          0     132     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0     132     1 other   Ljava/lang/Object;
+         24     108     2 otherDesc   Lorg/springframework/core/convert/TypeDescriptor;
+
+  private boolean annotationsMatch(org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_0
+       1: invokevirtual #120                // Method getAnnotations:()[Ljava/lang/annotation/Annotation;
+       4: astore_2
+       5: aload_1
+       6: invokevirtual #120                // Method getAnnotations:()[Ljava/lang/annotation/Annotation;
+       9: astore_3
+      10: aload_2
+      11: aload_3
+      12: if_acmpne     17
+      15: iconst_1
+      16: ireturn
+      17: aload_2
+      18: arraylength
+      19: aload_3
+      20: arraylength
+      21: if_icmpeq     26
+      24: iconst_0
+      25: ireturn
+      26: aload_2
+      27: arraylength
+      28: ifle          64
+      31: iconst_0
+      32: istore        4
+      34: iload         4
+      36: aload_2
+      37: arraylength
+      38: if_icmpge     64
+      41: aload_0
+      42: aload_2
+      43: iload         4
+      45: aaload
+      46: aload_3
+      47: iload         4
+      49: aaload
+      50: invokevirtual #245                // Method annotationEquals:(Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z
+      53: ifne          58
+      56: iconst_0
+      57: ireturn
+      58: iinc          4, 1
+      61: goto          34
+      64: iconst_1
+      65: ireturn
+    LineNumberTable:
+      line 516: 0
+      line 517: 5
+      line 518: 10
+      line 519: 15
+      line 521: 17
+      line 522: 24
+      line 524: 26
+      line 525: 31
+      line 526: 41
+      line 527: 56
+      line 525: 58
+      line 531: 64
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         34      30     4     i   I
+          0      66     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      66     1 otherDesc   Lorg/springframework/core/convert/TypeDescriptor;
+          5      61     2  anns   [Ljava/lang/annotation/Annotation;
+         10      56     3 otherAnns   [Ljava/lang/annotation/Annotation;
+
+  private boolean annotationEquals(java.lang.annotation.Annotation, java.lang.annotation.Annotation);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: if_acmpeq     26
+       5: aload_1
+       6: invokevirtual #109                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       9: aload_2
+      10: invokevirtual #109                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      13: if_acmpne     30
+      16: aload_1
+      17: aload_2
+      18: invokeinterface #249,  2          // InterfaceMethod java/lang/annotation/Annotation.equals:(Ljava/lang/Object;)Z
+      23: ifeq          30
+      26: iconst_1
+      27: goto          31
+      30: iconst_0
+      31: ireturn
+    LineNumberTable:
+      line 536: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      32     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          0      32     1   ann   Ljava/lang/annotation/Annotation;
+          0      32     2 otherAnn   Ljava/lang/annotation/Annotation;
+
+  public int hashCode();
+    Code:
+       0: aload_0
+       1: invokevirtual #85                 // Method getType:()Ljava/lang/Class;
+       4: invokevirtual #254                // Method java/lang/Object.hashCode:()I
+       7: ireturn
+    LineNumberTable:
+      line 541: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       8     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public java.lang.String toString();
+    Code:
+       0: new           #257                // class java/lang/StringBuilder
+       3: dup
+       4: invokespecial #259                // Method java/lang/StringBuilder."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: invokevirtual #120                // Method getAnnotations:()[Ljava/lang/annotation/Annotation;
+      12: astore_2
+      13: aload_2
+      14: arraylength
+      15: istore_3
+      16: iconst_0
+      17: istore        4
+      19: iload         4
+      21: iload_3
+      22: if_icmpge     62
+      25: aload_2
+      26: iload         4
+      28: aaload
+      29: astore        5
+      31: aload_1
+      32: bipush        64
+      34: invokevirtual #260                // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+      37: aload         5
+      39: invokeinterface #264,  1          // InterfaceMethod java/lang/annotation/Annotation.annotationType:()Ljava/lang/Class;
+      44: invokevirtual #267                // Method java/lang/Class.getName:()Ljava/lang/String;
+      47: invokevirtual #271                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      50: bipush        32
+      52: invokevirtual #260                // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+      55: pop
+      56: iinc          4, 1
+      59: goto          19
+      62: aload_1
+      63: aload_0
+      64: invokevirtual #112                // Method getResolvableType:()Lorg/springframework/core/ResolvableType;
+      67: invokevirtual #274                // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      70: pop
+      71: aload_1
+      72: invokevirtual #277                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      75: areturn
+    LineNumberTable:
+      line 546: 0
+      line 547: 8
+      line 548: 31
+      line 547: 56
+      line 550: 62
+      line 551: 71
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         31      25     5   ann   Ljava/lang/annotation/Annotation;
+          0      76     0  this   Lorg/springframework/core/convert/TypeDescriptor;
+          8      68     1 builder   Ljava/lang/StringBuilder;
+
+  public static org.springframework.core.convert.TypeDescriptor forObject(java.lang.Object);
+    Code:
+       0: aload_0
+       1: ifnull        14
+       4: aload_0
+       5: invokevirtual #109                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       8: invokestatic  #280                // Method valueOf:(Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;
+      11: goto          15
+      14: aconst_null
+      15: areturn
+    LineNumberTable:
+      line 566: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      16     0 source   Ljava/lang/Object;
+
+  public static org.springframework.core.convert.TypeDescriptor valueOf(java.lang.Class<?>);
+    Code:
+       0: aload_0
+       1: ifnonnull     7
+       4: ldc           #2                  // class java/lang/Object
+       6: astore_0
+       7: getstatic     #284                // Field commonTypesCache:Ljava/util/Map;
+      10: aload_0
+      11: invokeinterface #288,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      16: checkcast     #14                 // class org/springframework/core/convert/TypeDescriptor
+      19: astore_1
+      20: aload_1
+      21: ifnull        28
+      24: aload_1
+      25: goto          41
+      28: new           #14                 // class org/springframework/core/convert/TypeDescriptor
+      31: dup
+      32: aload_0
+      33: invokestatic  #292                // Method org/springframework/core/ResolvableType.forClass:(Ljava/lang/Class;)Lorg/springframework/core/ResolvableType;
+      36: aconst_null
+      37: aconst_null
+      38: invokespecial #121                // Method "<init>":(Lorg/springframework/core/ResolvableType;Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)V
+      41: areturn
+    LineNumberTable:
+      line 580: 0
+      line 581: 4
+      line 583: 7
+      line 584: 20
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      42     0  type   Ljava/lang/Class;
+         20      22     1  desc   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public static org.springframework.core.convert.TypeDescriptor collection(java.lang.Class<?>, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_0
+       1: ldc_w         #295                // String Collection type must not be null
+       4: invokestatic  #68                 // Method org/springframework/util/Assert.notNull:(Ljava/lang/Object;Ljava/lang/String;)V
+       7: ldc           #190                // class java/util/Collection
+       9: aload_0
+      10: invokevirtual #159                // Method java/lang/Class.isAssignableFrom:(Ljava/lang/Class;)Z
+      13: ifne          27
+      16: new           #297                // class java/lang/IllegalArgumentException
+      19: dup
+      20: ldc_w         #299                // String Collection type must be a [java.util.Collection]
+      23: invokespecial #301                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      26: athrow
+      27: aload_1
+      28: ifnull        38
+      31: aload_1
+      32: getfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+      35: goto          39
+      38: aconst_null
+      39: astore_2
+      40: new           #14                 // class org/springframework/core/convert/TypeDescriptor
+      43: dup
+      44: aload_0
+      45: iconst_1
+      46: anewarray     #8                  // class org/springframework/core/ResolvableType
+      49: dup
+      50: iconst_0
+      51: aload_2
+      52: aastore
+      53: invokestatic  #304                // Method org/springframework/core/ResolvableType.forClassWithGenerics:(Ljava/lang/Class;[Lorg/springframework/core/ResolvableType;)Lorg/springframework/core/ResolvableType;
+      56: aconst_null
+      57: aconst_null
+      58: invokespecial #121                // Method "<init>":(Lorg/springframework/core/ResolvableType;Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)V
+      61: areturn
+    LineNumberTable:
+      line 600: 0
+      line 601: 7
+      line 602: 16
+      line 604: 27
+      line 605: 40
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      62     0 collectionType   Ljava/lang/Class;
+          0      62     1 elementTypeDescriptor   Lorg/springframework/core/convert/TypeDescriptor;
+         40      22     2 element   Lorg/springframework/core/ResolvableType;
+
+  public static org.springframework.core.convert.TypeDescriptor map(java.lang.Class<?>, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_0
+       1: ldc_w         #308                // String Map type must not be null
+       4: invokestatic  #68                 // Method org/springframework/util/Assert.notNull:(Ljava/lang/Object;Ljava/lang/String;)V
+       7: ldc           #210                // class java/util/Map
+       9: aload_0
+      10: invokevirtual #159                // Method java/lang/Class.isAssignableFrom:(Ljava/lang/Class;)Z
+      13: ifne          27
+      16: new           #297                // class java/lang/IllegalArgumentException
+      19: dup
+      20: ldc_w         #310                // String Map type must be a [java.util.Map]
+      23: invokespecial #301                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      26: athrow
+      27: aload_1
+      28: ifnull        38
+      31: aload_1
+      32: getfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+      35: goto          39
+      38: aconst_null
+      39: astore_3
+      40: aload_2
+      41: ifnull        51
+      44: aload_2
+      45: getfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+      48: goto          52
+      51: aconst_null
+      52: astore        4
+      54: new           #14                 // class org/springframework/core/convert/TypeDescriptor
+      57: dup
+      58: aload_0
+      59: iconst_2
+      60: anewarray     #8                  // class org/springframework/core/ResolvableType
+      63: dup
+      64: iconst_0
+      65: aload_3
+      66: aastore
+      67: dup
+      68: iconst_1
+      69: aload         4
+      71: aastore
+      72: invokestatic  #304                // Method org/springframework/core/ResolvableType.forClassWithGenerics:(Ljava/lang/Class;[Lorg/springframework/core/ResolvableType;)Lorg/springframework/core/ResolvableType;
+      75: aconst_null
+      76: aconst_null
+      77: invokespecial #121                // Method "<init>":(Lorg/springframework/core/ResolvableType;Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)V
+      80: areturn
+    LineNumberTable:
+      line 625: 0
+      line 626: 7
+      line 627: 16
+      line 629: 27
+      line 630: 40
+      line 631: 54
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      81     0 mapType   Ljava/lang/Class;
+          0      81     1 keyTypeDescriptor   Lorg/springframework/core/convert/TypeDescriptor;
+          0      81     2 valueTypeDescriptor   Lorg/springframework/core/convert/TypeDescriptor;
+         40      41     3   key   Lorg/springframework/core/ResolvableType;
+         54      27     4 value   Lorg/springframework/core/ResolvableType;
+
+  public static org.springframework.core.convert.TypeDescriptor array(org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_0
+       1: ifnonnull     6
+       4: aconst_null
+       5: areturn
+       6: new           #14                 // class org/springframework/core/convert/TypeDescriptor
+       9: dup
+      10: aload_0
+      11: getfield      #13                 // Field resolvableType:Lorg/springframework/core/ResolvableType;
+      14: invokestatic  #312                // Method org/springframework/core/ResolvableType.forArrayComponent:(Lorg/springframework/core/ResolvableType;)Lorg/springframework/core/ResolvableType;
+      17: aconst_null
+      18: aload_0
+      19: invokevirtual #120                // Method getAnnotations:()[Ljava/lang/annotation/Annotation;
+      22: invokespecial #121                // Method "<init>":(Lorg/springframework/core/ResolvableType;Ljava/lang/Class;[Ljava/lang/annotation/Annotation;)V
+      25: areturn
+    LineNumberTable:
+      line 646: 0
+      line 647: 4
+      line 649: 6
+      line 650: 19
+      line 649: 25
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      26     0 elementTypeDescriptor   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.MethodParameter, int);
+    Code:
+       0: aload_0
+       1: invokevirtual #316                // Method org/springframework/core/MethodParameter.getNestingLevel:()I
+       4: iconst_1
+       5: if_icmpeq     19
+       8: new           #297                // class java/lang/IllegalArgumentException
+      11: dup
+      12: ldc_w         #319                // String MethodParameter nesting level must be 1: use the nestingLevel parameter to specify the desired nestingLevel for nested type traversal
+      15: invokespecial #301                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: new           #14                 // class org/springframework/core/convert/TypeDescriptor
+      22: dup
+      23: aload_0
+      24: invokespecial #321                // Method "<init>":(Lorg/springframework/core/MethodParameter;)V
+      27: iload_1
+      28: invokevirtual #324                // Method nested:(I)Lorg/springframework/core/convert/TypeDescriptor;
+      31: areturn
+    LineNumberTable:
+      line 677: 0
+      line 678: 8
+      line 681: 19
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      32     0 methodParameter   Lorg/springframework/core/MethodParameter;
+          0      32     1 nestingLevel   I
+
+  public static org.springframework.core.convert.TypeDescriptor nested(java.lang.reflect.Field, int);
+    Code:
+       0: new           #14                 // class org/springframework/core/convert/TypeDescriptor
+       3: dup
+       4: aload_0
+       5: invokespecial #328                // Method "<init>":(Ljava/lang/reflect/Field;)V
+       8: iload_1
+       9: invokevirtual #324                // Method nested:(I)Lorg/springframework/core/convert/TypeDescriptor;
+      12: areturn
+    LineNumberTable:
+      line 707: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      13     0 field   Ljava/lang/reflect/Field;
+          0      13     1 nestingLevel   I
+
+  public static org.springframework.core.convert.TypeDescriptor nested(org.springframework.core.convert.Property, int);
+    Code:
+       0: new           #14                 // class org/springframework/core/convert/TypeDescriptor
+       3: dup
+       4: aload_0
+       5: invokespecial #331                // Method "<init>":(Lorg/springframework/core/convert/Property;)V
+       8: iload_1
+       9: invokevirtual #324                // Method nested:(I)Lorg/springframework/core/convert/TypeDescriptor;
+      12: areturn
+    LineNumberTable:
+      line 733: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      13     0 property   Lorg/springframework/core/convert/Property;
+          0      13     1 nestingLevel   I
+
+  static {};
+    Code:
+       0: new           #334                // class java/util/HashMap
+       3: dup
+       4: bipush        32
+       6: invokespecial #336                // Method java/util/HashMap."<init>":(I)V
+       9: putstatic     #284                // Field commonTypesCache:Ljava/util/Map;
+      12: bipush        18
+      14: anewarray     #137                // class java/lang/Class
+      17: dup
+      18: iconst_0
+      19: getstatic     #339                // Field java/lang/Boolean.TYPE:Ljava/lang/Class;
+      22: aastore
+      23: dup
+      24: iconst_1
+      25: ldc_w         #340                // class java/lang/Boolean
+      28: aastore
+      29: dup
+      30: iconst_2
+      31: getstatic     #344                // Field java/lang/Byte.TYPE:Ljava/lang/Class;
+      34: aastore
+      35: dup
+      36: iconst_3
+      37: ldc_w         #345                // class java/lang/Byte
+      40: aastore
+      41: dup
+      42: iconst_4
+      43: getstatic     #347                // Field java/lang/Character.TYPE:Ljava/lang/Class;
+      46: aastore
+      47: dup
+      48: iconst_5
+      49: ldc_w         #348                // class java/lang/Character
+      52: aastore
+      53: dup
+      54: bipush        6
+      56: getstatic     #350                // Field java/lang/Double.TYPE:Ljava/lang/Class;
+      59: aastore
+      60: dup
+      61: bipush        7
+      63: ldc_w         #351                // class java/lang/Double
+      66: aastore
+      67: dup
+      68: bipush        8
+      70: getstatic     #353                // Field java/lang/Float.TYPE:Ljava/lang/Class;
+      73: aastore
+      74: dup
+      75: bipush        9
+      77: ldc_w         #354                // class java/lang/Float
+      80: aastore
+      81: dup
+      82: bipush        10
+      84: getstatic     #356                // Field java/lang/Integer.TYPE:Ljava/lang/Class;
+      87: aastore
+      88: dup
+      89: bipush        11
+      91: ldc_w         #357                // class java/lang/Integer
+      94: aastore
+      95: dup
+      96: bipush        12
+      98: getstatic     #359                // Field java/lang/Long.TYPE:Ljava/lang/Class;
+     101: aastore
+     102: dup
+     103: bipush        13
+     105: ldc_w         #360                // class java/lang/Long
+     108: aastore
+     109: dup
+     110: bipush        14
+     112: getstatic     #362                // Field java/lang/Short.TYPE:Ljava/lang/Class;
+     115: aastore
+     116: dup
+     117: bipush        15
+     119: ldc_w         #363                // class java/lang/Short
+     122: aastore
+     123: dup
+     124: bipush        16
+     126: ldc_w         #365                // class java/lang/String
+     129: aastore
+     130: dup
+     131: bipush        17
+     133: ldc           #2                  // class java/lang/Object
+     135: aastore
+     136: putstatic     #367                // Field CACHED_COMMON_TYPES:[Ljava/lang/Class;
+     139: getstatic     #367                // Field CACHED_COMMON_TYPES:[Ljava/lang/Class;
+     142: astore_0
+     143: aload_0
+     144: arraylength
+     145: istore_1
+     146: iconst_0
+     147: istore_2
+     148: iload_2
+     149: iload_1
+     150: if_icmpge     177
+     153: aload_0
+     154: iload_2
+     155: aaload
+     156: astore_3
+     157: getstatic     #284                // Field commonTypesCache:Ljava/util/Map;
+     160: aload_3
+     161: aload_3
+     162: invokestatic  #280                // Method valueOf:(Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;
+     165: invokeinterface #371,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     170: pop
+     171: iinc          2, 1
+     174: goto          148
+     177: return
+    LineNumberTable:
+      line 55: 0
+      line 57: 12
+      line 63: 139
+      line 64: 157
+      line 63: 171
+      line 66: 177
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+        157      14     3 preCachedClass   Ljava/lang/Class;
+}

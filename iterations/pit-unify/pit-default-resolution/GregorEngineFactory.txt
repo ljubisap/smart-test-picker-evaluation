@@ -1,0 +1,78 @@
+Compiled from "GregorEngineFactory.java"
+public final class org.pitest.mutationtest.engine.gregor.config.GregorEngineFactory implements org.pitest.mutationtest.MutationEngineFactory {
+  public org.pitest.mutationtest.engine.gregor.config.GregorEngineFactory();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public org.pitest.mutationtest.engine.MutationEngine createEngine(org.pitest.mutationtest.EngineArguments);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #2                  // Method org/pitest/mutationtest/EngineArguments.excludedMethods:()Ljava/util/Collection;
+       5: aload_1
+       6: invokevirtual #3                  // Method org/pitest/mutationtest/EngineArguments.mutators:()Ljava/util/Collection;
+       9: invokestatic  #4                  // Method createMutatorListFromArrayOrUseDefaults:(Ljava/util/Collection;)Ljava/util/Collection;
+      12: invokevirtual #5                  // Method createEngineWithMutators:(Ljava/util/Collection;Ljava/util/Collection;)Lorg/pitest/mutationtest/engine/MutationEngine;
+      15: areturn
+
+  org.pitest.mutationtest.engine.MutationEngine createEngineWithMutators(java.util.Collection<java.lang.String>, java.util.Collection<? extends org.pitest.mutationtest.engine.gregor.MethodMutatorFactory>);
+    Code:
+       0: aload_1
+       1: invokestatic  #6                  // Method stringToMethodInfoPredicate:(Ljava/util/Collection;)Ljava/util/function/Predicate;
+       4: invokestatic  #7                  // Method org/pitest/functional/prelude/Prelude.not:(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;
+       7: astore_3
+       8: new           #8                  // class org/pitest/mutationtest/engine/gregor/config/DefaultMutationEngineConfiguration
+      11: dup
+      12: aload_3
+      13: aload_2
+      14: invokespecial #9                  // Method org/pitest/mutationtest/engine/gregor/config/DefaultMutationEngineConfiguration."<init>":(Ljava/util/function/Predicate;Ljava/util/Collection;)V
+      17: astore        4
+      19: new           #10                 // class org/pitest/mutationtest/engine/gregor/GregorMutationEngine
+      22: dup
+      23: aload         4
+      25: invokespecial #11                 // Method org/pitest/mutationtest/engine/gregor/GregorMutationEngine."<init>":(Lorg/pitest/mutationtest/engine/gregor/MutationEngineConfiguration;)V
+      28: areturn
+
+  private static java.util.Collection<? extends org.pitest.mutationtest.engine.gregor.MethodMutatorFactory> createMutatorListFromArrayOrUseDefaults(java.util.Collection<java.lang.String>);
+    Code:
+       0: aload_0
+       1: ifnull        18
+       4: aload_0
+       5: invokeinterface #12,  1           // InterfaceMethod java/util/Collection.isEmpty:()Z
+      10: ifne          18
+      13: aload_0
+      14: invokestatic  #13                 // Method org/pitest/mutationtest/engine/gregor/config/Mutator.fromStrings:(Ljava/util/Collection;)Ljava/util/Collection;
+      17: areturn
+      18: invokestatic  #14                 // Method org/pitest/mutationtest/engine/gregor/config/Mutator.newDefaults:()Ljava/util/Collection;
+      21: areturn
+
+  private static java.util.function.Predicate<org.pitest.mutationtest.engine.gregor.MethodInfo> stringToMethodInfoPredicate(java.util.Collection<java.lang.String>);
+    Code:
+       0: aload_0
+       1: invokestatic  #15                 // Method org/pitest/util/Glob.toGlobPredicates:(Ljava/util/Collection;)Ljava/util/Collection;
+       4: invokestatic  #16                 // Method org/pitest/functional/prelude/Prelude.or:(Ljava/lang/Iterable;)Lorg/pitest/functional/predicate/Or;
+       7: astore_1
+       8: aload_1
+       9: invokedynamic #17,  0             // InvokeDynamic #0:test:(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;
+      14: areturn
+
+  public java.lang.String name();
+    Code:
+       0: ldc           #18                 // String gregor
+       2: areturn
+
+  public java.lang.String description();
+    Code:
+       0: ldc           #19                 // String Default mutation engine
+       2: areturn
+
+  private static boolean lambda$stringToMethodInfoPredicate$0(java.util.function.Predicate, org.pitest.mutationtest.engine.gregor.MethodInfo);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #20                 // Method org/pitest/mutationtest/engine/gregor/MethodInfo.getName:()Ljava/lang/String;
+       5: invokeinterface #21,  2           // InterfaceMethod java/util/function/Predicate.test:(Ljava/lang/Object;)Z
+      10: ireturn
+}

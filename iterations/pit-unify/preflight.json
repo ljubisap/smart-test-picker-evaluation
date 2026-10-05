@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-05T16:29:05.004048+00:00",
+  "head": "3bdf61c0b7481fe6da25e4bd335b91a348a4f837",
+  "main": "3bdf61c0b7481fe6da25e4bd335b91a348a4f837",
+  "tagCommit": "3bdf61c0b7481fe6da25e4bd335b91a348a4f837",
+  "branch": "iteration-pit-unify",
+  "status": "?? iterations/",
+  "subjects": {
+    "jgrapht": {
+      "checkout": "/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject",
+      "revision": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+      "initialStatus": ""
+    },
+    "spring-core": {
+      "checkout": "/private/tmp/pit-unify-spring-core-nydoloo0/subject",
+      "revision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+      "initialStatus": ""
+    }
+  },
+  "versions": {
+    "jdk": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java",
+        "-version"
+      ],
+      "exitCode": 0,
+      "output": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment SapMachine (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM SapMachine (build 21.0.12.1+1-LTS, mixed mode, sharing)\n"
+    },
+    "maven": {
+      "command": [
+        "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn",
+        "-version"
+      ],
+      "exitCode": 0,
+      "output": "Apache Maven 3.9.15 (98b2cdbfdb5f1ac8781f537ea9acccaed7922349)\nMaven home: /Users/D061177/Programs/apache-maven-3.9.15\nJava version: 21.0.12.1, vendor: SAP SE, runtime: /Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home\nDefault locale: en_DE, platform encoding: UTF-8\nOS name: \"mac os x\", version: \"26.6.2\", arch: \"aarch64\", family: \"mac\"\n"
+    },
+    "springGradleWrapper": "distributionBase=GRADLE_USER_HOME\ndistributionPath=wrapper/dists\ndistributionUrl=https\\://services.gradle.org/distributions/gradle-8.14.2-bin.zip\nnetworkTimeout=10000\nvalidateDistributionUrl=true\nzipStoreBase=GRADLE_USER_HOME\nzipStorePath=wrapper/dists\n"
+  },
+  "originalScripts": {
+    "jgrapht/scripts/02_run_pit.py": "58273c798a3c25762a9c26ea8081f000be772f31870a8ec8adb86808c899b7a5",
+    "spring-core/scripts/02_run_pit.py": "49b616d29508324f9e138c81376ec9d8dd7354dd06809fa458e2eadb17bbc471",
+    "analysis/evaluation_core.py": "82b989363bd1854d7aa4a507f0b9684affa0d8baf638bfba58c0c0ff39e82191"
+  },
+  "runnerVersionObservation": "Both documented original runners already declare PIT 1.17.4 and JUnit plugin 1.2.1. Execute them unchanged; no version-edit copy is necessary."
+}

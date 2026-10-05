@@ -1,0 +1,105 @@
+{
+  "pinnedBuildSource": "analysis/v14_4_rederivation/java_build.json",
+  "commit": "2e0954b5b590fb0b9da979c28b0d053e4ce9e5c9",
+  "tree": "7a61a4933a7f2b6a64aa06e4893ba61c9d26da33",
+  "verifiedArtifacts": [
+    {
+      "path": "/tmp/stp-b2-2e0954/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar",
+      "sha256": "f75c712d0013053648bee3bb9d3f0895f51cf3c27e59c7f3d646f4ca7a0a77f5",
+      "actualSha256": "f75c712d0013053648bee3bb9d3f0895f51cf3c27e59c7f3d646f4ca7a0a77f5"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/3.0.2/8c448a44cdcdbb5dd48ff2eb88cab858ed52cf91/txw2-3.0.2.jar",
+      "sha256": "b4bcf94fb0a759456e2521724513baec94b78e93127544af162e3cff08d93343",
+      "actualSha256": "b4bcf94fb0a759456e2521724513baec94b78e93127544af162e3cff08d93343"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-core/3.0.2/e83d0b0005525ddd8b8642bd0bb02227fcf871f1/jaxb-core-3.0.2.jar",
+      "sha256": "f9a360b939597643b2676e35fc497afb561d20e8a513128a5c0070366db11bbd",
+      "actualSha256": "f9a360b939597643b2676e35fc497afb561d20e8a513128a5c0070366db11bbd"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/3.0.2/9897322f5de201bfbfcd1f4f46ffdd4204673b3c/jaxb-runtime-3.0.2.jar",
+      "sha256": "7b3a3784b9c6e343a8d38fc108602ba810177f03f2d8d1e7258b1cef7fd9d4c7",
+      "actualSha256": "7b3a3784b9c6e343a8d38fc108602ba810177f03f2d8d1e7258b1cef7fd9d4c7"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.jacoco/org.jacoco.core/0.8.13/4424d689f0738cd4445e948270e3f2f2d0e5cdb8/org.jacoco.core-0.8.13.jar",
+      "sha256": "514c23df6cfd015d7d83c10a792e35ab68a7b7e82f3d6a3a4481762c132e33a9",
+      "actualSha256": "514c23df6cfd015d7d83c10a792e35ab68a7b7e82f3d6a3a4481762c132e33a9"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.jacoco/org.jacoco.report/0.8.13/44d475e169049322b081db376933bad859ec6526/org.jacoco.report-0.8.13.jar",
+      "sha256": "8133280a0aa44358be9d136b52370342f455ccb944aae07438220a77662578a2",
+      "actualSha256": "8133280a0aa44358be9d136b52370342f455ccb944aae07438220a77662578a2"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/com.sun.activation/jakarta.activation/2.0.1/828b80e886a52bb09fe41ff410b10b342f533ce1/jakarta.activation-2.0.1.jar",
+      "sha256": "b9e24b7dd6e07495562ea96531be3130c96dba4d78e1dfd88adbbdebf4332871",
+      "actualSha256": "b9e24b7dd6e07495562ea96531be3130c96dba4d78e1dfd88adbbdebf4332871"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/4.0.1/4e25c41d338aad4a2c92d0020c9ae0335fad5099/istack-commons-runtime-4.0.1.jar",
+      "sha256": "9f91115f449384886f572bd62c8812ee1004273d4b5c85cac65179ad4c16990f",
+      "actualSha256": "9f91115f449384886f572bd62c8812ee1004273d4b5c85cac65179ad4c16990f"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/3.0.1/5257932df36ff3e4e6de50429dde946490a6a800/jakarta.xml.bind-api-3.0.1.jar",
+      "sha256": "b8fb4bee3ff5b5c1ef77144d8411316018d7bbd41fcf1ede0646f7978546b867",
+      "actualSha256": "b8fb4bee3ff5b5c1ef77144d8411316018d7bbd41fcf1ede0646f7978546b867"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar",
+      "sha256": "4241c14a7727c34feea6507ec801318a3d4a90f070e4525681079fb94ee4c593",
+      "actualSha256": "4241c14a7727c34feea6507ec801318a3d4a90f070e4525681079fb94ee4c593"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.ow2.asm/asm/9.8/dc19ecb3f7889b7860697215cae99c0f9b6f6b4b/asm-9.8.jar",
+      "sha256": "876eab6a83daecad5ca67eb9fcabb063c97b5aeb8cf1fca7a989ecde17522051",
+      "actualSha256": "876eab6a83daecad5ca67eb9fcabb063c97b5aeb8cf1fca7a989ecde17522051"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.8/18419ca5b77a2f81097c741e7872e6ab8d2f40d/asm-tree-9.8.jar",
+      "sha256": "14b7880cb7c85eed101e2710432fc3ffb83275532a6a894dc4c4095d49ad59f1",
+      "actualSha256": "14b7880cb7c85eed101e2710432fc3ffb83275532a6a894dc4c4095d49ad59f1"
+    },
+    {
+      "path": "/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.8/36e4d212970388e5bd2c5180292012502df461bb/asm-commons-9.8.jar",
+      "sha256": "3301a1c1cb4c59fcc5292648dac1d7c5aed4c0f067dfbe88873b8cdfe77404f4",
+      "actualSha256": "3301a1c1cb4c59fcc5292648dac1d7c5aed4c0f067dfbe88873b8cdfe77404f4"
+    }
+  ],
+  "harnessSource": "analysis/v14_6/harness/SelectorHarness.java",
+  "harnessSha256": "94d6ed702882543d475ea5e97d652586ad5940ee490a2fe9ae88221ac145f04b",
+  "commands": [
+    [
+      "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javac",
+      "-cp",
+      "/tmp/stp-b2-2e0954/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/3.0.2/8c448a44cdcdbb5dd48ff2eb88cab858ed52cf91/txw2-3.0.2.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-core/3.0.2/e83d0b0005525ddd8b8642bd0bb02227fcf871f1/jaxb-core-3.0.2.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/3.0.2/9897322f5de201bfbfcd1f4f46ffdd4204673b3c/jaxb-runtime-3.0.2.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.jacoco/org.jacoco.core/0.8.13/4424d689f0738cd4445e948270e3f2f2d0e5cdb8/org.jacoco.core-0.8.13.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.jacoco/org.jacoco.report/0.8.13/44d475e169049322b081db376933bad859ec6526/org.jacoco.report-0.8.13.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/com.sun.activation/jakarta.activation/2.0.1/828b80e886a52bb09fe41ff410b10b342f533ce1/jakarta.activation-2.0.1.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/4.0.1/4e25c41d338aad4a2c92d0020c9ae0335fad5099/istack-commons-runtime-4.0.1.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/3.0.1/5257932df36ff3e4e6de50429dde946490a6a800/jakarta.xml.bind-api-3.0.1.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.ow2.asm/asm/9.8/dc19ecb3f7889b7860697215cae99c0f9b6f6b4b/asm-9.8.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.8/18419ca5b77a2f81097c741e7872e6ab8d2f40d/asm-tree-9.8.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.8/36e4d212970388e5bd2c5180292012502df461bb/asm-commons-9.8.jar",
+      "-d",
+      "/Users/D061177/work/issta/smart-test-picker-evaluation/iterations/pit-unify/java/classes",
+      "/Users/D061177/work/issta/smart-test-picker-evaluation/analysis/v14_6/harness/SelectorHarness.java"
+    ],
+    [
+      "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java",
+      "-XX:ActiveProcessorCount=1",
+      "-Xmx3g",
+      "-cp",
+      "/Users/D061177/work/issta/smart-test-picker-evaluation/iterations/pit-unify/java/classes:/tmp/stp-b2-2e0954/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/3.0.2/8c448a44cdcdbb5dd48ff2eb88cab858ed52cf91/txw2-3.0.2.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-core/3.0.2/e83d0b0005525ddd8b8642bd0bb02227fcf871f1/jaxb-core-3.0.2.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/3.0.2/9897322f5de201bfbfcd1f4f46ffdd4204673b3c/jaxb-runtime-3.0.2.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.jacoco/org.jacoco.core/0.8.13/4424d689f0738cd4445e948270e3f2f2d0e5cdb8/org.jacoco.core-0.8.13.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.jacoco/org.jacoco.report/0.8.13/44d475e169049322b081db376933bad859ec6526/org.jacoco.report-0.8.13.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/com.sun.activation/jakarta.activation/2.0.1/828b80e886a52bb09fe41ff410b10b342f533ce1/jakarta.activation-2.0.1.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/4.0.1/4e25c41d338aad4a2c92d0020c9ae0335fad5099/istack-commons-runtime-4.0.1.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/3.0.1/5257932df36ff3e4e6de50429dde946490a6a800/jakarta.xml.bind-api-3.0.1.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.ow2.asm/asm/9.8/dc19ecb3f7889b7860697215cae99c0f9b6f6b4b/asm-9.8.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.8/18419ca5b77a2f81097c741e7872e6ab8d2f40d/asm-tree-9.8.jar:/Users/D061177/work/issta/.gradle-stp-jdk21/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.8/36e4d212970388e5bd2c5180292012502df461bb/asm-commons-9.8.jar",
+      "SelectorHarness",
+      "/Users/D061177/work/issta/smart-test-picker-evaluation/iterations/pit-unify/java/cases.json",
+      "/Users/D061177/work/issta/smart-test-picker-evaluation/iterations/pit-unify/java/output.json"
+    ]
+  ],
+  "reuse": {
+    "archive": "iterations/pit-unify/attempts/implicit-defaults.tar.gz",
+    "archiveSha256": "7a01519eac9e6e357aa1afcdc83c33160b273ffe4463d32ca5e13c582540c8ad",
+    "archivedJavaInputs": "java/cases.json",
+    "archivedJavaOutputs": "java/output.json",
+    "originalExecutedUniqueInputs": 1350,
+    "identicalInputsReused": 1349,
+    "additionalInvocations": 0,
+    "commandsReferToArchivedInputSnapshot": true,
+    "reason": "All final (map digest, class, method) inputs already executed through the unchanged pinned Java selector; only PIT occurrence weighting changed."
+  }
+}

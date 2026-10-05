@@ -1,0 +1,143 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< org.jgrapht:jgrapht-core >----------------------
+[INFO] Building JGraphT - Core 1.6.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ jgrapht-core ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ jgrapht-core ---
+[INFO] skip non existing resourceDirectory /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ jgrapht-core ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 463 source files with javac [debug release 21 module-path] to target/classes
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/module-info.java:[70,28] requires transitive directive for an automatic module
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/module-info.java:[71,28] requires transitive directive for an automatic module
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/event/GraphEdgeChangeEvent.java:[65,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/event/GraphEdgeChangeEvent.java:[70,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/event/GraphEdgeChangeEvent.java:[75,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/event/GraphVertexChangeEvent.java:[57,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/IntrusiveEdge.java:[39,12] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/IntrusiveEdge.java:[41,12] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java:[79,25] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java:[80,25] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java:[81,23] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java:[83,29] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java:[727,39] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java:[728,39] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java:[785,31] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java:[786,39] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java:[1001,37] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java:[1072,36] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedAcyclicGraph.java:[66,33] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/util/WeightedUnmodifiableSet.java:[38,25] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/event/EdgeTraversalEvent.java:[36,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/event/VertexTraversalEvent.java:[36,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/ClusteringAlgorithm.java:[69,36] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/SpanningTreeAlgorithm.java:[82,30] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/util/Pair.java:[37,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/util/Pair.java:[42,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/VertexColoringAlgorithm.java:[80,39] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/BlockCutpointGraph.java:[53,25] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/BlockCutpointGraph.java:[56,20] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/BlockCutpointGraph.java:[59,30] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/connectivity/BlockCutpointGraph.java:[62,33] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/CycleBasisAlgorithm.java:[101,35] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/CycleBasisAlgorithm.java:[102,36] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/CycleBasisAlgorithm.java:[103,38] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/GraphWalk.java:[67,27] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/GraphWalk.java:[69,23] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/GraphWalk.java:[70,23] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/GraphWalk.java:[72,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/GraphWalk.java:[74,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/MatchingAlgorithm.java:[122,29] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/MatchingAlgorithm.java:[123,24] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/MatchingAlgorithm.java:[125,24] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/TreeToPathDecompositionAlgorithm.java:[84,30] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/TreeToPathDecompositionAlgorithm.java:[85,44] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/PartitioningAlgorithm.java:[104,36] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/CapacitatedSpanningTreeAlgorithm.java:[102,39] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/CapacitatedSpanningTreeAlgorithm.java:[103,58] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/CapacitatedSpanningTreeAlgorithm.java:[105,30] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/util/Triple.java:[39,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/util/Triple.java:[44,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/util/Triple.java:[49,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/SteinerTreeAlgorithm.java:[87,30] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/DeltaSteppingShortestPath.java:[280,24] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/IntVertexDijkstraShortestPath.java:[277,21] non-transient instance field of a serializable class declared with an array having a non-serializable base component type E
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/IntVertexDijkstraShortestPath.java:[278,31] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/ListMultiObjectiveSingleSourcePathsImpl.java:[43,27] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/ListMultiObjectiveSingleSourcePathsImpl.java:[48,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/ListMultiObjectiveSingleSourcePathsImpl.java:[53,45] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/ListSingleSourcePathsImpl.java:[46,27] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/ListSingleSourcePathsImpl.java:[51,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/ListSingleSourcePathsImpl.java:[56,39] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/NegativeCycleDetectedException.java:[32,29] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/TreeSingleSourcePathsImpl.java:[50,27] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/TreeSingleSourcePathsImpl.java:[55,17] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/TreeSingleSourcePathsImpl.java:[61,39] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/YenShortestPathIterator.java:[552,16] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/YenShortestPathIterator.java:[556,16] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsGraphUnion.java:[47,31] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsGraphUnion.java:[48,29] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsGraphUnion.java:[49,31] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsGraphUnion.java:[50,29] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsGraphUnion.java:[51,29] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsGraphUnion.java:[52,34] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsSubgraph.java:[101,28] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsSubgraph.java:[102,28] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsSubgraph.java:[103,33] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsSubgraph.java:[104,31] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/GraphDelegator.java:[53,31] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/GraphDelegator.java:[54,31] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/GraphDelegator.java:[55,31] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsWeightedGraph.java:[60,39] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/AsWeightedGraph.java:[61,34] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/BaseIntrusiveEdgesSpecifics.java:[40,26] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/DefaultEdgeFunction.java:[36,31] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/DefaultEdgeFunction.java:[37,23] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/DefaultListenableGraph.java:[48,39] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/DefaultListenableGraph.java:[49,40] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskEdgeSet.java:[35,31] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskEdgeSet.java:[36,26] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskEdgeSet.java:[37,32] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskEdgeSet.java:[38,32] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskSubgraph.java:[43,33] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskSubgraph.java:[44,31] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskSubgraph.java:[45,28] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskSubgraph.java:[46,28] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskSubgraph.java:[47,34] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskSubgraph.java:[48,34] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskVertexSet.java:[34,26] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/MaskVertexSet.java:[35,32] non-transient instance field of a serializable class declared with a non-serializable type
+[WARNING] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/main/java/org/jgrapht/graph/concurrent/AsSynchronizedGraph.java:[715,24] non-transient instance field of a serializable class declared with a non-serializable type
+[INFO] 
+[INFO] --- bundle:6.0.2:manifest (default) @ jgrapht-core ---
+[INFO] No MANIFEST.MF file found, generating manifest.
+[INFO] Writing manifest: /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/target/classes/META-INF/MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ jgrapht-core ---
+[INFO] Copying 3 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ jgrapht-core ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 313 source files with javac [debug release 21 module-path] to target/test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/test/java/org/jgrapht/alg/connectivity/StrongConnectivityAlgorithmTest.java: Some input files use or override a deprecated API.
+[INFO] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/test/java/org/jgrapht/alg/connectivity/StrongConnectivityAlgorithmTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/test/java/org/jgrapht/graph/WeightedGraphTest.java: /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/test/java/org/jgrapht/graph/WeightedGraphTest.java uses unchecked or unsafe operations.
+[INFO] /private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/src/test/java/org/jgrapht/graph/WeightedGraphTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.577 s
+[INFO] Finished at: 2026-10-05T18:30:50+02:00
+[INFO] ------------------------------------------------------------------------

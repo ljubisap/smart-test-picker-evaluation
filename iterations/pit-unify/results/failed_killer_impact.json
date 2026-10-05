@@ -1,0 +1,643 @@
+{
+  "failedKeys": [
+    "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+    "BridgeMethodResolverTests#testClassHierarchy_543a15e",
+    "BridgeMethodResolverTests#testInterfaceHierarchy_71ff548"
+  ],
+  "records": [
+    {
+      "mutationId": "spring-core|org.springframework.core.type.StandardClassMetadata|getClassName|()Ljava/lang/String;|60|EmptyObjectReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz:4",
+      "mutatedClass": "org.springframework.core.type.StandardClassMetadata",
+      "mutatedMethod": "getClassName",
+      "killingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+        "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+        "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+        "StandardAnnotationMetadataTests#getClassNameReturnsClassName_39c4a75",
+        "StandardAnnotationMetadataTests#verifyToString_5eb5a36"
+      ],
+      "failedKillingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+      ],
+      "amongSpringCoreResidualMisses": false,
+      "policies": {
+        "base": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getClassNameReturnsClassName_39c4a75",
+            "StandardAnnotationMetadataTests#verifyToString_5eb5a36"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "constructor": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getClassNameReturnsClassName_39c4a75",
+            "StandardAnnotationMetadataTests#verifyToString_5eb5a36"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "class": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getClassNameReturnsClassName_39c4a75",
+            "StandardAnnotationMetadataTests#verifyToString_5eb5a36"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        }
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.type.StandardClassMetadata|getInterfaceNames|()[Ljava/lang/String;|108|ConditionalsBoundaryMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz:7",
+      "mutatedClass": "org.springframework.core.type.StandardClassMetadata",
+      "mutatedMethod": "getInterfaceNames",
+      "killingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+        "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+        "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+        "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14",
+        "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasNoInterfacesReturnsEmptyArray_0c97a70"
+      ],
+      "failedKillingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+      ],
+      "amongSpringCoreResidualMisses": false,
+      "policies": {
+        "base": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasNoInterfacesReturnsEmptyArray_0c97a70"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "constructor": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasNoInterfacesReturnsEmptyArray_0c97a70"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "class": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasNoInterfacesReturnsEmptyArray_0c97a70"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        }
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.type.StandardClassMetadata|getInterfaceNames|()[Ljava/lang/String;|108|RemoveConditionalMutator_ORDER_ELSE|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz:8",
+      "mutatedClass": "org.springframework.core.type.StandardClassMetadata",
+      "mutatedMethod": "getInterfaceNames",
+      "killingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+        "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+        "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14"
+      ],
+      "failedKillingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+      ],
+      "amongSpringCoreResidualMisses": false,
+      "policies": {
+        "base": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "constructor": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "class": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        }
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.type.StandardClassMetadata|getInterfaceNames|()[Ljava/lang/String;|111|NullReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz:9",
+      "mutatedClass": "org.springframework.core.type.StandardClassMetadata",
+      "mutatedMethod": "getInterfaceNames",
+      "killingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+        "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+        "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+        "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14",
+        "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasNoInterfacesReturnsEmptyArray_0c97a70"
+      ],
+      "failedKillingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+      ],
+      "amongSpringCoreResidualMisses": false,
+      "policies": {
+        "base": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasNoInterfacesReturnsEmptyArray_0c97a70"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "constructor": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasNoInterfacesReturnsEmptyArray_0c97a70"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "class": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasInterfacesReturnsNames_6057c14",
+            "StandardAnnotationMetadataTests#getInterfaceNamesWhenHasNoInterfacesReturnsEmptyArray_0c97a70"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        }
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.type.StandardClassMetadata|getIntrospectedClass|()Ljava/lang/Class;|54|NullReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz:10",
+      "mutatedClass": "org.springframework.core.type.StandardClassMetadata",
+      "mutatedMethod": "getIntrospectedClass",
+      "killingIdentities": [
+        "AnnotationMetadataTests#metaAnnotationOverridesUsingStandardAnnotationMetadata_8352518",
+        "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+        "AnnotationMetadataTests#standardAnnotationMetadata_nestedAnnotationsAsMap_false_4adbc65",
+        "StandardAnnotationMetadataTests#getAllAnnotationAttributesReturnsAllAttributes_43c62d4",
+        "StandardAnnotationMetadataTests#getAnnotatedMethodsReturnsMatchingAnnotatedAndMetaAnnotatedMethods_4cbe88b",
+        "StandardAnnotationMetadataTests#getAnnotationAttributesReturnsAttributes_5401082",
+        "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenDoesNotMatchAnyAnnotationReturnsFalse_1fbe07a",
+        "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenMatchesDirectAnnotationReturnsTrue_355754c",
+        "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenMatchesMetaAnnotationReturnsTrue_68478af",
+        "StandardAnnotationMetadataTests#verifyEquals_25ac294",
+        "StandardAnnotationMetadataTests#verifyHashCode_516cfd1",
+        "StandardMethodMetadataTests#getAllAnnotationAttributesReturnsAllAttributes_10d9a88",
+        "StandardMethodMetadataTests#getAnnotationAttributesReturnsAttributes_675550d",
+        "StandardMethodMetadataTests#getAnnotationsReturnsDirectAnnotations_5c841c2",
+        "StandardMethodMetadataTests#getDeclaringClassReturnsDeclaringClass_d5c9108",
+        "StandardMethodMetadataTests#getMethodNameReturnsMethodName_558a146",
+        "StandardMethodMetadataTests#getReturnTypeReturnsReturnType_4691802",
+        "StandardMethodMetadataTests#isAbstractWhenAbstractReturnsTrue_457738c",
+        "StandardMethodMetadataTests#isAbstractWhenNotAbstractReturnsFalse_7c3073b",
+        "StandardMethodMetadataTests#isAnnotatedWhenDoesNotMatchDirectOrMetaAnnotationReturnsFalse_4d37cc5",
+        "StandardMethodMetadataTests#isAnnotatedWhenMatchesDirectAnnotationReturnsTrue_304dafb",
+        "StandardMethodMetadataTests#isAnnotatedWhenMatchesMetaAnnotationReturnsTrue_49a46d9",
+        "StandardMethodMetadataTests#isFinalWhenFinalReturnsTrue_7a794d4",
+        "StandardMethodMetadataTests#isFinalWhenNonFinalReturnsFalse_30f6d49",
+        "StandardMethodMetadataTests#isOverridableWhenNonOverridableReturnsFalse_2cb24fc",
+        "StandardMethodMetadataTests#isOverridableWhenOverridableReturnsTrue_71851a6",
+        "StandardMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_c462e74",
+        "StandardMethodMetadataTests#isStatusWhenStaticReturnsTrue_1fb733b",
+        "StandardMethodMetadataTests#verifyEquals_60c410f",
+        "StandardMethodMetadataTests#verifyHashCode_2629c04",
+        "StandardMethodMetadataTests#verifyToString_337266a"
+      ],
+      "failedKillingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+      ],
+      "amongSpringCoreResidualMisses": false,
+      "policies": {
+        "base": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#metaAnnotationOverridesUsingStandardAnnotationMetadata_8352518",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "AnnotationMetadataTests#standardAnnotationMetadata_nestedAnnotationsAsMap_false_4adbc65",
+            "StandardAnnotationMetadataTests#getAllAnnotationAttributesReturnsAllAttributes_43c62d4",
+            "StandardAnnotationMetadataTests#getAnnotatedMethodsReturnsMatchingAnnotatedAndMetaAnnotatedMethods_4cbe88b",
+            "StandardAnnotationMetadataTests#getAnnotationAttributesReturnsAttributes_5401082",
+            "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenDoesNotMatchAnyAnnotationReturnsFalse_1fbe07a",
+            "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenMatchesDirectAnnotationReturnsTrue_355754c",
+            "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenMatchesMetaAnnotationReturnsTrue_68478af",
+            "StandardAnnotationMetadataTests#verifyEquals_25ac294",
+            "StandardAnnotationMetadataTests#verifyHashCode_516cfd1",
+            "StandardMethodMetadataTests#getAllAnnotationAttributesReturnsAllAttributes_10d9a88",
+            "StandardMethodMetadataTests#getAnnotationAttributesReturnsAttributes_675550d",
+            "StandardMethodMetadataTests#getAnnotationsReturnsDirectAnnotations_5c841c2",
+            "StandardMethodMetadataTests#getDeclaringClassReturnsDeclaringClass_d5c9108",
+            "StandardMethodMetadataTests#getMethodNameReturnsMethodName_558a146",
+            "StandardMethodMetadataTests#getReturnTypeReturnsReturnType_4691802",
+            "StandardMethodMetadataTests#isAbstractWhenAbstractReturnsTrue_457738c",
+            "StandardMethodMetadataTests#isAbstractWhenNotAbstractReturnsFalse_7c3073b",
+            "StandardMethodMetadataTests#isAnnotatedWhenDoesNotMatchDirectOrMetaAnnotationReturnsFalse_4d37cc5",
+            "StandardMethodMetadataTests#isAnnotatedWhenMatchesDirectAnnotationReturnsTrue_304dafb",
+            "StandardMethodMetadataTests#isAnnotatedWhenMatchesMetaAnnotationReturnsTrue_49a46d9",
+            "StandardMethodMetadataTests#isFinalWhenFinalReturnsTrue_7a794d4",
+            "StandardMethodMetadataTests#isFinalWhenNonFinalReturnsFalse_30f6d49",
+            "StandardMethodMetadataTests#isOverridableWhenNonOverridableReturnsFalse_2cb24fc",
+            "StandardMethodMetadataTests#isOverridableWhenOverridableReturnsTrue_71851a6",
+            "StandardMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_c462e74",
+            "StandardMethodMetadataTests#isStatusWhenStaticReturnsTrue_1fb733b",
+            "StandardMethodMetadataTests#verifyEquals_60c410f",
+            "StandardMethodMetadataTests#verifyHashCode_2629c04",
+            "StandardMethodMetadataTests#verifyToString_337266a"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "constructor": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#metaAnnotationOverridesUsingStandardAnnotationMetadata_8352518",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "AnnotationMetadataTests#standardAnnotationMetadata_nestedAnnotationsAsMap_false_4adbc65",
+            "StandardAnnotationMetadataTests#getAllAnnotationAttributesReturnsAllAttributes_43c62d4",
+            "StandardAnnotationMetadataTests#getAnnotatedMethodsReturnsMatchingAnnotatedAndMetaAnnotatedMethods_4cbe88b",
+            "StandardAnnotationMetadataTests#getAnnotationAttributesReturnsAttributes_5401082",
+            "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenDoesNotMatchAnyAnnotationReturnsFalse_1fbe07a",
+            "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenMatchesDirectAnnotationReturnsTrue_355754c",
+            "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenMatchesMetaAnnotationReturnsTrue_68478af",
+            "StandardAnnotationMetadataTests#verifyEquals_25ac294",
+            "StandardAnnotationMetadataTests#verifyHashCode_516cfd1",
+            "StandardMethodMetadataTests#getAllAnnotationAttributesReturnsAllAttributes_10d9a88",
+            "StandardMethodMetadataTests#getAnnotationAttributesReturnsAttributes_675550d",
+            "StandardMethodMetadataTests#getAnnotationsReturnsDirectAnnotations_5c841c2",
+            "StandardMethodMetadataTests#getDeclaringClassReturnsDeclaringClass_d5c9108",
+            "StandardMethodMetadataTests#getMethodNameReturnsMethodName_558a146",
+            "StandardMethodMetadataTests#getReturnTypeReturnsReturnType_4691802",
+            "StandardMethodMetadataTests#isAbstractWhenAbstractReturnsTrue_457738c",
+            "StandardMethodMetadataTests#isAbstractWhenNotAbstractReturnsFalse_7c3073b",
+            "StandardMethodMetadataTests#isAnnotatedWhenDoesNotMatchDirectOrMetaAnnotationReturnsFalse_4d37cc5",
+            "StandardMethodMetadataTests#isAnnotatedWhenMatchesDirectAnnotationReturnsTrue_304dafb",
+            "StandardMethodMetadataTests#isAnnotatedWhenMatchesMetaAnnotationReturnsTrue_49a46d9",
+            "StandardMethodMetadataTests#isFinalWhenFinalReturnsTrue_7a794d4",
+            "StandardMethodMetadataTests#isFinalWhenNonFinalReturnsFalse_30f6d49",
+            "StandardMethodMetadataTests#isOverridableWhenNonOverridableReturnsFalse_2cb24fc",
+            "StandardMethodMetadataTests#isOverridableWhenOverridableReturnsTrue_71851a6",
+            "StandardMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_c462e74",
+            "StandardMethodMetadataTests#isStatusWhenStaticReturnsTrue_1fb733b",
+            "StandardMethodMetadataTests#verifyEquals_60c410f",
+            "StandardMethodMetadataTests#verifyHashCode_2629c04",
+            "StandardMethodMetadataTests#verifyToString_337266a"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "class": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#metaAnnotationOverridesUsingStandardAnnotationMetadata_8352518",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "AnnotationMetadataTests#standardAnnotationMetadata_nestedAnnotationsAsMap_false_4adbc65",
+            "StandardAnnotationMetadataTests#getAllAnnotationAttributesReturnsAllAttributes_43c62d4",
+            "StandardAnnotationMetadataTests#getAnnotatedMethodsReturnsMatchingAnnotatedAndMetaAnnotatedMethods_4cbe88b",
+            "StandardAnnotationMetadataTests#getAnnotationAttributesReturnsAttributes_5401082",
+            "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenDoesNotMatchAnyAnnotationReturnsFalse_1fbe07a",
+            "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenMatchesDirectAnnotationReturnsTrue_355754c",
+            "StandardAnnotationMetadataTests#hasAnnotatedMethodsWhenMatchesMetaAnnotationReturnsTrue_68478af",
+            "StandardAnnotationMetadataTests#verifyEquals_25ac294",
+            "StandardAnnotationMetadataTests#verifyHashCode_516cfd1",
+            "StandardMethodMetadataTests#getAllAnnotationAttributesReturnsAllAttributes_10d9a88",
+            "StandardMethodMetadataTests#getAnnotationAttributesReturnsAttributes_675550d",
+            "StandardMethodMetadataTests#getAnnotationsReturnsDirectAnnotations_5c841c2",
+            "StandardMethodMetadataTests#getDeclaringClassReturnsDeclaringClass_d5c9108",
+            "StandardMethodMetadataTests#getMethodNameReturnsMethodName_558a146",
+            "StandardMethodMetadataTests#getReturnTypeReturnsReturnType_4691802",
+            "StandardMethodMetadataTests#isAbstractWhenAbstractReturnsTrue_457738c",
+            "StandardMethodMetadataTests#isAbstractWhenNotAbstractReturnsFalse_7c3073b",
+            "StandardMethodMetadataTests#isAnnotatedWhenDoesNotMatchDirectOrMetaAnnotationReturnsFalse_4d37cc5",
+            "StandardMethodMetadataTests#isAnnotatedWhenMatchesDirectAnnotationReturnsTrue_304dafb",
+            "StandardMethodMetadataTests#isAnnotatedWhenMatchesMetaAnnotationReturnsTrue_49a46d9",
+            "StandardMethodMetadataTests#isFinalWhenFinalReturnsTrue_7a794d4",
+            "StandardMethodMetadataTests#isFinalWhenNonFinalReturnsFalse_30f6d49",
+            "StandardMethodMetadataTests#isOverridableWhenNonOverridableReturnsFalse_2cb24fc",
+            "StandardMethodMetadataTests#isOverridableWhenOverridableReturnsTrue_71851a6",
+            "StandardMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_c462e74",
+            "StandardMethodMetadataTests#isStatusWhenStaticReturnsTrue_1fb733b",
+            "StandardMethodMetadataTests#verifyEquals_60c410f",
+            "StandardMethodMetadataTests#verifyHashCode_2629c04",
+            "StandardMethodMetadataTests#verifyToString_337266a"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        }
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.type.StandardClassMetadata|getSuperClassName|()Ljava/lang/String;|101|RemoveConditionalMutator_EQUAL_ELSE|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz:12",
+      "mutatedClass": "org.springframework.core.type.StandardClassMetadata",
+      "mutatedMethod": "getSuperClassName",
+      "killingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+        "StandardAnnotationMetadataTests#getSuperClassNameWhenHasSuperClassReturnsName_d51f6c6"
+      ],
+      "failedKillingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+      ],
+      "amongSpringCoreResidualMisses": false,
+      "policies": {
+        "base": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getSuperClassNameWhenHasSuperClassReturnsName_d51f6c6"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "constructor": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getSuperClassNameWhenHasSuperClassReturnsName_d51f6c6"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "class": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getSuperClassNameWhenHasSuperClassReturnsName_d51f6c6"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        }
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.type.StandardClassMetadata|getSuperClassName|()Ljava/lang/String;|101|EmptyObjectReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz:13",
+      "mutatedClass": "org.springframework.core.type.StandardClassMetadata",
+      "mutatedMethod": "getSuperClassName",
+      "killingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+        "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+        "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+        "StandardAnnotationMetadataTests#getSuperClassNameWhenHasNoSuperClassReturnsNull_33aed54",
+        "StandardAnnotationMetadataTests#getSuperClassNameWhenHasSuperClassReturnsName_d51f6c6"
+      ],
+      "failedKillingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+      ],
+      "amongSpringCoreResidualMisses": false,
+      "policies": {
+        "base": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getSuperClassNameWhenHasNoSuperClassReturnsNull_33aed54",
+            "StandardAnnotationMetadataTests#getSuperClassNameWhenHasSuperClassReturnsName_d51f6c6"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "constructor": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getSuperClassNameWhenHasNoSuperClassReturnsNull_33aed54",
+            "StandardAnnotationMetadataTests#getSuperClassNameWhenHasSuperClassReturnsName_d51f6c6"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "class": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForAnnotation_34d618b",
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#getSuperClassNameWhenHasNoSuperClassReturnsNull_33aed54",
+            "StandardAnnotationMetadataTests#getSuperClassNameWhenHasSuperClassReturnsName_d51f6c6"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        }
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.type.StandardClassMetadata|isAbstract|()Z|75|BooleanTrueReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz:16",
+      "mutatedClass": "org.springframework.core.type.StandardClassMetadata",
+      "mutatedMethod": "isAbstract",
+      "killingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+      ],
+      "failedKillingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+      ],
+      "amongSpringCoreResidualMisses": false,
+      "policies": {
+        "base": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "constructor": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "class": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        }
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.type.StandardClassMetadata|isAnnotation|()Z|70|BooleanTrueReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz:18",
+      "mutatedClass": "org.springframework.core.type.StandardClassMetadata",
+      "mutatedMethod": "isAnnotation",
+      "killingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+        "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+        "StandardAnnotationMetadataTests#isAnnotationWhenNotAnnotationReturnsFalse_1144e28"
+      ],
+      "failedKillingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+      ],
+      "amongSpringCoreResidualMisses": false,
+      "policies": {
+        "base": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#isAnnotationWhenNotAnnotationReturnsFalse_1144e28"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "constructor": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#isAnnotationWhenNotAnnotationReturnsFalse_1144e28"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "class": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForInterface_5012877",
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#isAnnotationWhenNotAnnotationReturnsFalse_1144e28"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        }
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.type.StandardClassMetadata|isInterface|()Z|65|BooleanTrueReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz:26",
+      "mutatedClass": "org.springframework.core.type.StandardClassMetadata",
+      "mutatedMethod": "isInterface",
+      "killingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+        "StandardAnnotationMetadataTests#isInterfaceWhenNotInterfaceReturnsFalse_60afbf4"
+      ],
+      "failedKillingIdentities": [
+        "AnnotationMetadataTests#standardAnnotationMetadata_688ec36"
+      ],
+      "amongSpringCoreResidualMisses": false,
+      "policies": {
+        "base": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#isInterfaceWhenNotInterfaceReturnsFalse_60afbf4"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "constructor": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#isInterfaceWhenNotInterfaceReturnsFalse_60afbf4"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        },
+        "class": {
+          "inclusive": true,
+          "selectedKillingIdentities": [
+            "AnnotationMetadataTests#standardAnnotationMetadataForSubclass_6d18793",
+            "AnnotationMetadataTests#standardAnnotationMetadata_688ec36",
+            "StandardAnnotationMetadataTests#isInterfaceWhenNotInterfaceReturnsFalse_60afbf4"
+          ],
+          "failedTestSelected": true,
+          "anotherKillerSelected": true
+        }
+      }
+    }
+  ],
+  "summary": {
+    "affectedRecords": 10,
+    "k_miss": 0,
+    "k_only": 0,
+    "k_other": 10
+  }
+}

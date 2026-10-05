@@ -1,0 +1,98 @@
+{
+  "commons-lang": {
+    "trials": 1000,
+    "seed": 42,
+    "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
+    "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
+    "monteCarloPctFullPrecision": 2.3727979274611397,
+    "monteCarloPct2dp": 2.37,
+    "monteCarloStdPctFullPrecision": 0.5007926145338188,
+    "analyticalPctFullPrecision": 2.3916284713594913,
+    "analyticalPct2dp": 2.39,
+    "absoluteDifferencePercentagePoints": 0.018830543898351593
+  },
+  "jgrapht": {
+    "trials": 1000,
+    "seed": 42,
+    "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
+    "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
+    "monteCarloPctFullPrecision": 33.51602564102564,
+    "monteCarloPct2dp": 33.52,
+    "monteCarloStdPctFullPrecision": 1.388724102650414,
+    "analyticalPctFullPrecision": 33.57113682212694,
+    "analyticalPct2dp": 33.57,
+    "absoluteDifferencePercentagePoints": 0.05511118110129587
+  },
+  "spring-core": {
+    "trials": 1000,
+    "seed": 42,
+    "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
+    "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
+    "monteCarloPctFullPrecision": 15.456085918854415,
+    "monteCarloPct2dp": 15.46,
+    "monteCarloStdPctFullPrecision": 1.2201255806358744,
+    "analyticalPctFullPrecision": 15.4914710404256,
+    "analyticalPct2dp": 15.49,
+    "absoluteDifferencePercentagePoints": 0.0353851215711849
+  },
+  "petclinic": {
+    "trials": 1000,
+    "seed": 42,
+    "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
+    "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
+    "monteCarloPctFullPrecision": 42.477659574468085,
+    "monteCarloPct2dp": 42.48,
+    "monteCarloStdPctFullPrecision": 3.6341831591215312,
+    "analyticalPctFullPrecision": 42.501909885937536,
+    "analyticalPct2dp": 42.5,
+    "absoluteDifferencePercentagePoints": 0.024250311469451447
+  },
+  "flink": {
+    "trials": 1000,
+    "seed": 42,
+    "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
+    "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
+    "monteCarloPctFullPrecision": 19.906303724928367,
+    "monteCarloPct2dp": 19.91,
+    "monteCarloStdPctFullPrecision": 1.7386027817415728,
+    "analyticalPctFullPrecision": 19.883193721087025,
+    "analyticalPct2dp": 19.88,
+    "absoluteDifferencePercentagePoints": 0.02311000384134232
+  },
+  "spring-security": {
+    "trials": 1000,
+    "seed": 42,
+    "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
+    "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
+    "monteCarloPctFullPrecision": 22.938529411764705,
+    "monteCarloPct2dp": 22.94,
+    "monteCarloStdPctFullPrecision": 1.573156057960863,
+    "analyticalPctFullPrecision": 22.88793177034306,
+    "analyticalPct2dp": 22.89,
+    "absoluteDifferencePercentagePoints": 0.050597641421646244
+  },
+  "hibernate": {
+    "trials": 1000,
+    "seed": 42,
+    "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
+    "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
+    "monteCarloPctFullPrecision": 71.33940149625936,
+    "monteCarloPct2dp": 71.34,
+    "monteCarloStdPctFullPrecision": 1.2484767617134103,
+    "analyticalPctFullPrecision": 71.30474983204753,
+    "analyticalPct2dp": 71.3,
+    "absoluteDifferencePercentagePoints": 0.03465166421182175
+  },
+  "quarkus": {
+    "trials": 1000,
+    "seed": 42,
+    "perRecordSeedFormula": "42 + trial * number_of_records + record_index",
+    "monteCarloImplementation": "Bernoulli draw using the exact uniform-subset intersection probability",
+    "monteCarloPctFullPrecision": 72.8836565096953,
+    "monteCarloPct2dp": 72.88,
+    "monteCarloStdPctFullPrecision": 0.6906413401232533,
+    "analyticalPctFullPrecision": 72.87868844733181,
+    "analyticalPct2dp": 72.88,
+    "absoluteDifferencePercentagePoints": 0.004968062363488457
+  }
+}

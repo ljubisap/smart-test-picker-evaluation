@@ -1,0 +1,92 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=1
+18:38:32 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+18:38:32 PIT >> INFO : Created 1 mutation test units in pre scan
+18:38:32 PIT >> INFO : MINION : Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=1
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:38:32 PIT >> INFO : Sending 36 test classes to minion
+18:38:32 PIT >> INFO : Sent tests to minion
+18:38:37 PIT >> INFO : Calculated coverage in 5 seconds.
+18:38:37 PIT >> INFO : Created 1 mutation test units
+18:39:18 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:40:05 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:40:32 PIT >> WARNING : Minion exited abnormally due to MEMORY_ERROR
+18:40:58 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:41:16 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:41:36 PIT >> WARNING : Minion exited abnormally due to MEMORY_ERROR
+18:41:52 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:42:25 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:42:40 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:43:18 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:44:12 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:44:41 PIT >> WARNING : Minion exited abnormally due to MEMORY_ERROR
+18:45:20 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:45:51 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:46:36 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:46:51 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:47:39 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:47:54 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:48:31 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:49:39 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:50:00 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:50:28 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:50:56 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:51:17 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:51:40 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:52:17 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:52:32 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:53:27 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:53:59 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:54:29 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:54:46 PIT >> WARNING : Minion exited abnormally due to MEMORY_ERROR
+18:55:06 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:55:27 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:55:43 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:56:05 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:56:31 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:56:48 PIT >> WARNING : Minion exited abnormally due to MEMORY_ERROR
+18:57:10 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:57:32 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:58:12 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:58:29 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:58:46 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:59:11 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+18:59:24 PIT >> WARNING : Minion exited abnormally due to MEMORY_ERROR
+18:59:54 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+19:00:25 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+19:01:40 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+19:02:08 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+19:02:27 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+19:02:48 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+19:02:59 PIT >> WARNING : Minion exited abnormally due to MEMORY_ERROR
+19:03:30 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+19:04:08 PIT >> WARNING : Minion exited abnormally due to TIMED_OUT
+19:04:19 PIT >> INFO : Completed in 1547 seconds

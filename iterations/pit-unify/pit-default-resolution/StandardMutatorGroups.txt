@@ -1,0 +1,78 @@
+Compiled from "StandardMutatorGroups.java"
+public class org.pitest.mutationtest.engine.gregor.config.StandardMutatorGroups implements org.pitest.mutationtest.engine.gregor.config.MutatorGroup {
+  public org.pitest.mutationtest.engine.gregor.config.StandardMutatorGroups();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public void register(java.util.Map<java.lang.String, java.util.List<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory>>);
+    Code:
+       0: aload_1
+       1: ldc           #2                  // String DEFAULTS
+       3: aload_0
+       4: aload_1
+       5: bipush        8
+       7: anewarray     #3                  // class java/lang/String
+      10: dup
+      11: iconst_0
+      12: ldc           #4                  // String INVERT_NEGS
+      14: aastore
+      15: dup
+      16: iconst_1
+      17: ldc           #5                  // String MATH
+      19: aastore
+      20: dup
+      21: iconst_2
+      22: ldc           #6                  // String VOID_METHOD_CALLS
+      24: aastore
+      25: dup
+      26: iconst_3
+      27: ldc           #7                  // String REMOVE_CONDITIONALS_ORDER_ELSE
+      29: aastore
+      30: dup
+      31: iconst_4
+      32: ldc           #8                  // String REMOVE_CONDITIONALS_EQUAL_ELSE
+      34: aastore
+      35: dup
+      36: iconst_5
+      37: ldc           #9                  // String CONDITIONALS_BOUNDARY
+      39: aastore
+      40: dup
+      41: bipush        6
+      43: ldc           #10                 // String INCREMENTS
+      45: aastore
+      46: dup
+      47: bipush        7
+      49: ldc           #11                 // String RETURNS
+      51: aastore
+      52: invokevirtual #12                 // Method gather:(Ljava/util/Map;[Ljava/lang/String;)Ljava/util/List;
+      55: invokeinterface #13,  3           // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      60: pop
+      61: aload_1
+      62: ldc           #14                 // String STRONGER
+      64: aload_0
+      65: aload_1
+      66: iconst_4
+      67: anewarray     #3                  // class java/lang/String
+      70: dup
+      71: iconst_0
+      72: ldc           #2                  // String DEFAULTS
+      74: aastore
+      75: dup
+      76: iconst_1
+      77: ldc           #15                 // String EXPERIMENTAL_SWITCH
+      79: aastore
+      80: dup
+      81: iconst_2
+      82: ldc           #16                 // String REMOVE_CONDITIONALS_ORDER_IF
+      84: aastore
+      85: dup
+      86: iconst_3
+      87: ldc           #17                 // String REMOVE_CONDITIONALS_EQUAL_IF
+      89: aastore
+      90: invokevirtual #12                 // Method gather:(Ljava/util/Map;[Ljava/lang/String;)Ljava/util/List;
+      93: invokeinterface #13,  3           // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      98: pop
+      99: return
+}

@@ -1,0 +1,688 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=1
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+[SETTINGS] Adding local Maven repository
+[SETTINGS] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[SETTINGS] Prevent adding the "Gradle Central Plugin Repository" (https://plugins.gradle.org/m2) repository configuration
+[SETTINGS] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[SETTINGS] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[SETTINGS] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[SETTINGS] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[SETTINGS] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[SETTINGS] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[PROJECT][:] Adding local Maven repository
+[PROJECT][:] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:] Adding local Maven repository
+[BUILD SCRIPT][:] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-api] Adding local Maven repository
+[PROJECT][:framework-api] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-api] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-api] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-api] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-api] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:framework-api] Adding local Maven repository
+[BUILD SCRIPT][:framework-api] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:framework-api] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-api] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-api] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-api] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:framework-api] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-bom] Adding local Maven repository
+[PROJECT][:framework-bom] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-bom] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-bom] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-bom] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-bom] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:framework-bom] Adding local Maven repository
+[BUILD SCRIPT][:framework-bom] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:framework-bom] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-bom] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-bom] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-bom] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:framework-bom] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-docs] Adding local Maven repository
+[PROJECT][:framework-docs] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-docs] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-docs] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-docs] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-docs] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:framework-docs] Adding local Maven repository
+[BUILD SCRIPT][:framework-docs] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:framework-docs] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-docs] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-docs] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-docs] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:framework-docs] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-platform] Adding local Maven repository
+[PROJECT][:framework-platform] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-platform] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-platform] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-platform] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:framework-platform] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:framework-platform] Adding local Maven repository
+[BUILD SCRIPT][:framework-platform] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:framework-platform] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-platform] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-platform] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:framework-platform] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:framework-platform] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:integration-tests] Adding local Maven repository
+[PROJECT][:integration-tests] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:integration-tests] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:integration-tests] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:integration-tests] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:integration-tests] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:integration-tests] Adding local Maven repository
+[BUILD SCRIPT][:integration-tests] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:integration-tests] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:integration-tests] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:integration-tests] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:integration-tests] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:integration-tests] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-aop] Adding local Maven repository
+[PROJECT][:spring-aop] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-aop] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-aop] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-aop] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-aop] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-aop] Adding local Maven repository
+[BUILD SCRIPT][:spring-aop] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-aop] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-aop] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-aop] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-aop] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-aop] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-aspects] Adding local Maven repository
+[PROJECT][:spring-aspects] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-aspects] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-aspects] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-aspects] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-aspects] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-aspects] Adding local Maven repository
+[BUILD SCRIPT][:spring-aspects] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-aspects] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-aspects] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-aspects] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-aspects] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-aspects] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-beans] Adding local Maven repository
+[PROJECT][:spring-beans] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-beans] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-beans] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-beans] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-beans] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-beans] Adding local Maven repository
+[BUILD SCRIPT][:spring-beans] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-beans] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-beans] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-beans] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-beans] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-beans] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-context] Adding local Maven repository
+[PROJECT][:spring-context] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-context] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-context] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-context] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-context] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-context] Adding local Maven repository
+[BUILD SCRIPT][:spring-context] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-context] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-context] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-context] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-context] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-context] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-context-indexer] Adding local Maven repository
+[PROJECT][:spring-context-indexer] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-context-indexer] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-context-indexer] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-context-indexer] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-context-indexer] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-context-indexer] Adding local Maven repository
+[BUILD SCRIPT][:spring-context-indexer] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-context-indexer] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-context-indexer] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-context-indexer] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-context-indexer] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-context-indexer] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-context-support] Adding local Maven repository
+[PROJECT][:spring-context-support] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-context-support] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-context-support] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-context-support] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-context-support] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-context-support] Adding local Maven repository
+[BUILD SCRIPT][:spring-context-support] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-context-support] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-context-support] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-context-support] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-context-support] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-context-support] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-core] Adding local Maven repository
+[PROJECT][:spring-core] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-core] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-core] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-core] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-core] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-core] Adding local Maven repository
+[BUILD SCRIPT][:spring-core] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-core] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-core] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-core] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-core] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-core] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-core-test] Adding local Maven repository
+[PROJECT][:spring-core-test] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-core-test] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-core-test] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-core-test] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-core-test] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-core-test] Adding local Maven repository
+[BUILD SCRIPT][:spring-core-test] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-core-test] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-core-test] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-core-test] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-core-test] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-core-test] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-expression] Adding local Maven repository
+[PROJECT][:spring-expression] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-expression] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-expression] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-expression] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-expression] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-expression] Adding local Maven repository
+[BUILD SCRIPT][:spring-expression] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-expression] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-expression] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-expression] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-expression] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-expression] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-instrument] Adding local Maven repository
+[PROJECT][:spring-instrument] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-instrument] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-instrument] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-instrument] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-instrument] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-instrument] Adding local Maven repository
+[BUILD SCRIPT][:spring-instrument] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-instrument] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-instrument] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-instrument] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-instrument] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-instrument] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-jcl] Adding local Maven repository
+[PROJECT][:spring-jcl] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-jcl] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-jcl] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-jcl] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-jcl] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-jcl] Adding local Maven repository
+[BUILD SCRIPT][:spring-jcl] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-jcl] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-jcl] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-jcl] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-jcl] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-jcl] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-jdbc] Adding local Maven repository
+[PROJECT][:spring-jdbc] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-jdbc] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-jdbc] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-jdbc] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-jdbc] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-jdbc] Adding local Maven repository
+[BUILD SCRIPT][:spring-jdbc] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-jdbc] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-jdbc] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-jdbc] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-jdbc] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-jdbc] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-jms] Adding local Maven repository
+[PROJECT][:spring-jms] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-jms] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-jms] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-jms] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-jms] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-jms] Adding local Maven repository
+[BUILD SCRIPT][:spring-jms] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-jms] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-jms] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-jms] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-jms] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-jms] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-messaging] Adding local Maven repository
+[PROJECT][:spring-messaging] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-messaging] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-messaging] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-messaging] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-messaging] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-messaging] Adding local Maven repository
+[BUILD SCRIPT][:spring-messaging] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-messaging] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-messaging] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-messaging] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-messaging] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-messaging] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-orm] Adding local Maven repository
+[PROJECT][:spring-orm] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-orm] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-orm] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-orm] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-orm] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-orm] Adding local Maven repository
+[BUILD SCRIPT][:spring-orm] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-orm] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-orm] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-orm] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-orm] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-orm] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-oxm] Adding local Maven repository
+[PROJECT][:spring-oxm] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-oxm] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-oxm] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-oxm] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-oxm] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-oxm] Adding local Maven repository
+[BUILD SCRIPT][:spring-oxm] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-oxm] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-oxm] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-oxm] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-oxm] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-oxm] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-r2dbc] Adding local Maven repository
+[PROJECT][:spring-r2dbc] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-r2dbc] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-r2dbc] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-r2dbc] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-r2dbc] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-r2dbc] Adding local Maven repository
+[BUILD SCRIPT][:spring-r2dbc] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-r2dbc] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-r2dbc] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-r2dbc] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-r2dbc] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-r2dbc] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-test] Adding local Maven repository
+[PROJECT][:spring-test] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-test] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-test] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-test] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-test] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-test] Adding local Maven repository
+[BUILD SCRIPT][:spring-test] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-test] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-test] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-test] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-test] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-test] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-tx] Adding local Maven repository
+[PROJECT][:spring-tx] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-tx] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-tx] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-tx] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-tx] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-tx] Adding local Maven repository
+[BUILD SCRIPT][:spring-tx] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-tx] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-tx] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-tx] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-tx] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-tx] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-web] Adding local Maven repository
+[PROJECT][:spring-web] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-web] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-web] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-web] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-web] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-web] Adding local Maven repository
+[BUILD SCRIPT][:spring-web] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-web] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-web] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-web] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-web] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-web] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-webflux] Adding local Maven repository
+[PROJECT][:spring-webflux] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-webflux] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-webflux] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-webflux] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-webflux] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-webflux] Adding local Maven repository
+[BUILD SCRIPT][:spring-webflux] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-webflux] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-webflux] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-webflux] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-webflux] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-webflux] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-webmvc] Adding local Maven repository
+[PROJECT][:spring-webmvc] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-webmvc] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-webmvc] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-webmvc] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-webmvc] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-webmvc] Adding local Maven repository
+[BUILD SCRIPT][:spring-webmvc] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-webmvc] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-webmvc] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-webmvc] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-webmvc] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-webmvc] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-websocket] Adding local Maven repository
+[PROJECT][:spring-websocket] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-websocket] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-websocket] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-websocket] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:spring-websocket] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-websocket] Adding local Maven repository
+[BUILD SCRIPT][:spring-websocket] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:spring-websocket] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-websocket] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-websocket] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:spring-websocket] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:spring-websocket] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[SETTINGS] Adding local Maven repository
+[SETTINGS] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[SETTINGS] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[SETTINGS] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[SETTINGS] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[SETTINGS] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[PROJECT][:] Adding local Maven repository
+[PROJECT][:] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[PROJECT][:] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[PROJECT][:] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:] Adding local Maven repository
+[BUILD SCRIPT][:] Prevent adding the "MavenLocal" (file:/Users/D061177/.m2/repository/) repository configuration
+[BUILD SCRIPT][:] Setting the "build-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/build-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:] Setting the "deploy-milestones-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-milestones-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:] Setting the "deploy-snapshots-cx-commerce-maven" (https://common.repositories.cloud.sap/deploy-snapshots-cx-commerce-maven/) repository configuration
+[BUILD SCRIPT][:] Setting the "build-releases" (https://int.repositories.cloud.sap/artifactory/build-releases/) repository configuration
+[BUILD SCRIPT][:] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+
+> Configure project :buildSrc
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__MavenLocal" repository configuration
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__build-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__deploy-milestones-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__deploy-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__build-releases" repository configuration
+[PROJECT][:] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:] Prevent adding the "Gradle Central Plugin Repository" (https://plugins.gradle.org/m2) repository configuration
+
+> Task :buildSrc:compileJava UP-TO-DATE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources UP-TO-DATE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+
+> Configure project :
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__MavenLocal" repository configuration
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__Gradle Central Plugin Repository" repository configuration
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__MavenRepo" repository configuration
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__MavenLocal2" repository configuration
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__build-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__deploy-milestones-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__deploy-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:] Prevent adding the "__plugin_repository__build-releases" repository configuration
+[PROJECT][:] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:framework-api] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-api] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:framework-api] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:framework-api] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:framework-api] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:framework-bom] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-bom] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:framework-bom] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:framework-bom] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:framework-bom] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:framework-docs] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-docs] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:framework-docs] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:framework-docs] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:framework-docs] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:framework-platform] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:framework-platform] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:framework-platform] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:framework-platform] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:framework-platform] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:integration-tests] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:integration-tests] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:integration-tests] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:integration-tests] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:integration-tests] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-aop] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-aop] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-aop] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-aop] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-aop] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-aspects] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-aspects] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-aspects] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-aspects] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-aspects] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-beans] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-beans] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-beans] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-beans] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-beans] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-context] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-context] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-context] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-context] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-context] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-context-indexer] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-context-indexer] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-context-indexer] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-context-indexer] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-context-indexer] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-context-support] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-context-support] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-context-support] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-context-support] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-context-support] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-core] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-core] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-core] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-core] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-core] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-core-test] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-core-test] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-core-test] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-core-test] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-core-test] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-expression] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-expression] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-expression] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-expression] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-expression] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-instrument] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-instrument] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-instrument] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-instrument] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-instrument] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-jcl] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-jcl] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-jcl] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-jcl] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-jcl] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-jdbc] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-jdbc] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-jdbc] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-jdbc] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-jdbc] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-jms] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-jms] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-jms] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-jms] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-jms] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-messaging] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-messaging] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-messaging] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-messaging] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-messaging] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-orm] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-orm] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-orm] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-orm] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-orm] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-oxm] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-oxm] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-oxm] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-oxm] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-oxm] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-r2dbc] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-r2dbc] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-r2dbc] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-r2dbc] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-r2dbc] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-test] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-test] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-test] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-test] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-test] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-tx] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-tx] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-tx] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-tx] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-tx] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-web] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-web] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-web] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-web] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-web] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-webflux] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-webflux] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-webflux] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-webflux] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-webflux] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-webmvc] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-webmvc] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-webmvc] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-webmvc] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-webmvc] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+[PROJECT][:spring-websocket] Prevent adding the "MavenLocal2" (file:/Users/D061177/.m2/repository/) repository configuration
+[PROJECT][:spring-websocket] Prevent adding the "MavenRepo" (https://repo.maven.apache.org/maven2/) repository configuration
+[PROJECT][:spring-websocket] Prevent adding the "maven" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-websocket] Prevent adding the "maven2" (https://repo.spring.io/milestone) repository configuration
+[PROJECT][:spring-websocket] Prevent adding the "maven3" (https://repo.spring.io/snapshot) repository configuration
+
+> Configure project :framework-api
+[BUILD SCRIPT][:framework-api] Prevent adding the "__plugin_repository__MavenLocal" repository configuration
+[BUILD SCRIPT][:framework-api] Prevent adding the "__plugin_repository__Gradle Central Plugin Repository" repository configuration
+[BUILD SCRIPT][:framework-api] Prevent adding the "__plugin_repository__MavenRepo" repository configuration
+[BUILD SCRIPT][:framework-api] Prevent adding the "__plugin_repository__MavenLocal2" repository configuration
+[BUILD SCRIPT][:framework-api] Prevent adding the "__plugin_repository__build-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:framework-api] Prevent adding the "__plugin_repository__deploy-milestones-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:framework-api] Prevent adding the "__plugin_repository__deploy-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:framework-api] Prevent adding the "__plugin_repository__build-releases" repository configuration
+[PROJECT][:framework-api] Prevent adding the "maven4" (https://repo.spring.io/release) repository configuration
+
+> Configure project :framework-docs
+[BUILD SCRIPT][:framework-docs] Prevent adding the "__plugin_repository__MavenLocal" repository configuration
+[BUILD SCRIPT][:framework-docs] Prevent adding the "__plugin_repository__Gradle Central Plugin Repository" repository configuration
+[BUILD SCRIPT][:framework-docs] Prevent adding the "__plugin_repository__MavenRepo" repository configuration
+[BUILD SCRIPT][:framework-docs] Prevent adding the "__plugin_repository__MavenLocal2" repository configuration
+[BUILD SCRIPT][:framework-docs] Prevent adding the "__plugin_repository__build-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:framework-docs] Prevent adding the "__plugin_repository__deploy-milestones-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:framework-docs] Prevent adding the "__plugin_repository__deploy-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:framework-docs] Prevent adding the "__plugin_repository__build-releases" repository configuration
+[PROJECT][:framework-docs] Prevent adding the "maven4" (https://repo.spring.io/release) repository configuration
+[PROJECT][:framework-docs] Prevent adding the "Node.js" (https://nodejs.org/dist) repository configuration
+
+> Configure project :framework-platform
+[BUILD SCRIPT][:framework-platform] Prevent adding the "__plugin_repository__MavenLocal" repository configuration
+[BUILD SCRIPT][:framework-platform] Prevent adding the "__plugin_repository__Gradle Central Plugin Repository" repository configuration
+[BUILD SCRIPT][:framework-platform] Prevent adding the "__plugin_repository__MavenRepo" repository configuration
+[BUILD SCRIPT][:framework-platform] Prevent adding the "__plugin_repository__MavenLocal2" repository configuration
+[BUILD SCRIPT][:framework-platform] Prevent adding the "__plugin_repository__build-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:framework-platform] Prevent adding the "__plugin_repository__deploy-milestones-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:framework-platform] Prevent adding the "__plugin_repository__deploy-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:framework-platform] Prevent adding the "__plugin_repository__build-releases" repository configuration
+
+> Configure project :integration-tests
+[BUILD SCRIPT][:integration-tests] Prevent adding the "__plugin_repository__MavenLocal" repository configuration
+[BUILD SCRIPT][:integration-tests] Prevent adding the "__plugin_repository__Gradle Central Plugin Repository" repository configuration
+[BUILD SCRIPT][:integration-tests] Prevent adding the "__plugin_repository__MavenRepo" repository configuration
+[BUILD SCRIPT][:integration-tests] Prevent adding the "__plugin_repository__MavenLocal2" repository configuration
+[BUILD SCRIPT][:integration-tests] Prevent adding the "__plugin_repository__build-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:integration-tests] Prevent adding the "__plugin_repository__deploy-milestones-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:integration-tests] Prevent adding the "__plugin_repository__deploy-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:integration-tests] Prevent adding the "__plugin_repository__build-releases" repository configuration
+
+> Configure project :spring-context
+[BUILD SCRIPT][:spring-context] Prevent adding the "__plugin_repository__MavenLocal" repository configuration
+[BUILD SCRIPT][:spring-context] Prevent adding the "__plugin_repository__Gradle Central Plugin Repository" repository configuration
+[BUILD SCRIPT][:spring-context] Prevent adding the "__plugin_repository__MavenRepo" repository configuration
+[BUILD SCRIPT][:spring-context] Prevent adding the "__plugin_repository__MavenLocal2" repository configuration
+[BUILD SCRIPT][:spring-context] Prevent adding the "__plugin_repository__build-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:spring-context] Prevent adding the "__plugin_repository__deploy-milestones-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:spring-context] Prevent adding the "__plugin_repository__deploy-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:spring-context] Prevent adding the "__plugin_repository__build-releases" repository configuration
+
+> Configure project :spring-core
+[BUILD SCRIPT][:spring-core] Prevent adding the "__plugin_repository__MavenLocal" repository configuration
+[BUILD SCRIPT][:spring-core] Prevent adding the "__plugin_repository__Gradle Central Plugin Repository" repository configuration
+[BUILD SCRIPT][:spring-core] Prevent adding the "__plugin_repository__MavenRepo" repository configuration
+[BUILD SCRIPT][:spring-core] Prevent adding the "__plugin_repository__MavenLocal2" repository configuration
+[BUILD SCRIPT][:spring-core] Prevent adding the "__plugin_repository__build-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:spring-core] Prevent adding the "__plugin_repository__deploy-milestones-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:spring-core] Prevent adding the "__plugin_repository__deploy-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:spring-core] Prevent adding the "__plugin_repository__build-releases" repository configuration
+[SmartTestPickerPlugin] Plugin applied.
+[SmartTestPicker] selected-tests.json not found — running full suite. Run selectTests first.
+
+> Configure project :spring-oxm
+[BUILD SCRIPT][:spring-oxm] Prevent adding the "__plugin_repository__MavenLocal" repository configuration
+[BUILD SCRIPT][:spring-oxm] Prevent adding the "__plugin_repository__Gradle Central Plugin Repository" repository configuration
+[BUILD SCRIPT][:spring-oxm] Prevent adding the "__plugin_repository__MavenRepo" repository configuration
+[BUILD SCRIPT][:spring-oxm] Prevent adding the "__plugin_repository__MavenLocal2" repository configuration
+[BUILD SCRIPT][:spring-oxm] Prevent adding the "__plugin_repository__build-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:spring-oxm] Prevent adding the "__plugin_repository__deploy-milestones-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:spring-oxm] Prevent adding the "__plugin_repository__deploy-snapshots-cx-commerce-maven" repository configuration
+[BUILD SCRIPT][:spring-oxm] Prevent adding the "__plugin_repository__build-releases" repository configuration
+
+> Task :spring-core:checkKotlinGradlePluginConfigurationErrors
+> Task :spring-core:javapoetRepackJar UP-TO-DATE
+> Task :spring-core:objenesisRepackJar UP-TO-DATE
+> Task :spring-jcl:compileJava UP-TO-DATE
+> Task :spring-core:compileKotlin UP-TO-DATE
+> Task :spring-core:compileJava UP-TO-DATE
+> Task :spring-core:processResources
+> Task :spring-core:classes
+> Task :spring-core:compileJava21Kotlin NO-SOURCE
+> Task :spring-core:compileJava21Java
+> Task :spring-core:processJava21Resources NO-SOURCE
+> Task :spring-core:java21Classes
+> Task :spring-core:jar
+> Task :spring-core:compileTestFixturesKotlin NO-SOURCE
+> Task :spring-core:compileTestFixturesJava UP-TO-DATE
+> Task :spring-core:processTestFixturesResources NO-SOURCE
+> Task :spring-core:testFixturesClasses UP-TO-DATE
+> Task :spring-core:testFixturesJar
+> Task :spring-jcl:processResources
+> Task :spring-jcl:classes
+> Task :spring-jcl:jar
+> Task :spring-core:pitClasspath
+
+[Incubating] Problems report is available at: file:///private/tmp/pit-unify-spring-core-nydoloo0/subject/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 39s
+18 actionable tasks: 8 executed, 10 up-to-date

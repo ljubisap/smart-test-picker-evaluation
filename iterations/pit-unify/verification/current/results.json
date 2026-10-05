@@ -1,0 +1,140 @@
+{
+  "allPassed": true,
+  "commands": [
+    {
+      "name": "unittest",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "analysis/tests"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "OK",
+      "elapsedSeconds": 0.45130229200000005,
+      "log": "iterations/pit-unify/verification/current/unittest.log"
+    },
+    {
+      "name": "failure_modes",
+      "command": [
+        "python3",
+        "analysis/analyze_failure_modes.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: all outputs match committed artifacts",
+      "elapsedSeconds": 260.853904667,
+      "log": "iterations/pit-unify/verification/current/failure_modes.log"
+    },
+    {
+      "name": "selector_equivalence",
+      "command": [
+        "python3",
+        "analysis/verify_selector_equivalence.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: historical evaluator/model agreement matches committed artifact",
+      "elapsedSeconds": 50.59833720800003,
+      "log": "iterations/pit-unify/verification/current/selector_equivalence.log"
+    },
+    {
+      "name": "freeze_artifacts",
+      "command": [
+        "python3",
+        "analysis/freeze_artifacts.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "verified spring-security: 25 artifacts",
+      "elapsedSeconds": 0.3044503749999876,
+      "log": "iterations/pit-unify/verification/current/freeze_artifacts.log"
+    },
+    {
+      "name": "recollection",
+      "command": [
+        "python3",
+        "analysis/verify_recollection.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: recollection_comparison.json (1837 mutations, 187 selected-set differences, 0 safety flips)",
+      "elapsedSeconds": 64.22587725,
+      "log": "iterations/pit-unify/verification/current/recollection.log"
+    },
+    {
+      "name": "b2",
+      "command": [
+        "python3",
+        "analysis/v14_4_rederivation/verify_b2.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: B2 base/constructor/class summaries and selected-set IDs match frozen inputs",
+      "elapsedSeconds": 133.40029033300004,
+      "log": "iterations/pit-unify/verification/current/b2.log"
+    },
+    {
+      "name": "v14_6",
+      "command": [
+        "python3",
+        "analysis/v14_6/verify_v14_6.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: v14.6 outcomes, summaries, random baseline, intervals, mitigation, taxonomy, and selected-set IDs match recollected maps and frozen PIT inputs",
+      "elapsedSeconds": 359.50464237499995,
+      "log": "iterations/pit-unify/verification/current/v14_6.log"
+    },
+    {
+      "name": "v14_7",
+      "command": [
+        "python3",
+        "analysis/v14_7/verify_v14_7.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "VERIFY PASSED: v14.7 spring-core sensitivity, worked example, and eight-subject test-segment scan match inputs",
+      "elapsedSeconds": 265.56863387499993,
+      "log": "iterations/pit-unify/verification/current/v14_7.log"
+    },
+    {
+      "name": "v14_8",
+      "command": [
+        "python3",
+        "analysis/v14_8/verify_v14_8.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "PASS: v14.8 evidence verified; failures=3; eligible killer records=10",
+      "elapsedSeconds": 0.4783319160001156,
+      "log": "iterations/pit-unify/verification/current/v14_8.log"
+    },
+    {
+      "name": "v14_9",
+      "command": [
+        "python3",
+        "analysis/v14_9/verify_v14_9.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "PASS: v14.9 failed-killer impact verified; k_miss=0, k_only=0, k_other=10",
+      "elapsedSeconds": 0.2215744589998394,
+      "log": "iterations/pit-unify/verification/current/v14_9.log"
+    },
+    {
+      "name": "v15",
+      "command": [
+        "python3",
+        "analysis/v15/verify_v15.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "lastNonEmptyLine": "PASS: v15 succeeding-tests audit verified; f=0, u_tests=1139, unresolved=0",
+      "elapsedSeconds": 4.658341374999964,
+      "log": "iterations/pit-unify/verification/current/v15.log"
+    }
+  ]
+}

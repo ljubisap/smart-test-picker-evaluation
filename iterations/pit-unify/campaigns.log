@@ -1,0 +1,69 @@
+START jgrapht
+[18:30:28] === PIT Evaluation Run  --  20 classes ===
+Preparing clean JGraphT test classes with the PIT profile...
+[18:30:50] [1/20] Starting: org.jgrapht.Graphs (LOC=614, tests=org.jgrapht.GraphsTest,org.jgrapht.GraphTestsTest,org.jgrapht.GraphMetricsTest)
+[18:31:03] [1/20] DONE: org.jgrapht.Graphs (13s, 60 mutations)
+[18:31:03] [2/20] Starting: org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder (LOC=138, tests=org.jgrapht.alg.clique.*)
+[18:31:11] [2/20] DONE: org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder (7s, 13 mutations)
+[18:31:11] [3/20] Starting: org.jgrapht.alg.clustering.LabelPropagationClustering (LOC=348, tests=org.jgrapht.alg.clustering.*)
+[18:31:17] [3/20] DONE: org.jgrapht.alg.clustering.LabelPropagationClustering (6s, 4 mutations)
+[18:31:17] [4/20] Starting: org.jgrapht.alg.color.GreedyColoring (LOC=106, tests=org.jgrapht.alg.color.*)
+[18:31:25] [4/20] DONE: org.jgrapht.alg.color.GreedyColoring (8s, 8 mutations)
+[18:31:25] [5/20] Starting: org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector (LOC=258, tests=org.jgrapht.alg.connectivity.*)
+[18:31:43] [5/20] DONE: org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector (18s, 18 mutations)
+[18:31:43] --- CHECKPOINT 5/20: OK=5, FAILED=0, TIMEOUT=0 ---
+[18:31:43] [6/20] Starting: org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles (LOC=274, tests=org.jgrapht.alg.cycle.*)
+[18:32:06] [6/20] DONE: org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles (23s, 34 mutations)
+[18:32:06] [7/20] Starting: org.jgrapht.alg.drawing.model.ListenableLayoutModel2D (LOC=131, tests=org.jgrapht.alg.drawing.model.*)
+[18:32:13] [7/20] DONE: org.jgrapht.alg.drawing.model.ListenableLayoutModel2D (7s, 15 mutations)
+[18:32:13] [8/20] Starting: org.jgrapht.alg.flow.PushRelabelMFImpl (LOC=553, tests=org.jgrapht.alg.flow.*)
+[18:35:54] [8/20] DONE: org.jgrapht.alg.flow.PushRelabelMFImpl (221s, 86 mutations)
+[18:35:54] [9/20] Starting: org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector (LOC=165, tests=org.jgrapht.alg.isomorphism.*)
+[18:36:07] [9/20] DONE: org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector (13s, 21 mutations)
+[18:36:07] [10/20] Starting: org.jgrapht.alg.lca.BinaryLiftingLCAFinder (LOC=252, tests=org.jgrapht.alg.lca.*)
+[18:38:20] [10/20] DONE: org.jgrapht.alg.lca.BinaryLiftingLCAFinder (133s, 47 mutations)
+[18:38:20] --- CHECKPOINT 10/20: OK=10, FAILED=0, TIMEOUT=0 ---
+[18:38:20] [11/20] Starting: org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction (LOC=83, tests=org.jgrapht.alg.linkprediction.*)
+[18:38:27] [11/20] DONE: org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction (7s, 5 mutations)
+[18:38:27] [12/20] Starting: org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater (LOC=1162, tests=org.jgrapht.alg.matching.blossom.v5.*)
+[19:04:21] [12/20] DONE: org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater (1553s, 245 mutations)
+[19:04:21] [13/20] Starting: org.jgrapht.alg.scoring.ClosenessCentrality (LOC=201, tests=org.jgrapht.alg.scoring.*)
+[19:05:24] [13/20] DONE: org.jgrapht.alg.scoring.ClosenessCentrality (63s, 19 mutations)
+[19:05:24] [14/20] Starting: org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation (LOC=1310, tests=org.jgrapht.alg.shortestpath.*)
+[19:07:04] [14/20] DONE: org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation (100s, 37 mutations)
+[19:07:04] [15/20] Starting: org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree (LOC=358, tests=org.jgrapht.alg.spanning.*)
+[19:18:11] [15/20] DONE: org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree (667s, 45 mutations)
+[19:18:11] --- CHECKPOINT 15/20: OK=15, FAILED=0, TIMEOUT=0 ---
+[19:18:11] [16/20] Starting: org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP (LOC=139, tests=org.jgrapht.alg.tour.*)
+[19:18:31] [16/20] DONE: org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP (20s, 10 mutations)
+[19:18:31] [17/20] Starting: org.jgrapht.alg.util.UnorderedPair (LOC=91, tests=org.jgrapht.alg.util.*)
+[19:18:39] [17/20] DONE: org.jgrapht.alg.util.UnorderedPair (8s, 19 mutations)
+[19:18:39] [18/20] Starting: org.jgrapht.alg.vertexcover.RecursiveExactVCImpl (LOC=339, tests=org.jgrapht.alg.vertexcover.*)
+[19:19:45] [18/20] DONE: org.jgrapht.alg.vertexcover.RecursiveExactVCImpl (66s, 47 mutations)
+[19:19:45] [19/20] Starting: org.jgrapht.generate.netgen.Distributor (LOC=217, tests=org.jgrapht.generate.netgen.*)
+[19:20:06] [19/20] DONE: org.jgrapht.generate.netgen.Distributor (21s, 22 mutations)
+[19:20:06] [20/20] Starting: org.jgrapht.graph.specifics.UndirectedSpecifics (LOC=294, tests=org.jgrapht.graph.*)
+[19:20:49] [20/20] DONE: org.jgrapht.graph.specifics.UndirectedSpecifics (42s, 48 mutations)
+[19:20:49] --- CHECKPOINT 20/20: OK=20, FAILED=0, TIMEOUT=0 ---
+[19:20:49] === DONE: OK=20, FAILED=0, TIMEOUT=0, mutations=803 ===
+DONE jgrapht 0 3020.579491958
+START spring-core
+Running PIT for 22 classes...
+Project: /private/tmp/pit-unify-spring-core-nydoloo0/subject
+Results: /Users/D061177/work/issta/smart-test-picker-evaluation/iterations/pit-unify/pit/spring-core
+
+  Running PIT for org.springframework.core.SerializableTypeWrapper (targetTests=org.springframework.core.*)...
+    FAILED: exit code 1 (16s)
+  Running PIT for org.springframework.core.annotation.RepeatableContainers (targetTests=org.springframework.core.annotation.*)...
+    FAILED: exit code 1 (4s)
+  Running PIT for org.springframework.core.codec.AbstractDataBufferDecoder (targetTests=org.springframework.core.codec.*)...
+    FAILED: exit code 1 (1s)
+  Running PIT for org.springframework.core.convert.TypeDescriptor (targetTests=org.springframework.core.convert.*)...
+    FAILED: exit code 1 (2s)
+  Running PIT for org.springframework.core.convert.converter.ConvertingComparator (targetTests=org.springframework.core.convert.*)...
+    FAILED: exit code 1 (2s)
+  Running PIT for org.springframework.core.convert.support.GenericConversionService (targetTests=org.springframework.core.convert.*)...
+    FAILED: exit code 1 (2s)
+  Running PIT for org.springframework.core.env.PropertySource (targetTests=org.springframework.core.env.*)...
+    FAILED: exit code 1 (3s)
+  Running PIT for org.springframework.core.io.AbstractResource (targetTests=org.springframework.core.io.*)...

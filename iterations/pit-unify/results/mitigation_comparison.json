@@ -1,0 +1,235 @@
+{
+  "projects": {
+    "commons-lang": {
+      "base": {
+        "eligible": 772,
+        "inclusive": 771,
+        "inclusivenessPctFullPrecision": 99.87046632124353,
+        "inclusivenessPct2dp": 99.87,
+        "meanSelectedFullPrecision": 22.010362694300518,
+        "meanSelected2dp": 22.01,
+        "selectedFractionPctFullPrecision": 0.46860469862253606,
+        "selectedFractionPct2dp": 0.47,
+        "reductionPctFullPrecision": 99.53139530137746,
+        "reductionPct2dp": 99.53
+      },
+      "constructor": {
+        "eligible": 772,
+        "inclusive": 771,
+        "inclusivenessPctFullPrecision": 99.87046632124353,
+        "inclusivenessPct2dp": 99.87,
+        "meanSelectedFullPrecision": 24.80699481865285,
+        "meanSelected2dp": 24.81,
+        "selectedFractionPctFullPrecision": 0.5281455145550958,
+        "selectedFractionPct2dp": 0.53,
+        "reductionPctFullPrecision": 99.47185448544491,
+        "reductionPct2dp": 99.47
+      },
+      "additionalRecovered": 0
+    },
+    "jgrapht": {
+      "base": {
+        "eligible": 468,
+        "inclusive": 467,
+        "inclusivenessPctFullPrecision": 99.78632478632478,
+        "inclusivenessPct2dp": 99.79,
+        "meanSelectedFullPrecision": 88.1517094017094,
+        "meanSelected2dp": 88.15,
+        "selectedFractionPctFullPrecision": 3.8177440191299,
+        "selectedFractionPct2dp": 3.82,
+        "reductionPctFullPrecision": 96.1822559808701,
+        "reductionPct2dp": 96.18
+      },
+      "constructor": {
+        "eligible": 468,
+        "inclusive": 468,
+        "inclusivenessPctFullPrecision": 100.0,
+        "inclusivenessPct2dp": 100.0,
+        "meanSelectedFullPrecision": 97.48717948717949,
+        "meanSelected2dp": 97.49,
+        "selectedFractionPctFullPrecision": 4.222051948340385,
+        "selectedFractionPct2dp": 4.22,
+        "reductionPctFullPrecision": 95.77794805165962,
+        "reductionPct2dp": 95.78
+      },
+      "additionalRecovered": 1
+    },
+    "spring-core": {
+      "base": {
+        "eligible": 419,
+        "inclusive": 408,
+        "inclusivenessPctFullPrecision": 97.37470167064438,
+        "inclusivenessPct2dp": 97.37,
+        "meanSelectedFullPrecision": 96.0071599045346,
+        "meanSelected2dp": 96.01,
+        "selectedFractionPctFullPrecision": 2.639009343170275,
+        "selectedFractionPct2dp": 2.64,
+        "reductionPctFullPrecision": 97.36099065682973,
+        "reductionPct2dp": 97.36
+      },
+      "constructor": {
+        "eligible": 419,
+        "inclusive": 412,
+        "inclusivenessPctFullPrecision": 98.32935560859188,
+        "inclusivenessPct2dp": 98.33,
+        "meanSelectedFullPrecision": 100.28400954653938,
+        "meanSelected2dp": 100.28,
+        "selectedFractionPctFullPrecision": 2.7565698061170805,
+        "selectedFractionPct2dp": 2.76,
+        "reductionPctFullPrecision": 97.24343019388292,
+        "reductionPct2dp": 97.24
+      },
+      "additionalRecovered": 4
+    },
+    "petclinic": {
+      "base": {
+        "eligible": 94,
+        "inclusive": 94,
+        "inclusivenessPctFullPrecision": 100.0,
+        "inclusivenessPct2dp": 100.0,
+        "meanSelectedFullPrecision": 13.72340425531915,
+        "meanSelected2dp": 13.72,
+        "selectedFractionPctFullPrecision": 24.50607902735562,
+        "selectedFractionPct2dp": 24.51,
+        "reductionPctFullPrecision": 75.49392097264437,
+        "reductionPct2dp": 75.49
+      },
+      "constructor": {
+        "eligible": 94,
+        "inclusive": 94,
+        "inclusivenessPctFullPrecision": 100.0,
+        "inclusivenessPct2dp": 100.0,
+        "meanSelectedFullPrecision": 15.712765957446809,
+        "meanSelected2dp": 15.71,
+        "selectedFractionPctFullPrecision": 28.05851063829787,
+        "selectedFractionPct2dp": 28.06,
+        "reductionPctFullPrecision": 71.94148936170212,
+        "reductionPct2dp": 71.94
+      },
+      "additionalRecovered": 0
+    },
+    "flink": {
+      "base": {
+        "eligible": 349,
+        "inclusive": 349,
+        "inclusivenessPctFullPrecision": 100.0,
+        "inclusivenessPct2dp": 100.0,
+        "meanSelectedFullPrecision": 37.22636103151862,
+        "meanSelected2dp": 37.23,
+        "selectedFractionPctFullPrecision": 5.597949027296034,
+        "selectedFractionPct2dp": 5.6,
+        "reductionPctFullPrecision": 94.40205097270396,
+        "reductionPct2dp": 94.4
+      },
+      "constructor": {
+        "eligible": 349,
+        "inclusive": 349,
+        "inclusivenessPctFullPrecision": 100.0,
+        "inclusivenessPct2dp": 100.0,
+        "meanSelectedFullPrecision": 39.36962750716332,
+        "meanSelected2dp": 39.37,
+        "selectedFractionPctFullPrecision": 5.920244737919297,
+        "selectedFractionPct2dp": 5.92,
+        "reductionPctFullPrecision": 94.07975526208071,
+        "reductionPct2dp": 94.08
+      },
+      "additionalRecovered": 0
+    },
+    "spring-security": {
+      "base": {
+        "eligible": 340,
+        "inclusive": 335,
+        "inclusivenessPctFullPrecision": 98.52941176470588,
+        "inclusivenessPct2dp": 98.53,
+        "meanSelectedFullPrecision": 59.858823529411765,
+        "meanSelected2dp": 59.86,
+        "selectedFractionPctFullPrecision": 4.1568627450980395,
+        "selectedFractionPct2dp": 4.16,
+        "reductionPctFullPrecision": 95.84313725490196,
+        "reductionPct2dp": 95.84
+      },
+      "constructor": {
+        "eligible": 340,
+        "inclusive": 337,
+        "inclusivenessPctFullPrecision": 99.11764705882354,
+        "inclusivenessPct2dp": 99.12,
+        "meanSelectedFullPrecision": 60.338235294117645,
+        "meanSelected2dp": 60.34,
+        "selectedFractionPctFullPrecision": 4.1901552287581705,
+        "selectedFractionPct2dp": 4.19,
+        "reductionPctFullPrecision": 95.80984477124183,
+        "reductionPct2dp": 95.81
+      },
+      "additionalRecovered": 2
+    },
+    "hibernate": {
+      "base": {
+        "eligible": 401,
+        "inclusive": 400,
+        "inclusivenessPctFullPrecision": 99.75062344139651,
+        "inclusivenessPct2dp": 99.75,
+        "meanSelectedFullPrecision": 297.24688279301745,
+        "meanSelected2dp": 297.25,
+        "selectedFractionPctFullPrecision": 27.047032101275473,
+        "selectedFractionPct2dp": 27.05,
+        "reductionPctFullPrecision": 72.95296789872452,
+        "reductionPct2dp": 72.95
+      },
+      "constructor": {
+        "eligible": 401,
+        "inclusive": 400,
+        "inclusivenessPctFullPrecision": 99.75062344139651,
+        "inclusivenessPct2dp": 99.75,
+        "meanSelectedFullPrecision": 303.1571072319202,
+        "meanSelected2dp": 303.16,
+        "selectedFractionPctFullPrecision": 27.5848141248335,
+        "selectedFractionPct2dp": 27.58,
+        "reductionPctFullPrecision": 72.4151858751665,
+        "reductionPct2dp": 72.42
+      },
+      "additionalRecovered": 0
+    },
+    "quarkus": {
+      "base": {
+        "eligible": 1083,
+        "inclusive": 1083,
+        "inclusivenessPctFullPrecision": 100.0,
+        "inclusivenessPct2dp": 100.0,
+        "meanSelectedFullPrecision": 269.65189289012005,
+        "meanSelected2dp": 269.65,
+        "selectedFractionPctFullPrecision": 39.42279135820469,
+        "selectedFractionPct2dp": 39.42,
+        "reductionPctFullPrecision": 60.57720864179531,
+        "reductionPct2dp": 60.58
+      },
+      "constructor": {
+        "eligible": 1083,
+        "inclusive": 1083,
+        "inclusivenessPctFullPrecision": 100.0,
+        "inclusivenessPct2dp": 100.0,
+        "meanSelectedFullPrecision": 392.59926131117265,
+        "meanSelected2dp": 392.6,
+        "selectedFractionPctFullPrecision": 57.39755282327086,
+        "selectedFractionPct2dp": 57.4,
+        "reductionPctFullPrecision": 42.60244717672914,
+        "reductionPct2dp": 42.6
+      },
+      "additionalRecovered": 0
+    }
+  },
+  "aggregate": {
+    "base": {
+      "eligible": 3926,
+      "inclusive": 3907,
+      "inclusivenessPctFullPrecision": 99.51604686704025,
+      "inclusivenessPct2dp": 99.52
+    },
+    "constructor": {
+      "eligible": 3926,
+      "inclusive": 3914,
+      "inclusivenessPctFullPrecision": 99.69434538970962,
+      "inclusivenessPct2dp": 99.69
+    },
+    "additionalRecovered": 7
+  }
+}

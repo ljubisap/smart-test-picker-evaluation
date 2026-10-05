@@ -1,0 +1,32 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=1
+21:18:57 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+21:18:58 PIT >> INFO : Created 1 mutation test units in pre scan
+21:18:58 PIT >> INFO : MINION : Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=1
+21:18:58 PIT >> INFO : Sending 11 test classes to minion
+21:18:58 PIT >> INFO : Sent tests to minion
+21:18:59 PIT >> INFO : MINION : WARNING: A Java agent has been loaded dynamically (/Users/D061177/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.15/b4cc9d88d5de562bf75b3a54ab436ad01b3f72d/byte-buddy-agent-1.14.15.jar)
+21:18:59 PIT >> INFO : MINION : WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+21:18:59 PIT >> INFO : MINION : WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+21:18:59 PIT >> INFO : MINION : WARNING: Dynamic loading of agents will be disallowed by default in a future release
+21:18:59 PIT >> INFO : MINION : OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+21:18:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+21:18:59 PIT >> INFO : Calculated coverage in 1 seconds.
+21:18:59 PIT >> INFO : Created 1 mutation test units
+21:19:00 PIT >> INFO : Completed in 2 seconds
