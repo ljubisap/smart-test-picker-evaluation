@@ -1,0 +1,670 @@
+{
+  "subject": "jgrapht",
+  "classScope": null,
+  "recordedRecords": 803,
+  "freshRecords": 803,
+  "matchingRecords": 803,
+  "differences": [],
+  "unresolvedRecords": [],
+  "repeatedSemanticIdentities": [
+    {
+      "semanticIdentity": [
+        "org.jgrapht.Graphs",
+        "addAllEdges",
+        "(Lorg/jgrapht/Graph;Lorg/jgrapht/Graph;Ljava/util/Collection;)Z",
+        229,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.Graphs",
+        "addAllEdges",
+        "(Lorg/jgrapht/Graph;Lorg/jgrapht/Graph;Ljava/util/Collection;)Z",
+        239,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.Graphs",
+        "addGraphReversed",
+        "(Lorg/jgrapht/Graph;Lorg/jgrapht/Graph;)V",
+        194,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.Graphs",
+        "testIncidence",
+        "(Lorg/jgrapht/Graph;Ljava/lang/Object;Ljava/lang/Object;)Z",
+        410,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector",
+        "dfsVisit",
+        "(Lorg/jgrapht/Graph;Lorg/jgrapht/alg/connectivity/KosarajuStrongConnectivityInspector$VertexData;Ljava/util/Set;)V",
+        149,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.flow.PushRelabelMFImpl",
+        "bfs",
+        "(Ljava/util/Queue;[Z)V",
+        350,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.flow.PushRelabelMFImpl",
+        "calculateMaximumFlow",
+        "(Ljava/lang/Object;Ljava/lang/Object;)D",
+        238,
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        null,
+        null,
+        "Replaced double addition with subtraction"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.flow.PushRelabelMFImpl",
+        "enqueue",
+        "(Lorg/jgrapht/alg/flow/PushRelabelMFImpl$VertexExtension;)V",
+        134,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.flow.PushRelabelMFImpl",
+        "gapHeuristic",
+        "(I)V",
+        294,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.flow.PushRelabelMFImpl",
+        "gapHeuristic",
+        "(I)V",
+        294,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.flow.PushRelabelMFImpl",
+        "push",
+        "(Lorg/jgrapht/alg/flow/MaximumFlowAlgorithmBase$AnnotatedFlowEdge;)V",
+        278,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.flow.PushRelabelMFImpl",
+        "push",
+        "(Lorg/jgrapht/alg/flow/MaximumFlowAlgorithmBase$AnnotatedFlowEdge;)V",
+        278,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.flow.PushRelabelMFImpl",
+        "relabel",
+        "(Lorg/jgrapht/alg/flow/PushRelabelMFImpl$VertexExtension;)V",
+        332,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.flow.PushRelabelMFImpl",
+        "relabel",
+        "(Lorg/jgrapht/alg/flow/PushRelabelMFImpl$VertexExtension;)V",
+        332,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector",
+        "isomorphismExists",
+        "()Z",
+        133,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector",
+        "isomorphismExists",
+        "()Z",
+        136,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+        "dfs",
+        "(II)V",
+        148,
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        null,
+        null,
+        "Replaced integer subtraction with addition"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+        "getLCA",
+        "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+        218,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+        "getLCA",
+        "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+        228,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+        "isAncestor",
+        "(II)Z",
+        196,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+        "isAncestor",
+        "(II)Z",
+        196,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction",
+        "predict",
+        "(Ljava/lang/Object;Ljava/lang/Object;)D",
+        69,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "augmentBranch",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;)V",
+        791,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "augmentBranch",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;)V",
+        806,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "expand",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Z)V",
+        380,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "expandMinusNode",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;)V",
+        715,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "expandPlusNode",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;)Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;",
+        646,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "grow",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;ZZ)V",
+        143,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "processPlusNodeGrow",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;ZZ)V",
+        488,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "processPlusNodeGrow",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;ZZ)V",
+        500,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "shrink",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;Z)Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;",
+        277,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "shrinkPlusNode",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;)Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;",
+        953,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.scoring.ClosenessCentrality",
+        "getShortestPathAlgorithm",
+        "()Lorg/jgrapht/alg/interfaces/ShortestPathAlgorithm;",
+        144,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+        "workerSegmentEnd",
+        "(III)I",
+        1308,
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        null,
+        null,
+        "Replaced integer addition with subtraction"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree",
+        "calculateClosestVertex",
+        "(Ljava/lang/Object;Ljava/util/Map;Ljava/util/Map;)Ljava/lang/Object;",
+        317,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.util.UnorderedPair",
+        "equals",
+        "(Ljava/lang/Object;)Z",
+        65,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.util.UnorderedPair",
+        "equals",
+        "(Ljava/lang/Object;)Z",
+        66,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.util.UnorderedPair",
+        "hashCode",
+        "()I",
+        74,
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        null,
+        null,
+        "Replaced integer addition with subtraction"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.util.UnorderedPair",
+        "hashCode",
+        "()I",
+        74,
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        null,
+        null,
+        "Replaced integer multiplication with division"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+        "calculateCoverRecursively",
+        "(ILjava/util/BitSet;D)Lorg/jgrapht/alg/vertexcover/RecursiveExactVCImpl$BitSetCover;",
+        171,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+        "calculateCoverRecursively",
+        "(ILjava/util/BitSet;D)Lorg/jgrapht/alg/vertexcover/RecursiveExactVCImpl$BitSetCover;",
+        171,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+        "getVertexCover",
+        "()Lorg/jgrapht/alg/interfaces/VertexCoverAlgorithm$VertexCover;",
+        152,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+        "getVertexCover",
+        "()Lorg/jgrapht/alg/interfaces/VertexCoverAlgorithm$VertexCover;",
+        152,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.generate.netgen.Distributor",
+        "getDistribution",
+        "(Ljava/util/List;I)Ljava/util/List;",
+        209,
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        null,
+        null,
+        "Replaced integer addition with subtraction"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.graph.specifics.UndirectedSpecifics",
+        "getAllEdges",
+        "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;",
+        97,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.graph.specifics.UndirectedSpecifics",
+        "getEdge",
+        "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+        118,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.graph.specifics.UndirectedSpecifics",
+        "isEqualsStraightOrInverted",
+        "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z",
+        139,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    }
+  ],
+  "fullMatch": true
+}

@@ -1,0 +1,250 @@
+{
+  "subject": "spring-security",
+  "classScope": null,
+  "recordedRecords": 520,
+  "freshRecords": 520,
+  "matchingRecords": 520,
+  "differences": [],
+  "unresolvedRecords": [],
+  "repeatedSemanticIdentities": [
+    {
+      "semanticIdentity": [
+        "org.springframework.security.access.expression.SecurityExpressionRoot",
+        "isGranted",
+        "(Lorg/springframework/security/authorization/AuthorizationManager;)Z",
+        206,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+        "buildRolesReachableInOneOrMoreStepsMap",
+        "(Ljava/util/Map;)Ljava/util/Map;",
+        217,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+        "getReachableGrantedAuthorities",
+        "(Ljava/util/Collection;)Ljava/util/Collection;",
+        137,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.authentication.ProviderManager",
+        "authenticate",
+        "(Lorg/springframework/security/core/Authentication;)Lorg/springframework/security/core/Authentication;",
+        212,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.authentication.ProviderManager",
+        "authenticate",
+        "(Lorg/springframework/security/core/Authentication;)Lorg/springframework/security/core/Authentication;",
+        230,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.authentication.ProviderManager",
+        "checkState",
+        "()V",
+        139,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.authentication.ProviderManager",
+        "copyDetails",
+        "(Lorg/springframework/security/core/Authentication;Lorg/springframework/security/core/Authentication;)V",
+        281,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.authorization.AuthorityAuthorizationManager",
+        "toNamedRolesArray",
+        "(Ljava/lang/String;[Ljava/lang/String;)[Ljava/lang/String;",
+        131,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor",
+        "attemptAuthorization",
+        "(Lorg/aopalliance/intercept/MethodInvocation;)Ljava/lang/Object;",
+        260,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.converter.RsaKeyConverters",
+        "isNotPkcs8Wrapper",
+        "(Ljava/lang/String;)Z",
+        162,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.converter.RsaKeyConverters",
+        "lambda$pkcs8$0",
+        "(Ljava/security/KeyFactory;Ljava/io/InputStream;)Ljava/security/interfaces/RSAPrivateKey;",
+        86,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner",
+        "findClosestClassAnnotations",
+        "(Ljava/lang/Class;Ljava/util/Set;)Ljava/util/List;",
+        247,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner",
+        "findClosestMethodAnnotations",
+        "(Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/util/Set;)Ljava/util/List;",
+        227,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner",
+        "findClosestParameterAnnotations",
+        "(Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/lang/reflect/Parameter;Ljava/util/Set;)Ljava/util/List;",
+        166,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.core.session.SessionRegistryImpl",
+        "getAllSessions",
+        "(Ljava/lang/Object;Z)Ljava/util/List;",
+        89,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.core.token.KeyBasedPersistenceTokenService",
+        "verifyToken",
+        "(Ljava/lang/String;)Lorg/springframework/security/core/token/Token;",
+        108,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.security.core.userdetails.User",
+        "<init>",
+        "(Ljava/lang/String;Ljava/lang/String;ZZZZLjava/util/Collection;)V",
+        110,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    }
+  ],
+  "fullMatch": true
+}

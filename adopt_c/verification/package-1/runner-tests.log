@@ -1,0 +1,12 @@
+.......Applied build-only adapter: tmpzem33agg/adapter.json
+Restored original build files for adapter: tmpzem33agg
+........PIT output: /var/folders/b_/kfwtjnkn3b786hkqn6dxb56m0000gn/T/tmporukpvt0
+Compare: python3 rerun/compare_pit.py --subject hibernate --pit-dir /var/folders/b_/kfwtjnkn3b786hkqn6dxb56m0000gn/T/tmporukpvt0
+Classpath task: native pitClasspath (no registration)
+Classpath task: native pitClasspath (no registration)
+..Classpath task: guarded adapter
+..
+----------------------------------------------------------------------
+Ran 19 tests in 3.761s
+
+OK

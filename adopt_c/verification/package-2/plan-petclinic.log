@@ -1,0 +1,100 @@
+{
+  "configuration": {
+    "subject": "petclinic",
+    "sourceRevision": "cbb884f01f7fef663fcff256e303d967494a4f8b",
+    "repository": "https://github.com/spring-projects/spring-petclinic",
+    "module": ".",
+    "jdkMajor": 21,
+    "collectionBuildTool": "Gradle 8.14.3",
+    "pitVersion": "1.17.4",
+    "testPlugin": {
+      "artifact": "pitest-junit5-plugin",
+      "version": "1.2.1"
+    },
+    "mutators": [
+      "DEFAULTS"
+    ],
+    "fullMutationMatrix": true,
+    "sample": "sample.json",
+    "recordedPitSeconds": null,
+    "outputDirectory": "<CHECKOUT>/.replication-pit/petclinic",
+    "requiredJavaOptions": [],
+    "notes": "PIT runs are not expected to be byte-identical; compare identities, statuses, and normalized killing sets.",
+    "recordedPitVersion": "UNKNOWN",
+    "recordedTestPluginVersion": "UNKNOWN",
+    "replayVersionStatus": "Declared compatible replay configuration, not proof of the installed campaign versions"
+  },
+  "selectedClasses": [
+    {
+      "fqn": "org.springframework.samples.petclinic.model.BaseEntity",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.model.NamedEntity",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.model.Person",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.owner.Owner",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.owner.OwnerController",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.owner.Pet",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.owner.PetController",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.owner.PetValidator",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.owner.Visit",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.owner.VisitController",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.system.CacheConfiguration",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.system.WebConfiguration",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.system.WelcomeController",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.vet.Vet",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.vet.VetController",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    },
+    {
+      "fqn": "org.springframework.samples.petclinic.vet.Vets",
+      "targetTests": "org.springframework.samples.petclinic.*"
+    }
+  ],
+  "checkout": "/not-needed-for-plan",
+  "commandFile": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final/rerun/pit/petclinic/command.txt",
+  "noExecution": true
+}

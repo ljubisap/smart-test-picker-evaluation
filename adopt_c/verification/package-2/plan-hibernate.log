@@ -1,0 +1,160 @@
+{
+  "configuration": {
+    "subject": "hibernate",
+    "sourceRevision": "a95dd44cf654131e984682687cf1b2ec5d3e34cd",
+    "repository": "https://github.com/hibernate/hibernate-orm",
+    "module": "hibernate-core",
+    "jdkMajor": 21,
+    "collectionBuildTool": "Gradle 9.5.0",
+    "pitVersion": "1.17.4",
+    "testPlugin": {
+      "artifact": "pitest-junit5-plugin",
+      "version": "1.2.1"
+    },
+    "mutators": [
+      "DEFAULTS"
+    ],
+    "fullMutationMatrix": true,
+    "sample": "sample.json",
+    "recordedPitSeconds": 7655.5,
+    "outputDirectory": "<CHECKOUT>/.replication-pit/hibernate",
+    "requiredJavaOptions": [],
+    "notes": "PIT runs are not expected to be byte-identical; compare identities, statuses, and normalized killing sets.",
+    "buildArguments": [
+      "-Porm.jdk.min=21"
+    ]
+  },
+  "selectedClasses": [
+    {
+      "fqn": "org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/bytecode/internal/BytecodeEnhancementMetadataPojoImpl.java",
+      "subpackage": "bytecode.internal",
+      "loc": 330,
+      "reason": "enhancement metadata runtime",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*"
+    },
+    {
+      "fqn": "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/bytecode/enhance/internal/bytebuddy/PersistentAttributeTransformer.java",
+      "subpackage": "bytecode.enhance.bytebuddy",
+      "loc": 437,
+      "reason": "persistent attribute transformation",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*"
+    },
+    {
+      "fqn": "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/bytecode/enhance/internal/bytebuddy/BiDirectionalAssociationHandler.java",
+      "subpackage": "bytecode.enhance.bytebuddy",
+      "loc": 411,
+      "reason": "association enhancement behavior",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*"
+    },
+    {
+      "fqn": "org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/bytecode/enhance/spi/interceptor/LazyAttributeLoadingInterceptor.java",
+      "subpackage": "bytecode.interceptor",
+      "loc": 298,
+      "reason": "lazy attribute interception",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*"
+    },
+    {
+      "fqn": "org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/bytecode/enhance/spi/interceptor/EnhancementAsProxyLazinessInterceptor.java",
+      "subpackage": "bytecode.interceptor",
+      "loc": 369,
+      "reason": "enhancement-as-proxy lifecycle",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*"
+    },
+    {
+      "fqn": "org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/bytecode/internal/bytebuddy/ByteBuddyState.java",
+      "subpackage": "bytecode.provider",
+      "loc": 366,
+      "reason": "bytecode provider state and caching",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*"
+    },
+    {
+      "fqn": "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/bytecode/internal/bytebuddy/BytecodeProviderImpl.java",
+      "subpackage": "bytecode.provider",
+      "loc": 571,
+      "reason": "bytecode provider integration",
+      "targetTests": "org.hibernate.orm.test.bytecode.enhancement.*"
+    },
+    {
+      "fqn": "org.hibernate.proxy.AbstractLazyInitializer",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/proxy/AbstractLazyInitializer.java",
+      "subpackage": "proxy",
+      "loc": 537,
+      "reason": "central lazy proxy state machine",
+      "targetTests": "org.hibernate.orm.test.proxy.*"
+    },
+    {
+      "fqn": "org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/proxy/pojo/bytebuddy/ByteBuddyProxyFactory.java",
+      "subpackage": "proxy.bytebuddy",
+      "loc": 115,
+      "reason": "runtime proxy creation",
+      "targetTests": "org.hibernate.orm.test.proxy.*"
+    },
+    {
+      "fqn": "org.hibernate.event.internal.AbstractFlushingEventListener",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/event/internal/AbstractFlushingEventListener.java",
+      "subpackage": "event.flush",
+      "loc": 442,
+      "reason": "flush lifecycle orchestration",
+      "targetTests": "org.hibernate.orm.test.event.*"
+    },
+    {
+      "fqn": "org.hibernate.event.internal.DefaultPersistEventListener",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/event/internal/DefaultPersistEventListener.java",
+      "subpackage": "event.persist",
+      "loc": 160,
+      "reason": "persist event path",
+      "targetTests": "org.hibernate.orm.test.event.*"
+    },
+    {
+      "fqn": "org.hibernate.event.internal.DefaultDeleteEventListener",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/event/internal/DefaultDeleteEventListener.java",
+      "subpackage": "event.delete",
+      "loc": 559,
+      "reason": "delete event path",
+      "targetTests": "org.hibernate.orm.test.event.*"
+    },
+    {
+      "fqn": "org.hibernate.event.internal.DefaultLoadEventListener",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/event/internal/DefaultLoadEventListener.java",
+      "subpackage": "event.load",
+      "loc": 603,
+      "reason": "load event path",
+      "targetTests": "org.hibernate.orm.test.event.*"
+    },
+    {
+      "fqn": "org.hibernate.event.internal.DefaultRefreshEventListener",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/event/internal/DefaultRefreshEventListener.java",
+      "subpackage": "event.refresh",
+      "loc": 331,
+      "reason": "refresh event path",
+      "targetTests": "org.hibernate.orm.test.event.*"
+    },
+    {
+      "fqn": "org.hibernate.jpa.event.internal.CallbackRegistryImpl",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/jpa/event/internal/CallbackRegistryImpl.java",
+      "subpackage": "jpa.callbacks",
+      "loc": 181,
+      "reason": "JPA callback registry",
+      "targetTests": "org.hibernate.orm.test.jpa.callbacks.*"
+    },
+    {
+      "fqn": "org.hibernate.jpa.event.internal.CallbackDefinitionResolver",
+      "sourcePath": "hibernate-core/src/main/java/org/hibernate/jpa/event/internal/CallbackDefinitionResolver.java",
+      "subpackage": "jpa.callbacks",
+      "loc": 295,
+      "reason": "callback definition resolution",
+      "targetTests": "org.hibernate.orm.test.jpa.callbacks.*"
+    }
+  ],
+  "checkout": "/not-needed-for-plan",
+  "commandFile": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final/rerun/pit/hibernate/command.txt",
+  "noExecution": true
+}

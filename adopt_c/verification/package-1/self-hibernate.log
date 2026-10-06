@@ -1,0 +1,852 @@
+{
+  "subject": "hibernate",
+  "classScope": null,
+  "recordedRecords": 1061,
+  "freshRecords": 1061,
+  "matchingRecords": 1061,
+  "differences": [],
+  "unresolvedRecords": [],
+  "repeatedSemanticIdentities": [
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+        "getMappedBy",
+        "(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;Lnet/bytebuddy/description/type/TypeDescription;Lorg/hibernate/bytecode/enhance/internal/bytebuddy/ByteBuddyEnhancementContext;)Ljava/lang/String;",
+        193,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+        "target",
+        "(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/description/type/TypeDescription$Generic;",
+        179,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+        "wrap",
+        "(Lnet/bytebuddy/description/type/TypeDescription;Lorg/hibernate/bytecode/enhance/internal/bytebuddy/ByteBuddyEnhancementContext;Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;Lnet/bytebuddy/implementation/Implementation;)Lnet/bytebuddy/implementation/Implementation;",
+        58,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+        "collectInheritPersistentFields",
+        "(Lnet/bytebuddy/description/type/TypeDefinition;Lorg/hibernate/bytecode/enhance/internal/bytebuddy/ByteBuddyEnhancementContext;)Ljava/util/Collection;",
+        145,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+        "collectInheritPersistentFields",
+        "(Lnet/bytebuddy/description/type/TypeDefinition;Lorg/hibernate/bytecode/enhance/internal/bytebuddy/ByteBuddyEnhancementContext;)Ljava/util/Collection;",
+        152,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+        "collectInheritPersistentFields",
+        "(Lnet/bytebuddy/description/type/TypeDefinition;Lorg/hibernate/bytecode/enhance/internal/bytebuddy/ByteBuddyEnhancementContext;)Ljava/util/Collection;",
+        167,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+        "collectPersistentFields",
+        "(Lnet/bytebuddy/description/type/TypeDescription;Lorg/hibernate/bytecode/enhance/internal/bytebuddy/ByteBuddyEnhancementContext;Lnet/bytebuddy/pool/TypePool;Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImplConstants;)Lorg/hibernate/bytecode/enhance/internal/bytebuddy/PersistentAttributeTransformer;",
+        125,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+        "fieldReader",
+        "(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/implementation/Implementation;",
+        311,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+        "fieldWriterImplementation",
+        "(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/implementation/Implementation;",
+        337,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor",
+        "handleWrite",
+        "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+        218,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor",
+        "hasWrittenFieldNames",
+        "()Z",
+        300,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor",
+        "read",
+        "(Ljava/lang/Object;Ljava/lang/String;Lorg/hibernate/engine/spi/SharedSessionContractImplementor;Ljava/lang/Boolean;)Ljava/lang/Object;",
+        85,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor",
+        "isAttributeLoaded",
+        "(Ljava/lang/String;)Z",
+        125,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor",
+        "isInitializedLazyField",
+        "(Ljava/lang/String;)Z",
+        133,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor",
+        "takeCollectionSizeSnapshot",
+        "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V",
+        160,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+        "createBridgeMembersClassInfos",
+        "(Ljava/lang/Class;[Ljava/lang/reflect/Member;[Ljava/lang/reflect/Member;[Ljava/lang/String;)Ljava/util/List;",
+        374,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+        "createBridgeMembersClassInfos",
+        "(Ljava/lang/Class;[Ljava/lang/reflect/Member;[Ljava/lang/reflect/Member;[Ljava/lang/String;)Ljava/util/List;",
+        375,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+        "determineAccessOptimizerSuperClass",
+        "(Ljava/lang/Class;[Ljava/lang/String;[Ljava/lang/reflect/Member;[Ljava/lang/reflect/Member;)Ljava/lang/Class;",
+        350,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+        "determineAccessOptimizerSuperClass",
+        "(Ljava/lang/Class;[Ljava/lang/String;[Ljava/lang/reflect/Member;[Ljava/lang/reflect/Member;)Ljava/lang/Class;",
+        353,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+        "findAccessors",
+        "(Ljava/lang/Class;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/reflect/Method;[Ljava/lang/reflect/Method;)V",
+        401,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+        "getReflectionOptimizer",
+        "(Ljava/lang/Class;Ljava/util/Map;)Lorg/hibernate/bytecode/spi/ReflectionOptimizer;",
+        182,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+        "getReflectionOptimizer",
+        "(Ljava/lang/Class;Ljava/util/Map;)Lorg/hibernate/bytecode/spi/ReflectionOptimizer;",
+        186,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+        "getReflectionOptimizer",
+        "(Ljava/lang/Class;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/Class;)Lorg/hibernate/bytecode/spi/ReflectionOptimizer;",
+        120,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+        "getReflectionOptimizer",
+        "(Ljava/lang/Class;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/Class;)Lorg/hibernate/bytecode/spi/ReflectionOptimizer;",
+        124,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.AbstractFlushingEventListener",
+        "checkable",
+        "(Lorg/hibernate/engine/spi/EntityEntry;)Z",
+        164,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.AbstractFlushingEventListener",
+        "createOrReuseEventInstance",
+        "(Lorg/hibernate/event/spi/FlushEntityEvent;Lorg/hibernate/event/spi/EventSource;Ljava/lang/Object;Lorg/hibernate/engine/spi/EntityEntry;)Lorg/hibernate/event/spi/FlushEntityEvent;",
+        254,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.AbstractFlushingEventListener",
+        "flushEntities",
+        "(Lorg/hibernate/event/spi/FlushEvent;Lorg/hibernate/engine/spi/PersistenceContext;)I",
+        226,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.AbstractFlushingEventListener",
+        "flushable",
+        "(Lorg/hibernate/engine/spi/EntityEntry;)Z",
+        157,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.AbstractFlushingEventListener",
+        "lambda$flushCollections$0",
+        "(Lorg/hibernate/Interceptor;Lorg/hibernate/engine/spi/ActionQueue;Lorg/hibernate/event/spi/EventSource;Lorg/hibernate/collection/spi/PersistentCollection;Lorg/hibernate/engine/spi/CollectionEntry;)V",
+        322,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.AbstractFlushingEventListener",
+        "lambda$postFlush$1",
+        "(Lorg/hibernate/engine/spi/PersistenceContext;Lorg/hibernate/engine/spi/SessionImplementor;Lorg/hibernate/collection/spi/PersistentCollection;Lorg/hibernate/engine/spi/CollectionEntry;)V",
+        421,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.AbstractFlushingEventListener",
+        "processUnreachableCollections",
+        "(Lorg/hibernate/event/spi/EventSource;Ljava/util/Map;)I",
+        352,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultDeleteEventListener",
+        "createDeletedState",
+        "(Lorg/hibernate/persister/entity/EntityPersister;Ljava/lang/Object;[Ljava/lang/Object;Lorg/hibernate/event/spi/EventSource;)[Ljava/lang/Object;",
+        471,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultDeleteEventListener",
+        "createDeletedState",
+        "(Lorg/hibernate/persister/entity/EntityPersister;Ljava/lang/Object;[Ljava/lang/Object;Lorg/hibernate/event/spi/EventSource;)[Ljava/lang/Object;",
+        486,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultDeleteEventListener",
+        "createDeletedState",
+        "(Lorg/hibernate/persister/entity/EntityPersister;Ljava/lang/Object;[Ljava/lang/Object;Lorg/hibernate/event/spi/EventSource;)[Ljava/lang/Object;",
+        495,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultDeleteEventListener",
+        "deleteOwnedCollections",
+        "(Lorg/hibernate/type/Type;Ljava/lang/Object;Lorg/hibernate/event/spi/EventSource;)V",
+        138,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultDeleteEventListener",
+        "deleteUnmanagedInstance",
+        "(Lorg/hibernate/event/spi/DeleteEvent;Lorg/hibernate/event/spi/DeleteContext;Ljava/lang/Object;)V",
+        170,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultDeleteEventListener",
+        "optimizeUnloadedDelete",
+        "(Lorg/hibernate/event/spi/DeleteEvent;)Z",
+        106,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultDeleteEventListener",
+        "optimizeUnloadedDelete",
+        "(Lorg/hibernate/event/spi/DeleteEvent;)Z",
+        108,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultLoadEventListener",
+        "checkId",
+        "(Lorg/hibernate/event/spi/LoadEvent;Lorg/hibernate/event/spi/LoadEventListener$LoadType;Lorg/hibernate/persister/entity/EntityPersister;)V",
+        61,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultLoadEventListener",
+        "load",
+        "(Lorg/hibernate/event/spi/LoadEvent;Lorg/hibernate/persister/entity/EntityPersister;Lorg/hibernate/engine/spi/EntityKey;)Ljava/lang/Object;",
+        539,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultLoadEventListener",
+        "load",
+        "(Lorg/hibernate/event/spi/LoadEvent;Lorg/hibernate/persister/entity/EntityPersister;Lorg/hibernate/engine/spi/EntityKey;Lorg/hibernate/event/spi/LoadEventListener$LoadType;)Ljava/lang/Object;",
+        190,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultLoadEventListener",
+        "load",
+        "(Lorg/hibernate/event/spi/LoadEvent;Lorg/hibernate/persister/entity/EntityPersister;Lorg/hibernate/engine/spi/EntityKey;Lorg/hibernate/event/spi/LoadEventListener$LoadType;)Ljava/lang/Object;",
+        194,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultLoadEventListener",
+        "loadFromDatasource",
+        "(Lorg/hibernate/event/spi/LoadEvent;Lorg/hibernate/persister/entity/EntityPersister;)Ljava/lang/Object;",
+        597,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultLoadEventListener",
+        "loadWithBytecodeProxy",
+        "(Lorg/hibernate/event/spi/LoadEvent;Lorg/hibernate/persister/entity/EntityPersister;Lorg/hibernate/engine/spi/EntityKey;Lorg/hibernate/event/spi/LoadEventListener$LoadType;)Ljava/lang/Object;",
+        236,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultLoadEventListener",
+        "loadWithProxyFactory",
+        "(Lorg/hibernate/event/spi/LoadEvent;Lorg/hibernate/persister/entity/EntityPersister;Lorg/hibernate/engine/spi/EntityKey;Lorg/hibernate/engine/spi/EntityHolder;)Ljava/lang/Object;",
+        294,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.event.internal.DefaultRefreshEventListener",
+        "doRefresh",
+        "(Lorg/hibernate/event/spi/RefreshEvent;Lorg/hibernate/event/spi/EventSource;Ljava/lang/Object;Lorg/hibernate/engine/spi/EntityEntry;Lorg/hibernate/persister/entity/EntityPersister;Lorg/hibernate/proxy/LazyInitializer;Ljava/lang/Object;Lorg/hibernate/engine/spi/PersistenceContext;)Ljava/lang/Object;",
+        235,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.jpa.event.internal.CallbackDefinitionResolver",
+        "resolveEmbeddableCallbacks",
+        "(Lorg/hibernate/boot/spi/InFlightMetadataCollector;Ljava/lang/Class;Lorg/hibernate/mapping/Property;Lorg/hibernate/jpa/event/spi/CallbackType;)Ljava/util/List;",
+        194,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.jpa.event.internal.CallbackDefinitionResolver",
+        "resolveEmbeddableCallbacks",
+        "(Lorg/hibernate/boot/spi/InFlightMetadataCollector;Ljava/lang/Class;Lorg/hibernate/mapping/Property;Lorg/hibernate/jpa/event/spi/CallbackType;)Ljava/util/List;",
+        211,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.jpa.event.internal.CallbackDefinitionResolver",
+        "resolveEntityCallbacks",
+        "(Lorg/hibernate/boot/spi/InFlightMetadataCollector;Lorg/hibernate/models/spi/ClassDetails;Lorg/hibernate/jpa/event/spi/CallbackType;)Ljava/util/List;",
+        130,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.jpa.event.internal.CallbackDefinitionResolver",
+        "resolveEntityCallbacks",
+        "(Lorg/hibernate/boot/spi/InFlightMetadataCollector;Lorg/hibernate/models/spi/ClassDetails;Lorg/hibernate/jpa/event/spi/CallbackType;)Ljava/util/List;",
+        70,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.jpa.event.internal.CallbackRegistryImpl",
+        "callback",
+        "([Lorg/hibernate/jpa/event/spi/Callback;Ljava/lang/Object;)Z",
+        115,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.jpa.event.internal.CallbackRegistryImpl",
+        "createBackingMap",
+        "(Ljava/util/Map;)Lorg/hibernate/internal/util/collections/ReadOnlyMap;",
+        54,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.proxy.AbstractLazyInitializer",
+        "generateEntityKeyOrNull",
+        "(Ljava/lang/Object;Lorg/hibernate/engine/spi/SharedSessionContractImplementor;Ljava/lang/String;)Lorg/hibernate/engine/spi/EntityKey;",
+        151,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.proxy.AbstractLazyInitializer",
+        "getIdentifier",
+        "()Ljava/lang/Object;",
+        81,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.proxy.AbstractLazyInitializer",
+        "getProxyOrNull",
+        "()Ljava/lang/Object;",
+        341,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.proxy.AbstractLazyInitializer",
+        "initialize",
+        "()V",
+        196,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 4,
+      "freshOccurrences": 4
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.proxy.AbstractLazyInitializer",
+        "initializeWithoutLoadIfPossible",
+        "()V",
+        292,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.proxy.AbstractLazyInitializer",
+        "isReadOnlySettingAvailable",
+        "()Z",
+        390,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.proxy.AbstractLazyInitializer",
+        "permissiveInitialization",
+        "()V",
+        256,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.hibernate.proxy.AbstractLazyInitializer",
+        "setReadOnly",
+        "(Z)V",
+        419,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    }
+  ],
+  "fullMatch": true
+}

@@ -1,0 +1,152 @@
+{
+  "configuration": {
+    "subject": "jgrapht",
+    "sourceRevision": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+    "repository": "https://github.com/jgrapht/jgrapht",
+    "module": "jgrapht-core",
+    "jdkMajor": 21,
+    "collectionBuildTool": "Maven 3.9.15",
+    "pitVersion": "1.17.4",
+    "testPlugin": {
+      "artifact": "pitest-junit5-plugin",
+      "version": "1.2.1"
+    },
+    "mutators": [
+      "DEFAULTS"
+    ],
+    "fullMutationMatrix": true,
+    "sample": "sample.json",
+    "recordedPitSeconds": null,
+    "outputDirectory": "<CHECKOUT>/.replication-pit/jgrapht",
+    "requiredJavaOptions": [],
+    "notes": "PIT runs are not expected to be byte-identical; compare identities, statuses, and normalized killing sets.",
+    "processorCountOverride": null,
+    "buildWorkers": 1,
+    "provenance": "Executed replacement campaign: PIT 1.17.4 with explicitly named DEFAULTS; no processor-count override. Replay configuration is not evidence of the installed versions of other campaigns."
+  },
+  "selectedClasses": [
+    {
+      "fqn": "org.jgrapht.Graphs",
+      "subpkg": "(root)",
+      "loc": 614,
+      "targetTests": "org.jgrapht.GraphsTest,org.jgrapht.GraphTestsTest,org.jgrapht.GraphMetricsTest"
+    },
+    {
+      "fqn": "org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder",
+      "subpkg": "alg.clique",
+      "loc": 138,
+      "targetTests": "org.jgrapht.alg.clique.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.clustering.LabelPropagationClustering",
+      "subpkg": "alg.clustering",
+      "loc": 348,
+      "targetTests": "org.jgrapht.alg.clustering.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.color.GreedyColoring",
+      "subpkg": "alg.color",
+      "loc": 106,
+      "targetTests": "org.jgrapht.alg.color.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector",
+      "subpkg": "alg.connectivity",
+      "loc": 258,
+      "targetTests": "org.jgrapht.alg.connectivity.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles",
+      "subpkg": "alg.cycle",
+      "loc": 274,
+      "targetTests": "org.jgrapht.alg.cycle.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.drawing.model.ListenableLayoutModel2D",
+      "subpkg": "alg.drawing.model",
+      "loc": 131,
+      "targetTests": "org.jgrapht.alg.drawing.model.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.flow.PushRelabelMFImpl",
+      "subpkg": "alg.flow",
+      "loc": 553,
+      "targetTests": "org.jgrapht.alg.flow.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector",
+      "subpkg": "alg.isomorphism",
+      "loc": 165,
+      "targetTests": "org.jgrapht.alg.isomorphism.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+      "subpkg": "alg.lca",
+      "loc": 252,
+      "targetTests": "org.jgrapht.alg.lca.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction",
+      "subpkg": "alg.linkprediction",
+      "loc": 83,
+      "targetTests": "org.jgrapht.alg.linkprediction.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+      "subpkg": "alg.matching.blossom.v5",
+      "loc": 1162,
+      "targetTests": "org.jgrapht.alg.matching.blossom.v5.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.scoring.ClosenessCentrality",
+      "subpkg": "alg.scoring",
+      "loc": 201,
+      "targetTests": "org.jgrapht.alg.scoring.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+      "subpkg": "alg.shortestpath",
+      "loc": 1310,
+      "targetTests": "org.jgrapht.alg.shortestpath.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree",
+      "subpkg": "alg.spanning",
+      "loc": 358,
+      "targetTests": "org.jgrapht.alg.spanning.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+      "subpkg": "alg.tour",
+      "loc": 139,
+      "targetTests": "org.jgrapht.alg.tour.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.util.UnorderedPair",
+      "subpkg": "alg.util",
+      "loc": 91,
+      "targetTests": "org.jgrapht.alg.util.*"
+    },
+    {
+      "fqn": "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+      "subpkg": "alg.vertexcover",
+      "loc": 339,
+      "targetTests": "org.jgrapht.alg.vertexcover.*"
+    },
+    {
+      "fqn": "org.jgrapht.generate.netgen.Distributor",
+      "subpkg": "generate.netgen",
+      "loc": 217,
+      "targetTests": "org.jgrapht.generate.netgen.*"
+    },
+    {
+      "fqn": "org.jgrapht.graph.specifics.UndirectedSpecifics",
+      "subpkg": "graph.specifics",
+      "loc": 294,
+      "targetTests": "org.jgrapht.graph.*"
+    }
+  ],
+  "checkout": "/not-needed-for-plan",
+  "commandFile": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final/rerun/pit/jgrapht/command.txt",
+  "noExecution": true
+}

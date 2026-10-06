@@ -1,0 +1,157 @@
+{
+  "configuration": {
+    "subject": "flink",
+    "sourceRevision": "c0f8d1a1e09f209885a88f9c19ceb9d9e9870283",
+    "repository": "https://github.com/apache/flink",
+    "module": "flink-runtime",
+    "jdkMajor": 21,
+    "collectionBuildTool": "Maven 3.8.6",
+    "pitVersion": "1.17.4",
+    "testPlugin": {
+      "artifact": "pitest-junit5-plugin",
+      "version": "1.2.1"
+    },
+    "mutators": [
+      "DEFAULTS"
+    ],
+    "fullMutationMatrix": true,
+    "sample": "sample.json",
+    "recordedPitSeconds": 2087.39,
+    "outputDirectory": "<CHECKOUT>/.replication-pit/flink",
+    "requiredJavaOptions": [],
+    "notes": "PIT runs are not expected to be byte-identical; compare identities, statuses, and normalized killing sets."
+  },
+  "selectedClasses": [
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.DefaultScheduler",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/DefaultScheduler.java",
+      "subpackage": "scheduler",
+      "loc": 588,
+      "reason": "default scheduling orchestration",
+      "targetTests": "org.apache.flink.runtime.scheduler.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.ExecutionGraphHandler",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/ExecutionGraphHandler.java",
+      "subpackage": "scheduler",
+      "loc": 250,
+      "reason": "execution graph request handling",
+      "targetTests": "org.apache.flink.runtime.scheduler.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/SlotSharingExecutionSlotAllocator.java",
+      "subpackage": "scheduler",
+      "loc": 389,
+      "reason": "slot allocation",
+      "targetTests": "org.apache.flink.runtime.scheduler.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/adaptive/DefaultStateTransitionManager.java",
+      "subpackage": "adaptive",
+      "loc": 482,
+      "reason": "adaptive state transitions",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptive.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptive.Executing",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/adaptive/Executing.java",
+      "subpackage": "adaptive",
+      "loc": 442,
+      "reason": "executing lifecycle state",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptive.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/adaptive/CreatingExecutionGraph.java",
+      "subpackage": "adaptive",
+      "loc": 369,
+      "reason": "execution graph creation state",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptive.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/adaptive/StopWithSavepoint.java",
+      "subpackage": "adaptive",
+      "loc": 362,
+      "reason": "savepoint lifecycle state",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptive.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/adaptive/allocator/SlotSharingSlotAllocator.java",
+      "subpackage": "adaptive.allocator",
+      "loc": 457,
+      "reason": "adaptive slot allocation",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptive.allocator.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/adaptivebatch/DefaultVertexParallelismAndInputInfosDecider.java",
+      "subpackage": "adaptivebatch",
+      "loc": 322,
+      "reason": "batch parallelism decision",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptivebatch.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/adaptivebatch/DefaultSpeculativeExecutionHandler.java",
+      "subpackage": "adaptivebatch",
+      "loc": 327,
+      "reason": "speculative execution lifecycle",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptivebatch.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/adaptivebatch/util/AllToAllVertexInputInfoComputer.java",
+      "subpackage": "adaptivebatch.util",
+      "loc": 467,
+      "reason": "batch input topology computation",
+      "targetTests": "org.apache.flink.runtime.scheduler.adaptivebatch.util.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/adapter/DefaultExecutionTopology.java",
+      "subpackage": "adapter",
+      "loc": 483,
+      "reason": "execution topology adapter",
+      "targetTests": "org.apache.flink.runtime.scheduler.adapter.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/exceptionhistory/ExceptionHistoryEntry.java",
+      "subpackage": "exceptionhistory",
+      "loc": 257,
+      "reason": "failure-history representation",
+      "targetTests": "org.apache.flink.runtime.scheduler.exceptionhistory.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/slowtaskdetector/ExecutionTimeBasedSlowTaskDetector.java",
+      "subpackage": "slowtaskdetector",
+      "loc": 337,
+      "reason": "runtime slow-task detection",
+      "targetTests": "org.apache.flink.runtime.scheduler.slowtaskdetector.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/stopwithsavepoint/StopWithSavepointTerminationHandlerImpl.java",
+      "subpackage": "stopwithsavepoint",
+      "loc": 286,
+      "reason": "savepoint termination handling",
+      "targetTests": "org.apache.flink.runtime.scheduler.stopwithsavepoint.*"
+    },
+    {
+      "fqn": "org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy",
+      "sourcePath": "flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/strategy/PipelinedRegionSchedulingStrategy.java",
+      "subpackage": "strategy",
+      "loc": 398,
+      "reason": "pipelined region scheduling",
+      "targetTests": "org.apache.flink.runtime.scheduler.strategy.*"
+    }
+  ],
+  "checkout": "/not-needed-for-plan",
+  "commandFile": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final/rerun/pit/flink/command.txt",
+  "noExecution": true
+}
