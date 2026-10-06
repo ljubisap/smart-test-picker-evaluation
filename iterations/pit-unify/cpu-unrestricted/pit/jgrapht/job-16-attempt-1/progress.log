@@ -1,0 +1,2 @@
+[23:57:13] [16/20] Starting: org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP (LOC=139, tests=org.jgrapht.alg.tour.*)
+[23:57:28] [16/20] DONE: org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP (15s, 10 mutations)

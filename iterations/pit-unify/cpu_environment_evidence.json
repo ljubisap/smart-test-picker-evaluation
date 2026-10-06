@@ -1,0 +1,331 @@
+{
+  "observedJvmOption": "-XX:ActiveProcessorCount=1",
+  "historicalEffectiveProcessorCount": "UNKNOWN",
+  "sourceRevision": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+  "sourceExcerpts": [
+    {
+      "path": "jgrapht-core/src/test/java/org/jgrapht/alg/shortestpath/TransitNodeRoutingPrecomputationTest.java",
+      "sha256": "9ee86058faf7c04b92a270ce76b34193984b42b0bdb144a987b4012b3c4e8714",
+      "startLine": 64,
+      "endLine": 82,
+      "lines": [
+        {
+          "line": 64,
+          "text": ""
+        },
+        {
+          "line": 65,
+          "text": "    /**"
+        },
+        {
+          "line": 66,
+          "text": "     * Executor which is supplied to {@link ContractionHierarchyPrecomputation} and"
+        },
+        {
+          "line": 67,
+          "text": "     * {@link TransitNodeRoutingPrecomputation} in this test case."
+        },
+        {
+          "line": 68,
+          "text": "     */"
+        },
+        {
+          "line": 69,
+          "text": "    private static ThreadPoolExecutor executor;"
+        },
+        {
+          "line": 70,
+          "text": ""
+        },
+        {
+          "line": 71,
+          "text": "    @BeforeAll"
+        },
+        {
+          "line": 72,
+          "text": "    public static void createExecutor()"
+        },
+        {
+          "line": 73,
+          "text": "    {"
+        },
+        {
+          "line": 74,
+          "text": "        executor ="
+        },
+        {
+          "line": 75,
+          "text": "            ConcurrencyUtil.createThreadPoolExecutor(Runtime.getRuntime().availableProcessors());"
+        },
+        {
+          "line": 76,
+          "text": "    }"
+        },
+        {
+          "line": 77,
+          "text": ""
+        },
+        {
+          "line": 78,
+          "text": "    @AfterAll"
+        },
+        {
+          "line": 79,
+          "text": "    public static void shutdownExecutor()"
+        },
+        {
+          "line": 80,
+          "text": "        throws InterruptedException"
+        },
+        {
+          "line": 81,
+          "text": "    {"
+        },
+        {
+          "line": 82,
+          "text": "        ConcurrencyUtil.shutdownExecutionService(executor);"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/TransitNodeRoutingPrecomputation.java",
+      "sha256": "a6cc42e15f947b339aa1a6f790cc21df80e4431fdbd59640b258b4c496a3b0f6",
+      "startLine": 240,
+      "endLine": 250,
+      "lines": [
+        {
+          "line": 240,
+          "text": "        if (numberOfTransitVertices > hierarchy.getGraph().vertexSet().size()) {"
+        },
+        {
+          "line": 241,
+          "text": "            throw new IllegalArgumentException("
+        },
+        {
+          "line": 242,
+          "text": "                \"number of transit vertices is larger than the number of vertices in the graph\");"
+        },
+        {
+          "line": 243,
+          "text": "        }"
+        },
+        {
+          "line": 244,
+          "text": "        this.contractionHierarchy = hierarchy;"
+        },
+        {
+          "line": 245,
+          "text": "        this.contractionGraph = hierarchy.getContractionGraph();"
+        },
+        {
+          "line": 246,
+          "text": "        this.contractionMapping = hierarchy.getContractionMapping();"
+        },
+        {
+          "line": 247,
+          "text": "        this.numberOfTransitVertices = numberOfTransitVertices;"
+        },
+        {
+          "line": 248,
+          "text": "        this.parallelism = executor.getMaximumPoolSize();"
+        },
+        {
+          "line": 249,
+          "text": "        this.heapSupplier = heapSupplier;"
+        },
+        {
+          "line": 250,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "path": "jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/TransitNodeRoutingPrecomputation.java",
+      "sha256": "a6cc42e15f947b339aa1a6f790cc21df80e4431fdbd59640b258b4c496a3b0f6",
+      "startLine": 355,
+      "endLine": 370,
+      "lines": [
+        {
+          "line": 355,
+          "text": "            new AccessVerticesBuilder(contractionGraph.vertexSet().size());"
+        },
+        {
+          "line": 356,
+          "text": ""
+        },
+        {
+          "line": 357,
+          "text": "        ContractionHierarchyBFS forwardBFS = new ContractionHierarchyBFS("
+        },
+        {
+          "line": 358,
+          "text": "            new MaskSubgraph<>(contractionGraph, v -> false, e -> !e.isUpward));"
+        },
+        {
+          "line": 359,
+          "text": "        ContractionHierarchyBFS backwardBFS = new ContractionHierarchyBFS("
+        },
+        {
+          "line": 360,
+          "text": "            new MaskSubgraph<>("
+        },
+        {
+          "line": 361,
+          "text": "                new EdgeReversedGraph<>(contractionGraph), v -> false, e -> e.isUpward));"
+        },
+        {
+          "line": 362,
+          "text": ""
+        },
+        {
+          "line": 363,
+          "text": "        for (int taskId = 0; taskId < parallelism; ++taskId) {"
+        },
+        {
+          "line": 364,
+          "text": "            AVAndLFConstructionTask task = new AVAndLFConstructionTask("
+        },
+        {
+          "line": 365,
+          "text": "                taskId, localityFilterBuilder, accessVerticesBuilder, forwardBFS, backwardBFS);"
+        },
+        {
+          "line": 366,
+          "text": "            completionService.submit(task, null);"
+        },
+        {
+          "line": 367,
+          "text": "        }"
+        },
+        {
+          "line": 368,
+          "text": "        waitForTasksCompletion(parallelism);"
+        },
+        {
+          "line": 369,
+          "text": ""
+        },
+        {
+          "line": 370,
+          "text": "        return Pair"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht-core/src/main/java/org/jgrapht/alg/shortestpath/TransitNodeRoutingPrecomputation.java",
+      "sha256": "a6cc42e15f947b339aa1a6f790cc21df80e4431fdbd59640b258b4c496a3b0f6",
+      "startLine": 1285,
+      "endLine": 1310,
+      "lines": [
+        {
+          "line": 1285,
+          "text": "    }"
+        },
+        {
+          "line": 1286,
+          "text": ""
+        },
+        {
+          "line": 1287,
+          "text": "    /**"
+        },
+        {
+          "line": 1288,
+          "text": "     * Computes start of the working chunk for this task."
+        },
+        {
+          "line": 1289,
+          "text": "     *"
+        },
+        {
+          "line": 1290,
+          "text": "     * @param segmentStart working segment start"
+        },
+        {
+          "line": 1291,
+          "text": "     * @param segmentEnd working segment end"
+        },
+        {
+          "line": 1292,
+          "text": "     * @return working chunk start"
+        },
+        {
+          "line": 1293,
+          "text": "     */"
+        },
+        {
+          "line": 1294,
+          "text": "    private int workerSegmentStart(int segmentStart, int segmentEnd, int taskId)"
+        },
+        {
+          "line": 1295,
+          "text": "    {"
+        },
+        {
+          "line": 1296,
+          "text": "        return segmentStart + ((segmentEnd - segmentStart) * taskId) / parallelism;"
+        },
+        {
+          "line": 1297,
+          "text": "    }"
+        },
+        {
+          "line": 1298,
+          "text": ""
+        },
+        {
+          "line": 1299,
+          "text": "    /**"
+        },
+        {
+          "line": 1300,
+          "text": "     * Computes end of the working chunk for this task."
+        },
+        {
+          "line": 1301,
+          "text": "     *"
+        },
+        {
+          "line": 1302,
+          "text": "     * @param segmentStart working segment start"
+        },
+        {
+          "line": 1303,
+          "text": "     * @param segmentEnd working segment end"
+        },
+        {
+          "line": 1304,
+          "text": "     * @return working chunk end"
+        },
+        {
+          "line": 1305,
+          "text": "     */"
+        },
+        {
+          "line": 1306,
+          "text": "    private int workerSegmentEnd(int segmentStart, int segmentEnd, int taskId)"
+        },
+        {
+          "line": 1307,
+          "text": "    {"
+        },
+        {
+          "line": 1308,
+          "text": "        return segmentStart + ((segmentEnd - segmentStart) * (taskId + 1)) / parallelism;"
+        },
+        {
+          "line": 1309,
+          "text": "    }"
+        },
+        {
+          "line": 1310,
+          "text": "}"
+        }
+      ]
+    }
+  ],
+  "counterfactualExecutionPerformed": false,
+  "statusEvidence": "iterations/pit-unify/results/status_comparison.json",
+  "historicalSearchEvidence": "iterations/pit-unify/cpu_evidence_search.json",
+  "statusComparison": "iterations/pit-unify/results/status_comparison.json.gz"
+}

@@ -1,0 +1,25 @@
+usage: run_pit.py [-h]
+                  --subject {commons-lang,flink,hibernate,jgrapht,petclinic,quarkus,spring-core,spring-security}
+                  [--class TARGET] --checkout CHECKOUT [--output OUTPUT]
+                  [--mvn MVN] [--cpus CPUS] [--plan]
+                  [--job-timeout JOB_TIMEOUT] [--gradle-arg GRADLE_ARG]
+
+Replay the recorded PIT scope on a user-provided checkout; never checks out
+code.
+
+options:
+  -h, --help            show this help message and exit
+  --subject {commons-lang,flink,hibernate,jgrapht,petclinic,quarkus,spring-core,spring-security}
+  --class TARGET
+  --checkout CHECKOUT
+  --output OUTPUT
+  --mvn MVN
+  --cpus CPUS
+  --plan                Print configuration and commands without launching a
+                        build or PIT
+  --job-timeout JOB_TIMEOUT
+                        Gradle replay wall-clock timeout in seconds, including
+                        build; 0 disables it (not a PIT mutation timeout)
+  --gradle-arg GRADLE_ARG
+                        Additional Gradle build argument; use --gradle-
+                        arg=VALUE, repeatable; record every override

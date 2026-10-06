@@ -1,0 +1,880 @@
+{
+  "subject": "quarkus",
+  "classScope": null,
+  "recordedRecords": 1639,
+  "freshRecords": 1639,
+  "matchingRecords": 1639,
+  "differences": [],
+  "unresolvedRecords": [],
+  "repeatedSemanticIdentities": [
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Annotations",
+        "getAnnotations",
+        "(Lorg/jboss/jandex/AnnotationTarget$Kind;Lorg/jboss/jandex/DotName;Ljava/util/Collection;)Ljava/util/Set;",
+        109,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanArchives",
+        "index",
+        "(Lorg/jboss/jandex/Indexer;Ljava/lang/String;Ljava/lang/ClassLoader;)Z",
+        410,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanResolverImpl",
+        "containsUnboundedTypeVariablesOrObjects",
+        "(Ljava/util/List;)Z",
+        365,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanResolverImpl",
+        "isActualType",
+        "(Lorg/jboss/jandex/Type;)Z",
+        355,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanResolverImpl",
+        "matchTypeArguments",
+        "(Lorg/jboss/jandex/Type;Lorg/jboss/jandex/Type;)Z",
+        217,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanResolverImpl",
+        "matchTypeArguments",
+        "(Lorg/jboss/jandex/Type;Lorg/jboss/jandex/Type;)Z",
+        225,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanResolverImpl",
+        "matchTypeArguments",
+        "(Lorg/jboss/jandex/Type;Lorg/jboss/jandex/Type;)Z",
+        233,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanResolverImpl",
+        "matchTypeArguments",
+        "(Lorg/jboss/jandex/Type;Lorg/jboss/jandex/Type;)Z",
+        242,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanResolverImpl",
+        "matchTypeArguments",
+        "(Lorg/jboss/jandex/Type;Lorg/jboss/jandex/Type;)Z",
+        250,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanResolverImpl",
+        "matches",
+        "(Lio/quarkus/arc/processor/BeanInfo;Lorg/jboss/jandex/Type;Ljava/util/Set;)Z",
+        83,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanResolverImpl",
+        "parametersMatch",
+        "(Lorg/jboss/jandex/WildcardType;Lorg/jboss/jandex/TypeVariable;)Z",
+        274,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanResolverImpl",
+        "potentialBeans",
+        "(Lorg/jboss/jandex/Type;)Ljava/util/Collection;",
+        151,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.BeanResolverImpl",
+        "resolveAmbiguity",
+        "(Ljava/util/Set;)Lio/quarkus/arc/processor/BeanInfo;",
+        61,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.ComponentsProviderGenerator",
+        "initBeanDependencyMap",
+        "(Lio/quarkus/arc/processor/BeanDeployment;)Ljava/util/Map;",
+        693,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.ComponentsProviderGenerator",
+        "initBeanDependencyMap",
+        "(Lio/quarkus/arc/processor/BeanDeployment;)Ljava/util/Map;",
+        732,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.ComponentsProviderGenerator",
+        "lambda$generateAddBeans$13",
+        "(Lio/quarkus/arc/processor/InjectionPointInfo;)Z",
+        303,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.ComponentsProviderGenerator",
+        "lambda$generateAddRemovedBeans$24",
+        "(Lio/quarkus/arc/processor/ComponentsProviderGenerator$RemovedBeanGroup;Lio/quarkus/gizmo2/ParamVar;Lio/quarkus/gizmo2/ParamVar;Lio/quarkus/gizmo2/creator/BlockCreator;)V",
+        475,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.DecoratorGenerator",
+        "isAbstractDecoratorImpl",
+        "(Lio/quarkus/arc/processor/BeanInfo;Ljava/lang/String;)Z",
+        221,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.DecoratorGenerator",
+        "lambda$generateAbstractDecoratorImplementation$15",
+        "(Lorg/jboss/jandex/ClassInfo;Lorg/jboss/jandex/IndexView;Lio/quarkus/arc/processor/DecoratorInfo;Lio/quarkus/gizmo2/creator/ClassCreator;)V",
+        277,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.DecoratorGenerator",
+        "lambda$generateAbstractDecoratorImplementation$15",
+        "(Lorg/jboss/jandex/ClassInfo;Lorg/jboss/jandex/IndexView;Lio/quarkus/arc/processor/DecoratorInfo;Lio/quarkus/gizmo2/creator/ClassCreator;)V",
+        282,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.DecoratorGenerator",
+        "lambda$generateAbstractDecoratorImplementation$15",
+        "(Lorg/jboss/jandex/ClassInfo;Lorg/jboss/jandex/IndexView;Lio/quarkus/arc/processor/DecoratorInfo;Lio/quarkus/gizmo2/creator/ClassCreator;)V",
+        313,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.DecoratorGenerator",
+        "lambda$generateAbstractDecoratorImplementation$15",
+        "(Lorg/jboss/jandex/ClassInfo;Lorg/jboss/jandex/IndexView;Lio/quarkus/arc/processor/DecoratorInfo;Lio/quarkus/gizmo2/creator/ClassCreator;)V",
+        330,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Injection",
+        "forClassBean",
+        "(Lorg/jboss/jandex/ClassInfo;Lorg/jboss/jandex/ClassInfo;Lio/quarkus/arc/processor/BeanDeployment;Lio/quarkus/arc/processor/InjectionPointModifier;ZLjava/util/Set;)Ljava/util/List;",
+        355,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Injection",
+        "getAllInjectionPoints",
+        "(Lio/quarkus/arc/processor/BeanDeployment;Lorg/jboss/jandex/ClassInfo;Lorg/jboss/jandex/DotName;ZLjava/util/Set;)Ljava/util/List;",
+        516,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Injection",
+        "getAllInjectionPoints",
+        "(Lio/quarkus/arc/processor/BeanDeployment;Lorg/jboss/jandex/ClassInfo;Lorg/jboss/jandex/DotName;ZLjava/util/Set;)Ljava/util/List;",
+        527,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Injection",
+        "isConstructor",
+        "()Z",
+        470,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Injection",
+        "isField",
+        "()Z",
+        474,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Injection",
+        "isMethod",
+        "()Z",
+        466,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Injection",
+        "isOverriden",
+        "(Lio/quarkus/arc/processor/Injection$MethodOverrideKey;Ljava/util/Set;)Z",
+        627,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Injection",
+        "lambda$forBean$0",
+        "(Lio/quarkus/arc/processor/Injection;)Z",
+        245,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Injection",
+        "lambda$forObserver$6",
+        "(Lorg/jboss/jandex/AnnotationInstance;)Z",
+        443,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Injection",
+        "validateInjections",
+        "(Lio/quarkus/arc/processor/InjectionPointInfo;Lio/quarkus/arc/processor/Injection$BeanType;)V",
+        68,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "<init>",
+        "(Lio/quarkus/arc/processor/InjectionPointInfo$TypeAndQualifiers;Lio/quarkus/arc/processor/InjectionPointInfo$InjectionPointKind;Lorg/jboss/jandex/AnnotationTarget;Lorg/jboss/jandex/AnnotationTarget;ZZ)V",
+        151,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "<init>",
+        "(Lio/quarkus/arc/processor/InjectionPointInfo$TypeAndQualifiers;Lio/quarkus/arc/processor/InjectionPointInfo$InjectionPointKind;Lorg/jboss/jandex/AnnotationTarget;Lorg/jboss/jandex/AnnotationTarget;ZZ)V",
+        157,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "fromMethod",
+        "(Lorg/jboss/jandex/MethodInfo;Lorg/jboss/jandex/ClassInfo;Lio/quarkus/arc/processor/BeanDeployment;Ljava/util/function/BiPredicate;Lio/quarkus/arc/processor/InjectionPointModifier;)Ljava/util/List;",
+        87,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "getRequiredType",
+        "()Lorg/jboss/jandex/Type;",
+        192,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "getTargetInfo",
+        "()Ljava/lang/String;",
+        311,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "isCurrentInjectionPointWrapperNeeded",
+        "()Z",
+        350,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "isCurrentInjectionPointWrapperNeeded",
+        "()Z",
+        351,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "isDependentTransientReference",
+        "()Z",
+        280,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 4,
+      "freshOccurrences": 4
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "isField",
+        "()Z",
+        262,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "isNamedWithoutValue",
+        "(Lorg/jboss/jandex/AnnotationInstance;)Z",
+        41,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "isParam",
+        "()Z",
+        266,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "isProgrammaticLookup",
+        "()Z",
+        212,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "isTransient",
+        "()Z",
+        270,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.InjectionPointInfo",
+        "resolveType",
+        "(Lorg/jboss/jandex/Type;Lorg/jboss/jandex/ClassInfo;Lorg/jboss/jandex/ClassInfo;Lio/quarkus/arc/processor/BeanDeployment;)Lorg/jboss/jandex/Type;",
+        363,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.ObserverGenerator",
+        "lambda$generateNotify$33",
+        "(Lio/quarkus/gizmo2/desc/FieldDesc;Lio/quarkus/gizmo2/creator/ClassCreator;Lio/quarkus/arc/processor/ObserverInfo;Lio/quarkus/gizmo2/ParamVar;Lio/quarkus/gizmo2/desc/FieldDesc;Ljava/util/Map;ZLio/quarkus/arc/processor/ReflectionRegistration;Lio/quarkus/gizmo2/creator/BlockCreator;)V",
+        602,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.ObserverInfo",
+        "create",
+        "(Lio/quarkus/arc/processor/BeanInfo;Lorg/jboss/jandex/MethodInfo;Lio/quarkus/arc/processor/Injection;ZLjava/util/List;Lio/quarkus/arc/processor/BuildExtension$BuildContext;Z)Lio/quarkus/arc/processor/ObserverInfo;",
+        68,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.ObserverInfo",
+        "create",
+        "(Ljava/lang/String;Lio/quarkus/arc/processor/BeanDeployment;Lorg/jboss/jandex/DotName;Lio/quarkus/arc/processor/BeanInfo;Lorg/jboss/jandex/MethodInfo;Lio/quarkus/arc/processor/Injection;Lorg/jboss/jandex/MethodParameterInfo;Lorg/jboss/jandex/Type;Ljava/util/Set;Ljakarta/enterprise/event/Reception;Ljakarta/enterprise/event/TransactionPhase;ZILjava/util/List;Lio/quarkus/arc/processor/BuildExtension$BuildContext;ZLjava/util/function/Consumer;Ljava/util/Map;Z)Lio/quarkus/arc/processor/ObserverInfo;",
+        132,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.ObserverInfo",
+        "initEventParam",
+        "(Lorg/jboss/jandex/MethodInfo;Lio/quarkus/arc/processor/BeanDeployment;)Lorg/jboss/jandex/MethodParameterInfo;",
+        384,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Types",
+        "containsWildcard",
+        "(Lorg/jboss/jandex/Type;Lorg/jboss/jandex/AnnotationTarget;Z)Z",
+        591,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Types",
+        "getParameterizedType",
+        "(Lio/quarkus/gizmo/AssignableResultHandle;Lio/quarkus/gizmo/BytecodeCreator;Lio/quarkus/gizmo/ResultHandle;Lorg/jboss/jandex/ParameterizedType;Lio/quarkus/arc/processor/Types$TypeVariables;Lorg/jboss/jandex/IndexView;)V",
+        264,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Types",
+        "getProducerFieldTypeClosure",
+        "(Lorg/jboss/jandex/FieldInfo;Lio/quarkus/arc/processor/BeanDeployment;)Lio/quarkus/arc/processor/Types$TypeClosure;",
+        404,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Types",
+        "getProducerMethodTypeClosure",
+        "(Lorg/jboss/jandex/MethodInfo;Lio/quarkus/arc/processor/BeanDeployment;)Lio/quarkus/arc/processor/Types$TypeClosure;",
+        367,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Types",
+        "getTypeClosure",
+        "(Lorg/jboss/jandex/ClassInfo;Lorg/jboss/jandex/AnnotationTarget;ZLjava/util/Map;Lio/quarkus/arc/processor/BeanDeployment;Ljava/util/function/BiConsumer;Ljava/util/Set;Z)Ljava/util/Set;",
+        628,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Types",
+        "getTypeClosureFromJandexType",
+        "(Lorg/jboss/jandex/Type;Lio/quarkus/arc/processor/BeanDeployment;)Lio/quarkus/arc/processor/Types$TypeClosure;",
+        457,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Types",
+        "getTypeHandle",
+        "(Lio/quarkus/gizmo/AssignableResultHandle;Lio/quarkus/gizmo/BytecodeCreator;Lorg/jboss/jandex/Type;Lio/quarkus/gizmo/ResultHandle;Lio/quarkus/arc/processor/Types$TypeVariables;Lorg/jboss/jandex/IndexView;)V",
+        165,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Types",
+        "isRawGeneric",
+        "(Lorg/jboss/jandex/Type;Lorg/jboss/jandex/ClassInfo;)Z",
+        694,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Types",
+        "restrictBeanTypes",
+        "(Ljava/util/Set;Ljava/util/Set;Ljava/util/Collection;Lorg/jboss/jandex/IndexView;Lorg/jboss/jandex/AnnotationTarget;)Ljava/util/Set;",
+        775,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.Types",
+        "restrictBeanTypes",
+        "(Ljava/util/Set;Ljava/util/Set;Ljava/util/Collection;Lorg/jboss/jandex/IndexView;Lorg/jboss/jandex/AnnotationTarget;)Ljava/util/Set;",
+        782,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint",
+        "registerSyntheticBeans",
+        "(Lio/quarkus/arc/processor/BeanRegistrar$RegistrationContext;Ljava/util/function/Predicate;)V",
+        389,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint",
+        "registerSyntheticObservers",
+        "(Lio/quarkus/arc/processor/ObserverRegistrar$RegistrationContext;Ljava/util/function/Predicate;)V",
+        481,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    }
+  ],
+  "fullMatch": true
+}

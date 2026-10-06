@@ -1,0 +1,152 @@
+{
+  "subject": "jgrapht",
+  "classScope": "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+  "recordedRecords": 245,
+  "freshRecords": 245,
+  "matchingRecords": 245,
+  "differences": [],
+  "unresolvedRecords": [],
+  "repeatedSemanticIdentities": [
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "augmentBranch",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;)V",
+        791,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "augmentBranch",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;)V",
+        806,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "expand",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Z)V",
+        380,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "expandMinusNode",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;)V",
+        715,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "expandPlusNode",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;)Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;",
+        646,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "grow",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;ZZ)V",
+        143,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "processPlusNodeGrow",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;ZZ)V",
+        488,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "processPlusNodeGrow",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;ZZ)V",
+        500,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "shrink",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;Z)Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;",
+        277,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "shrinkPlusNode",
+        "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;)Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;",
+        953,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    }
+  ],
+  "fullMatch": true
+}

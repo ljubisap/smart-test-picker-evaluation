@@ -1,0 +1,2 @@
+[23:14:14] [3/20] Starting: org.jgrapht.alg.clustering.LabelPropagationClustering (LOC=348, tests=org.jgrapht.alg.clustering.*)
+[23:14:19] [3/20] DONE: org.jgrapht.alg.clustering.LabelPropagationClustering (6s, 4 mutations)

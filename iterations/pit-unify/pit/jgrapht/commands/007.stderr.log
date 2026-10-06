@@ -1,0 +1,39 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=1
+18:31:48 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+18:31:48 PIT >> INFO : Created 1 mutation test units in pre scan
+18:31:49 PIT >> INFO : MINION : Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=1
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : MINION : WARNING: Unknown module: org.jgrapht.core specified to --add-opens
+18:31:49 PIT >> INFO : Sending 41 test classes to minion
+18:31:49 PIT >> INFO : Sent tests to minion
+18:31:53 PIT >> INFO : Calculated coverage in 4 seconds.
+18:31:53 PIT >> INFO : Created 1 mutation test units
+18:32:06 PIT >> INFO : Completed in 17 seconds

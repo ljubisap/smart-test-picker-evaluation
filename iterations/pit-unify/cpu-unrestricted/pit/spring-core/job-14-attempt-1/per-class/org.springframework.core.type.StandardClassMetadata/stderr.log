@@ -1,0 +1,371 @@
+00:02:48 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+00:02:48 PIT >> INFO : Created 1 mutation test units in pre scan
+00:02:49 PIT >> INFO : Sending 81 test classes to minion
+00:02:49 PIT >> INFO : Sent tests to minion
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+00:02:50 PIT >> INFO : Calculated coverage in 1 seconds.
+00:02:50 PIT >> INFO : Created 1 mutation test units
+00:02:52 PIT >> INFO : Completed in 3 seconds

@@ -1,0 +1,717 @@
+Compiled from "GenericConversionService.java"
+public class org.springframework.core.convert.support.GenericConversionService implements org.springframework.core.convert.support.ConfigurableConversionService {
+  private static final org.springframework.core.convert.converter.GenericConverter NO_OP_CONVERTER;
+
+  private static final org.springframework.core.convert.converter.GenericConverter NO_MATCH;
+
+  private final org.springframework.core.convert.support.GenericConversionService$Converters converters;
+
+  private final java.util.Map<org.springframework.core.convert.support.GenericConversionService$ConverterCacheKey, org.springframework.core.convert.converter.GenericConverter> converterCache;
+
+  public org.springframework.core.convert.support.GenericConversionService();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #7                  // class org/springframework/core/convert/support/GenericConversionService$Converters
+       8: dup
+       9: invokespecial #9                  // Method org/springframework/core/convert/support/GenericConversionService$Converters."<init>":()V
+      12: putfield      #10                 // Field converters:Lorg/springframework/core/convert/support/GenericConversionService$Converters;
+      15: aload_0
+      16: new           #16                 // class org/springframework/util/ConcurrentReferenceHashMap
+      19: dup
+      20: bipush        64
+      22: invokespecial #18                 // Method org/springframework/util/ConcurrentReferenceHashMap."<init>":(I)V
+      25: putfield      #21                 // Field converterCache:Ljava/util/Map;
+      28: return
+    LineNumberTable:
+      line 62: 0
+      line 76: 4
+      line 78: 15
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      29     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+
+  public void addConverter(org.springframework.core.convert.converter.Converter<?, ?>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #25                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       5: ldc           #29                 // class org/springframework/core/convert/converter/Converter
+       7: invokevirtual #31                 // Method getRequiredTypeInfo:(Ljava/lang/Class;Ljava/lang/Class;)[Lorg/springframework/core/ResolvableType;
+      10: astore_2
+      11: aload_2
+      12: ifnonnull     40
+      15: aload_1
+      16: instanceof    #35                 // class org/springframework/core/DecoratingProxy
+      19: ifeq          40
+      22: aload_1
+      23: checkcast     #35                 // class org/springframework/core/DecoratingProxy
+      26: astore_3
+      27: aload_0
+      28: aload_3
+      29: invokeinterface #37,  1           // InterfaceMethod org/springframework/core/DecoratingProxy.getDecoratedClass:()Ljava/lang/Class;
+      34: ldc           #29                 // class org/springframework/core/convert/converter/Converter
+      36: invokevirtual #31                 // Method getRequiredTypeInfo:(Ljava/lang/Class;Ljava/lang/Class;)[Lorg/springframework/core/ResolvableType;
+      39: astore_2
+      40: aload_2
+      41: ifnonnull     64
+      44: new           #40                 // class java/lang/IllegalArgumentException
+      47: dup
+      48: aload_1
+      49: invokevirtual #25                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      52: invokevirtual #42                 // Method java/lang/Class.getName:()Ljava/lang/String;
+      55: invokedynamic #48,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      60: invokespecial #52                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      63: athrow
+      64: aload_0
+      65: new           #55                 // class org/springframework/core/convert/support/GenericConversionService$ConverterAdapter
+      68: dup
+      69: aload_0
+      70: aload_1
+      71: aload_2
+      72: iconst_0
+      73: aaload
+      74: aload_2
+      75: iconst_1
+      76: aaload
+      77: invokespecial #57                 // Method org/springframework/core/convert/support/GenericConversionService$ConverterAdapter."<init>":(Lorg/springframework/core/convert/support/GenericConversionService;Lorg/springframework/core/convert/converter/Converter;Lorg/springframework/core/ResolvableType;Lorg/springframework/core/ResolvableType;)V
+      80: invokevirtual #60                 // Method addConverter:(Lorg/springframework/core/convert/converter/GenericConverter;)V
+      83: return
+    LineNumberTable:
+      line 85: 0
+      line 86: 11
+      line 87: 27
+      line 89: 40
+      line 90: 44
+      line 91: 49
+      line 93: 64
+      line 94: 83
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         27      13     3 decoratingProxy   Lorg/springframework/core/DecoratingProxy;
+          0      84     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      84     1 converter   Lorg/springframework/core/convert/converter/Converter;
+         11      73     2 typeInfo   [Lorg/springframework/core/ResolvableType;
+
+  public <S, T> void addConverter(java.lang.Class<S>, java.lang.Class<T>, org.springframework.core.convert.converter.Converter<? super S, ? extends T>);
+    Code:
+       0: aload_0
+       1: new           #55                 // class org/springframework/core/convert/support/GenericConversionService$ConverterAdapter
+       4: dup
+       5: aload_0
+       6: aload_3
+       7: aload_1
+       8: invokestatic  #64                 // Method org/springframework/core/ResolvableType.forClass:(Ljava/lang/Class;)Lorg/springframework/core/ResolvableType;
+      11: aload_2
+      12: invokestatic  #64                 // Method org/springframework/core/ResolvableType.forClass:(Ljava/lang/Class;)Lorg/springframework/core/ResolvableType;
+      15: invokespecial #57                 // Method org/springframework/core/convert/support/GenericConversionService$ConverterAdapter."<init>":(Lorg/springframework/core/convert/support/GenericConversionService;Lorg/springframework/core/convert/converter/Converter;Lorg/springframework/core/ResolvableType;Lorg/springframework/core/ResolvableType;)V
+      18: invokevirtual #60                 // Method addConverter:(Lorg/springframework/core/convert/converter/GenericConverter;)V
+      21: return
+    LineNumberTable:
+      line 98: 0
+      line 99: 8
+      line 98: 18
+      line 100: 21
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      22     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      22     1 sourceType   Ljava/lang/Class;
+          0      22     2 targetType   Ljava/lang/Class;
+          0      22     3 converter   Lorg/springframework/core/convert/converter/Converter;
+
+  public void addConverter(org.springframework.core.convert.converter.GenericConverter);
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field converters:Lorg/springframework/core/convert/support/GenericConversionService$Converters;
+       4: aload_1
+       5: invokevirtual #70                 // Method org/springframework/core/convert/support/GenericConversionService$Converters.add:(Lorg/springframework/core/convert/converter/GenericConverter;)V
+       8: aload_0
+       9: invokevirtual #73                 // Method invalidateCache:()V
+      12: return
+    LineNumberTable:
+      line 104: 0
+      line 105: 8
+      line 106: 12
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      13     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      13     1 converter   Lorg/springframework/core/convert/converter/GenericConverter;
+
+  public void addConverterFactory(org.springframework.core.convert.converter.ConverterFactory<?, ?>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #25                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       5: ldc           #76                 // class org/springframework/core/convert/converter/ConverterFactory
+       7: invokevirtual #31                 // Method getRequiredTypeInfo:(Ljava/lang/Class;Ljava/lang/Class;)[Lorg/springframework/core/ResolvableType;
+      10: astore_2
+      11: aload_2
+      12: ifnonnull     40
+      15: aload_1
+      16: instanceof    #35                 // class org/springframework/core/DecoratingProxy
+      19: ifeq          40
+      22: aload_1
+      23: checkcast     #35                 // class org/springframework/core/DecoratingProxy
+      26: astore_3
+      27: aload_0
+      28: aload_3
+      29: invokeinterface #37,  1           // InterfaceMethod org/springframework/core/DecoratingProxy.getDecoratedClass:()Ljava/lang/Class;
+      34: ldc           #76                 // class org/springframework/core/convert/converter/ConverterFactory
+      36: invokevirtual #31                 // Method getRequiredTypeInfo:(Ljava/lang/Class;Ljava/lang/Class;)[Lorg/springframework/core/ResolvableType;
+      39: astore_2
+      40: aload_2
+      41: ifnonnull     64
+      44: new           #40                 // class java/lang/IllegalArgumentException
+      47: dup
+      48: aload_1
+      49: invokevirtual #25                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      52: invokevirtual #42                 // Method java/lang/Class.getName:()Ljava/lang/String;
+      55: invokedynamic #78,  0             // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      60: invokespecial #52                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      63: athrow
+      64: aload_0
+      65: new           #79                 // class org/springframework/core/convert/support/GenericConversionService$ConverterFactoryAdapter
+      68: dup
+      69: aload_0
+      70: aload_1
+      71: new           #81                 // class org/springframework/core/convert/converter/GenericConverter$ConvertiblePair
+      74: dup
+      75: aload_2
+      76: iconst_0
+      77: aaload
+      78: invokevirtual #83                 // Method org/springframework/core/ResolvableType.toClass:()Ljava/lang/Class;
+      81: aload_2
+      82: iconst_1
+      83: aaload
+      84: invokevirtual #83                 // Method org/springframework/core/ResolvableType.toClass:()Ljava/lang/Class;
+      87: invokespecial #86                 // Method org/springframework/core/convert/converter/GenericConverter$ConvertiblePair."<init>":(Ljava/lang/Class;Ljava/lang/Class;)V
+      90: invokespecial #89                 // Method org/springframework/core/convert/support/GenericConversionService$ConverterFactoryAdapter."<init>":(Lorg/springframework/core/convert/support/GenericConversionService;Lorg/springframework/core/convert/converter/ConverterFactory;Lorg/springframework/core/convert/converter/GenericConverter$ConvertiblePair;)V
+      93: invokevirtual #60                 // Method addConverter:(Lorg/springframework/core/convert/converter/GenericConverter;)V
+      96: return
+    LineNumberTable:
+      line 110: 0
+      line 111: 11
+      line 112: 27
+      line 114: 40
+      line 115: 44
+      line 116: 49
+      line 118: 64
+      line 119: 78
+      line 118: 93
+      line 120: 96
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         27      13     3 decoratingProxy   Lorg/springframework/core/DecoratingProxy;
+          0      97     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      97     1 factory   Lorg/springframework/core/convert/converter/ConverterFactory;
+         11      86     2 typeInfo   [Lorg/springframework/core/ResolvableType;
+
+  public void removeConvertible(java.lang.Class<?>, java.lang.Class<?>);
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field converters:Lorg/springframework/core/convert/support/GenericConversionService$Converters;
+       4: aload_1
+       5: aload_2
+       6: invokevirtual #92                 // Method org/springframework/core/convert/support/GenericConversionService$Converters.remove:(Ljava/lang/Class;Ljava/lang/Class;)V
+       9: aload_0
+      10: invokevirtual #73                 // Method invalidateCache:()V
+      13: return
+    LineNumberTable:
+      line 124: 0
+      line 125: 9
+      line 126: 13
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      14     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      14     1 sourceType   Ljava/lang/Class;
+          0      14     2 targetType   Ljava/lang/Class;
+
+  public boolean canConvert(java.lang.Class<?>, java.lang.Class<?>);
+    Code:
+       0: aload_2
+       1: ldc           #95                 // String Target type to convert to cannot be null
+       3: invokestatic  #97                 // Method org/springframework/util/Assert.notNull:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_0
+       7: aload_1
+       8: ifnull        18
+      11: aload_1
+      12: invokestatic  #103                // Method org/springframework/core/convert/TypeDescriptor.valueOf:(Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;
+      15: goto          19
+      18: aconst_null
+      19: aload_2
+      20: invokestatic  #103                // Method org/springframework/core/convert/TypeDescriptor.valueOf:(Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;
+      23: invokevirtual #109                // Method canConvert:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z
+      26: ireturn
+    LineNumberTable:
+      line 133: 0
+      line 134: 6
+      line 135: 20
+      line 134: 23
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      27     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      27     1 sourceType   Ljava/lang/Class;
+          0      27     2 targetType   Ljava/lang/Class;
+
+  public boolean canConvert(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_2
+       1: ldc           #95                 // String Target type to convert to cannot be null
+       3: invokestatic  #97                 // Method org/springframework/util/Assert.notNull:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_1
+       7: ifnull        19
+      10: aload_0
+      11: aload_1
+      12: aload_2
+      13: invokevirtual #113                // Method getConverter:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/converter/GenericConverter;
+      16: ifnull        23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: ireturn
+    LineNumberTable:
+      line 140: 0
+      line 141: 6
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      25     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      25     1 sourceType   Lorg/springframework/core/convert/TypeDescriptor;
+          0      25     2 targetType   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public boolean canBypassConvert(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_2
+       1: ldc           #95                 // String Target type to convert to cannot be null
+       3: invokestatic  #97                 // Method org/springframework/util/Assert.notNull:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_1
+       7: ifnull        22
+      10: aload_0
+      11: aload_1
+      12: aload_2
+      13: invokevirtual #113                // Method getConverter:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/converter/GenericConverter;
+      16: getstatic     #117                // Field NO_OP_CONVERTER:Lorg/springframework/core/convert/converter/GenericConverter;
+      19: if_acmpne     26
+      22: iconst_1
+      23: goto          27
+      26: iconst_0
+      27: ireturn
+    LineNumberTable:
+      line 156: 0
+      line 157: 6
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      28     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      28     1 sourceType   Lorg/springframework/core/convert/TypeDescriptor;
+          0      28     2 targetType   Lorg/springframework/core/convert/TypeDescriptor;
+
+  public <T> T convert(java.lang.Object, java.lang.Class<T>);
+    Code:
+       0: aload_2
+       1: ldc           #95                 // String Target type to convert to cannot be null
+       3: invokestatic  #97                 // Method org/springframework/util/Assert.notNull:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_0
+       7: aload_1
+       8: aload_1
+       9: invokestatic  #121                // Method org/springframework/core/convert/TypeDescriptor.forObject:(Ljava/lang/Object;)Lorg/springframework/core/convert/TypeDescriptor;
+      12: aload_2
+      13: invokestatic  #103                // Method org/springframework/core/convert/TypeDescriptor.valueOf:(Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;
+      16: invokevirtual #125                // Method convert:(Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;
+      19: areturn
+    LineNumberTable:
+      line 164: 0
+      line 165: 6
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      20     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      20     1 source   Ljava/lang/Object;
+          0      20     2 targetType   Ljava/lang/Class;
+
+  public java.lang.Object convert(java.lang.Object, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_3
+       1: ldc           #95                 // String Target type to convert to cannot be null
+       3: invokestatic  #97                 // Method org/springframework/util/Assert.notNull:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_2
+       7: ifnonnull     37
+      10: aload_1
+      11: ifnonnull     18
+      14: iconst_1
+      15: goto          19
+      18: iconst_0
+      19: ldc           #129                // String Source must be [null] if source type == [null]
+      21: invokestatic  #131                // Method org/springframework/util/Assert.isTrue:(ZLjava/lang/String;)V
+      24: aload_0
+      25: aconst_null
+      26: aload_3
+      27: aload_0
+      28: aconst_null
+      29: aload_3
+      30: invokevirtual #135                // Method convertNullSource:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;
+      33: invokevirtual #139                // Method handleResult:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;Ljava/lang/Object;)Ljava/lang/Object;
+      36: areturn
+      37: aload_1
+      38: ifnull        76
+      41: aload_2
+      42: invokevirtual #143                // Method org/springframework/core/convert/TypeDescriptor.getObjectType:()Ljava/lang/Class;
+      45: aload_1
+      46: invokevirtual #146                // Method java/lang/Class.isInstance:(Ljava/lang/Object;)Z
+      49: ifne          76
+      52: new           #40                 // class java/lang/IllegalArgumentException
+      55: dup
+      56: aload_2
+      57: invokestatic  #150                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      60: aload_1
+      61: invokevirtual #25                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      64: invokevirtual #42                 // Method java/lang/Class.getName:()Ljava/lang/String;
+      67: invokedynamic #155,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      72: invokespecial #52                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      75: athrow
+      76: aload_0
+      77: aload_2
+      78: aload_3
+      79: invokevirtual #113                // Method getConverter:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/converter/GenericConverter;
+      82: astore        4
+      84: aload         4
+      86: ifnull        108
+      89: aload         4
+      91: aload_1
+      92: aload_2
+      93: aload_3
+      94: invokestatic  #158                // Method org/springframework/core/convert/support/ConversionUtils.invokeConverter:(Lorg/springframework/core/convert/converter/GenericConverter;Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;
+      97: astore        5
+      99: aload_0
+     100: aload_2
+     101: aload_3
+     102: aload         5
+     104: invokevirtual #139                // Method handleResult:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;Ljava/lang/Object;)Ljava/lang/Object;
+     107: areturn
+     108: aload_0
+     109: aload_1
+     110: aload_2
+     111: aload_3
+     112: invokevirtual #164                // Method handleConverterNotFound:(Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;
+     115: areturn
+    LineNumberTable:
+      line 171: 0
+      line 172: 6
+      line 173: 10
+      line 174: 24
+      line 176: 37
+      line 177: 52
+      line 178: 61
+      line 180: 76
+      line 181: 84
+      line 182: 89
+      line 183: 99
+      line 185: 108
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         99       9     5 result   Ljava/lang/Object;
+          0     116     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0     116     1 source   Ljava/lang/Object;
+          0     116     2 sourceType   Lorg/springframework/core/convert/TypeDescriptor;
+          0     116     3 targetType   Lorg/springframework/core/convert/TypeDescriptor;
+         84      32     4 converter   Lorg/springframework/core/convert/converter/GenericConverter;
+
+  public java.lang.String toString();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field converters:Lorg/springframework/core/convert/support/GenericConversionService$Converters;
+       4: invokevirtual #167                // Method org/springframework/core/convert/support/GenericConversionService$Converters.toString:()Ljava/lang/String;
+       7: areturn
+    LineNumberTable:
+      line 190: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       8     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+
+  protected java.lang.Object convertNullSource(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_2
+       1: invokevirtual #143                // Method org/springframework/core/convert/TypeDescriptor.getObjectType:()Ljava/lang/Class;
+       4: ldc           #170                // class java/util/Optional
+       6: if_acmpne     13
+       9: invokestatic  #172                // Method java/util/Optional.empty:()Ljava/util/Optional;
+      12: areturn
+      13: aconst_null
+      14: areturn
+    LineNumberTable:
+      line 208: 0
+      line 209: 9
+      line 211: 13
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      15     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      15     1 sourceType   Lorg/springframework/core/convert/TypeDescriptor;
+          0      15     2 targetType   Lorg/springframework/core/convert/TypeDescriptor;
+
+  protected org.springframework.core.convert.converter.GenericConverter getConverter(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: new           #176                // class org/springframework/core/convert/support/GenericConversionService$ConverterCacheKey
+       3: dup
+       4: aload_1
+       5: aload_2
+       6: invokespecial #178                // Method org/springframework/core/convert/support/GenericConversionService$ConverterCacheKey."<init>":(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)V
+       9: astore_3
+      10: aload_0
+      11: getfield      #21                 // Field converterCache:Ljava/util/Map;
+      14: aload_3
+      15: invokeinterface #181,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      20: checkcast     #187                // class org/springframework/core/convert/converter/GenericConverter
+      23: astore        4
+      25: aload         4
+      27: ifnull        45
+      30: aload         4
+      32: getstatic     #189                // Field NO_MATCH:Lorg/springframework/core/convert/converter/GenericConverter;
+      35: if_acmpeq     43
+      38: aload         4
+      40: goto          44
+      43: aconst_null
+      44: areturn
+      45: aload_0
+      46: getfield      #10                 // Field converters:Lorg/springframework/core/convert/support/GenericConversionService$Converters;
+      49: aload_1
+      50: aload_2
+      51: invokevirtual #192                // Method org/springframework/core/convert/support/GenericConversionService$Converters.find:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/converter/GenericConverter;
+      54: astore        4
+      56: aload         4
+      58: ifnonnull     69
+      61: aload_0
+      62: aload_1
+      63: aload_2
+      64: invokevirtual #195                // Method getDefaultConverter:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Lorg/springframework/core/convert/converter/GenericConverter;
+      67: astore        4
+      69: aload         4
+      71: ifnull        90
+      74: aload_0
+      75: getfield      #21                 // Field converterCache:Ljava/util/Map;
+      78: aload_3
+      79: aload         4
+      81: invokeinterface #198,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      86: pop
+      87: aload         4
+      89: areturn
+      90: aload_0
+      91: getfield      #21                 // Field converterCache:Ljava/util/Map;
+      94: aload_3
+      95: getstatic     #189                // Field NO_MATCH:Lorg/springframework/core/convert/converter/GenericConverter;
+      98: invokeinterface #198,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     103: pop
+     104: aconst_null
+     105: areturn
+    LineNumberTable:
+      line 227: 0
+      line 228: 10
+      line 229: 25
+      line 230: 30
+      line 233: 45
+      line 234: 56
+      line 235: 61
+      line 238: 69
+      line 239: 74
+      line 240: 87
+      line 243: 90
+      line 244: 104
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0     106     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0     106     1 sourceType   Lorg/springframework/core/convert/TypeDescriptor;
+          0     106     2 targetType   Lorg/springframework/core/convert/TypeDescriptor;
+         10      96     3   key   Lorg/springframework/core/convert/support/GenericConversionService$ConverterCacheKey;
+         25      81     4 converter   Lorg/springframework/core/convert/converter/GenericConverter;
+
+  protected org.springframework.core.convert.converter.GenericConverter getDefaultConverter(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: invokevirtual #202                // Method org/springframework/core/convert/TypeDescriptor.isAssignableTo:(Lorg/springframework/core/convert/TypeDescriptor;)Z
+       5: ifeq          14
+       8: getstatic     #117                // Field NO_OP_CONVERTER:Lorg/springframework/core/convert/converter/GenericConverter;
+      11: goto          15
+      14: aconst_null
+      15: areturn
+    LineNumberTable:
+      line 257: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      16     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      16     1 sourceType   Lorg/springframework/core/convert/TypeDescriptor;
+          0      16     2 targetType   Lorg/springframework/core/convert/TypeDescriptor;
+
+  private org.springframework.core.ResolvableType[] getRequiredTypeInfo(java.lang.Class<?>, java.lang.Class<?>);
+    Code:
+       0: aload_1
+       1: invokestatic  #64                 // Method org/springframework/core/ResolvableType.forClass:(Ljava/lang/Class;)Lorg/springframework/core/ResolvableType;
+       4: aload_2
+       5: invokevirtual #206                // Method org/springframework/core/ResolvableType.as:(Ljava/lang/Class;)Lorg/springframework/core/ResolvableType;
+       8: astore_3
+       9: aload_3
+      10: invokevirtual #209                // Method org/springframework/core/ResolvableType.getGenerics:()[Lorg/springframework/core/ResolvableType;
+      13: astore        4
+      15: aload         4
+      17: arraylength
+      18: iconst_2
+      19: if_icmpge     24
+      22: aconst_null
+      23: areturn
+      24: aload         4
+      26: iconst_0
+      27: aaload
+      28: invokevirtual #213                // Method org/springframework/core/ResolvableType.resolve:()Ljava/lang/Class;
+      31: astore        5
+      33: aload         4
+      35: iconst_1
+      36: aaload
+      37: invokevirtual #213                // Method org/springframework/core/ResolvableType.resolve:()Ljava/lang/Class;
+      40: astore        6
+      42: aload         5
+      44: ifnull        52
+      47: aload         6
+      49: ifnonnull     54
+      52: aconst_null
+      53: areturn
+      54: aload         4
+      56: areturn
+    LineNumberTable:
+      line 265: 0
+      line 266: 9
+      line 267: 15
+      line 268: 22
+      line 270: 24
+      line 271: 33
+      line 272: 42
+      line 273: 52
+      line 275: 54
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      57     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      57     1 converterClass   Ljava/lang/Class;
+          0      57     2 genericIfc   Ljava/lang/Class;
+          9      48     3 resolvableType   Lorg/springframework/core/ResolvableType;
+         15      42     4 generics   [Lorg/springframework/core/ResolvableType;
+         33      24     5 sourceType   Ljava/lang/Class;
+         42      15     6 targetType   Ljava/lang/Class;
+
+  private void invalidateCache();
+    Code:
+       0: aload_0
+       1: getfield      #21                 // Field converterCache:Ljava/util/Map;
+       4: invokeinterface #216,  1          // InterfaceMethod java/util/Map.clear:()V
+       9: return
+    LineNumberTable:
+      line 279: 0
+      line 280: 9
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      10     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+
+  private java.lang.Object handleConverterNotFound(java.lang.Object, org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_1
+       1: ifnonnull     12
+       4: aload_0
+       5: aload_2
+       6: aload_3
+       7: invokevirtual #219                // Method assertNotPrimitiveTargetType:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)V
+      10: aconst_null
+      11: areturn
+      12: aload_2
+      13: ifnull        24
+      16: aload_2
+      17: aload_3
+      18: invokevirtual #202                // Method org/springframework/core/convert/TypeDescriptor.isAssignableTo:(Lorg/springframework/core/convert/TypeDescriptor;)Z
+      21: ifeq          37
+      24: aload_3
+      25: invokevirtual #143                // Method org/springframework/core/convert/TypeDescriptor.getObjectType:()Ljava/lang/Class;
+      28: aload_1
+      29: invokevirtual #146                // Method java/lang/Class.isInstance:(Ljava/lang/Object;)Z
+      32: ifeq          37
+      35: aload_1
+      36: areturn
+      37: new           #222                // class org/springframework/core/convert/ConverterNotFoundException
+      40: dup
+      41: aload_2
+      42: aload_3
+      43: invokespecial #224                // Method org/springframework/core/convert/ConverterNotFoundException."<init>":(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)V
+      46: athrow
+    LineNumberTable:
+      line 286: 0
+      line 287: 4
+      line 288: 10
+      line 290: 12
+      line 291: 25
+      line 292: 35
+      line 294: 37
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      47     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      47     1 source   Ljava/lang/Object;
+          0      47     2 sourceType   Lorg/springframework/core/convert/TypeDescriptor;
+          0      47     3 targetType   Lorg/springframework/core/convert/TypeDescriptor;
+
+  private java.lang.Object handleResult(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor, java.lang.Object);
+    Code:
+       0: aload_3
+       1: ifnonnull     10
+       4: aload_0
+       5: aload_1
+       6: aload_2
+       7: invokevirtual #219                // Method assertNotPrimitiveTargetType:(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)V
+      10: aload_3
+      11: areturn
+    LineNumberTable:
+      line 299: 0
+      line 300: 4
+      line 302: 10
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      12     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      12     1 sourceType   Lorg/springframework/core/convert/TypeDescriptor;
+          0      12     2 targetType   Lorg/springframework/core/convert/TypeDescriptor;
+          0      12     3 result   Ljava/lang/Object;
+
+  private void assertNotPrimitiveTargetType(org.springframework.core.convert.TypeDescriptor, org.springframework.core.convert.TypeDescriptor);
+    Code:
+       0: aload_2
+       1: invokevirtual #225                // Method org/springframework/core/convert/TypeDescriptor.isPrimitive:()Z
+       4: ifeq          27
+       7: new           #229                // class org/springframework/core/convert/ConversionFailedException
+      10: dup
+      11: aload_1
+      12: aload_2
+      13: aconst_null
+      14: new           #40                 // class java/lang/IllegalArgumentException
+      17: dup
+      18: ldc           #231                // String A null value cannot be assigned to a primitive type
+      20: invokespecial #52                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      23: invokespecial #233                // Method org/springframework/core/convert/ConversionFailedException."<init>":(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;Ljava/lang/Object;Ljava/lang/Throwable;)V
+      26: athrow
+      27: return
+    LineNumberTable:
+      line 306: 0
+      line 307: 7
+      line 310: 27
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      28     0  this   Lorg/springframework/core/convert/support/GenericConversionService;
+          0      28     1 sourceType   Lorg/springframework/core/convert/TypeDescriptor;
+          0      28     2 targetType   Lorg/springframework/core/convert/TypeDescriptor;
+
+  static {};
+    Code:
+       0: new           #236                // class org/springframework/core/convert/support/GenericConversionService$NoOpConverter
+       3: dup
+       4: ldc           #238                // String NO_OP
+       6: invokespecial #240                // Method org/springframework/core/convert/support/GenericConversionService$NoOpConverter."<init>":(Ljava/lang/String;)V
+       9: putstatic     #117                // Field NO_OP_CONVERTER:Lorg/springframework/core/convert/converter/GenericConverter;
+      12: new           #236                // class org/springframework/core/convert/support/GenericConversionService$NoOpConverter
+      15: dup
+      16: ldc           #241                // String NO_MATCH
+      18: invokespecial #240                // Method org/springframework/core/convert/support/GenericConversionService$NoOpConverter."<init>":(Ljava/lang/String;)V
+      21: putstatic     #189                // Field NO_MATCH:Lorg/springframework/core/convert/converter/GenericConverter;
+      24: return
+    LineNumberTable:
+      line 67: 0
+      line 73: 12
+}

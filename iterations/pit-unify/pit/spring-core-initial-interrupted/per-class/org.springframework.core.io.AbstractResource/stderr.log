@@ -1,0 +1,1282 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=1
+19:21:55 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+19:21:55 PIT >> INFO : Created 1 mutation test units in pre scan
+19:21:55 PIT >> INFO : MINION : Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=1
+19:21:55 PIT >> INFO : Sending 134 test classes to minion
+19:21:55 PIT >> INFO : Sent tests to minion
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Oct 05, 2026 7:21:55 PM org.junit.jupiter.engine.extension.TempDirectory$CloseablePath close
+19:21:55 PIT >> INFO : MINION : INFO: Skipping cleanup of temp dir /var/folders/b_/kfwtjnkn3b786hkqn6dxb56m0000gn/T/junit3289150024009740744 due to cleanup mode configuration.
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> SEVERE : Description [testClass=org.springframework.core.io.ModuleResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.ModuleResourceTests]/[method:nonExistingResource()]] did not pass without mutation.
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> SEVERE : Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:dirExists()]] did not pass without mutation.
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> SEVERE : Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsWritable()]] did not pass without mutation.
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> SEVERE : Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getInputStream()]] did not pass without mutation.
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> SEVERE : Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLength()]] did not pass without mutation.
+19:21:56 PIT >> SEVERE : Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsReadable()]] did not pass without mutation.
+19:21:56 PIT >> SEVERE : Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getOutputStreamForDirectory()]] did not pass without mutation.
+19:21:56 PIT >> SEVERE : Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannel()]] did not pass without mutation.
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:56 PIT >> INFO : MINION : WARNING: A Java agent has been loaded dynamically (/Users/D061177/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.15/b4cc9d88d5de562bf75b3a54ab436ad01b3f72d/byte-buddy-agent-1.14.15.jar)
+19:21:56 PIT >> INFO : MINION : WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+19:21:56 PIT >> INFO : MINION : WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+19:21:56 PIT >> INFO : MINION : WARNING: Dynamic loading of agents will be disallowed by default in a future release
+19:21:56 PIT >> INFO : MINION : OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> SEVERE : Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLengthForDirectory()]] did not pass without mutation.
+19:21:57 PIT >> SEVERE : Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannelForDir()]] did not pass without mutation.
+19:21:57 PIT >> SEVERE : Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileExists()]] did not pass without mutation.
+19:21:57 PIT >> SEVERE : Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:lastModified()]] did not pass without mutation.
+19:21:57 PIT >> SEVERE : Description [testClass=org.springframework.core.io.ResourceEditorTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.ResourceEditorTests]/[method:strictSystemPropertyReplacementWithUnresolvablePlaceholder()]] did not pass without mutation.
+19:21:57 PIT >> SEVERE : Description [testClass=org.springframework.core.io.ResourceEditorTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.ResourceEditorTests]/[method:sunnyDay()]] did not pass without mutation.
+19:21:57 PIT >> SEVERE : Description [testClass=org.springframework.core.io.ResourceEditorTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.ResourceEditorTests]/[method:systemPropertyReplacement()]] did not pass without mutation.
+19:21:57 PIT >> SEVERE : Description [testClass=org.springframework.core.io.ResourceEditorTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.ResourceEditorTests]/[method:systemPropertyReplacementWithUnresolvablePlaceholder()]] did not pass without mutation.
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$3 execute
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63772] starting to accept connections
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63772] received request: HEAD /resource HTTP/1.1 and responded: HTTP/1.1 200 OK
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63772] done accepting connections: Socket closed
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$3 execute
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63774] starting to accept connections
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63774] received request: HEAD /missing HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63774] done accepting connections: Socket closed
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$3 execute
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63776] starting to accept connections
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63776] received request: GET /resource HTTP/1.1 and responded: HTTP/1.1 200 OK
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63776] done accepting connections: Socket closed
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$3 execute
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63778] starting to accept connections
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63778] received request: GET /resource HTTP/1.1 and responded: HTTP/1.1 200 OK
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63778] done accepting connections: Socket closed
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$3 execute
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63780] starting to accept connections
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63780] received request: HEAD /resource HTTP/1.1 and responded: HTTP/1.1 200 OK
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63780] received request: HEAD /resource HTTP/1.1 and responded: HTTP/1.1 200 OK
+19:21:57 PIT >> INFO : MINION : Oct 05, 2026 7:21:57 PM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+19:21:57 PIT >> INFO : MINION : INFO: MockWebServer[63780] done accepting connections: Socket closed
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:57 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:02 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:02 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:07 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:12 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:emptyAsByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:22:12 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:emptyAsByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:22:12 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:23 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:23 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:33 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:33 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:emptyAsByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:emptyAsByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:emptyAsByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:emptyAsByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:emptyAsByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:emptyAsByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:emptyAsByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:emptyAsByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:spr16351(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:spr16351(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:spr16351(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:spr16351(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:22:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:spr16351(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:22:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:43 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:43 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:48 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:53 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:53 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:spr16351(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:spr16351(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:spr16351(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:spr16351(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:spr16351(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityHighReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityHighReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityHighReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityHighReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityHighReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityHighReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readableByteBuffersJoined(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readableByteBuffersJoined(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readableByteBuffersJoined(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readableByteBuffersJoined(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readableByteBuffersJoined(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readableByteBuffersJoined(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:22:58 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readableByteBuffersJoined(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:22:58 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:22:58 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:03 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:03 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:08 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:13 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:13 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readableByteBuffersJoined(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readableByteBuffersJoined(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readableByteBuffersJoined(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeIsoString(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeIsoString(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeIsoString(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeIsoString(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeIsoString(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeIsoString(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeIsoString(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeIsoString(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeIsoString(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeIsoString(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionSmallerThanReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionSmallerThanReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionSmallerThanReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionSmallerThanReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionSmallerThanReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionSmallerThanReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionSmallerThanReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:23:18 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionSmallerThanReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:23:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:18 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:23 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:23 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:28 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:33 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:33 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:38 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionSmallerThanReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionSmallerThanReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBufferDestination(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBufferDestination(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBufferDestination(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBufferDestination(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBufferDestination(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBufferDestination(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBufferDestination(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBufferDestination(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBufferDestination(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toByteBufferDestination(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:expand(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:expand(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:expand(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:expand(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:expand(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:expand(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:expand(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:expand(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:expand(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:expand(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:23:38 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:repeatedWrites(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:23:38 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:43 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:43 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:23:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:04 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:04 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:repeatedWrites(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:repeatedWrites(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:repeatedWrites(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:repeatedWrites(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:repeatedWrites(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:repeatedWrites(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:repeatedWrites(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:repeatedWrites(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:repeatedWrites(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:capacityLessThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:capacityLessThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:24:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:capacityLessThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:capacityLessThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:capacityLessThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:capacityLessThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:capacityLessThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:capacityLessThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:capacityLessThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:capacityLessThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:24:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:24:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:24:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:14 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:14 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:24 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:24 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeByteBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:asByteBufferIndexLength(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:asByteBufferIndexLength(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:asByteBufferIndexLength(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:asByteBufferIndexLength(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:asByteBufferIndexLength(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:asByteBufferIndexLength(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:asByteBufferIndexLength(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:asByteBufferIndexLength(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:asByteBufferIndexLength(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:24:29 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:asByteBufferIndexLength(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:dataBufferContainsByteBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:dataBufferContainsByteBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:dataBufferContainsByteBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:24:29 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:dataBufferContainsByteBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:24:29 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:29 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:34 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:34 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:39 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:44 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:44 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:dataBufferContainsByteBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:dataBufferContainsByteBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:byteBufferContainsDataBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:byteBufferContainsDataBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:byteBufferContainsDataBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:byteBufferContainsDataBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:byteBufferContainsDataBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:byteBufferContainsDataBufferChanges(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:lastIndexOf(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:lastIndexOf(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:lastIndexOf(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:lastIndexOf(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:lastIndexOf(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:24:49 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:lastIndexOf(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:24:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:49 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:24:59 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:04 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:04 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:lastIndexOf(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:lastIndexOf(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:lastIndexOf(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:lastIndexOf(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeUtf8StringOutGrowsCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeUtf8StringOutGrowsCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeUtf8StringOutGrowsCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeUtf8StringOutGrowsCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeUtf8StringOutGrowsCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeUtf8StringOutGrowsCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeUtf8StringOutGrowsCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeUtf8StringOutGrowsCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:25:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeUtf8StringOutGrowsCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeUtf8StringOutGrowsCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:inputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:inputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:inputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:inputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:inputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:inputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:25:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:inputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:25:09 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:inputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:25:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:09 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:14 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:14 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:19 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:24 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:25 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:inputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:inputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:outputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:outputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:outputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:outputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:outputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:outputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:25:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:outputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:outputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:outputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:outputStream(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:25:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:25:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringNullCharset(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:25:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:35 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:35 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:45 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:45 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:getByte(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:getByte(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:getByte(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:getByte(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:getByte(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:getByte(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:getByte(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:getByte(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:getByte(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:getByte(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:join(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:join(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:join(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:join(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:join(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:join(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:join(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:join(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:join(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:25:50 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:join(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:50 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:25:55 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:25:55 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:00 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:05 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:05 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:slice(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:slice(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:slice(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:slice(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:slice(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:slice(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:slice(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:slice(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:slice(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:slice(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:split(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:split(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:split(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:26:10 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:split(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:26:10 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:10 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:15 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:15 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:20 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:25 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:25 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:split(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:split(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:split(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:split(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:split(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:split(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeDataBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeDataBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeDataBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeDataBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeDataBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeDataBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeDataBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeDataBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeDataBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writeDataBuffer(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionGreaterThanCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionGreaterThanCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionGreaterThanCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionGreaterThanCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionGreaterThanCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:26:30 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionGreaterThanCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:26:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:30 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:35 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:35 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:40 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:46 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:46 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionGreaterThanCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionGreaterThanCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionGreaterThanCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writePositionGreaterThanCapacity(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writableByteBuffers(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writableByteBuffers(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writableByteBuffers(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writableByteBuffers(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writableByteBuffers(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writableByteBuffers(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writableByteBuffers(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writableByteBuffers(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writableByteBuffers(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:writableByteBuffers(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readPositionSmallerThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readPositionSmallerThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readPositionSmallerThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readPositionSmallerThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readPositionSmallerThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readPositionSmallerThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readPositionSmallerThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:26:51 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readPositionSmallerThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:26:51 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:51 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:26:56 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:26:56 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:01 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:06 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:06 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:11 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readPositionSmallerThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:readPositionSmallerThanZero(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityLowReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityLowReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityLowReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityLowReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:27:11 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityLowReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:decreaseCapacityLowReadPosition(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringUtf8(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#1]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringUtf8(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#2]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringUtf8(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#3]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringUtf8(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#4]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringUtf8(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#5]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringUtf8(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#6]] did not pass without mutation.
+19:27:11 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringUtf8(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#7]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringUtf8(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#8]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringUtf8(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#9]] did not pass without mutation.
+19:27:11 PIT >> SEVERE : Description [testClass=org.springframework.core.io.buffer.DataBufferTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.buffer.DataBufferTests]/[test-template:toStringUtf8(org.springframework.core.io.buffer.DataBufferFactory)]/[test-template-invocation:#10]] did not pass without mutation.
+19:27:11 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:16 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:16 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:27:21 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT

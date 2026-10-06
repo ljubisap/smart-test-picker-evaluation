@@ -1,0 +1,872 @@
+[
+  {
+    "subject": "jgrapht",
+    "sourceRevision": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+    "path": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/HamiltonianCycleAlgorithmBase.java",
+    "sha256": "aa17a1d281e9e9fd931596e7bcd6da69b663fb45104e61601e4f64d8ef2aa479",
+    "startLine": 117,
+    "endLine": 149,
+    "lines": [
+      {
+        "line": 117,
+        "text": ""
+      },
+      {
+        "line": 118,
+        "text": "    /**"
+      },
+      {
+        "line": 119,
+        "text": "     * Checks that graph is undirected, complete, and non-empty"
+      },
+      {
+        "line": 120,
+        "text": "     *"
+      },
+      {
+        "line": 121,
+        "text": "     * @param graph the graph"
+      },
+      {
+        "line": 122,
+        "text": "     * @throws IllegalArgumentException if graph is not undirected"
+      },
+      {
+        "line": 123,
+        "text": "     * @throws IllegalArgumentException if graph is not complete"
+      },
+      {
+        "line": 124,
+        "text": "     * @throws IllegalArgumentException if graph contains no vertices"
+      },
+      {
+        "line": 125,
+        "text": "     */"
+      },
+      {
+        "line": 126,
+        "text": "    protected void checkGraph(Graph<V, E> graph)"
+      },
+      {
+        "line": 127,
+        "text": "    {"
+      },
+      {
+        "line": 128,
+        "text": "        GraphTests.requireUndirected(graph);"
+      },
+      {
+        "line": 129,
+        "text": ""
+      },
+      {
+        "line": 130,
+        "text": "        requireNotEmpty(graph);"
+      },
+      {
+        "line": 131,
+        "text": ""
+      },
+      {
+        "line": 132,
+        "text": "        if (!GraphTests.isComplete(graph)) {"
+      },
+      {
+        "line": 133,
+        "text": "            throw new IllegalArgumentException(\"Graph is not complete\");"
+      },
+      {
+        "line": 134,
+        "text": "        }"
+      },
+      {
+        "line": 135,
+        "text": "    }"
+      },
+      {
+        "line": 136,
+        "text": ""
+      },
+      {
+        "line": 137,
+        "text": "    /**"
+      },
+      {
+        "line": 138,
+        "text": "     * Checks that graph is not empty"
+      },
+      {
+        "line": 139,
+        "text": "     *"
+      },
+      {
+        "line": 140,
+        "text": "     * @param graph the graph"
+      },
+      {
+        "line": 141,
+        "text": "     * @throws IllegalArgumentException if graph contains no vertices"
+      },
+      {
+        "line": 142,
+        "text": "     */"
+      },
+      {
+        "line": 143,
+        "text": "    protected void requireNotEmpty(Graph<V, E> graph)"
+      },
+      {
+        "line": 144,
+        "text": "    {"
+      },
+      {
+        "line": 145,
+        "text": "        if (graph.vertexSet().isEmpty()) {"
+      },
+      {
+        "line": 146,
+        "text": "            throw new IllegalArgumentException(\"Graph contains no vertices\");"
+      },
+      {
+        "line": 147,
+        "text": "        }"
+      },
+      {
+        "line": 148,
+        "text": "    }"
+      },
+      {
+        "line": 149,
+        "text": "}"
+      }
+    ]
+  },
+  {
+    "subject": "jgrapht",
+    "sourceRevision": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+    "path": "jgrapht-core/src/main/java/org/jgrapht/GraphTests.java",
+    "sha256": "8e6deea3bd9d0d97d26be00dba1d774a20e5864565a3a9f8d629f73742d5a91a",
+    "startLine": 780,
+    "endLine": 810,
+    "lines": [
+      {
+        "line": 780,
+        "text": "     * @return {@code graph} if undirected and not {@code null}"
+      },
+      {
+        "line": 781,
+        "text": "     * @throws NullPointerException if {@code graph} is {@code null}"
+      },
+      {
+        "line": 782,
+        "text": "     * @throws IllegalArgumentException if {@code graph} is not undirected"
+      },
+      {
+        "line": 783,
+        "text": "     */"
+      },
+      {
+        "line": 784,
+        "text": "    public static <V, E> Graph<V, E> requireUndirected(Graph<V, E> graph, String message)"
+      },
+      {
+        "line": 785,
+        "text": "    {"
+      },
+      {
+        "line": 786,
+        "text": "        if (graph == null)"
+      },
+      {
+        "line": 787,
+        "text": "            throw new NullPointerException(GRAPH_CANNOT_BE_NULL);"
+      },
+      {
+        "line": 788,
+        "text": "        if (!graph.getType().isUndirected()) {"
+      },
+      {
+        "line": 789,
+        "text": "            throw new IllegalArgumentException(message);"
+      },
+      {
+        "line": 790,
+        "text": "        }"
+      },
+      {
+        "line": 791,
+        "text": "        return graph;"
+      },
+      {
+        "line": 792,
+        "text": "    }"
+      },
+      {
+        "line": 793,
+        "text": ""
+      },
+      {
+        "line": 794,
+        "text": "    /**"
+      },
+      {
+        "line": 795,
+        "text": "     * Checks that the specified graph is undirected and throws an {@link IllegalArgumentException}"
+      },
+      {
+        "line": 796,
+        "text": "     * if it is not. Also checks that the graph reference is not {@code null} and throws a"
+      },
+      {
+        "line": 797,
+        "text": "     * {@link NullPointerException} if it is."
+      },
+      {
+        "line": 798,
+        "text": "     *"
+      },
+      {
+        "line": 799,
+        "text": "     * @param graph the graph reference to check for being undirected and not null"
+      },
+      {
+        "line": 800,
+        "text": "     * @param <V> the graph vertex type"
+      },
+      {
+        "line": 801,
+        "text": "     * @param <E> the graph edge type"
+      },
+      {
+        "line": 802,
+        "text": "     * @return {@code graph} if undirected and not {@code null}"
+      },
+      {
+        "line": 803,
+        "text": "     * @throws NullPointerException if {@code graph} is {@code null}"
+      },
+      {
+        "line": 804,
+        "text": "     * @throws IllegalArgumentException if {@code graph} is not undirected"
+      },
+      {
+        "line": 805,
+        "text": "     */"
+      },
+      {
+        "line": 806,
+        "text": "    public static <V, E> Graph<V, E> requireUndirected(Graph<V, E> graph)"
+      },
+      {
+        "line": 807,
+        "text": "    {"
+      },
+      {
+        "line": 808,
+        "text": "        return requireUndirected(graph, GRAPH_MUST_BE_UNDIRECTED);"
+      },
+      {
+        "line": 809,
+        "text": "    }"
+      },
+      {
+        "line": 810,
+        "text": ""
+      }
+    ]
+  },
+  {
+    "subject": "spring-core",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "path": "spring-core/src/main/java/org/springframework/util/Assert.java",
+    "sha256": "a66bf9a6b357fe7fab27db71fb2770109b1330be854ad37fb898d69f7e3d6e47",
+    "startLine": 160,
+    "endLine": 196,
+    "lines": [
+      {
+        "line": 160,
+        "text": "\t\t}"
+      },
+      {
+        "line": 161,
+        "text": "\t}"
+      },
+      {
+        "line": 162,
+        "text": ""
+      },
+      {
+        "line": 163,
+        "text": "\t/**"
+      },
+      {
+        "line": 164,
+        "text": "\t * Assert that an object is not {@code null}."
+      },
+      {
+        "line": 165,
+        "text": "\t * <pre class=\"code\">Assert.notNull(clazz, \"The class must not be null\");</pre>"
+      },
+      {
+        "line": 166,
+        "text": "\t * @param object the object to check"
+      },
+      {
+        "line": 167,
+        "text": "\t * @param message the exception message to use if the assertion fails"
+      },
+      {
+        "line": 168,
+        "text": "\t * @throws IllegalArgumentException if the object is {@code null}"
+      },
+      {
+        "line": 169,
+        "text": "\t */"
+      },
+      {
+        "line": 170,
+        "text": "\tpublic static void notNull(@Nullable Object object, String message) {"
+      },
+      {
+        "line": 171,
+        "text": "\t\tif (object == null) {"
+      },
+      {
+        "line": 172,
+        "text": "\t\t\tthrow new IllegalArgumentException(message);"
+      },
+      {
+        "line": 173,
+        "text": "\t\t}"
+      },
+      {
+        "line": 174,
+        "text": "\t}"
+      },
+      {
+        "line": 175,
+        "text": ""
+      },
+      {
+        "line": 176,
+        "text": "\t/**"
+      },
+      {
+        "line": 177,
+        "text": "\t * Assert that an object is not {@code null}."
+      },
+      {
+        "line": 178,
+        "text": "\t * <pre class=\"code\">"
+      },
+      {
+        "line": 179,
+        "text": "\t * Assert.notNull(entity.getId(),"
+      },
+      {
+        "line": 180,
+        "text": "\t *     () -&gt; \"ID for entity \" + entity.getName() + \" must not be null\");"
+      },
+      {
+        "line": 181,
+        "text": "\t * </pre>"
+      },
+      {
+        "line": 182,
+        "text": "\t * @param object the object to check"
+      },
+      {
+        "line": 183,
+        "text": "\t * @param messageSupplier a supplier for the exception message to use if the"
+      },
+      {
+        "line": 184,
+        "text": "\t * assertion fails"
+      },
+      {
+        "line": 185,
+        "text": "\t * @throws IllegalArgumentException if the object is {@code null}"
+      },
+      {
+        "line": 186,
+        "text": "\t * @since 5.0"
+      },
+      {
+        "line": 187,
+        "text": "\t */"
+      },
+      {
+        "line": 188,
+        "text": "\tpublic static void notNull(@Nullable Object object, Supplier<String> messageSupplier) {"
+      },
+      {
+        "line": 189,
+        "text": "\t\tif (object == null) {"
+      },
+      {
+        "line": 190,
+        "text": "\t\t\tthrow new IllegalArgumentException(nullSafeGet(messageSupplier));"
+      },
+      {
+        "line": 191,
+        "text": "\t\t}"
+      },
+      {
+        "line": 192,
+        "text": "\t}"
+      },
+      {
+        "line": 193,
+        "text": ""
+      },
+      {
+        "line": 194,
+        "text": "\t/**"
+      },
+      {
+        "line": 195,
+        "text": "\t * Assert that the given String is not empty; that is,"
+      },
+      {
+        "line": 196,
+        "text": "\t * it must not be {@code null} and not the empty String."
+      }
+    ]
+  },
+  {
+    "subject": "spring-core",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "path": "spring-core/src/main/java/org/springframework/util/Assert.java",
+    "sha256": "a66bf9a6b357fe7fab27db71fb2770109b1330be854ad37fb898d69f7e3d6e47",
+    "startLine": 480,
+    "endLine": 565,
+    "lines": [
+      {
+        "line": 480,
+        "text": "\t * @param type the type to check against"
+      },
+      {
+        "line": 481,
+        "text": "\t * @param obj the object to check"
+      },
+      {
+        "line": 482,
+        "text": "\t * @param message a message which will be prepended to provide further context."
+      },
+      {
+        "line": 483,
+        "text": "\t * If it is empty or ends in \":\" or \";\" or \",\" or \".\", a full exception message"
+      },
+      {
+        "line": 484,
+        "text": "\t * will be appended. If it ends in a space, the name of the offending object's"
+      },
+      {
+        "line": 485,
+        "text": "\t * type will be appended. In any other case, a \":\" with a space and the name"
+      },
+      {
+        "line": 486,
+        "text": "\t * of the offending object's type will be appended."
+      },
+      {
+        "line": 487,
+        "text": "\t * @throws IllegalArgumentException if the object is not an instance of type"
+      },
+      {
+        "line": 488,
+        "text": "\t */"
+      },
+      {
+        "line": 489,
+        "text": "\tpublic static void isInstanceOf(Class<?> type, @Nullable Object obj, String message) {"
+      },
+      {
+        "line": 490,
+        "text": "\t\tnotNull(type, \"Type to check against must not be null\");"
+      },
+      {
+        "line": 491,
+        "text": "\t\tif (!type.isInstance(obj)) {"
+      },
+      {
+        "line": 492,
+        "text": "\t\t\tinstanceCheckFailed(type, obj, message);"
+      },
+      {
+        "line": 493,
+        "text": "\t\t}"
+      },
+      {
+        "line": 494,
+        "text": "\t}"
+      },
+      {
+        "line": 495,
+        "text": ""
+      },
+      {
+        "line": 496,
+        "text": "\t/**"
+      },
+      {
+        "line": 497,
+        "text": "\t * Assert that the provided object is an instance of the provided class."
+      },
+      {
+        "line": 498,
+        "text": "\t * <pre class=\"code\">"
+      },
+      {
+        "line": 499,
+        "text": "\t * Assert.instanceOf(Foo.class, foo, () -&gt; \"Processing \" + Foo.class.getSimpleName() + \":\");"
+      },
+      {
+        "line": 500,
+        "text": "\t * </pre>"
+      },
+      {
+        "line": 501,
+        "text": "\t * @param type the type to check against"
+      },
+      {
+        "line": 502,
+        "text": "\t * @param obj the object to check"
+      },
+      {
+        "line": 503,
+        "text": "\t * @param messageSupplier a supplier for the exception message to use if the"
+      },
+      {
+        "line": 504,
+        "text": "\t * assertion fails. See {@link #isInstanceOf(Class, Object, String)} for details."
+      },
+      {
+        "line": 505,
+        "text": "\t * @throws IllegalArgumentException if the object is not an instance of type"
+      },
+      {
+        "line": 506,
+        "text": "\t * @since 5.0"
+      },
+      {
+        "line": 507,
+        "text": "\t */"
+      },
+      {
+        "line": 508,
+        "text": "\tpublic static void isInstanceOf(Class<?> type, @Nullable Object obj, Supplier<String> messageSupplier) {"
+      },
+      {
+        "line": 509,
+        "text": "\t\tnotNull(type, \"Type to check against must not be null\");"
+      },
+      {
+        "line": 510,
+        "text": "\t\tif (!type.isInstance(obj)) {"
+      },
+      {
+        "line": 511,
+        "text": "\t\t\tinstanceCheckFailed(type, obj, nullSafeGet(messageSupplier));"
+      },
+      {
+        "line": 512,
+        "text": "\t\t}"
+      },
+      {
+        "line": 513,
+        "text": "\t}"
+      },
+      {
+        "line": 514,
+        "text": ""
+      },
+      {
+        "line": 515,
+        "text": "\t/**"
+      },
+      {
+        "line": 516,
+        "text": "\t * Assert that the provided object is an instance of the provided class."
+      },
+      {
+        "line": 517,
+        "text": "\t * <pre class=\"code\">Assert.instanceOf(Foo.class, foo);</pre>"
+      },
+      {
+        "line": 518,
+        "text": "\t * @param type the type to check against"
+      },
+      {
+        "line": 519,
+        "text": "\t * @param obj the object to check"
+      },
+      {
+        "line": 520,
+        "text": "\t * @throws IllegalArgumentException if the object is not an instance of type"
+      },
+      {
+        "line": 521,
+        "text": "\t */"
+      },
+      {
+        "line": 522,
+        "text": "\tpublic static void isInstanceOf(Class<?> type, @Nullable Object obj) {"
+      },
+      {
+        "line": 523,
+        "text": "\t\tisInstanceOf(type, obj, \"\");"
+      },
+      {
+        "line": 524,
+        "text": "\t}"
+      },
+      {
+        "line": 525,
+        "text": ""
+      },
+      {
+        "line": 526,
+        "text": "\t/**"
+      },
+      {
+        "line": 527,
+        "text": "\t * Assert that {@code superType.isAssignableFrom(subType)} is {@code true}."
+      },
+      {
+        "line": 528,
+        "text": "\t * <pre class=\"code\">Assert.isAssignable(Number.class, myClass, \"Number expected\");</pre>"
+      },
+      {
+        "line": 529,
+        "text": "\t * @param superType the supertype to check against"
+      },
+      {
+        "line": 530,
+        "text": "\t * @param subType the subtype to check"
+      },
+      {
+        "line": 531,
+        "text": "\t * @param message a message which will be prepended to provide further context."
+      },
+      {
+        "line": 532,
+        "text": "\t * If it is empty or ends in \":\" or \";\" or \",\" or \".\", a full exception message"
+      },
+      {
+        "line": 533,
+        "text": "\t * will be appended. If it ends in a space, the name of the offending subtype"
+      },
+      {
+        "line": 534,
+        "text": "\t * will be appended. In any other case, a \":\" with a space and the name of the"
+      },
+      {
+        "line": 535,
+        "text": "\t * offending subtype will be appended."
+      },
+      {
+        "line": 536,
+        "text": "\t * @throws IllegalArgumentException if the classes are not assignable"
+      },
+      {
+        "line": 537,
+        "text": "\t */"
+      },
+      {
+        "line": 538,
+        "text": "\tpublic static void isAssignable(Class<?> superType, @Nullable Class<?> subType, String message) {"
+      },
+      {
+        "line": 539,
+        "text": "\t\tnotNull(superType, \"Supertype to check against must not be null\");"
+      },
+      {
+        "line": 540,
+        "text": "\t\tif (subType == null || !superType.isAssignableFrom(subType)) {"
+      },
+      {
+        "line": 541,
+        "text": "\t\t\tassignableCheckFailed(superType, subType, message);"
+      },
+      {
+        "line": 542,
+        "text": "\t\t}"
+      },
+      {
+        "line": 543,
+        "text": "\t}"
+      },
+      {
+        "line": 544,
+        "text": ""
+      },
+      {
+        "line": 545,
+        "text": "\t/**"
+      },
+      {
+        "line": 546,
+        "text": "\t * Assert that {@code superType.isAssignableFrom(subType)} is {@code true}."
+      },
+      {
+        "line": 547,
+        "text": "\t * <pre class=\"code\">"
+      },
+      {
+        "line": 548,
+        "text": "\t * Assert.isAssignable(Number.class, myClass, () -&gt; \"Processing \" + myAttributeName + \":\");"
+      },
+      {
+        "line": 549,
+        "text": "\t * </pre>"
+      },
+      {
+        "line": 550,
+        "text": "\t * @param superType the supertype to check against"
+      },
+      {
+        "line": 551,
+        "text": "\t * @param subType the subtype to check"
+      },
+      {
+        "line": 552,
+        "text": "\t * @param messageSupplier a supplier for the exception message to use if the"
+      },
+      {
+        "line": 553,
+        "text": "\t * assertion fails. See {@link #isAssignable(Class, Class, String)} for details."
+      },
+      {
+        "line": 554,
+        "text": "\t * @throws IllegalArgumentException if the classes are not assignable"
+      },
+      {
+        "line": 555,
+        "text": "\t * @since 5.0"
+      },
+      {
+        "line": 556,
+        "text": "\t */"
+      },
+      {
+        "line": 557,
+        "text": "\tpublic static void isAssignable(Class<?> superType, @Nullable Class<?> subType, Supplier<String> messageSupplier) {"
+      },
+      {
+        "line": 558,
+        "text": "\t\tnotNull(superType, \"Supertype to check against must not be null\");"
+      },
+      {
+        "line": 559,
+        "text": "\t\tif (subType == null || !superType.isAssignableFrom(subType)) {"
+      },
+      {
+        "line": 560,
+        "text": "\t\t\tassignableCheckFailed(superType, subType, nullSafeGet(messageSupplier));"
+      },
+      {
+        "line": 561,
+        "text": "\t\t}"
+      },
+      {
+        "line": 562,
+        "text": "\t}"
+      },
+      {
+        "line": 563,
+        "text": ""
+      },
+      {
+        "line": 564,
+        "text": "\t/**"
+      },
+      {
+        "line": 565,
+        "text": "\t * Assert that {@code superType.isAssignableFrom(subType)} is {@code true}."
+      }
+    ]
+  },
+  {
+    "subject": "spring-core",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "path": "spring-core/src/main/java/org/springframework/util/backoff/ExponentialBackOff.java",
+    "sha256": "ccca1a94c9f4d7fcb31f0715be1b632668c95a62ceca54a4cf6124f18b7ec9dc",
+    "startLine": 205,
+    "endLine": 222,
+    "lines": [
+      {
+        "line": 205,
+        "text": "\t\treturn this.maxAttempts;"
+      },
+      {
+        "line": 206,
+        "text": "\t}"
+      },
+      {
+        "line": 207,
+        "text": ""
+      },
+      {
+        "line": 208,
+        "text": ""
+      },
+      {
+        "line": 209,
+        "text": "\t@Override"
+      },
+      {
+        "line": 210,
+        "text": "\tpublic BackOffExecution start() {"
+      },
+      {
+        "line": 211,
+        "text": "\t\treturn new ExponentialBackOffExecution();"
+      },
+      {
+        "line": 212,
+        "text": "\t}"
+      },
+      {
+        "line": 213,
+        "text": ""
+      },
+      {
+        "line": 214,
+        "text": "\tprivate void checkMultiplier(double multiplier) {"
+      },
+      {
+        "line": 215,
+        "text": "\t\tAssert.isTrue(multiplier >= 1, () -> \"Invalid multiplier '\" + multiplier + \"'. Should be greater than \" +"
+      },
+      {
+        "line": 216,
+        "text": "\t\t\t\t\t\"or equal to 1. A multiplier of 1 is equivalent to a fixed interval.\");"
+      },
+      {
+        "line": 217,
+        "text": "\t}"
+      },
+      {
+        "line": 218,
+        "text": ""
+      },
+      {
+        "line": 219,
+        "text": "\t@Override"
+      },
+      {
+        "line": 220,
+        "text": "\tpublic String toString() {"
+      },
+      {
+        "line": 221,
+        "text": "\t\treturn new StringJoiner(\", \", ExponentialBackOff.class.getSimpleName() + \"{\", \"}\")"
+      },
+      {
+        "line": 222,
+        "text": "\t\t\t\t.add(\"initialInterval=\" + this.initialInterval)"
+      }
+    ]
+  }
+]

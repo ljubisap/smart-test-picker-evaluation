@@ -1,0 +1,643 @@
+{
+  "sampleIntervalSeconds": 1,
+  "scope": "Actual launched process and observed descendants only; short-lived processes can fall between samples. Environment inherited from recorded launcher.",
+  "commands": [
+    {
+      "pid": 62758,
+      "ppid": 61978,
+      "command": "/bin/sh /Users/D061177/Programs/apache-maven-3.9.15/bin/mvn org.pitest:pitest-maven:1.17.4:mutationCoverage -Ppitest -pl jgrapht-core -DtargetClasses=org.jgrapht.alg.lca.BinaryLiftingLCAFinder -DtargetTests=org.jgrapht.alg.lca.* -DfullMutationMatrix=true -Dthreads=4 -DtimestampedReports=false -DskipFailingTests=true -DoutputFormats=XML"
+    },
+    {
+      "pid": 62758,
+      "ppid": 61978,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java --enable-native-access=ALL-UNNAMED -Xmx2g -classpath /Users/D061177/Programs/apache-maven-3.9.15/boot/plexus-classworlds-2.9.0.jar -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.9.15/bin/m2.conf -Dmaven.home=/Users/D061177/Programs/apache-maven-3.9.15 -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.9.15/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject org.codehaus.plexus.classworlds.launcher.Launcher org.pitest:pitest-maven:1.17.4:mutationCoverage -Ppitest -pl jgrapht-core -DtargetClasses=org.jgrapht.alg.lca.BinaryLiftingLCAFinder -DtargetTests=org.jgrapht.alg.lca.* -DfullMutationMatrix=true -Dthreads=4 -DtimestampedReports=false -DskipFailingTests=true -DoutputFormats=XML"
+    },
+    {
+      "pid": 62792,
+      "ppid": 62758,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java -javaagent:/var/folders/b_/kfwtjnkn3b786hkqn6dxb56m0000gn/T/1791235141917053144645546117816053162919039844720.jar -Xmx2g --add-opens=org.jgrapht.core/org.jgrapht=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.clique=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.clustering=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.color=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.connectivity=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.cycle=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.drawing.model=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.flow=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.isomorphism=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.lca=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.linkprediction=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.matching.blossom.v5=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.scoring=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.shortestpath=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.spanning=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.tour=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.util=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.vertexcover=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.generate.netgen=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph.specifics=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.interfaces=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.util=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.matching=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.generate=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.event=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.traverse=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph.builder=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.util.extension=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.flow.mincost=ALL-UNNAMED -ea -Djava.awt.headless=true -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.9.15/bin/m2.conf -Dmaven.home=/Users/D061177/Programs/apache-maven-3.9.15 -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.9.15/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject org.pitest.coverage.execute.CoverageMinion 53130"
+    },
+    {
+      "pid": 62792,
+      "ppid": 62758,
+      "command": "(java)"
+    },
+    {
+      "pid": 62838,
+      "ppid": 62758,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java -javaagent:/var/folders/b_/kfwtjnkn3b786hkqn6dxb56m0000gn/T/1791235141917053144645546117816053162919039844720.jar -Xmx2g --add-opens=org.jgrapht.core/org.jgrapht=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.clique=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.clustering=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.color=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.connectivity=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.cycle=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.drawing.model=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.flow=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.isomorphism=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.lca=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.linkprediction=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.matching.blossom.v5=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.scoring=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.shortestpath=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.spanning=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.tour=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.util=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.vertexcover=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.generate.netgen=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph.specifics=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.interfaces=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.util=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.matching=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.generate=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.event=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.traverse=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph.builder=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.util.extension=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.flow.mincost=ALL-UNNAMED -ea -Djava.awt.headless=true -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.9.15/bin/m2.conf -Dmaven.home=/Users/D061177/Programs/apache-maven-3.9.15 -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.9.15/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject org.pitest.mutationtest.execute.MutationTestMinion 53138"
+    }
+  ],
+  "samples": [
+    {
+      "elapsedSeconds": 0.047970165999970504,
+      "cpuPercent": 0.0,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 1.1600496249999992,
+      "cpuPercent": 76.8,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 2.206595290999985,
+      "cpuPercent": 0.2,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 3.2604258329999993,
+      "cpuPercent": 195.8,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 4.310090166000009,
+      "cpuPercent": 140.7,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 5.359906707999983,
+      "cpuPercent": 179.2,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 6.406409790999987,
+      "cpuPercent": 270.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 7.4611627909999925,
+      "cpuPercent": 151.29999999999998,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 8.521914250000009,
+      "cpuPercent": 155.70000000000002,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 9.596383582999977,
+      "cpuPercent": 125.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 10.65984791599999,
+      "cpuPercent": 142.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 11.70844920799999,
+      "cpuPercent": 125.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 12.76058875000001,
+      "cpuPercent": 141.70000000000002,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 13.811942999999985,
+      "cpuPercent": 209.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 14.915636666000012,
+      "cpuPercent": 142.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 15.985050333000004,
+      "cpuPercent": 139.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 17.032786457999975,
+      "cpuPercent": 194.20000000000002,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 18.08739824999998,
+      "cpuPercent": 156.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 19.137005208000005,
+      "cpuPercent": 128.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 20.186554708000017,
+      "cpuPercent": 109.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 21.28168062499998,
+      "cpuPercent": 32.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 22.33611533300001,
+      "cpuPercent": 56.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 23.431476625000016,
+      "cpuPercent": 52.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 24.509937250000007,
+      "cpuPercent": 194.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 25.56899787499998,
+      "cpuPercent": 138.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 26.622939291000023,
+      "cpuPercent": 142.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 27.676466457999993,
+      "cpuPercent": 131.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 28.729356166000002,
+      "cpuPercent": 101.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 29.78735925000001,
+      "cpuPercent": 205.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 30.840426750000006,
+      "cpuPercent": 147.60000000000002,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 31.93602570799999,
+      "cpuPercent": 88.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 33.08909320800001,
+      "cpuPercent": 136.5,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 34.14430579100002,
+      "cpuPercent": 139.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 35.19379141600001,
+      "cpuPercent": 113.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 36.24112720800002,
+      "cpuPercent": 71.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 37.30823425,
+      "cpuPercent": 79.89999999999999,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 38.36181720799999,
+      "cpuPercent": 161.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 39.41737683299999,
+      "cpuPercent": 95.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 40.46918199999999,
+      "cpuPercent": 108.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 41.513570125,
+      "cpuPercent": 126.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 42.57373858300002,
+      "cpuPercent": 173.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 43.625974541000005,
+      "cpuPercent": 136.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 44.69682608300002,
+      "cpuPercent": 38.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 45.749953790999996,
+      "cpuPercent": 108.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 46.80468187499997,
+      "cpuPercent": 50.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 47.88285558299998,
+      "cpuPercent": 93.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 48.935870416,
+      "cpuPercent": 147.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 49.98927249999997,
+      "cpuPercent": 53.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 51.03424066600002,
+      "cpuPercent": 91.5,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 52.086276833,
+      "cpuPercent": 131.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 53.13847625,
+      "cpuPercent": 148.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 54.18829441600002,
+      "cpuPercent": 128.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 55.241596500000014,
+      "cpuPercent": 67.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 56.29265016599999,
+      "cpuPercent": 100.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 57.34526820799999,
+      "cpuPercent": 99.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 58.401980208,
+      "cpuPercent": 116.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 59.462223333,
+      "cpuPercent": 94.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 60.51183037499999,
+      "cpuPercent": 191.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 61.57303008299999,
+      "cpuPercent": 166.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 62.63637262499998,
+      "cpuPercent": 139.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 63.70197862499998,
+      "cpuPercent": 89.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 64.74933291600001,
+      "cpuPercent": 97.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 65.80004274999999,
+      "cpuPercent": 122.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 66.86005458300002,
+      "cpuPercent": 171.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 67.90776891600001,
+      "cpuPercent": 67.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 68.95860062499997,
+      "cpuPercent": 106.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 70.01135029099999,
+      "cpuPercent": 64.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 71.066582708,
+      "cpuPercent": 43.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 72.15218762500001,
+      "cpuPercent": 160.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 73.19941833299998,
+      "cpuPercent": 148.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 74.262834166,
+      "cpuPercent": 169.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 75.31690620799998,
+      "cpuPercent": 75.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 76.37183041600002,
+      "cpuPercent": 82.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 77.42293462499998,
+      "cpuPercent": 124.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 78.52170458299997,
+      "cpuPercent": 57.400000000000006,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 79.5737545,
+      "cpuPercent": 99.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 80.62646441599998,
+      "cpuPercent": 177.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 81.67569133299997,
+      "cpuPercent": 137.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 82.73378633300001,
+      "cpuPercent": 127.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 83.79318141599998,
+      "cpuPercent": 100.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 84.85397441599997,
+      "cpuPercent": 162.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 85.90630495800002,
+      "cpuPercent": 122.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 86.97631745799998,
+      "cpuPercent": 111.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 88.027945208,
+      "cpuPercent": 106.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 89.08109300000001,
+      "cpuPercent": 192.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 90.14527612500001,
+      "cpuPercent": 114.5,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 91.21787975000001,
+      "cpuPercent": 122.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 92.27190516600001,
+      "cpuPercent": 2.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 93.35445529100002,
+      "cpuPercent": 103.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 94.40421262500001,
+      "cpuPercent": 106.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 95.45323645799999,
+      "cpuPercent": 57.5,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 96.50142662500002,
+      "cpuPercent": 127.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 97.560156958,
+      "cpuPercent": 71.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 98.61826487500002,
+      "cpuPercent": 74.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 99.66793287500002,
+      "cpuPercent": 133.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 100.72033783299997,
+      "cpuPercent": 41.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 101.77021283300002,
+      "cpuPercent": 47.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 102.823221875,
+      "cpuPercent": 116.89999999999999,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 103.88949374999999,
+      "cpuPercent": 67.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 104.94106158300002,
+      "cpuPercent": 126.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 105.98855012500002,
+      "cpuPercent": 148.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 107.039700375,
+      "cpuPercent": 130.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 108.10013262500001,
+      "cpuPercent": 226.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 109.15764604100002,
+      "cpuPercent": 44.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 110.20895220799997,
+      "cpuPercent": 169.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 111.26012791599999,
+      "cpuPercent": 38.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 112.33921637499998,
+      "cpuPercent": 83.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 113.395290208,
+      "cpuPercent": 61.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 114.446338916,
+      "cpuPercent": 159.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 115.491563041,
+      "cpuPercent": 82.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 116.55775833299998,
+      "cpuPercent": 98.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 117.63893141599999,
+      "cpuPercent": 137.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 118.69634158299999,
+      "cpuPercent": 160.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 119.78305441599997,
+      "cpuPercent": 18.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 120.832741333,
+      "cpuPercent": 93.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 121.88350654099997,
+      "cpuPercent": 102.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 122.93413212500002,
+      "cpuPercent": 98.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 123.98823516599998,
+      "cpuPercent": 257.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 125.05003195799998,
+      "cpuPercent": 172.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 126.097000041,
+      "cpuPercent": 133.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 127.14367616599998,
+      "cpuPercent": 62.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 128.20727512499997,
+      "cpuPercent": 118.2,
+      "processes": 2
+    }
+  ]
+}

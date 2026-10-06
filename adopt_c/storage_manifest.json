@@ -1,0 +1,14 @@
+{
+  "reason": "GitHub single-file limit; no verified C file is rewritten or removed locally. Canonical PIT inputs already use the verified gzip. The new verifier accepts byte-identical decompression if a duplicate raw file is absent in a fresh clone.",
+  "omittedDuplicateRawFiles": [
+    {
+      "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-12-attempt-1/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml",
+      "sourceSha256": "d4fe53dcafe4ffb47eb294175815ea73f6a7055a349b06a267c8f6933a8ba3f3",
+      "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml.gz",
+      "packagedSha256": "e91c212aa0d7f47b3848d01be632b00f3ca33b335fa80d5575aebca8c0c07c2d",
+      "lossless": true,
+      "sourceBytes": 199104776,
+      "repositoryRepresentation": "existing byte-exact gzip; duplicate raw file remains local, not staged"
+    }
+  ]
+}

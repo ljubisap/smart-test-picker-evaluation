@@ -1,0 +1,76 @@
+[
+  {
+    "subject": "jgrapht",
+    "path": "/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/pom.xml",
+    "sha256": "68772f3ba088ec707ef1900d0b971c61c09f0b26443083f01a7d8ff7c81ed9e1",
+    "hits": [
+      {
+        "line": 84,
+        "text": "                            <argLine>"
+      },
+      {
+        "line": 98,
+        "text": "                            </argLine>"
+      },
+      {
+        "line": 114,
+        "text": "                    <argLine>--add-exports org.jgrapht.core/org.jgrapht.interfaces=ALL-UNNAMED</argLine>"
+      },
+      {
+        "line": 160,
+        "text": "                                    <argLine>${jacocoArgLine}</argLine>"
+      }
+    ]
+  },
+  {
+    "subject": "spring-core",
+    "path": "/private/tmp/pit-unify-spring-core-nydoloo0/subject/gradle.properties",
+    "sha256": "9ec6831c78cc206e96661a47464d04890635e6cfa08b4252db86dc4d051e1b0e",
+    "hits": [
+      {
+        "line": 4,
+        "text": "org.gradle.jvmargs=-Xmx2048m"
+      }
+    ]
+  },
+  {
+    "subject": "spring-core",
+    "path": "/private/tmp/pit-unify-spring-core-nydoloo0/subject/gradle/toolchains.gradle",
+    "sha256": "44c1ccf6400da9c19825c01e70f2a2a1d9638542bd96efd5b50290a33d72df0b",
+    "hits": [
+      {
+        "line": 60,
+        "text": "\t\t\t\tjvmArgs(\"-Dnet.bytebuddy.experimental=true\")"
+      }
+    ]
+  },
+  {
+    "subject": "spring-core",
+    "path": "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/spring-core.gradle",
+    "sha256": "d3ddaa7120bed38a1a57a0495fcc60619ec9070cf8f24753360b49f2cb03036b",
+    "hits": [
+      {
+        "line": 134,
+        "text": "\tjvmArgs += ["
+      },
+      {
+        "line": 165,
+        "text": "task pitClasspath {"
+      }
+    ]
+  },
+  {
+    "path": "/Users/D061177/.gradle/gradle.properties",
+    "sha256": "6fd9401667cf3b2fabb562ee4ad90dbdd35ed5f49695e75b9f948b988361656f",
+    "hits": [
+      {
+        "line": 1,
+        "text": "org.gradle.jvmargs=-Xmx10g"
+      },
+      {
+        "line": 23,
+        "text": "# org.gradle.jvmargs=-XX:MaxPermSize=4g -XX:+HeapDumpOnOutOfMemoryError -Xmx4g -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5006"
+      }
+    ]
+  }
+]

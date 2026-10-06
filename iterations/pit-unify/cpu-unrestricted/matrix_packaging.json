@@ -1,0 +1,268 @@
+[
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-01-attempt-1/per-class/org.jgrapht.Graphs/mutations.xml",
+    "sourceSha256": "8d8bdaf9426e960b33bc26e189c817986c216bc074435f9ad3df635129a4dd3a",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.Graphs/mutations.xml.gz",
+    "packagedSha256": "5abf84e0608972dbedc844cb8d93cc494af2d2d959f7b5abc2816b3c809c9d8c",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-02-attempt-1/per-class/org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder/mutations.xml",
+    "sourceSha256": "9348202051700658d19c35b8abd0938bec4e029026c2cd7a184ff71a42bea5b9",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder/mutations.xml.gz",
+    "packagedSha256": "7c7c6dfe464d55d2a39b92a1968d1215356901afd2370acdae16d70ef21f4f01",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-03-attempt-1/per-class/org.jgrapht.alg.clustering.LabelPropagationClustering/mutations.xml",
+    "sourceSha256": "887508999dcba8bc0b7aa7ed8db1fee8208d24d047da9822db637e4a26bbbe1b",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.clustering.LabelPropagationClustering/mutations.xml.gz",
+    "packagedSha256": "0fad7b11530bdf57294128b465cb02722e93e080023aa91f69df614778e13711",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-04-attempt-1/per-class/org.jgrapht.alg.color.GreedyColoring/mutations.xml",
+    "sourceSha256": "9a560cffce4cbc0cecb97704fcf3f0a9cb23279a7ea98cc8f542fb1ccc71ca51",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.color.GreedyColoring/mutations.xml.gz",
+    "packagedSha256": "af4400cddfd431d987606b9215472c55f792ce9513c0edb8cf4be391b8f2278e",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-05-attempt-1/per-class/org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector/mutations.xml",
+    "sourceSha256": "3a5a6c472e6eb02f84a00268d79817413e7f96c201e74e797bac5c09052e1b7b",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector/mutations.xml.gz",
+    "packagedSha256": "c894cb14f609a83524fcba28c7325efe82bc6430fa160849fe75640d2400b794",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-06-attempt-1/per-class/org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles/mutations.xml",
+    "sourceSha256": "8833cdfc8ff98647c8cf632e432972b54ea94f232c6359537e06e511048d2830",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles/mutations.xml.gz",
+    "packagedSha256": "3076aa8e0dd4998da861f49ec1297c81b57211e1be305c82dbc1ce8dee839481",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-07-attempt-1/per-class/org.jgrapht.alg.drawing.model.ListenableLayoutModel2D/mutations.xml",
+    "sourceSha256": "bb6a69ff32b32ba04c9db6639a1c24da7164c1e60fa80b5319efc458538f9373",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.drawing.model.ListenableLayoutModel2D/mutations.xml.gz",
+    "packagedSha256": "0f28eb76ef1890f66e42bafcbb7b207c89b187f31ba2d41e7026d7a1538c0721",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-08-attempt-1/per-class/org.jgrapht.alg.flow.PushRelabelMFImpl/mutations.xml",
+    "sourceSha256": "583014b41fb741fd4011b210db3329e347488db8aa109fdfbb181fd5da09deb4",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.flow.PushRelabelMFImpl/mutations.xml.gz",
+    "packagedSha256": "fc398a78266ef7ba841fee7bb824aa88e7fcfbd171ea26fbc727b69cb2292347",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-09-attempt-1/per-class/org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector/mutations.xml",
+    "sourceSha256": "b8c344c07b8b1359ecc6e95774c3d34bae0e825b06b3c40c41d72b088f1199b4",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector/mutations.xml.gz",
+    "packagedSha256": "5516bebaf726496821e1fbd065e5ec311f16d95f2d074c9b9ed1c14948f5a489",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-10-attempt-1/per-class/org.jgrapht.alg.lca.BinaryLiftingLCAFinder/mutations.xml",
+    "sourceSha256": "01408612a8c33606242b436b2608a76cbd4696e44fe307a7fba3ab218226c745",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.lca.BinaryLiftingLCAFinder/mutations.xml.gz",
+    "packagedSha256": "a6dc56c860e411c9eb67cd7a78edb78ba09634eadc355bc80aef446788eb64a5",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-11-attempt-1/per-class/org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction/mutations.xml",
+    "sourceSha256": "5bc816fd28a89858142b17807f723322295764488e2f0e9259a687dcbe6d4a8d",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction/mutations.xml.gz",
+    "packagedSha256": "b4c7f1d94c333ce1b25c3227013e089616c948926b675104de97479549b6012f",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-12-attempt-1/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml",
+    "sourceSha256": "d4fe53dcafe4ffb47eb294175815ea73f6a7055a349b06a267c8f6933a8ba3f3",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml.gz",
+    "packagedSha256": "e91c212aa0d7f47b3848d01be632b00f3ca33b335fa80d5575aebca8c0c07c2d",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-13-attempt-1/per-class/org.jgrapht.alg.scoring.ClosenessCentrality/mutations.xml",
+    "sourceSha256": "063d998ab6b64337a02a3286070ad126033686ad2b6eca7208163a2e20e1de89",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.scoring.ClosenessCentrality/mutations.xml.gz",
+    "packagedSha256": "9c3a46249c8f47787880206ac4d96dd753cd464bba0998e5ea3f5aa705adfd46",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-14-attempt-1/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml",
+    "sourceSha256": "8b812571530a5b69d67f1f6edaf37f1a16a857b6b1af967c4970cc27a6639f41",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml.gz",
+    "packagedSha256": "678f39a2c0bd4b570f32580296e9bda4316734c8950d5061dec49acde560224c",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-15-attempt-1/per-class/org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree/mutations.xml",
+    "sourceSha256": "53003397fbd581b85236cef350af850dd3aa98a4ec7b0e202a793f89afb764f5",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree/mutations.xml.gz",
+    "packagedSha256": "1135abe799e662f469dc1b414b6b9971a8634729c6332acf5648e5ee1edd777a",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-16-attempt-1/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml",
+    "sourceSha256": "17a40aeef1ec6656b90ce2ef891237143659ffa83a5e478d7eeb9778b7fa1dfb",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml.gz",
+    "packagedSha256": "8e46ddefcf89e2694a22e1402bfee34da0358fec4cb9399b689cff4fb6e087a6",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-17-attempt-1/per-class/org.jgrapht.alg.util.UnorderedPair/mutations.xml",
+    "sourceSha256": "ffbe6df2e5d39c3e7d7d87fd996aef4e3c143cdd091e07439372718e987e3840",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.util.UnorderedPair/mutations.xml.gz",
+    "packagedSha256": "dd78ce5d16bbd93b21761c08a8f4843e4462f1b3e658dbdf2688b4a6fcec2ef9",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-18-attempt-1/per-class/org.jgrapht.alg.vertexcover.RecursiveExactVCImpl/mutations.xml",
+    "sourceSha256": "d7f829e09efc48c44a59ead3c22b513dbd7ac7157c7a0efc8918a9bf0f5b2676",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.vertexcover.RecursiveExactVCImpl/mutations.xml.gz",
+    "packagedSha256": "ec3786596f21287218bb272857eda58885895f26b9cdb00b7ffad9d3890788d3",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-19-attempt-1/per-class/org.jgrapht.generate.netgen.Distributor/mutations.xml",
+    "sourceSha256": "7cf4747e4458e886ec9956a6a1d47325e241304d72f2902c777a3523a8cb5e27",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.generate.netgen.Distributor/mutations.xml.gz",
+    "packagedSha256": "77d46a7fa98954a67c2682157b542d3bf45af31cb5a66fc990424eb0227458a3",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-20-attempt-1/per-class/org.jgrapht.graph.specifics.UndirectedSpecifics/mutations.xml",
+    "sourceSha256": "7e0967b2b8ed5032f4ea5ef705684d7cc77afb28903ddce7495c729f8015334a",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.graph.specifics.UndirectedSpecifics/mutations.xml.gz",
+    "packagedSha256": "b0395b7377d6b2996e7928e7375581b15cec866f714d1b6c7794a87b621212dc",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-02-attempt-1/per-class/org.springframework.core.annotation.RepeatableContainers/mutations.xml",
+    "sourceSha256": "86c1e59c9ff8463cb278807c3f0f6102178b68a3c60cf1fc27cea7fe7b18944d",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.annotation.RepeatableContainers/mutations.xml.gz",
+    "packagedSha256": "1e4a61a6c236ecff923aa8b020b7647a61b1d1e870d4841d6ffcc46184f41a61",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-03-attempt-1/per-class/org.springframework.core.codec.AbstractDataBufferDecoder/mutations.xml",
+    "sourceSha256": "eefb142be581fdc63476f805a7b6810184b2441b4806d2e06028cfb5d1cccb2a",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.codec.AbstractDataBufferDecoder/mutations.xml.gz",
+    "packagedSha256": "147a4f13c4a7ec4a2d485a7242cc0a19c8a86757b4258c5586863ca34f028b62",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-04-attempt-1/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml",
+    "sourceSha256": "d915b0caac23c50425c74d39df2c908e3e32f29b61f50f238e0b51328f5ab4cb",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml.gz",
+    "packagedSha256": "246759c31c1e78aee3f37947fd43d444c54db4a071a4ee526e7b6a35e74cf6d7",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-05-attempt-1/per-class/org.springframework.core.convert.converter.ConvertingComparator/mutations.xml",
+    "sourceSha256": "124e4c21f45981c380a8061f434933555b89fbfb6a8cbacd3ca7693ff0dce727",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.convert.converter.ConvertingComparator/mutations.xml.gz",
+    "packagedSha256": "38f9fef5f7102a8ea50e363e5028df45a3e8ca0fdf3e5385f033eef88fa522e7",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-06-attempt-1/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml",
+    "sourceSha256": "49762a86e887ffa3f75e0749a87f8b320778da0d4baeafb0947d7c0bbdb7579f",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz",
+    "packagedSha256": "eb65bfe928e8fc690f47636506d645e32a7fe6b8d272584f8188d1de56dc8ca6",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-07-attempt-1/per-class/org.springframework.core.env.PropertySource/mutations.xml",
+    "sourceSha256": "1a36b4ec06969b3c6ef8048c2a135148958b4029f9d20678713443806749138c",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.env.PropertySource/mutations.xml.gz",
+    "packagedSha256": "c7e5673be3673765f25373c6ab6fcd0f07d4e6685f38480b4167a4d2078fa253",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-11-attempt-1/per-class/org.springframework.core.log.LogMessage/mutations.xml",
+    "sourceSha256": "ee58d83a1dcbe2024a981220cf9ea34e437ee7519213d305b427b9e4df189821",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.log.LogMessage/mutations.xml.gz",
+    "packagedSha256": "0c6104929fbf55a0151d08ba9b0f661b01d8166c9c3b964606354575f5b25219",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-12-attempt-1/per-class/org.springframework.core.style.DefaultValueStyler/mutations.xml",
+    "sourceSha256": "652762e8193185a0de2bca7f52f46759f815f0fb291ecbed652305013f5e7bbf",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.style.DefaultValueStyler/mutations.xml.gz",
+    "packagedSha256": "7b7b56b77df6170e8f77a9685c01096295523382d52d2e8589a3600edbb01272",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-13-attempt-1/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml",
+    "sourceSha256": "85da2db93c166d9b60e7d513c148dd7a40bd7617e8094946c018014edba3a0c6",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml.gz",
+    "packagedSha256": "13dee8aa9125aabebaf985ab7c4c87d73a35bedcce28bab86b8b9fd0c14feebc",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-14-attempt-1/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml",
+    "sourceSha256": "38a7c3e4f14be60ef76a665bc7921aa83d742f949b98bcf67bfab230a846ebb6",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz",
+    "packagedSha256": "480baf3da274954b2b29f089831ba06e435b5497b896d3d7afc7c83d0a05eecb",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-15-attempt-1/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml",
+    "sourceSha256": "010ae9d18f424bb17e8dfa1434bc967b29fbf739c3eecb38560030feccbeb4cd",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml.gz",
+    "packagedSha256": "96523d607f572044f92c8826c6a63f7b108100e4521ed966ab43aed67c98c8f9",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-16-attempt-1/per-class/org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter/mutations.xml",
+    "sourceSha256": "3fe4189d09eb6dba9a4868ec59715fc134d97c0d509134c1b97066679bf3228c",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter/mutations.xml.gz",
+    "packagedSha256": "3171002547a2476907984722a4d984c0206d842827dadfb4ce598e518362493f",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-17-attempt-1/per-class/org.springframework.util.Assert/mutations.xml",
+    "sourceSha256": "adaecf8ba2f5ef86713007575b1cc4884f5d51181e801f9fea7233b943b73226",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz",
+    "packagedSha256": "b40dc29f6cec5146188ea2d99d3c02f0690841b9ae32081cfa66703cb77ef12c",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-18-attempt-1/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml",
+    "sourceSha256": "dfc42cee27e6f56a659bd7b516699b3a4e803caef790649b931f4e22e97b4196",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml.gz",
+    "packagedSha256": "378efa240a6236b457c90e44780fd60a5beb1f984ed2f7023f8b1436d1d3a992",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-19-attempt-1/per-class/org.springframework.util.concurrent.ListenableFutureCallbackRegistry/mutations.xml",
+    "sourceSha256": "fd5696f984a91778cab05f3d8d93564944e21b2dd46e57e88f22fba93b9533d5",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.concurrent.ListenableFutureCallbackRegistry/mutations.xml.gz",
+    "packagedSha256": "16793b34cfdc436ebb35623171f2300d2a44a58614cd3fab411909a1ec4bd190",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-20-attempt-1/per-class/org.springframework.util.function.ThrowingConsumer/mutations.xml",
+    "sourceSha256": "2a0f35e7164a806bb0ea97f26b7154cedc0a005e73cfa568c0e648ed932e519b",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.function.ThrowingConsumer/mutations.xml.gz",
+    "packagedSha256": "b1057b3ad793c6aa1b6a968ab8227e2dd63cb6833f1694ef82806e8fe520869b",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-21-attempt-1/per-class/org.springframework.util.unit.DataSize/mutations.xml",
+    "sourceSha256": "6cf70689039b222c9074158ca8391346ebf889a421054bcfe9410313cb5d6d0f",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.unit.DataSize/mutations.xml.gz",
+    "packagedSha256": "ea8188e884c4227d993549f171d68d6d1cf3fb0e34c2869d5e46d71dbd2a1adc",
+    "lossless": true
+  },
+  {
+    "source": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-22-attempt-1/per-class/org.springframework.util.xml.AbstractStaxXMLReader/mutations.xml",
+    "sourceSha256": "9adb8276f54f0fbbd7ea0a5fd2a622577731590043a8e74f7815c473322e91c0",
+    "packaged": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.xml.AbstractStaxXMLReader/mutations.xml.gz",
+    "packagedSha256": "edf65ebada269b18d01f9de8663c8a185a6f50b944381ec4054a71d9ed00a131",
+    "lossless": true
+  }
+]

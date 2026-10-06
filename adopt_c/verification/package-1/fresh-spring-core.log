@@ -1,0 +1,96 @@
+{
+  "subject": "spring-core",
+  "classScope": "org.springframework.core.convert.TypeDescriptor",
+  "recordedRecords": 125,
+  "freshRecords": 125,
+  "matchingRecords": 125,
+  "differences": [],
+  "unresolvedRecords": [],
+  "repeatedSemanticIdentities": [
+    {
+      "semanticIdentity": [
+        "org.springframework.core.convert.TypeDescriptor",
+        "annotationEquals",
+        "(Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z",
+        536,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.core.convert.TypeDescriptor",
+        "equals",
+        "(Ljava/lang/Object;)Z",
+        503,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.core.convert.TypeDescriptor",
+        "isAssignableTo",
+        "(Lorg/springframework/core/convert/TypeDescriptor;)Z",
+        312,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.core.convert.TypeDescriptor",
+        "isAssignableTo",
+        "(Lorg/springframework/core/convert/TypeDescriptor;)Z",
+        315,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.core.convert.TypeDescriptor",
+        "isAssignableTo",
+        "(Lorg/springframework/core/convert/TypeDescriptor;)Z",
+        318,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.springframework.core.convert.TypeDescriptor",
+        "isNestedAssignable",
+        "(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z",
+        330,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    }
+  ],
+  "fullMatch": true
+}

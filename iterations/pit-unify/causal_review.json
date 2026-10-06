@@ -1,0 +1,206 @@
+{
+  "jgrapht|org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP|getTour|(Lorg/jgrapht/Graph;)Lorg/jgrapht/GraphPath;|97|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml.gz:1": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "Both reported killers invoke getTour inside assertThrows(IllegalArgumentException): one supplies a directed graph and the other an incomplete undirected graph. The first operation is checkGraph (javap offset 2), whose requireUndirected/completeness guards throw before getTour reaches its normal body. PIT removes that guard call. The frozen footprints contain only the target constructor. The source path and missing method edge support exceptional-exit probe shadowing; this is not engine-preparation activity.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/jgrapht/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 8,
+      "emptyEntries": 2,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 10,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  },
+  "spring-core|org.springframework.core.convert.TypeDescriptor|upcast|(Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;|235|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml.gz:120": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "upCastNotSuper constructs a Map-valued descriptor, requests Collection as its supertype, and asserts IllegalArgumentException with the assignability message. upcast calls getType and then Assert.isAssignable (javap offset 11), before constructing a result. The pristine guard throws. The killer records the constructor and getType but no upcast edge. PIT removes the assignability check; the exception contract is mutation-sensitive. The disjoint footprint is explained by exit through the callee before downstream attribution, not by lack of entry to upcast.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.TypeDescriptor.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 1,
+      "emptyEntries": 14,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 15,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  },
+  "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Ljava/lang/Class;Ljava/lang/Class;)Z|133|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:17": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "Both killers call the Class overload with a null target and assert IllegalArgumentException. Its first statement is Assert.notNull(targetType); the source and bytecode place this before delegation. The removed void call is this guard. The target-class footprint is constructor-only although the test body directly invokes canConvert. This supports early exceptional exit before the method execution is recorded.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 100,
+      "emptyEntries": 14,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 114,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  },
+  "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z|140|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:22": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "Both killers call the TypeDescriptor overload with a null target and assert IllegalArgumentException. Assert.notNull is the first statement, before getConverter/return. PIT removes that call. The tests instantiate the service and then invoke this overload; constructor-only footprints omit the exceptional call. Source/control-flow evidence supports early exceptional exit rather than a pre-test attribution gap.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 100,
+      "emptyEntries": 14,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 114,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  },
+  "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;|164|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:24": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "convertToNullTargetClass invokes convert(\"3\", (Class<?>) null) inside an IllegalArgumentException assertion. Assert.notNull(targetType) precedes delegation and is the void call PIT removes. The constructor is recorded but convert is absent. The exceptional guard path is executed within the test body, supporting probe-shadowed early exit.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 228,
+      "emptyEntries": 14,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 242,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  },
+  "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;|171|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:31": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "convertToNullTargetTypeDescriptor invokes the three-argument convert with a null target descriptor. The first Assert.notNull throws before the conversion branches. PIT removes that call and reports this exception-contract test as killer. Its only target-class edge is the constructor; the evidence supports exceptional exit before method attribution.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 228,
+      "emptyEntries": 14,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 242,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  },
+  "spring-core|org.springframework.core.task.SimpleAsyncTaskExecutor|execute|(Ljava/lang/Runnable;J)V|264|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml.gz:14": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "The killer calls execute(null) in a try-with-resources block and asserts IllegalArgumentException. The one-argument overload delegates to execute(Runnable,long), whose first call is Assert.notNull(task). PIT removes that call. Other target-class methods (including lifecycle work) are present, but the name-level execute edge is absent. The critical activity is a synchronous guard inside the leaf test, before task submission; this is not evidence of an asynchronous attribution gap.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.task.SimpleAsyncTaskExecutor.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 5,
+      "emptyEntries": 14,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 19,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  },
+  "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)V|539|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:25": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "isAssignableWithNullSupertype supplies a null superType to the String-message overload and asserts IllegalArgumentException plus the guard message. The first notNull call throws; PIT removes it before the subsequent superType dereference. Assert.notNull is recorded but the isAssignable name-level edge is absent. This is an in-class callee guard with exceptional exit from the caller, not a missing class or session.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 16,
+      "emptyEntries": 14,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 30,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  },
+  "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/util/function/Supplier;)V|558|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:29": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "isAssignableWithNullSupertypeAndMessageSupplier supplies null to the Supplier overload and checks IllegalArgumentException and its message. The initial notNull(superType) is the removed void call. The target class has other recorded methods, including the guard, but no isAssignable edge. The caller exits exceptionally before downstream attribution.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 16,
+      "emptyEntries": 14,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 30,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  },
+  "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;)V|490|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:33": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "isInstanceOfWithNullType passes a null type to the String-message overload and checks IllegalArgumentException plus the guard message. Initial notNull(type) throws before type.isInstance; PIT removes that call. Other Assert edges are present but isInstanceOf is absent, supporting the same caller-probe exceptional-exit mechanism.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 335,
+      "emptyEntries": 14,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 349,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  },
+  "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/util/function/Supplier;)V|509|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:36": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "isInstanceOfWithNullTypeAndMessageSupplier calls the Supplier overload with null type and asserts the guard exception/message. Initial notNull(type) throws before type.isInstance. Removing that call kills the test. The in-class footprint is nonempty and disjoint from isInstanceOf, consistent with caller attribution lost at the exceptional guard.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 335,
+      "emptyEntries": 14,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 349,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  },
+  "spring-core|org.springframework.util.backoff.ExponentialBackOff|setMultiplier|(D)V|141|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml.gz:10": {
+    "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+    "causalEvidence": "invalidInterval constructs the backoff and calls setMultiplier(0.9), expecting IllegalArgumentException. setMultiplier first invokes checkMultiplier (javap offset 2), which rejects values below one through Assert.isTrue, before field assignment. PIT removes checkMultiplier. The guard/constructor footprint is present but setMultiplier is absent. This is a test-body exceptional guard path, not pre-test preparation.",
+    "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+    "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+    "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+    "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.backoff.ExponentialBackOff.txt",
+    "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+    "selectionExplanation": {
+      "nameLevelHits": 2,
+      "emptyEntries": 14,
+      "killersInU": [],
+      "classEscalationUsed": false,
+      "baseSelectedCount": 16,
+      "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+    }
+  }
+}

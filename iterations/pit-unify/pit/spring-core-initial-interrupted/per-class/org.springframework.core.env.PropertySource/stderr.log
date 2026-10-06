@@ -1,0 +1,596 @@
+Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=1
+19:21:52 PIT >> INFO : Verbose logging is disabled. If you encounter a problem, please enable it before reporting an issue.
+19:21:52 PIT >> INFO : Created 1 mutation test units in pre scan
+19:21:52 PIT >> INFO : MINION : Picked up JAVA_TOOL_OPTIONS: -XX:ActiveProcessorCount=1
+19:21:52 PIT >> INFO : Sending 57 test classes to minion
+19:21:52 PIT >> INFO : Sent tests to minion
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.CompositePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CompositePropertySourceTests]/[method:getPropertyNamesRemovesDuplicates()]] did not pass without mutation.
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.CompositePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CompositePropertySourceTests]/[method:addFirst()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withSingleCustomReservedDefaultProfile()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withCustomPropertyResolver()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withNoProfileProperties()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withNoReservedDefaultProfile()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:control()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withCustomMutablePropertySources()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withMultiCustomReservedDefaultProfile()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withRequiredArg_andMultipleArgsPresent_usingRepeatedOption()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withOptionalArg_andArgIsEmpty()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withRequiredArg_andArgIsPresent()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withRequiredArg_andMultipleArgsPresent_usingDelimiter()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withCustomNonOptionArgsNameAndNoNonOptionArgsPresent()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withOptionalArg_andArgIsMissing()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withRequiredArg_ofTypeEnum()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withDefaultNonOptionArgsNameAndNoNonOptionArgsPresent()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withDottedOptionName()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withNoArg()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withMissingOption()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withDefaultNonOptionArgsNameAndNonOptionArgsPresent()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.MutablePropertySourcesTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.MutablePropertySourcesTests]/[method:streamContainsPropertySource()]] did not pass without mutation.
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.MutablePropertySourcesTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.MutablePropertySourcesTests]/[method:test()]] did not pass without mutation.
+19:21:52 PIT >> SEVERE : Description [testClass=org.springframework.core.env.MutablePropertySourcesTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.MutablePropertySourcesTests]/[method:iteratorContainsPropertySource()]] did not pass without mutation.
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:52 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:53 PIT >> INFO : MINION : WARNING: A Java agent has been loaded dynamically (/Users/D061177/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.15/b4cc9d88d5de562bf75b3a54ab436ad01b3f72d/byte-buddy-agent-1.14.15.jar)
+19:21:53 PIT >> INFO : MINION : WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+19:21:53 PIT >> INFO : MINION : WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+19:21:53 PIT >> INFO : MINION : WARNING: Dynamic loading of agents will be disallowed by default in a future release
+19:21:53 PIT >> INFO : MINION : OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourceTests]/[method:equals()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourceTests]/[method:collectionsOperations()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolveRequiredPlaceholders_withNullInput()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_withTargetType_andDefaultValue()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_doesNotCache_replaceExistingKeyPostConstruction()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolvePlaceholders()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:containsProperty()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:setRequiredProperties_andValidateRequiredProperties()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getRequiredProperty()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_withStringArrayConversion()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getPropertySources_replacePropertySource()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_withDefaultValue()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:ignoreUnresolvableNestedPlaceholdersIsConfigurable()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolveRequiredPlaceholders_withDefaultValue()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_withExplicitNullValue()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolveNestedPropertyPlaceholders()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_doesNotCache_addNewKeyPostConstruction()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_withNonConvertibleTargetType()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolvePlaceholders_withDefaultValue()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolvePlaceholders_withNullInput()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_propertySourceSearchOrderIsFIFO()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolveRequiredPlaceholders_withUnresolvable()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolveRequiredPlaceholders()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolvePlaceholders_withUnresolvable()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getRequiredProperty_withStringArrayConversion()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withOptionalArg_andArgIsEmpty()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withCustomName()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withDefaultName()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withCustomNonOptionArgsNameAndNoNonOptionArgsPresent()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withOptionArgsOnly()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withDefaultNonOptionArgsNameAndNoNonOptionArgsPresent()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:covertNonOptionArgsToStringArrayAndList()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withDefaultNonOptionArgsNameAndNonOptionArgsPresent()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withNoArgs()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:suppressGetenvAccessThroughSpringFlag()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setDefaultProfiles_withNotOperator()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:getSystemEnvironment()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:addActiveProfile()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:getSystemProperties()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:suppressGetenvAccessThroughSystemProperty()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setActiveProfiles_withNotOperator()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setDefaultProfiles_withNullProfile()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setActiveProfiles()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setDefaultProfiles_withNullProfileArray()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:defaultProfilesContainsDefaultProfileByDefault()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:merge()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:reservedDefaultProfile()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:activeProfilesIsEmptyByDefault()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:getDefaultProfiles()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:addActiveProfile_whenActiveProfilesPropertyIsAlreadySet()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:suppressGetenvAccessThroughSpringProperty()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setActiveProfiles_withNullProfileArray()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setDefaultProfiles_withEmptyProfile()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setActiveProfiles_withNullProfile()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:propertySourceOrder()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:propertySourceTypes()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setDefaultProfiles()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:environmentSubclass_withCustomProfileValidation()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:defaultProfileWithCircularPlaceholder()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setActiveProfiles_withEmptyProfile()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withNullArgument()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withEmptyArgument()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withInvalidCompoundExpressionGrouping()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withNullArgumentList()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withProfileExpressions()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:activeProfileSetProgrammatically()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withNotOperator()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:activeProfileSetViaProperty()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withEmptyArgumentList()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:defaultProfile()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withInvalidNotOperator()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withNullArgument()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withEmptyArgument()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withNullArgumentList()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:activeProfileSetProgrammatically()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withNotOperator()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:activeProfileSetViaProperty()]] did not pass without mutation.
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to set JaCoCo session: org.jacoco.agent.rt.RT
+19:21:54 PIT >> INFO : MINION : Failed to dump JaCoCo execution data: org.jacoco.agent.rt.RT
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withEmptyArgumentList()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withProfileExpression()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:defaultProfile()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withInvalidNotOperator()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:GetActiveProfiles]/[method:fromSystemProperties_withMultipleProfiles_withWhitespace()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:GetActiveProfiles]/[method:systemPropertiesEmpty()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:GetActiveProfiles]/[method:fromSystemProperties_withMultipleProfiles()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:GetActiveProfiles]/[method:fromSystemProperties()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:normalWithPeriod()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:withUnderscore()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:none()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:normalWithoutPeriod()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:withUppercase()]] did not pass without mutation.
+19:21:54 PIT >> SEVERE : Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:withBothPeriodAndUnderscore()]] did not pass without mutation.
+19:21:54 PIT >> INFO : Calculated coverage in 2 seconds.
+19:21:54 PIT >> SEVERE : Tests failing without mutation: 
+Description [testClass=org.springframework.core.env.CompositePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CompositePropertySourceTests]/[method:getPropertyNamesRemovesDuplicates()]]
+Description [testClass=org.springframework.core.env.CompositePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CompositePropertySourceTests]/[method:addFirst()]]
+Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withSingleCustomReservedDefaultProfile()]]
+Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withCustomPropertyResolver()]]
+Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withNoProfileProperties()]]
+Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withNoReservedDefaultProfile()]]
+Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:control()]]
+Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withCustomMutablePropertySources()]]
+Description [testClass=org.springframework.core.env.CustomEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.CustomEnvironmentTests]/[method:withMultiCustomReservedDefaultProfile()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withRequiredArg_andMultipleArgsPresent_usingRepeatedOption()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withOptionalArg_andArgIsEmpty()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withRequiredArg_andArgIsPresent()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withRequiredArg_andMultipleArgsPresent_usingDelimiter()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withCustomNonOptionArgsNameAndNoNonOptionArgsPresent()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withOptionalArg_andArgIsMissing()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withRequiredArg_ofTypeEnum()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withDefaultNonOptionArgsNameAndNoNonOptionArgsPresent()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withDottedOptionName()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withNoArg()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withMissingOption()]]
+Description [testClass=org.springframework.core.env.JOptCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.JOptCommandLinePropertySourceTests]/[method:withDefaultNonOptionArgsNameAndNonOptionArgsPresent()]]
+Description [testClass=org.springframework.core.env.MutablePropertySourcesTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.MutablePropertySourcesTests]/[method:streamContainsPropertySource()]]
+Description [testClass=org.springframework.core.env.MutablePropertySourcesTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.MutablePropertySourcesTests]/[method:test()]]
+Description [testClass=org.springframework.core.env.MutablePropertySourcesTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.MutablePropertySourcesTests]/[method:iteratorContainsPropertySource()]]
+Description [testClass=org.springframework.core.env.PropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourceTests]/[method:equals()]]
+Description [testClass=org.springframework.core.env.PropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourceTests]/[method:collectionsOperations()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolveRequiredPlaceholders_withNullInput()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_withTargetType_andDefaultValue()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_doesNotCache_replaceExistingKeyPostConstruction()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolvePlaceholders()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:containsProperty()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:setRequiredProperties_andValidateRequiredProperties()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getRequiredProperty()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_withStringArrayConversion()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getPropertySources_replacePropertySource()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_withDefaultValue()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:ignoreUnresolvableNestedPlaceholdersIsConfigurable()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolveRequiredPlaceholders_withDefaultValue()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_withExplicitNullValue()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolveNestedPropertyPlaceholders()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_doesNotCache_addNewKeyPostConstruction()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_withNonConvertibleTargetType()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolvePlaceholders_withDefaultValue()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolvePlaceholders_withNullInput()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty_propertySourceSearchOrderIsFIFO()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolveRequiredPlaceholders_withUnresolvable()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getProperty()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolveRequiredPlaceholders()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:resolvePlaceholders_withUnresolvable()]]
+Description [testClass=org.springframework.core.env.PropertySourcesPropertyResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.PropertySourcesPropertyResolverTests]/[method:getRequiredProperty_withStringArrayConversion()]]
+Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withOptionalArg_andArgIsEmpty()]]
+Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withCustomName()]]
+Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withDefaultName()]]
+Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withCustomNonOptionArgsNameAndNoNonOptionArgsPresent()]]
+Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withOptionArgsOnly()]]
+Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withDefaultNonOptionArgsNameAndNoNonOptionArgsPresent()]]
+Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:covertNonOptionArgsToStringArrayAndList()]]
+Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withDefaultNonOptionArgsNameAndNonOptionArgsPresent()]]
+Description [testClass=org.springframework.core.env.SimpleCommandLinePropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SimpleCommandLinePropertySourceTests]/[method:withNoArgs()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:suppressGetenvAccessThroughSpringFlag()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setDefaultProfiles_withNotOperator()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:getSystemEnvironment()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:addActiveProfile()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:getSystemProperties()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:suppressGetenvAccessThroughSystemProperty()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setActiveProfiles_withNotOperator()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setDefaultProfiles_withNullProfile()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setActiveProfiles()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setDefaultProfiles_withNullProfileArray()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:defaultProfilesContainsDefaultProfileByDefault()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:merge()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:reservedDefaultProfile()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:activeProfilesIsEmptyByDefault()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:getDefaultProfiles()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:addActiveProfile_whenActiveProfilesPropertyIsAlreadySet()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:suppressGetenvAccessThroughSpringProperty()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setActiveProfiles_withNullProfileArray()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setDefaultProfiles_withEmptyProfile()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setActiveProfiles_withNullProfile()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:propertySourceOrder()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:propertySourceTypes()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setDefaultProfiles()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:environmentSubclass_withCustomProfileValidation()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:defaultProfileWithCircularPlaceholder()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[method:setActiveProfiles_withEmptyProfile()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withNullArgument()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withEmptyArgument()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withInvalidCompoundExpressionGrouping()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withNullArgumentList()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withProfileExpressions()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:activeProfileSetProgrammatically()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withNotOperator()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:activeProfileSetViaProperty()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withEmptyArgumentList()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:defaultProfile()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:MatchesProfilesTests]/[method:withInvalidNotOperator()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withNullArgument()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withEmptyArgument()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withNullArgumentList()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:activeProfileSetProgrammatically()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withNotOperator()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:activeProfileSetViaProperty()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withEmptyArgumentList()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withProfileExpression()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:defaultProfile()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:AcceptsProfilesTests]/[method:withInvalidNotOperator()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:GetActiveProfiles]/[method:fromSystemProperties_withMultipleProfiles_withWhitespace()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:GetActiveProfiles]/[method:systemPropertiesEmpty()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:GetActiveProfiles]/[method:fromSystemProperties_withMultipleProfiles()]]
+Description [testClass=org.springframework.core.env.StandardEnvironmentTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.StandardEnvironmentTests]/[nested-class:GetActiveProfiles]/[method:fromSystemProperties()]]
+Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:normalWithPeriod()]]
+Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:withUnderscore()]]
+Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:none()]]
+Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:normalWithoutPeriod()]]
+Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:withUppercase()]]
+Description [testClass=org.springframework.core.env.SystemEnvironmentPropertySourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.env.SystemEnvironmentPropertySourceTests]/[method:withBothPeriodAndUnderscore()]]
+Exception in thread "main" org.pitest.help.PitHelpError: 116 tests did not pass without mutation when calculating line coverage. Mutation testing requires a green suite.
+See https://pitest.org for more details.
+	at org.pitest.coverage.execute.DefaultCoverageGenerator.verifyBuildSuitableForMutationTesting(DefaultCoverageGenerator.java:127)
+	at org.pitest.coverage.execute.DefaultCoverageGenerator.calculateCoverage(DefaultCoverageGenerator.java:109)
+	at org.pitest.coverage.execute.DefaultCoverageGenerator.calculateCoverage(DefaultCoverageGenerator.java:53)
+	at org.pitest.mutationtest.tooling.MutationCoverage.runAnalysis(MutationCoverage.java:158)
+	at org.pitest.mutationtest.tooling.MutationCoverage.runReport(MutationCoverage.java:145)
+	at org.pitest.mutationtest.tooling.EntryPoint.execute(EntryPoint.java:138)
+	at org.pitest.mutationtest.tooling.EntryPoint.execute(EntryPoint.java:64)
+	at org.pitest.mutationtest.commandline.MutationCoverageReport.runReport(MutationCoverageReport.java:98)
+	at org.pitest.mutationtest.commandline.MutationCoverageReport.main(MutationCoverageReport.java:45)

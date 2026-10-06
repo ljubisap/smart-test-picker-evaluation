@@ -1,0 +1,133 @@
+{
+  "timestamp": "2026-10-05T19:20:49.016671",
+  "project": "JGraphT",
+  "commit": "719212a1fe0bbbf62210159f50920a71e80b73ed",
+  "total_classes": 20,
+  "ok": 20,
+  "failed": 0,
+  "timeout": 0,
+  "total_mutations": 803,
+  "total_elapsed_s": 2995.770539522171,
+  "results": [
+    {
+      "fqn": "org.jgrapht.Graphs",
+      "status": "OK",
+      "mutations": 60,
+      "elapsed_s": 12.975975036621094
+    },
+    {
+      "fqn": "org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder",
+      "status": "OK",
+      "mutations": 13,
+      "elapsed_s": 7.146007061004639
+    },
+    {
+      "fqn": "org.jgrapht.alg.clustering.LabelPropagationClustering",
+      "status": "OK",
+      "mutations": 4,
+      "elapsed_s": 6.35017991065979
+    },
+    {
+      "fqn": "org.jgrapht.alg.color.GreedyColoring",
+      "status": "OK",
+      "mutations": 8,
+      "elapsed_s": 7.767378091812134
+    },
+    {
+      "fqn": "org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector",
+      "status": "OK",
+      "mutations": 18,
+      "elapsed_s": 18.288320064544678
+    },
+    {
+      "fqn": "org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles",
+      "status": "OK",
+      "mutations": 34,
+      "elapsed_s": 23.055273056030273
+    },
+    {
+      "fqn": "org.jgrapht.alg.drawing.model.ListenableLayoutModel2D",
+      "status": "OK",
+      "mutations": 15,
+      "elapsed_s": 7.034693956375122
+    },
+    {
+      "fqn": "org.jgrapht.alg.flow.PushRelabelMFImpl",
+      "status": "OK",
+      "mutations": 86,
+      "elapsed_s": 220.9290862083435
+    },
+    {
+      "fqn": "org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector",
+      "status": "OK",
+      "mutations": 21,
+      "elapsed_s": 13.174329042434692
+    },
+    {
+      "fqn": "org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+      "status": "OK",
+      "mutations": 47,
+      "elapsed_s": 132.53875088691711
+    },
+    {
+      "fqn": "org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction",
+      "status": "OK",
+      "mutations": 5,
+      "elapsed_s": 6.7790751457214355
+    },
+    {
+      "fqn": "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+      "status": "OK",
+      "mutations": 245,
+      "elapsed_s": 1552.6556470394135
+    },
+    {
+      "fqn": "org.jgrapht.alg.scoring.ClosenessCentrality",
+      "status": "OK",
+      "mutations": 19,
+      "elapsed_s": 62.797455072402954
+    },
+    {
+      "fqn": "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+      "status": "OK",
+      "mutations": 37,
+      "elapsed_s": 99.58633232116699
+    },
+    {
+      "fqn": "org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree",
+      "status": "OK",
+      "mutations": 45,
+      "elapsed_s": 667.1231641769409
+    },
+    {
+      "fqn": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+      "status": "OK",
+      "mutations": 10,
+      "elapsed_s": 20.01554775238037
+    },
+    {
+      "fqn": "org.jgrapht.alg.util.UnorderedPair",
+      "status": "OK",
+      "mutations": 19,
+      "elapsed_s": 8.486524820327759
+    },
+    {
+      "fqn": "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+      "status": "OK",
+      "mutations": 47,
+      "elapsed_s": 65.58920192718506
+    },
+    {
+      "fqn": "org.jgrapht.generate.netgen.Distributor",
+      "status": "OK",
+      "mutations": 22,
+      "elapsed_s": 21.352625131607056
+    },
+    {
+      "fqn": "org.jgrapht.graph.specifics.UndirectedSpecifics",
+      "status": "OK",
+      "mutations": 48,
+      "elapsed_s": 42.12497282028198
+    }
+  ]
+}

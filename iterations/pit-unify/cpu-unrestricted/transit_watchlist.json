@@ -1,0 +1,190 @@
+{
+  "source": "/Users/D061177/work/issta/smart-test-picker-evaluation/iterations/pit-unify/results/status_comparison.json.gz",
+  "sourceSha256": "fca6905ce9bfa415036da5956f18e009e87872b26389fb5b38efdea2052f250d",
+  "selectionRule": "All uniquely corresponding TransitNodeRoutingPrecomputation records with A KILLED and B SURVIVED; selected without inspecting C results.",
+  "records": [
+    {
+      "comparisonKey": [
+        "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+        "computeAVAndLF",
+        "()Lorg/jgrapht/alg/util/Pair;",
+        "363",
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        "changed conditional boundary"
+      ],
+      "current": {
+        "sourceXml": "jgrapht/results/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml",
+        "ordinal": 2,
+        "status": "KILLED",
+        "rawKillingTests": [
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest]/[method:testOneVertex()]"
+        ]
+      },
+      "unified": {
+        "sourceXml": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml.gz",
+        "ordinal": 2,
+        "status": "SURVIVED",
+        "rawKillingTests": [
+          ""
+        ]
+      },
+      "statusChanged": true,
+      "rawKillingSetChanged": true
+    },
+    {
+      "comparisonKey": [
+        "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+        "workerSegmentEnd",
+        "(III)I",
+        "1308",
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        "Replaced integer division with multiplication"
+      ],
+      "current": {
+        "sourceXml": "jgrapht/results/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml",
+        "ordinal": 29,
+        "status": "KILLED",
+        "rawKillingTests": [
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest]/[method:testOneVertex()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest]/[method:testThreeVertices()]"
+        ]
+      },
+      "unified": {
+        "sourceXml": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml.gz",
+        "ordinal": 29,
+        "status": "SURVIVED",
+        "rawKillingTests": [
+          ""
+        ]
+      },
+      "statusChanged": true,
+      "rawKillingSetChanged": true
+    },
+    {
+      "comparisonKey": [
+        "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+        "workerSegmentEnd",
+        "(III)I",
+        "1308",
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        "Replaced integer multiplication with division"
+      ],
+      "current": {
+        "sourceXml": "jgrapht/results/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml",
+        "ordinal": 28,
+        "status": "KILLED",
+        "rawKillingTests": [
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest]/[method:testOneVertex()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest]/[method:testThreeVertices()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest]/[method:testOnRandomGraphs()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest]/[method:testOneVertex()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest]/[method:testThreeVertices()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest]/[method:testTwoVertices()]"
+        ]
+      },
+      "unified": {
+        "sourceXml": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml.gz",
+        "ordinal": 28,
+        "status": "SURVIVED",
+        "rawKillingTests": [
+          ""
+        ]
+      },
+      "statusChanged": true,
+      "rawKillingSetChanged": true
+    },
+    {
+      "comparisonKey": [
+        "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+        "workerSegmentStart",
+        "(III)I",
+        "1296",
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        "Replaced integer addition with subtraction"
+      ],
+      "current": {
+        "sourceXml": "jgrapht/results/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml",
+        "ordinal": 35,
+        "status": "KILLED",
+        "rawKillingTests": [
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest]/[method:testThreeVertices()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest]/[method:testOnRandomGraphs()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest]/[method:testThreeVertices()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest]/[method:testTwoVertices()]"
+        ]
+      },
+      "unified": {
+        "sourceXml": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml.gz",
+        "ordinal": 35,
+        "status": "SURVIVED",
+        "rawKillingTests": [
+          ""
+        ]
+      },
+      "statusChanged": true,
+      "rawKillingSetChanged": true
+    },
+    {
+      "comparisonKey": [
+        "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+        "workerSegmentStart",
+        "(III)I",
+        "1296",
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        "Replaced integer division with multiplication"
+      ],
+      "current": {
+        "sourceXml": "jgrapht/results/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml",
+        "ordinal": 34,
+        "status": "KILLED",
+        "rawKillingTests": [
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest]/[method:testOneVertex()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest]/[method:testThreeVertices()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest]/[method:testOnRandomGraphs()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest]/[method:testOneVertex()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest]/[method:testThreeVertices()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingShortestPathTest]/[method:testTwoVertices()]"
+        ]
+      },
+      "unified": {
+        "sourceXml": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml.gz",
+        "ordinal": 34,
+        "status": "SURVIVED",
+        "rawKillingTests": [
+          ""
+        ]
+      },
+      "statusChanged": true,
+      "rawKillingSetChanged": true
+    },
+    {
+      "comparisonKey": [
+        "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+        "workerSegmentStart",
+        "(III)I",
+        "1296",
+        "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator",
+        "replaced int return with 0 for org/jgrapht/alg/shortestpath/TransitNodeRoutingPrecomputation::workerSegmentStart"
+      ],
+      "current": {
+        "sourceXml": "jgrapht/results/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml",
+        "ordinal": 36,
+        "status": "KILLED",
+        "rawKillingTests": [
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest]/[method:testOnRandomGraphs()]",
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest.[engine:junit-jupiter]/[class:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputationTest]/[method:testThreeVertices()]"
+        ]
+      },
+      "unified": {
+        "sourceXml": "iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml.gz",
+        "ordinal": 36,
+        "status": "SURVIVED",
+        "rawKillingTests": [
+          ""
+        ]
+      },
+      "statusChanged": true,
+      "rawKillingSetChanged": true
+    }
+  ]
+}

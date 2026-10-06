@@ -1,0 +1,810 @@
+{
+  "subject": "commons-lang",
+  "classScope": null,
+  "recordedRecords": 932,
+  "freshRecords": 932,
+  "matchingRecords": 932,
+  "differences": [],
+  "unresolvedRecords": [],
+  "repeatedSemanticIdentities": [
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.builder.HashCodeBuilder",
+        "isRegistered",
+        "(Ljava/lang/Object;)Z",
+        162,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.builder.HashCodeBuilder",
+        "reflectionAppend",
+        "(Ljava/lang/Object;Ljava/lang/Class;Lorg/apache/commons/lang3/builder/HashCodeBuilder;Z[Ljava/lang/String;)V",
+        191,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.builder.HashCodeBuilder",
+        "reflectionHashCode",
+        "(IILjava/lang/Object;ZLjava/lang/Class;[Ljava/lang/String;)I",
+        344,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.event.EventListenerSupport",
+        "addListener",
+        "(Ljava/lang/Object;Z)V",
+        244,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "addAndCheck",
+        "(II)I",
+        115,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "addAndCheck",
+        "(II)I",
+        115,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "addSub",
+        "(Lorg/apache/commons/lang3/math/Fraction;Z)Lorg/apache/commons/lang3/math/Fraction;",
+        573,
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        null,
+        null,
+        "Replaced integer division with multiplication"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "compareTo",
+        "(Lorg/apache/commons/lang3/math/Fraction;)I",
+        593,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "equals",
+        "(Ljava/lang/Object;)Z",
+        650,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "getFraction",
+        "(D)Lorg/apache/commons/lang3/math/Fraction;",
+        175,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 4,
+      "freshOccurrences": 4
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "getFraction",
+        "(D)Lorg/apache/commons/lang3/math/Fraction;",
+        175,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 4,
+      "freshOccurrences": 4
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "getFraction",
+        "(D)Lorg/apache/commons/lang3/math/Fraction;",
+        179,
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        null,
+        null,
+        "Replaced integer multiplication with division"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "getFraction",
+        "(II)Lorg/apache/commons/lang3/math/Fraction;",
+        198,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "getFraction",
+        "(III)Lorg/apache/commons/lang3/math/Fraction;",
+        238,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "getFraction",
+        "(III)Lorg/apache/commons/lang3/math/Fraction;",
+        238,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "getReducedFraction",
+        "(II)Lorg/apache/commons/lang3/math/Fraction;",
+        320,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "getReducedFraction",
+        "(II)Lorg/apache/commons/lang3/math/Fraction;",
+        325,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "greatestCommonDivisor",
+        "(II)I",
+        350,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "greatestCommonDivisor",
+        "(II)I",
+        351,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "greatestCommonDivisor",
+        "(II)I",
+        357,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "greatestCommonDivisor",
+        "(II)I",
+        372,
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        null,
+        null,
+        "Replaced bitwise AND with OR"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "greatestCommonDivisor",
+        "(II)I",
+        372,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "invert",
+        "()Lorg/apache/commons/lang3/math/Fraction;",
+        755,
+        "org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator",
+        null,
+        null,
+        "removed negation"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "mulAndCheck",
+        "(II)I",
+        416,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "mulAndCheck",
+        "(II)I",
+        416,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "multiplyBy",
+        "(Lorg/apache/commons/lang3/math/Fraction;)Lorg/apache/commons/lang3/math/Fraction;",
+        783,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "multiplyBy",
+        "(Lorg/apache/commons/lang3/math/Fraction;)Lorg/apache/commons/lang3/math/Fraction;",
+        790,
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        null,
+        null,
+        "Replaced integer division with multiplication"
+      ],
+      "recordedOccurrences": 4,
+      "freshOccurrences": 4
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "reduce",
+        "()Lorg/apache/commons/lang3/math/Fraction;",
+        856,
+        "org.pitest.mutationtest.engine.gregor.mutators.MathMutator",
+        null,
+        null,
+        "Replaced integer division with multiplication"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "subAndCheck",
+        "(II)I",
+        451,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "subAndCheck",
+        "(II)I",
+        451,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "toProperString",
+        "()Ljava/lang/String;",
+        890,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "toProperString",
+        "()Ljava/lang/String;",
+        890,
+        "org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator",
+        null,
+        null,
+        "removed negation"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.math.Fraction",
+        "toProperString",
+        "()Ljava/lang/String;",
+        890,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.FieldUtils",
+        "removeFinalModifier",
+        "(Ljava/lang/reflect/Field;Z)V",
+        591,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.FieldUtils",
+        "setAccessible",
+        "(Ljava/lang/reflect/Field;Z)Ljava/lang/reflect/Field;",
+        612,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "distance",
+        "([Ljava/lang/Class;[Ljava/lang/Class;)I",
+        89,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "distance",
+        "([Ljava/lang/Class;[Ljava/lang/Class;)I",
+        92,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "getAllSuperclassesAndInterfaces",
+        "(Ljava/lang/Class;)Ljava/util/List;",
+        232,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "getAllSuperclassesAndInterfaces",
+        "(Ljava/lang/Class;)Ljava/util/List;",
+        232,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "getAllSuperclassesAndInterfaces",
+        "(Ljava/lang/Class;)Ljava/util/List;",
+        234,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "getAllSuperclassesAndInterfaces",
+        "(Ljava/lang/Class;)Ljava/util/List;",
+        234,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "getAnnotation",
+        "(Ljava/lang/reflect/Method;Ljava/lang/Class;ZZ)Ljava/lang/annotation/Annotation;",
+        269,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "getAnnotation",
+        "(Ljava/lang/reflect/Method;Ljava/lang/Class;ZZ)Ljava/lang/annotation/Annotation;",
+        273,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "getMatchingAccessibleMethod",
+        "(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;",
+        334,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "getMatchingMethod",
+        "(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;",
+        395,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "getMethodObject",
+        "(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;",
+        417,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "lambda$getMatchingAccessibleMethod$0",
+        "(Ljava/lang/String;[Ljava/lang/Class;Ljava/lang/reflect/Method;)Z",
+        327,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.reflect.MethodUtils",
+        "toVarArgs",
+        "([Ljava/lang/Object;[Ljava/lang/Class;)[Ljava/lang/Object;",
+        1041,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.text.FormattableUtils",
+        "append",
+        "(Ljava/lang/CharSequence;Ljava/util/Formatter;IIICLjava/lang/CharSequence;)Ljava/util/Formatter;",
+        96,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.text.FormattableUtils",
+        "append",
+        "(Ljava/lang/CharSequence;Ljava/util/Formatter;IIICLjava/lang/CharSequence;)Ljava/util/Formatter;",
+        96,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.text.FormattableUtils",
+        "append",
+        "(Ljava/lang/CharSequence;Ljava/util/Formatter;IIICLjava/lang/CharSequence;)Ljava/util/Formatter;",
+        99,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.text.FormattableUtils",
+        "append",
+        "(Ljava/lang/CharSequence;Ljava/util/Formatter;IIICLjava/lang/CharSequence;)Ljava/util/Formatter;",
+        99,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.text.translate.NumericEntityEscaper",
+        "translate",
+        "(ILjava/io/Writer;)Z",
+        110,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.text.translate.NumericEntityEscaper",
+        "translate",
+        "(ILjava/io/Writer;)Z",
+        110,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.text.translate.NumericEntityEscaper",
+        "translate",
+        "(ILjava/io/Writer;)Z",
+        113,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.text.translate.NumericEntityEscaper",
+        "translate",
+        "(ILjava/io/Writer;)Z",
+        113,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.commons.lang3.tuple.ImmutablePair",
+        "of",
+        "(Ljava/lang/Object;Ljava/lang/Object;)Lorg/apache/commons/lang3/tuple/ImmutablePair;",
+        106,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    }
+  ],
+  "fullMatch": true
+}

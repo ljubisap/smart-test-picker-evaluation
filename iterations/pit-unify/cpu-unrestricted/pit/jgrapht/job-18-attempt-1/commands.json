@@ -1,0 +1,41 @@
+[
+  {
+    "id": "001",
+    "originalCommand": [
+      "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn",
+      "org.pitest:pitest-maven:1.17.4:mutationCoverage",
+      "-Ppitest",
+      "-pl",
+      "jgrapht-core",
+      "-DtargetClasses=org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+      "-DtargetTests=org.jgrapht.alg.vertexcover.*",
+      "-DfullMutationMatrix=true",
+      "-Dthreads=4",
+      "-DtimestampedReports=false",
+      "-DskipFailingTests=true",
+      "-DoutputFormats=XML"
+    ],
+    "command": [
+      "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn",
+      "org.pitest:pitest-maven:1.17.4:mutationCoverage",
+      "-Ppitest",
+      "-pl",
+      "jgrapht-core",
+      "-DtargetClasses=org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+      "-DtargetTests=org.jgrapht.alg.vertexcover.*",
+      "-DfullMutationMatrix=true",
+      "-Dthreads=4",
+      "-DtimestampedReports=false",
+      "-DskipFailingTests=true",
+      "-DoutputFormats=XML"
+    ],
+    "cwd": "/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject",
+    "timeout": 1800,
+    "pitWorkers": 4,
+    "startedUtc": "2026-10-05T21:57:36.885854+00:00",
+    "pid": 77204,
+    "peakObservedCpuPercent": 328.29999999999995,
+    "elapsedSeconds": 56.532115459000124,
+    "exitCode": 0
+  }
+]

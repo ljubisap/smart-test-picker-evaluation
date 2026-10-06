@@ -1,0 +1,14 @@
+{
+  "repository": {
+    "tests": 68,
+    "source": "iterations/pit-unify/cpu-unrestricted/verification/current/unittest.log"
+  },
+  "localHelpers": {
+    "tests": 8,
+    "source": "iterations/pit-unify/cpu-unrestricted/helper-tests.log"
+  },
+  "cpuRemovalSubset": {
+    "tests": 5,
+    "source": "iterations/pit-unify/cpu-unrestricted/environment-tests.log"
+  }
+}

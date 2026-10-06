@@ -1,0 +1,398 @@
+{
+  "scope": "Retained original JGraphT campaign logs, documentation, configuration and runner scripts; not unrelated later experiments.",
+  "files": [
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.Graphs/stderr.log",
+      "sha256": "dae973530537c6cd6d314cf7d4455be68eb5d6d9f4f1af85aee58e43e31d9770",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.Graphs/stdout.log",
+      "sha256": "b4c42f09f24720ac8d2a2d21f89312ec1b7351a6893bd3cf1668bba29a5a96b3",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder/stderr.log",
+      "sha256": "7e3969b99fc9743701585c576a5511773a2ed9fbbad91a64f81da2424b365cfc",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder/stdout.log",
+      "sha256": "9400ba0dd3507d9a78c7bd3e623d55a22b7ca838df6b6bcb015b15ebd5259a8b",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.clustering.LabelPropagationClustering/stderr.log",
+      "sha256": "6986031b23304d6b742de697fea483fc5929ef664e463c48a11f5632a18df9d0",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.clustering.LabelPropagationClustering/stdout.log",
+      "sha256": "46f0e6fb2c2a56fe46d98af7fc7a14d946f9679aa020c736edf288b34b9e2973",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.color.GreedyColoring/stderr.log",
+      "sha256": "799be3d081bf5ec6b1082cad799242080912aea86457966ea96c9b286bfed550",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.color.GreedyColoring/stdout.log",
+      "sha256": "207cac048b5ccf7c460b97fa12f1d97a388f418aa6a4ea9f6338a5af9b6bb80e",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector/stderr.log",
+      "sha256": "f83b720d6e16be59b53dc0f257fa0a8a82c2b2ec0a4bd26a19c4d0e8acfd6616",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector/stdout.log",
+      "sha256": "c1176b5b232dbce9773248f81d952098ead75a30e8f3612bef22752af84bf46f",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles/stderr.log",
+      "sha256": "741694a37fbf876de6a02e1d430eb0d68adb707024b9f626c8f0b98584e64ff4",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles/stdout.log",
+      "sha256": "68598d3027d858e67ad1bd28977f882cd6df5151290a8a4987bc304d9e0dda69",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.drawing.model.ListenableLayoutModel2D/stderr.log",
+      "sha256": "ec6faee6de77aaf9bc0614f8f47fd36e769730acb002ca8b2c719c40a0437fa7",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.drawing.model.ListenableLayoutModel2D/stdout.log",
+      "sha256": "d36f385fd2588132f2dd03d87aab7ee89f1642411d9b3ef9731087003cae60b3",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.flow.PushRelabelMFImpl/stderr.log",
+      "sha256": "0aa3f38634923553782b4acd21958e193b8bd2bdfa708f54eaf2a72c87d9b042",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.flow.PushRelabelMFImpl/stdout.log",
+      "sha256": "198e41808c0a1bda1f12b1ff8c824a3286c2967a4846b412aeea37ff36e4a102",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector/stderr.log",
+      "sha256": "407ca606fb8295bd8e3f681cc7967ced09fb2881053cb07e2e210d5ea44cfc61",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector/stdout.log",
+      "sha256": "fdf0f0b3583be599f222418d5d06664d21184e48ff8a4a0b6cd514e47642cdd7",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.lca.BinaryLiftingLCAFinder/stderr.log",
+      "sha256": "a553913b1943dbbd0e239996af327d29771072fdcb8718ab64bcac5138c72a4e",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.lca.BinaryLiftingLCAFinder/stdout.log",
+      "sha256": "ec013fa671e24a1d22c239711fb5420b1fad3c681aa7374187a95b1b4b687b97",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction/stderr.log",
+      "sha256": "ebd3f92f0d35e669e45ae0b7e9f27cede37141f5666b9f3afd747f9bc351267d",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction/stdout.log",
+      "sha256": "82a2bd0e5783e0e516af3ff86bd5b52a7ab833a9921763bd6fc0d6adeab8fbdf",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/stderr.log",
+      "sha256": "9e6df6d26c937c3e5191c74904861d73879be211c8426d3dd99380a05e36f33c",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/stdout.log",
+      "sha256": "1ae104202751c24707e1a98dfa284ee448ce16e848986bf586ef15e3e997be26",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.scoring.ClosenessCentrality/stderr.log",
+      "sha256": "70ee03fd50fd5f471885400ea5ca25de831ce56015c3c9223918a289c1c0bbc5",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.scoring.ClosenessCentrality/stdout.log",
+      "sha256": "0f88cb87ef7ea255d8e59ebef7b6567a58a540f051edcb77c957c418f9f52701",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/stderr.log",
+      "sha256": "a6d0eea812dbe5ba75a2c85ceab76f24e467486e086bbb39b3699096e18d5b82",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/stdout.log",
+      "sha256": "9033193e7e64726f3c3ffd5c0900ff22849360c1915962cfc638d5ebfe1f2181",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree/stderr.log",
+      "sha256": "daf7962f319d93813d445c71e402ff07b043a8e030b56b6d84f2efc939703f0f",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree/stdout.log",
+      "sha256": "7b3da4e637575d76687d042fed62b7b0117c374b55524b9129fe98b4a413d730",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/stderr.log",
+      "sha256": "ff6baf8b8599915550890f16ac2ab4b8e942556fc36d8a171e0b1c4003900a80",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/stdout.log",
+      "sha256": "30bf2ce527b1ac24e012ac5fb6b61c4722e4f9d29b4da59e54a1091dca3fbc1c",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.util.UnorderedPair/stderr.log",
+      "sha256": "f5819e8e5af0e98c18a8d9b58ce4616e9721e861993cbe7c27338c27eff86b87",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.util.UnorderedPair/stdout.log",
+      "sha256": "cd25e7bcb0901a0cab08da383326f02e04a5774eb23c996388bcf4c43f05decd",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.vertexcover.RecursiveExactVCImpl/stderr.log",
+      "sha256": "aa6f5b9443bebe5813d7bc09e7f892fe04fe2cd792e4faba75f8df61f5c3bfa2",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.alg.vertexcover.RecursiveExactVCImpl/stdout.log",
+      "sha256": "a2d342973c44fb43d9decf5a6e94fa134207b06291c5e0d04411a0adfcef6dd2",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.generate.netgen.Distributor/stderr.log",
+      "sha256": "6e365945e04ab069e32c7827fe58b7e22c32827c2ada439d733bbddc46e5a56e",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.generate.netgen.Distributor/stdout.log",
+      "sha256": "63b3ec9cf3ba639199dd4b17f3c3c75216d55bbb83b061c9a46cfbe6528da150",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.graph.specifics.UndirectedSpecifics/stderr.log",
+      "sha256": "70ac28c1f42a7c8590ff19784e26b1791e57ea7a81c25d8275ab4ed06073673e",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/results/per-class/org.jgrapht.graph.specifics.UndirectedSpecifics/stdout.log",
+      "sha256": "bd2c018a906283ef9de77eda012085516d89af790f03e79d888fe76384af37b2",
+      "hits": [
+        {
+          "line": 39,
+          "text": "[INFO] Found plugin : Auto set number of threads based on machine"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/results/progress.log",
+      "sha256": "8b35df69781c998ed42bdbd4b4d4a5aeaf23081c31629f7af208b427cb2e03d5",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/docs/FAILURE_MODES.md",
+      "sha256": "bc8dc5e660ec1d9e8c650aff3faad7f66f66b2cfe17d9bf24e76a98b36eab4a9",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/docs/METHODOLOGY.md",
+      "sha256": "d8d2649f2e48d71a51916f5d8cbfe33c5fe429dae0a7d4f6b6494edb552bb31f",
+      "hits": [
+        {
+          "line": 111,
+          "text": "                    <threads>4</threads>"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/docs/README.md",
+      "sha256": "c7c86e1defa8a7a7b9293dc8a3b4f8c997d0b71f7e040f3414bc592b162e5e60",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/docs/REPRODUCE.md",
+      "sha256": "89e23abb9299c01e8a9a7f589d5ed3baef14a4e0d509461ca6dc3cd7cd7582e7",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/docs/REQUIREMENTS.md",
+      "sha256": "e5d0d1b426d8c98da2eec9e4d4dd16076e485cbfde3a3758298e8a6156c31d3e",
+      "hits": [
+        {
+          "line": 80,
+          "text": "| CPU | 4 cores | 8 cores |"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/config/coverage_profile.xml",
+      "sha256": "1815159f73e4234e16ff93c852036c8598fabd2077b73df32902743de1c97f1a",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/config/pit_profile.xml",
+      "sha256": "e669e840fa6081ff62236f1e3f3f8b1803915ddcbb450ab63d12107378824e76",
+      "hits": [
+        {
+          "line": 63,
+          "text": "              <threads>4</threads>"
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/config/sample_classes.json",
+      "sha256": "8a5f82f8d8c11372456f6248935e6f6ceb059bc43de206ca7d2e068262393ca2",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/scripts/00_sample_classes.py",
+      "sha256": "442447e5978f38deb10154a19a21999ced863702f536827e4739a40ed78384b7",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/scripts/01_generate_coverage_map.py",
+      "sha256": "d2434b71beb5b4914ffd895b8991be91dd34fc8474df68780aea79b0da64c9dd",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/scripts/02_run_pit.py",
+      "sha256": "58273c798a3c25762a9c26ea8081f000be772f31870a8ec8adb86808c899b7a5",
+      "hits": [
+        {
+          "line": 81,
+          "text": "        \"-Dthreads=4\","
+        }
+      ]
+    },
+    {
+      "path": "jgrapht/scripts/03_evaluate.py",
+      "sha256": "69f053708690fb82d0229f15d72af508bddf34926dc1145fd1295afa7c53e115",
+      "hits": []
+    },
+    {
+      "path": "jgrapht/scripts/04_baselines.py",
+      "sha256": "f8cb51d86c4f5fd0fc1102e7140fdf37942b3b80e2285748ee4de0217b31b169",
+      "hits": []
+    }
+  ],
+  "historicalEffectiveProcessorCount": "UNKNOWN",
+  "interpretation": "Recommended hardware and the presence of the auto-thread plugin do not establish effective availableProcessors in the historical PIT worker. No matching effective value was recovered from these files.",
+  "decision": "No historical CPU value is invented; the CPU=1 replay is not certified as a PIT-version-only comparison. No further outcome-driven retry is performed."
+}

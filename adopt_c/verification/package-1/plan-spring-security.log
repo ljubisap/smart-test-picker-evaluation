@@ -1,0 +1,176 @@
+{
+  "configuration": {
+    "subject": "spring-security",
+    "sourceRevision": "a825937b8175ee85872c49d9c7fc25eea8cff991",
+    "repository": "https://github.com/spring-projects/spring-security",
+    "module": "core",
+    "jdkMajor": 21,
+    "collectionBuildTool": "Gradle 9.7.0",
+    "pitVersion": "1.17.4",
+    "testPlugin": {
+      "artifact": "pitest-junit5-plugin",
+      "version": "1.2.1"
+    },
+    "mutators": [
+      "DEFAULTS"
+    ],
+    "fullMutationMatrix": true,
+    "sample": "sample.json",
+    "recordedPitSeconds": 354.67,
+    "outputDirectory": "<CHECKOUT>/.replication-pit/spring-security",
+    "requiredJavaOptions": [],
+    "notes": "PIT runs are not expected to be byte-identical; compare identities, statuses, and normalized killing sets.",
+    "buildArguments": [
+      "-PtestToolchain=21"
+    ]
+  },
+  "selectedClasses": [
+    {
+      "fqn": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+      "sourcePath": "core/src/main/java/org/springframework/security/access/hierarchicalroles/RoleHierarchyImpl.java",
+      "subpackage": "access.hierarchicalroles",
+      "loc": 308,
+      "reason": "role hierarchy evaluation",
+      "targetTests": "org.springframework.security.access.hierarchicalroles.*"
+    },
+    {
+      "fqn": "org.springframework.security.access.expression.SecurityExpressionRoot",
+      "sourcePath": "core/src/main/java/org/springframework/security/access/expression/SecurityExpressionRoot.java",
+      "subpackage": "access.expression",
+      "loc": 309,
+      "reason": "security expression evaluation",
+      "targetTests": "org.springframework.security.access.expression.*"
+    },
+    {
+      "fqn": "org.springframework.security.authentication.ProviderManager",
+      "sourcePath": "core/src/main/java/org/springframework/security/authentication/ProviderManager.java",
+      "subpackage": "authentication",
+      "loc": 328,
+      "reason": "authentication provider orchestration",
+      "targetTests": "org.springframework.security.authentication.*"
+    },
+    {
+      "fqn": "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider",
+      "sourcePath": "core/src/main/java/org/springframework/security/authentication/dao/AbstractUserDetailsAuthenticationProvider.java",
+      "subpackage": "authentication.dao",
+      "loc": 407,
+      "reason": "user-details authentication flow",
+      "targetTests": "org.springframework.security.authentication.dao.*"
+    },
+    {
+      "fqn": "org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+      "sourcePath": "core/src/main/java/org/springframework/security/authentication/DefaultAuthenticationEventPublisher.java",
+      "subpackage": "authentication.events",
+      "loc": 217,
+      "reason": "authentication event publication",
+      "targetTests": "org.springframework.security.authentication.*"
+    },
+    {
+      "fqn": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "sourcePath": "core/src/main/java/org/springframework/security/authorization/AuthorityAuthorizationManager.java",
+      "subpackage": "authorization",
+      "loc": 152,
+      "reason": "authority authorization decisions",
+      "targetTests": "org.springframework.security.authorization.*"
+    },
+    {
+      "fqn": "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor",
+      "sourcePath": "core/src/main/java/org/springframework/security/authorization/method/AuthorizationManagerBeforeMethodInterceptor.java",
+      "subpackage": "authorization.method",
+      "loc": 304,
+      "reason": "method authorization interception",
+      "targetTests": "org.springframework.security.authorization.method.*"
+    },
+    {
+      "fqn": "org.springframework.security.concurrent.DelegatingSecurityContextRunnable",
+      "sourcePath": "core/src/main/java/org/springframework/security/concurrent/DelegatingSecurityContextRunnable.java",
+      "subpackage": "concurrent",
+      "loc": 156,
+      "reason": "security context thread handoff",
+      "targetTests": "org.springframework.security.concurrent.*"
+    },
+    {
+      "fqn": "org.springframework.security.core.context.SecurityContextHolder",
+      "sourcePath": "core/src/main/java/org/springframework/security/core/context/SecurityContextHolder.java",
+      "subpackage": "core.context",
+      "loc": 236,
+      "reason": "global/thread context strategy",
+      "targetTests": "org.springframework.security.core.context.*"
+    },
+    {
+      "fqn": "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper",
+      "sourcePath": "core/src/main/java/org/springframework/security/core/authority/mapping/MapBasedAttributes2GrantedAuthoritiesMapper.java",
+      "subpackage": "core.authority.mapping",
+      "loc": 189,
+      "reason": "authority mapping",
+      "targetTests": "org.springframework.security.core.authority.mapping.*"
+    },
+    {
+      "fqn": "org.springframework.security.core.session.SessionRegistryImpl",
+      "sourcePath": "core/src/main/java/org/springframework/security/core/session/SessionRegistryImpl.java",
+      "subpackage": "core.session",
+      "loc": 174,
+      "reason": "session lifecycle registry",
+      "targetTests": "org.springframework.security.core.session.*"
+    },
+    {
+      "fqn": "org.springframework.security.core.userdetails.User",
+      "sourcePath": "core/src/main/java/org/springframework/security/core/userdetails/User.java",
+      "subpackage": "core.userdetails",
+      "loc": 515,
+      "reason": "user identity and builder behavior",
+      "targetTests": "org.springframework.security.core.userdetails.*"
+    },
+    {
+      "fqn": "org.springframework.security.core.token.KeyBasedPersistenceTokenService",
+      "sourcePath": "core/src/main/java/org/springframework/security/core/token/KeyBasedPersistenceTokenService.java",
+      "subpackage": "core.token",
+      "loc": 184,
+      "reason": "token creation and validation",
+      "targetTests": "org.springframework.security.core.token.*"
+    },
+    {
+      "fqn": "org.springframework.security.provisioning.InMemoryUserDetailsManager",
+      "sourcePath": "core/src/main/java/org/springframework/security/provisioning/InMemoryUserDetailsManager.java",
+      "subpackage": "provisioning",
+      "loc": 197,
+      "reason": "user provisioning",
+      "targetTests": "org.springframework.security.provisioning.*"
+    },
+    {
+      "fqn": "org.springframework.security.converter.RsaKeyConverters",
+      "sourcePath": "core/src/main/java/org/springframework/security/converter/RsaKeyConverters.java",
+      "subpackage": "converter",
+      "loc": 243,
+      "reason": "security key conversion",
+      "targetTests": "org.springframework.security.converter.*"
+    },
+    {
+      "fqn": "org.springframework.security.jackson2.SecurityJackson2Modules",
+      "sourcePath": "core/src/main/java/org/springframework/security/jackson2/SecurityJackson2Modules.java",
+      "subpackage": "jackson2",
+      "loc": 320,
+      "reason": "security serialization module discovery",
+      "targetTests": "org.springframework.security.jackson2.*"
+    },
+    {
+      "fqn": "org.springframework.security.util.matcher.InetAddressMatchers",
+      "sourcePath": "core/src/main/java/org/springframework/security/util/matcher/InetAddressMatchers.java",
+      "subpackage": "util.matcher",
+      "loc": 396,
+      "reason": "network matcher implementation",
+      "targetTests": "org.springframework.security.util.matcher.*"
+    },
+    {
+      "fqn": "org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner",
+      "sourcePath": "core/src/main/java/org/springframework/security/core/annotation/UniqueSecurityAnnotationScanner.java",
+      "subpackage": "core.annotation",
+      "loc": 319,
+      "reason": "security annotation scanning",
+      "targetTests": "org.springframework.security.core.annotation.*"
+    }
+  ],
+  "checkout": "/not-needed-for-plan",
+  "commandFile": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final/rerun/pit/spring-security/command.txt",
+  "noExecution": true
+}

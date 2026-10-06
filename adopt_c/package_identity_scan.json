@@ -1,0 +1,234 @@
+{
+  "zeroIdentityHits": true,
+  "identityHits": [],
+  "sourceIdentifierHits": [
+    {
+      "file": "data/maps/commons-lang.json",
+      "token": "ISSTA",
+      "count": 165,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/commons-lang.json",
+      "token": "legacy",
+      "count": 4697,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/flink.json.gz",
+      "token": "ISSTA",
+      "count": 54,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/flink.json.gz",
+      "token": "legacy",
+      "count": 798,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/hibernate.json.gz",
+      "token": "ISSTA",
+      "count": 2847,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/hibernate.json.gz",
+      "token": "legacy",
+      "count": 6195,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/hibernate.json.gz",
+      "token": "audit",
+      "count": 6446,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/petclinic.json",
+      "token": "legacy",
+      "count": 56,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/quarkus.json.gz",
+      "token": "ISSTA",
+      "count": 122,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/quarkus.json.gz",
+      "token": "legacy",
+      "count": 684,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/spring-core.json",
+      "token": "ISSTA",
+      "count": 87,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/spring-core.json",
+      "token": "legacy",
+      "count": 3638,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/maps/spring-security.json.gz",
+      "token": "legacy",
+      "count": 1440,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint/mutations.xml",
+      "token": "ISSTA",
+      "count": 16,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml",
+      "token": "legacy",
+      "count": 18,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml",
+      "token": "legacy",
+      "count": 66,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml",
+      "token": "legacy",
+      "count": 14,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml",
+      "token": "legacy",
+      "count": 2,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz",
+      "token": "ISSTA",
+      "count": 8,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "data/pit/spring-core/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml.gz",
+      "token": "ISSTA",
+      "count": 8,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/failed_killer_impact.json",
+      "token": "ISSTA",
+      "count": 8,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/java_replay/comparison.json",
+      "token": "ISSTA",
+      "count": 46,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/java_replay/comparison.json",
+      "token": "legacy",
+      "count": 28,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/java_replay/inputs.json",
+      "token": "ISSTA",
+      "count": 23,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/java_replay/inputs.json",
+      "token": "legacy",
+      "count": 14,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/java_replay/outputs.json",
+      "token": "ISSTA",
+      "count": 23,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/java_replay/outputs.json",
+      "token": "legacy",
+      "count": 14,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/pit_replay/flink/run.log",
+      "token": "legacy",
+      "count": 1,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/pit_replay/hibernate/mutations.xml",
+      "token": "legacy",
+      "count": 66,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/pit_replay/hibernate/record_agreement.json",
+      "token": "legacy",
+      "count": 56,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/pit_replay/hibernate/run.log",
+      "token": "legacy",
+      "count": 11,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/springcore_run2/footprint_differences.json",
+      "token": "ISSTA",
+      "count": 1,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/springcore_run2/map.json",
+      "token": "ISSTA",
+      "count": 87,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/springcore_run2/map.json",
+      "token": "legacy",
+      "count": 3638,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "evidence/succeeding_tests.json",
+      "token": "legacy",
+      "count": 1,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "rerun/build-inspection.json",
+      "token": "legacy",
+      "count": 7,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "results/per_record.json",
+      "token": "ISSTA",
+      "count": 57,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    },
+    {
+      "file": "results/per_record.json",
+      "token": "legacy",
+      "count": 23,
+      "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+    }
+  ]
+}

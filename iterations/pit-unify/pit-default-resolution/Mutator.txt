@@ -1,0 +1,275 @@
+Compiled from "Mutator.java"
+public final class org.pitest.mutationtest.engine.gregor.config.Mutator {
+  private static final java.util.Map<java.lang.String, java.util.List<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory>> MUTATORS;
+
+  public org.pitest.mutationtest.engine.gregor.config.Mutator();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static java.util.Collection<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory> all();
+    Code:
+       0: invokestatic  #2                  // Method allMutatorIds:()Ljava/util/Collection;
+       3: invokestatic  #3                  // Method fromStrings:(Ljava/util/Collection;)Ljava/util/Collection;
+       6: areturn
+
+  public static java.util.Collection<java.lang.String> allMutatorIds();
+    Code:
+       0: getstatic     #4                  // Field MUTATORS:Ljava/util/Map;
+       3: invokeinterface #5,  1            // InterfaceMethod java/util/Map.keySet:()Ljava/util/Set;
+       8: areturn
+
+  private static java.util.Collection<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory> combine(java.util.Collection<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory>, java.util.Collection<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory>);
+    Code:
+       0: new           #6                  // class java/util/ArrayList
+       3: dup
+       4: aload_0
+       5: invokespecial #7                  // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+       8: astore_2
+       9: aload_2
+      10: aload_1
+      11: invokeinterface #8,  2            // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+      16: pop
+      17: aload_2
+      18: areturn
+
+  public static java.util.Collection<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory> newDefaults();
+    Code:
+       0: bipush        6
+       2: anewarray     #9                  // class org/pitest/mutationtest/engine/gregor/MethodMutatorFactory
+       5: dup
+       6: iconst_0
+       7: getstatic     #10                 // Field org/pitest/mutationtest/engine/gregor/mutators/InvertNegsMutator.INVERT_NEGS:Lorg/pitest/mutationtest/engine/gregor/mutators/InvertNegsMutator;
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: getstatic     #11                 // Field org/pitest/mutationtest/engine/gregor/mutators/MathMutator.MATH:Lorg/pitest/mutationtest/engine/gregor/mutators/MathMutator;
+      16: aastore
+      17: dup
+      18: iconst_2
+      19: getstatic     #12                 // Field org/pitest/mutationtest/engine/gregor/mutators/VoidMethodCallMutator.VOID_METHOD_CALLS:Lorg/pitest/mutationtest/engine/gregor/mutators/VoidMethodCallMutator;
+      22: aastore
+      23: dup
+      24: iconst_3
+      25: getstatic     #13                 // Field org/pitest/mutationtest/engine/gregor/mutators/NegateConditionalsMutator.NEGATE_CONDITIONALS:Lorg/pitest/mutationtest/engine/gregor/mutators/NegateConditionalsMutator;
+      28: aastore
+      29: dup
+      30: iconst_4
+      31: getstatic     #14                 // Field org/pitest/mutationtest/engine/gregor/mutators/ConditionalsBoundaryMutator.CONDITIONALS_BOUNDARY:Lorg/pitest/mutationtest/engine/gregor/mutators/ConditionalsBoundaryMutator;
+      34: aastore
+      35: dup
+      36: iconst_5
+      37: getstatic     #15                 // Field org/pitest/mutationtest/engine/gregor/mutators/IncrementsMutator.INCREMENTS:Lorg/pitest/mutationtest/engine/gregor/mutators/IncrementsMutator;
+      40: aastore
+      41: invokestatic  #16                 // Method group:([Lorg/pitest/mutationtest/engine/gregor/MethodMutatorFactory;)Ljava/util/Collection;
+      44: invokestatic  #17                 // Method betterReturns:()Ljava/util/Collection;
+      47: invokestatic  #18                 // Method combine:(Ljava/util/Collection;Ljava/util/Collection;)Ljava/util/Collection;
+      50: areturn
+
+  private static java.util.Collection<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory> betterReturns();
+    Code:
+       0: iconst_5
+       1: anewarray     #9                  // class org/pitest/mutationtest/engine/gregor/MethodMutatorFactory
+       4: dup
+       5: iconst_0
+       6: getstatic     #19                 // Field org/pitest/mutationtest/engine/gregor/mutators/returns/BooleanTrueReturnValsMutator.TRUE_RETURNS:Lorg/pitest/mutationtest/engine/gregor/mutators/returns/BooleanTrueReturnValsMutator;
+       9: aastore
+      10: dup
+      11: iconst_1
+      12: getstatic     #20                 // Field org/pitest/mutationtest/engine/gregor/mutators/returns/BooleanFalseReturnValsMutator.FALSE_RETURNS:Lorg/pitest/mutationtest/engine/gregor/mutators/returns/BooleanFalseReturnValsMutator;
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: getstatic     #21                 // Field org/pitest/mutationtest/engine/gregor/mutators/returns/PrimitiveReturnsMutator.PRIMITIVE_RETURNS:Lorg/pitest/mutationtest/engine/gregor/mutators/returns/PrimitiveReturnsMutator;
+      21: aastore
+      22: dup
+      23: iconst_3
+      24: getstatic     #22                 // Field org/pitest/mutationtest/engine/gregor/mutators/returns/EmptyObjectReturnValsMutator.EMPTY_RETURNS:Lorg/pitest/mutationtest/engine/gregor/mutators/returns/EmptyObjectReturnValsMutator;
+      27: aastore
+      28: dup
+      29: iconst_4
+      30: getstatic     #23                 // Field org/pitest/mutationtest/engine/gregor/mutators/returns/NullReturnValsMutator.NULL_RETURNS:Lorg/pitest/mutationtest/engine/gregor/mutators/returns/NullReturnValsMutator;
+      33: aastore
+      34: invokestatic  #16                 // Method group:([Lorg/pitest/mutationtest/engine/gregor/MethodMutatorFactory;)Ljava/util/Collection;
+      37: areturn
+
+  private static java.util.Collection<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory> group(org.pitest.mutationtest.engine.gregor.MethodMutatorFactory...);
+    Code:
+       0: aload_0
+       1: invokestatic  #24                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+       4: areturn
+
+  public static java.util.Collection<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory> byName(java.lang.String);
+    Code:
+       0: getstatic     #4                  // Field MUTATORS:Ljava/util/Map;
+       3: aload_0
+       4: invokeinterface #25,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       9: checkcast     #26                 // class java/util/Collection
+      12: invokestatic  #27                 // Method org/pitest/functional/Streams.asStream:(Ljava/util/Collection;)Ljava/util/stream/Stream;
+      15: invokestatic  #28                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+      18: invokeinterface #29,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      23: checkcast     #26                 // class java/util/Collection
+      26: areturn
+
+  public static java.util.Collection<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory> fromStrings(java.util.Collection<java.lang.String>);
+    Code:
+       0: aload_0
+       1: invokeinterface #30,  1           // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+       6: invokedynamic #31,  0             // InvokeDynamic #0:test:()Ljava/util/function/Predicate;
+      11: invokeinterface #32,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      16: invokedynamic #33,  0             // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+      21: invokeinterface #34,  2           // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      26: invokestatic  #28                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+      29: invokeinterface #29,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      34: checkcast     #35                 // class java/util/List
+      37: astore_1
+      38: aload_0
+      39: invokeinterface #30,  1           // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+      44: invokedynamic #36,  0             // InvokeDynamic #2:test:()Ljava/util/function/Predicate;
+      49: invokeinterface #32,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      54: invokestatic  #28                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+      57: invokeinterface #29,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      62: checkcast     #35                 // class java/util/List
+      65: astore_2
+      66: aload_2
+      67: invokeinterface #37,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+      72: getstatic     #4                  // Field MUTATORS:Ljava/util/Map;
+      75: invokestatic  #38                 // Method fromString:(Ljava/util/Map;)Ljava/util/function/Function;
+      78: invokeinterface #39,  2           // InterfaceMethod java/util/stream/Stream.flatMap:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      83: invokedynamic #40,  0             // InvokeDynamic #3:get:()Ljava/util/function/Supplier;
+      88: invokestatic  #41                 // Method java/util/stream/Collectors.toCollection:(Ljava/util/function/Supplier;)Ljava/util/stream/Collector;
+      91: invokeinterface #29,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      96: checkcast     #42                 // class java/util/Set
+      99: astore_3
+     100: aload_1
+     101: invokeinterface #37,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+     106: getstatic     #4                  // Field MUTATORS:Ljava/util/Map;
+     109: invokestatic  #38                 // Method fromString:(Ljava/util/Map;)Ljava/util/function/Function;
+     112: invokeinterface #39,  2           // InterfaceMethod java/util/stream/Stream.flatMap:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+     117: invokedynamic #43,  0             // InvokeDynamic #4:get:()Ljava/util/function/Supplier;
+     122: invokestatic  #41                 // Method java/util/stream/Collectors.toCollection:(Ljava/util/function/Supplier;)Ljava/util/stream/Collector;
+     125: invokeinterface #29,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+     130: checkcast     #42                 // class java/util/Set
+     133: astore        4
+     135: aload_3
+     136: aload         4
+     138: invokeinterface #44,  2           // InterfaceMethod java/util/Set.removeAll:(Ljava/util/Collection;)Z
+     143: pop
+     144: aload_3
+     145: areturn
+
+  private static java.util.Comparator<? super org.pitest.mutationtest.engine.gregor.MethodMutatorFactory> compareId();
+    Code:
+       0: invokedynamic #45,  0             // InvokeDynamic #5:apply:()Ljava/util/function/Function;
+       5: invokestatic  #46                 // InterfaceMethod java/util/Comparator.comparing:(Ljava/util/function/Function;)Ljava/util/Comparator;
+       8: areturn
+
+  private static java.util.function.Function<java.lang.String, java.util.stream.Stream<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory>> fromString(java.util.Map<java.lang.String, java.util.List<org.pitest.mutationtest.engine.gregor.MethodMutatorFactory>>);
+    Code:
+       0: aload_0
+       1: invokedynamic #47,  0             // InvokeDynamic #6:apply:(Ljava/util/Map;)Ljava/util/function/Function;
+       6: areturn
+
+  private static java.util.stream.Stream lambda$fromString$6(java.util.Map, java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #48                 // String ALL
+       3: invokevirtual #49                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       6: ifeq          18
+       9: invokestatic  #50                 // Method all:()Ljava/util/Collection;
+      12: invokeinterface #30,  1           // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+      17: areturn
+      18: aload_0
+      19: aload_1
+      20: invokeinterface #25,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      25: checkcast     #35                 // class java/util/List
+      28: astore_2
+      29: aload_2
+      30: ifnonnull     52
+      33: new           #51                 // class org/pitest/help/PitHelpError
+      36: dup
+      37: getstatic     #52                 // Field org/pitest/help/Help.UNKNOWN_MUTATOR:Lorg/pitest/help/Help;
+      40: iconst_1
+      41: anewarray     #53                 // class java/lang/Object
+      44: dup
+      45: iconst_0
+      46: aload_1
+      47: aastore
+      48: invokespecial #54                 // Method org/pitest/help/PitHelpError."<init>":(Lorg/pitest/help/Help;[Ljava/lang/Object;)V
+      51: athrow
+      52: aload_2
+      53: invokeinterface #37,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+      58: areturn
+
+  private static java.util.TreeSet lambda$fromStrings$5();
+    Code:
+       0: new           #55                 // class java/util/TreeSet
+       3: dup
+       4: invokestatic  #56                 // Method compareId:()Ljava/util/Comparator;
+       7: invokespecial #57                 // Method java/util/TreeSet."<init>":(Ljava/util/Comparator;)V
+      10: areturn
+
+  private static java.util.TreeSet lambda$fromStrings$4();
+    Code:
+       0: new           #55                 // class java/util/TreeSet
+       3: dup
+       4: invokestatic  #56                 // Method compareId:()Ljava/util/Comparator;
+       7: invokespecial #57                 // Method java/util/TreeSet."<init>":(Ljava/util/Comparator;)V
+      10: areturn
+
+  private static boolean lambda$fromStrings$3(java.lang.String);
+    Code:
+       0: aload_0
+       1: ldc           #58                 // String -
+       3: invokevirtual #59                 // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+       6: ifne          13
+       9: iconst_1
+      10: goto          14
+      13: iconst_0
+      14: ireturn
+
+  private static java.lang.String lambda$fromStrings$2(java.lang.String);
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: invokevirtual #60                 // Method java/lang/String.substring:(I)Ljava/lang/String;
+       5: areturn
+
+  private static boolean lambda$fromStrings$1(java.lang.String);
+    Code:
+       0: aload_0
+       1: ldc           #58                 // String -
+       3: invokevirtual #59                 // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+       6: ireturn
+
+  private static void lambda$static$0(org.pitest.mutationtest.engine.gregor.config.MutatorGroup);
+    Code:
+       0: aload_0
+       1: getstatic     #4                  // Field MUTATORS:Ljava/util/Map;
+       4: invokeinterface #61,  2           // InterfaceMethod org/pitest/mutationtest/engine/gregor/config/MutatorGroup.register:(Ljava/util/Map;)V
+       9: return
+
+  static {};
+    Code:
+       0: ldc           #62                 // class org/pitest/mutationtest/engine/gregor/config/MutatorGroup
+       2: invokestatic  #63                 // Method org/pitest/util/IsolationUtils.getContextClassLoader:()Ljava/lang/ClassLoader;
+       5: invokestatic  #64                 // Method org/pitest/util/ServiceLoader.load:(Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/Collection;
+       8: astore_0
+       9: ldc           #9                  // class org/pitest/mutationtest/engine/gregor/MethodMutatorFactory
+      11: invokestatic  #63                 // Method org/pitest/util/IsolationUtils.getContextClassLoader:()Ljava/lang/ClassLoader;
+      14: invokestatic  #64                 // Method org/pitest/util/ServiceLoader.load:(Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/Collection;
+      17: astore_1
+      18: aload_1
+      19: invokeinterface #30,  1           // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+      24: invokedynamic #65,  0             // InvokeDynamic #7:apply:()Ljava/util/function/Function;
+      29: invokestatic  #66                 // Method java/util/stream/Collectors.groupingBy:(Ljava/util/function/Function;)Ljava/util/stream/Collector;
+      32: invokeinterface #29,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      37: checkcast     #67                 // class java/util/Map
+      40: putstatic     #4                  // Field MUTATORS:Ljava/util/Map;
+      43: aload_0
+      44: invokeinterface #30,  1           // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+      49: invokedynamic #68,  0             // InvokeDynamic #8:accept:()Ljava/util/function/Consumer;
+      54: invokeinterface #69,  2           // InterfaceMethod java/util/stream/Stream.forEach:(Ljava/util/function/Consumer;)V
+      59: return
+}

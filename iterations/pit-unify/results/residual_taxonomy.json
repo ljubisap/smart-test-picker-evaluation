@@ -1,0 +1,878 @@
+{
+  "residualMisses": [
+    {
+      "mutationId": "commons-lang|org.apache.commons.lang3.reflect.FieldUtils|removeFinalModifier|(Ljava/lang/reflect/Field;)V|563|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=commons-lang/results/per-class/org.apache.commons.lang3.reflect.FieldUtils/mutations.xml:40",
+      "project": "commons-lang",
+      "mutatedClass": "org.apache.commons.lang3.reflect.FieldUtils",
+      "mutatedMethod": "removeFinalModifier",
+      "line": 563,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "C",
+      "killerFootprints": [
+        {
+          "coverageKey": "FieldUtilsTest#testRemoveFinalModifierNullPointerException_242d660",
+          "type": "C",
+          "targetClassPresent": false,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": []
+        }
+      ],
+      "killingTests": [
+        "FieldUtilsTest#testRemoveFinalModifierNullPointerException_242d660"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "NPE before any FieldUtils probe activates (target class absent from coverage)",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json"
+    },
+    {
+      "mutationId": "jgrapht|org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP|getTour|(Lorg/jgrapht/Graph;)Lorg/jgrapht/GraphPath;|97|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml.gz:1",
+      "project": "jgrapht",
+      "mutatedClass": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+      "mutatedMethod": "getTour",
+      "line": 97,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "A",
+      "killerFootprints": [
+        {
+          "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0_3dc2465",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP#<init>"
+          ]
+        },
+        {
+          "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2_3dc2465",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP#<init>"
+          ]
+        }
+      ],
+      "killingTests": [
+        "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0_3dc2465",
+        "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2_3dc2465"
+      ],
+      "recoveredByConstructorRule": true,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Both reported killers invoke getTour inside assertThrows(IllegalArgumentException): one supplies a directed graph and the other an incomplete undirected graph. The first operation is checkGraph (javap offset 2), whose requireUndirected/completeness guards throw before getTour reaches its normal body. PIT removes that guard call. The frozen footprints contain only the target constructor. The source path and missing method edge support exceptional-exit probe shadowing; this is not engine-preparation activity.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/jgrapht/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 8,
+        "emptyEntries": 2,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 10,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.convert.TypeDescriptor|upcast|(Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;|235|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml.gz:120",
+      "project": "spring-core",
+      "mutatedClass": "org.springframework.core.convert.TypeDescriptor",
+      "mutatedMethod": "upcast",
+      "line": 235,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "B",
+      "killerFootprints": [
+        {
+          "coverageKey": "TypeDescriptorTests#upCastNotSuper_1ce9511",
+          "type": "B",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.convert.TypeDescriptor#<init>",
+            "org.springframework.core.convert.TypeDescriptor#getType"
+          ]
+        }
+      ],
+      "killingTests": [
+        "TypeDescriptorTests#upCastNotSuper_1ce9511"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "upCastNotSuper constructs a Map-valued descriptor, requests Collection as its supertype, and asserts IllegalArgumentException with the assignability message. upcast calls getType and then Assert.isAssignable (javap offset 11), before constructing a result. The pristine guard throws. The killer records the constructor and getType but no upcast edge. PIT removes the assignability check; the exception contract is mutation-sensitive. The disjoint footprint is explained by exit through the callee before downstream attribution, not by lack of entry to upcast.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.TypeDescriptor.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 1,
+        "emptyEntries": 14,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 15,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Ljava/lang/Class;Ljava/lang/Class;)Z|133|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:17",
+      "project": "spring-core",
+      "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+      "mutatedMethod": "canConvert",
+      "line": 133,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "A",
+      "killerFootprints": [
+        {
+          "coverageKey": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.convert.support.GenericConversionService#<init>"
+          ]
+        },
+        {
+          "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.convert.support.GenericConversionService#<init>"
+          ]
+        }
+      ],
+      "killingTests": [
+        "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+        "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467"
+      ],
+      "recoveredByConstructorRule": true,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Both killers call the Class overload with a null target and assert IllegalArgumentException. Its first statement is Assert.notNull(targetType); the source and bytecode place this before delegation. The removed void call is this guard. The target-class footprint is constructor-only although the test body directly invokes canConvert. This supports early exceptional exit before the method execution is recorded.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 100,
+        "emptyEntries": 14,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 114,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z|140|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:22",
+      "project": "spring-core",
+      "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+      "mutatedMethod": "canConvert",
+      "line": 140,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "A",
+      "killerFootprints": [
+        {
+          "coverageKey": "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType_1c4b620",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.convert.support.GenericConversionService#<init>"
+          ]
+        },
+        {
+          "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor_6518014",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.convert.support.GenericConversionService#<init>"
+          ]
+        }
+      ],
+      "killingTests": [
+        "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType_1c4b620",
+        "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor_6518014"
+      ],
+      "recoveredByConstructorRule": true,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Both killers call the TypeDescriptor overload with a null target and assert IllegalArgumentException. Assert.notNull is the first statement, before getConverter/return. PIT removes that call. The tests instantiate the service and then invoke this overload; constructor-only footprints omit the exceptional call. Source/control-flow evidence supports early exceptional exit rather than a pre-test attribution gap.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 100,
+        "emptyEntries": 14,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 114,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;|164|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:24",
+      "project": "spring-core",
+      "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+      "mutatedMethod": "convert",
+      "line": 164,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "A",
+      "killerFootprints": [
+        {
+          "coverageKey": "GenericConversionServiceTests#convertToNullTargetClass_2b9458d",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.convert.support.GenericConversionService#<init>"
+          ]
+        }
+      ],
+      "killingTests": [
+        "GenericConversionServiceTests#convertToNullTargetClass_2b9458d"
+      ],
+      "recoveredByConstructorRule": true,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "convertToNullTargetClass invokes convert(\"3\", (Class<?>) null) inside an IllegalArgumentException assertion. Assert.notNull(targetType) precedes delegation and is the void call PIT removes. The constructor is recorded but convert is absent. The exceptional guard path is executed within the test body, supporting probe-shadowed early exit.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 228,
+        "emptyEntries": 14,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 242,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;|171|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:31",
+      "project": "spring-core",
+      "mutatedClass": "org.springframework.core.convert.support.GenericConversionService",
+      "mutatedMethod": "convert",
+      "line": 171,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "A",
+      "killerFootprints": [
+        {
+          "coverageKey": "GenericConversionServiceTests#convertToNullTargetTypeDescriptor_2a0041a",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.convert.support.GenericConversionService#<init>"
+          ]
+        }
+      ],
+      "killingTests": [
+        "GenericConversionServiceTests#convertToNullTargetTypeDescriptor_2a0041a"
+      ],
+      "recoveredByConstructorRule": true,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "convertToNullTargetTypeDescriptor invokes the three-argument convert with a null target descriptor. The first Assert.notNull throws before the conversion branches. PIT removes that call and reports this exception-contract test as killer. Its only target-class edge is the constructor; the evidence supports exceptional exit before method attribution.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 228,
+        "emptyEntries": 14,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 242,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.core.task.SimpleAsyncTaskExecutor|execute|(Ljava/lang/Runnable;J)V|264|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml.gz:14",
+      "project": "spring-core",
+      "mutatedClass": "org.springframework.core.task.SimpleAsyncTaskExecutor",
+      "mutatedMethod": "execute",
+      "line": 264,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "B",
+      "killerFootprints": [
+        {
+          "coverageKey": "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable_1b9ea4e",
+          "type": "B",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.task.SimpleAsyncTaskExecutor#<init>",
+            "org.springframework.core.task.SimpleAsyncTaskExecutor#close"
+          ]
+        }
+      ],
+      "killingTests": [
+        "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable_1b9ea4e"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "The killer calls execute(null) in a try-with-resources block and asserts IllegalArgumentException. The one-argument overload delegates to execute(Runnable,long), whose first call is Assert.notNull(task). PIT removes that call. Other target-class methods (including lifecycle work) are present, but the name-level execute edge is absent. The critical activity is a synchronous guard inside the leaf test, before task submission; this is not evidence of an asynchronous attribution gap.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.task.SimpleAsyncTaskExecutor.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 5,
+        "emptyEntries": 14,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 19,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)V|539|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:25",
+      "project": "spring-core",
+      "mutatedClass": "org.springframework.util.Assert",
+      "mutatedMethod": "isAssignable",
+      "line": 539,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "B",
+      "killerFootprints": [
+        {
+          "coverageKey": "AssertTests#isAssignableWithNullSupertype_49c6272",
+          "type": "B",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.util.Assert#notNull"
+          ]
+        }
+      ],
+      "killingTests": [
+        "AssertTests#isAssignableWithNullSupertype_49c6272"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "isAssignableWithNullSupertype supplies a null superType to the String-message overload and asserts IllegalArgumentException plus the guard message. The first notNull call throws; PIT removes it before the subsequent superType dereference. Assert.notNull is recorded but the isAssignable name-level edge is absent. This is an in-class callee guard with exceptional exit from the caller, not a missing class or session.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 16,
+        "emptyEntries": 14,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 30,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/util/function/Supplier;)V|558|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:29",
+      "project": "spring-core",
+      "mutatedClass": "org.springframework.util.Assert",
+      "mutatedMethod": "isAssignable",
+      "line": 558,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "B",
+      "killerFootprints": [
+        {
+          "coverageKey": "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier_7bdf456",
+          "type": "B",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.util.Assert#notNull"
+          ]
+        }
+      ],
+      "killingTests": [
+        "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier_7bdf456"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "isAssignableWithNullSupertypeAndMessageSupplier supplies null to the Supplier overload and checks IllegalArgumentException and its message. The initial notNull(superType) is the removed void call. The target class has other recorded methods, including the guard, but no isAssignable edge. The caller exits exceptionally before downstream attribution.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 16,
+        "emptyEntries": 14,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 30,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;)V|490|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:33",
+      "project": "spring-core",
+      "mutatedClass": "org.springframework.util.Assert",
+      "mutatedMethod": "isInstanceOf",
+      "line": 490,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "B",
+      "killerFootprints": [
+        {
+          "coverageKey": "AssertTests#isInstanceOfWithNullType_7d9d1f6",
+          "type": "B",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.util.Assert#notNull"
+          ]
+        }
+      ],
+      "killingTests": [
+        "AssertTests#isInstanceOfWithNullType_7d9d1f6"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "isInstanceOfWithNullType passes a null type to the String-message overload and checks IllegalArgumentException plus the guard message. Initial notNull(type) throws before type.isInstance; PIT removes that call. Other Assert edges are present but isInstanceOf is absent, supporting the same caller-probe exceptional-exit mechanism.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 335,
+        "emptyEntries": 14,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 349,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/util/function/Supplier;)V|509|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:36",
+      "project": "spring-core",
+      "mutatedClass": "org.springframework.util.Assert",
+      "mutatedMethod": "isInstanceOf",
+      "line": 509,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "B",
+      "killerFootprints": [
+        {
+          "coverageKey": "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier_3ad5712",
+          "type": "B",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.util.Assert#notNull"
+          ]
+        }
+      ],
+      "killingTests": [
+        "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier_3ad5712"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "isInstanceOfWithNullTypeAndMessageSupplier calls the Supplier overload with null type and asserts the guard exception/message. Initial notNull(type) throws before type.isInstance. Removing that call kills the test. The in-class footprint is nonempty and disjoint from isInstanceOf, consistent with caller attribution lost at the exceptional guard.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 335,
+        "emptyEntries": 14,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 349,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-core|org.springframework.util.backoff.ExponentialBackOff|setMultiplier|(D)V|141|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml.gz:10",
+      "project": "spring-core",
+      "mutatedClass": "org.springframework.util.backoff.ExponentialBackOff",
+      "mutatedMethod": "setMultiplier",
+      "line": 141,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "B",
+      "killerFootprints": [
+        {
+          "coverageKey": "ExponentialBackOffTests#invalidInterval_2fbef03",
+          "type": "B",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.util.backoff.ExponentialBackOff#<init>",
+            "org.springframework.util.backoff.ExponentialBackOff#checkMultiplier",
+            "org.springframework.util.backoff.ExponentialBackOff#lambda$checkMultiplier$0"
+          ]
+        }
+      ],
+      "killingTests": [
+        "ExponentialBackOffTests#invalidInterval_2fbef03"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "invalidInterval constructs the backoff and calls setMultiplier(0.9), expecting IllegalArgumentException. setMultiplier first invokes checkMultiplier (javap offset 2), which rejects values below one through Assert.isTrue, before field assignment. PIT removes checkMultiplier. The guard/constructor footprint is present but setMultiplier is absent. This is a test-body exceptional guard path, not pre-test preparation.",
+      "annotationStatus": "SOURCE_CONTROL_FLOW_REVIEWED",
+      "annotationSource": "iterations/pit-unify/causal_source_evidence.json",
+      "guardSource": "iterations/pit-unify/causal_guard_evidence.json",
+      "bytecodeEvidence": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.backoff.ExponentialBackOff.txt",
+      "evidenceBoundary": "Pristine source and bytecode, frozen per-test footprints and newly executed PIT matrix; no new method-entry/probe trace or isolated-mutant experiment.",
+      "selectionExplanation": {
+        "nameLevelHits": 2,
+        "emptyEntries": 14,
+        "killersInU": [],
+        "classEscalationUsed": false,
+        "baseSelectedCount": 16,
+        "reason": "Nonempty method-hit set prevents class escalation; none of these nonempty-footprint killing tests enters through U."
+      }
+    },
+    {
+      "mutationId": "spring-security|org.springframework.security.authentication.DefaultAuthenticationEventPublisher|setAdditionalExceptionMappings|(Ljava/util/Map;)V|174|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml:19",
+      "project": "spring-security",
+      "mutatedClass": "org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+      "mutatedMethod": "setAdditionalExceptionMappings",
+      "line": 174,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "B",
+      "killerFootprints": [
+        {
+          "coverageKey": "DefaultAuthenticationEventPublisherTests#emptyMapCausesException_73be958",
+          "type": "B",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#<init>",
+            "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#addMapping"
+          ]
+        }
+      ],
+      "killingTests": [
+        "DefaultAuthenticationEventPublisherTests#emptyMapCausesException_73be958"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Assert.notEmpty(mappings) throws before the setter probe fires",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json"
+    },
+    {
+      "mutationId": "spring-security|org.springframework.security.authentication.DefaultAuthenticationEventPublisher|setDefaultAuthenticationFailureEvent|(Ljava/lang/Class;)V|193|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml:26",
+      "project": "spring-security",
+      "mutatedClass": "org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+      "mutatedMethod": "setDefaultAuthenticationFailureEvent",
+      "line": 193,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "B",
+      "killerFootprints": [
+        {
+          "coverageKey": "DefaultAuthenticationEventPublisherTests#defaultAuthenticationFailureEventClassSetNullThen_5ad692c",
+          "type": "B",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#<init>",
+            "org.springframework.security.authentication.DefaultAuthenticationEventPublisher#addMapping"
+          ]
+        }
+      ],
+      "killingTests": [
+        "DefaultAuthenticationEventPublisherTests#defaultAuthenticationFailureEventClassSetNullThen_5ad692c"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Assert.notNull(event class) throws before the setter probe fires",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json"
+    },
+    {
+      "mutationId": "spring-security|org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider|afterPropertiesSet|()V|127|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider/mutations.xml:0",
+      "project": "spring-security",
+      "mutatedClass": "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider",
+      "mutatedMethod": "afterPropertiesSet",
+      "line": 127,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "B",
+      "killerFootprints": [
+        {
+          "coverageKey": "DaoAuthenticationProviderTests#testStartupFailsIfNoUserCacheSet_495e890",
+          "type": "B",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider#<init>",
+            "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider#getUserCache",
+            "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider#setUserCache"
+          ]
+        }
+      ],
+      "killingTests": [
+        "DaoAuthenticationProviderTests#testStartupFailsIfNoUserCacheSet_495e890"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Assert.notNull(userCache) throws before the afterPropertiesSet probe fires",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json"
+    },
+    {
+      "mutationId": "spring-security|org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor|setAuthorizationEventPublisher|(Lorg/springframework/security/authorization/AuthorizationEventPublisher;)V|216|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor/mutations.xml:42",
+      "project": "spring-security",
+      "mutatedClass": "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor",
+      "mutatedMethod": "setAuthorizationEventPublisher",
+      "line": 216,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "A",
+      "killerFootprints": [
+        {
+          "coverageKey": "AuthorizationManagerBeforeMethodInterceptorTests#configureWhenAuthorizationEventPublisherIsNullThenIllegalArgument_2166c4c",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor#<init>"
+          ]
+        }
+      ],
+      "killingTests": [
+        "AuthorizationManagerBeforeMethodInterceptorTests#configureWhenAuthorizationEventPublisherIsNullThenIllegalArgument_2166c4c"
+      ],
+      "recoveredByConstructorRule": true,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Assert.notNull(eventPublisher) throws before the setter probe fires; constructor-only footprint remains",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json"
+    },
+    {
+      "mutationId": "spring-security|org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper|setAttributes2grantedAuthoritiesMap|(Ljava/util/Map;)V|85|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml:23",
+      "project": "spring-security",
+      "mutatedClass": "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper",
+      "mutatedMethod": "setAttributes2grantedAuthoritiesMap",
+      "line": 85,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "A",
+      "killerFootprints": [
+        {
+          "coverageKey": "MapBasedAttributes2GrantedAuthoritiesMapperTests#testAfterPropertiesSetEmptyMap_491a488",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper#<init>"
+          ]
+        }
+      ],
+      "killingTests": [
+        "MapBasedAttributes2GrantedAuthoritiesMapperTests#testAfterPropertiesSetEmptyMap_491a488"
+      ],
+      "recoveredByConstructorRule": true,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Assert.notEmpty(map) throws before the setter probe fires; constructor-only footprint remains",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json"
+    },
+    {
+      "mutationId": "hibernate|org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer|fieldReader|(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/implementation/Implementation;|312|RemoveConditionalMutator_EQUAL_ELSE|indexes=unknown|blocks=unknown|ordinal=hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml:38",
+      "project": "hibernate",
+      "mutatedClass": "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+      "mutatedMethod": "fieldReader",
+      "line": 312,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+      "footprintType": "MIXED",
+      "killerFootprints": [
+        {
+          "coverageKey": "DirtyTrackingDynamicUpdateAndInheritanceTest#testDynamicUpdateWithInheritance_3c4e2ac",
+          "type": "C",
+          "targetClassPresent": false,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": []
+        },
+        {
+          "coverageKey": "DirtyTrackingDynamicUpdateTest#testDynamicUpdate_231e766",
+          "type": "C",
+          "targetClassPresent": false,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": []
+        },
+        {
+          "coverageKey": "LazyProxyOnEnhancedEntityTest#test_55dc7f8",
+          "type": "B",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#<init>",
+            "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#applyExtended",
+            "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#collectInheritPersistentFields",
+            "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer#collectPersistentFields"
+          ]
+        }
+      ],
+      "killingTests": [
+        "DirtyTrackingDynamicUpdateAndInheritanceTest#testDynamicUpdateWithInheritance_3c4e2ac",
+        "DirtyTrackingDynamicUpdateTest#testDynamicUpdate_231e766",
+        "LazyProxyOnEnhancedEntityTest#test_55dc7f8"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "PRE_TEST_ATTRIBUTION_GAP",
+      "causalEvidence": "Hibernate's custom bytecode-enhanced JUnit engine executes fieldReader during pre-leaf enhancement/class construction; two killing tests have no target-class footprint and the third records other transformer methods but not fieldReader, so the dependency is outside the leaf-test attribution window",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json"
+    }
+  ],
+  "recoveredByNoCoverage": [
+    {
+      "mutationId": "spring-security|org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl|withRolePrefix|(Ljava/lang/String;)Lorg/springframework/security/access/hierarchicalroles/RoleHierarchyImpl$Builder;|130|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml:20",
+      "project": "spring-security",
+      "mutatedClass": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+      "mutatedMethod": "withRolePrefix",
+      "line": 130,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "C",
+      "killerFootprints": [
+        {
+          "coverageKey": "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull_5894d6c",
+          "type": "C",
+          "targetClassPresent": false,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": []
+        }
+      ],
+      "killingTests": [
+        "RoleHierarchyImplTests#testBuilderThrowIllegalArgumentExceptionWhenPrefixRoleNull_5894d6c"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Assert.notNull(rolePrefix) throws before the withRolePrefix probe fires",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json",
+      "recoveredBy": "NO_COVERAGE_BRANCH"
+    },
+    {
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyAuthority|([Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|122|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:1",
+      "project": "spring-security",
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasAnyAuthority",
+      "line": 122,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "C",
+      "killerFootprints": [
+        {
+          "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException_4acbb6d",
+          "type": "C",
+          "targetClassPresent": false,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": []
+        },
+        {
+          "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenNullThenException_666eb63",
+          "type": "C",
+          "targetClassPresent": false,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": []
+        }
+      ],
+      "killingTests": [
+        "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenEmptyThenException_4acbb6d",
+        "AuthorityAuthorizationManagerTests#hasAnyAuthorityWhenNullThenException_666eb63"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Assert.notEmpty(authorities) throws before any target-class probe fires",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json",
+      "recoveredBy": "NO_COVERAGE_BRANCH"
+    },
+    {
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAnyRole|(Ljava/lang/String;[Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|108|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:4",
+      "project": "spring-security",
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasAnyRole",
+      "line": 108,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "C",
+      "killerFootprints": [
+        {
+          "coverageKey": "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException_224748b",
+          "type": "C",
+          "targetClassPresent": false,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": []
+        }
+      ],
+      "killingTests": [
+        "AuthorityAuthorizationManagerTests#hasAnyRoleWhenCustomRolePrefixNullThenException_224748b"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Assert.notNull(rolePrefix) throws before any target-class probe fires",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json",
+      "recoveredBy": "NO_COVERAGE_BRANCH"
+    },
+    {
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasAuthority|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|83|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:9",
+      "project": "spring-security",
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasAuthority",
+      "line": 83,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "C",
+      "killerFootprints": [
+        {
+          "coverageKey": "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException_5281bf4",
+          "type": "C",
+          "targetClassPresent": false,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": []
+        }
+      ],
+      "killingTests": [
+        "AuthorityAuthorizationManagerTests#hasAuthorityWhenNullThenException_5281bf4"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Assert.notNull(authority) throws before any target-class probe fires",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json",
+      "recoveredBy": "NO_COVERAGE_BRANCH"
+    },
+    {
+      "mutationId": "spring-security|org.springframework.security.authorization.AuthorityAuthorizationManager|hasRole|(Ljava/lang/String;)Lorg/springframework/security/authorization/AuthorityAuthorizationManager;|69|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml:12",
+      "project": "spring-security",
+      "mutatedClass": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+      "mutatedMethod": "hasRole",
+      "line": 69,
+      "mutator": "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator",
+      "footprintType": "C",
+      "killerFootprints": [
+        {
+          "coverageKey": "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException_85c3cde",
+          "type": "C",
+          "targetClassPresent": false,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": []
+        }
+      ],
+      "killingTests": [
+        "AuthorityAuthorizationManagerTests#hasRoleWhenNullThenException_85c3cde"
+      ],
+      "recoveredByConstructorRule": false,
+      "causalMechanism": "EARLY_EXCEPTION_PROBE_SHADOWING",
+      "causalEvidence": "Assert.notNull(role) throws before any target-class probe fires",
+      "annotationStatus": "EXISTING_EXACT_MUTATION_ID",
+      "annotationSource": "results/failure_taxonomy.json",
+      "recoveredBy": "NO_COVERAGE_BRANCH"
+    }
+  ],
+  "residualFootprintCounts": {
+    "C": 1,
+    "A": 7,
+    "B": 10,
+    "MIXED": 1
+  },
+  "residualCausalMechanismCounts": {
+    "EARLY_EXCEPTION_PROBE_SHADOWING": 18,
+    "PRE_TEST_ATTRIBUTION_GAP": 1
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commons-lang": {
+    "rawKilled": 772,
+    "eligible": 772,
+    "unresolved": [],
+    "excluded": []
+  },
+  "jgrapht": {
+    "rawKilled": 468,
+    "eligible": 468,
+    "unresolved": [],
+    "excluded": []
+  },
+  "spring-core": {
+    "rawKilled": 419,
+    "eligible": 419,
+    "unresolved": [],
+    "excluded": []
+  },
+  "petclinic": {
+    "rawKilled": 94,
+    "eligible": 94,
+    "unresolved": [],
+    "excluded": []
+  },
+  "flink": {
+    "rawKilled": 349,
+    "eligible": 349,
+    "unresolved": [],
+    "excluded": []
+  },
+  "spring-security": {
+    "rawKilled": 340,
+    "eligible": 340,
+    "unresolved": [],
+    "excluded": []
+  },
+  "hibernate": {
+    "rawKilled": 402,
+    "eligible": 401,
+    "unresolved": [],
+    "excluded": [
+      "hibernate|org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler|target|(Lorg/hibernate/bytecode/enhance/internal/bytebuddy/EnhancerImpl$AnnotatedFieldDescription;)Lnet/bytebuddy/description/type/TypeDescription$Generic;|180|NullReturnValsMutator|indexes=unknown|blocks=unknown|ordinal=hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml:52"
+    ]
+  },
+  "quarkus": {
+    "rawKilled": 1083,
+    "eligible": 1083,
+    "unresolved": [],
+    "excluded": []
+  }
+}

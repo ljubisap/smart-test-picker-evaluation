@@ -1,0 +1,41 @@
+[
+  {
+    "id": "001",
+    "originalCommand": [
+      "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn",
+      "org.pitest:pitest-maven:1.17.4:mutationCoverage",
+      "-Ppitest",
+      "-pl",
+      "jgrapht-core",
+      "-DtargetClasses=org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+      "-DtargetTests=org.jgrapht.alg.shortestpath.*",
+      "-DfullMutationMatrix=true",
+      "-Dthreads=4",
+      "-DtimestampedReports=false",
+      "-DskipFailingTests=true",
+      "-DoutputFormats=XML"
+    ],
+    "command": [
+      "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn",
+      "org.pitest:pitest-maven:1.17.4:mutationCoverage",
+      "-Ppitest",
+      "-pl",
+      "jgrapht-core",
+      "-DtargetClasses=org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+      "-DtargetTests=org.jgrapht.alg.shortestpath.*",
+      "-DfullMutationMatrix=true",
+      "-Dthreads=4",
+      "-DtimestampedReports=false",
+      "-DskipFailingTests=true",
+      "-DoutputFormats=XML"
+    ],
+    "cwd": "/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject",
+    "timeout": 1800,
+    "pitWorkers": 4,
+    "startedUtc": "2026-10-05T21:46:41.570817+00:00",
+    "pid": 76012,
+    "peakObservedCpuPercent": 406.20000000000005,
+    "elapsedSeconds": 83.4821575420001,
+    "exitCode": 0
+  }
+]

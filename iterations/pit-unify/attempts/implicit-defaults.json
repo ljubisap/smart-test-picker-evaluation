@@ -1,0 +1,8 @@
+{
+  "archive": "iterations/pit-unify/attempts/implicit-defaults.tar.gz",
+  "sha256": "7a01519eac9e6e357aa1afcdc83c33160b273ffe4463d32ca5e13c582540c8ad",
+  "status": "REJECTED_NOT_UNIFIED",
+  "reason": "Unspecified CLI mutator list uses Mutator.newDefaults(), which includes NegateConditionals. Explicit DEFAULTS resolves through StandardMutatorGroups and uses RemoveConditionals.",
+  "verifierEvidence": "verification/unified.log in archive",
+  "retryClassification": "Declared-policy configuration correction, not a retry of a mutant to improve its status."
+}

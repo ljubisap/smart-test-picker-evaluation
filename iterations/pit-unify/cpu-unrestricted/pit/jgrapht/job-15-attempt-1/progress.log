@@ -1,0 +1,2 @@
+[23:48:05] [15/20] Starting: org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree (LOC=358, tests=org.jgrapht.alg.spanning.*)
+[23:57:13] [15/20] DONE: org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree (549s, 45 mutations)

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "001",
+    "originalCommand": [
+      "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn",
+      "clean",
+      "test-compile",
+      "-Ppitest",
+      "-pl",
+      "jgrapht-core"
+    ],
+    "command": [
+      "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn",
+      "clean",
+      "test-compile",
+      "-Ppitest",
+      "-pl",
+      "jgrapht-core"
+    ],
+    "cwd": "/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject",
+    "timeout": 1800,
+    "pitWorkers": null,
+    "startedUtc": "2026-10-05T21:13:35.756971+00:00",
+    "pid": 61989,
+    "peakObservedCpuPercent": 262.0,
+    "elapsedSeconds": 20.475494833,
+    "exitCode": 0
+  }
+]

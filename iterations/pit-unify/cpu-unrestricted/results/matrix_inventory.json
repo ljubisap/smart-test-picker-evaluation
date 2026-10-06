@@ -1,0 +1,2971 @@
+{
+  "commons-lang": {
+    "files": [
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.arch.Processor/mutations.xml",
+        "sha256": "5c6a6a1fa27af797a300dd7c48d3e06d58090df8c6379f4ec4631e46fa7ce713",
+        "mutations": 17,
+        "killed": 14,
+        "statusCounts": {
+          "NO_COVERAGE": 3,
+          "KILLED": 14
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.arch.Processor"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.builder.HashCodeBuilder/mutations.xml",
+        "sha256": "626e8f342f08ceeb9c6ae7978c252f2e39e1c6a162fdccdd4af4a4ae0d328af8",
+        "mutations": 110,
+        "killed": 103,
+        "statusCounts": {
+          "KILLED": 103,
+          "SURVIVED": 3,
+          "NO_COVERAGE": 4
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 32,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 36,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 19,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 8
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.builder.HashCodeBuilder"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.compare.ComparableUtils/mutations.xml",
+        "sha256": "456fe2b22eb1b8dd76b0444961ec4cd594f394408abc11212fc9bb0068a71670",
+        "mutations": 25,
+        "killed": 23,
+        "statusCounts": {
+          "KILLED": 23,
+          "SURVIVED": 2
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 2
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.compare.ComparableUtils"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.concurrent.locks.LockingVisitors/mutations.xml",
+        "sha256": "3bf6abec0cdd96f78755e6c05b2c0f518f347d88ab5ea59227ebc68213e3ce5d",
+        "mutations": 5,
+        "killed": 5,
+        "statusCounts": {
+          "KILLED": 5
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 5
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.concurrent.locks.LockingVisitors"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.event.EventListenerSupport/mutations.xml",
+        "sha256": "776ce7ea03b8b548692aa9ed80dde9d8db09919adc39a3cc1f70ce078a9dde84",
+        "mutations": 14,
+        "killed": 12,
+        "statusCounts": {
+          "SURVIVED": 2,
+          "KILLED": 12
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.event.EventListenerSupport"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.event.EventUtils/mutations.xml",
+        "sha256": "8cb7caea60499360834ee88e3f725aee40361f0764105ae19501fa520d79b7ec",
+        "mutations": 1,
+        "killed": 1,
+        "statusCounts": {
+          "KILLED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 1
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.event.EventUtils"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.math.Fraction/mutations.xml",
+        "sha256": "7b3decc14eafd58ef505b12061de0e937ad266f7fbb22beb5727e753417e59f7",
+        "mutations": 262,
+        "killed": 196,
+        "statusCounts": {
+          "SURVIVED": 48,
+          "KILLED": 196,
+          "NO_COVERAGE": 5,
+          "TIMED_OUT": 13
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 34,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 34,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 32,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 66,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 17,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 56,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator": 16,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.math.Fraction"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.math.IEEE754rUtils/mutations.xml",
+        "sha256": "9a7ee473a6a1b5e66de31fbecdde6e47bcf13a907958dfb7c46f858be556a656",
+        "mutations": 44,
+        "killed": 42,
+        "statusCounts": {
+          "KILLED": 42,
+          "SURVIVED": 2
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 20,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 4
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.math.IEEE754rUtils"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.mutable.MutableFloat/mutations.xml",
+        "sha256": "34bf840b924f9f6474184e6ec4fbbcae05096100b76f44c7275160f30eb9ef36",
+        "mutations": 38,
+        "killed": 35,
+        "statusCounts": {
+          "KILLED": 35,
+          "SURVIVED": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 14,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 14,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.mutable.MutableFloat"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.mutable.MutableObject/mutations.xml",
+        "sha256": "172b3355949b0671f71cbd3c489bb976ed8ca6c2ae5209773f432f462c051aac",
+        "mutations": 10,
+        "killed": 10,
+        "statusCounts": {
+          "KILLED": 10
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.mutable.MutableObject"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.reflect.FieldUtils/mutations.xml",
+        "sha256": "75eb6084a58554ba0d7993ecbd4b4116933f8d291efc965d785cc77fc2c7e876",
+        "mutations": 72,
+        "killed": 61,
+        "statusCounts": {
+          "KILLED": 61,
+          "NO_COVERAGE": 8,
+          "SURVIVED": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 20,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 20,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 28,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 1
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.reflect.FieldUtils"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.reflect.MethodUtils/mutations.xml",
+        "sha256": "2d4e311266158651cdd8d04d56a19520fbde96904c615faa41d8a981b682cc0f",
+        "mutations": 142,
+        "killed": 121,
+        "statusCounts": {
+          "KILLED": 121,
+          "SURVIVED": 18,
+          "NO_COVERAGE": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 50,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 32,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 4
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.reflect.MethodUtils"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.stream.LangCollectors/mutations.xml",
+        "sha256": "89c33d4ebe702e10c6d5de042e4dd0267b8935a3aaea4e1fc88a1fcf6a968794",
+        "mutations": 6,
+        "killed": 2,
+        "statusCounts": {
+          "KILLED": 2,
+          "SURVIVED": 4
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 6
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.stream.LangCollectors"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.stream.Streams/mutations.xml",
+        "sha256": "fe250df3b91d283686c167490ed6c5b2ee7e67a710cf6c06891850512ad7f2d9",
+        "mutations": 26,
+        "killed": 25,
+        "statusCounts": {
+          "KILLED": 25,
+          "SURVIVED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 13,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 6
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.stream.Streams"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.text.FormattableUtils/mutations.xml",
+        "sha256": "774d601d800d84cfd9d48375780d16ea2cb13b95a0b4c65f30e6e09f3040d163",
+        "mutations": 21,
+        "killed": 17,
+        "statusCounts": {
+          "KILLED": 17,
+          "SURVIVED": 3,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.text.FormattableUtils"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.text.translate.EntityArrays/mutations.xml",
+        "sha256": "fb36b9fa08dfcb448678218a390202b56aa75700f07ae2f0bceaa35935881810",
+        "mutations": 13,
+        "killed": 2,
+        "statusCounts": {
+          "NO_COVERAGE": 8,
+          "KILLED": 2,
+          "SURVIVED": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.text.translate.EntityArrays"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.text.translate.NumericEntityEscaper/mutations.xml",
+        "sha256": "089058aea0a108040dff95f7f188712c634155d7b8eea557e656ae16b17427ad",
+        "mutations": 19,
+        "killed": 18,
+        "statusCounts": {
+          "KILLED": 18,
+          "SURVIVED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.tuple.ImmutablePair/mutations.xml",
+        "sha256": "e298669396b497e8b992c82c6ee43fedcdf08b1109e813676234c1368db5abbf",
+        "mutations": 12,
+        "killed": 11,
+        "statusCounts": {
+          "KILLED": 11,
+          "SURVIVED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 3
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.tuple.ImmutablePair"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.tuple.Pair/mutations.xml",
+        "sha256": "8ba74ec79b635779fa324e8b9b6a3b5938d1aab6670e47cb9b810e9bcee8ebbc",
+        "mutations": 19,
+        "killed": 19,
+        "statusCounts": {
+          "KILLED": 19
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.tuple.Pair"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.util.FluentBitSet/mutations.xml",
+        "sha256": "7a059f35d7d47960d92273bd3c5cfcb14e5a7b6d0fc0edc1c63f8c8f437dacda",
+        "mutations": 71,
+        "killed": 50,
+        "statusCounts": {
+          "KILLED": 50,
+          "SURVIVED": 21
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 21,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 27,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.util.FluentBitSet"
+        ]
+      },
+      {
+        "file": "commons-lang/results/per-class/org.apache.commons.lang3.util.IterableStringTokenizer/mutations.xml",
+        "sha256": "2633a5bfc3fc404a299854527e5ba415c4c830eb7899526d40567640612a5014",
+        "mutations": 5,
+        "killed": 5,
+        "statusCounts": {
+          "KILLED": 5
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.apache.commons.lang3.util.IterableStringTokenizer"
+        ]
+      }
+    ],
+    "mutations": 932,
+    "killed": 772,
+    "statusCounts": {
+      "NO_COVERAGE": 32,
+      "KILLED": 772,
+      "SURVIVED": 115,
+      "TIMED_OUT": 13
+    },
+    "mutatorCounts": {
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 201,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 204,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 40,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 36,
+      "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 128,
+      "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 84,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 24,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 73,
+      "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 60,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 60,
+      "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 6,
+      "org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator": 16
+    },
+    "usableMatrices": 21,
+    "killedContributingClasses": 21
+  },
+  "jgrapht": {
+    "files": [
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.Graphs/mutations.xml.gz",
+        "sha256": "5abf84e0608972dbedc844cb8d93cc494af2d2d959f7b5abc2816b3c809c9d8c",
+        "mutations": 60,
+        "killed": 23,
+        "statusCounts": {
+          "NO_COVERAGE": 30,
+          "SURVIVED": 7,
+          "KILLED": 23
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 25,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 4
+        },
+        "targetClasses": [
+          "org.jgrapht.Graphs"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder/mutations.xml.gz",
+        "sha256": "7c7c6dfe464d55d2a39b92a1968d1215356901afd2370acdae16d70ef21f4f01",
+        "mutations": 13,
+        "killed": 12,
+        "statusCounts": {
+          "KILLED": 12,
+          "SURVIVED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.clustering.LabelPropagationClustering/mutations.xml.gz",
+        "sha256": "0fad7b11530bdf57294128b465cb02722e93e080023aa91f69df614778e13711",
+        "mutations": 4,
+        "killed": 3,
+        "statusCounts": {
+          "KILLED": 3,
+          "SURVIVED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.clustering.LabelPropagationClustering"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.color.GreedyColoring/mutations.xml.gz",
+        "sha256": "af4400cddfd431d987606b9215472c55f792ce9513c0edb8cf4be391b8f2278e",
+        "mutations": 8,
+        "killed": 7,
+        "statusCounts": {
+          "KILLED": 7,
+          "SURVIVED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.color.GreedyColoring"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector/mutations.xml.gz",
+        "sha256": "c894cb14f609a83524fcba28c7325efe82bc6430fa160849fe75640d2400b794",
+        "mutations": 18,
+        "killed": 16,
+        "statusCounts": {
+          "KILLED": 16,
+          "MEMORY_ERROR": 1,
+          "SURVIVED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles/mutations.xml.gz",
+        "sha256": "3076aa8e0dd4998da861f49ec1297c81b57211e1be305c82dbc1ce8dee839481",
+        "mutations": 34,
+        "killed": 21,
+        "statusCounts": {
+          "KILLED": 21,
+          "SURVIVED": 10,
+          "NO_COVERAGE": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.drawing.model.ListenableLayoutModel2D/mutations.xml.gz",
+        "sha256": "0f28eb76ef1890f66e42bafcbb7b207c89b187f31ba2d41e7026d7a1538c0721",
+        "mutations": 15,
+        "killed": 9,
+        "statusCounts": {
+          "SURVIVED": 3,
+          "KILLED": 9,
+          "NO_COVERAGE": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.drawing.model.ListenableLayoutModel2D"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.flow.PushRelabelMFImpl/mutations.xml.gz",
+        "sha256": "fc398a78266ef7ba841fee7bb824aa88e7fcfbd171ea26fbc727b69cb2292347",
+        "mutations": 86,
+        "killed": 38,
+        "statusCounts": {
+          "KILLED": 38,
+          "TIMED_OUT": 12,
+          "SURVIVED": 36
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 22,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 17,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 16,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.flow.PushRelabelMFImpl"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector/mutations.xml.gz",
+        "sha256": "5516bebaf726496821e1fbd065e5ec311f16d95f2d074c9b9ed1c14948f5a489",
+        "mutations": 21,
+        "killed": 12,
+        "statusCounts": {
+          "SURVIVED": 4,
+          "KILLED": 12,
+          "NO_COVERAGE": 5
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 4
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.lca.BinaryLiftingLCAFinder/mutations.xml.gz",
+        "sha256": "a6dc56c860e411c9eb67cd7a78edb78ba09634eadc355bc80aef446788eb64a5",
+        "mutations": 47,
+        "killed": 35,
+        "statusCounts": {
+          "KILLED": 35,
+          "SURVIVED": 12
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 15,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.lca.BinaryLiftingLCAFinder"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction/mutations.xml.gz",
+        "sha256": "b4c7f1d94c333ce1b25c3227013e089616c948926b675104de97479549b6012f",
+        "mutations": 5,
+        "killed": 4,
+        "statusCounts": {
+          "KILLED": 4,
+          "SURVIVED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml.gz",
+        "sha256": "e91c212aa0d7f47b3848d01be632b00f3ca33b335fa80d5575aebca8c0c07c2d",
+        "mutations": 245,
+        "killed": 146,
+        "statusCounts": {
+          "KILLED": 146,
+          "SURVIVED": 42,
+          "TIMED_OUT": 46,
+          "MEMORY_ERROR": 7,
+          "NO_COVERAGE": 4
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 48,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 72,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 106,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.scoring.ClosenessCentrality/mutations.xml.gz",
+        "sha256": "9c3a46249c8f47787880206ac4d96dd753cd464bba0998e5ea3f5aa705adfd46",
+        "mutations": 19,
+        "killed": 13,
+        "statusCounts": {
+          "KILLED": 13,
+          "NO_COVERAGE": 3,
+          "SURVIVED": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.scoring.ClosenessCentrality"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml.gz",
+        "sha256": "678f39a2c0bd4b570f32580296e9bda4316734c8950d5061dec49acde560224c",
+        "mutations": 37,
+        "killed": 27,
+        "statusCounts": {
+          "KILLED": 27,
+          "SURVIVED": 6,
+          "TIMED_OUT": 3,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 2
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree/mutations.xml.gz",
+        "sha256": "1135abe799e662f469dc1b414b6b9971a8634729c6332acf5648e5ee1edd777a",
+        "mutations": 45,
+        "killed": 19,
+        "statusCounts": {
+          "KILLED": 19,
+          "SURVIVED": 14,
+          "TIMED_OUT": 11,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml.gz",
+        "sha256": "8e46ddefcf89e2694a22e1402bfee34da0358fec4cb9399b689cff4fb6e087a6",
+        "mutations": 10,
+        "killed": 8,
+        "statusCounts": {
+          "SURVIVED": 1,
+          "KILLED": 8,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.util.UnorderedPair/mutations.xml.gz",
+        "sha256": "dd78ce5d16bbd93b21761c08a8f4843e4462f1b3e658dbdf2688b4a6fcec2ef9",
+        "mutations": 19,
+        "killed": 12,
+        "statusCounts": {
+          "KILLED": 12,
+          "NO_COVERAGE": 3,
+          "SURVIVED": 4
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.util.UnorderedPair"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.alg.vertexcover.RecursiveExactVCImpl/mutations.xml.gz",
+        "sha256": "ec3786596f21287218bb272857eda58885895f26b9cdb00b7ffad9d3890788d3",
+        "mutations": 47,
+        "killed": 30,
+        "statusCounts": {
+          "KILLED": 30,
+          "SURVIVED": 14,
+          "TIMED_OUT": 2,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.generate.netgen.Distributor/mutations.xml.gz",
+        "sha256": "77d46a7fa98954a67c2682157b542d3bf45af31cb5a66fc990424eb0227458a3",
+        "mutations": 22,
+        "killed": 19,
+        "statusCounts": {
+          "KILLED": 19,
+          "SURVIVED": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.jgrapht.generate.netgen.Distributor"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/org.jgrapht.graph.specifics.UndirectedSpecifics/mutations.xml.gz",
+        "sha256": "b0395b7377d6b2996e7928e7375581b15cec866f714d1b6c7794a87b621212dc",
+        "mutations": 48,
+        "killed": 19,
+        "statusCounts": {
+          "KILLED": 19,
+          "NO_COVERAGE": 25,
+          "TIMED_OUT": 3,
+          "SURVIVED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 20,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 5
+        },
+        "targetClasses": [
+          "org.jgrapht.graph.specifics.UndirectedSpecifics"
+        ]
+      }
+    ],
+    "mutations": 803,
+    "killed": 473,
+    "statusCounts": {
+      "NO_COVERAGE": 80,
+      "SURVIVED": 165,
+      "KILLED": 473,
+      "MEMORY_ERROR": 8,
+      "TIMED_OUT": 77
+    },
+    "mutatorCounts": {
+      "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 124,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 258,
+      "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 153,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 17,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 30,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 58,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 25,
+      "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 57,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 57,
+      "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 7,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 15,
+      "org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator": 2
+    },
+    "usableMatrices": 20,
+    "killedContributingClasses": 20
+  },
+  "spring-core": {
+    "files": [
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.annotation.RepeatableContainers/mutations.xml.gz",
+        "sha256": "1e4a61a6c236ecff923aa8b020b7647a61b1d1e870d4841d6ffcc46184f41a61",
+        "mutations": 13,
+        "killed": 12,
+        "statusCounts": {
+          "KILLED": 12,
+          "SURVIVED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.core.annotation.RepeatableContainers"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.codec.AbstractDataBufferDecoder/mutations.xml.gz",
+        "sha256": "147a4f13c4a7ec4a2d485a7242cc0a19c8a86757b4258c5586863ca34f028b62",
+        "mutations": 6,
+        "killed": 6,
+        "statusCounts": {
+          "KILLED": 6
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.core.codec.AbstractDataBufferDecoder"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml.gz",
+        "sha256": "246759c31c1e78aee3f37947fd43d444c54db4a071a4ee526e7b6a35e74cf6d7",
+        "mutations": 125,
+        "killed": 98,
+        "statusCounts": {
+          "KILLED": 98,
+          "SURVIVED": 24,
+          "NO_COVERAGE": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 49,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 20,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 13,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 28,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.core.convert.TypeDescriptor"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.convert.converter.ConvertingComparator/mutations.xml.gz",
+        "sha256": "38f9fef5f7102a8ea50e363e5028df45a3e8ca0fdf3e5385f033eef88fa522e7",
+        "mutations": 5,
+        "killed": 5,
+        "statusCounts": {
+          "KILLED": 5
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.springframework.core.convert.converter.ConvertingComparator"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz",
+        "sha256": "eb65bfe928e8fc690f47636506d645e32a7fe6b8d272584f8188d1de56dc8ca6",
+        "mutations": 62,
+        "killed": 47,
+        "statusCounts": {
+          "KILLED": 47,
+          "SURVIVED": 10,
+          "NO_COVERAGE": 5
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 16,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 30,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.core.convert.support.GenericConversionService"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.env.PropertySource/mutations.xml.gz",
+        "sha256": "c7e5673be3673765f25373c6ab6fcd0f07d4e6685f38480b4167a4d2078fa253",
+        "mutations": 13,
+        "killed": 6,
+        "statusCounts": {
+          "SURVIVED": 4,
+          "NO_COVERAGE": 3,
+          "KILLED": 6
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.core.env.PropertySource"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.log.LogMessage/mutations.xml.gz",
+        "sha256": "0c6104929fbf55a0151d08ba9b0f661b01d8166c9c3b964606354575f5b25219",
+        "mutations": 11,
+        "killed": 8,
+        "statusCounts": {
+          "NO_COVERAGE": 3,
+          "KILLED": 8
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.core.log.LogMessage"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.style.DefaultValueStyler/mutations.xml.gz",
+        "sha256": "7b7b56b77df6170e8f77a9685c01096295523382d52d2e8589a3600edbb01272",
+        "mutations": 37,
+        "killed": 36,
+        "statusCounts": {
+          "KILLED": 36,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 13,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 24
+        },
+        "targetClasses": [
+          "org.springframework.core.style.DefaultValueStyler"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml.gz",
+        "sha256": "13dee8aa9125aabebaf985ab7c4c87d73a35bedcce28bab86b8b9fd0c14feebc",
+        "mutations": 44,
+        "killed": 10,
+        "statusCounts": {
+          "SURVIVED": 8,
+          "NO_COVERAGE": 23,
+          "TIMED_OUT": 3,
+          "KILLED": 10
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 16,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.springframework.core.task.SimpleAsyncTaskExecutor"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz",
+        "sha256": "480baf3da274954b2b29f089831ba06e435b5497b896d3d7afc7c83d0a05eecb",
+        "mutations": 28,
+        "killed": 27,
+        "statusCounts": {
+          "SURVIVED": 1,
+          "KILLED": 27
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 4
+        },
+        "targetClasses": [
+          "org.springframework.core.type.StandardClassMetadata"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml.gz",
+        "sha256": "96523d607f572044f92c8826c6a63f7b108100e4521ed966ab43aed67c98c8f9",
+        "mutations": 31,
+        "killed": 31,
+        "statusCounts": {
+          "KILLED": 31
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 4
+        },
+        "targetClasses": [
+          "org.springframework.core.type.classreading.SimpleAnnotationMetadata"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter/mutations.xml.gz",
+        "sha256": "3171002547a2476907984722a4d984c0206d842827dadfb4ce598e518362493f",
+        "mutations": 26,
+        "killed": 19,
+        "statusCounts": {
+          "KILLED": 19,
+          "SURVIVED": 3,
+          "NO_COVERAGE": 4
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 11
+        },
+        "targetClasses": [
+          "org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz",
+        "sha256": "b40dc29f6cec5146188ea2d99d3c02f0690841b9ae32081cfa66703cb77ef12c",
+        "mutations": 64,
+        "killed": 55,
+        "statusCounts": {
+          "KILLED": 55,
+          "SURVIVED": 6,
+          "NO_COVERAGE": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 51,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.springframework.util.Assert"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml.gz",
+        "sha256": "378efa240a6236b457c90e44780fd60a5beb1f984ed2f7023f8b1436d1d3a992",
+        "mutations": 13,
+        "killed": 10,
+        "statusCounts": {
+          "SURVIVED": 2,
+          "KILLED": 10,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.util.backoff.ExponentialBackOff"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.concurrent.ListenableFutureCallbackRegistry/mutations.xml.gz",
+        "sha256": "16793b34cfdc436ebb35623171f2300d2a44a58614cd3fab411909a1ec4bd190",
+        "mutations": 14,
+        "killed": 4,
+        "statusCounts": {
+          "SURVIVED": 4,
+          "NO_COVERAGE": 2,
+          "TIMED_OUT": 4,
+          "KILLED": 4
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 2
+        },
+        "targetClasses": [
+          "org.springframework.util.concurrent.ListenableFutureCallbackRegistry"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.function.ThrowingConsumer/mutations.xml.gz",
+        "sha256": "b1057b3ad793c6aa1b6a968ab8227e2dd63cb6833f1694ef82806e8fe520869b",
+        "mutations": 5,
+        "killed": 4,
+        "statusCounts": {
+          "KILLED": 4,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 3
+        },
+        "targetClasses": [
+          "org.springframework.util.function.ThrowingConsumer"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.unit.DataSize/mutations.xml.gz",
+        "sha256": "ea8188e884c4227d993549f171d68d6d1cf3fb0e34c2869d5e46d71dbd2a1adc",
+        "mutations": 33,
+        "killed": 23,
+        "statusCounts": {
+          "NO_COVERAGE": 5,
+          "KILLED": 23,
+          "SURVIVED": 5
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 4
+        },
+        "targetClasses": [
+          "org.springframework.util.unit.DataSize"
+        ]
+      },
+      {
+        "file": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/org.springframework.util.xml.AbstractStaxXMLReader/mutations.xml.gz",
+        "sha256": "edf65ebada269b18d01f9de8663c8a185a6f50b944381ec4054a71d9ed00a131",
+        "mutations": 27,
+        "killed": 18,
+        "statusCounts": {
+          "KILLED": 18,
+          "NO_COVERAGE": 8,
+          "SURVIVED": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.springframework.util.xml.AbstractStaxXMLReader"
+        ]
+      }
+    ],
+    "mutations": 557,
+    "killed": 419,
+    "statusCounts": {
+      "KILLED": 419,
+      "SURVIVED": 69,
+      "NO_COVERAGE": 62,
+      "TIMED_OUT": 7
+    },
+    "mutatorCounts": {
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 83,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 205,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 35,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 54,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 22,
+      "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 80,
+      "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 10,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 10,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 50,
+      "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 8
+    },
+    "usableMatrices": 18,
+    "killedContributingClasses": 18
+  },
+  "petclinic": {
+    "files": [
+      {
+        "file": "petclinic/results/mutations.xml",
+        "sha256": "752972e47c85b64c68f83e400eee9a2aed54b5b4e2ed1c48ca9418c8864047f4",
+        "mutations": 139,
+        "killed": 94,
+        "statusCounts": {
+          "KILLED": 94,
+          "SURVIVED": 34,
+          "NO_COVERAGE": 11
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 25,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 37,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 30,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 41,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.samples.petclinic.model.BaseEntity",
+          "org.springframework.samples.petclinic.model.NamedEntity",
+          "org.springframework.samples.petclinic.model.Person",
+          "org.springframework.samples.petclinic.owner.Owner",
+          "org.springframework.samples.petclinic.owner.OwnerController",
+          "org.springframework.samples.petclinic.owner.Pet",
+          "org.springframework.samples.petclinic.owner.PetController",
+          "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "org.springframework.samples.petclinic.owner.PetValidator",
+          "org.springframework.samples.petclinic.owner.Visit",
+          "org.springframework.samples.petclinic.owner.VisitController",
+          "org.springframework.samples.petclinic.system.CacheConfiguration",
+          "org.springframework.samples.petclinic.system.WebConfiguration",
+          "org.springframework.samples.petclinic.system.WelcomeController",
+          "org.springframework.samples.petclinic.vet.Vet",
+          "org.springframework.samples.petclinic.vet.VetController",
+          "org.springframework.samples.petclinic.vet.Vets"
+        ]
+      }
+    ],
+    "mutations": 139,
+    "killed": 94,
+    "statusCounts": {
+      "KILLED": 94,
+      "SURVIVED": 34,
+      "NO_COVERAGE": 11
+    },
+    "mutatorCounts": {
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 25,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 37,
+      "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 30,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 41,
+      "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 2,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+    },
+    "usableMatrices": 1,
+    "killedContributingClasses": 14
+  },
+  "flink": {
+    "files": [
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.DefaultScheduler/mutations.xml",
+        "sha256": "8b9628d04d469dcad5615750aff7ceb0f91ac1be35f6a6f04d67b419af109712",
+        "mutations": 72,
+        "killed": 17,
+        "statusCounts": {
+          "SURVIVED": 26,
+          "KILLED": 17,
+          "TIMED_OUT": 17,
+          "RUN_ERROR": 9,
+          "NO_COVERAGE": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 40,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 13,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.DefaultScheduler"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.ExecutionGraphHandler/mutations.xml",
+        "sha256": "ebe4f46564cd69e7287c924680007bb0fb2c224d648a982fe9ed02e85ba7006a",
+        "mutations": 26,
+        "killed": 0,
+        "statusCounts": {
+          "TIMED_OUT": 4,
+          "SURVIVED": 4,
+          "NO_COVERAGE": 18
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.ExecutionGraphHandler"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator/mutations.xml",
+        "sha256": "460bdd44efadfd90f2ed95e2175161469e49001d91c364a11f40ea5d4781d23f",
+        "mutations": 35,
+        "killed": 12,
+        "statusCounts": {
+          "KILLED": 12,
+          "RUN_ERROR": 15,
+          "SURVIVED": 4,
+          "TIMED_OUT": 4
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 16,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 8
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology/mutations.xml",
+        "sha256": "eff94c5d36d51f056bd5118dc2051a6a57c497d695bc35ac24950b1c67209e9f",
+        "mutations": 48,
+        "killed": 36,
+        "statusCounts": {
+          "KILLED": 36,
+          "SURVIVED": 10,
+          "NO_COVERAGE": 2
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 14,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 2
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph/mutations.xml",
+        "sha256": "35ea07856e87d92c12b100cd61ea6555f46046ad6290ec47e3bde6ebff35855a",
+        "mutations": 18,
+        "killed": 1,
+        "statusCounts": {
+          "SURVIVED": 6,
+          "RUN_ERROR": 6,
+          "TIMED_OUT": 3,
+          "KILLED": 1,
+          "NO_COVERAGE": 2
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 14,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 2
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager/mutations.xml",
+        "sha256": "5082632f9bf3571d5c72261b280d3a0ecfbe7a87d4ee658a8a0f1582f4083a20",
+        "mutations": 26,
+        "killed": 2,
+        "statusCounts": {
+          "TIMED_OUT": 11,
+          "SURVIVED": 9,
+          "RUN_ERROR": 2,
+          "NO_COVERAGE": 2,
+          "KILLED": 2
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 15,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.Executing/mutations.xml",
+        "sha256": "e1b7dd4c214cf55793009ee784bb974cb0918a7abd1fa2be4e26f61507c20339",
+        "mutations": 56,
+        "killed": 12,
+        "statusCounts": {
+          "SURVIVED": 9,
+          "RUN_ERROR": 6,
+          "KILLED": 12,
+          "TIMED_OUT": 27,
+          "NO_COVERAGE": 2
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 27,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.adaptive.Executing"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint/mutations.xml",
+        "sha256": "eb30e0938a190d1c051a20153305cd464fb1ce9907b90f682b55a0a5985bf2fa",
+        "mutations": 22,
+        "killed": 10,
+        "statusCounts": {
+          "SURVIVED": 8,
+          "KILLED": 10,
+          "RUN_ERROR": 3,
+          "TIMED_OUT": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 13,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 6
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator/mutations.xml",
+        "sha256": "253e11140eac75807cd306a766362de8d83aa94f2703c5b92e1c210f4753b475",
+        "mutations": 35,
+        "killed": 30,
+        "statusCounts": {
+          "KILLED": 30,
+          "SURVIVED": 1,
+          "NO_COVERAGE": 4
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler/mutations.xml",
+        "sha256": "1c5da026b8e06384cc5e12ae88b636bd063052d6e599090a358dfd3568b6d455",
+        "mutations": 48,
+        "killed": 31,
+        "statusCounts": {
+          "KILLED": 31,
+          "SURVIVED": 12,
+          "RUN_ERROR": 1,
+          "TIMED_OUT": 1,
+          "NO_COVERAGE": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 14,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 15,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider/mutations.xml",
+        "sha256": "72a09c92048b9a01608fcd124f5d715bda645e435528a91f2e3c4b521c539adc",
+        "mutations": 72,
+        "killed": 39,
+        "statusCounts": {
+          "SURVIVED": 30,
+          "KILLED": 39,
+          "NO_COVERAGE": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 17,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 17,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 15,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 13,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer/mutations.xml",
+        "sha256": "6a9b791f37817d45ff2e79c79d89cd0add0a293059446131885ea4af7276d575",
+        "mutations": 55,
+        "killed": 39,
+        "statusCounts": {
+          "KILLED": 39,
+          "SURVIVED": 12,
+          "NO_COVERAGE": 4
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry/mutations.xml",
+        "sha256": "70344a5f51733f2df74e964e04cf448cd6d55630a7a14c557e0c7debfe4ff3eb",
+        "mutations": 10,
+        "killed": 7,
+        "statusCounts": {
+          "KILLED": 7,
+          "NO_COVERAGE": 1,
+          "SURVIVED": 2
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector/mutations.xml",
+        "sha256": "e703b8f1602ae5b9a0785ef33a29bc745fa4baa94740e2eaa8db1c35c3599510",
+        "mutations": 69,
+        "killed": 51,
+        "statusCounts": {
+          "SURVIVED": 16,
+          "KILLED": 51,
+          "NO_COVERAGE": 2
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 6
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl/mutations.xml",
+        "sha256": "fdcb96f92462cf1fcf28989c4389038e393aa2b48ae62d9d4a3293f512b8a9a2",
+        "mutations": 13,
+        "killed": 11,
+        "statusCounts": {
+          "KILLED": 11,
+          "TIMED_OUT": 2
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl"
+        ]
+      },
+      {
+        "file": "flink/results/per-class/org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy/mutations.xml",
+        "sha256": "0bba36f2ffa023a65c6eec96f886f74a03b6a0d45120056e74615092092293d2",
+        "mutations": 76,
+        "killed": 51,
+        "statusCounts": {
+          "KILLED": 51,
+          "SURVIVED": 18,
+          "NO_COVERAGE": 6,
+          "TIMED_OUT": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 32,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 14,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1
+        },
+        "targetClasses": [
+          "org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy"
+        ]
+      }
+    ],
+    "mutations": 681,
+    "killed": 349,
+    "statusCounts": {
+      "SURVIVED": 167,
+      "KILLED": 349,
+      "TIMED_OUT": 71,
+      "RUN_ERROR": 42,
+      "NO_COVERAGE": 52
+    },
+    "mutatorCounts": {
+      "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 217,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 78,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 13,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 55,
+      "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 26,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 160,
+      "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 40,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 40,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 16,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 35,
+      "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1
+    },
+    "usableMatrices": 16,
+    "killedContributingClasses": 15
+  },
+  "spring-security": {
+    "files": [
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.access.expression.SecurityExpressionRoot/mutations.xml",
+        "sha256": "e242716ac1f2b273be6087a036f5eac5909b43a2bfcd681dd51ab9261f6d19c8",
+        "mutations": 51,
+        "killed": 40,
+        "statusCounts": {
+          "SURVIVED": 5,
+          "KILLED": 40,
+          "NO_COVERAGE": 6
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 14,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 15,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 6
+        },
+        "targetClasses": [
+          "org.springframework.security.access.expression.SecurityExpressionRoot"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml",
+        "sha256": "6a08dac2b5a2869e3644a2a957b0f0c6e17671515e642566e57742d8f4f4e123",
+        "mutations": 22,
+        "killed": 19,
+        "statusCounts": {
+          "KILLED": 19,
+          "SURVIVED": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml",
+        "sha256": "b249a3b8ca03391a6472bec07d9b0416fe4c51dc1facff3511f04a43dd0164df",
+        "mutations": 27,
+        "killed": 22,
+        "statusCounts": {
+          "SURVIVED": 5,
+          "KILLED": 22
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 21,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.authentication.DefaultAuthenticationEventPublisher"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.authentication.ProviderManager/mutations.xml",
+        "sha256": "c38ced06651f25fb5953d6022642c37ca84f803e4c4ebaf3f990671e693a6bb8",
+        "mutations": 37,
+        "killed": 23,
+        "statusCounts": {
+          "KILLED": 23,
+          "NO_COVERAGE": 4,
+          "SURVIVED": 10
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 16,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 16,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.authentication.ProviderManager"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider/mutations.xml",
+        "sha256": "331205ade1496497a42d5bee1ddc5eba52a23299073d21da8de27278b32a2952",
+        "mutations": 35,
+        "killed": 20,
+        "statusCounts": {
+          "KILLED": 20,
+          "SURVIVED": 12,
+          "NO_COVERAGE": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 15,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 3
+        },
+        "targetClasses": [
+          "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml",
+        "sha256": "9ddd5d02e55c3d8ed90cd16b862bebb2e412136da24d38f81bbf2a0b835242b2",
+        "mutations": 25,
+        "killed": 24,
+        "statusCounts": {
+          "KILLED": 24,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.authorization.AuthorityAuthorizationManager"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor/mutations.xml",
+        "sha256": "bb3f6ca96ed3dac652549eefc51728c214b1c0c0a1071f4258af35a66ffaff77",
+        "mutations": 43,
+        "killed": 7,
+        "statusCounts": {
+          "KILLED": 7,
+          "SURVIVED": 7,
+          "NO_COVERAGE": 29
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 24,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.concurrent.DelegatingSecurityContextRunnable/mutations.xml",
+        "sha256": "d6cd0a8c3c2040669525415f7d783183591ef966a38c5858ad7cf285148e9112",
+        "mutations": 18,
+        "killed": 9,
+        "statusCounts": {
+          "KILLED": 9,
+          "SURVIVED": 8,
+          "TIMED_OUT": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.concurrent.DelegatingSecurityContextRunnable"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.converter.RsaKeyConverters/mutations.xml",
+        "sha256": "11ac631c71854bb04d71d8056ebf2591f04533b44f3335744aa62580f0003113",
+        "mutations": 19,
+        "killed": 17,
+        "statusCounts": {
+          "KILLED": 17,
+          "SURVIVED": 2
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.converter.RsaKeyConverters"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner/mutations.xml",
+        "sha256": "2ec07ec69d13ea7c18a8a22c39fa8ae258fd9203213d049400db1e83568e3aa0",
+        "mutations": 68,
+        "killed": 49,
+        "statusCounts": {
+          "SURVIVED": 15,
+          "NO_COVERAGE": 4,
+          "KILLED": 49
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 33,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 13,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 6
+        },
+        "targetClasses": [
+          "org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml",
+        "sha256": "76f0d1ee39246dde685dc7066587ee2bb71986c4078994e44b43fec0c59d6e10",
+        "mutations": 25,
+        "killed": 19,
+        "statusCounts": {
+          "KILLED": 19,
+          "SURVIVED": 2,
+          "NO_COVERAGE": 4
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 6
+        },
+        "targetClasses": [
+          "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.core.context.SecurityContextHolder/mutations.xml",
+        "sha256": "3c70a2f44b321cd7848d9c4550c5915f8797c174706dde5e92ba1f63d2d3d437",
+        "mutations": 12,
+        "killed": 4,
+        "statusCounts": {
+          "KILLED": 4,
+          "TIMED_OUT": 1,
+          "NO_COVERAGE": 4,
+          "SURVIVED": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.core.context.SecurityContextHolder"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.core.session.SessionRegistryImpl/mutations.xml",
+        "sha256": "a9d406941194e47f0ad559491ad89f1ab41296ca9aad9a6342b00490653b743f",
+        "mutations": 27,
+        "killed": 16,
+        "statusCounts": {
+          "KILLED": 16,
+          "SURVIVED": 10,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.core.session.SessionRegistryImpl"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.core.token.KeyBasedPersistenceTokenService/mutations.xml",
+        "sha256": "525185e9c89692975165f62d5f40e294556b149a378caaaf73a2fe6b7d38ea93",
+        "mutations": 27,
+        "killed": 14,
+        "statusCounts": {
+          "SURVIVED": 12,
+          "KILLED": 14,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 2
+        },
+        "targetClasses": [
+          "org.springframework.security.core.token.KeyBasedPersistenceTokenService"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.core.userdetails.User/mutations.xml",
+        "sha256": "54b59e55bb9e294c739057384a6dbc38c6c91e0651a72a87183ae182bddf4754",
+        "mutations": 32,
+        "killed": 23,
+        "statusCounts": {
+          "KILLED": 23,
+          "SURVIVED": 8,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.core.userdetails.User"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.jackson2.SecurityJackson2Modules/mutations.xml",
+        "sha256": "5ad8f8378a29105b5849b79fd9ec59caca01418d6529780110ce5cc7e8b7a046",
+        "mutations": 20,
+        "killed": 10,
+        "statusCounts": {
+          "KILLED": 10,
+          "SURVIVED": 5,
+          "NO_COVERAGE": 5
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.jackson2.SecurityJackson2Modules"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.provisioning.InMemoryUserDetailsManager/mutations.xml",
+        "sha256": "fdce8b8437ccf0c514b841485e82ce54cfc4923d560d7ed5fd56009ae65559b7",
+        "mutations": 28,
+        "killed": 21,
+        "statusCounts": {
+          "NO_COVERAGE": 2,
+          "KILLED": 21,
+          "SURVIVED": 5
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.springframework.security.provisioning.InMemoryUserDetailsManager"
+        ]
+      },
+      {
+        "file": "spring-security/results/per-class/org.springframework.security.util.matcher.InetAddressMatchers/mutations.xml",
+        "sha256": "48b54f9e898ec15ebc40761ffa2898710dc42f8de7b43637d1abe626ec787b8a",
+        "mutations": 4,
+        "killed": 3,
+        "statusCounts": {
+          "KILLED": 3,
+          "NO_COVERAGE": 1
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4
+        },
+        "targetClasses": [
+          "org.springframework.security.util.matcher.InetAddressMatchers"
+        ]
+      }
+    ],
+    "mutations": 520,
+    "killed": 340,
+    "statusCounts": {
+      "SURVIVED": 112,
+      "KILLED": 340,
+      "NO_COVERAGE": 66,
+      "TIMED_OUT": 2
+    },
+    "mutatorCounts": {
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 29,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 33,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 84,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 153,
+      "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 8,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 8,
+      "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 151,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 46,
+      "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 4,
+      "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 3
+    },
+    "usableMatrices": 18,
+    "killedContributingClasses": 18
+  },
+  "hibernate": {
+    "files": [
+      {
+        "file": "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml",
+        "sha256": "e12296cf9e0c139103f5b40e6caa0a39bd38a44ac9ffb8fd43d6f11b1c7249eb",
+        "mutations": 78,
+        "killed": 42,
+        "statusCounts": {
+          "KILLED": 42,
+          "SURVIVED": 23,
+          "NO_COVERAGE": 13
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 14,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 46,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "targetClasses": [
+          "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml",
+        "sha256": "b7d8cd8050d960a901e12fd206dce5002e4b568fea25ff79cdc7b730470a6054",
+        "mutations": 60,
+        "killed": 44,
+        "statusCounts": {
+          "KILLED": 44,
+          "SURVIVED": 9,
+          "NO_COVERAGE": 7
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 15,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 36,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "targetClasses": [
+          "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor/mutations.xml",
+        "sha256": "bc4d1ac42c61ee0c53e922f4da79184bb79f9fd884c445be28c31d163bcd6dc8",
+        "mutations": 66,
+        "killed": 37,
+        "statusCounts": {
+          "KILLED": 37,
+          "NO_COVERAGE": 10,
+          "SURVIVED": 19
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 29,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 14,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1
+        },
+        "targetClasses": [
+          "org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor/mutations.xml",
+        "sha256": "07b55a78e2092b554fb645bd7627a934f27dae235b53aa735dcfbbce32b856cc",
+        "mutations": 53,
+        "killed": 32,
+        "statusCounts": {
+          "KILLED": 32,
+          "NO_COVERAGE": 14,
+          "SURVIVED": 7
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 19,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 5
+        },
+        "targetClasses": [
+          "org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl/mutations.xml",
+        "sha256": "bdf4fbdb67edb6164aaf09448d0a617ea194a3ff7a8f9c8292654616da1cb400",
+        "mutations": 46,
+        "killed": 30,
+        "statusCounts": {
+          "KILLED": 30,
+          "SURVIVED": 13,
+          "NO_COVERAGE": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 15,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 5
+        },
+        "targetClasses": [
+          "org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml",
+        "sha256": "8bc1cff1460297429591832ccc2a656568c41fa8c0495c3309d1b804d8812428",
+        "mutations": 23,
+        "killed": 10,
+        "statusCounts": {
+          "SURVIVED": 4,
+          "KILLED": 10,
+          "NO_COVERAGE": 9
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 18,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 3
+        },
+        "targetClasses": [
+          "org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml",
+        "sha256": "bd9f151d93cb2d60f6e924ed931a98e20b2ff81ec7d3228b9e7806b17fdce4e0",
+        "mutations": 85,
+        "killed": 30,
+        "statusCounts": {
+          "KILLED": 30,
+          "SURVIVED": 26,
+          "NO_COVERAGE": 29
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 46,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 17,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 2
+        },
+        "targetClasses": [
+          "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.event.internal.AbstractFlushingEventListener/mutations.xml",
+        "sha256": "1c4bc72d59aa4b7faf1db43fa7e0e31a7c50893a8d142a966a08beed3a46573c",
+        "mutations": 83,
+        "killed": 26,
+        "statusCounts": {
+          "KILLED": 26,
+          "SURVIVED": 46,
+          "TIMED_OUT": 8,
+          "NO_COVERAGE": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 51,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 24,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1
+        },
+        "targetClasses": [
+          "org.hibernate.event.internal.AbstractFlushingEventListener"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.event.internal.DefaultDeleteEventListener/mutations.xml",
+        "sha256": "aab8ede32bc1d56ba3fb7c577012536e8152ed63a6da3facafb6d1162665deab",
+        "mutations": 123,
+        "killed": 41,
+        "statusCounts": {
+          "NO_COVERAGE": 72,
+          "KILLED": 41,
+          "SURVIVED": 10
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 54,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 51,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.hibernate.event.internal.DefaultDeleteEventListener"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.event.internal.DefaultLoadEventListener/mutations.xml",
+        "sha256": "6b7e08732376ad76a9900c28cc570c4fdfc544ebf59e5c53c73919c148be75a5",
+        "mutations": 143,
+        "killed": 31,
+        "statusCounts": {
+          "MEMORY_ERROR": 1,
+          "NO_COVERAGE": 99,
+          "KILLED": 31,
+          "SURVIVED": 12
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 72,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 28,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 34,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 6
+        },
+        "targetClasses": [
+          "org.hibernate.event.internal.DefaultLoadEventListener"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.event.internal.DefaultPersistEventListener/mutations.xml",
+        "sha256": "07818644350ffb1db529a36ec46024d7a415c1726fe12d6df2c13fb9ab35fef8",
+        "mutations": 29,
+        "killed": 5,
+        "statusCounts": {
+          "NO_COVERAGE": 12,
+          "SURVIVED": 12,
+          "KILLED": 5
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 17,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1
+        },
+        "targetClasses": [
+          "org.hibernate.event.internal.DefaultPersistEventListener"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.event.internal.DefaultRefreshEventListener/mutations.xml",
+        "sha256": "379ef82577f9a2d7a6007b7336a5add9d4b554929e2485335945272c2f9aebe7",
+        "mutations": 67,
+        "killed": 0,
+        "statusCounts": {
+          "NO_COVERAGE": 67
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 31,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 24,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 3
+        },
+        "targetClasses": [
+          "org.hibernate.event.internal.DefaultRefreshEventListener"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackDefinitionResolver/mutations.xml",
+        "sha256": "16128cbf907b1a0be05e95d6028336fedcf1c9a66f2b9417d5964aaab7e27040",
+        "mutations": 53,
+        "killed": 26,
+        "statusCounts": {
+          "KILLED": 26,
+          "NO_COVERAGE": 17,
+          "SURVIVED": 10
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 29,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 13,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "org.hibernate.jpa.event.internal.CallbackDefinitionResolver"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.jpa.event.internal.CallbackRegistryImpl/mutations.xml",
+        "sha256": "66cd9990f7d3324ea194b4e36830cb93c91807b34260d5530f2b14ea9c4ae473",
+        "mutations": 26,
+        "killed": 7,
+        "statusCounts": {
+          "KILLED": 7,
+          "SURVIVED": 12,
+          "NO_COVERAGE": 7
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1
+        },
+        "targetClasses": [
+          "org.hibernate.jpa.event.internal.CallbackRegistryImpl"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.proxy.AbstractLazyInitializer/mutations.xml",
+        "sha256": "de724fd1d9491cafbab62e06d904e1d5cc041332692c60fcdbd0c61fd5e250fc",
+        "mutations": 118,
+        "killed": 36,
+        "statusCounts": {
+          "SURVIVED": 48,
+          "KILLED": 36,
+          "NO_COVERAGE": 34
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 61,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 28,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 8
+        },
+        "targetClasses": [
+          "org.hibernate.proxy.AbstractLazyInitializer"
+        ]
+      },
+      {
+        "file": "hibernate/results/per-class/org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory/mutations.xml",
+        "sha256": "7710b0517802e780e142eea06d9f24ab3d8a8e44fffa979d448f6e86863ba698",
+        "mutations": 8,
+        "killed": 5,
+        "statusCounts": {
+          "SURVIVED": 3,
+          "KILLED": 5
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 1
+        },
+        "targetClasses": [
+          "org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory"
+        ]
+      }
+    ],
+    "mutations": 1061,
+    "killed": 402,
+    "statusCounts": {
+      "KILLED": 402,
+      "SURVIVED": 254,
+      "NO_COVERAGE": 396,
+      "TIMED_OUT": 8,
+      "MEMORY_ERROR": 1
+    },
+    "mutatorCounts": {
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 159,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 482,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 32,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 51,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 25,
+      "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 269,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 5,
+      "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 15,
+      "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 4,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 15,
+      "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 4
+    },
+    "usableMatrices": 16,
+    "killedContributingClasses": 15
+  },
+  "quarkus": {
+    "files": [
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.AnnotationLiteralProcessor/mutations.xml",
+        "sha256": "4fbbf379431f51a1318172a8aca572e92e5cfc82f2451e44d6ead9c4b7124b26",
+        "mutations": 61,
+        "killed": 24,
+        "statusCounts": {
+          "NO_COVERAGE": 23,
+          "KILLED": 24,
+          "SURVIVED": 14
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 21,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 12,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 3
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.AnnotationLiteralProcessor"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.Annotations/mutations.xml",
+        "sha256": "805294913acb4f25ab4c811dd583e4f1a8671e3feaba5a56d952ad810b93f30a",
+        "mutations": 101,
+        "killed": 39,
+        "statusCounts": {
+          "KILLED": 39,
+          "SURVIVED": 17,
+          "NO_COVERAGE": 45
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 41,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 29,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 1
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.Annotations"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.BeanArchives/mutations.xml",
+        "sha256": "efd600bc5a983346ba9ae45857425b9162993e968d2fa06ebcb7893ab33d6c70",
+        "mutations": 16,
+        "killed": 14,
+        "statusCounts": {
+          "KILLED": 14,
+          "NO_COVERAGE": 2
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 1
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.BeanArchives"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.BeanResolverImpl/mutations.xml",
+        "sha256": "e9792b4b53d31a09f799448aa7f4c5c7b3e8bd27d19b3732b53a6b61e36d0535",
+        "mutations": 139,
+        "killed": 98,
+        "statusCounts": {
+          "KILLED": 98,
+          "SURVIVED": 13,
+          "NO_COVERAGE": 28
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 64,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 24,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 33,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 2
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.BeanResolverImpl"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.ClientProxyGenerator/mutations.xml",
+        "sha256": "041870158fa3781099d210cd425b1ba03fb827b56017aa6b9f795224870a220a",
+        "mutations": 84,
+        "killed": 66,
+        "statusCounts": {
+          "KILLED": 66,
+          "NO_COVERAGE": 13,
+          "SURVIVED": 5
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 27,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 52,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 3
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.ClientProxyGenerator"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.ComponentsProviderGenerator/mutations.xml",
+        "sha256": "4d85dfdea4fc0aa68f43cfff4bab7b5bcd347ecb95b09a0cb991ec3ea467d610",
+        "mutations": 96,
+        "killed": 71,
+        "statusCounts": {
+          "KILLED": 71,
+          "TIMED_OUT": 3,
+          "SURVIVED": 22
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 47,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 34,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 5
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.ComponentsProviderGenerator"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.ContextInstancesGenerator/mutations.xml",
+        "sha256": "ae525c85535b7cf4c2abc61e2fe230539f64a85674da5cd4fd5ebce1384dc6c9",
+        "mutations": 80,
+        "killed": 30,
+        "statusCounts": {
+          "SURVIVED": 50,
+          "KILLED": 30
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 75,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 2
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.ContextInstancesGenerator"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.DecoratorGenerator/mutations.xml",
+        "sha256": "c8a208bb134a57204516e83e40733c7e6e35edfbe7acb7f7b3bdd2a8eacb282c",
+        "mutations": 97,
+        "killed": 64,
+        "statusCounts": {
+          "KILLED": 64,
+          "NO_COVERAGE": 1,
+          "SURVIVED": 32
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 30,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 56,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.DecoratorGenerator"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.Injection/mutations.xml",
+        "sha256": "2ae69c0864df72e4682edcfd437f8bc1fdc4e13c5f7541ee3e745aa41b83d365",
+        "mutations": 150,
+        "killed": 131,
+        "statusCounts": {
+          "KILLED": 131,
+          "SURVIVED": 10,
+          "NO_COVERAGE": 9
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 101,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 16
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.Injection"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.InjectionPointInfo/mutations.xml",
+        "sha256": "8d928a679204d5b3c4a6887882be3c57005e376b45742d00fbf596a65909cba4",
+        "mutations": 101,
+        "killed": 85,
+        "statusCounts": {
+          "KILLED": 85,
+          "NO_COVERAGE": 8,
+          "SURVIVED": 8
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 53,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 17,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 9,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 14,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.InjectionPointInfo"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.InterceptorGenerator/mutations.xml",
+        "sha256": "1a22d915e0a94a0f67028f0d25249f2c3d36d81357f0b903c0de51fcc704c4a8",
+        "mutations": 94,
+        "killed": 90,
+        "statusCounts": {
+          "KILLED": 90,
+          "NO_COVERAGE": 1,
+          "SURVIVED": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 21,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 67,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.InterceptorGenerator"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.ObserverGenerator/mutations.xml",
+        "sha256": "d61fa7a8d46fb09b3548859c215086446d0313ffe061d1be6008f627b77dea46",
+        "mutations": 143,
+        "killed": 114,
+        "statusCounts": {
+          "KILLED": 114,
+          "NO_COVERAGE": 26,
+          "SURVIVED": 3
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 46,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 89,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 2
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.ObserverGenerator"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.ObserverInfo/mutations.xml",
+        "sha256": "66041e83e28a15f9785fbe047b2003a35f78fc5c81c014cf76aac3b2109eba9e",
+        "mutations": 70,
+        "killed": 58,
+        "statusCounts": {
+          "NO_COVERAGE": 8,
+          "KILLED": 58,
+          "SURVIVED": 4
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 19,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 30,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 8,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 4,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 3
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.ObserverInfo"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.Types/mutations.xml",
+        "sha256": "e8f255c380b2f1ced6f8b9894d36c79f7beb7b1e0db42c65910eb1b0a70b4e9d",
+        "mutations": 205,
+        "killed": 116,
+        "statusCounts": {
+          "KILLED": 116,
+          "SURVIVED": 6,
+          "NO_COVERAGE": 83
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 101,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 23,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 10,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 44,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 7,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 6
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.Types"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl/mutations.xml",
+        "sha256": "169cd52bcb1be809df07a654f3b5c56ebc1db07051767c5afe3101508872fd02",
+        "mutations": 115,
+        "killed": 11,
+        "statusCounts": {
+          "SURVIVED": 4,
+          "KILLED": 11,
+          "NO_COVERAGE": 100
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 11,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 60,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 20,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 20,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 2
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl"
+        ]
+      },
+      {
+        "file": "quarkus/results/per-class/io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint/mutations.xml",
+        "sha256": "81e2c34cd0d74803ba245bcb713627f5e770b4766d104c424b0a1c1a8719620c",
+        "mutations": 87,
+        "killed": 72,
+        "statusCounts": {
+          "KILLED": 72,
+          "SURVIVED": 8,
+          "NO_COVERAGE": 7
+        },
+        "mutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 59,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 27
+        },
+        "targetClasses": [
+          "io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint"
+        ]
+      }
+    ],
+    "mutations": 1639,
+    "killed": 1083,
+    "statusCounts": {
+      "NO_COVERAGE": 354,
+      "KILLED": 1083,
+      "SURVIVED": 199,
+      "TIMED_OUT": 3
+    },
+    "mutatorCounts": {
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 67,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 183,
+      "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 5,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 657,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 88,
+      "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 60,
+      "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 60,
+      "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 462,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 52,
+      "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 5
+    },
+    "usableMatrices": 16,
+    "killedContributingClasses": 16
+  }
+}

@@ -35,3 +35,5 @@ are superseded for current cross-subject reporting by `results/b2-*.json`:
   outside the eight-subject denominator)
 - `lightweight-stream-api/results/aggregated/evaluation_summary.json`
   (supplementary study, outside the eight-subject denominator)
+
+The `results/v14_6-*` result family is superseded by `results/v17-*` after adoption of the verified C matrices. Its JGraphT and spring-core matrices used PIT's implicit default operator set; the replacement campaigns used PIT 1.17.4 with the named `DEFAULTS` group passed explicitly and no JVM processor-count override. The other six subjects' matrices, all coverage maps, selection policies, constructor rule, and oracle exclusions are unchanged. The earlier result files retain their original bytes as historical evidence.

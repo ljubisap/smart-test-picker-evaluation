@@ -1,0 +1,131 @@
+PREPARE jgrapht
+Preparing clean JGraphT test classes with the PIT profile...
+START jgrapht 1 org.jgrapht.Graphs PIT workers 4
+[23:13:56] [1/20] Starting: org.jgrapht.Graphs (LOC=614, tests=org.jgrapht.GraphsTest,org.jgrapht.GraphTestsTest,org.jgrapht.GraphMetricsTest)
+[23:14:07] [1/20] DONE: org.jgrapht.Graphs (11s, 60 mutations)
+START jgrapht 2 org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder PIT workers 4
+[23:14:07] [2/20] Starting: org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder (LOC=138, tests=org.jgrapht.alg.clique.*)
+[23:14:14] [2/20] DONE: org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder (7s, 13 mutations)
+START jgrapht 3 org.jgrapht.alg.clustering.LabelPropagationClustering PIT workers 4
+[23:14:14] [3/20] Starting: org.jgrapht.alg.clustering.LabelPropagationClustering (LOC=348, tests=org.jgrapht.alg.clustering.*)
+[23:14:19] [3/20] DONE: org.jgrapht.alg.clustering.LabelPropagationClustering (6s, 4 mutations)
+START jgrapht 4 org.jgrapht.alg.color.GreedyColoring PIT workers 4
+[23:14:19] [4/20] Starting: org.jgrapht.alg.color.GreedyColoring (LOC=106, tests=org.jgrapht.alg.color.*)
+[23:14:26] [4/20] DONE: org.jgrapht.alg.color.GreedyColoring (7s, 8 mutations)
+START jgrapht 5 org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector PIT workers 4
+[23:14:26] [5/20] Starting: org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector (LOC=258, tests=org.jgrapht.alg.connectivity.*)
+[23:14:40] [5/20] DONE: org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector (14s, 18 mutations)
+START jgrapht 6 org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles PIT workers 4
+[23:14:40] [6/20] Starting: org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles (LOC=274, tests=org.jgrapht.alg.cycle.*)
+[23:15:01] [6/20] DONE: org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles (21s, 34 mutations)
+START jgrapht 7 org.jgrapht.alg.drawing.model.ListenableLayoutModel2D PIT workers 4
+[23:15:01] [7/20] Starting: org.jgrapht.alg.drawing.model.ListenableLayoutModel2D (LOC=131, tests=org.jgrapht.alg.drawing.model.*)
+[23:15:08] [7/20] DONE: org.jgrapht.alg.drawing.model.ListenableLayoutModel2D (7s, 15 mutations)
+START jgrapht 8 org.jgrapht.alg.flow.PushRelabelMFImpl PIT workers 4
+[23:15:08] [8/20] Starting: org.jgrapht.alg.flow.PushRelabelMFImpl (LOC=553, tests=org.jgrapht.alg.flow.*)
+[23:18:41] [8/20] DONE: org.jgrapht.alg.flow.PushRelabelMFImpl (212s, 86 mutations)
+START jgrapht 9 org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector PIT workers 4
+[23:18:41] [9/20] Starting: org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector (LOC=165, tests=org.jgrapht.alg.isomorphism.*)
+[23:18:56] [9/20] DONE: org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector (15s, 21 mutations)
+START jgrapht 10 org.jgrapht.alg.lca.BinaryLiftingLCAFinder PIT workers 4
+[23:18:56] [10/20] Starting: org.jgrapht.alg.lca.BinaryLiftingLCAFinder (LOC=252, tests=org.jgrapht.alg.lca.*)
+[23:21:05] [10/20] DONE: org.jgrapht.alg.lca.BinaryLiftingLCAFinder (129s, 47 mutations)
+START jgrapht 11 org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction PIT workers 4
+[23:21:05] [11/20] Starting: org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction (LOC=83, tests=org.jgrapht.alg.linkprediction.*)
+[23:21:12] [11/20] DONE: org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction (7s, 5 mutations)
+START jgrapht 12 org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater PIT workers 4
+[23:21:12] [12/20] Starting: org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater (LOC=1162, tests=org.jgrapht.alg.matching.blossom.v5.*)
+[23:45:50] [12/20] DONE: org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater (1476s, 245 mutations)
+START jgrapht 13 org.jgrapht.alg.scoring.ClosenessCentrality PIT workers 4
+[23:45:50] [13/20] Starting: org.jgrapht.alg.scoring.ClosenessCentrality (LOC=201, tests=org.jgrapht.alg.scoring.*)
+[23:46:41] [13/20] DONE: org.jgrapht.alg.scoring.ClosenessCentrality (51s, 19 mutations)
+START jgrapht 14 org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation PIT workers 4
+[23:46:41] [14/20] Starting: org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation (LOC=1310, tests=org.jgrapht.alg.shortestpath.*)
+[23:48:05] [14/20] DONE: org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation (83s, 37 mutations)
+START jgrapht 15 org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree PIT workers 4
+[23:48:05] [15/20] Starting: org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree (LOC=358, tests=org.jgrapht.alg.spanning.*)
+[23:57:13] [15/20] DONE: org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree (549s, 45 mutations)
+START jgrapht 16 org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP PIT workers 4
+[23:57:13] [16/20] Starting: org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP (LOC=139, tests=org.jgrapht.alg.tour.*)
+[23:57:28] [16/20] DONE: org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP (15s, 10 mutations)
+START jgrapht 17 org.jgrapht.alg.util.UnorderedPair PIT workers 4
+[23:57:28] [17/20] Starting: org.jgrapht.alg.util.UnorderedPair (LOC=91, tests=org.jgrapht.alg.util.*)
+[23:57:36] [17/20] DONE: org.jgrapht.alg.util.UnorderedPair (8s, 19 mutations)
+START jgrapht 18 org.jgrapht.alg.vertexcover.RecursiveExactVCImpl PIT workers 4
+[23:57:36] [18/20] Starting: org.jgrapht.alg.vertexcover.RecursiveExactVCImpl (LOC=339, tests=org.jgrapht.alg.vertexcover.*)
+[23:58:33] [18/20] DONE: org.jgrapht.alg.vertexcover.RecursiveExactVCImpl (57s, 47 mutations)
+START jgrapht 19 org.jgrapht.generate.netgen.Distributor PIT workers 4
+[23:58:33] [19/20] Starting: org.jgrapht.generate.netgen.Distributor (LOC=217, tests=org.jgrapht.generate.netgen.*)
+[23:58:51] [19/20] DONE: org.jgrapht.generate.netgen.Distributor (18s, 22 mutations)
+START jgrapht 20 org.jgrapht.graph.specifics.UndirectedSpecifics PIT workers 4
+[23:58:51] [20/20] Starting: org.jgrapht.graph.specifics.UndirectedSpecifics (LOC=294, tests=org.jgrapht.graph.*)
+[23:59:32] [20/20] DONE: org.jgrapht.graph.specifics.UndirectedSpecifics (42s, 48 mutations)
+FINISHED jgrapht
+PREPARE spring-core
+START spring-core 1 org.springframework.core.SerializableTypeWrapper PIT workers 4
+  Running PIT for org.springframework.core.SerializableTypeWrapper (targetTests=org.springframework.core.*)...
+    FAILED: exit code 1 (30s)
+START spring-core 2 org.springframework.core.annotation.RepeatableContainers PIT workers 4
+  Running PIT for org.springframework.core.annotation.RepeatableContainers (targetTests=org.springframework.core.annotation.*)...
+    OK: 12/13 killed (10s)
+START spring-core 3 org.springframework.core.codec.AbstractDataBufferDecoder PIT workers 4
+  Running PIT for org.springframework.core.codec.AbstractDataBufferDecoder (targetTests=org.springframework.core.codec.*)...
+    OK: 6/6 killed (16s)
+START spring-core 4 org.springframework.core.convert.TypeDescriptor PIT workers 4
+  Running PIT for org.springframework.core.convert.TypeDescriptor (targetTests=org.springframework.core.convert.*)...
+    OK: 98/125 killed (20s)
+START spring-core 5 org.springframework.core.convert.converter.ConvertingComparator PIT workers 4
+  Running PIT for org.springframework.core.convert.converter.ConvertingComparator (targetTests=org.springframework.core.convert.*)...
+    OK: 5/5 killed (3s)
+START spring-core 6 org.springframework.core.convert.support.GenericConversionService PIT workers 4
+  Running PIT for org.springframework.core.convert.support.GenericConversionService (targetTests=org.springframework.core.convert.*)...
+    OK: 47/62 killed (17s)
+START spring-core 7 org.springframework.core.env.PropertySource PIT workers 4
+  Running PIT for org.springframework.core.env.PropertySource (targetTests=org.springframework.core.env.*)...
+    OK: 6/13 killed (7s)
+START spring-core 8 org.springframework.core.io.AbstractResource PIT workers 4
+  Running PIT for org.springframework.core.io.AbstractResource (targetTests=org.springframework.core.io.*)...
+    FAILED: exit code 1 (7s)
+START spring-core 9 org.springframework.core.io.buffer.DataBufferUtils PIT workers 4
+  Running PIT for org.springframework.core.io.buffer.DataBufferUtils (targetTests=org.springframework.core.io.*)...
+    FAILED: exit code 1 (8s)
+START spring-core 10 org.springframework.core.io.support.PathMatchingResourcePatternResolver PIT workers 4
+  Running PIT for org.springframework.core.io.support.PathMatchingResourcePatternResolver (targetTests=org.springframework.core.io.*)...
+    FAILED: exit code 1 (7s)
+START spring-core 11 org.springframework.core.log.LogMessage PIT workers 4
+  Running PIT for org.springframework.core.log.LogMessage (targetTests=org.springframework.core.log.*)...
+    OK: 8/11 killed (3s)
+START spring-core 12 org.springframework.core.style.DefaultValueStyler PIT workers 4
+  Running PIT for org.springframework.core.style.DefaultValueStyler (targetTests=org.springframework.core.style.*)...
+    OK: 36/37 killed (3s)
+START spring-core 13 org.springframework.core.task.SimpleAsyncTaskExecutor PIT workers 4
+  Running PIT for org.springframework.core.task.SimpleAsyncTaskExecutor (targetTests=org.springframework.core.task.*)...
+    OK: 10/44 killed (36s)
+START spring-core 14 org.springframework.core.type.StandardClassMetadata PIT workers 4
+  Running PIT for org.springframework.core.type.StandardClassMetadata (targetTests=org.springframework.core.type.*)...
+    OK: 27/28 killed (4s)
+START spring-core 15 org.springframework.core.type.classreading.SimpleAnnotationMetadata PIT workers 4
+  Running PIT for org.springframework.core.type.classreading.SimpleAnnotationMetadata (targetTests=org.springframework.core.type.*)...
+    OK: 31/31 killed (5s)
+START spring-core 16 org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter PIT workers 4
+  Running PIT for org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter (targetTests=org.springframework.core.type.*)...
+    OK: 19/26 killed (3s)
+START spring-core 17 org.springframework.util.Assert PIT workers 4
+  Running PIT for org.springframework.util.Assert (targetTests=org.springframework.util.*)...
+    OK: 55/64 killed (19s)
+START spring-core 18 org.springframework.util.backoff.ExponentialBackOff PIT workers 4
+  Running PIT for org.springframework.util.backoff.ExponentialBackOff (targetTests=org.springframework.util.*)...
+    OK: 10/13 killed (7s)
+START spring-core 19 org.springframework.util.concurrent.ListenableFutureCallbackRegistry PIT workers 4
+  Running PIT for org.springframework.util.concurrent.ListenableFutureCallbackRegistry (targetTests=org.springframework.util.*)...
+    OK: 4/14 killed (56s)
+START spring-core 20 org.springframework.util.function.ThrowingConsumer PIT workers 4
+  Running PIT for org.springframework.util.function.ThrowingConsumer (targetTests=org.springframework.util.*)...
+    OK: 4/5 killed (8s)
+START spring-core 21 org.springframework.util.unit.DataSize PIT workers 4
+  Running PIT for org.springframework.util.unit.DataSize (targetTests=org.springframework.util.*)...
+    OK: 23/33 killed (10s)
+START spring-core 22 org.springframework.util.xml.AbstractStaxXMLReader PIT workers 4
+  Running PIT for org.springframework.util.xml.AbstractStaxXMLReader (targetTests=org.springframework.util.*)...
+    OK: 18/27 killed (12s)
+FINISHED spring-core

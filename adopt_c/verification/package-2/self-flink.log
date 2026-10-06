@@ -1,0 +1,180 @@
+{
+  "subject": "flink",
+  "classScope": null,
+  "recordedRecords": 681,
+  "freshRecords": 681,
+  "matchingRecords": 681,
+  "differences": [],
+  "unresolvedRecords": [],
+  "repeatedSemanticIdentities": [
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.DefaultScheduler",
+        "notifyCoordinatorOfCancellation",
+        "(Lorg/apache/flink/runtime/executiongraph/Execution;)V",
+        522,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.ExecutionGraphHandler",
+        "reportInitializationMetrics",
+        "(Lorg/apache/flink/runtime/executiongraph/ExecutionAttemptID;Lorg/apache/flink/runtime/checkpoint/SubTaskInitializationMetrics;)V",
+        87,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology",
+        "ensureCoLocatedVerticesInSameRegion",
+        "(Ljava/util/List;Lorg/apache/flink/runtime/executiongraph/ExecutionGraph;)V",
+        463,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager",
+        "recordRescaleForNewAvailableResources",
+        "(Lorg/apache/flink/runtime/scheduler/adaptive/DefaultStateTransitionManager;Z)V",
+        462,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.adaptive.Executing",
+        "hasDesiredResources",
+        "()Z",
+        152,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.adaptive.Executing",
+        "hasSufficientResources",
+        "()Z",
+        147,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator",
+        "lambda$determineParallelismAndCalculateAssignment$0",
+        "(Lorg/apache/flink/runtime/scheduler/adaptive/allocator/JobAllocationsInformation;Lorg/apache/flink/runtime/scheduler/adaptive/allocator/JobInformation;Ljava/util/Collection;Lorg/apache/flink/runtime/scheduler/adaptive/allocator/VertexParallelism;)Lorg/apache/flink/runtime/scheduler/adaptive/JobSchedulingPlan;",
+        162,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+        "resetForNewExecution",
+        "(Lorg/apache/flink/runtime/scheduler/strategy/ExecutionVertexID;)V",
+        313,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+        null,
+        null,
+        "removed conditional - replaced equality check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider",
+        "decideParallelismAndInputInfosForVertex",
+        "(Lorg/apache/flink/runtime/jobgraph/JobVertexID;Ljava/util/List;III)Lorg/apache/flink/runtime/executiongraph/ParallelismAndInputInfos;",
+        115,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider",
+        "decideParallelismAndInputInfosForVertex",
+        "(Lorg/apache/flink/runtime/jobgraph/JobVertexID;Ljava/util/List;III)Lorg/apache/flink/runtime/executiongraph/ParallelismAndInputInfos;",
+        115,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 3,
+      "freshOccurrences": 3
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector",
+        "<init>",
+        "(Lorg/apache/flink/configuration/Configuration;)V",
+        90,
+        "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator",
+        null,
+        null,
+        "changed conditional boundary"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    },
+    {
+      "semanticIdentity": [
+        "org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector",
+        "<init>",
+        "(Lorg/apache/flink/configuration/Configuration;)V",
+        90,
+        "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE",
+        null,
+        null,
+        "removed conditional - replaced comparison check with false"
+      ],
+      "recordedOccurrences": 2,
+      "freshOccurrences": 2
+    }
+  ],
+  "fullMatch": true
+}

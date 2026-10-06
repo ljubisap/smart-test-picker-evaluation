@@ -1,0 +1,2 @@
+[23:14:07] [2/20] Starting: org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder (LOC=138, tests=org.jgrapht.alg.clique.*)
+[23:14:14] [2/20] DONE: org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder (7s, 13 mutations)

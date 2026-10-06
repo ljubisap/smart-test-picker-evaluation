@@ -1,0 +1,9 @@
+{
+  "source": "iterations/pit-unify/cpu-unrestricted/results/per_record_outcomes.json.gz",
+  "counts": {
+    "regular_method": 3333,
+    "constructor": 67,
+    "lambda": 531,
+    "class_initializer": 0
+  }
+}

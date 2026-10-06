@@ -1,0 +1,3775 @@
+{
+  "projects": {
+    "commons-lang": {
+      "base": [
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.arch.Processor",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.builder.HashCodeBuilder",
+          "successes": 103,
+          "total": 103
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.compare.ComparableUtils",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.concurrent.locks.LockingVisitors",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.event.EventListenerSupport",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.event.EventUtils",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.math.Fraction",
+          "successes": 196,
+          "total": 196
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.math.IEEE754rUtils",
+          "successes": 42,
+          "total": 42
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.mutable.MutableFloat",
+          "successes": 35,
+          "total": 35
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.mutable.MutableObject",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.reflect.FieldUtils",
+          "successes": 60,
+          "total": 61
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.reflect.MethodUtils",
+          "successes": 121,
+          "total": 121
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.stream.LangCollectors",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.stream.Streams",
+          "successes": 25,
+          "total": 25
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.text.FormattableUtils",
+          "successes": 17,
+          "total": 17
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.text.translate.EntityArrays",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.text.translate.NumericEntityEscaper",
+          "successes": 18,
+          "total": 18
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.tuple.ImmutablePair",
+          "successes": 11,
+          "total": 11
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.tuple.Pair",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.util.FluentBitSet",
+          "successes": 50,
+          "total": 50
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.util.IterableStringTokenizer",
+          "successes": 5,
+          "total": 5
+        }
+      ],
+      "constructor": [
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.arch.Processor",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.builder.HashCodeBuilder",
+          "successes": 103,
+          "total": 103
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.compare.ComparableUtils",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.concurrent.locks.LockingVisitors",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.event.EventListenerSupport",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.event.EventUtils",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.math.Fraction",
+          "successes": 196,
+          "total": 196
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.math.IEEE754rUtils",
+          "successes": 42,
+          "total": 42
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.mutable.MutableFloat",
+          "successes": 35,
+          "total": 35
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.mutable.MutableObject",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.reflect.FieldUtils",
+          "successes": 60,
+          "total": 61
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.reflect.MethodUtils",
+          "successes": 121,
+          "total": 121
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.stream.LangCollectors",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.stream.Streams",
+          "successes": 25,
+          "total": 25
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.text.FormattableUtils",
+          "successes": 17,
+          "total": 17
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.text.translate.EntityArrays",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.text.translate.NumericEntityEscaper",
+          "successes": 18,
+          "total": 18
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.tuple.ImmutablePair",
+          "successes": 11,
+          "total": 11
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.tuple.Pair",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.util.FluentBitSet",
+          "successes": 50,
+          "total": 50
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.util.IterableStringTokenizer",
+          "successes": 5,
+          "total": 5
+        }
+      ],
+      "class": [
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.arch.Processor",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.builder.HashCodeBuilder",
+          "successes": 103,
+          "total": 103
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.compare.ComparableUtils",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.concurrent.locks.LockingVisitors",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.event.EventListenerSupport",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.event.EventUtils",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.math.Fraction",
+          "successes": 196,
+          "total": 196
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.math.IEEE754rUtils",
+          "successes": 42,
+          "total": 42
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.mutable.MutableFloat",
+          "successes": 35,
+          "total": 35
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.mutable.MutableObject",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.reflect.FieldUtils",
+          "successes": 60,
+          "total": 61
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.reflect.MethodUtils",
+          "successes": 121,
+          "total": 121
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.stream.LangCollectors",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.stream.Streams",
+          "successes": 25,
+          "total": 25
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.text.FormattableUtils",
+          "successes": 17,
+          "total": 17
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.text.translate.EntityArrays",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.text.translate.NumericEntityEscaper",
+          "successes": 18,
+          "total": 18
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.tuple.ImmutablePair",
+          "successes": 11,
+          "total": 11
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.tuple.Pair",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.util.FluentBitSet",
+          "successes": 50,
+          "total": 50
+        },
+        {
+          "subjectQualifiedClass": "commons-lang:org.apache.commons.lang3.util.IterableStringTokenizer",
+          "successes": 5,
+          "total": 5
+        }
+      ]
+    },
+    "jgrapht": {
+      "base": [
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.Graphs",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.clustering.LabelPropagationClustering",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.color.GreedyColoring",
+          "successes": 7,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector",
+          "successes": 16,
+          "total": 16
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles",
+          "successes": 21,
+          "total": 21
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.drawing.model.ListenableLayoutModel2D",
+          "successes": 9,
+          "total": 9
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.flow.PushRelabelMFImpl",
+          "successes": 38,
+          "total": 38
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+          "successes": 35,
+          "total": 35
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+          "successes": 146,
+          "total": 146
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.scoring.ClosenessCentrality",
+          "successes": 13,
+          "total": 13
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+          "successes": 27,
+          "total": 27
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+          "successes": 7,
+          "total": 8
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.util.UnorderedPair",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.generate.netgen.Distributor",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.graph.specifics.UndirectedSpecifics",
+          "successes": 19,
+          "total": 19
+        }
+      ],
+      "constructor": [
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.Graphs",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.clustering.LabelPropagationClustering",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.color.GreedyColoring",
+          "successes": 7,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector",
+          "successes": 16,
+          "total": 16
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles",
+          "successes": 21,
+          "total": 21
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.drawing.model.ListenableLayoutModel2D",
+          "successes": 9,
+          "total": 9
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.flow.PushRelabelMFImpl",
+          "successes": 38,
+          "total": 38
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+          "successes": 35,
+          "total": 35
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+          "successes": 146,
+          "total": 146
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.scoring.ClosenessCentrality",
+          "successes": 13,
+          "total": 13
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+          "successes": 27,
+          "total": 27
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+          "successes": 8,
+          "total": 8
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.util.UnorderedPair",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.generate.netgen.Distributor",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.graph.specifics.UndirectedSpecifics",
+          "successes": 19,
+          "total": 19
+        }
+      ],
+      "class": [
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.Graphs",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.clustering.LabelPropagationClustering",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.color.GreedyColoring",
+          "successes": 7,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector",
+          "successes": 16,
+          "total": 16
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles",
+          "successes": 21,
+          "total": 21
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.drawing.model.ListenableLayoutModel2D",
+          "successes": 9,
+          "total": 9
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.flow.PushRelabelMFImpl",
+          "successes": 38,
+          "total": 38
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+          "successes": 35,
+          "total": 35
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+          "successes": 146,
+          "total": 146
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.scoring.ClosenessCentrality",
+          "successes": 13,
+          "total": 13
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+          "successes": 27,
+          "total": 27
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+          "successes": 8,
+          "total": 8
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.util.UnorderedPair",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.generate.netgen.Distributor",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "jgrapht:org.jgrapht.graph.specifics.UndirectedSpecifics",
+          "successes": 19,
+          "total": 19
+        }
+      ]
+    },
+    "spring-core": {
+      "base": [
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.annotation.RepeatableContainers",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.codec.AbstractDataBufferDecoder",
+          "successes": 6,
+          "total": 6
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.convert.TypeDescriptor",
+          "successes": 97,
+          "total": 98
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.convert.converter.ConvertingComparator",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.convert.support.GenericConversionService",
+          "successes": 43,
+          "total": 47
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.env.PropertySource",
+          "successes": 6,
+          "total": 6
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.log.LogMessage",
+          "successes": 8,
+          "total": 8
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.style.DefaultValueStyler",
+          "successes": 36,
+          "total": 36
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.task.SimpleAsyncTaskExecutor",
+          "successes": 9,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.type.StandardClassMetadata",
+          "successes": 27,
+          "total": 27
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.type.classreading.SimpleAnnotationMetadata",
+          "successes": 31,
+          "total": 31
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.Assert",
+          "successes": 51,
+          "total": 55
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.backoff.ExponentialBackOff",
+          "successes": 9,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.concurrent.ListenableFutureCallbackRegistry",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.function.ThrowingConsumer",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.unit.DataSize",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.xml.AbstractStaxXMLReader",
+          "successes": 18,
+          "total": 18
+        }
+      ],
+      "constructor": [
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.annotation.RepeatableContainers",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.codec.AbstractDataBufferDecoder",
+          "successes": 6,
+          "total": 6
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.convert.TypeDescriptor",
+          "successes": 97,
+          "total": 98
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.convert.converter.ConvertingComparator",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.convert.support.GenericConversionService",
+          "successes": 47,
+          "total": 47
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.env.PropertySource",
+          "successes": 6,
+          "total": 6
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.log.LogMessage",
+          "successes": 8,
+          "total": 8
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.style.DefaultValueStyler",
+          "successes": 36,
+          "total": 36
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.task.SimpleAsyncTaskExecutor",
+          "successes": 9,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.type.StandardClassMetadata",
+          "successes": 27,
+          "total": 27
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.type.classreading.SimpleAnnotationMetadata",
+          "successes": 31,
+          "total": 31
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.Assert",
+          "successes": 51,
+          "total": 55
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.backoff.ExponentialBackOff",
+          "successes": 9,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.concurrent.ListenableFutureCallbackRegistry",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.function.ThrowingConsumer",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.unit.DataSize",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.xml.AbstractStaxXMLReader",
+          "successes": 18,
+          "total": 18
+        }
+      ],
+      "class": [
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.annotation.RepeatableContainers",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.codec.AbstractDataBufferDecoder",
+          "successes": 6,
+          "total": 6
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.convert.TypeDescriptor",
+          "successes": 98,
+          "total": 98
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.convert.converter.ConvertingComparator",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.convert.support.GenericConversionService",
+          "successes": 47,
+          "total": 47
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.env.PropertySource",
+          "successes": 6,
+          "total": 6
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.log.LogMessage",
+          "successes": 8,
+          "total": 8
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.style.DefaultValueStyler",
+          "successes": 36,
+          "total": 36
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.task.SimpleAsyncTaskExecutor",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.type.StandardClassMetadata",
+          "successes": 27,
+          "total": 27
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.type.classreading.SimpleAnnotationMetadata",
+          "successes": 31,
+          "total": 31
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.Assert",
+          "successes": 55,
+          "total": 55
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.backoff.ExponentialBackOff",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.concurrent.ListenableFutureCallbackRegistry",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.function.ThrowingConsumer",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.unit.DataSize",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "spring-core:org.springframework.util.xml.AbstractStaxXMLReader",
+          "successes": 18,
+          "total": 18
+        }
+      ]
+    },
+    "petclinic": {
+      "base": [
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.model.BaseEntity",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.model.NamedEntity",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.model.Person",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.Owner",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.OwnerController",
+          "successes": 24,
+          "total": 24
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.Pet",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.PetController",
+          "successes": 20,
+          "total": 20
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.PetValidator",
+          "successes": 8,
+          "total": 8
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.Visit",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.VisitController",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.vet.Vet",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.vet.VetController",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.vet.Vets",
+          "successes": 2,
+          "total": 2
+        }
+      ],
+      "constructor": [
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.model.BaseEntity",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.model.NamedEntity",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.model.Person",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.Owner",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.OwnerController",
+          "successes": 24,
+          "total": 24
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.Pet",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.PetController",
+          "successes": 20,
+          "total": 20
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.PetValidator",
+          "successes": 8,
+          "total": 8
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.Visit",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.VisitController",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.vet.Vet",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.vet.VetController",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.vet.Vets",
+          "successes": 2,
+          "total": 2
+        }
+      ],
+      "class": [
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.model.BaseEntity",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.model.NamedEntity",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.model.Person",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.Owner",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.OwnerController",
+          "successes": 24,
+          "total": 24
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.Pet",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.PetController",
+          "successes": 20,
+          "total": 20
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.PetTypeFormatter",
+          "successes": 3,
+          "total": 3
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.PetValidator",
+          "successes": 8,
+          "total": 8
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.Visit",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.owner.VisitController",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.vet.Vet",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.vet.VetController",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "petclinic:org.springframework.samples.petclinic.vet.Vets",
+          "successes": 2,
+          "total": 2
+        }
+      ]
+    },
+    "flink": {
+      "base": [
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.DefaultScheduler",
+          "successes": 17,
+          "total": 17
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology",
+          "successes": 36,
+          "total": 36
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.Executing",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+          "successes": 31,
+          "total": 31
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider",
+          "successes": 39,
+          "total": 39
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer",
+          "successes": 39,
+          "total": 39
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry",
+          "successes": 7,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector",
+          "successes": 51,
+          "total": 51
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl",
+          "successes": 11,
+          "total": 11
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy",
+          "successes": 51,
+          "total": 51
+        }
+      ],
+      "constructor": [
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.DefaultScheduler",
+          "successes": 17,
+          "total": 17
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology",
+          "successes": 36,
+          "total": 36
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.Executing",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+          "successes": 31,
+          "total": 31
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider",
+          "successes": 39,
+          "total": 39
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer",
+          "successes": 39,
+          "total": 39
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry",
+          "successes": 7,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector",
+          "successes": 51,
+          "total": 51
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl",
+          "successes": 11,
+          "total": 11
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy",
+          "successes": 51,
+          "total": 51
+        }
+      ],
+      "class": [
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.DefaultScheduler",
+          "successes": 17,
+          "total": 17
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology",
+          "successes": 36,
+          "total": 36
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph",
+          "successes": 1,
+          "total": 1
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager",
+          "successes": 2,
+          "total": 2
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.Executing",
+          "successes": 12,
+          "total": 12
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+          "successes": 31,
+          "total": 31
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider",
+          "successes": 39,
+          "total": 39
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer",
+          "successes": 39,
+          "total": 39
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry",
+          "successes": 7,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector",
+          "successes": 51,
+          "total": 51
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl",
+          "successes": 11,
+          "total": 11
+        },
+        {
+          "subjectQualifiedClass": "flink:org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy",
+          "successes": 51,
+          "total": 51
+        }
+      ]
+    },
+    "spring-security": {
+      "base": [
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.access.expression.SecurityExpressionRoot",
+          "successes": 40,
+          "total": 40
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+          "successes": 20,
+          "total": 22
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authentication.ProviderManager",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider",
+          "successes": 19,
+          "total": 20
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authorization.AuthorityAuthorizationManager",
+          "successes": 24,
+          "total": 24
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor",
+          "successes": 6,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.concurrent.DelegatingSecurityContextRunnable",
+          "successes": 9,
+          "total": 9
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.converter.RsaKeyConverters",
+          "successes": 17,
+          "total": 17
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner",
+          "successes": 49,
+          "total": 49
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper",
+          "successes": 18,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.context.SecurityContextHolder",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.session.SessionRegistryImpl",
+          "successes": 16,
+          "total": 16
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.token.KeyBasedPersistenceTokenService",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.userdetails.User",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.jackson2.SecurityJackson2Modules",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.provisioning.InMemoryUserDetailsManager",
+          "successes": 21,
+          "total": 21
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.util.matcher.InetAddressMatchers",
+          "successes": 3,
+          "total": 3
+        }
+      ],
+      "constructor": [
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.access.expression.SecurityExpressionRoot",
+          "successes": 40,
+          "total": 40
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+          "successes": 20,
+          "total": 22
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authentication.ProviderManager",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider",
+          "successes": 19,
+          "total": 20
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authorization.AuthorityAuthorizationManager",
+          "successes": 24,
+          "total": 24
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor",
+          "successes": 7,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.concurrent.DelegatingSecurityContextRunnable",
+          "successes": 9,
+          "total": 9
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.converter.RsaKeyConverters",
+          "successes": 17,
+          "total": 17
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner",
+          "successes": 49,
+          "total": 49
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.context.SecurityContextHolder",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.session.SessionRegistryImpl",
+          "successes": 16,
+          "total": 16
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.token.KeyBasedPersistenceTokenService",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.userdetails.User",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.jackson2.SecurityJackson2Modules",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.provisioning.InMemoryUserDetailsManager",
+          "successes": 21,
+          "total": 21
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.util.matcher.InetAddressMatchers",
+          "successes": 3,
+          "total": 3
+        }
+      ],
+      "class": [
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.access.expression.SecurityExpressionRoot",
+          "successes": 40,
+          "total": 40
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+          "successes": 22,
+          "total": 22
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authentication.ProviderManager",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider",
+          "successes": 20,
+          "total": 20
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authorization.AuthorityAuthorizationManager",
+          "successes": 24,
+          "total": 24
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor",
+          "successes": 7,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.concurrent.DelegatingSecurityContextRunnable",
+          "successes": 9,
+          "total": 9
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.converter.RsaKeyConverters",
+          "successes": 17,
+          "total": 17
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner",
+          "successes": 49,
+          "total": 49
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper",
+          "successes": 19,
+          "total": 19
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.context.SecurityContextHolder",
+          "successes": 4,
+          "total": 4
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.session.SessionRegistryImpl",
+          "successes": 16,
+          "total": 16
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.token.KeyBasedPersistenceTokenService",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.core.userdetails.User",
+          "successes": 23,
+          "total": 23
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.jackson2.SecurityJackson2Modules",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.provisioning.InMemoryUserDetailsManager",
+          "successes": 21,
+          "total": 21
+        },
+        {
+          "subjectQualifiedClass": "spring-security:org.springframework.security.util.matcher.InetAddressMatchers",
+          "successes": 3,
+          "total": 3
+        }
+      ]
+    },
+    "hibernate": {
+      "base": [
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+          "successes": 41,
+          "total": 41
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+          "successes": 43,
+          "total": 44
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor",
+          "successes": 37,
+          "total": 37
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor",
+          "successes": 32,
+          "total": 32
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.AbstractFlushingEventListener",
+          "successes": 26,
+          "total": 26
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.DefaultDeleteEventListener",
+          "successes": 41,
+          "total": 41
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.DefaultLoadEventListener",
+          "successes": 31,
+          "total": 31
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.DefaultPersistEventListener",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.jpa.event.internal.CallbackDefinitionResolver",
+          "successes": 26,
+          "total": 26
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.jpa.event.internal.CallbackRegistryImpl",
+          "successes": 7,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.proxy.AbstractLazyInitializer",
+          "successes": 36,
+          "total": 36
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory",
+          "successes": 5,
+          "total": 5
+        }
+      ],
+      "constructor": [
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+          "successes": 41,
+          "total": 41
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+          "successes": 43,
+          "total": 44
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor",
+          "successes": 37,
+          "total": 37
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor",
+          "successes": 32,
+          "total": 32
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.AbstractFlushingEventListener",
+          "successes": 26,
+          "total": 26
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.DefaultDeleteEventListener",
+          "successes": 41,
+          "total": 41
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.DefaultLoadEventListener",
+          "successes": 31,
+          "total": 31
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.DefaultPersistEventListener",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.jpa.event.internal.CallbackDefinitionResolver",
+          "successes": 26,
+          "total": 26
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.jpa.event.internal.CallbackRegistryImpl",
+          "successes": 7,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.proxy.AbstractLazyInitializer",
+          "successes": 36,
+          "total": 36
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory",
+          "successes": 5,
+          "total": 5
+        }
+      ],
+      "class": [
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+          "successes": 41,
+          "total": 41
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+          "successes": 44,
+          "total": 44
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor",
+          "successes": 37,
+          "total": 37
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor",
+          "successes": 32,
+          "total": 32
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState",
+          "successes": 10,
+          "total": 10
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.AbstractFlushingEventListener",
+          "successes": 26,
+          "total": 26
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.DefaultDeleteEventListener",
+          "successes": 41,
+          "total": 41
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.DefaultLoadEventListener",
+          "successes": 31,
+          "total": 31
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.event.internal.DefaultPersistEventListener",
+          "successes": 5,
+          "total": 5
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.jpa.event.internal.CallbackDefinitionResolver",
+          "successes": 26,
+          "total": 26
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.jpa.event.internal.CallbackRegistryImpl",
+          "successes": 7,
+          "total": 7
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.proxy.AbstractLazyInitializer",
+          "successes": 36,
+          "total": 36
+        },
+        {
+          "subjectQualifiedClass": "hibernate:org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory",
+          "successes": 5,
+          "total": 5
+        }
+      ]
+    },
+    "quarkus": {
+      "base": [
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.AnnotationLiteralProcessor",
+          "successes": 24,
+          "total": 24
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.Annotations",
+          "successes": 39,
+          "total": 39
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.BeanArchives",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.BeanResolverImpl",
+          "successes": 98,
+          "total": 98
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ClientProxyGenerator",
+          "successes": 66,
+          "total": 66
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ComponentsProviderGenerator",
+          "successes": 71,
+          "total": 71
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ContextInstancesGenerator",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.DecoratorGenerator",
+          "successes": 64,
+          "total": 64
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.Injection",
+          "successes": 131,
+          "total": 131
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.InjectionPointInfo",
+          "successes": 85,
+          "total": 85
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.InterceptorGenerator",
+          "successes": 90,
+          "total": 90
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ObserverGenerator",
+          "successes": 114,
+          "total": 114
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ObserverInfo",
+          "successes": 58,
+          "total": 58
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.Types",
+          "successes": 116,
+          "total": 116
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl",
+          "successes": 11,
+          "total": 11
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint",
+          "successes": 72,
+          "total": 72
+        }
+      ],
+      "constructor": [
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.AnnotationLiteralProcessor",
+          "successes": 24,
+          "total": 24
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.Annotations",
+          "successes": 39,
+          "total": 39
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.BeanArchives",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.BeanResolverImpl",
+          "successes": 98,
+          "total": 98
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ClientProxyGenerator",
+          "successes": 66,
+          "total": 66
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ComponentsProviderGenerator",
+          "successes": 71,
+          "total": 71
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ContextInstancesGenerator",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.DecoratorGenerator",
+          "successes": 64,
+          "total": 64
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.Injection",
+          "successes": 131,
+          "total": 131
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.InjectionPointInfo",
+          "successes": 85,
+          "total": 85
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.InterceptorGenerator",
+          "successes": 90,
+          "total": 90
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ObserverGenerator",
+          "successes": 114,
+          "total": 114
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ObserverInfo",
+          "successes": 58,
+          "total": 58
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.Types",
+          "successes": 116,
+          "total": 116
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl",
+          "successes": 11,
+          "total": 11
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint",
+          "successes": 72,
+          "total": 72
+        }
+      ],
+      "class": [
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.AnnotationLiteralProcessor",
+          "successes": 24,
+          "total": 24
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.Annotations",
+          "successes": 39,
+          "total": 39
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.BeanArchives",
+          "successes": 14,
+          "total": 14
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.BeanResolverImpl",
+          "successes": 98,
+          "total": 98
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ClientProxyGenerator",
+          "successes": 66,
+          "total": 66
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ComponentsProviderGenerator",
+          "successes": 71,
+          "total": 71
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ContextInstancesGenerator",
+          "successes": 30,
+          "total": 30
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.DecoratorGenerator",
+          "successes": 64,
+          "total": 64
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.Injection",
+          "successes": 131,
+          "total": 131
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.InjectionPointInfo",
+          "successes": 85,
+          "total": 85
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.InterceptorGenerator",
+          "successes": 90,
+          "total": 90
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ObserverGenerator",
+          "successes": 114,
+          "total": 114
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.ObserverInfo",
+          "successes": 58,
+          "total": 58
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.Types",
+          "successes": 116,
+          "total": 116
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl",
+          "successes": 11,
+          "total": 11
+        },
+        {
+          "subjectQualifiedClass": "quarkus:io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint",
+          "successes": 72,
+          "total": 72
+        }
+      ]
+    }
+  },
+  "aggregate": {
+    "base": [
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 103,
+        "total": 103
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 196,
+        "total": 196
+      },
+      {
+        "successes": 42,
+        "total": 42
+      },
+      {
+        "successes": 35,
+        "total": 35
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 60,
+        "total": 61
+      },
+      {
+        "successes": 121,
+        "total": 121
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 25,
+        "total": 25
+      },
+      {
+        "successes": 17,
+        "total": 17
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 18,
+        "total": 18
+      },
+      {
+        "successes": 11,
+        "total": 11
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 50,
+        "total": 50
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 7,
+        "total": 7
+      },
+      {
+        "successes": 16,
+        "total": 16
+      },
+      {
+        "successes": 21,
+        "total": 21
+      },
+      {
+        "successes": 9,
+        "total": 9
+      },
+      {
+        "successes": 38,
+        "total": 38
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 35,
+        "total": 35
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 146,
+        "total": 146
+      },
+      {
+        "successes": 13,
+        "total": 13
+      },
+      {
+        "successes": 27,
+        "total": 27
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 7,
+        "total": 8
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 6,
+        "total": 6
+      },
+      {
+        "successes": 97,
+        "total": 98
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 43,
+        "total": 47
+      },
+      {
+        "successes": 6,
+        "total": 6
+      },
+      {
+        "successes": 8,
+        "total": 8
+      },
+      {
+        "successes": 36,
+        "total": 36
+      },
+      {
+        "successes": 9,
+        "total": 10
+      },
+      {
+        "successes": 27,
+        "total": 27
+      },
+      {
+        "successes": 31,
+        "total": 31
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 51,
+        "total": 55
+      },
+      {
+        "successes": 9,
+        "total": 10
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 18,
+        "total": 18
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 24,
+        "total": 24
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 20,
+        "total": 20
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 8,
+        "total": 8
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 17,
+        "total": 17
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 36,
+        "total": 36
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 31,
+        "total": 31
+      },
+      {
+        "successes": 39,
+        "total": 39
+      },
+      {
+        "successes": 39,
+        "total": 39
+      },
+      {
+        "successes": 7,
+        "total": 7
+      },
+      {
+        "successes": 51,
+        "total": 51
+      },
+      {
+        "successes": 11,
+        "total": 11
+      },
+      {
+        "successes": 51,
+        "total": 51
+      },
+      {
+        "successes": 40,
+        "total": 40
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 20,
+        "total": 22
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 19,
+        "total": 20
+      },
+      {
+        "successes": 24,
+        "total": 24
+      },
+      {
+        "successes": 6,
+        "total": 7
+      },
+      {
+        "successes": 9,
+        "total": 9
+      },
+      {
+        "successes": 17,
+        "total": 17
+      },
+      {
+        "successes": 49,
+        "total": 49
+      },
+      {
+        "successes": 18,
+        "total": 19
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 16,
+        "total": 16
+      },
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 21,
+        "total": 21
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 41,
+        "total": 41
+      },
+      {
+        "successes": 43,
+        "total": 44
+      },
+      {
+        "successes": 37,
+        "total": 37
+      },
+      {
+        "successes": 32,
+        "total": 32
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 26,
+        "total": 26
+      },
+      {
+        "successes": 41,
+        "total": 41
+      },
+      {
+        "successes": 31,
+        "total": 31
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 26,
+        "total": 26
+      },
+      {
+        "successes": 7,
+        "total": 7
+      },
+      {
+        "successes": 36,
+        "total": 36
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 24,
+        "total": 24
+      },
+      {
+        "successes": 39,
+        "total": 39
+      },
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 98,
+        "total": 98
+      },
+      {
+        "successes": 66,
+        "total": 66
+      },
+      {
+        "successes": 71,
+        "total": 71
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 64,
+        "total": 64
+      },
+      {
+        "successes": 131,
+        "total": 131
+      },
+      {
+        "successes": 85,
+        "total": 85
+      },
+      {
+        "successes": 90,
+        "total": 90
+      },
+      {
+        "successes": 114,
+        "total": 114
+      },
+      {
+        "successes": 58,
+        "total": 58
+      },
+      {
+        "successes": 116,
+        "total": 116
+      },
+      {
+        "successes": 11,
+        "total": 11
+      },
+      {
+        "successes": 72,
+        "total": 72
+      }
+    ],
+    "constructor": [
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 103,
+        "total": 103
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 196,
+        "total": 196
+      },
+      {
+        "successes": 42,
+        "total": 42
+      },
+      {
+        "successes": 35,
+        "total": 35
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 60,
+        "total": 61
+      },
+      {
+        "successes": 121,
+        "total": 121
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 25,
+        "total": 25
+      },
+      {
+        "successes": 17,
+        "total": 17
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 18,
+        "total": 18
+      },
+      {
+        "successes": 11,
+        "total": 11
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 50,
+        "total": 50
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 7,
+        "total": 7
+      },
+      {
+        "successes": 16,
+        "total": 16
+      },
+      {
+        "successes": 21,
+        "total": 21
+      },
+      {
+        "successes": 9,
+        "total": 9
+      },
+      {
+        "successes": 38,
+        "total": 38
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 35,
+        "total": 35
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 146,
+        "total": 146
+      },
+      {
+        "successes": 13,
+        "total": 13
+      },
+      {
+        "successes": 27,
+        "total": 27
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 8,
+        "total": 8
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 6,
+        "total": 6
+      },
+      {
+        "successes": 97,
+        "total": 98
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 47,
+        "total": 47
+      },
+      {
+        "successes": 6,
+        "total": 6
+      },
+      {
+        "successes": 8,
+        "total": 8
+      },
+      {
+        "successes": 36,
+        "total": 36
+      },
+      {
+        "successes": 9,
+        "total": 10
+      },
+      {
+        "successes": 27,
+        "total": 27
+      },
+      {
+        "successes": 31,
+        "total": 31
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 51,
+        "total": 55
+      },
+      {
+        "successes": 9,
+        "total": 10
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 18,
+        "total": 18
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 24,
+        "total": 24
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 20,
+        "total": 20
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 8,
+        "total": 8
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 17,
+        "total": 17
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 36,
+        "total": 36
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 31,
+        "total": 31
+      },
+      {
+        "successes": 39,
+        "total": 39
+      },
+      {
+        "successes": 39,
+        "total": 39
+      },
+      {
+        "successes": 7,
+        "total": 7
+      },
+      {
+        "successes": 51,
+        "total": 51
+      },
+      {
+        "successes": 11,
+        "total": 11
+      },
+      {
+        "successes": 51,
+        "total": 51
+      },
+      {
+        "successes": 40,
+        "total": 40
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 20,
+        "total": 22
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 19,
+        "total": 20
+      },
+      {
+        "successes": 24,
+        "total": 24
+      },
+      {
+        "successes": 7,
+        "total": 7
+      },
+      {
+        "successes": 9,
+        "total": 9
+      },
+      {
+        "successes": 17,
+        "total": 17
+      },
+      {
+        "successes": 49,
+        "total": 49
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 16,
+        "total": 16
+      },
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 21,
+        "total": 21
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 41,
+        "total": 41
+      },
+      {
+        "successes": 43,
+        "total": 44
+      },
+      {
+        "successes": 37,
+        "total": 37
+      },
+      {
+        "successes": 32,
+        "total": 32
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 26,
+        "total": 26
+      },
+      {
+        "successes": 41,
+        "total": 41
+      },
+      {
+        "successes": 31,
+        "total": 31
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 26,
+        "total": 26
+      },
+      {
+        "successes": 7,
+        "total": 7
+      },
+      {
+        "successes": 36,
+        "total": 36
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 24,
+        "total": 24
+      },
+      {
+        "successes": 39,
+        "total": 39
+      },
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 98,
+        "total": 98
+      },
+      {
+        "successes": 66,
+        "total": 66
+      },
+      {
+        "successes": 71,
+        "total": 71
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 64,
+        "total": 64
+      },
+      {
+        "successes": 131,
+        "total": 131
+      },
+      {
+        "successes": 85,
+        "total": 85
+      },
+      {
+        "successes": 90,
+        "total": 90
+      },
+      {
+        "successes": 114,
+        "total": 114
+      },
+      {
+        "successes": 58,
+        "total": 58
+      },
+      {
+        "successes": 116,
+        "total": 116
+      },
+      {
+        "successes": 11,
+        "total": 11
+      },
+      {
+        "successes": 72,
+        "total": 72
+      }
+    ],
+    "class": [
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 103,
+        "total": 103
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 196,
+        "total": 196
+      },
+      {
+        "successes": 42,
+        "total": 42
+      },
+      {
+        "successes": 35,
+        "total": 35
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 60,
+        "total": 61
+      },
+      {
+        "successes": 121,
+        "total": 121
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 25,
+        "total": 25
+      },
+      {
+        "successes": 17,
+        "total": 17
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 18,
+        "total": 18
+      },
+      {
+        "successes": 11,
+        "total": 11
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 50,
+        "total": 50
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 7,
+        "total": 7
+      },
+      {
+        "successes": 16,
+        "total": 16
+      },
+      {
+        "successes": 21,
+        "total": 21
+      },
+      {
+        "successes": 9,
+        "total": 9
+      },
+      {
+        "successes": 38,
+        "total": 38
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 35,
+        "total": 35
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 146,
+        "total": 146
+      },
+      {
+        "successes": 13,
+        "total": 13
+      },
+      {
+        "successes": 27,
+        "total": 27
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 8,
+        "total": 8
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 6,
+        "total": 6
+      },
+      {
+        "successes": 98,
+        "total": 98
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 47,
+        "total": 47
+      },
+      {
+        "successes": 6,
+        "total": 6
+      },
+      {
+        "successes": 8,
+        "total": 8
+      },
+      {
+        "successes": 36,
+        "total": 36
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 27,
+        "total": 27
+      },
+      {
+        "successes": 31,
+        "total": 31
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 55,
+        "total": 55
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 18,
+        "total": 18
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 24,
+        "total": 24
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 20,
+        "total": 20
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 8,
+        "total": 8
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 17,
+        "total": 17
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 36,
+        "total": 36
+      },
+      {
+        "successes": 1,
+        "total": 1
+      },
+      {
+        "successes": 2,
+        "total": 2
+      },
+      {
+        "successes": 12,
+        "total": 12
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 31,
+        "total": 31
+      },
+      {
+        "successes": 39,
+        "total": 39
+      },
+      {
+        "successes": 39,
+        "total": 39
+      },
+      {
+        "successes": 7,
+        "total": 7
+      },
+      {
+        "successes": 51,
+        "total": 51
+      },
+      {
+        "successes": 11,
+        "total": 11
+      },
+      {
+        "successes": 51,
+        "total": 51
+      },
+      {
+        "successes": 40,
+        "total": 40
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 22,
+        "total": 22
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 20,
+        "total": 20
+      },
+      {
+        "successes": 24,
+        "total": 24
+      },
+      {
+        "successes": 7,
+        "total": 7
+      },
+      {
+        "successes": 9,
+        "total": 9
+      },
+      {
+        "successes": 17,
+        "total": 17
+      },
+      {
+        "successes": 49,
+        "total": 49
+      },
+      {
+        "successes": 19,
+        "total": 19
+      },
+      {
+        "successes": 4,
+        "total": 4
+      },
+      {
+        "successes": 16,
+        "total": 16
+      },
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 23,
+        "total": 23
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 21,
+        "total": 21
+      },
+      {
+        "successes": 3,
+        "total": 3
+      },
+      {
+        "successes": 41,
+        "total": 41
+      },
+      {
+        "successes": 44,
+        "total": 44
+      },
+      {
+        "successes": 37,
+        "total": 37
+      },
+      {
+        "successes": 32,
+        "total": 32
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 10,
+        "total": 10
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 26,
+        "total": 26
+      },
+      {
+        "successes": 41,
+        "total": 41
+      },
+      {
+        "successes": 31,
+        "total": 31
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 26,
+        "total": 26
+      },
+      {
+        "successes": 7,
+        "total": 7
+      },
+      {
+        "successes": 36,
+        "total": 36
+      },
+      {
+        "successes": 5,
+        "total": 5
+      },
+      {
+        "successes": 24,
+        "total": 24
+      },
+      {
+        "successes": 39,
+        "total": 39
+      },
+      {
+        "successes": 14,
+        "total": 14
+      },
+      {
+        "successes": 98,
+        "total": 98
+      },
+      {
+        "successes": 66,
+        "total": 66
+      },
+      {
+        "successes": 71,
+        "total": 71
+      },
+      {
+        "successes": 30,
+        "total": 30
+      },
+      {
+        "successes": 64,
+        "total": 64
+      },
+      {
+        "successes": 131,
+        "total": 131
+      },
+      {
+        "successes": 85,
+        "total": 85
+      },
+      {
+        "successes": 90,
+        "total": 90
+      },
+      {
+        "successes": 114,
+        "total": 114
+      },
+      {
+        "successes": 58,
+        "total": 58
+      },
+      {
+        "successes": 116,
+        "total": 116
+      },
+      {
+        "successes": 11,
+        "total": 11
+      },
+      {
+        "successes": 72,
+        "total": 72
+      }
+    ]
+  }
+}

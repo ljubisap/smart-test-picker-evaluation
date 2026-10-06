@@ -1,0 +1,2 @@
+{"uniqueInvocations": 1350, "weightedOccurrences": 3961, "mismatches": 0, "nonSelectedModes": 0, "testSelectorCodeSource": "file:/private/tmp/stp-b2-2e0954/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar", "coverageMapReaderCodeSource": "file:/private/tmp/stp-b2-2e0954/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar", "classBaselineVerification": "OFFLINE_ONLY", "constructorVariantVerification": "PYTHON_ONLY"}
+Loader differing entries: 0

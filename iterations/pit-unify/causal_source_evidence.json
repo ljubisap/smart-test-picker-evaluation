@@ -1,0 +1,4248 @@
+[
+  {
+    "mutationId": "jgrapht|org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP|getTour|(Lorg/jgrapht/Graph;)Lorg/jgrapht/GraphPath;|97|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/jgrapht/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml.gz:1",
+    "sourceRevision": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+    "production": [
+      {
+        "path": "jgrapht-core/src/main/java/org/jgrapht/alg/tour/ChristofidesThreeHalvesApproxMetricTSP.java",
+        "sha256": "3832dce4703f9ac75671e0ed0f941f6e566c843d46f2150adfaeb2b63a4e153e",
+        "startLine": 82,
+        "endLine": 119,
+        "lines": [
+          {
+            "line": 82,
+            "text": "    {"
+          },
+          {
+            "line": 83,
+            "text": "    }"
+          },
+          {
+            "line": 84,
+            "text": ""
+          },
+          {
+            "line": 85,
+            "text": "    /**"
+          },
+          {
+            "line": 86,
+            "text": "     * Computes a $3/2$-approximate tour."
+          },
+          {
+            "line": 87,
+            "text": "     *"
+          },
+          {
+            "line": 88,
+            "text": "     * @param graph the input graph"
+          },
+          {
+            "line": 89,
+            "text": "     * @return a tour"
+          },
+          {
+            "line": 90,
+            "text": "     * @throws IllegalArgumentException if the graph is not undirected"
+          },
+          {
+            "line": 91,
+            "text": "     * @throws IllegalArgumentException if the graph is not complete"
+          },
+          {
+            "line": 92,
+            "text": "     * @throws IllegalArgumentException if the graph contains no vertices"
+          },
+          {
+            "line": 93,
+            "text": "     */"
+          },
+          {
+            "line": 94,
+            "text": "    @Override"
+          },
+          {
+            "line": 95,
+            "text": "    public GraphPath<V, E> getTour(Graph<V, E> graph)"
+          },
+          {
+            "line": 96,
+            "text": "    {"
+          },
+          {
+            "line": 97,
+            "text": "        checkGraph(graph);"
+          },
+          {
+            "line": 98,
+            "text": "        int n = graph.vertexSet().size();"
+          },
+          {
+            "line": 99,
+            "text": "        if (n == 1) {"
+          },
+          {
+            "line": 100,
+            "text": "            return getSingletonTour(graph);"
+          },
+          {
+            "line": 101,
+            "text": "        }"
+          },
+          {
+            "line": 102,
+            "text": ""
+          },
+          {
+            "line": 103,
+            "text": "        // add all vertices of the graph to the auxiliary graph"
+          },
+          {
+            "line": 104,
+            "text": "        Graph<V, DefaultEdge> mstAndMatching = new Pseudograph<>(null, DefaultEdge::new, false);"
+          },
+          {
+            "line": 105,
+            "text": "        graph.vertexSet().forEach(mstAndMatching::addVertex);"
+          },
+          {
+            "line": 106,
+            "text": ""
+          },
+          {
+            "line": 107,
+            "text": "        // add all edges of a minimum spanning tree to the auxiliary graph"
+          },
+          {
+            "line": 108,
+            "text": "        SpanningTreeAlgorithm<E> spanningTreeAlgorithm = new KruskalMinimumSpanningTree<>(graph);"
+          },
+          {
+            "line": 109,
+            "text": "        spanningTreeAlgorithm.getSpanningTree().getEdges()"
+          },
+          {
+            "line": 110,
+            "text": "            .forEach(e -> mstAndMatching.addEdge(graph.getEdgeSource(e), graph.getEdgeTarget(e)));"
+          },
+          {
+            "line": 111,
+            "text": ""
+          },
+          {
+            "line": 112,
+            "text": "        // find odd degree vertices"
+          },
+          {
+            "line": 113,
+            "text": "        Set<V> oddDegreeVertices = mstAndMatching.vertexSet().stream()"
+          },
+          {
+            "line": 114,
+            "text": "            .filter(v -> (mstAndMatching.edgesOf(v).size() & 1) == 1).collect(Collectors.toSet());"
+          },
+          {
+            "line": 115,
+            "text": ""
+          },
+          {
+            "line": 116,
+            "text": "        /*"
+          },
+          {
+            "line": 117,
+            "text": "         * Form an induced subgraph on odd degree vertices, find minimum weight perfect matching and"
+          },
+          {
+            "line": 118,
+            "text": "         * add its edges to the auxiliary graph"
+          },
+          {
+            "line": 119,
+            "text": "         */"
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0_3dc2465",
+        "path": "jgrapht-core/src/test/java/org/jgrapht/alg/tour/ChristofidesThreeHalvesApproxMetricTSPTest.java",
+        "sha256": "c86fe8b31c9ef95db45d854ad4f2ce6eeeb07f20cdf54bbde0f05555c921fb3e",
+        "startLine": 35,
+        "endLine": 63,
+        "lines": [
+          {
+            "line": 35,
+            "text": "{"
+          },
+          {
+            "line": 36,
+            "text": ""
+          },
+          {
+            "line": 37,
+            "text": "    /**"
+          },
+          {
+            "line": 38,
+            "text": "     * Directed graph"
+          },
+          {
+            "line": 39,
+            "text": "     */"
+          },
+          {
+            "line": 40,
+            "text": "    @Test"
+          },
+          {
+            "line": 41,
+            "text": "    public void testGetTour0()"
+          },
+          {
+            "line": 42,
+            "text": "    {"
+          },
+          {
+            "line": 43,
+            "text": "        assertThrows(IllegalArgumentException.class, () -> {"
+          },
+          {
+            "line": 44,
+            "text": "            Graph<Integer, DefaultWeightedEdge> graph ="
+          },
+          {
+            "line": 45,
+            "text": "                new DefaultDirectedWeightedGraph<>(DefaultWeightedEdge.class);"
+          },
+          {
+            "line": 46,
+            "text": "            Graphs.addEdgeWithVertices(graph, 1, 2, 5);"
+          },
+          {
+            "line": 47,
+            "text": "            ChristofidesThreeHalvesApproxMetricTSP<Integer, DefaultWeightedEdge> approxMetricTSP ="
+          },
+          {
+            "line": 48,
+            "text": "                new ChristofidesThreeHalvesApproxMetricTSP<>();"
+          },
+          {
+            "line": 49,
+            "text": "            approxMetricTSP.getTour(graph);"
+          },
+          {
+            "line": 50,
+            "text": "        });"
+          },
+          {
+            "line": 51,
+            "text": "    }"
+          },
+          {
+            "line": 52,
+            "text": ""
+          },
+          {
+            "line": 53,
+            "text": "    /**"
+          },
+          {
+            "line": 54,
+            "text": "     * Empty graph"
+          },
+          {
+            "line": 55,
+            "text": "     */"
+          },
+          {
+            "line": 56,
+            "text": "    @Test"
+          },
+          {
+            "line": 57,
+            "text": "    public void testGetTour1()"
+          },
+          {
+            "line": 58,
+            "text": "    {"
+          },
+          {
+            "line": 59,
+            "text": "        assertThrows(IllegalArgumentException.class, () -> {"
+          },
+          {
+            "line": 60,
+            "text": "            Graph<Integer, DefaultWeightedEdge> graph ="
+          },
+          {
+            "line": 61,
+            "text": "                new DefaultUndirectedWeightedGraph<>(DefaultWeightedEdge.class);"
+          },
+          {
+            "line": 62,
+            "text": "            ChristofidesThreeHalvesApproxMetricTSP<Integer, DefaultWeightedEdge> approxMetricTSP ="
+          },
+          {
+            "line": 63,
+            "text": "                new ChristofidesThreeHalvesApproxMetricTSP<>();"
+          }
+        ]
+      },
+      {
+        "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2_3dc2465",
+        "path": "jgrapht-core/src/test/java/org/jgrapht/alg/tour/ChristofidesThreeHalvesApproxMetricTSPTest.java",
+        "sha256": "c86fe8b31c9ef95db45d854ad4f2ce6eeeb07f20cdf54bbde0f05555c921fb3e",
+        "startLine": 66,
+        "endLine": 94,
+        "lines": [
+          {
+            "line": 66,
+            "text": "    }"
+          },
+          {
+            "line": 67,
+            "text": ""
+          },
+          {
+            "line": 68,
+            "text": "    /**"
+          },
+          {
+            "line": 69,
+            "text": "     * Not complete"
+          },
+          {
+            "line": 70,
+            "text": "     */"
+          },
+          {
+            "line": 71,
+            "text": "    @Test"
+          },
+          {
+            "line": 72,
+            "text": "    public void testGetTour2()"
+          },
+          {
+            "line": 73,
+            "text": "    {"
+          },
+          {
+            "line": 74,
+            "text": "        assertThrows(IllegalArgumentException.class, () -> {"
+          },
+          {
+            "line": 75,
+            "text": "            Graph<Integer, DefaultWeightedEdge> graph ="
+          },
+          {
+            "line": 76,
+            "text": "                new DefaultUndirectedWeightedGraph<>(DefaultWeightedEdge.class);"
+          },
+          {
+            "line": 77,
+            "text": "            graph.addVertex(0);"
+          },
+          {
+            "line": 78,
+            "text": "            graph.addVertex(1);"
+          },
+          {
+            "line": 79,
+            "text": "            ChristofidesThreeHalvesApproxMetricTSP<Integer, DefaultWeightedEdge> approxMetricTSP ="
+          },
+          {
+            "line": 80,
+            "text": "                new ChristofidesThreeHalvesApproxMetricTSP<>();"
+          },
+          {
+            "line": 81,
+            "text": "            approxMetricTSP.getTour(graph);"
+          },
+          {
+            "line": 82,
+            "text": "        });"
+          },
+          {
+            "line": 83,
+            "text": "    }"
+          },
+          {
+            "line": 84,
+            "text": ""
+          },
+          {
+            "line": 85,
+            "text": "    /**"
+          },
+          {
+            "line": 86,
+            "text": "     * There is only one tour"
+          },
+          {
+            "line": 87,
+            "text": "     */"
+          },
+          {
+            "line": 88,
+            "text": "    @Test"
+          },
+          {
+            "line": 89,
+            "text": "    public void testGetTour3()"
+          },
+          {
+            "line": 90,
+            "text": "    {"
+          },
+          {
+            "line": 91,
+            "text": "        int[][] edges = { { 1, 2, 5 } };"
+          },
+          {
+            "line": 92,
+            "text": "        Graph<Integer, DefaultEdge> graph = TestUtil.createUndirected(edges);"
+          },
+          {
+            "line": 93,
+            "text": ""
+          },
+          {
+            "line": 94,
+            "text": "        ChristofidesThreeHalvesApproxMetricTSP<Integer, DefaultEdge> approxMetricTSP ="
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour0_3dc2465",
+        "type": "A",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP#<init>"
+        ]
+      },
+      {
+        "coverageKey": "ChristofidesThreeHalvesApproxMetricTSPTest#testGetTour2_3dc2465",
+        "type": "A",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP#<init>"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject/jgrapht-core/target/classes",
+        "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/jgrapht/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP.txt",
+      "classSha256": "f3659aeb4f279855bf0f0bc32970e94cbd79d3489bda51022eda38207f1434b6",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.convert.TypeDescriptor|upcast|(Ljava/lang/Class;)Lorg/springframework/core/convert/TypeDescriptor;|235|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml.gz:120",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "production": [
+      {
+        "path": "spring-core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+        "sha256": "27f9da3e11841d7464c9efd053215deba0556ce43f9a0ff4c84bdbe912fdbce3",
+        "startLine": 220,
+        "endLine": 257,
+        "lines": [
+          {
+            "line": 220,
+            "text": "\t}"
+          },
+          {
+            "line": 221,
+            "text": ""
+          },
+          {
+            "line": 222,
+            "text": "\t/**"
+          },
+          {
+            "line": 223,
+            "text": "\t * Cast this {@link TypeDescriptor} to a superclass or implemented interface"
+          },
+          {
+            "line": 224,
+            "text": "\t * preserving annotations and nested type context."
+          },
+          {
+            "line": 225,
+            "text": "\t * @param superType the supertype to cast to (can be {@code null})"
+          },
+          {
+            "line": 226,
+            "text": "\t * @return a new TypeDescriptor for the up-cast type"
+          },
+          {
+            "line": 227,
+            "text": "\t * @throws IllegalArgumentException if this type is not assignable to the super-type"
+          },
+          {
+            "line": 228,
+            "text": "\t * @since 3.2"
+          },
+          {
+            "line": 229,
+            "text": "\t */"
+          },
+          {
+            "line": 230,
+            "text": "\t@Nullable"
+          },
+          {
+            "line": 231,
+            "text": "\tpublic TypeDescriptor upcast(@Nullable Class<?> superType) {"
+          },
+          {
+            "line": 232,
+            "text": "\t\tif (superType == null) {"
+          },
+          {
+            "line": 233,
+            "text": "\t\t\treturn null;"
+          },
+          {
+            "line": 234,
+            "text": "\t\t}"
+          },
+          {
+            "line": 235,
+            "text": "\t\tAssert.isAssignable(superType, getType());"
+          },
+          {
+            "line": 236,
+            "text": "\t\treturn new TypeDescriptor(getResolvableType().as(superType), superType, getAnnotations());"
+          },
+          {
+            "line": 237,
+            "text": "\t}"
+          },
+          {
+            "line": 238,
+            "text": ""
+          },
+          {
+            "line": 239,
+            "text": "\t/**"
+          },
+          {
+            "line": 240,
+            "text": "\t * Return the name of this type: the fully qualified class name."
+          },
+          {
+            "line": 241,
+            "text": "\t */"
+          },
+          {
+            "line": 242,
+            "text": "\tpublic String getName() {"
+          },
+          {
+            "line": 243,
+            "text": "\t\treturn ClassUtils.getQualifiedName(getType());"
+          },
+          {
+            "line": 244,
+            "text": "\t}"
+          },
+          {
+            "line": 245,
+            "text": ""
+          },
+          {
+            "line": 246,
+            "text": "\t/**"
+          },
+          {
+            "line": 247,
+            "text": "\t * Is this type a primitive type?"
+          },
+          {
+            "line": 248,
+            "text": "\t */"
+          },
+          {
+            "line": 249,
+            "text": "\tpublic boolean isPrimitive() {"
+          },
+          {
+            "line": 250,
+            "text": "\t\treturn getType().isPrimitive();"
+          },
+          {
+            "line": 251,
+            "text": "\t}"
+          },
+          {
+            "line": 252,
+            "text": ""
+          },
+          {
+            "line": 253,
+            "text": "\t/**"
+          },
+          {
+            "line": 254,
+            "text": "\t * Return the annotations associated with this type descriptor, if any."
+          },
+          {
+            "line": 255,
+            "text": "\t * @return the annotations, or an empty array if none"
+          },
+          {
+            "line": 256,
+            "text": "\t */"
+          },
+          {
+            "line": 257,
+            "text": "\tpublic Annotation[] getAnnotations() {"
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "TypeDescriptorTests#upCastNotSuper_1ce9511",
+        "path": "spring-core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+        "sha256": "68ba198ad278d7eaa382719c3716830d7459dbfdc267aafea1123deec381a3c7",
+        "startLine": 671,
+        "endLine": 699,
+        "lines": [
+          {
+            "line": 671,
+            "text": "\t\tTypeDescriptor typeDescriptor = new TypeDescriptor(property);"
+          },
+          {
+            "line": 672,
+            "text": "\t\tTypeDescriptor upcast = typeDescriptor.upcast(Object.class);"
+          },
+          {
+            "line": 673,
+            "text": "\t\tassertThat(upcast.getAnnotation(MethodAnnotation1.class)).isNotNull();"
+          },
+          {
+            "line": 674,
+            "text": "\t}"
+          },
+          {
+            "line": 675,
+            "text": ""
+          },
+          {
+            "line": 676,
+            "text": "\t@Test"
+          },
+          {
+            "line": 677,
+            "text": "\tvoid upCastNotSuper() throws Exception {"
+          },
+          {
+            "line": 678,
+            "text": "\t\tProperty property = new Property(getClass(), getClass().getMethod(\"getProperty\"),"
+          },
+          {
+            "line": 679,
+            "text": "\t\t\t\tgetClass().getMethod(\"setProperty\", Map.class));"
+          },
+          {
+            "line": 680,
+            "text": "\t\tTypeDescriptor typeDescriptor = new TypeDescriptor(property);"
+          },
+          {
+            "line": 681,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 682,
+            "text": "\t\t\t\ttypeDescriptor.upcast(Collection.class))"
+          },
+          {
+            "line": 683,
+            "text": "\t\t\t.withMessage(\"interface java.util.Map is not assignable to interface java.util.Collection\");"
+          },
+          {
+            "line": 684,
+            "text": "\t}"
+          },
+          {
+            "line": 685,
+            "text": ""
+          },
+          {
+            "line": 686,
+            "text": "\t@Test"
+          },
+          {
+            "line": 687,
+            "text": "\tvoid elementTypeForCollectionSubclass() {"
+          },
+          {
+            "line": 688,
+            "text": "\t\t@SuppressWarnings(\"serial\")"
+          },
+          {
+            "line": 689,
+            "text": "\t\tclass CustomSet extends HashSet<String> {"
+          },
+          {
+            "line": 690,
+            "text": "\t\t}"
+          },
+          {
+            "line": 691,
+            "text": ""
+          },
+          {
+            "line": 692,
+            "text": "\t\tassertThat(TypeDescriptor.valueOf(String.class)).isEqualTo(TypeDescriptor.valueOf(CustomSet.class).getElementTypeDescriptor());"
+          },
+          {
+            "line": 693,
+            "text": "\t\tassertThat(TypeDescriptor.valueOf(String.class)).isEqualTo(TypeDescriptor.forObject(new CustomSet()).getElementTypeDescriptor());"
+          },
+          {
+            "line": 694,
+            "text": "\t}"
+          },
+          {
+            "line": 695,
+            "text": ""
+          },
+          {
+            "line": 696,
+            "text": "\t@Test"
+          },
+          {
+            "line": 697,
+            "text": "\tvoid elementTypeForMapSubclass() {"
+          },
+          {
+            "line": 698,
+            "text": "\t\t@SuppressWarnings(\"serial\")"
+          },
+          {
+            "line": 699,
+            "text": "\t\tclass CustomMap extends HashMap<String, Integer> {"
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "TypeDescriptorTests#upCastNotSuper_1ce9511",
+        "type": "B",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.core.convert.TypeDescriptor#<init>",
+          "org.springframework.core.convert.TypeDescriptor#getType"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main",
+        "org.springframework.core.convert.TypeDescriptor"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.TypeDescriptor.txt",
+      "classSha256": "eeaea09f6cee8228bd762947fa72d162463404d6a3daae07bce8bb1939f7cb4d",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Ljava/lang/Class;Ljava/lang/Class;)Z|133|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:17",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "production": [
+      {
+        "path": "spring-core/src/main/java/org/springframework/core/convert/support/GenericConversionService.java",
+        "sha256": "77baa08c72d406887f74e43ff3fd105bdfa84b2b78f58b6a21e1b19c1c48553c",
+        "startLine": 118,
+        "endLine": 155,
+        "lines": [
+          {
+            "line": 118,
+            "text": "\t\taddConverter(new ConverterFactoryAdapter(factory,"
+          },
+          {
+            "line": 119,
+            "text": "\t\t\t\tnew ConvertiblePair(typeInfo[0].toClass(), typeInfo[1].toClass())));"
+          },
+          {
+            "line": 120,
+            "text": "\t}"
+          },
+          {
+            "line": 121,
+            "text": ""
+          },
+          {
+            "line": 122,
+            "text": "\t@Override"
+          },
+          {
+            "line": 123,
+            "text": "\tpublic void removeConvertible(Class<?> sourceType, Class<?> targetType) {"
+          },
+          {
+            "line": 124,
+            "text": "\t\tthis.converters.remove(sourceType, targetType);"
+          },
+          {
+            "line": 125,
+            "text": "\t\tinvalidateCache();"
+          },
+          {
+            "line": 126,
+            "text": "\t}"
+          },
+          {
+            "line": 127,
+            "text": ""
+          },
+          {
+            "line": 128,
+            "text": ""
+          },
+          {
+            "line": 129,
+            "text": "\t// ConversionService implementation"
+          },
+          {
+            "line": 130,
+            "text": ""
+          },
+          {
+            "line": 131,
+            "text": "\t@Override"
+          },
+          {
+            "line": 132,
+            "text": "\tpublic boolean canConvert(@Nullable Class<?> sourceType, Class<?> targetType) {"
+          },
+          {
+            "line": 133,
+            "text": "\t\tAssert.notNull(targetType, \"Target type to convert to cannot be null\");"
+          },
+          {
+            "line": 134,
+            "text": "\t\treturn canConvert((sourceType != null ? TypeDescriptor.valueOf(sourceType) : null),"
+          },
+          {
+            "line": 135,
+            "text": "\t\t\t\tTypeDescriptor.valueOf(targetType));"
+          },
+          {
+            "line": 136,
+            "text": "\t}"
+          },
+          {
+            "line": 137,
+            "text": ""
+          },
+          {
+            "line": 138,
+            "text": "\t@Override"
+          },
+          {
+            "line": 139,
+            "text": "\tpublic boolean canConvert(@Nullable TypeDescriptor sourceType, TypeDescriptor targetType) {"
+          },
+          {
+            "line": 140,
+            "text": "\t\tAssert.notNull(targetType, \"Target type to convert to cannot be null\");"
+          },
+          {
+            "line": 141,
+            "text": "\t\treturn (sourceType == null || getConverter(sourceType, targetType) != null);"
+          },
+          {
+            "line": 142,
+            "text": "\t}"
+          },
+          {
+            "line": 143,
+            "text": ""
+          },
+          {
+            "line": 144,
+            "text": "\t/**"
+          },
+          {
+            "line": 145,
+            "text": "\t * Return whether conversion between the source type and the target type can be bypassed."
+          },
+          {
+            "line": 146,
+            "text": "\t * <p>More precisely, this method will return true if objects of sourceType can be"
+          },
+          {
+            "line": 147,
+            "text": "\t * converted to the target type by returning the source object unchanged."
+          },
+          {
+            "line": 148,
+            "text": "\t * @param sourceType context about the source type to convert from"
+          },
+          {
+            "line": 149,
+            "text": "\t * (may be {@code null} if source is {@code null})"
+          },
+          {
+            "line": 150,
+            "text": "\t * @param targetType context about the target type to convert to (required)"
+          },
+          {
+            "line": 151,
+            "text": "\t * @return {@code true} if conversion can be bypassed; {@code false} otherwise"
+          },
+          {
+            "line": 152,
+            "text": "\t * @throws IllegalArgumentException if targetType is {@code null}"
+          },
+          {
+            "line": 153,
+            "text": "\t * @since 3.2"
+          },
+          {
+            "line": 154,
+            "text": "\t */"
+          },
+          {
+            "line": 155,
+            "text": "\tpublic boolean canBypassConvert(@Nullable TypeDescriptor sourceType, TypeDescriptor targetType) {"
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+        "path": "spring-core/src/test/java/org/springframework/core/convert/support/GenericConversionServiceTests.java",
+        "sha256": "5d9183a6ef6ffee32d2308e8fd2c90fd1085a6162bacf4dc3c7ed7493bcc3ec5",
+        "startLine": 80,
+        "endLine": 108,
+        "lines": [
+          {
+            "line": 80,
+            "text": "\t\tassertThat(conversionService.canConvert(Integer.class, Number.class)).isTrue();"
+          },
+          {
+            "line": 81,
+            "text": "\t\tassertThat(conversionService.canConvert(boolean.class, boolean.class)).isTrue();"
+          },
+          {
+            "line": 82,
+            "text": "\t\tassertThat(conversionService.canConvert(boolean.class, Boolean.class)).isTrue();"
+          },
+          {
+            "line": 83,
+            "text": "\t}"
+          },
+          {
+            "line": 84,
+            "text": ""
+          },
+          {
+            "line": 85,
+            "text": "\t@Test"
+          },
+          {
+            "line": 86,
+            "text": "\tvoid canConvertFromClassSourceTypeToNullTargetType() {"
+          },
+          {
+            "line": 87,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 88,
+            "text": "\t\t\t\tconversionService.canConvert(String.class, null));"
+          },
+          {
+            "line": 89,
+            "text": "\t}"
+          },
+          {
+            "line": 90,
+            "text": ""
+          },
+          {
+            "line": 91,
+            "text": "\t@Test"
+          },
+          {
+            "line": 92,
+            "text": "\tvoid canConvertFromTypeDescriptorSourceTypeToNullTargetType() {"
+          },
+          {
+            "line": 93,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 94,
+            "text": "\t\t\t\tconversionService.canConvert(TypeDescriptor.valueOf(String.class), null));"
+          },
+          {
+            "line": 95,
+            "text": "\t}"
+          },
+          {
+            "line": 96,
+            "text": ""
+          },
+          {
+            "line": 97,
+            "text": "\t@Test"
+          },
+          {
+            "line": 98,
+            "text": "\tvoid canConvertNullSourceType() {"
+          },
+          {
+            "line": 99,
+            "text": "\t\tassertThat(conversionService.canConvert(null, Integer.class)).isTrue();"
+          },
+          {
+            "line": 100,
+            "text": "\t\tassertThat(conversionService.canConvert(null, TypeDescriptor.valueOf(Integer.class))).isTrue();"
+          },
+          {
+            "line": 101,
+            "text": "\t}"
+          },
+          {
+            "line": 102,
+            "text": ""
+          },
+          {
+            "line": 103,
+            "text": "\t@Test"
+          },
+          {
+            "line": 104,
+            "text": "\tvoid convert() {"
+          },
+          {
+            "line": 105,
+            "text": "\t\tconversionService.addConverterFactory(new StringToNumberConverterFactory());"
+          },
+          {
+            "line": 106,
+            "text": "\t\tassertThat(conversionService.convert(\"3\", Integer.class)).isEqualTo(3);"
+          },
+          {
+            "line": 107,
+            "text": "\t}"
+          },
+          {
+            "line": 108,
+            "text": ""
+          }
+        ]
+      },
+      {
+        "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467",
+        "path": "spring-core/src/test/java/org/springframework/core/convert/support/GenericConversionServiceTests.java",
+        "sha256": "5d9183a6ef6ffee32d2308e8fd2c90fd1085a6162bacf4dc3c7ed7493bcc3ec5",
+        "startLine": 388,
+        "endLine": 416,
+        "lines": [
+          {
+            "line": 388,
+            "text": "\t\tGenericConverter.ConvertiblePair pairOpposite = new GenericConverter.ConvertiblePair(String.class, Number.class);"
+          },
+          {
+            "line": 389,
+            "text": "\t\tassertThat(pair).isNotEqualTo(pairOpposite);"
+          },
+          {
+            "line": 390,
+            "text": "\t\tassertThat(pair.hashCode()).isNotEqualTo(pairOpposite.hashCode());"
+          },
+          {
+            "line": 391,
+            "text": "\t}"
+          },
+          {
+            "line": 392,
+            "text": ""
+          },
+          {
+            "line": 393,
+            "text": "\t@Test"
+          },
+          {
+            "line": 394,
+            "text": "\tvoid canConvertIllegalArgumentNullTargetTypeFromClass() {"
+          },
+          {
+            "line": 395,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 396,
+            "text": "\t\t\t\tconversionService.canConvert(String.class, null));"
+          },
+          {
+            "line": 397,
+            "text": "\t}"
+          },
+          {
+            "line": 398,
+            "text": ""
+          },
+          {
+            "line": 399,
+            "text": "\t@Test"
+          },
+          {
+            "line": 400,
+            "text": "\tvoid canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor() {"
+          },
+          {
+            "line": 401,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 402,
+            "text": "\t\t\t\tconversionService.canConvert(TypeDescriptor.valueOf(String.class), null));"
+          },
+          {
+            "line": 403,
+            "text": "\t}"
+          },
+          {
+            "line": 404,
+            "text": ""
+          },
+          {
+            "line": 405,
+            "text": "\t@Test"
+          },
+          {
+            "line": 406,
+            "text": "\tvoid removeConvertible() {"
+          },
+          {
+            "line": 407,
+            "text": "\t\tconversionService.addConverter(new ColorConverter());"
+          },
+          {
+            "line": 408,
+            "text": "\t\tassertThat(conversionService.canConvert(String.class, Color.class)).isTrue();"
+          },
+          {
+            "line": 409,
+            "text": "\t\tconversionService.removeConvertible(String.class, Color.class);"
+          },
+          {
+            "line": 410,
+            "text": "\t\tassertThat(conversionService.canConvert(String.class, Color.class)).isFalse();"
+          },
+          {
+            "line": 411,
+            "text": "\t}"
+          },
+          {
+            "line": 412,
+            "text": ""
+          },
+          {
+            "line": 413,
+            "text": "\t@Test"
+          },
+          {
+            "line": 414,
+            "text": "\tvoid conditionalConverter() {"
+          },
+          {
+            "line": 415,
+            "text": "\t\tMyConditionalConverter converter = new MyConditionalConverter();"
+          },
+          {
+            "line": 416,
+            "text": "\t\tconversionService.addConverter(new ColorConverter());"
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+        "type": "A",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.core.convert.support.GenericConversionService#<init>"
+        ]
+      },
+      {
+        "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467",
+        "type": "A",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.core.convert.support.GenericConversionService#<init>"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main",
+        "org.springframework.core.convert.support.GenericConversionService"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+      "classSha256": "30e53f58d2459cde697e3977db239df80f5fd38c92e67d3a29507ab6ef981419",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z|140|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:22",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "production": [
+      {
+        "path": "spring-core/src/main/java/org/springframework/core/convert/support/GenericConversionService.java",
+        "sha256": "77baa08c72d406887f74e43ff3fd105bdfa84b2b78f58b6a21e1b19c1c48553c",
+        "startLine": 125,
+        "endLine": 162,
+        "lines": [
+          {
+            "line": 125,
+            "text": "\t\tinvalidateCache();"
+          },
+          {
+            "line": 126,
+            "text": "\t}"
+          },
+          {
+            "line": 127,
+            "text": ""
+          },
+          {
+            "line": 128,
+            "text": ""
+          },
+          {
+            "line": 129,
+            "text": "\t// ConversionService implementation"
+          },
+          {
+            "line": 130,
+            "text": ""
+          },
+          {
+            "line": 131,
+            "text": "\t@Override"
+          },
+          {
+            "line": 132,
+            "text": "\tpublic boolean canConvert(@Nullable Class<?> sourceType, Class<?> targetType) {"
+          },
+          {
+            "line": 133,
+            "text": "\t\tAssert.notNull(targetType, \"Target type to convert to cannot be null\");"
+          },
+          {
+            "line": 134,
+            "text": "\t\treturn canConvert((sourceType != null ? TypeDescriptor.valueOf(sourceType) : null),"
+          },
+          {
+            "line": 135,
+            "text": "\t\t\t\tTypeDescriptor.valueOf(targetType));"
+          },
+          {
+            "line": 136,
+            "text": "\t}"
+          },
+          {
+            "line": 137,
+            "text": ""
+          },
+          {
+            "line": 138,
+            "text": "\t@Override"
+          },
+          {
+            "line": 139,
+            "text": "\tpublic boolean canConvert(@Nullable TypeDescriptor sourceType, TypeDescriptor targetType) {"
+          },
+          {
+            "line": 140,
+            "text": "\t\tAssert.notNull(targetType, \"Target type to convert to cannot be null\");"
+          },
+          {
+            "line": 141,
+            "text": "\t\treturn (sourceType == null || getConverter(sourceType, targetType) != null);"
+          },
+          {
+            "line": 142,
+            "text": "\t}"
+          },
+          {
+            "line": 143,
+            "text": ""
+          },
+          {
+            "line": 144,
+            "text": "\t/**"
+          },
+          {
+            "line": 145,
+            "text": "\t * Return whether conversion between the source type and the target type can be bypassed."
+          },
+          {
+            "line": 146,
+            "text": "\t * <p>More precisely, this method will return true if objects of sourceType can be"
+          },
+          {
+            "line": 147,
+            "text": "\t * converted to the target type by returning the source object unchanged."
+          },
+          {
+            "line": 148,
+            "text": "\t * @param sourceType context about the source type to convert from"
+          },
+          {
+            "line": 149,
+            "text": "\t * (may be {@code null} if source is {@code null})"
+          },
+          {
+            "line": 150,
+            "text": "\t * @param targetType context about the target type to convert to (required)"
+          },
+          {
+            "line": 151,
+            "text": "\t * @return {@code true} if conversion can be bypassed; {@code false} otherwise"
+          },
+          {
+            "line": 152,
+            "text": "\t * @throws IllegalArgumentException if targetType is {@code null}"
+          },
+          {
+            "line": 153,
+            "text": "\t * @since 3.2"
+          },
+          {
+            "line": 154,
+            "text": "\t */"
+          },
+          {
+            "line": 155,
+            "text": "\tpublic boolean canBypassConvert(@Nullable TypeDescriptor sourceType, TypeDescriptor targetType) {"
+          },
+          {
+            "line": 156,
+            "text": "\t\tAssert.notNull(targetType, \"Target type to convert to cannot be null\");"
+          },
+          {
+            "line": 157,
+            "text": "\t\treturn (sourceType == null || getConverter(sourceType, targetType) == NO_OP_CONVERTER);"
+          },
+          {
+            "line": 158,
+            "text": "\t}"
+          },
+          {
+            "line": 159,
+            "text": ""
+          },
+          {
+            "line": 160,
+            "text": "\t@SuppressWarnings(\"unchecked\")"
+          },
+          {
+            "line": 161,
+            "text": "\t@Override"
+          },
+          {
+            "line": 162,
+            "text": "\t@Nullable"
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType_1c4b620",
+        "path": "spring-core/src/test/java/org/springframework/core/convert/support/GenericConversionServiceTests.java",
+        "sha256": "5d9183a6ef6ffee32d2308e8fd2c90fd1085a6162bacf4dc3c7ed7493bcc3ec5",
+        "startLine": 86,
+        "endLine": 114,
+        "lines": [
+          {
+            "line": 86,
+            "text": "\tvoid canConvertFromClassSourceTypeToNullTargetType() {"
+          },
+          {
+            "line": 87,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 88,
+            "text": "\t\t\t\tconversionService.canConvert(String.class, null));"
+          },
+          {
+            "line": 89,
+            "text": "\t}"
+          },
+          {
+            "line": 90,
+            "text": ""
+          },
+          {
+            "line": 91,
+            "text": "\t@Test"
+          },
+          {
+            "line": 92,
+            "text": "\tvoid canConvertFromTypeDescriptorSourceTypeToNullTargetType() {"
+          },
+          {
+            "line": 93,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 94,
+            "text": "\t\t\t\tconversionService.canConvert(TypeDescriptor.valueOf(String.class), null));"
+          },
+          {
+            "line": 95,
+            "text": "\t}"
+          },
+          {
+            "line": 96,
+            "text": ""
+          },
+          {
+            "line": 97,
+            "text": "\t@Test"
+          },
+          {
+            "line": 98,
+            "text": "\tvoid canConvertNullSourceType() {"
+          },
+          {
+            "line": 99,
+            "text": "\t\tassertThat(conversionService.canConvert(null, Integer.class)).isTrue();"
+          },
+          {
+            "line": 100,
+            "text": "\t\tassertThat(conversionService.canConvert(null, TypeDescriptor.valueOf(Integer.class))).isTrue();"
+          },
+          {
+            "line": 101,
+            "text": "\t}"
+          },
+          {
+            "line": 102,
+            "text": ""
+          },
+          {
+            "line": 103,
+            "text": "\t@Test"
+          },
+          {
+            "line": 104,
+            "text": "\tvoid convert() {"
+          },
+          {
+            "line": 105,
+            "text": "\t\tconversionService.addConverterFactory(new StringToNumberConverterFactory());"
+          },
+          {
+            "line": 106,
+            "text": "\t\tassertThat(conversionService.convert(\"3\", Integer.class)).isEqualTo(3);"
+          },
+          {
+            "line": 107,
+            "text": "\t}"
+          },
+          {
+            "line": 108,
+            "text": ""
+          },
+          {
+            "line": 109,
+            "text": "\t@Test"
+          },
+          {
+            "line": 110,
+            "text": "\tvoid convertNullSource() {"
+          },
+          {
+            "line": 111,
+            "text": "\t\tassertThat(conversionService.convert(null, Integer.class)).isNull();"
+          },
+          {
+            "line": 112,
+            "text": "\t}"
+          },
+          {
+            "line": 113,
+            "text": ""
+          },
+          {
+            "line": 114,
+            "text": "\t@Test"
+          }
+        ]
+      },
+      {
+        "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor_6518014",
+        "path": "spring-core/src/test/java/org/springframework/core/convert/support/GenericConversionServiceTests.java",
+        "sha256": "5d9183a6ef6ffee32d2308e8fd2c90fd1085a6162bacf4dc3c7ed7493bcc3ec5",
+        "startLine": 394,
+        "endLine": 422,
+        "lines": [
+          {
+            "line": 394,
+            "text": "\tvoid canConvertIllegalArgumentNullTargetTypeFromClass() {"
+          },
+          {
+            "line": 395,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 396,
+            "text": "\t\t\t\tconversionService.canConvert(String.class, null));"
+          },
+          {
+            "line": 397,
+            "text": "\t}"
+          },
+          {
+            "line": 398,
+            "text": ""
+          },
+          {
+            "line": 399,
+            "text": "\t@Test"
+          },
+          {
+            "line": 400,
+            "text": "\tvoid canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor() {"
+          },
+          {
+            "line": 401,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 402,
+            "text": "\t\t\t\tconversionService.canConvert(TypeDescriptor.valueOf(String.class), null));"
+          },
+          {
+            "line": 403,
+            "text": "\t}"
+          },
+          {
+            "line": 404,
+            "text": ""
+          },
+          {
+            "line": 405,
+            "text": "\t@Test"
+          },
+          {
+            "line": 406,
+            "text": "\tvoid removeConvertible() {"
+          },
+          {
+            "line": 407,
+            "text": "\t\tconversionService.addConverter(new ColorConverter());"
+          },
+          {
+            "line": 408,
+            "text": "\t\tassertThat(conversionService.canConvert(String.class, Color.class)).isTrue();"
+          },
+          {
+            "line": 409,
+            "text": "\t\tconversionService.removeConvertible(String.class, Color.class);"
+          },
+          {
+            "line": 410,
+            "text": "\t\tassertThat(conversionService.canConvert(String.class, Color.class)).isFalse();"
+          },
+          {
+            "line": 411,
+            "text": "\t}"
+          },
+          {
+            "line": 412,
+            "text": ""
+          },
+          {
+            "line": 413,
+            "text": "\t@Test"
+          },
+          {
+            "line": 414,
+            "text": "\tvoid conditionalConverter() {"
+          },
+          {
+            "line": 415,
+            "text": "\t\tMyConditionalConverter converter = new MyConditionalConverter();"
+          },
+          {
+            "line": 416,
+            "text": "\t\tconversionService.addConverter(new ColorConverter());"
+          },
+          {
+            "line": 417,
+            "text": "\t\tconversionService.addConverter(converter);"
+          },
+          {
+            "line": 418,
+            "text": "\t\tassertThat(conversionService.convert(\"#000000\", Color.class)).isEqualTo(Color.BLACK);"
+          },
+          {
+            "line": 419,
+            "text": "\t\tassertThat(converter.getMatchAttempts()).isGreaterThan(0);"
+          },
+          {
+            "line": 420,
+            "text": "\t}"
+          },
+          {
+            "line": 421,
+            "text": ""
+          },
+          {
+            "line": 422,
+            "text": "\t@Test"
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "GenericConversionServiceTests#canConvertFromTypeDescriptorSourceTypeToNullTargetType_1c4b620",
+        "type": "A",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.core.convert.support.GenericConversionService#<init>"
+        ]
+      },
+      {
+        "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromTypeDescriptor_6518014",
+        "type": "A",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.core.convert.support.GenericConversionService#<init>"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main",
+        "org.springframework.core.convert.support.GenericConversionService"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+      "classSha256": "30e53f58d2459cde697e3977db239df80f5fd38c92e67d3a29507ab6ef981419",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;|164|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:24",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "production": [
+      {
+        "path": "spring-core/src/main/java/org/springframework/core/convert/support/GenericConversionService.java",
+        "sha256": "77baa08c72d406887f74e43ff3fd105bdfa84b2b78f58b6a21e1b19c1c48553c",
+        "startLine": 149,
+        "endLine": 186,
+        "lines": [
+          {
+            "line": 149,
+            "text": "\t * (may be {@code null} if source is {@code null})"
+          },
+          {
+            "line": 150,
+            "text": "\t * @param targetType context about the target type to convert to (required)"
+          },
+          {
+            "line": 151,
+            "text": "\t * @return {@code true} if conversion can be bypassed; {@code false} otherwise"
+          },
+          {
+            "line": 152,
+            "text": "\t * @throws IllegalArgumentException if targetType is {@code null}"
+          },
+          {
+            "line": 153,
+            "text": "\t * @since 3.2"
+          },
+          {
+            "line": 154,
+            "text": "\t */"
+          },
+          {
+            "line": 155,
+            "text": "\tpublic boolean canBypassConvert(@Nullable TypeDescriptor sourceType, TypeDescriptor targetType) {"
+          },
+          {
+            "line": 156,
+            "text": "\t\tAssert.notNull(targetType, \"Target type to convert to cannot be null\");"
+          },
+          {
+            "line": 157,
+            "text": "\t\treturn (sourceType == null || getConverter(sourceType, targetType) == NO_OP_CONVERTER);"
+          },
+          {
+            "line": 158,
+            "text": "\t}"
+          },
+          {
+            "line": 159,
+            "text": ""
+          },
+          {
+            "line": 160,
+            "text": "\t@SuppressWarnings(\"unchecked\")"
+          },
+          {
+            "line": 161,
+            "text": "\t@Override"
+          },
+          {
+            "line": 162,
+            "text": "\t@Nullable"
+          },
+          {
+            "line": 163,
+            "text": "\tpublic <T> T convert(@Nullable Object source, Class<T> targetType) {"
+          },
+          {
+            "line": 164,
+            "text": "\t\tAssert.notNull(targetType, \"Target type to convert to cannot be null\");"
+          },
+          {
+            "line": 165,
+            "text": "\t\treturn (T) convert(source, TypeDescriptor.forObject(source), TypeDescriptor.valueOf(targetType));"
+          },
+          {
+            "line": 166,
+            "text": "\t}"
+          },
+          {
+            "line": 167,
+            "text": ""
+          },
+          {
+            "line": 168,
+            "text": "\t@Override"
+          },
+          {
+            "line": 169,
+            "text": "\t@Nullable"
+          },
+          {
+            "line": 170,
+            "text": "\tpublic Object convert(@Nullable Object source, @Nullable TypeDescriptor sourceType, TypeDescriptor targetType) {"
+          },
+          {
+            "line": 171,
+            "text": "\t\tAssert.notNull(targetType, \"Target type to convert to cannot be null\");"
+          },
+          {
+            "line": 172,
+            "text": "\t\tif (sourceType == null) {"
+          },
+          {
+            "line": 173,
+            "text": "\t\t\tAssert.isTrue(source == null, \"Source must be [null] if source type == [null]\");"
+          },
+          {
+            "line": 174,
+            "text": "\t\t\treturn handleResult(null, targetType, convertNullSource(null, targetType));"
+          },
+          {
+            "line": 175,
+            "text": "\t\t}"
+          },
+          {
+            "line": 176,
+            "text": "\t\tif (source != null && !sourceType.getObjectType().isInstance(source)) {"
+          },
+          {
+            "line": 177,
+            "text": "\t\t\tthrow new IllegalArgumentException(\"Source to convert from must be an instance of [\" +"
+          },
+          {
+            "line": 178,
+            "text": "\t\t\t\t\tsourceType + \"]; instead it was a [\" + source.getClass().getName() + \"]\");"
+          },
+          {
+            "line": 179,
+            "text": "\t\t}"
+          },
+          {
+            "line": 180,
+            "text": "\t\tGenericConverter converter = getConverter(sourceType, targetType);"
+          },
+          {
+            "line": 181,
+            "text": "\t\tif (converter != null) {"
+          },
+          {
+            "line": 182,
+            "text": "\t\t\tObject result = ConversionUtils.invokeConverter(converter, source, sourceType, targetType);"
+          },
+          {
+            "line": 183,
+            "text": "\t\t\treturn handleResult(sourceType, targetType, result);"
+          },
+          {
+            "line": 184,
+            "text": "\t\t}"
+          },
+          {
+            "line": 185,
+            "text": "\t\treturn handleConverterNotFound(source, sourceType, targetType);"
+          },
+          {
+            "line": 186,
+            "text": "\t}"
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "GenericConversionServiceTests#convertToNullTargetClass_2b9458d",
+        "path": "spring-core/src/test/java/org/springframework/core/convert/support/GenericConversionServiceTests.java",
+        "sha256": "5d9183a6ef6ffee32d2308e8fd2c90fd1085a6162bacf4dc3c7ed7493bcc3ec5",
+        "startLine": 160,
+        "endLine": 188,
+        "lines": [
+          {
+            "line": 160,
+            "text": "\t@Test"
+          },
+          {
+            "line": 161,
+            "text": "\tvoid convertNull() {"
+          },
+          {
+            "line": 162,
+            "text": "\t\tassertThat(conversionService.convert(null, Integer.class)).isNull();"
+          },
+          {
+            "line": 163,
+            "text": "\t}"
+          },
+          {
+            "line": 164,
+            "text": ""
+          },
+          {
+            "line": 165,
+            "text": "\t@Test"
+          },
+          {
+            "line": 166,
+            "text": "\tvoid convertToNullTargetClass() {"
+          },
+          {
+            "line": 167,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 168,
+            "text": "\t\t\t\tconversionService.convert(\"3\", (Class<?>) null));"
+          },
+          {
+            "line": 169,
+            "text": "\t}"
+          },
+          {
+            "line": 170,
+            "text": ""
+          },
+          {
+            "line": 171,
+            "text": "\t@Test"
+          },
+          {
+            "line": 172,
+            "text": "\tvoid convertToNullTargetTypeDescriptor() {"
+          },
+          {
+            "line": 173,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 174,
+            "text": "\t\t\t\tconversionService.convert(\"3\", TypeDescriptor.valueOf(String.class), null));"
+          },
+          {
+            "line": 175,
+            "text": "\t}"
+          },
+          {
+            "line": 176,
+            "text": ""
+          },
+          {
+            "line": 177,
+            "text": "\t@Test"
+          },
+          {
+            "line": 178,
+            "text": "\tvoid convertWrongSourceTypeDescriptor() {"
+          },
+          {
+            "line": 179,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 180,
+            "text": "\t\t\t\tconversionService.convert(\"3\", TypeDescriptor.valueOf(Integer.class), TypeDescriptor.valueOf(Long.class)));"
+          },
+          {
+            "line": 181,
+            "text": "\t}"
+          },
+          {
+            "line": 182,
+            "text": ""
+          },
+          {
+            "line": 183,
+            "text": "\t@Test"
+          },
+          {
+            "line": 184,
+            "text": "\tvoid convertWrongTypeArgument() {"
+          },
+          {
+            "line": 185,
+            "text": "\t\tconversionService.addConverterFactory(new StringToNumberConverterFactory());"
+          },
+          {
+            "line": 186,
+            "text": "\t\tassertThatExceptionOfType(ConversionFailedException.class).isThrownBy(() ->"
+          },
+          {
+            "line": 187,
+            "text": "\t\t\t\tconversionService.convert(\"BOGUS\", Integer.class));"
+          },
+          {
+            "line": 188,
+            "text": "\t}"
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "GenericConversionServiceTests#convertToNullTargetClass_2b9458d",
+        "type": "A",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.core.convert.support.GenericConversionService#<init>"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main",
+        "org.springframework.core.convert.support.GenericConversionService"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+      "classSha256": "30e53f58d2459cde697e3977db239df80f5fd38c92e67d3a29507ab6ef981419",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|convert|(Ljava/lang/Object;Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Ljava/lang/Object;|171|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:31",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "production": [
+      {
+        "path": "spring-core/src/main/java/org/springframework/core/convert/support/GenericConversionService.java",
+        "sha256": "77baa08c72d406887f74e43ff3fd105bdfa84b2b78f58b6a21e1b19c1c48553c",
+        "startLine": 156,
+        "endLine": 193,
+        "lines": [
+          {
+            "line": 156,
+            "text": "\t\tAssert.notNull(targetType, \"Target type to convert to cannot be null\");"
+          },
+          {
+            "line": 157,
+            "text": "\t\treturn (sourceType == null || getConverter(sourceType, targetType) == NO_OP_CONVERTER);"
+          },
+          {
+            "line": 158,
+            "text": "\t}"
+          },
+          {
+            "line": 159,
+            "text": ""
+          },
+          {
+            "line": 160,
+            "text": "\t@SuppressWarnings(\"unchecked\")"
+          },
+          {
+            "line": 161,
+            "text": "\t@Override"
+          },
+          {
+            "line": 162,
+            "text": "\t@Nullable"
+          },
+          {
+            "line": 163,
+            "text": "\tpublic <T> T convert(@Nullable Object source, Class<T> targetType) {"
+          },
+          {
+            "line": 164,
+            "text": "\t\tAssert.notNull(targetType, \"Target type to convert to cannot be null\");"
+          },
+          {
+            "line": 165,
+            "text": "\t\treturn (T) convert(source, TypeDescriptor.forObject(source), TypeDescriptor.valueOf(targetType));"
+          },
+          {
+            "line": 166,
+            "text": "\t}"
+          },
+          {
+            "line": 167,
+            "text": ""
+          },
+          {
+            "line": 168,
+            "text": "\t@Override"
+          },
+          {
+            "line": 169,
+            "text": "\t@Nullable"
+          },
+          {
+            "line": 170,
+            "text": "\tpublic Object convert(@Nullable Object source, @Nullable TypeDescriptor sourceType, TypeDescriptor targetType) {"
+          },
+          {
+            "line": 171,
+            "text": "\t\tAssert.notNull(targetType, \"Target type to convert to cannot be null\");"
+          },
+          {
+            "line": 172,
+            "text": "\t\tif (sourceType == null) {"
+          },
+          {
+            "line": 173,
+            "text": "\t\t\tAssert.isTrue(source == null, \"Source must be [null] if source type == [null]\");"
+          },
+          {
+            "line": 174,
+            "text": "\t\t\treturn handleResult(null, targetType, convertNullSource(null, targetType));"
+          },
+          {
+            "line": 175,
+            "text": "\t\t}"
+          },
+          {
+            "line": 176,
+            "text": "\t\tif (source != null && !sourceType.getObjectType().isInstance(source)) {"
+          },
+          {
+            "line": 177,
+            "text": "\t\t\tthrow new IllegalArgumentException(\"Source to convert from must be an instance of [\" +"
+          },
+          {
+            "line": 178,
+            "text": "\t\t\t\t\tsourceType + \"]; instead it was a [\" + source.getClass().getName() + \"]\");"
+          },
+          {
+            "line": 179,
+            "text": "\t\t}"
+          },
+          {
+            "line": 180,
+            "text": "\t\tGenericConverter converter = getConverter(sourceType, targetType);"
+          },
+          {
+            "line": 181,
+            "text": "\t\tif (converter != null) {"
+          },
+          {
+            "line": 182,
+            "text": "\t\t\tObject result = ConversionUtils.invokeConverter(converter, source, sourceType, targetType);"
+          },
+          {
+            "line": 183,
+            "text": "\t\t\treturn handleResult(sourceType, targetType, result);"
+          },
+          {
+            "line": 184,
+            "text": "\t\t}"
+          },
+          {
+            "line": 185,
+            "text": "\t\treturn handleConverterNotFound(source, sourceType, targetType);"
+          },
+          {
+            "line": 186,
+            "text": "\t}"
+          },
+          {
+            "line": 187,
+            "text": ""
+          },
+          {
+            "line": 188,
+            "text": "\t@Override"
+          },
+          {
+            "line": 189,
+            "text": "\tpublic String toString() {"
+          },
+          {
+            "line": 190,
+            "text": "\t\treturn this.converters.toString();"
+          },
+          {
+            "line": 191,
+            "text": "\t}"
+          },
+          {
+            "line": 192,
+            "text": ""
+          },
+          {
+            "line": 193,
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "GenericConversionServiceTests#convertToNullTargetTypeDescriptor_2a0041a",
+        "path": "spring-core/src/test/java/org/springframework/core/convert/support/GenericConversionServiceTests.java",
+        "sha256": "5d9183a6ef6ffee32d2308e8fd2c90fd1085a6162bacf4dc3c7ed7493bcc3ec5",
+        "startLine": 166,
+        "endLine": 194,
+        "lines": [
+          {
+            "line": 166,
+            "text": "\tvoid convertToNullTargetClass() {"
+          },
+          {
+            "line": 167,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 168,
+            "text": "\t\t\t\tconversionService.convert(\"3\", (Class<?>) null));"
+          },
+          {
+            "line": 169,
+            "text": "\t}"
+          },
+          {
+            "line": 170,
+            "text": ""
+          },
+          {
+            "line": 171,
+            "text": "\t@Test"
+          },
+          {
+            "line": 172,
+            "text": "\tvoid convertToNullTargetTypeDescriptor() {"
+          },
+          {
+            "line": 173,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 174,
+            "text": "\t\t\t\tconversionService.convert(\"3\", TypeDescriptor.valueOf(String.class), null));"
+          },
+          {
+            "line": 175,
+            "text": "\t}"
+          },
+          {
+            "line": 176,
+            "text": ""
+          },
+          {
+            "line": 177,
+            "text": "\t@Test"
+          },
+          {
+            "line": 178,
+            "text": "\tvoid convertWrongSourceTypeDescriptor() {"
+          },
+          {
+            "line": 179,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 180,
+            "text": "\t\t\t\tconversionService.convert(\"3\", TypeDescriptor.valueOf(Integer.class), TypeDescriptor.valueOf(Long.class)));"
+          },
+          {
+            "line": 181,
+            "text": "\t}"
+          },
+          {
+            "line": 182,
+            "text": ""
+          },
+          {
+            "line": 183,
+            "text": "\t@Test"
+          },
+          {
+            "line": 184,
+            "text": "\tvoid convertWrongTypeArgument() {"
+          },
+          {
+            "line": 185,
+            "text": "\t\tconversionService.addConverterFactory(new StringToNumberConverterFactory());"
+          },
+          {
+            "line": 186,
+            "text": "\t\tassertThatExceptionOfType(ConversionFailedException.class).isThrownBy(() ->"
+          },
+          {
+            "line": 187,
+            "text": "\t\t\t\tconversionService.convert(\"BOGUS\", Integer.class));"
+          },
+          {
+            "line": 188,
+            "text": "\t}"
+          },
+          {
+            "line": 189,
+            "text": ""
+          },
+          {
+            "line": 190,
+            "text": "\t@Test"
+          },
+          {
+            "line": 191,
+            "text": "\tvoid convertSuperSourceType() {"
+          },
+          {
+            "line": 192,
+            "text": "\t\tconversionService.addConverter(CharSequence.class, Integer.class, source -> Integer.valueOf(source.toString()));"
+          },
+          {
+            "line": 193,
+            "text": "\t\tInteger result = conversionService.convert(\"3\", Integer.class);"
+          },
+          {
+            "line": 194,
+            "text": "\t\tassertThat(result).isEqualTo(3);"
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "GenericConversionServiceTests#convertToNullTargetTypeDescriptor_2a0041a",
+        "type": "A",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.core.convert.support.GenericConversionService#<init>"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main",
+        "org.springframework.core.convert.support.GenericConversionService"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.convert.support.GenericConversionService.txt",
+      "classSha256": "30e53f58d2459cde697e3977db239df80f5fd38c92e67d3a29507ab6ef981419",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  },
+  {
+    "mutationId": "spring-core|org.springframework.core.task.SimpleAsyncTaskExecutor|execute|(Ljava/lang/Runnable;J)V|264|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml.gz:14",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "production": [
+      {
+        "path": "spring-core/src/main/java/org/springframework/core/task/SimpleAsyncTaskExecutor.java",
+        "sha256": "5fc408bf0fa6b0f595a5cab89cced53da82a7406321750f77989704d3117ef77",
+        "startLine": 249,
+        "endLine": 286,
+        "lines": [
+          {
+            "line": 249,
+            "text": "\t\texecute(task, TIMEOUT_INDEFINITE);"
+          },
+          {
+            "line": 250,
+            "text": "\t}"
+          },
+          {
+            "line": 251,
+            "text": ""
+          },
+          {
+            "line": 252,
+            "text": "\t/**"
+          },
+          {
+            "line": 253,
+            "text": "\t * Executes the given task, within a concurrency throttle"
+          },
+          {
+            "line": 254,
+            "text": "\t * if configured (through the superclass's settings)."
+          },
+          {
+            "line": 255,
+            "text": "\t * <p>Executes urgent tasks (with 'immediate' timeout) directly,"
+          },
+          {
+            "line": 256,
+            "text": "\t * bypassing the concurrency throttle (if active). All other"
+          },
+          {
+            "line": 257,
+            "text": "\t * tasks are subject to throttling."
+          },
+          {
+            "line": 258,
+            "text": "\t * @see #TIMEOUT_IMMEDIATE"
+          },
+          {
+            "line": 259,
+            "text": "\t * @see #doExecute(Runnable)"
+          },
+          {
+            "line": 260,
+            "text": "\t */"
+          },
+          {
+            "line": 261,
+            "text": "\t@Deprecated"
+          },
+          {
+            "line": 262,
+            "text": "\t@Override"
+          },
+          {
+            "line": 263,
+            "text": "\tpublic void execute(Runnable task, long startTimeout) {"
+          },
+          {
+            "line": 264,
+            "text": "\t\tAssert.notNull(task, \"Runnable must not be null\");"
+          },
+          {
+            "line": 265,
+            "text": "\t\tif (!isActive()) {"
+          },
+          {
+            "line": 266,
+            "text": "\t\t\tthrow new TaskRejectedException(getClass().getSimpleName() + \" has been closed already\");"
+          },
+          {
+            "line": 267,
+            "text": "\t\t}"
+          },
+          {
+            "line": 268,
+            "text": ""
+          },
+          {
+            "line": 269,
+            "text": "\t\tRunnable taskToUse = (this.taskDecorator != null ? this.taskDecorator.decorate(task) : task);"
+          },
+          {
+            "line": 270,
+            "text": "\t\tif (isThrottleActive() && startTimeout > TIMEOUT_IMMEDIATE) {"
+          },
+          {
+            "line": 271,
+            "text": "\t\t\tthis.concurrencyThrottle.beforeAccess();"
+          },
+          {
+            "line": 272,
+            "text": "\t\t\tdoExecute(new TaskTrackingRunnable(taskToUse));"
+          },
+          {
+            "line": 273,
+            "text": "\t\t}"
+          },
+          {
+            "line": 274,
+            "text": "\t\telse if (this.activeThreads != null) {"
+          },
+          {
+            "line": 275,
+            "text": "\t\t\tdoExecute(new TaskTrackingRunnable(taskToUse));"
+          },
+          {
+            "line": 276,
+            "text": "\t\t}"
+          },
+          {
+            "line": 277,
+            "text": "\t\telse {"
+          },
+          {
+            "line": 278,
+            "text": "\t\t\tdoExecute(taskToUse);"
+          },
+          {
+            "line": 279,
+            "text": "\t\t}"
+          },
+          {
+            "line": 280,
+            "text": "\t}"
+          },
+          {
+            "line": 281,
+            "text": ""
+          },
+          {
+            "line": 282,
+            "text": "\t@SuppressWarnings(\"deprecation\")"
+          },
+          {
+            "line": 283,
+            "text": "\t@Override"
+          },
+          {
+            "line": 284,
+            "text": "\tpublic Future<?> submit(Runnable task) {"
+          },
+          {
+            "line": 285,
+            "text": "\t\tFutureTask<Object> future = new FutureTask<>(task, null);"
+          },
+          {
+            "line": 286,
+            "text": "\t\texecute(future, TIMEOUT_INDEFINITE);"
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable_1b9ea4e",
+        "path": "spring-core/src/test/java/org/springframework/core/task/SimpleAsyncTaskExecutorTests.java",
+        "sha256": "1cae53013cea70fed8d7ae6cd154b2ac30bb6f48c6b67476ddfe3577107f3961",
+        "startLine": 64,
+        "endLine": 92,
+        "lines": [
+          {
+            "line": 64,
+            "text": "\t\tThreadNameHarvester task = new ThreadNameHarvester(monitor);"
+          },
+          {
+            "line": 65,
+            "text": "\t\texecuteAndWait(executor, task, monitor);"
+          },
+          {
+            "line": 66,
+            "text": "\t\tassertThat(task.getThreadName()).isEqualTo(\"test\");"
+          },
+          {
+            "line": 67,
+            "text": "\t}"
+          },
+          {
+            "line": 68,
+            "text": ""
+          },
+          {
+            "line": 69,
+            "text": "\t@Test"
+          },
+          {
+            "line": 70,
+            "text": "\tvoid throwsExceptionWhenSuppliedWithNullRunnable() {"
+          },
+          {
+            "line": 71,
+            "text": "\t\ttry (SimpleAsyncTaskExecutor executor = new SimpleAsyncTaskExecutor()) {"
+          },
+          {
+            "line": 72,
+            "text": "\t\t\tassertThatIllegalArgumentException().isThrownBy(() -> executor.execute(null));"
+          },
+          {
+            "line": 73,
+            "text": "\t\t}"
+          },
+          {
+            "line": 74,
+            "text": "\t}"
+          },
+          {
+            "line": 75,
+            "text": ""
+          },
+          {
+            "line": 76,
+            "text": "\tprivate void executeAndWait(SimpleAsyncTaskExecutor executor, Runnable task, Object monitor) {"
+          },
+          {
+            "line": 77,
+            "text": "\t\tsynchronized (monitor) {"
+          },
+          {
+            "line": 78,
+            "text": "\t\t\texecutor.execute(task);"
+          },
+          {
+            "line": 79,
+            "text": "\t\t\ttry {"
+          },
+          {
+            "line": 80,
+            "text": "\t\t\t\tmonitor.wait();"
+          },
+          {
+            "line": 81,
+            "text": "\t\t\t}"
+          },
+          {
+            "line": 82,
+            "text": "\t\t\tcatch (InterruptedException ignored) {"
+          },
+          {
+            "line": 83,
+            "text": "\t\t\t}"
+          },
+          {
+            "line": 84,
+            "text": "\t\t}"
+          },
+          {
+            "line": 85,
+            "text": "\t}"
+          },
+          {
+            "line": 86,
+            "text": ""
+          },
+          {
+            "line": 87,
+            "text": ""
+          },
+          {
+            "line": 88,
+            "text": "\tprivate static final class NoOpRunnable implements Runnable {"
+          },
+          {
+            "line": 89,
+            "text": ""
+          },
+          {
+            "line": 90,
+            "text": "\t\t@Override"
+          },
+          {
+            "line": 91,
+            "text": "\t\tpublic void run() {"
+          },
+          {
+            "line": 92,
+            "text": "\t\t\t// no-op"
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "SimpleAsyncTaskExecutorTests#throwsExceptionWhenSuppliedWithNullRunnable_1b9ea4e",
+        "type": "B",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.core.task.SimpleAsyncTaskExecutor#<init>",
+          "org.springframework.core.task.SimpleAsyncTaskExecutor#close"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main",
+        "org.springframework.core.task.SimpleAsyncTaskExecutor"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.core.task.SimpleAsyncTaskExecutor.txt",
+      "classSha256": "2e6cc4c483bf2620d69a89d994afa611e5675a79fd440e56a7a8d227f8a9b538",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  },
+  {
+    "mutationId": "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)V|539|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:25",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "production": [
+      {
+        "path": "spring-core/src/main/java/org/springframework/util/Assert.java",
+        "sha256": "a66bf9a6b357fe7fab27db71fb2770109b1330be854ad37fb898d69f7e3d6e47",
+        "startLine": 524,
+        "endLine": 561,
+        "lines": [
+          {
+            "line": 524,
+            "text": "\t}"
+          },
+          {
+            "line": 525,
+            "text": ""
+          },
+          {
+            "line": 526,
+            "text": "\t/**"
+          },
+          {
+            "line": 527,
+            "text": "\t * Assert that {@code superType.isAssignableFrom(subType)} is {@code true}."
+          },
+          {
+            "line": 528,
+            "text": "\t * <pre class=\"code\">Assert.isAssignable(Number.class, myClass, \"Number expected\");</pre>"
+          },
+          {
+            "line": 529,
+            "text": "\t * @param superType the supertype to check against"
+          },
+          {
+            "line": 530,
+            "text": "\t * @param subType the subtype to check"
+          },
+          {
+            "line": 531,
+            "text": "\t * @param message a message which will be prepended to provide further context."
+          },
+          {
+            "line": 532,
+            "text": "\t * If it is empty or ends in \":\" or \";\" or \",\" or \".\", a full exception message"
+          },
+          {
+            "line": 533,
+            "text": "\t * will be appended. If it ends in a space, the name of the offending subtype"
+          },
+          {
+            "line": 534,
+            "text": "\t * will be appended. In any other case, a \":\" with a space and the name of the"
+          },
+          {
+            "line": 535,
+            "text": "\t * offending subtype will be appended."
+          },
+          {
+            "line": 536,
+            "text": "\t * @throws IllegalArgumentException if the classes are not assignable"
+          },
+          {
+            "line": 537,
+            "text": "\t */"
+          },
+          {
+            "line": 538,
+            "text": "\tpublic static void isAssignable(Class<?> superType, @Nullable Class<?> subType, String message) {"
+          },
+          {
+            "line": 539,
+            "text": "\t\tnotNull(superType, \"Supertype to check against must not be null\");"
+          },
+          {
+            "line": 540,
+            "text": "\t\tif (subType == null || !superType.isAssignableFrom(subType)) {"
+          },
+          {
+            "line": 541,
+            "text": "\t\t\tassignableCheckFailed(superType, subType, message);"
+          },
+          {
+            "line": 542,
+            "text": "\t\t}"
+          },
+          {
+            "line": 543,
+            "text": "\t}"
+          },
+          {
+            "line": 544,
+            "text": ""
+          },
+          {
+            "line": 545,
+            "text": "\t/**"
+          },
+          {
+            "line": 546,
+            "text": "\t * Assert that {@code superType.isAssignableFrom(subType)} is {@code true}."
+          },
+          {
+            "line": 547,
+            "text": "\t * <pre class=\"code\">"
+          },
+          {
+            "line": 548,
+            "text": "\t * Assert.isAssignable(Number.class, myClass, () -&gt; \"Processing \" + myAttributeName + \":\");"
+          },
+          {
+            "line": 549,
+            "text": "\t * </pre>"
+          },
+          {
+            "line": 550,
+            "text": "\t * @param superType the supertype to check against"
+          },
+          {
+            "line": 551,
+            "text": "\t * @param subType the subtype to check"
+          },
+          {
+            "line": 552,
+            "text": "\t * @param messageSupplier a supplier for the exception message to use if the"
+          },
+          {
+            "line": 553,
+            "text": "\t * assertion fails. See {@link #isAssignable(Class, Class, String)} for details."
+          },
+          {
+            "line": 554,
+            "text": "\t * @throws IllegalArgumentException if the classes are not assignable"
+          },
+          {
+            "line": 555,
+            "text": "\t * @since 5.0"
+          },
+          {
+            "line": 556,
+            "text": "\t */"
+          },
+          {
+            "line": 557,
+            "text": "\tpublic static void isAssignable(Class<?> superType, @Nullable Class<?> subType, Supplier<String> messageSupplier) {"
+          },
+          {
+            "line": 558,
+            "text": "\t\tnotNull(superType, \"Supertype to check against must not be null\");"
+          },
+          {
+            "line": 559,
+            "text": "\t\tif (subType == null || !superType.isAssignableFrom(subType)) {"
+          },
+          {
+            "line": 560,
+            "text": "\t\t\tassignableCheckFailed(superType, subType, nullSafeGet(messageSupplier));"
+          },
+          {
+            "line": 561,
+            "text": "\t\t}"
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "AssertTests#isAssignableWithNullSupertype_49c6272",
+        "path": "spring-core/src/test/java/org/springframework/util/AssertTests.java",
+        "sha256": "9e10068c22a512787ab72c7a568c725aea81edb7c7eb118709d997b9646ecbcc",
+        "startLine": 639,
+        "endLine": 667,
+        "lines": [
+          {
+            "line": 639,
+            "text": "\t@Test"
+          },
+          {
+            "line": 640,
+            "text": "\tvoid isAssignable() {"
+          },
+          {
+            "line": 641,
+            "text": "\t\tAssert.isAssignable(Number.class, Integer.class, \"enigma\");"
+          },
+          {
+            "line": 642,
+            "text": "\t}"
+          },
+          {
+            "line": 643,
+            "text": ""
+          },
+          {
+            "line": 644,
+            "text": "\t@Test"
+          },
+          {
+            "line": 645,
+            "text": "\tvoid isAssignableWithNullSupertype() {"
+          },
+          {
+            "line": 646,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 647,
+            "text": "\t\t\t\tAssert.isAssignable(null, Integer.class, \"enigma\"))"
+          },
+          {
+            "line": 648,
+            "text": "\t\t\t.withMessageContaining(\"Supertype to check against must not be null\");"
+          },
+          {
+            "line": 649,
+            "text": "\t}"
+          },
+          {
+            "line": 650,
+            "text": ""
+          },
+          {
+            "line": 651,
+            "text": "\t@Test"
+          },
+          {
+            "line": 652,
+            "text": "\tvoid isAssignableWithNullSubtype() {"
+          },
+          {
+            "line": 653,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 654,
+            "text": "\t\t\t\tAssert.isAssignable(Integer.class, null, \"enigma\"))"
+          },
+          {
+            "line": 655,
+            "text": "\t\t\t.withMessageContaining(\"enigma: null\");"
+          },
+          {
+            "line": 656,
+            "text": "\t}"
+          },
+          {
+            "line": 657,
+            "text": ""
+          },
+          {
+            "line": 658,
+            "text": "\t@Test"
+          },
+          {
+            "line": 659,
+            "text": "\tvoid isAssignableWithTypeMismatchAndNullMessage() {"
+          },
+          {
+            "line": 660,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 661,
+            "text": "\t\t\t\tAssert.isAssignable(String.class, Integer.class, (String) null))"
+          },
+          {
+            "line": 662,
+            "text": "\t\t\t.withMessageContaining(\"class java.lang.Integer is not assignable to class java.lang.String\");"
+          },
+          {
+            "line": 663,
+            "text": "\t}"
+          },
+          {
+            "line": 664,
+            "text": ""
+          },
+          {
+            "line": 665,
+            "text": "\t@Test"
+          },
+          {
+            "line": 666,
+            "text": "\tvoid isAssignableWithTypeMismatchAndCustomMessage() {"
+          },
+          {
+            "line": 667,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "AssertTests#isAssignableWithNullSupertype_49c6272",
+        "type": "B",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.util.Assert#notNull"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main",
+        "org.springframework.util.Assert"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+      "classSha256": "714f1b78daa69cb17fe8bcd4c4cce22aaf4bb03b2e45163b0cb424935d8dc657",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  },
+  {
+    "mutationId": "spring-core|org.springframework.util.Assert|isAssignable|(Ljava/lang/Class;Ljava/lang/Class;Ljava/util/function/Supplier;)V|558|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:29",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "production": [
+      {
+        "path": "spring-core/src/main/java/org/springframework/util/Assert.java",
+        "sha256": "a66bf9a6b357fe7fab27db71fb2770109b1330be854ad37fb898d69f7e3d6e47",
+        "startLine": 543,
+        "endLine": 580,
+        "lines": [
+          {
+            "line": 543,
+            "text": "\t}"
+          },
+          {
+            "line": 544,
+            "text": ""
+          },
+          {
+            "line": 545,
+            "text": "\t/**"
+          },
+          {
+            "line": 546,
+            "text": "\t * Assert that {@code superType.isAssignableFrom(subType)} is {@code true}."
+          },
+          {
+            "line": 547,
+            "text": "\t * <pre class=\"code\">"
+          },
+          {
+            "line": 548,
+            "text": "\t * Assert.isAssignable(Number.class, myClass, () -&gt; \"Processing \" + myAttributeName + \":\");"
+          },
+          {
+            "line": 549,
+            "text": "\t * </pre>"
+          },
+          {
+            "line": 550,
+            "text": "\t * @param superType the supertype to check against"
+          },
+          {
+            "line": 551,
+            "text": "\t * @param subType the subtype to check"
+          },
+          {
+            "line": 552,
+            "text": "\t * @param messageSupplier a supplier for the exception message to use if the"
+          },
+          {
+            "line": 553,
+            "text": "\t * assertion fails. See {@link #isAssignable(Class, Class, String)} for details."
+          },
+          {
+            "line": 554,
+            "text": "\t * @throws IllegalArgumentException if the classes are not assignable"
+          },
+          {
+            "line": 555,
+            "text": "\t * @since 5.0"
+          },
+          {
+            "line": 556,
+            "text": "\t */"
+          },
+          {
+            "line": 557,
+            "text": "\tpublic static void isAssignable(Class<?> superType, @Nullable Class<?> subType, Supplier<String> messageSupplier) {"
+          },
+          {
+            "line": 558,
+            "text": "\t\tnotNull(superType, \"Supertype to check against must not be null\");"
+          },
+          {
+            "line": 559,
+            "text": "\t\tif (subType == null || !superType.isAssignableFrom(subType)) {"
+          },
+          {
+            "line": 560,
+            "text": "\t\t\tassignableCheckFailed(superType, subType, nullSafeGet(messageSupplier));"
+          },
+          {
+            "line": 561,
+            "text": "\t\t}"
+          },
+          {
+            "line": 562,
+            "text": "\t}"
+          },
+          {
+            "line": 563,
+            "text": ""
+          },
+          {
+            "line": 564,
+            "text": "\t/**"
+          },
+          {
+            "line": 565,
+            "text": "\t * Assert that {@code superType.isAssignableFrom(subType)} is {@code true}."
+          },
+          {
+            "line": 566,
+            "text": "\t * <pre class=\"code\">Assert.isAssignable(Number.class, myClass);</pre>"
+          },
+          {
+            "line": 567,
+            "text": "\t * @param superType the supertype to check"
+          },
+          {
+            "line": 568,
+            "text": "\t * @param subType the subtype to check"
+          },
+          {
+            "line": 569,
+            "text": "\t * @throws IllegalArgumentException if the classes are not assignable"
+          },
+          {
+            "line": 570,
+            "text": "\t */"
+          },
+          {
+            "line": 571,
+            "text": "\tpublic static void isAssignable(Class<?> superType, Class<?> subType) {"
+          },
+          {
+            "line": 572,
+            "text": "\t\tisAssignable(superType, subType, \"\");"
+          },
+          {
+            "line": 573,
+            "text": "\t}"
+          },
+          {
+            "line": 574,
+            "text": ""
+          },
+          {
+            "line": 575,
+            "text": ""
+          },
+          {
+            "line": 576,
+            "text": "\tprivate static void instanceCheckFailed(Class<?> type, @Nullable Object obj, @Nullable String msg) {"
+          },
+          {
+            "line": 577,
+            "text": "\t\tString className = (obj != null ? obj.getClass().getName() : \"null\");"
+          },
+          {
+            "line": 578,
+            "text": "\t\tString result = \"\";"
+          },
+          {
+            "line": 579,
+            "text": "\t\tboolean defaultMessage = true;"
+          },
+          {
+            "line": 580,
+            "text": "\t\tif (StringUtils.hasLength(msg)) {"
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier_7bdf456",
+        "path": "spring-core/src/test/java/org/springframework/util/AssertTests.java",
+        "sha256": "9e10068c22a512787ab72c7a568c725aea81edb7c7eb118709d997b9646ecbcc",
+        "startLine": 686,
+        "endLine": 714,
+        "lines": [
+          {
+            "line": 686,
+            "text": "\t@Test"
+          },
+          {
+            "line": 687,
+            "text": "\tvoid isAssignableWithMessageSupplier() {"
+          },
+          {
+            "line": 688,
+            "text": "\t\tAssert.isAssignable(Number.class, Integer.class, () -> \"enigma\");"
+          },
+          {
+            "line": 689,
+            "text": "\t}"
+          },
+          {
+            "line": 690,
+            "text": ""
+          },
+          {
+            "line": 691,
+            "text": "\t@Test"
+          },
+          {
+            "line": 692,
+            "text": "\tvoid isAssignableWithNullSupertypeAndMessageSupplier() {"
+          },
+          {
+            "line": 693,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 694,
+            "text": "\t\t\t\tAssert.isAssignable(null, Integer.class, () -> \"enigma\"))"
+          },
+          {
+            "line": 695,
+            "text": "\t\t\t.withMessageContaining(\"Supertype to check against must not be null\");"
+          },
+          {
+            "line": 696,
+            "text": "\t}"
+          },
+          {
+            "line": 697,
+            "text": ""
+          },
+          {
+            "line": 698,
+            "text": "\t@Test"
+          },
+          {
+            "line": 699,
+            "text": "\tvoid isAssignableWithNullSubtypeAndMessageSupplier() {"
+          },
+          {
+            "line": 700,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 701,
+            "text": "\t\t\t\tAssert.isAssignable(Integer.class, null, () -> \"enigma\"))"
+          },
+          {
+            "line": 702,
+            "text": "\t\t\t.withMessageContaining(\"enigma: null\");"
+          },
+          {
+            "line": 703,
+            "text": "\t}"
+          },
+          {
+            "line": 704,
+            "text": ""
+          },
+          {
+            "line": 705,
+            "text": "\t@Test"
+          },
+          {
+            "line": 706,
+            "text": "\tvoid isAssignableWithTypeMismatchAndNullMessageSupplier() {"
+          },
+          {
+            "line": 707,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 708,
+            "text": "\t\t\t\tAssert.isAssignable(String.class, Integer.class, (Supplier<String>) null))"
+          },
+          {
+            "line": 709,
+            "text": "\t\t\t.withMessageContaining(\"class java.lang.Integer is not assignable to class java.lang.String\");"
+          },
+          {
+            "line": 710,
+            "text": "\t}"
+          },
+          {
+            "line": 711,
+            "text": ""
+          },
+          {
+            "line": 712,
+            "text": "\t@Test"
+          },
+          {
+            "line": 713,
+            "text": "\tvoid isAssignableWithTypeMismatchAndMessageSupplier() {"
+          },
+          {
+            "line": 714,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "AssertTests#isAssignableWithNullSupertypeAndMessageSupplier_7bdf456",
+        "type": "B",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.util.Assert#notNull"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main",
+        "org.springframework.util.Assert"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+      "classSha256": "714f1b78daa69cb17fe8bcd4c4cce22aaf4bb03b2e45163b0cb424935d8dc657",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  },
+  {
+    "mutationId": "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;)V|490|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:33",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "production": [
+      {
+        "path": "spring-core/src/main/java/org/springframework/util/Assert.java",
+        "sha256": "a66bf9a6b357fe7fab27db71fb2770109b1330be854ad37fb898d69f7e3d6e47",
+        "startLine": 475,
+        "endLine": 512,
+        "lines": [
+          {
+            "line": 475,
+            "text": "\t}"
+          },
+          {
+            "line": 476,
+            "text": ""
+          },
+          {
+            "line": 477,
+            "text": "\t/**"
+          },
+          {
+            "line": 478,
+            "text": "\t * Assert that the provided object is an instance of the provided class."
+          },
+          {
+            "line": 479,
+            "text": "\t * <pre class=\"code\">Assert.instanceOf(Foo.class, foo, \"Foo expected\");</pre>"
+          },
+          {
+            "line": 480,
+            "text": "\t * @param type the type to check against"
+          },
+          {
+            "line": 481,
+            "text": "\t * @param obj the object to check"
+          },
+          {
+            "line": 482,
+            "text": "\t * @param message a message which will be prepended to provide further context."
+          },
+          {
+            "line": 483,
+            "text": "\t * If it is empty or ends in \":\" or \";\" or \",\" or \".\", a full exception message"
+          },
+          {
+            "line": 484,
+            "text": "\t * will be appended. If it ends in a space, the name of the offending object's"
+          },
+          {
+            "line": 485,
+            "text": "\t * type will be appended. In any other case, a \":\" with a space and the name"
+          },
+          {
+            "line": 486,
+            "text": "\t * of the offending object's type will be appended."
+          },
+          {
+            "line": 487,
+            "text": "\t * @throws IllegalArgumentException if the object is not an instance of type"
+          },
+          {
+            "line": 488,
+            "text": "\t */"
+          },
+          {
+            "line": 489,
+            "text": "\tpublic static void isInstanceOf(Class<?> type, @Nullable Object obj, String message) {"
+          },
+          {
+            "line": 490,
+            "text": "\t\tnotNull(type, \"Type to check against must not be null\");"
+          },
+          {
+            "line": 491,
+            "text": "\t\tif (!type.isInstance(obj)) {"
+          },
+          {
+            "line": 492,
+            "text": "\t\t\tinstanceCheckFailed(type, obj, message);"
+          },
+          {
+            "line": 493,
+            "text": "\t\t}"
+          },
+          {
+            "line": 494,
+            "text": "\t}"
+          },
+          {
+            "line": 495,
+            "text": ""
+          },
+          {
+            "line": 496,
+            "text": "\t/**"
+          },
+          {
+            "line": 497,
+            "text": "\t * Assert that the provided object is an instance of the provided class."
+          },
+          {
+            "line": 498,
+            "text": "\t * <pre class=\"code\">"
+          },
+          {
+            "line": 499,
+            "text": "\t * Assert.instanceOf(Foo.class, foo, () -&gt; \"Processing \" + Foo.class.getSimpleName() + \":\");"
+          },
+          {
+            "line": 500,
+            "text": "\t * </pre>"
+          },
+          {
+            "line": 501,
+            "text": "\t * @param type the type to check against"
+          },
+          {
+            "line": 502,
+            "text": "\t * @param obj the object to check"
+          },
+          {
+            "line": 503,
+            "text": "\t * @param messageSupplier a supplier for the exception message to use if the"
+          },
+          {
+            "line": 504,
+            "text": "\t * assertion fails. See {@link #isInstanceOf(Class, Object, String)} for details."
+          },
+          {
+            "line": 505,
+            "text": "\t * @throws IllegalArgumentException if the object is not an instance of type"
+          },
+          {
+            "line": 506,
+            "text": "\t * @since 5.0"
+          },
+          {
+            "line": 507,
+            "text": "\t */"
+          },
+          {
+            "line": 508,
+            "text": "\tpublic static void isInstanceOf(Class<?> type, @Nullable Object obj, Supplier<String> messageSupplier) {"
+          },
+          {
+            "line": 509,
+            "text": "\t\tnotNull(type, \"Type to check against must not be null\");"
+          },
+          {
+            "line": 510,
+            "text": "\t\tif (!type.isInstance(obj)) {"
+          },
+          {
+            "line": 511,
+            "text": "\t\t\tinstanceCheckFailed(type, obj, nullSafeGet(messageSupplier));"
+          },
+          {
+            "line": 512,
+            "text": "\t\t}"
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "AssertTests#isInstanceOfWithNullType_7d9d1f6",
+        "path": "spring-core/src/test/java/org/springframework/util/AssertTests.java",
+        "sha256": "9e10068c22a512787ab72c7a568c725aea81edb7c7eb118709d997b9646ecbcc",
+        "startLine": 559,
+        "endLine": 587,
+        "lines": [
+          {
+            "line": 559,
+            "text": "\t@Test"
+          },
+          {
+            "line": 560,
+            "text": "\tvoid isInstanceOf() {"
+          },
+          {
+            "line": 561,
+            "text": "\t\tAssert.isInstanceOf(String.class, \"foo\", \"enigma\");"
+          },
+          {
+            "line": 562,
+            "text": "\t}"
+          },
+          {
+            "line": 563,
+            "text": ""
+          },
+          {
+            "line": 564,
+            "text": "\t@Test"
+          },
+          {
+            "line": 565,
+            "text": "\tvoid isInstanceOfWithNullType() {"
+          },
+          {
+            "line": 566,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 567,
+            "text": "\t\t\t\tAssert.isInstanceOf(null, \"foo\", \"enigma\"))"
+          },
+          {
+            "line": 568,
+            "text": "\t\t\t.withMessageContaining(\"Type to check against must not be null\");"
+          },
+          {
+            "line": 569,
+            "text": "\t}"
+          },
+          {
+            "line": 570,
+            "text": ""
+          },
+          {
+            "line": 571,
+            "text": "\t@Test"
+          },
+          {
+            "line": 572,
+            "text": "\tvoid isInstanceOfWithNullInstance() {"
+          },
+          {
+            "line": 573,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 574,
+            "text": "\t\t\t\tAssert.isInstanceOf(String.class, null, \"enigma\"))"
+          },
+          {
+            "line": 575,
+            "text": "\t\t\t.withMessageContaining(\"enigma: null\");"
+          },
+          {
+            "line": 576,
+            "text": "\t}"
+          },
+          {
+            "line": 577,
+            "text": ""
+          },
+          {
+            "line": 578,
+            "text": "\t@Test"
+          },
+          {
+            "line": 579,
+            "text": "\tvoid isInstanceOfWithTypeMismatchAndNullMessage() {"
+          },
+          {
+            "line": 580,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 581,
+            "text": "\t\t\t\tAssert.isInstanceOf(String.class, 42L, (String) null))"
+          },
+          {
+            "line": 582,
+            "text": "\t\t\t.withMessageContaining(\"Object of class [java.lang.Long] must be an instance of class java.lang.String\");"
+          },
+          {
+            "line": 583,
+            "text": "\t}"
+          },
+          {
+            "line": 584,
+            "text": ""
+          },
+          {
+            "line": 585,
+            "text": "\t@Test"
+          },
+          {
+            "line": 586,
+            "text": "\tvoid isInstanceOfWithTypeMismatchAndCustomMessage() {"
+          },
+          {
+            "line": 587,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "AssertTests#isInstanceOfWithNullType_7d9d1f6",
+        "type": "B",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.util.Assert#notNull"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main",
+        "org.springframework.util.Assert"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+      "classSha256": "714f1b78daa69cb17fe8bcd4c4cce22aaf4bb03b2e45163b0cb424935d8dc657",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  },
+  {
+    "mutationId": "spring-core|org.springframework.util.Assert|isInstanceOf|(Ljava/lang/Class;Ljava/lang/Object;Ljava/util/function/Supplier;)V|509|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml.gz:36",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "production": [
+      {
+        "path": "spring-core/src/main/java/org/springframework/util/Assert.java",
+        "sha256": "a66bf9a6b357fe7fab27db71fb2770109b1330be854ad37fb898d69f7e3d6e47",
+        "startLine": 494,
+        "endLine": 531,
+        "lines": [
+          {
+            "line": 494,
+            "text": "\t}"
+          },
+          {
+            "line": 495,
+            "text": ""
+          },
+          {
+            "line": 496,
+            "text": "\t/**"
+          },
+          {
+            "line": 497,
+            "text": "\t * Assert that the provided object is an instance of the provided class."
+          },
+          {
+            "line": 498,
+            "text": "\t * <pre class=\"code\">"
+          },
+          {
+            "line": 499,
+            "text": "\t * Assert.instanceOf(Foo.class, foo, () -&gt; \"Processing \" + Foo.class.getSimpleName() + \":\");"
+          },
+          {
+            "line": 500,
+            "text": "\t * </pre>"
+          },
+          {
+            "line": 501,
+            "text": "\t * @param type the type to check against"
+          },
+          {
+            "line": 502,
+            "text": "\t * @param obj the object to check"
+          },
+          {
+            "line": 503,
+            "text": "\t * @param messageSupplier a supplier for the exception message to use if the"
+          },
+          {
+            "line": 504,
+            "text": "\t * assertion fails. See {@link #isInstanceOf(Class, Object, String)} for details."
+          },
+          {
+            "line": 505,
+            "text": "\t * @throws IllegalArgumentException if the object is not an instance of type"
+          },
+          {
+            "line": 506,
+            "text": "\t * @since 5.0"
+          },
+          {
+            "line": 507,
+            "text": "\t */"
+          },
+          {
+            "line": 508,
+            "text": "\tpublic static void isInstanceOf(Class<?> type, @Nullable Object obj, Supplier<String> messageSupplier) {"
+          },
+          {
+            "line": 509,
+            "text": "\t\tnotNull(type, \"Type to check against must not be null\");"
+          },
+          {
+            "line": 510,
+            "text": "\t\tif (!type.isInstance(obj)) {"
+          },
+          {
+            "line": 511,
+            "text": "\t\t\tinstanceCheckFailed(type, obj, nullSafeGet(messageSupplier));"
+          },
+          {
+            "line": 512,
+            "text": "\t\t}"
+          },
+          {
+            "line": 513,
+            "text": "\t}"
+          },
+          {
+            "line": 514,
+            "text": ""
+          },
+          {
+            "line": 515,
+            "text": "\t/**"
+          },
+          {
+            "line": 516,
+            "text": "\t * Assert that the provided object is an instance of the provided class."
+          },
+          {
+            "line": 517,
+            "text": "\t * <pre class=\"code\">Assert.instanceOf(Foo.class, foo);</pre>"
+          },
+          {
+            "line": 518,
+            "text": "\t * @param type the type to check against"
+          },
+          {
+            "line": 519,
+            "text": "\t * @param obj the object to check"
+          },
+          {
+            "line": 520,
+            "text": "\t * @throws IllegalArgumentException if the object is not an instance of type"
+          },
+          {
+            "line": 521,
+            "text": "\t */"
+          },
+          {
+            "line": 522,
+            "text": "\tpublic static void isInstanceOf(Class<?> type, @Nullable Object obj) {"
+          },
+          {
+            "line": 523,
+            "text": "\t\tisInstanceOf(type, obj, \"\");"
+          },
+          {
+            "line": 524,
+            "text": "\t}"
+          },
+          {
+            "line": 525,
+            "text": ""
+          },
+          {
+            "line": 526,
+            "text": "\t/**"
+          },
+          {
+            "line": 527,
+            "text": "\t * Assert that {@code superType.isAssignableFrom(subType)} is {@code true}."
+          },
+          {
+            "line": 528,
+            "text": "\t * <pre class=\"code\">Assert.isAssignable(Number.class, myClass, \"Number expected\");</pre>"
+          },
+          {
+            "line": 529,
+            "text": "\t * @param superType the supertype to check against"
+          },
+          {
+            "line": 530,
+            "text": "\t * @param subType the subtype to check"
+          },
+          {
+            "line": 531,
+            "text": "\t * @param message a message which will be prepended to provide further context."
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier_3ad5712",
+        "path": "spring-core/src/test/java/org/springframework/util/AssertTests.java",
+        "sha256": "9e10068c22a512787ab72c7a568c725aea81edb7c7eb118709d997b9646ecbcc",
+        "startLine": 606,
+        "endLine": 634,
+        "lines": [
+          {
+            "line": 606,
+            "text": "\t@Test"
+          },
+          {
+            "line": 607,
+            "text": "\tvoid isInstanceOfWithMessageSupplier() {"
+          },
+          {
+            "line": 608,
+            "text": "\t\tAssert.isInstanceOf(String.class, \"foo\", () -> \"enigma\");"
+          },
+          {
+            "line": 609,
+            "text": "\t}"
+          },
+          {
+            "line": 610,
+            "text": ""
+          },
+          {
+            "line": 611,
+            "text": "\t@Test"
+          },
+          {
+            "line": 612,
+            "text": "\tvoid isInstanceOfWithNullTypeAndMessageSupplier() {"
+          },
+          {
+            "line": 613,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 614,
+            "text": "\t\t\t\tAssert.isInstanceOf(null, \"foo\", () -> \"enigma\"))"
+          },
+          {
+            "line": 615,
+            "text": "\t\t\t.withMessageContaining(\"Type to check against must not be null\");"
+          },
+          {
+            "line": 616,
+            "text": "\t}"
+          },
+          {
+            "line": 617,
+            "text": ""
+          },
+          {
+            "line": 618,
+            "text": "\t@Test"
+          },
+          {
+            "line": 619,
+            "text": "\tvoid isInstanceOfWithNullInstanceAndMessageSupplier() {"
+          },
+          {
+            "line": 620,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 621,
+            "text": "\t\t\t\tAssert.isInstanceOf(String.class, null, () -> \"enigma\"))"
+          },
+          {
+            "line": 622,
+            "text": "\t\t\t.withMessageContaining(\"enigma: null\");"
+          },
+          {
+            "line": 623,
+            "text": "\t}"
+          },
+          {
+            "line": 624,
+            "text": ""
+          },
+          {
+            "line": 625,
+            "text": "\t@Test"
+          },
+          {
+            "line": 626,
+            "text": "\tvoid isInstanceOfWithTypeMismatchAndNullMessageSupplier() {"
+          },
+          {
+            "line": 627,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 628,
+            "text": "\t\t\t\tAssert.isInstanceOf(String.class, 42L, (Supplier<String>) null))"
+          },
+          {
+            "line": 629,
+            "text": "\t\t\t.withMessageContaining(\"Object of class [java.lang.Long] must be an instance of class java.lang.String\");"
+          },
+          {
+            "line": 630,
+            "text": "\t}"
+          },
+          {
+            "line": 631,
+            "text": ""
+          },
+          {
+            "line": 632,
+            "text": "\t@Test"
+          },
+          {
+            "line": 633,
+            "text": "\tvoid isInstanceOfWithTypeMismatchAndMessageSupplier() {"
+          },
+          {
+            "line": 634,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "AssertTests#isInstanceOfWithNullTypeAndMessageSupplier_3ad5712",
+        "type": "B",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.util.Assert#notNull"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main",
+        "org.springframework.util.Assert"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.Assert.txt",
+      "classSha256": "714f1b78daa69cb17fe8bcd4c4cce22aaf4bb03b2e45163b0cb424935d8dc657",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  },
+  {
+    "mutationId": "spring-core|org.springframework.util.backoff.ExponentialBackOff|setMultiplier|(D)V|141|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml.gz:10",
+    "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+    "production": [
+      {
+        "path": "spring-core/src/main/java/org/springframework/util/backoff/ExponentialBackOff.java",
+        "sha256": "ccca1a94c9f4d7fcb31f0715be1b632668c95a62ceca54a4cf6124f18b7ec9dc",
+        "startLine": 126,
+        "endLine": 163,
+        "lines": [
+          {
+            "line": 126,
+            "text": "\tpublic void setInitialInterval(long initialInterval) {"
+          },
+          {
+            "line": 127,
+            "text": "\t\tthis.initialInterval = initialInterval;"
+          },
+          {
+            "line": 128,
+            "text": "\t}"
+          },
+          {
+            "line": 129,
+            "text": ""
+          },
+          {
+            "line": 130,
+            "text": "\t/**"
+          },
+          {
+            "line": 131,
+            "text": "\t * Return the initial interval in milliseconds."
+          },
+          {
+            "line": 132,
+            "text": "\t */"
+          },
+          {
+            "line": 133,
+            "text": "\tpublic long getInitialInterval() {"
+          },
+          {
+            "line": 134,
+            "text": "\t\treturn this.initialInterval;"
+          },
+          {
+            "line": 135,
+            "text": "\t}"
+          },
+          {
+            "line": 136,
+            "text": ""
+          },
+          {
+            "line": 137,
+            "text": "\t/**"
+          },
+          {
+            "line": 138,
+            "text": "\t * Set the value to multiply the current interval by for each retry attempt."
+          },
+          {
+            "line": 139,
+            "text": "\t */"
+          },
+          {
+            "line": 140,
+            "text": "\tpublic void setMultiplier(double multiplier) {"
+          },
+          {
+            "line": 141,
+            "text": "\t\tcheckMultiplier(multiplier);"
+          },
+          {
+            "line": 142,
+            "text": "\t\tthis.multiplier = multiplier;"
+          },
+          {
+            "line": 143,
+            "text": "\t}"
+          },
+          {
+            "line": 144,
+            "text": ""
+          },
+          {
+            "line": 145,
+            "text": "\t/**"
+          },
+          {
+            "line": 146,
+            "text": "\t * Return the value to multiply the current interval by for each retry attempt."
+          },
+          {
+            "line": 147,
+            "text": "\t */"
+          },
+          {
+            "line": 148,
+            "text": "\tpublic double getMultiplier() {"
+          },
+          {
+            "line": 149,
+            "text": "\t\treturn this.multiplier;"
+          },
+          {
+            "line": 150,
+            "text": "\t}"
+          },
+          {
+            "line": 151,
+            "text": ""
+          },
+          {
+            "line": 152,
+            "text": "\t/**"
+          },
+          {
+            "line": 153,
+            "text": "\t * Set the maximum back off time in milliseconds."
+          },
+          {
+            "line": 154,
+            "text": "\t */"
+          },
+          {
+            "line": 155,
+            "text": "\tpublic void setMaxInterval(long maxInterval) {"
+          },
+          {
+            "line": 156,
+            "text": "\t\tthis.maxInterval = maxInterval;"
+          },
+          {
+            "line": 157,
+            "text": "\t}"
+          },
+          {
+            "line": 158,
+            "text": ""
+          },
+          {
+            "line": 159,
+            "text": "\t/**"
+          },
+          {
+            "line": 160,
+            "text": "\t * Return the maximum back off time in milliseconds."
+          },
+          {
+            "line": 161,
+            "text": "\t */"
+          },
+          {
+            "line": 162,
+            "text": "\tpublic long getMaxInterval() {"
+          },
+          {
+            "line": 163,
+            "text": "\t\treturn this.maxInterval;"
+          }
+        ]
+      }
+    ],
+    "killingTestExcerpts": [
+      {
+        "coverageKey": "ExponentialBackOffTests#invalidInterval_2fbef03",
+        "path": "spring-core/src/test/java/org/springframework/util/ExponentialBackOffTests.java",
+        "sha256": "877f5273b17adad2b521c5f039ff20bfffad01064d3043da1c22f3264fefb2a2",
+        "startLine": 107,
+        "endLine": 135,
+        "lines": [
+          {
+            "line": 107,
+            "text": "\t\tassertThat(execution2.nextBackOff()).isEqualTo(4000L);"
+          },
+          {
+            "line": 108,
+            "text": "\t\tassertThat(execution.nextBackOff()).isEqualTo(BackOffExecution.STOP);"
+          },
+          {
+            "line": 109,
+            "text": "\t\tassertThat(execution2.nextBackOff()).isEqualTo(BackOffExecution.STOP);"
+          },
+          {
+            "line": 110,
+            "text": "\t}"
+          },
+          {
+            "line": 111,
+            "text": ""
+          },
+          {
+            "line": 112,
+            "text": "\t@Test"
+          },
+          {
+            "line": 113,
+            "text": "\tvoid invalidInterval() {"
+          },
+          {
+            "line": 114,
+            "text": "\t\tExponentialBackOff backOff = new ExponentialBackOff();"
+          },
+          {
+            "line": 115,
+            "text": "\t\tassertThatIllegalArgumentException().isThrownBy(() ->"
+          },
+          {
+            "line": 116,
+            "text": "\t\t\t\tbackOff.setMultiplier(0.9));"
+          },
+          {
+            "line": 117,
+            "text": "\t}"
+          },
+          {
+            "line": 118,
+            "text": ""
+          },
+          {
+            "line": 119,
+            "text": "\t@Test"
+          },
+          {
+            "line": 120,
+            "text": "\tvoid maxIntervalReachedImmediately() {"
+          },
+          {
+            "line": 121,
+            "text": "\t\tExponentialBackOff backOff = new ExponentialBackOff(1000L, 2.0);"
+          },
+          {
+            "line": 122,
+            "text": "\t\tbackOff.setMaxInterval(50L);"
+          },
+          {
+            "line": 123,
+            "text": ""
+          },
+          {
+            "line": 124,
+            "text": "\t\tBackOffExecution execution = backOff.start();"
+          },
+          {
+            "line": 125,
+            "text": "\t\tassertThat(execution.nextBackOff()).isEqualTo(50L);"
+          },
+          {
+            "line": 126,
+            "text": "\t\tassertThat(execution.nextBackOff()).isEqualTo(50L);"
+          },
+          {
+            "line": 127,
+            "text": "\t}"
+          },
+          {
+            "line": 128,
+            "text": ""
+          },
+          {
+            "line": 129,
+            "text": "\t@Test"
+          },
+          {
+            "line": 130,
+            "text": "\tvoid executionToStringContent() {"
+          },
+          {
+            "line": 131,
+            "text": "\t\tExponentialBackOff backOff = new ExponentialBackOff(2000L, 2.0);"
+          },
+          {
+            "line": 132,
+            "text": "\t\tBackOffExecution execution = backOff.start();"
+          },
+          {
+            "line": 133,
+            "text": "\t\tassertThat(execution.toString()).isEqualTo(\"ExponentialBackOffExecution{currentInterval=n/a, multiplier=2.0, attempts=0}\");"
+          },
+          {
+            "line": 134,
+            "text": "\t\texecution.nextBackOff();"
+          },
+          {
+            "line": 135,
+            "text": "\t\tassertThat(execution.toString()).isEqualTo(\"ExponentialBackOffExecution{currentInterval=2000ms, multiplier=2.0, attempts=1}\");"
+          }
+        ]
+      }
+    ],
+    "footprintEvidence": [
+      {
+        "coverageKey": "ExponentialBackOffTests#invalidInterval_2fbef03",
+        "type": "B",
+        "targetClassPresent": true,
+        "mutatedMethodPresent": false,
+        "targetClassMethods": [
+          "org.springframework.util.backoff.ExponentialBackOff#<init>",
+          "org.springframework.util.backoff.ExponentialBackOff#checkMultiplier",
+          "org.springframework.util.backoff.ExponentialBackOff#lambda$checkMultiplier$0"
+        ]
+      }
+    ],
+    "bytecode": {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javap",
+        "-c",
+        "-l",
+        "-p",
+        "-classpath",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main",
+        "org.springframework.util.backoff.ExponentialBackOff"
+      ],
+      "exitCode": 0,
+      "output": "iterations/pit-unify/causal-bytecode/spring-core/org.springframework.util.backoff.ExponentialBackOff.txt",
+      "classSha256": "d6406eb1c2e367da53200cc59e16ce6ea252a476aa43ea42dd41b935e70f05ac",
+      "kind": "Pristine compiled bytecode, not a mutated or instrumented execution trace."
+    },
+    "causalInferenceNotAutomatic": true
+  }
+]

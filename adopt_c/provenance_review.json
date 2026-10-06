@@ -1,0 +1,8 @@
+{
+  "replacementRuns": "Established by C execution transcripts, runtime artifact hashes and matrix inventories: PIT 1.17.4, junit5 plugin 1.2.1, explicit named DEFAULTS, no processor override.",
+  "implicitVersusNamed": "PIT bytecode disassembly in iterations/pit-unify/pit-default-resolution/ distinguishes no-option internal default (NEGATE_CONDITIONALS) from named DEFAULTS (REMOVE_CONDITIONALS).",
+  "springOriginalOmission": "Directly established by spring-core/scripts/02_run_pit.py command list; no --mutators option.",
+  "jgraphtOriginalOmission": "UNKNOWN. jgrapht/scripts/02_run_pit.py has no -Dmutators override, but jgrapht/config/pit_profile.xml (including its first retained revision c77bb2f) explicitly declares DEFAULTS. Original effective POM was not retained. Matrices and stdout prove the actual operator set, not why the option was absent/ineffective.",
+  "manuscriptResolution": "Do not assert original JGraphT option omission as directly proven. State measured operator set and provenance limitation.",
+  "otherSix": "Unchanged matrices and replay evidence. Configuration is not proof of original installed versions. PetClinic original PIT/plugin version remains UNKNOWN."
+}

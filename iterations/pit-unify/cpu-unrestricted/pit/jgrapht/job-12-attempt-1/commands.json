@@ -1,0 +1,41 @@
+[
+  {
+    "id": "001",
+    "originalCommand": [
+      "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn",
+      "org.pitest:pitest-maven:1.17.4:mutationCoverage",
+      "-Ppitest",
+      "-pl",
+      "jgrapht-core",
+      "-DtargetClasses=org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+      "-DtargetTests=org.jgrapht.alg.matching.blossom.v5.*",
+      "-DfullMutationMatrix=true",
+      "-Dthreads=4",
+      "-DtimestampedReports=false",
+      "-DskipFailingTests=true",
+      "-DoutputFormats=XML"
+    ],
+    "command": [
+      "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn",
+      "org.pitest:pitest-maven:1.17.4:mutationCoverage",
+      "-Ppitest",
+      "-pl",
+      "jgrapht-core",
+      "-DtargetClasses=org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+      "-DtargetTests=org.jgrapht.alg.matching.blossom.v5.*",
+      "-DfullMutationMatrix=true",
+      "-Dthreads=4",
+      "-DtimestampedReports=false",
+      "-DskipFailingTests=true",
+      "-DoutputFormats=XML"
+    ],
+    "cwd": "/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject",
+    "timeout": 3600,
+    "pitWorkers": 4,
+    "startedUtc": "2026-10-05T21:21:12.204870+00:00",
+    "pid": 63124,
+    "peakObservedCpuPercent": 599.0,
+    "elapsedSeconds": 1476.177719375,
+    "exitCode": 0
+  }
+]

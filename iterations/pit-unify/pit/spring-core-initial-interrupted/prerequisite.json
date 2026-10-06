@@ -1,0 +1,14 @@
+{
+  "command": [
+    "./gradlew",
+    "--no-daemon",
+    "--max-workers=1",
+    ":spring-core:testClasses",
+    ":spring-core:pitClasspath"
+  ],
+  "checkout": "/private/tmp/pit-unify-spring-core-nydoloo0/subject",
+  "exitCode": 0,
+  "elapsedSeconds": 384.647659084,
+  "javaHome": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home",
+  "purpose": "Prerequisite only, before the recorded campaign; no Test or coverage collection task."
+}

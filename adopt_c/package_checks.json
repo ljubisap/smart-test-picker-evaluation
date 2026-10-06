@@ -1,0 +1,1320 @@
+{
+  "completed": true,
+  "archive": {
+    "path": "/Users/D061177/work/issta/adopt-c-work/anon-final.zip",
+    "sha256": "22180edf00c2f396ec4daa1adcf1a3cab561751fe0b82a0bf55237803bbf55c8",
+    "bytes": 66835830,
+    "unpackedBytes": 577539794
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "commands": [
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "evaluator/tests"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 2.312823041999998,
+          "lastLine": "OK",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/evaluator-tests.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "rerun/tests"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 3.8966942919999994,
+          "lastLine": "OK",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/runner-tests.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--help"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.06764520800000184,
+          "lastLine": "                        arg=VALUE, repeatable; record every override",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/runner-help.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "commons-lang",
+            "--pit-dir",
+            "data/pit/commons-lang"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.3948455000000024,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/self-commons-lang.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "commons-lang",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.06787941700000033,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/plan-commons-lang.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "jgrapht",
+            "--pit-dir",
+            "data/pit/jgrapht"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 4.500773375000001,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/self-jgrapht.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "jgrapht",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.07111337499999593,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/plan-jgrapht.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "spring-core",
+            "--pit-dir",
+            "data/pit/spring-core"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.5276534999999996,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/self-spring-core.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "spring-core",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.07289141699999391,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/plan-spring-core.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "petclinic",
+            "--pit-dir",
+            "data/pit/petclinic"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.2029922499999941,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/self-petclinic.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "petclinic",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.10082316700000149,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/plan-petclinic.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "flink",
+            "--pit-dir",
+            "data/pit/flink"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.38906158300000016,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/self-flink.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "flink",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.05955416700000171,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/plan-flink.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "spring-security",
+            "--pit-dir",
+            "data/pit/spring-security"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.3481682500000005,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/self-spring-security.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "spring-security",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.19067158300000386,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/plan-spring-security.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "hibernate",
+            "--pit-dir",
+            "data/pit/hibernate"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 4.380096584,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/self-hibernate.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "hibernate",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.11790933399999659,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/plan-hibernate.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "quarkus",
+            "--pit-dir",
+            "data/pit/quarkus"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 2.6459841249999982,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/self-quarkus.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "quarkus",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.077117874999999,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/plan-quarkus.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "jgrapht",
+            "--class",
+            "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+            "--pit-dir",
+            "evidence/pit_replay/jgrapht",
+            "--json-output",
+            "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/jgrapht-fresh-comparison.json"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 5.458046875000001,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/fresh-jgrapht.log",
+          "expectedExitCode": 0
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "spring-core",
+            "--class",
+            "org.springframework.core.convert.TypeDescriptor",
+            "--pit-dir",
+            "evidence/pit_replay/spring-core",
+            "--json-output",
+            "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/spring-core-fresh-comparison.json"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.39817145899999673,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/fresh-spring-core.log",
+          "expectedExitCode": 0
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "reproduce.py",
+            "--verify"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 113.47434087500001,
+          "lastLine": "PASS: all recomputed values match",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-1/logs/reproduce.log"
+        }
+      ],
+      "negativeTamperRejected": true,
+      "scan": {
+        "zeroIdentityHits": true,
+        "identityHits": [],
+        "sourceIdentifierHits": [
+          {
+            "file": "data/maps/commons-lang.json",
+            "token": "ISSTA",
+            "count": 165,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/commons-lang.json",
+            "token": "legacy",
+            "count": 4697,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/flink.json.gz",
+            "token": "ISSTA",
+            "count": 54,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/flink.json.gz",
+            "token": "legacy",
+            "count": 798,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/hibernate.json.gz",
+            "token": "ISSTA",
+            "count": 2847,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/hibernate.json.gz",
+            "token": "legacy",
+            "count": 6195,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/hibernate.json.gz",
+            "token": "audit",
+            "count": 6446,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/petclinic.json",
+            "token": "legacy",
+            "count": 56,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/quarkus.json.gz",
+            "token": "ISSTA",
+            "count": 122,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/quarkus.json.gz",
+            "token": "legacy",
+            "count": 684,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/spring-core.json",
+            "token": "ISSTA",
+            "count": 87,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/spring-core.json",
+            "token": "legacy",
+            "count": 3638,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/spring-security.json.gz",
+            "token": "legacy",
+            "count": 1440,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint/mutations.xml",
+            "token": "ISSTA",
+            "count": 16,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml",
+            "token": "legacy",
+            "count": 18,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml",
+            "token": "legacy",
+            "count": 66,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml",
+            "token": "legacy",
+            "count": 14,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml",
+            "token": "legacy",
+            "count": 2,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz",
+            "token": "ISSTA",
+            "count": 8,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/spring-core/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml.gz",
+            "token": "ISSTA",
+            "count": 8,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/failed_killer_impact.json",
+            "token": "ISSTA",
+            "count": 8,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/comparison.json",
+            "token": "ISSTA",
+            "count": 46,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/comparison.json",
+            "token": "legacy",
+            "count": 28,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/inputs.json",
+            "token": "ISSTA",
+            "count": 23,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/inputs.json",
+            "token": "legacy",
+            "count": 14,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/outputs.json",
+            "token": "ISSTA",
+            "count": 23,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/outputs.json",
+            "token": "legacy",
+            "count": 14,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/pit_replay/flink/run.log",
+            "token": "legacy",
+            "count": 1,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/pit_replay/hibernate/mutations.xml",
+            "token": "legacy",
+            "count": 66,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/pit_replay/hibernate/record_agreement.json",
+            "token": "legacy",
+            "count": 56,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/pit_replay/hibernate/run.log",
+            "token": "legacy",
+            "count": 11,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/springcore_run2/footprint_differences.json",
+            "token": "ISSTA",
+            "count": 1,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/springcore_run2/map.json",
+            "token": "ISSTA",
+            "count": 87,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/springcore_run2/map.json",
+            "token": "legacy",
+            "count": 3638,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/succeeding_tests.json",
+            "token": "legacy",
+            "count": 1,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "rerun/build-inspection.json",
+            "token": "legacy",
+            "count": 7,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "results/per_record.json",
+            "token": "ISSTA",
+            "count": 57,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "results/per_record.json",
+            "token": "legacy",
+            "count": 23,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "round": 2,
+      "commands": [
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "evaluator/tests"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.7158683330000031,
+          "lastLine": "OK",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/evaluator-tests.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "rerun/tests"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 3.9624354169999947,
+          "lastLine": "OK",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/runner-tests.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--help"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.057268292000003385,
+          "lastLine": "                        arg=VALUE, repeatable; record every override",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/runner-help.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "commons-lang",
+            "--pit-dir",
+            "data/pit/commons-lang"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.4107605830000125,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/self-commons-lang.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "commons-lang",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.07769516700000167,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/plan-commons-lang.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "jgrapht",
+            "--pit-dir",
+            "data/pit/jgrapht"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 4.378211250000021,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/self-jgrapht.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "jgrapht",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.07417025000000876,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/plan-jgrapht.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "spring-core",
+            "--pit-dir",
+            "data/pit/spring-core"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.4043305000000146,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/self-spring-core.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "spring-core",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.06398066700000982,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/plan-spring-core.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "petclinic",
+            "--pit-dir",
+            "data/pit/petclinic"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.1454745419999881,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/self-petclinic.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "petclinic",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.05945883300000787,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/plan-petclinic.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "flink",
+            "--pit-dir",
+            "data/pit/flink"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.3745441670000105,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/self-flink.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "flink",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.06480562500001952,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/plan-flink.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "spring-security",
+            "--pit-dir",
+            "data/pit/spring-security"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.3376964169999894,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/self-spring-security.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "spring-security",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.06570570899998529,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/plan-spring-security.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "hibernate",
+            "--pit-dir",
+            "data/pit/hibernate"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 3.7769575420000194,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/self-hibernate.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "hibernate",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.10095479099999238,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/plan-hibernate.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "quarkus",
+            "--pit-dir",
+            "data/pit/quarkus"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 2.514390542000001,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/self-quarkus.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/run_pit.py",
+            "--subject",
+            "quarkus",
+            "--checkout",
+            "/not-needed-for-plan",
+            "--plan"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.07547204200000124,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/plan-quarkus.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "jgrapht",
+            "--class",
+            "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+            "--pit-dir",
+            "evidence/pit_replay/jgrapht",
+            "--json-output",
+            "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/jgrapht-fresh-comparison.json"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 4.919655917,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/fresh-jgrapht.log",
+          "expectedExitCode": 0
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "rerun/compare_pit.py",
+            "--subject",
+            "spring-core",
+            "--class",
+            "org.springframework.core.convert.TypeDescriptor",
+            "--pit-dir",
+            "evidence/pit_replay/spring-core",
+            "--json-output",
+            "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/spring-core-fresh-comparison.json"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 0.34061104200000614,
+          "lastLine": "}",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/fresh-spring-core.log",
+          "expectedExitCode": 0
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "reproduce.py",
+            "--write"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 112.94443470900003,
+          "lastLine": "PASS: results regenerated and evidence checks match",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/regenerate.log"
+        },
+        {
+          "command": [
+            "/Users/D061177/work/issta/adopt-c-work/venv/bin/python",
+            "reproduce.py",
+            "--verify"
+          ],
+          "cwd": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/anon-final",
+          "exitCode": 0,
+          "elapsedSeconds": 109.80982470800001,
+          "lastLine": "PASS: all recomputed values match",
+          "log": "/Users/D061177/work/issta/adopt-c-work/delivery-check-2/logs/reproduce.log"
+        }
+      ],
+      "negativeTamperRejected": true,
+      "scan": {
+        "zeroIdentityHits": true,
+        "identityHits": [],
+        "sourceIdentifierHits": [
+          {
+            "file": "data/maps/commons-lang.json",
+            "token": "ISSTA",
+            "count": 165,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/commons-lang.json",
+            "token": "legacy",
+            "count": 4697,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/flink.json.gz",
+            "token": "ISSTA",
+            "count": 54,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/flink.json.gz",
+            "token": "legacy",
+            "count": 798,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/hibernate.json.gz",
+            "token": "ISSTA",
+            "count": 2847,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/hibernate.json.gz",
+            "token": "legacy",
+            "count": 6195,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/hibernate.json.gz",
+            "token": "audit",
+            "count": 6446,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/petclinic.json",
+            "token": "legacy",
+            "count": 56,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/quarkus.json.gz",
+            "token": "ISSTA",
+            "count": 122,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/quarkus.json.gz",
+            "token": "legacy",
+            "count": 684,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/spring-core.json",
+            "token": "ISSTA",
+            "count": 87,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/spring-core.json",
+            "token": "legacy",
+            "count": 3638,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/maps/spring-security.json.gz",
+            "token": "legacy",
+            "count": 1440,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint/mutations.xml",
+            "token": "ISSTA",
+            "count": 16,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml",
+            "token": "legacy",
+            "count": 18,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml",
+            "token": "legacy",
+            "count": 66,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml",
+            "token": "legacy",
+            "count": 14,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml",
+            "token": "legacy",
+            "count": 2,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz",
+            "token": "ISSTA",
+            "count": 8,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "data/pit/spring-core/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml.gz",
+            "token": "ISSTA",
+            "count": 8,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/failed_killer_impact.json",
+            "token": "ISSTA",
+            "count": 8,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/comparison.json",
+            "token": "ISSTA",
+            "count": 46,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/comparison.json",
+            "token": "legacy",
+            "count": 28,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/inputs.json",
+            "token": "ISSTA",
+            "count": 23,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/inputs.json",
+            "token": "legacy",
+            "count": 14,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/outputs.json",
+            "token": "ISSTA",
+            "count": 23,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/java_replay/outputs.json",
+            "token": "legacy",
+            "count": 14,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/pit_replay/flink/run.log",
+            "token": "legacy",
+            "count": 1,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/pit_replay/hibernate/mutations.xml",
+            "token": "legacy",
+            "count": 66,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/pit_replay/hibernate/record_agreement.json",
+            "token": "legacy",
+            "count": 56,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/pit_replay/hibernate/run.log",
+            "token": "legacy",
+            "count": 11,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/springcore_run2/footprint_differences.json",
+            "token": "ISSTA",
+            "count": 1,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/springcore_run2/map.json",
+            "token": "ISSTA",
+            "count": 87,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/springcore_run2/map.json",
+            "token": "legacy",
+            "count": 3638,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "evidence/succeeding_tests.json",
+            "token": "legacy",
+            "count": 1,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "rerun/build-inspection.json",
+            "token": "legacy",
+            "count": 7,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "results/per_record.json",
+            "token": "ISSTA",
+            "count": 57,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          },
+          {
+            "file": "results/per_record.json",
+            "token": "legacy",
+            "count": 23,
+            "scope": "Source/test identifiers and schema keys are expressly excepted; no data renaming."
+          }
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "preservedFiles": [
+    "evaluator/evaluation_core.py",
+    "evidence/pit_replay/quarkus/record_agreement.json",
+    "evidence/pit_replay/quarkus/run.log",
+    "evidence/pit_replay/quarkus/comparison.json",
+    "evidence/pit_replay/quarkus/environment.json",
+    "evidence/pit_replay/quarkus/mutations.xml",
+    "evidence/pit_replay/petclinic/record_agreement.json",
+    "evidence/pit_replay/petclinic/run.log",
+    "evidence/pit_replay/petclinic/comparison.json",
+    "evidence/pit_replay/petclinic/environment.json",
+    "evidence/pit_replay/petclinic/mutations.xml",
+    "evidence/pit_replay/flink/record_agreement.json",
+    "evidence/pit_replay/flink/run.log",
+    "evidence/pit_replay/flink/comparison.json",
+    "evidence/pit_replay/flink/environment.json",
+    "evidence/pit_replay/flink/mutations.xml",
+    "evidence/pit_replay/commons-lang/record_agreement.json",
+    "evidence/pit_replay/commons-lang/run.log",
+    "evidence/pit_replay/commons-lang/comparison.json",
+    "evidence/pit_replay/commons-lang/environment.json",
+    "evidence/pit_replay/commons-lang/mutations.xml",
+    "evidence/pit_replay/hibernate/record_agreement.json",
+    "evidence/pit_replay/hibernate/run.log",
+    "evidence/pit_replay/hibernate/comparison.json",
+    "evidence/pit_replay/hibernate/build-formatting-diff.patch",
+    "evidence/pit_replay/hibernate/environment.json",
+    "evidence/pit_replay/hibernate/mutations.xml",
+    "evidence/pit_replay/spring-security/record_agreement.json",
+    "evidence/pit_replay/spring-security/run.log",
+    "evidence/pit_replay/spring-security/comparison.json",
+    "evidence/pit_replay/spring-security/environment.json",
+    "evidence/pit_replay/spring-security/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.BeanResolverImpl/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.ObserverInfo/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.DecoratorGenerator/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.BeanArchives/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.ComponentsProviderGenerator/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.Injection/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.Annotations/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.Types/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.AnnotationLiteralProcessor/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.ClientProxyGenerator/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.ContextInstancesGenerator/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.ObserverGenerator/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.InjectionPointInfo/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint/mutations.xml",
+    "data/pit/quarkus/per-class/io.quarkus.arc.processor.InterceptorGenerator/mutations.xml",
+    "data/pit/petclinic/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.DefaultScheduler/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.ExecutionGraphHandler/mutations.xml",
+    "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.Executing/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.concurrent.locks.LockingVisitors/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.text.FormattableUtils/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.math.IEEE754rUtils/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.stream.LangCollectors/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.tuple.ImmutablePair/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.text.translate.EntityArrays/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.stream.Streams/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.builder.HashCodeBuilder/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.reflect.MethodUtils/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.compare.ComparableUtils/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.mutable.MutableFloat/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.util.FluentBitSet/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.event.EventListenerSupport/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.tuple.Pair/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.text.translate.NumericEntityEscaper/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.reflect.FieldUtils/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.arch.Processor/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.math.Fraction/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.mutable.MutableObject/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.util.IterableStringTokenizer/mutations.xml",
+    "data/pit/commons-lang/per-class/org.apache.commons.lang3.event.EventUtils/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.event.internal.DefaultDeleteEventListener/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.jpa.event.internal.CallbackDefinitionResolver/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.event.internal.AbstractFlushingEventListener/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.proxy.AbstractLazyInitializer/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.event.internal.DefaultLoadEventListener/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.jpa.event.internal.CallbackRegistryImpl/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.event.internal.DefaultRefreshEventListener/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.event.internal.DefaultPersistEventListener/mutations.xml",
+    "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.core.session.SessionRegistryImpl/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.provisioning.InMemoryUserDetailsManager/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.concurrent.DelegatingSecurityContextRunnable/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.access.expression.SecurityExpressionRoot/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.core.context.SecurityContextHolder/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.util.matcher.InetAddressMatchers/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.core.token.KeyBasedPersistenceTokenService/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.jackson2.SecurityJackson2Modules/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.converter.RsaKeyConverters/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.core.userdetails.User/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.authentication.ProviderManager/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml",
+    "data/pit/spring-security/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml",
+    "data/maps/spring-security.json.gz",
+    "data/maps/spring-core.json",
+    "data/maps/jgrapht.json",
+    "data/maps/hibernate.json.gz",
+    "data/maps/commons-lang.json",
+    "data/maps/petclinic.json",
+    "data/maps/quarkus.json.gz",
+    "data/maps/flink.json.gz"
+  ],
+  "allPassed": true
+}

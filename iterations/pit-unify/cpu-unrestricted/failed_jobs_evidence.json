@@ -1,0 +1,766 @@
+[
+  {
+    "subject": "spring-core",
+    "fqn": "org.springframework.core.SerializableTypeWrapper",
+    "attempt": 1,
+    "status": "FAILED",
+    "B": {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.SerializableTypeWrapper/stderr.log",
+      "sha256": "e55d217e952c0cb69d39cf526f193b1f122dbe4b76c723bc51c41b4d35568067",
+      "failingTestDescriptions": [
+        {
+          "line": 6400,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:dirExists()]]"
+        },
+        {
+          "line": 6401,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsWritable()]]"
+        },
+        {
+          "line": 6402,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getInputStream()]]"
+        },
+        {
+          "line": 6403,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLength()]]"
+        },
+        {
+          "line": 6404,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsReadable()]]"
+        },
+        {
+          "line": 6405,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getOutputStreamForDirectory()]]"
+        },
+        {
+          "line": 6406,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannel()]]"
+        },
+        {
+          "line": 6407,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLengthForDirectory()]]"
+        },
+        {
+          "line": 6408,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannelForDir()]]"
+        },
+        {
+          "line": 6409,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileExists()]]"
+        },
+        {
+          "line": 6410,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:lastModified()]]"
+        },
+        {
+          "line": 6411,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[method:encodedHashtagInPath()]]"
+        },
+        {
+          "line": 6412,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingClasspathStarProtocolWithWildcardInPatternAndEndingInSlash()]]"
+        },
+        {
+          "line": 6413,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndNotEndingInSlash()]]"
+        },
+        {
+          "line": 6414,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 6415,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithoutWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 6416,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolAndAssertingUrlAndUriSyntax()]]"
+        },
+        {
+          "line": 6417,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWhenMultipleConstructorsThrowsException()]]"
+        },
+        {
+          "line": 6418,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWithArgumentResolverWhenNoDefaultConstructor()]]"
+        }
+      ],
+      "errors": [
+        {
+          "line": 6399,
+          "text": "21:41:18 PIT >> SEVERE : Tests failing without mutation: "
+        },
+        {
+          "line": 6419,
+          "text": "Exception in thread \"main\" org.pitest.help.PitHelpError: 19 tests did not pass without mutation when calculating line coverage. Mutation testing requires a green suite."
+        }
+      ]
+    },
+    "C": {
+      "path": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-01-attempt-1/per-class/org.springframework.core.SerializableTypeWrapper/stderr.log",
+      "sha256": "7ab32744742b39bd94dd4fc92245a676d9c1578fe0caa8cd8692e59ed7808283",
+      "failingTestDescriptions": [
+        {
+          "line": 6398,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:dirExists()]]"
+        },
+        {
+          "line": 6399,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsWritable()]]"
+        },
+        {
+          "line": 6400,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getInputStream()]]"
+        },
+        {
+          "line": 6401,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLength()]]"
+        },
+        {
+          "line": 6402,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsReadable()]]"
+        },
+        {
+          "line": 6403,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getOutputStreamForDirectory()]]"
+        },
+        {
+          "line": 6404,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannel()]]"
+        },
+        {
+          "line": 6405,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLengthForDirectory()]]"
+        },
+        {
+          "line": 6406,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannelForDir()]]"
+        },
+        {
+          "line": 6407,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileExists()]]"
+        },
+        {
+          "line": 6408,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:lastModified()]]"
+        },
+        {
+          "line": 6409,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[method:encodedHashtagInPath()]]"
+        },
+        {
+          "line": 6410,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingClasspathStarProtocolWithWildcardInPatternAndEndingInSlash()]]"
+        },
+        {
+          "line": 6411,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndNotEndingInSlash()]]"
+        },
+        {
+          "line": 6412,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 6413,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithoutWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 6414,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolAndAssertingUrlAndUriSyntax()]]"
+        },
+        {
+          "line": 6415,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWhenMultipleConstructorsThrowsException()]]"
+        },
+        {
+          "line": 6416,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWithArgumentResolverWhenNoDefaultConstructor()]]"
+        }
+      ],
+      "errors": [
+        {
+          "line": 6397,
+          "text": "00:00:31 PIT >> SEVERE : Tests failing without mutation: "
+        },
+        {
+          "line": 6417,
+          "text": "Exception in thread \"main\" org.pitest.help.PitHelpError: 19 tests did not pass without mutation when calculating line coverage. Mutation testing requires a green suite."
+        }
+      ]
+    },
+    "sameFailingDescriptionsAsB": true
+  },
+  {
+    "subject": "spring-core",
+    "fqn": "org.springframework.core.io.AbstractResource",
+    "attempt": 1,
+    "status": "FAILED",
+    "B": {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.io.AbstractResource/stderr.log",
+      "sha256": "6897c24c9bbba91e8adf320ece09c48d9a64250e0f79ae9c34e25b2ffb2e3dd8",
+      "failingTestDescriptions": [
+        {
+          "line": 2539,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:dirExists()]]"
+        },
+        {
+          "line": 2540,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsWritable()]]"
+        },
+        {
+          "line": 2541,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getInputStream()]]"
+        },
+        {
+          "line": 2542,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLength()]]"
+        },
+        {
+          "line": 2543,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsReadable()]]"
+        },
+        {
+          "line": 2544,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getOutputStreamForDirectory()]]"
+        },
+        {
+          "line": 2545,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannel()]]"
+        },
+        {
+          "line": 2546,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLengthForDirectory()]]"
+        },
+        {
+          "line": 2547,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannelForDir()]]"
+        },
+        {
+          "line": 2548,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileExists()]]"
+        },
+        {
+          "line": 2549,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:lastModified()]]"
+        },
+        {
+          "line": 2550,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[method:encodedHashtagInPath()]]"
+        },
+        {
+          "line": 2551,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingClasspathStarProtocolWithWildcardInPatternAndEndingInSlash()]]"
+        },
+        {
+          "line": 2552,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndNotEndingInSlash()]]"
+        },
+        {
+          "line": 2553,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2554,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithoutWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2555,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolAndAssertingUrlAndUriSyntax()]]"
+        },
+        {
+          "line": 2556,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWhenMultipleConstructorsThrowsException()]]"
+        },
+        {
+          "line": 2557,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWithArgumentResolverWhenNoDefaultConstructor()]]"
+        }
+      ],
+      "errors": [
+        {
+          "line": 2538,
+          "text": "21:42:48 PIT >> SEVERE : Tests failing without mutation: "
+        },
+        {
+          "line": 2558,
+          "text": "Exception in thread \"main\" org.pitest.help.PitHelpError: 19 tests did not pass without mutation when calculating line coverage. Mutation testing requires a green suite."
+        }
+      ]
+    },
+    "C": {
+      "path": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-08-attempt-1/per-class/org.springframework.core.io.AbstractResource/stderr.log",
+      "sha256": "dccf93188374a71262777e4f17dd3c048ae681bcb0f15a2e83b4ae5de1c2cda4",
+      "failingTestDescriptions": [
+        {
+          "line": 2537,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:dirExists()]]"
+        },
+        {
+          "line": 2538,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsWritable()]]"
+        },
+        {
+          "line": 2539,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getInputStream()]]"
+        },
+        {
+          "line": 2540,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLength()]]"
+        },
+        {
+          "line": 2541,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsReadable()]]"
+        },
+        {
+          "line": 2542,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getOutputStreamForDirectory()]]"
+        },
+        {
+          "line": 2543,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannel()]]"
+        },
+        {
+          "line": 2544,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLengthForDirectory()]]"
+        },
+        {
+          "line": 2545,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannelForDir()]]"
+        },
+        {
+          "line": 2546,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileExists()]]"
+        },
+        {
+          "line": 2547,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:lastModified()]]"
+        },
+        {
+          "line": 2548,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[method:encodedHashtagInPath()]]"
+        },
+        {
+          "line": 2549,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingClasspathStarProtocolWithWildcardInPatternAndEndingInSlash()]]"
+        },
+        {
+          "line": 2550,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndNotEndingInSlash()]]"
+        },
+        {
+          "line": 2551,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2552,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithoutWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2553,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolAndAssertingUrlAndUriSyntax()]]"
+        },
+        {
+          "line": 2554,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWhenMultipleConstructorsThrowsException()]]"
+        },
+        {
+          "line": 2555,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWithArgumentResolverWhenNoDefaultConstructor()]]"
+        }
+      ],
+      "errors": [
+        {
+          "line": 2536,
+          "text": "00:01:52 PIT >> SEVERE : Tests failing without mutation: "
+        },
+        {
+          "line": 2556,
+          "text": "Exception in thread \"main\" org.pitest.help.PitHelpError: 19 tests did not pass without mutation when calculating line coverage. Mutation testing requires a green suite."
+        }
+      ]
+    },
+    "sameFailingDescriptionsAsB": true
+  },
+  {
+    "subject": "spring-core",
+    "fqn": "org.springframework.core.io.buffer.DataBufferUtils",
+    "attempt": 1,
+    "status": "FAILED",
+    "B": {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.io.buffer.DataBufferUtils/stderr.log",
+      "sha256": "76c090627ff313dcaae11bf2a7102ea4c198614ef9f01e85ee90e6fdf1fa87a3",
+      "failingTestDescriptions": [
+        {
+          "line": 2539,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:dirExists()]]"
+        },
+        {
+          "line": 2540,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsWritable()]]"
+        },
+        {
+          "line": 2541,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getInputStream()]]"
+        },
+        {
+          "line": 2542,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLength()]]"
+        },
+        {
+          "line": 2543,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsReadable()]]"
+        },
+        {
+          "line": 2544,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getOutputStreamForDirectory()]]"
+        },
+        {
+          "line": 2545,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannel()]]"
+        },
+        {
+          "line": 2546,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLengthForDirectory()]]"
+        },
+        {
+          "line": 2547,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannelForDir()]]"
+        },
+        {
+          "line": 2548,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileExists()]]"
+        },
+        {
+          "line": 2549,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:lastModified()]]"
+        },
+        {
+          "line": 2550,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[method:encodedHashtagInPath()]]"
+        },
+        {
+          "line": 2551,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingClasspathStarProtocolWithWildcardInPatternAndEndingInSlash()]]"
+        },
+        {
+          "line": 2552,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndNotEndingInSlash()]]"
+        },
+        {
+          "line": 2553,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2554,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithoutWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2555,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolAndAssertingUrlAndUriSyntax()]]"
+        },
+        {
+          "line": 2556,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWhenMultipleConstructorsThrowsException()]]"
+        },
+        {
+          "line": 2557,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWithArgumentResolverWhenNoDefaultConstructor()]]"
+        }
+      ],
+      "errors": [
+        {
+          "line": 2538,
+          "text": "21:42:56 PIT >> SEVERE : Tests failing without mutation: "
+        },
+        {
+          "line": 2558,
+          "text": "Exception in thread \"main\" org.pitest.help.PitHelpError: 19 tests did not pass without mutation when calculating line coverage. Mutation testing requires a green suite."
+        }
+      ]
+    },
+    "C": {
+      "path": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-09-attempt-1/per-class/org.springframework.core.io.buffer.DataBufferUtils/stderr.log",
+      "sha256": "b23f931b86daf25c3c8ba1344354be3b17a35f89af6a39fba45e3c5816422767",
+      "failingTestDescriptions": [
+        {
+          "line": 2537,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:dirExists()]]"
+        },
+        {
+          "line": 2538,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsWritable()]]"
+        },
+        {
+          "line": 2539,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getInputStream()]]"
+        },
+        {
+          "line": 2540,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLength()]]"
+        },
+        {
+          "line": 2541,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsReadable()]]"
+        },
+        {
+          "line": 2542,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getOutputStreamForDirectory()]]"
+        },
+        {
+          "line": 2543,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannel()]]"
+        },
+        {
+          "line": 2544,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLengthForDirectory()]]"
+        },
+        {
+          "line": 2545,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannelForDir()]]"
+        },
+        {
+          "line": 2546,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileExists()]]"
+        },
+        {
+          "line": 2547,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:lastModified()]]"
+        },
+        {
+          "line": 2548,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[method:encodedHashtagInPath()]]"
+        },
+        {
+          "line": 2549,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingClasspathStarProtocolWithWildcardInPatternAndEndingInSlash()]]"
+        },
+        {
+          "line": 2550,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndNotEndingInSlash()]]"
+        },
+        {
+          "line": 2551,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2552,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithoutWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2553,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolAndAssertingUrlAndUriSyntax()]]"
+        },
+        {
+          "line": 2554,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWhenMultipleConstructorsThrowsException()]]"
+        },
+        {
+          "line": 2555,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWithArgumentResolverWhenNoDefaultConstructor()]]"
+        }
+      ],
+      "errors": [
+        {
+          "line": 2536,
+          "text": "00:01:59 PIT >> SEVERE : Tests failing without mutation: "
+        },
+        {
+          "line": 2556,
+          "text": "Exception in thread \"main\" org.pitest.help.PitHelpError: 19 tests did not pass without mutation when calculating line coverage. Mutation testing requires a green suite."
+        }
+      ]
+    },
+    "sameFailingDescriptionsAsB": true
+  },
+  {
+    "subject": "spring-core",
+    "fqn": "org.springframework.core.io.support.PathMatchingResourcePatternResolver",
+    "attempt": 1,
+    "status": "FAILED",
+    "B": {
+      "path": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.io.support.PathMatchingResourcePatternResolver/stderr.log",
+      "sha256": "f9588bea3d9cb6a38c5d64ccbfebb788f140206c1c30541b499f3deb3163d4ea",
+      "failingTestDescriptions": [
+        {
+          "line": 2539,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:dirExists()]]"
+        },
+        {
+          "line": 2540,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsWritable()]]"
+        },
+        {
+          "line": 2541,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getInputStream()]]"
+        },
+        {
+          "line": 2542,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLength()]]"
+        },
+        {
+          "line": 2543,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsReadable()]]"
+        },
+        {
+          "line": 2544,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getOutputStreamForDirectory()]]"
+        },
+        {
+          "line": 2545,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannel()]]"
+        },
+        {
+          "line": 2546,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLengthForDirectory()]]"
+        },
+        {
+          "line": 2547,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannelForDir()]]"
+        },
+        {
+          "line": 2548,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileExists()]]"
+        },
+        {
+          "line": 2549,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:lastModified()]]"
+        },
+        {
+          "line": 2550,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[method:encodedHashtagInPath()]]"
+        },
+        {
+          "line": 2551,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingClasspathStarProtocolWithWildcardInPatternAndEndingInSlash()]]"
+        },
+        {
+          "line": 2552,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndNotEndingInSlash()]]"
+        },
+        {
+          "line": 2553,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2554,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithoutWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2555,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolAndAssertingUrlAndUriSyntax()]]"
+        },
+        {
+          "line": 2556,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWhenMultipleConstructorsThrowsException()]]"
+        },
+        {
+          "line": 2557,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWithArgumentResolverWhenNoDefaultConstructor()]]"
+        }
+      ],
+      "errors": [
+        {
+          "line": 2538,
+          "text": "21:43:05 PIT >> SEVERE : Tests failing without mutation: "
+        },
+        {
+          "line": 2558,
+          "text": "Exception in thread \"main\" org.pitest.help.PitHelpError: 19 tests did not pass without mutation when calculating line coverage. Mutation testing requires a green suite."
+        }
+      ]
+    },
+    "C": {
+      "path": "iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-10-attempt-1/per-class/org.springframework.core.io.support.PathMatchingResourcePatternResolver/stderr.log",
+      "sha256": "a1faf5207d8f9381aac1b202717bb67846c64ce0d357b78468d7d4cb9db745bc",
+      "failingTestDescriptions": [
+        {
+          "line": 2537,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:dirExists()]]"
+        },
+        {
+          "line": 2538,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsWritable()]]"
+        },
+        {
+          "line": 2539,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getInputStream()]]"
+        },
+        {
+          "line": 2540,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLength()]]"
+        },
+        {
+          "line": 2541,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileIsReadable()]]"
+        },
+        {
+          "line": 2542,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getOutputStreamForDirectory()]]"
+        },
+        {
+          "line": 2543,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannel()]]"
+        },
+        {
+          "line": 2544,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:contentLengthForDirectory()]]"
+        },
+        {
+          "line": 2545,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:getReadableByteChannelForDir()]]"
+        },
+        {
+          "line": 2546,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:fileExists()]]"
+        },
+        {
+          "line": 2547,
+          "text": "Description [testClass=org.springframework.core.io.PathResourceTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.PathResourceTests]/[method:lastModified()]]"
+        },
+        {
+          "line": 2548,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[method:encodedHashtagInPath()]]"
+        },
+        {
+          "line": 2549,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingClasspathStarProtocolWithWildcardInPatternAndEndingInSlash()]]"
+        },
+        {
+          "line": 2550,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndNotEndingInSlash()]]"
+        },
+        {
+          "line": 2551,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2552,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolWithoutWildcardInPatternAndEndingInSlashStarStar()]]"
+        },
+        {
+          "line": 2553,
+          "text": "Description [testClass=org.springframework.core.io.support.PathMatchingResourcePatternResolverTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.PathMatchingResourcePatternResolverTests]/[nested-class:FileSystemResources]/[nested-class:WithHashtagsInTheirFilenames]/[method:usingFileProtocolAndAssertingUrlAndUriSyntax()]]"
+        },
+        {
+          "line": 2554,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWhenMultipleConstructorsThrowsException()]]"
+        },
+        {
+          "line": 2555,
+          "text": "Description [testClass=org.springframework.core.io.support.SpringFactoriesLoaderTests, name=[engine:junit-jupiter]/[class:org.springframework.core.io.support.SpringFactoriesLoaderTests]/[method:loadWithArgumentResolverWhenNoDefaultConstructor()]]"
+        }
+      ],
+      "errors": [
+        {
+          "line": 2536,
+          "text": "00:02:06 PIT >> SEVERE : Tests failing without mutation: "
+        },
+        {
+          "line": 2556,
+          "text": "Exception in thread \"main\" org.pitest.help.PitHelpError: 19 tests did not pass without mutation when calculating line coverage. Mutation testing requires a green suite."
+        }
+      ]
+    },
+    "sameFailingDescriptionsAsB": true
+  }
+]

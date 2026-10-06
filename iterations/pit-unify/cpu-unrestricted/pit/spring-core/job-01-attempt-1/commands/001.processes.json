@@ -1,0 +1,168 @@
+{
+  "sampleIntervalSeconds": 1,
+  "scope": "Actual launched process and observed descendants only; short-lived processes can fall between samples. Environment inherited from recorded launcher.",
+  "commands": [
+    {
+      "pid": 77553,
+      "ppid": 61978,
+      "command": "java -cp /Users/D061177/.m2/repository/org/pitest/pitest-command-line/1.17.4/pitest-command-line-1.17.4.jar:/Users/D061177/.m2/repository/org/pitest/pitest/1.17.4/pitest-1.17.4.jar:/Users/D061177/.m2/repository/org/pitest/pitest-entry/1.17.4/pitest-entry-1.17.4.jar:/Users/D061177/.m2/repository/org/pitest/pitest-junit5-plugin/1.2.1/pitest-junit5-plugin-1.2.1.jar:/Users/D061177/.m2/repository/org/apache/commons/commons-text/1.12.0/commons-text-1.12.0.jar:/Users/D061177/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar org.pitest.mutationtest.commandline.MutationCoverageReport --reportDir /Users/D061177/work/issta/smart-test-picker-evaluation/iterations/pit-unify/cpu-unrestricted/pit/spring-core/job-01-attempt-1/per-class/org.springframework.core.SerializableTypeWrapper --targetClasses org.springframework.core.SerializableTypeWrapper --targetTests org.springframework.core.* --sourceDirs /private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/src/main/java --classPath /private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/test,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/kotlin/test,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/resources/test,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/libs/spring-javapoet-repack-1.13.0.jar,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/libs/spring-objenesis-repack-3.4.jar,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/kotlin/testFixtures,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/kotlin/main,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/main,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/resources/main,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/classes/java/testFixtures,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/resources/testFixtures,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/libs/spring-core-6.1.22-SNAPSHOT-test-fixtures.jar,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-core/build/libs/spring-core-6.1.22-SNAPSHOT.jar,/private/tmp/pit-unify-spring-core-nydoloo0/subject/spring-jcl/build/libs/spring-jcl-6.1.22-SNAPSHOT.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.micrometer/context-propagation/1.1.1/7c62beb1188d7458f5a4b60fcaf4a795cc290508/context-propagation-1.1.1.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.121.Final/7f4edd9e82d3b62d8218e766a01dfc9769c6b290/netty-buffer-4.1.121.Final.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.netty/netty5-buffer/5.0.0.Alpha5/b155d511ca60399a710bea408d4c89da4a179608/netty5-buffer-5.0.0.Alpha5.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-test/3.6.18/f99bec94dad42e919a84f34c0bbb5235dd1d71f6/reactor-test-3.6.18.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-jvm/1.13.4/e57714f14d47597dc875ce32e2fabc21ab3fae05/mockk-jvm-1.13.4.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-reactive/1.7.3/3f30c8dd5cd0993ca2804591210141be762786f8/kotlinx-coroutines-reactive-1.7.3.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-dsl-jvm/1.13.4/1325a59316ede5cc6069ea0dc0557660903efe75/mockk-dsl-jvm-1.13.4.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.7.3/2b09627576f0989a436a00a4a54b55fa5026fb86/kotlinx-coroutines-core-jvm-1.7.3.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-reactor/1.7.3/13f57f47efc246ad33ec09eaac57a6b0ea352686/kotlinx-coroutines-reactor-1.7.3.jar,/Users/D061177/.m2/repository/io/projectreactor/reactor-core/3.6.18/reactor-core-3.6.18.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava3/rxjava/3.1.10/d980c75b983334eeb9a7ea1a252d044f5e6cdf77/rxjava-3.1.10.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.smallrye.reactive/mutiny/1.10.0/e3302d0f42b6c915818b78eefb07136348b65b51/mutiny-1.10.0.jar,/Users/D061177/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.9.22.1/bca243d0af0db4758fbae45c5f4995cb5dabb612/aspectjweaver-1.9.22.1.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-agent-jvm/1.13.4/76f894e361a0cf4cde00d87fc64806b3dd69e9e5/mockk-agent-jvm-1.13.4.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-agent-api-jvm/1.13.4/c509b7a77661b98b057d575ca77a3b86d06feb39/mockk-agent-api-jvm-1.13.4.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.mockk/mockk-core-jvm/1.13.4/f0d5d55696b5f080bb6dbfb6452da9a7a20a8b32/mockk-core-jvm-1.13.4.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.9.25/73023c38b7b20430232893cf9b556dc8486e07a4/kotlin-reflect-1.9.25.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.20/73576ddf378c5b4f1f6b449fe6b119b8183fc078/kotlin-stdlib-jdk8-1.8.20.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.6.3/2241746853abf04073e3ab0dcd9e6729d363b313/kotlinx-serialization-json-jvm-1.6.3.jar,/Users/D061177/.m2/repository/org/jetbrains/kotlinx/kotlinx-serialization-core/1.6.3/kotlinx-serialization-core-1.6.3.jar,/Users/D061177/.m2/repository/org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.6.3/kotlinx-serialization-core-jvm-1.6.3.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.20/3aa51faf20aae8b31e1a4bc54f8370673d7b7df4/kotlin-stdlib-jdk7-1.8.20.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.25/f700a2f2b8f0d6d0fde48f56d894dc722fb029d7/kotlin-stdlib-1.9.25.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.10.5/cbf98926c44240c9ca1519a20e58722be6d6a44a/junit-jupiter-5.10.5.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.10.5/e234785788419ffdfc4b65474b2081c0a9f7e77d/junit-jupiter-engine-5.10.5.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.10.5/e19d95e190aedb81c883d50cc05b1860400d957c/junit-jupiter-params-5.10.5.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-suite-engine/1.10.5/8823bdb12e7cf7e6a342f54013939c27fa77db8/junit-platform-suite-engine-1.10.5.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-suite-commons/1.10.5/383d288a6b9e6f6b191a7dbc1e4d03c2707bd8d4/junit-platform-suite-commons-1.10.5.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.10.5/3b16b91a447cf687c968ee23d21827534fdac5a2/junit-platform-launcher-1.10.5.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-suite-api/1.10.5/d1a341b306cfd43c5d52658f21804f918fca367b/junit-platform-suite-api-1.10.5.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.10.5/7db4b98a955a2686d893a8a209591f029c438b44/junit-platform-engine-1.10.5.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.5/6d1985c5eece30fb9faafe9bf1f5e005ac3d0fcc/junit-platform-commons-1.10.5.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/5.12.0/879cbbd8ec07813d7330c2b2454eb1a77c84b7f7/mockito-junit-jupiter-5.12.0.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.5/a5c09855b0087daaddaa5faa5100ab2555d5e111/junit-jupiter-api-5.10.5.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/5.12.0/22f8bbaf478e6789164787fa411a3b5ed986e110/mockito-core-5.12.0.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-assertj/2.9.1/483787f132b1e8c3b0a80b8918ef6f73370f6743/xmlunit-assertj-2.9.1.jar,/Users/D061177/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar,/Users/D061177/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.4/jackson-databind-2.15.4.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/com.fasterxml.woodstox/woodstox-core/6.6.2/bfe905f19ce0e60bff5b7adcbded2681a092ac3/woodstox-core-6.6.2.jar,/Users/D061177/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/mockwebserver/3.14.9/3154829b4acb845bfea141eb1226e64a9ccb5c98/mockwebserver-3.14.9.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.projectreactor.tools/blockhound/1.0.8.RELEASE/e0dd72a1e2bc8e6a4e9f5ea3732a583695d9f0b6/blockhound-1.0.8.RELEASE.jar,/Users/D061177/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.jar,/Users/D061177/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar,/Users/D061177/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-matchers/2.9.1/a8fc4434bca3c3980727ce7f305fa593dfad5b60/xmlunit-matchers-2.9.1.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j2-impl/2.21.1/77d14bb4ef6487833652c443dd7d264e26e2e968/log4j-slf4j2-impl-2.21.1.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.21.1/eba8eac8d464791c84e4bafa0fea7cdf7113168/log4j-core-2.21.1.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-jul/2.21.1/70b87f59c89cc1c0b1136443a70091c82127a4c1/log4j-jul-2.21.1.jar,/Users/D061177/.m2/repository/com/sap/oss/smart-test-picker/smart-test-picker-core/0.1.0/smart-test-picker-core-0.1.0.jar,/Users/D061177/.m2/repository/com/squareup/okhttp3/okhttp/3.14.9/okhttp-3.14.9.jar,/Users/D061177/.m2/repository/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar,/Users/D061177/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar,/Users/D061177/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar,/Users/D061177/.m2/repository/org/jetbrains/annotations/23.0.0/annotations-23.0.0.jar,/Users/D061177/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.4/jackson-annotations-2.15.4.jar,/Users/D061177/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.4/jackson-core-2.15.4.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.121.Final/7a5252fc3543286abbd1642eac74e4df87f7235f/netty-common-4.1.121.Final.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.netty/netty5-common/5.0.0.Alpha5/e262e3f1bca572e7d061cd959b2d357bba1bd711/netty5-common-5.0.0.Alpha5.jar,/Users/D061177/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar,/Users/D061177/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar,/Users/D061177/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.2/stax2-api-4.2.2.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/io.smallrye.common/smallrye-common-annotation/1.13.0/80c0b5cf5a2a255b14d8a16a5424b57ab72bcacb/smallrye-common-annotation-1.13.0.jar,/Users/D061177/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar,/Users/D061177/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar,/Users/D061177/.m2/repository/net/bytebuddy/byte-buddy/1.15.11/byte-buddy-1.15.11.jar,/Users/D061177/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar,/Users/D061177/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar,/Users/D061177/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.15/b4cc9d88d5de562bf75b3a54ab436ad01b3f72d/byte-buddy-agent-1.14.15.jar,/Users/D061177/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar,/Users/D061177/.m2/repository/com/squareup/okio/okio/1.17.2/okio-1.17.2.jar --outputFormats XML --fullMutationMatrix true --threads 4 --timeoutConst 10000 --jvmArgs --add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.util=ALL-UNNAMED --mutators DEFAULTS"
+    },
+    {
+      "pid": 77576,
+      "ppid": 77553,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java -javaagent:/var/folders/b_/kfwtjnkn3b786hkqn6dxb56m0000gn/T/179123760239503337866113942319412909732541897486285.jar --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED -ea -Djava.awt.headless=true org.pitest.coverage.execute.CoverageMinion 54552"
+    },
+    {
+      "pid": 77601,
+      "ppid": 77576,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java -Dnet.bytebuddy.agent.attacher.dump= -cp /Users/D061177/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.15/b4cc9d88d5de562bf75b3a54ab436ad01b3f72d/byte-buddy-agent-1.14.15.jar net.bytebuddy.agent.Attacher com.sun.tools.attach.VirtualMachine 77576 /Users/D061177/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.15/b4cc9d88d5de562bf75b3a54ab436ad01b3f72d/byte-buddy-agent-1.14.15.jar false"
+    }
+  ],
+  "samples": [
+    {
+      "elapsedSeconds": 0.048854499999833934,
+      "cpuPercent": 0.0,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 1.1018766249999317,
+      "cpuPercent": 31.9,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 2.1551606670000183,
+      "cpuPercent": 15.2,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 3.2114173749996553,
+      "cpuPercent": 7.9,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 4.259962499999801,
+      "cpuPercent": 12.0,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 5.314643499999875,
+      "cpuPercent": 10.7,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 6.365354125000067,
+      "cpuPercent": 46.6,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 7.414080042000023,
+      "cpuPercent": 52.8,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 8.46521974999996,
+      "cpuPercent": 9.1,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 9.51243199999999,
+      "cpuPercent": 67.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 10.570511417000034,
+      "cpuPercent": 102.10000000000001,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 11.614061332999881,
+      "cpuPercent": 222.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 12.665041249999831,
+      "cpuPercent": 148.8,
+      "processes": 3
+    },
+    {
+      "elapsedSeconds": 13.715267666999807,
+      "cpuPercent": 105.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 14.767140082999958,
+      "cpuPercent": 94.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 15.819538749999992,
+      "cpuPercent": 64.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 16.883359582999674,
+      "cpuPercent": 62.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 17.931819916999757,
+      "cpuPercent": 80.80000000000001,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 18.978846041999986,
+      "cpuPercent": 83.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 20.028553957999975,
+      "cpuPercent": 78.60000000000001,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 21.07692462499972,
+      "cpuPercent": 91.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 22.13290204199984,
+      "cpuPercent": 153.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 23.180542416999742,
+      "cpuPercent": 170.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 24.22412412499989,
+      "cpuPercent": 169.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 25.27340833299968,
+      "cpuPercent": 117.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 26.33502283300004,
+      "cpuPercent": 98.30000000000001,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 27.379243999999744,
+      "cpuPercent": 164.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 28.42665341699967,
+      "cpuPercent": 137.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 29.480268833000082,
+      "cpuPercent": 107.0,
+      "processes": 2
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "present": true,
+  "rawMatches": [
+    {
+      "sourceXml": "iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz",
+      "ordinal": 17,
+      "status": "KILLED"
+    }
+  ],
+  "eligibleExamples": [
+    {
+      "mutationId": "spring-core|org.springframework.core.convert.support.GenericConversionService|canConvert|(Ljava/lang/Class;Ljava/lang/Class;)Z|133|VoidMethodCallMutator|indexes=unknown|blocks=unknown|ordinal=iterations/pit-unify/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml.gz:17",
+      "pitOrdinal": 17,
+      "nameLevelHitCount": 100,
+      "emptyFootprintCount": 14,
+      "baseSelectedCount": 114,
+      "baseComposition": {
+        "H": 100,
+        "U": 14,
+        "other": 0
+      },
+      "killingTests": [
+        "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+        "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467"
+      ],
+      "killerTargetClassFootprints": [
+        {
+          "coverageKey": "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.convert.support.GenericConversionService#<init>"
+          ]
+        },
+        {
+          "coverageKey": "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467",
+          "type": "A",
+          "targetClassPresent": true,
+          "mutatedMethodPresent": false,
+          "targetClassMethods": [
+            "org.springframework.core.convert.support.GenericConversionService#<init>"
+          ]
+        }
+      ],
+      "footprintType": "A",
+      "baseInclusive": false,
+      "constructorInclusive": true,
+      "constructorRecovers": true
+    }
+  ]
+}
