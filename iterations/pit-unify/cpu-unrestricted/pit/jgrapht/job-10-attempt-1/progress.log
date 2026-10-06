@@ -1,0 +1,2 @@
+[23:18:56] [10/20] Starting: org.jgrapht.alg.lca.BinaryLiftingLCAFinder (LOC=252, tests=org.jgrapht.alg.lca.*)
+[23:21:05] [10/20] DONE: org.jgrapht.alg.lca.BinaryLiftingLCAFinder (129s, 47 mutations)

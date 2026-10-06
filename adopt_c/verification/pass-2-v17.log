@@ -1,0 +1,11 @@
+commons-lang 772 eligible
+jgrapht 473 eligible
+spring-core 419 eligible
+petclinic 94 eligible
+flink 349 eligible
+spring-security 340 eligible
+hibernate 401 eligible
+quarkus 1083 eligible
+{"uniqueInvocations": 1349, "weightedOccurrences": 3931, "mismatches": 0, "nonSelectedModes": 0, "testSelectorCodeSource": "file:/private/tmp/stp-b2-2e0954/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar", "coverageMapReaderCodeSource": "file:/private/tmp/stp-b2-2e0954/smart-test-picker-common/build/libs/smart-test-picker-common-0.2.0.jar", "classBaselineVerification": "OFFLINE_ONLY", "constructorVariantVerification": "PYTHON_ONLY", "invocationProvenance": {"source": "iterations/pit-unify/java/output.json", "sourceSha256": "788a469bde630ec3e8ac11ae87a9179cf8352b08256489a49356ad579df78f76", "sourceInputsSha256": "4a8b761bf3b0e9bff585e7781403630032b327edc65e6da5bd1f96b2c03c658c", "identicalInputsReused": 1349, "additionalInvocations": 0, "freshLoaderRuns": 8, "reason": "Identical map digests, class/method inputs, evaluator sets, selector runtime artifacts and harness. Occurrences recomputed from C matrices; all maps freshly loaded."}}
+Loader differing entries: 0
+PASS: v17 raw-input derivation, all C outputs, Java full sets, input preservation and adopted manifest verified

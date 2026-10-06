@@ -1,0 +1,187 @@
+{
+  "jgrapht": {
+    "classes": [
+      {
+        "fqn": "org.jgrapht.Graphs",
+        "targetTests": "org.jgrapht.GraphsTest,org.jgrapht.GraphTestsTest,org.jgrapht.GraphMetricsTest"
+      },
+      {
+        "fqn": "org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder",
+        "targetTests": "org.jgrapht.alg.clique.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.clustering.LabelPropagationClustering",
+        "targetTests": "org.jgrapht.alg.clustering.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.color.GreedyColoring",
+        "targetTests": "org.jgrapht.alg.color.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector",
+        "targetTests": "org.jgrapht.alg.connectivity.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles",
+        "targetTests": "org.jgrapht.alg.cycle.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.drawing.model.ListenableLayoutModel2D",
+        "targetTests": "org.jgrapht.alg.drawing.model.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.flow.PushRelabelMFImpl",
+        "targetTests": "org.jgrapht.alg.flow.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector",
+        "targetTests": "org.jgrapht.alg.isomorphism.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+        "targetTests": "org.jgrapht.alg.lca.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction",
+        "targetTests": "org.jgrapht.alg.linkprediction.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "targetTests": "org.jgrapht.alg.matching.blossom.v5.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.scoring.ClosenessCentrality",
+        "targetTests": "org.jgrapht.alg.scoring.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+        "targetTests": "org.jgrapht.alg.shortestpath.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree",
+        "targetTests": "org.jgrapht.alg.spanning.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+        "targetTests": "org.jgrapht.alg.tour.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.util.UnorderedPair",
+        "targetTests": "org.jgrapht.alg.util.*"
+      },
+      {
+        "fqn": "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+        "targetTests": "org.jgrapht.alg.vertexcover.*"
+      },
+      {
+        "fqn": "org.jgrapht.generate.netgen.Distributor",
+        "targetTests": "org.jgrapht.generate.netgen.*"
+      },
+      {
+        "fqn": "org.jgrapht.graph.specifics.UndirectedSpecifics",
+        "targetTests": "org.jgrapht.graph.*"
+      }
+    ],
+    "BCompleteClasses": 20,
+    "BFailedClasses": []
+  },
+  "spring-core": {
+    "classes": [
+      {
+        "fqn": "org.springframework.core.SerializableTypeWrapper",
+        "targetTests": "org.springframework.core.*"
+      },
+      {
+        "fqn": "org.springframework.core.annotation.RepeatableContainers",
+        "targetTests": "org.springframework.core.annotation.*"
+      },
+      {
+        "fqn": "org.springframework.core.codec.AbstractDataBufferDecoder",
+        "targetTests": "org.springframework.core.codec.*"
+      },
+      {
+        "fqn": "org.springframework.core.convert.TypeDescriptor",
+        "targetTests": "org.springframework.core.convert.*"
+      },
+      {
+        "fqn": "org.springframework.core.convert.converter.ConvertingComparator",
+        "targetTests": "org.springframework.core.convert.*"
+      },
+      {
+        "fqn": "org.springframework.core.convert.support.GenericConversionService",
+        "targetTests": "org.springframework.core.convert.*"
+      },
+      {
+        "fqn": "org.springframework.core.env.PropertySource",
+        "targetTests": "org.springframework.core.env.*"
+      },
+      {
+        "fqn": "org.springframework.core.io.AbstractResource",
+        "targetTests": "org.springframework.core.io.*"
+      },
+      {
+        "fqn": "org.springframework.core.io.buffer.DataBufferUtils",
+        "targetTests": "org.springframework.core.io.*"
+      },
+      {
+        "fqn": "org.springframework.core.io.support.PathMatchingResourcePatternResolver",
+        "targetTests": "org.springframework.core.io.*"
+      },
+      {
+        "fqn": "org.springframework.core.log.LogMessage",
+        "targetTests": "org.springframework.core.log.*"
+      },
+      {
+        "fqn": "org.springframework.core.style.DefaultValueStyler",
+        "targetTests": "org.springframework.core.style.*"
+      },
+      {
+        "fqn": "org.springframework.core.task.SimpleAsyncTaskExecutor",
+        "targetTests": "org.springframework.core.task.*"
+      },
+      {
+        "fqn": "org.springframework.core.type.StandardClassMetadata",
+        "targetTests": "org.springframework.core.type.*"
+      },
+      {
+        "fqn": "org.springframework.core.type.classreading.SimpleAnnotationMetadata",
+        "targetTests": "org.springframework.core.type.*"
+      },
+      {
+        "fqn": "org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter",
+        "targetTests": "org.springframework.core.type.*"
+      },
+      {
+        "fqn": "org.springframework.util.Assert",
+        "targetTests": "org.springframework.util.*"
+      },
+      {
+        "fqn": "org.springframework.util.backoff.ExponentialBackOff",
+        "targetTests": "org.springframework.util.*"
+      },
+      {
+        "fqn": "org.springframework.util.concurrent.ListenableFutureCallbackRegistry",
+        "targetTests": "org.springframework.util.*"
+      },
+      {
+        "fqn": "org.springframework.util.function.ThrowingConsumer",
+        "targetTests": "org.springframework.util.*"
+      },
+      {
+        "fqn": "org.springframework.util.unit.DataSize",
+        "targetTests": "org.springframework.util.*"
+      },
+      {
+        "fqn": "org.springframework.util.xml.AbstractStaxXMLReader",
+        "targetTests": "org.springframework.util.*"
+      }
+    ],
+    "BCompleteClasses": 18,
+    "BFailedClasses": [
+      "org.springframework.core.SerializableTypeWrapper",
+      "org.springframework.core.io.AbstractResource",
+      "org.springframework.core.io.buffer.DataBufferUtils",
+      "org.springframework.core.io.support.PathMatchingResourcePatternResolver"
+    ]
+  }
+}

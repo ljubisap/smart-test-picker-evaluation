@@ -1,0 +1,2 @@
+[23:14:26] [5/20] Starting: org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector (LOC=258, tests=org.jgrapht.alg.connectivity.*)
+[23:14:40] [5/20] DONE: org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector (14s, 18 mutations)

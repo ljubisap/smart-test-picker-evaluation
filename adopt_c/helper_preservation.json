@@ -1,0 +1,12 @@
+{
+  "identicalFunctionBodies": [
+    "sha",
+    "dump",
+    "scrub",
+    "scrub_object",
+    "record_agreement"
+  ],
+  "oldSourceSha256": "e340713ed28762e491daf3b2e1bba6d7a44b6f66eb8aa6854d57231770e7c2ec",
+  "retainedSource": "adopt_c/scripts/replay_helpers.py",
+  "sha256": "0dadcf5b329a74570000b8fb743820ae9043ea2efa86ec63ff44f6ce17f8aaf6"
+}

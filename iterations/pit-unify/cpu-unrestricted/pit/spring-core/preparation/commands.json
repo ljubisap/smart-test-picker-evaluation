@@ -1,0 +1,31 @@
+[
+  {
+    "id": "001",
+    "originalCommand": [
+      "./gradlew",
+      "--no-daemon",
+      "--max-workers=1",
+      ":spring-core:jar",
+      ":spring-core:testFixturesJar",
+      ":spring-jcl:jar",
+      ":spring-core:pitClasspath"
+    ],
+    "command": [
+      "./gradlew",
+      "--no-daemon",
+      "--max-workers=1",
+      ":spring-core:jar",
+      ":spring-core:testFixturesJar",
+      ":spring-jcl:jar",
+      ":spring-core:pitClasspath"
+    ],
+    "cwd": "/private/tmp/pit-unify-spring-core-nydoloo0/subject",
+    "timeout": 1800,
+    "pitWorkers": null,
+    "startedUtc": "2026-10-05T21:59:32.851459+00:00",
+    "pid": 77455,
+    "peakObservedCpuPercent": 262.3,
+    "elapsedSeconds": 29.35960695799986,
+    "exitCode": 0
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "gates": {
+    "C_rederived_equality": true,
+    "repository_twice": true,
+    "manuscript_twice": true,
+    "package_twice": true,
+    "relocated_repository": true,
+    "two_actual_replays": true,
+    "identity_scan": true
+  },
+  "status": "ALL_GATES_PASS",
+  "wordFiles": [
+    {
+      "path": "/Users/D061177/work/issta/rad1-v16/RAD1_v16.docx",
+      "sha256": "70cba8c81a78700c7a131c8f2cbc75450ea5bdb750e6c4b84ea0ab261629af29"
+    },
+    {
+      "path": "/Users/D061177/work/issta/rad1-v16/V16_CHANGES.md",
+      "sha256": "c552fd038a2bc40456032f2f8e74243c86eb9cc1d1810c173a4d5fcdc7b439d8"
+    },
+    {
+      "path": "/Users/D061177/work/issta/rad1-v16/plain-text.diff",
+      "sha256": "63813b8a77e9edc1e8fab412e7d2d242c6aeb1baded87bd95501d6c050f56829"
+    },
+    {
+      "path": "/Users/D061177/work/issta/rad1-v16/verification-1.json",
+      "sha256": "0d6a45c44c3f5293804dc46c53470e94994c87cf527c44b3684b4a3f9b2fb5f8"
+    },
+    {
+      "path": "/Users/D061177/work/issta/rad1-v16/verification-2.json",
+      "sha256": "0d6a45c44c3f5293804dc46c53470e94994c87cf527c44b3684b4a3f9b2fb5f8"
+    }
+  ],
+  "zip": {
+    "path": "/Users/D061177/work/issta/adopt-c-work/anon-final.zip",
+    "sha256": "22180edf00c2f396ec4daa1adcf1a3cab561751fe0b82a0bf55237803bbf55c8",
+    "bytes": 66835830,
+    "unpackedBytes": 577539794
+  },
+  "undeterminedAnnotations": []
+}

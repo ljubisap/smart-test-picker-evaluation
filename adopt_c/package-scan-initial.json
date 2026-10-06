@@ -1,0 +1,265 @@
+{
+  "zeroMatches": false,
+  "hits": [
+    {
+      "file": "data/maps/commons-lang.json",
+      "token": "ISSTA",
+      "count": 165,
+      "pathHit": false,
+      "example": "it-jupiter\",\"executionShape\":\"ORDINARY\"},\"BackgroundInitializerSupplierTest#testIsStartedAfterGet_1e53f63\":{\"module\":\"commons-lang3\",\"testClassFqn\":\"org.apache.commons.lang3.concurrent.BackgroundInitializerSupplierTest\",\"logicalMethodName\":"
+    },
+    {
+      "file": "data/maps/commons-lang.json",
+      "token": "legacy",
+      "count": 4697,
+      "pathHit": false,
+      "example": "ng3.AnnotationUtilsTest\",\"logicalMethodName\":\"testAnnotationsOfDifferingTypes\",\"legacySessionId\":\"AnnotationUtilsTest#testAnnotationsOfDifferingTypes_48d27f3\",\"engine\":\"junit-jupiter\",\"executionShape\":\"ORDINARY\"},\"AnnotationUtilsTest#testBo"
+    },
+    {
+      "file": "data/maps/flink.json.gz",
+      "token": "ISSTA",
+      "count": 54,
+      "pathHit": false,
+      "example": "engine\":\"junit-jupiter\",\"executionShape\":\"ORDINARY\"},\"AdaptiveSchedulerTest#testIsState_168f4de\":{\"module\":\"flink-runtime\",\"testClassFqn\":\"org.apache.flink.runtime.scheduler.adaptive.AdaptiveSchedulerTest\",\"logicalMethodName\":\"testIsState\","
+    },
+    {
+      "file": "data/maps/flink.json.gz",
+      "token": "legacy",
+      "count": 798,
+      "pathHit": false,
+      "example": "chMissed\":79,\"branchCovered\":13},\"org.apache.flink.streaming.api.functions.sink.legacy.PrintSinkFunction\":{\"lineMissed\":15,\"lineCovered\":3,\"branchMissed\":0,\"branchCovered\":0},\"org.apache.flink.streaming.api.functions.sink.legacy.RichSinkFun"
+    },
+    {
+      "file": "data/maps/hibernate.json.gz",
+      "token": "ISSTA",
+      "count": 2847,
+      "pathHit": false,
+      "example": "toryNameAlsoJndiName\",\"org.hibernate.boot.internal.SessionFactoryOptionsBuilder#isStatisticsEnabled\",\"org.hibernate.boot.internal.SessionFactoryOptionsBuilder#isStructuredCacheEntriesEnabled\",\"org.hibernate.boot.internal.SessionFactoryOptio"
+    },
+    {
+      "file": "data/maps/hibernate.json.gz",
+      "token": "legacy",
+      "count": 6195,
+      "pathHit": false,
+      "example": "d\":8,\"branchCovered\":13},\"org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl\":{\"lineMissed\":8,\"lineCovered\":10,\"branchMissed\":4,\"branchCovered\":4},\"org.hibernate.boot.model.naming.ImplicitUniqueKeyNameSource\":{\"lineMissed\":"
+    },
+    {
+      "file": "data/maps/petclinic.json",
+      "token": "legacy",
+      "count": 56,
+      "pathHit": false,
+      "example": "inic.service.ClinicServiceTests\",\"logicalMethodName\":\"shouldAddNewVisitForPet\",\"legacySessionId\":\"ClinicServiceTests#shouldAddNewVisitForPet_5c9a63c\",\"engine\":\"junit-jupiter\",\"executionShape\":\"ORDINARY\"},\"ClinicServiceTests#shouldFindAllPet"
+    },
+    {
+      "file": "data/maps/quarkus.json.gz",
+      "token": "ISSTA",
+      "count": 122,
+      "pathHit": false,
+      "example": "kus.arc.processor.BeanInfo#isProducerMethod\",\"io.quarkus.arc.processor.BeanInfo#isStaticProducer\",\"io.quarkus.arc.processor.BeanInfo#isSubclassRequired\",\"io.quarkus.arc.processor.BeanInfo#isSynthetic\",\"io.quarkus.arc.processor.BeanInfo#lamb"
+    },
+    {
+      "file": "data/maps/quarkus.json.gz",
+      "token": "legacy",
+      "count": 684,
+      "pathHit": false,
+      "example": "s.arc.test.discovery.AbstractClassIgnoredTest\",\"logicalMethodName\":\"testBeans\",\"legacySessionId\":\"AbstractClassIgnoredTest#testBeans_5512d53\",\"engine\":\"junit-jupiter\",\"executionShape\":\"ORDINARY\"},\"AbstractDecoratorDeclaringAbstractMethodTes"
+    },
+    {
+      "file": "data/maps/spring-core.json",
+      "token": "ISSTA",
+      "count": 87,
+      "pathHit": false,
+      "example": "engine\":\"junit-jupiter\",\"executionShape\":\"ORDINARY\"},\"SimpleMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_6e35161\":{\"testClassFqn\":\"org.springframework.core.type.classreading.SimpleMethodMetadataTests\",\"logicalMethodName\":\"isStaticW"
+    },
+    {
+      "file": "data/maps/spring-core.json",
+      "token": "legacy",
+      "count": 3638,
+      "pathHit": false,
+      "example": "io.ResourceTests$AbstractResourceTests\",\"logicalMethodName\":\"hasContentLength\",\"legacySessionId\":\"AbstractResourceTests#hasContentLength_7390cba\",\"engine\":\"junit-jupiter\",\"executionShape\":\"ORDINARY\"},\"AbstractResourceTests#missingResourceIs"
+    },
+    {
+      "file": "data/maps/spring-security.json.gz",
+      "token": "legacy",
+      "count": 1440,
+      "pathHit": false,
+      "example": "AuthenticationBuilderTests\",\"logicalMethodName\":\"applyWhenAuthoritiesThenAdds\",\"legacySessionId\":\"AbstractAuthenticationBuilderTests#applyWhenAuthoritiesThenAdds_147d1e7\",\"engine\":\"junit-jupiter\",\"executionShape\":\"ORDINARY\"},\"AbstractAuthen"
+    },
+    {
+      "file": "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint/mutations.xml",
+      "token": "ISSTA",
+      "count": 16,
+      "pathHit": false,
+      "example": ".scheduler.adaptive.StopWithSavepointTest]/[method:testEnsureCheckpointSchedulerIsStartedAgain()]|org.apache.flink.runtime.scheduler.adaptive.StopWithSavepointTest.[engine:junit-jupiter]/[class:org.apache.flink.runtime.scheduler.adaptive.St"
+    },
+    {
+      "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml",
+      "token": "legacy",
+      "count": 18,
+      "pathHit": false,
+      "example": "rm.test.bytecode.enhancement.access.UnsupportedEnhancementStrategyTest]/[method:legacy()]|org.hibernate.orm.test.bytecode.enhancement.lazy.MultipleBagsInLazyFetchGroupFetchModeSelectTest.[engine:bytecode-enhanced-engine]/[Enhanced:true]/[cl"
+    },
+    {
+      "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml",
+      "token": "legacy",
+      "count": 66,
+      "pathHit": false,
+      "example": "rm.test.bytecode.enhancement.access.UnsupportedEnhancementStrategyTest]/[method:legacy()]|org.hibernate.orm.test.bytecode.enhancement.dirty.DirtyTrackingCollectionInDefaultFetchGroupTest.[engine:bytecode-enhanced-engine]/[Enhanced:true]/[cl"
+    },
+    {
+      "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml",
+      "token": "legacy",
+      "count": 14,
+      "pathHit": false,
+      "example": "rm.test.bytecode.enhancement.access.UnsupportedEnhancementStrategyTest]/[method:legacy()]|org.hibernate.orm.test.bytecode.enhancement.orphan.OrphanTest.[engine:bytecode-enhanced-engine]/[Enhanced:EnhancerTestContext]/[class:org.hibernate.or"
+    },
+    {
+      "file": "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml",
+      "token": "legacy",
+      "count": 2,
+      "pathHit": false,
+      "example": "rm.test.bytecode.enhancement.access.UnsupportedEnhancementStrategyTest]/[method:legacy()]|org.hibernate.orm.test.bytecode.enhancement.detached.reference.DetachedReferenceInitializationBatchFetchTest.[engine:bytecode-enhanced-engine]/[class:"
+    },
+    {
+      "file": "data/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml.gz",
+      "token": "ISSTA",
+      "count": 8,
+      "pathHit": false,
+      "example": "iter]/[class:org.springframework.core.type.StandardMethodMetadataTests]/[method:isStaticWhenNotStaticReturnsFalse()]|org.springframework.core.type.StandardAnnotationMetadataTests.[engine:junit-jupiter]/[class:org.springframework.core.type.S"
+    },
+    {
+      "file": "data/pit/spring-core/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml.gz",
+      "token": "ISSTA",
+      "count": 8,
+      "pathHit": false,
+      "example": "s:org.springframework.core.type.classreading.SimpleMethodMetadataTests]/[method:isStaticWhenNotStaticReturnsFalse()]|org.springframework.core.type.classreading.SimpleMethodMetadataTests.[engine:junit-jupiter]/[class:org.springframework.core"
+    },
+    {
+      "file": "evidence/failed_killer_impact.json",
+      "token": "ISSTA",
+      "count": 8,
+      "pathHit": false,
+      "example": "idableWhenOverridableReturnsTrue_71851a6\",\n        \"StandardMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_c462e74\",\n        \"StandardMethodMetadataTests#isStatusWhenStaticReturnsTrue_1fb733b\",\n        \"StandardMethodMetadataTests#ve"
+    },
+    {
+      "file": "evidence/java_replay/comparison.json",
+      "token": "ISSTA",
+      "count": 46,
+      "pathHit": false,
+      "example": "idableWhenOverridableReturnsTrue_71851a6\",\n        \"StandardMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_c462e74\",\n        \"StandardMethodMetadataTests#isStatusWhenStaticReturnsTrue_1fb733b\",\n        \"StandardMethodMetadataTests#me"
+    },
+    {
+      "file": "evidence/java_replay/comparison.json",
+      "token": "legacy",
+      "count": 28,
+      "pathHit": false,
+      "example": "neFromParameterizedEntity_73a27d8\",\n        \"UnsupportedEnhancementStrategyTest#legacy_247852f\",\n        \"UnsupportedEnhancementStrategyTest#testAccessTypeFieldEntity_7914bf4\",\n        \"UnsupportedEnhancementStrategyTest#testAccessTypePrope"
+    },
+    {
+      "file": "evidence/java_replay/inputs.json",
+      "token": "ISSTA",
+      "count": 23,
+      "pathHit": false,
+      "example": "leWhenOverridableReturnsTrue_71851a6\",\n            \"StandardMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_c462e74\",\n            \"StandardMethodMetadataTests#isStatusWhenStaticReturnsTrue_1fb733b\",\n            \"StandardMethodMetadata"
+    },
+    {
+      "file": "evidence/java_replay/inputs.json",
+      "token": "legacy",
+      "count": 14,
+      "pathHit": false,
+      "example": "omParameterizedEntity_73a27d8\",\n            \"UnsupportedEnhancementStrategyTest#legacy_247852f\",\n            \"UnsupportedEnhancementStrategyTest#testAccessTypeFieldEntity_7914bf4\",\n            \"UnsupportedEnhancementStrategyTest#testAccessT"
+    },
+    {
+      "file": "evidence/java_replay/outputs.json",
+      "token": "ISSTA",
+      "count": 23,
+      "pathHit": false,
+      "example": "idableWhenOverridableReturnsTrue_71851a6\",\n        \"StandardMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_c462e74\",\n        \"StandardMethodMetadataTests#isStatusWhenStaticReturnsTrue_1fb733b\",\n        \"StandardMethodMetadataTests#me"
+    },
+    {
+      "file": "evidence/java_replay/outputs.json",
+      "token": "legacy",
+      "count": 14,
+      "pathHit": false,
+      "example": "neFromParameterizedEntity_73a27d8\",\n        \"UnsupportedEnhancementStrategyTest#legacy_247852f\",\n        \"UnsupportedEnhancementStrategyTest#testAccessTypeFieldEntity_7914bf4\",\n        \"UnsupportedEnhancementStrategyTest#testAccessTypePrope"
+    },
+    {
+      "file": "evidence/pit_replay/flink/run.log",
+      "token": "legacy",
+      "count": 1,
+      "pathHit": false,
+      "example": "ava.base/java.util.concurrent=ALL-UNNAMED -Djunit.platform.reflection.search.useLegacySemantics=true\n\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b-\b\\\b|\b/\b/================================================================================\n- Mutators\n==================="
+    },
+    {
+      "file": "evidence/pit_replay/hibernate/mutations.xml",
+      "token": "legacy",
+      "count": 66,
+      "pathHit": false,
+      "example": "rm.test.bytecode.enhancement.access.UnsupportedEnhancementStrategyTest]/[method:legacy()]|org.hibernate.orm.test.bytecode.enhancement.lazy.basic.LazyBasicFieldAccessTest.[engine:bytecode-enhanced-engine]/[Enhanced:true]/[class:org.hibernate"
+    },
+    {
+      "file": "evidence/pit_replay/hibernate/record_agreement.json",
+      "token": "legacy",
+      "count": 56,
+      "pathHit": false,
+      "example": "LazyBasicCacheTest#test_320430b\",\n          \"UnsupportedEnhancementStrategyTest#legacy_247852f\",\n          \"UnsupportedEnhancementStrategyTest#testAccessTypeFieldEntity_7914bf4\",\n          \"UnsupportedEnhancementStrategyTest#testAccessTypeP"
+    },
+    {
+      "file": "evidence/pit_replay/hibernate/run.log",
+      "token": "legacy",
+      "count": 11,
+      "pathHit": false,
+      "example": "y/hibernate/checkout/hibernate-core/src/main/antlr/org/hibernate/grammars/graph/LegacyGraphLanguageParser.g4` -> `<WORKDIR>/work/study/final-artifact-work/uniform-replay/hibernate/checkout/hibernate-core/target/tmp/antlr/org/hibernate/gramm"
+    },
+    {
+      "file": "evidence/springcore_run2/footprint_differences.json",
+      "token": "ISSTA",
+      "count": 1,
+      "pathHit": false,
+      "example": "removedMethods\": []\n    },\n    {\n      \"identity\": \"StandardMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_c462e74\",\n      \"run1Present\": true,\n      \"run2Present\": true,\n      \"addedClasses\": [],\n      \"removedClasses\": [],\n      \"a"
+    },
+    {
+      "file": "evidence/springcore_run2/map.json",
+      "token": "ISSTA",
+      "count": 87,
+      "pathHit": false,
+      "example": "ingframework.util.ClassUtils#isInnerClass\",\"org.springframework.util.ClassUtils#isStaticClass\",\"org.springframework.util.ConcurrentReferenceHashMap#doTask\",\"org.springframework.util.ConcurrentReferenceHashMap#get\",\"org.springframework.util."
+    },
+    {
+      "file": "evidence/springcore_run2/map.json",
+      "token": "legacy",
+      "count": 3638,
+      "pathHit": false,
+      "example": "io.ResourceTests$AbstractResourceTests\",\"logicalMethodName\":\"hasContentLength\",\"legacySessionId\":\"AbstractResourceTests#hasContentLength_7390cba\",\"engine\":\"junit-jupiter\",\"executionShape\":\"ORDINARY\"},\"AbstractResourceTests#missingResourceIs"
+    },
+    {
+      "file": "evidence/succeeding_tests.json",
+      "token": "legacy",
+      "count": 1,
+      "pathHit": false,
+      "example": "eDynamicUpdateTest#testIt_0d1cb44\",\n        \"UnsupportedEnhancementStrategyTest#legacy_247852f\",\n        \"UnsupportedEnhancementStrategyTest#testAccessTypeFieldEntity_7914bf4\",\n        \"UnsupportedEnhancementStrategyTest#testAccessTypePrope"
+    },
+    {
+      "file": "rerun/build-inspection.json",
+      "token": "legacy",
+      "count": 7,
+      "pathHit": false,
+      "example": "70e6b0966d781f9c\",\n      \"integration-tests/gradle/src/main/resources/test-that-legacy-jar-format-works/build.gradle\": \"3d47b30fca89ce2b34da11b315f64ad1e7cf5cca4480886475ee70bb089c4390\",\n      \"integration-tests/gradle/src/main/resources/te"
+    },
+    {
+      "file": "results/per_record.json",
+      "token": "ISSTA",
+      "count": 57,
+      "pathHit": false,
+      "example": "verridableWhenOverridableReturnsTrue_5467df4\",\n      \"SimpleMethodMetadataTests#isStaticWhenNotStaticReturnsFalse_6e35161\",\n      \"SimpleMethodMetadataTests#isStatusWhenStaticReturnsTrue_b9657db\",\n      \"SimpleMethodMetadataTests#metadataLo"
+    },
+    {
+      "file": "results/per_record.json",
+      "token": "legacy",
+      "count": 23,
+      "pathHit": false,
+      "example": "pleDynamicUpdateTest#testIt_0d1cb44\",\n      \"UnsupportedEnhancementStrategyTest#legacy_247852f\",\n      \"UnsupportedEnhancementStrategyTest#testAccessTypeFieldEntity_7914bf4\",\n      \"UnsupportedEnhancementStrategyTest#testAccessTypePropertyI"
+    }
+  ],
+  "totalOccurrences": 25019
+}

@@ -1,0 +1,37 @@
+{
+  "sources": [
+    "results/v17-summary-tables.json",
+    "results/v17-per-record-outcomes.json.gz",
+    "results/v17-residual-taxonomy.json",
+    "results/v17-random-baseline.json"
+  ],
+  "selectedFractionRangePct": [
+    0.46860469862253606,
+    39.42279135820469
+  ],
+  "maxRandomDifferencePp": 0.050597641421646244,
+  "maxRandomDifferenceCeiling3dp": 0.051,
+  "eligibleMutatorCounts": {
+    "RemoveConditionalMutator_EQUAL_ELSE": 1332,
+    "BooleanTrueReturnValsMutator": 215,
+    "MathMutator": 231,
+    "VoidMethodCallMutator": 761,
+    "NullReturnValsMutator": 567,
+    "EmptyObjectReturnValsMutator": 281,
+    "BooleanFalseReturnValsMutator": 143,
+    "PrimitiveReturnsMutator": 108,
+    "RemoveConditionalMutator_ORDER_ELSE": 152,
+    "ConditionalsBoundaryMutator": 112,
+    "InvertNegsMutator": 13,
+    "IncrementsMutator": 16
+  },
+  "residualMutatorCounts": {
+    "VoidMethodCallMutator": 18,
+    "RemoveConditionalMutator_EQUAL_ELSE": 1
+  },
+  "residualCount": 19,
+  "methodKindInclusive": {
+    "constructor": 67,
+    "lambda": 531
+  }
+}

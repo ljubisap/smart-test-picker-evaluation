@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "eligible": 3931,
+  "fullSelectedSetsEqual": true,
+  "allPolicyOutcomesEqual": true,
+  "summaryEquality": true,
+  "intervalEquality": true,
+  "bootstrapInputEquality": true,
+  "randomEquality": true,
+  "taxonomyEquality": true,
+  "outputs": [
+    "per_record",
+    "summary",
+    "intervals",
+    "bootstrap_inputs",
+    "random_baseline",
+    "taxonomy",
+    "mitigation"
+  ],
+  "evidence": [
+    "failed_killer_impact",
+    "succeeding_tests",
+    "springcore_run2/sensitivity",
+    "worked_example"
+  ]
+}

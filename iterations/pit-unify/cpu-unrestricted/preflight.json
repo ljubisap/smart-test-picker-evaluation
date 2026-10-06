@@ -1,0 +1,90 @@
+{
+  "head": "f9c56074a092da85938f7269221a360bde4afb86",
+  "main": "3bdf61c0b7481fe6da25e4bd335b91a348a4f837",
+  "branch": "iteration-pit-unify",
+  "status": "?? iterations/pit-unify/cpu-unrestricted/",
+  "utc": "2026-10-05T21:11:55.140381+00:00",
+  "subjects": {
+    "jgrapht": {
+      "checkout": "/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject",
+      "revision": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+      "initialStatus": ""
+    },
+    "spring-core": {
+      "checkout": "/private/tmp/pit-unify-spring-core-nydoloo0/subject",
+      "revision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+      "initialStatus": ""
+    }
+  },
+  "inheritedEnvironment": {
+    "JAVA_TOOL_OPTIONS": null,
+    "_JAVA_OPTIONS": null,
+    "JDK_JAVA_OPTIONS": null,
+    "MAVEN_OPTS": null,
+    "GRADLE_OPTS": null
+  },
+  "effectiveEnvironment": {
+    "JAVA_TOOL_OPTIONS": null,
+    "_JAVA_OPTIONS": null,
+    "JDK_JAVA_OPTIONS": null,
+    "MAVEN_OPTS": "-Xmx2g",
+    "GRADLE_OPTS": "-Dorg.gradle.workers.max=1 -Dorg.gradle.daemon=false",
+    "JAVA_HOME": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home",
+    "PATH": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin:/Users/D061177/Programs/apache-maven-3.9.15/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Applications/Privileges.app/Contents/MacOS:/usr/local/share/dotnet:~/.dotnet/tools:/Users/D061177/.codex/packages/standalone/releases/0.160.0-aarch64-apple-darwin/codex-path:/Users/D061177/.codex/tmp/arg0/codex-arg055V8g6:/Users/D061177/.local/bin:/opt/homebrew/Cellar/pyenv-virtualenv/1.2.4/shims:/Users/D061177/.pyenv/shims:/Users/D061177/.pyenv/bin:/opt/anaconda3/bin:/opt/anaconda3/condabin:/opt/homebrew/bin:/Users/D061177/Programs/apache-maven-3.8.6/bin:/usr/local/homebrew/bin:/Users/D061177/.dotnet/tools:/Applications/Privileges.app/Contents/Resources:/Users/D061177/work/hamsters/ec-pipeline/flutter/bin"
+  },
+  "BEnvironmentSource": "iterations/pit-unify/scripts/run_campaigns.py",
+  "removedSetting": "-XX:ActiveProcessorCount only; other previous launch settings preserved",
+  "primaryPitWorkers": 4,
+  "resourceGuard": "Sequential jobs. Monitor campaign child CPU; stop an attempt above 7 aggregate CPU cores (reserve one for analysis), then documented worker=1 fallback. No affinity, processor override or SIGSTOP duty cycling.",
+  "probes": [
+    {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java",
+        "-version"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "openjdk version \"21.0.12.1\" 2026-08-18 LTS\nOpenJDK Runtime Environment SapMachine (build 21.0.12.1+1-LTS)\nOpenJDK 64-Bit Server VM SapMachine (build 21.0.12.1+1-LTS, mixed mode, sharing)\n"
+    },
+    {
+      "command": [
+        "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn",
+        "-version"
+      ],
+      "exitCode": 0,
+      "stdout": "Apache Maven 3.9.15 (98b2cdbfdb5f1ac8781f537ea9acccaed7922349)\nMaven home: /Users/D061177/Programs/apache-maven-3.9.15\nJava version: 21.0.12.1, vendor: SAP SE, runtime: /Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home\nDefault locale: en_DE, platform encoding: UTF-8\nOS name: \"mac os x\", version: \"26.6.2\", arch: \"aarch64\", family: \"mac\"\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java",
+        "/Users/D061177/work/issta/smart-test-picker-evaluation/iterations/pit-unify/cpu-unrestricted/scripts/CpuProbe.java"
+      ],
+      "exitCode": 0,
+      "stdout": "CONTROL_JVM_NOT_SUBJECT_TEST\navailableProcessors=10\ninputArguments=[--add-modules=ALL-DEFAULT]\njava.version=21.0.12.1\njava.home=/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "sysctl",
+        "-n",
+        "hw.logicalcpu",
+        "hw.physicalcpu"
+      ],
+      "exitCode": 0,
+      "stdout": "10\n10\n",
+      "stderr": ""
+    }
+  ],
+  "binaries": {
+    "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java": "877ebd44e995d260cea298acfc454f3c64f29d742e873b9326c222612ff8343d",
+    "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/javac": "5dc2842edea1a1b60ab5707f26995dcd218903947e102061b20f6e96d626f3f6",
+    "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/release": "053ef5700d8c88e249bfc8cca2e5d17cb2260f72174f696890dfa9db9541372f",
+    "/Users/D061177/.m2/repository/org/pitest/pitest/1.17.4/pitest-1.17.4.jar": "97082da0ae5283f564b3f51652c39f4f1d235eb3b019384d11eb5d4fc0e4219e",
+    "/Users/D061177/.m2/repository/org/pitest/pitest-entry/1.17.4/pitest-entry-1.17.4.jar": "809c1cf0b83c14e5c5cdb8d70c2c231db24499243263e18474436e30c23657eb",
+    "/Users/D061177/.m2/repository/org/pitest/pitest-command-line/1.17.4/pitest-command-line-1.17.4.jar": "a1785b9ec46daf34685b63b9702c1b94f052fa90d74cc1a84f20944894e34ccc",
+    "/Users/D061177/.m2/repository/org/pitest/pitest-maven/1.17.4/pitest-maven-1.17.4.jar": "cff5456c95166a5a986453d375ce0ee90375a5fed574ccca8815ff1c372a5ead",
+    "/Users/D061177/.m2/repository/org/pitest/pitest-junit5-plugin/1.2.1/pitest-junit5-plugin-1.2.1.jar": "9d944887a583ebd4adc33d2d26b8b56639fd53fee93b4d068a90596705c072b5"
+  },
+  "controlJvmAvailableProcessors": 10
+}

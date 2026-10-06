@@ -1,0 +1,142 @@
+{
+  "allEqual": true,
+  "files": [
+    {
+      "file": "results/v17-per-record-outcomes.json.gz",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/per_record_outcomes.json.gz",
+      "equal": true,
+      "sha256": "038943332c71eb69ab8eb7a5f250f1868faf9c014a5605e47c94779d2a01431b",
+      "CSourceSha256": "038943332c71eb69ab8eb7a5f250f1868faf9c014a5605e47c94779d2a01431b"
+    },
+    {
+      "file": "results/v17-summary-tables.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "equal": true,
+      "sha256": "ff20b0e9c73cce3a93303473235f252a682094b30730e39f9fbf9b7d66579c27",
+      "CSourceSha256": "ff20b0e9c73cce3a93303473235f252a682094b30730e39f9fbf9b7d66579c27"
+    },
+    {
+      "file": "results/v17-confidence-intervals.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/confidence_intervals.json",
+      "equal": true,
+      "sha256": "f2819fa2522fd7191e48873a17d34a56f06593212b92c41ec91f7ea6084ba3f1",
+      "CSourceSha256": "f2819fa2522fd7191e48873a17d34a56f06593212b92c41ec91f7ea6084ba3f1"
+    },
+    {
+      "file": "results/v17-bootstrap-cluster-inputs.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/bootstrap_cluster_inputs.json",
+      "equal": true,
+      "sha256": "a18428525e04ec4d7931c1aa4d5bb833bc067c35a08c004e08b1de4a39838910",
+      "CSourceSha256": "a18428525e04ec4d7931c1aa4d5bb833bc067c35a08c004e08b1de4a39838910"
+    },
+    {
+      "file": "results/v17-random-baseline.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "equal": true,
+      "sha256": "e655b2b04beeefa3d3418abdfaf9eda450d85207e1387f11b342de7548cbdcf8",
+      "CSourceSha256": "e655b2b04beeefa3d3418abdfaf9eda450d85207e1387f11b342de7548cbdcf8"
+    },
+    {
+      "file": "results/v17-mitigation-comparison.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/mitigation_comparison.json",
+      "equal": true,
+      "sha256": "3a1a8c3562e50d67471727fc504a33e10626a73f3606c4fe1da900475848b042",
+      "CSourceSha256": "3a1a8c3562e50d67471727fc504a33e10626a73f3606c4fe1da900475848b042"
+    },
+    {
+      "file": "results/v17-residual-taxonomy.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "equal": true,
+      "sha256": "0c32de06490ec1f1b00334628abaf51aa6048b084ed4b76723a577b436b40a8f",
+      "CSourceSha256": "0c32de06490ec1f1b00334628abaf51aa6048b084ed4b76723a577b436b40a8f"
+    },
+    {
+      "file": "results/v17-failure-annotations-unified.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/failure_annotations_unified.json",
+      "equal": true,
+      "sha256": "e331192d5d00196ade6a3c659e9a888d86fbee7647c9d4d342dbbdf95b516a1c",
+      "CSourceSha256": "e331192d5d00196ade6a3c659e9a888d86fbee7647c9d4d342dbbdf95b516a1c"
+    },
+    {
+      "file": "results/v17-killer-resolution.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/killer_resolution.json",
+      "equal": true,
+      "sha256": "93d485f4b1817aa4740eab255c2f28e6ef49b9de3fba51edc4f5a8dc736b3434",
+      "CSourceSha256": "93d485f4b1817aa4740eab255c2f28e6ef49b9de3fba51edc4f5a8dc736b3434"
+    },
+    {
+      "file": "results/v17-matrix-inventory.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "equal": true,
+      "sha256": "b4ab45cca80301b207ecf12857d7afad9b1d5081879e4b6a87e886fd2e01e38f",
+      "CSourceSha256": "b4ab45cca80301b207ecf12857d7afad9b1d5081879e4b6a87e886fd2e01e38f"
+    },
+    {
+      "file": "results/v17-succeeding-tests-check.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/succeeding_tests_check.json",
+      "equal": true,
+      "sha256": "947f65ff60f74383171c0afbe7062953d478cc3caface027eb381f2e2892401d",
+      "CSourceSha256": "947f65ff60f74383171c0afbe7062953d478cc3caface027eb381f2e2892401d"
+    },
+    {
+      "file": "results/v17-failed-killer-impact.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/failed_killer_impact.json",
+      "equal": true,
+      "sha256": "0393b8931534300bf3f8edd7e209c34e89669482c820ce76d211745b44e55173",
+      "CSourceSha256": "0393b8931534300bf3f8edd7e209c34e89669482c820ce76d211745b44e55173"
+    },
+    {
+      "file": "results/v17-springcore-run2-sensitivity.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "equal": true,
+      "sha256": "17e9a60976352bb2d9df8b6845467a6611d07a6df56c9d325083a62404bb9b3f",
+      "CSourceSha256": "17e9a60976352bb2d9df8b6845467a6611d07a6df56c9d325083a62404bb9b3f"
+    },
+    {
+      "file": "results/v17-worked-example.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "equal": true,
+      "sha256": "7783ac59ef53792a758870b6583649af65047f76bc7796725e069c41c8df8a97",
+      "CSourceSha256": "7783ac59ef53792a758870b6583649af65047f76bc7796725e069c41c8df8a97"
+    },
+    {
+      "file": "results/v17-six-subject-invariance.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/six_subject_invariance.json",
+      "equal": true,
+      "sha256": "5fa72ae061c5aba3810a4734635a06de2c8294f60641dfacece487d2d338bb83",
+      "CSourceSha256": "5fa72ae061c5aba3810a4734635a06de2c8294f60641dfacece487d2d338bb83"
+    },
+    {
+      "file": "results/v17-java-comparison.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/java_comparison.json",
+      "equal": true,
+      "sha256": "e5f71f0709f331b9e0234af05c2c0827f397918a7482c690577eea846e7dcfb8",
+      "CSourceSha256": "e5f71f0709f331b9e0234af05c2c0827f397918a7482c690577eea846e7dcfb8"
+    },
+    {
+      "file": "results/v17-loader-content-equality.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/loader_content_equality.json",
+      "equal": true,
+      "sha256": "af68252efe2c90ead9cff77763dde967e59f2c932b8c5d9502d9d0b6b216a981",
+      "CSourceSha256": "af68252efe2c90ead9cff77763dde967e59f2c932b8c5d9502d9d0b6b216a981"
+    },
+    {
+      "file": "results/v17-table-i-counts.json",
+      "CSource": "iterations/pit-unify/cpu-unrestricted/results/table_i_counts.json",
+      "equal": true,
+      "sha256": "53a3c1ae06c4290f5da3a309ac8ba8ccc34c6dec87e62b36d69762f62734f570",
+      "CSourceSha256": "53a3c1ae06c4290f5da3a309ac8ba8ccc34c6dec87e62b36d69762f62734f570"
+    }
+  ],
+  "methodKinds": {
+    "source": "iterations/pit-unify/cpu-unrestricted/results/per_record_outcomes.json.gz",
+    "counts": {
+      "regular_method": 3333,
+      "constructor": 67,
+      "lambda": 531,
+      "class_initializer": 0
+    }
+  },
+  "inputs": "analysis/projects_v17.json",
+  "computation": "iterations/pit-unify/scripts/derive.py (unchanged), C routing adapter (unchanged)"
+}

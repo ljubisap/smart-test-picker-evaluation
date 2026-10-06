@@ -1,0 +1,376 @@
+{
+  "commands": [
+    {
+      "pass": 1,
+      "name": "unittest",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "analysis/tests"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 0.42401075,
+      "lastLine": "OK",
+      "log": "adopt_c/verification/pass-1-unittest.log"
+    },
+    {
+      "pass": 1,
+      "name": "failure_modes",
+      "command": [
+        "python3",
+        "analysis/analyze_failure_modes.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 226.272010167,
+      "lastLine": "VERIFY PASSED: all outputs match committed artifacts",
+      "log": "adopt_c/verification/pass-1-failure_modes.log"
+    },
+    {
+      "pass": 1,
+      "name": "selector_equivalence",
+      "command": [
+        "python3",
+        "analysis/verify_selector_equivalence.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 45.61099787500004,
+      "lastLine": "VERIFY PASSED: historical evaluator/model agreement matches committed artifact",
+      "log": "adopt_c/verification/pass-1-selector_equivalence.log"
+    },
+    {
+      "pass": 1,
+      "name": "freeze_artifacts",
+      "command": [
+        "python3",
+        "analysis/freeze_artifacts.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 0.27703008299999965,
+      "lastLine": "verified spring-security: 25 artifacts",
+      "log": "adopt_c/verification/pass-1-freeze_artifacts.log"
+    },
+    {
+      "pass": 1,
+      "name": "recollection",
+      "command": [
+        "python3",
+        "analysis/verify_recollection.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 54.05032808300001,
+      "lastLine": "VERIFY PASSED: recollection_comparison.json (1837 mutations, 187 selected-set differences, 0 safety flips)",
+      "log": "adopt_c/verification/pass-1-recollection.log"
+    },
+    {
+      "pass": 1,
+      "name": "b2",
+      "command": [
+        "python3",
+        "analysis/v14_4_rederivation/verify_b2.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 117.904118417,
+      "lastLine": "VERIFY PASSED: B2 base/constructor/class summaries and selected-set IDs match frozen inputs",
+      "log": "adopt_c/verification/pass-1-b2.log"
+    },
+    {
+      "pass": 1,
+      "name": "v14_6",
+      "command": [
+        "python3",
+        "analysis/v14_6/verify_v14_6.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 317.916034209,
+      "lastLine": "VERIFY PASSED: v14.6 outcomes, summaries, random baseline, intervals, mitigation, taxonomy, and selected-set IDs match recollected maps and frozen PIT inputs",
+      "log": "adopt_c/verification/pass-1-v14_6.log"
+    },
+    {
+      "pass": 1,
+      "name": "v14_7",
+      "command": [
+        "python3",
+        "analysis/v14_7/verify_v14_7.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 237.70872991600004,
+      "lastLine": "VERIFY PASSED: v14.7 spring-core sensitivity, worked example, and eight-subject test-segment scan match inputs",
+      "log": "adopt_c/verification/pass-1-v14_7.log"
+    },
+    {
+      "pass": 1,
+      "name": "v14_8",
+      "command": [
+        "python3",
+        "analysis/v14_8/verify_v14_8.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 0.6832467919999772,
+      "lastLine": "PASS: v14.8 evidence verified; failures=3; eligible killer records=10",
+      "log": "adopt_c/verification/pass-1-v14_8.log"
+    },
+    {
+      "pass": 1,
+      "name": "v14_9",
+      "command": [
+        "python3",
+        "analysis/v14_9/verify_v14_9.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 0.17797858399990218,
+      "lastLine": "PASS: v14.9 failed-killer impact verified; k_miss=0, k_only=0, k_other=10",
+      "log": "adopt_c/verification/pass-1-v14_9.log"
+    },
+    {
+      "pass": 1,
+      "name": "v15",
+      "command": [
+        "python3",
+        "analysis/v15/verify_v15.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 6.2991143340000235,
+      "lastLine": "PASS: v15 succeeding-tests audit verified; f=0, u_tests=1139, unresolved=0",
+      "log": "adopt_c/verification/pass-1-v15.log"
+    },
+    {
+      "pass": 1,
+      "name": "v17",
+      "command": [
+        "python3",
+        "analysis/v17/verify_v17.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 130.91500854100002,
+      "lastLine": "PASS: v17 raw-input derivation, all C outputs, Java full sets, input preservation and adopted manifest verified",
+      "log": "adopt_c/verification/pass-1-v17.log"
+    },
+    {
+      "pass": 1,
+      "name": "historical-B",
+      "command": [
+        "python3",
+        "iterations/pit-unify/verify_unified.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/adopt-c-work/historical-checks",
+      "exitCode": 0,
+      "elapsedSeconds": 125.34694512500005,
+      "lastLine": "VERIFY PASSED: unified raw-input re-derivation, all policies/statistics/diagnostics, Java full sets, unchanged six subjects and original-file hashes",
+      "log": "adopt_c/verification/pass-1-historical-B.log"
+    },
+    {
+      "pass": 2,
+      "name": "unittest",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "analysis/tests"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 0.28860183400001915,
+      "lastLine": "OK",
+      "log": "adopt_c/verification/pass-2-unittest.log"
+    },
+    {
+      "pass": 2,
+      "name": "failure_modes",
+      "command": [
+        "python3",
+        "analysis/analyze_failure_modes.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 228.80589450000002,
+      "lastLine": "VERIFY PASSED: all outputs match committed artifacts",
+      "log": "adopt_c/verification/pass-2-failure_modes.log"
+    },
+    {
+      "pass": 2,
+      "name": "selector_equivalence",
+      "command": [
+        "python3",
+        "analysis/verify_selector_equivalence.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 44.72505583299994,
+      "lastLine": "VERIFY PASSED: historical evaluator/model agreement matches committed artifact",
+      "log": "adopt_c/verification/pass-2-selector_equivalence.log"
+    },
+    {
+      "pass": 2,
+      "name": "freeze_artifacts",
+      "command": [
+        "python3",
+        "analysis/freeze_artifacts.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 1.527148125000167,
+      "lastLine": "verified spring-security: 25 artifacts",
+      "log": "adopt_c/verification/pass-2-freeze_artifacts.log"
+    },
+    {
+      "pass": 2,
+      "name": "recollection",
+      "command": [
+        "python3",
+        "analysis/verify_recollection.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 56.90466337499993,
+      "lastLine": "VERIFY PASSED: recollection_comparison.json (1837 mutations, 187 selected-set differences, 0 safety flips)",
+      "log": "adopt_c/verification/pass-2-recollection.log"
+    },
+    {
+      "pass": 2,
+      "name": "b2",
+      "command": [
+        "python3",
+        "analysis/v14_4_rederivation/verify_b2.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 120.94335650000016,
+      "lastLine": "VERIFY PASSED: B2 base/constructor/class summaries and selected-set IDs match frozen inputs",
+      "log": "adopt_c/verification/pass-2-b2.log"
+    },
+    {
+      "pass": 2,
+      "name": "v14_6",
+      "command": [
+        "python3",
+        "analysis/v14_6/verify_v14_6.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 325.65943779200006,
+      "lastLine": "VERIFY PASSED: v14.6 outcomes, summaries, random baseline, intervals, mitigation, taxonomy, and selected-set IDs match recollected maps and frozen PIT inputs",
+      "log": "adopt_c/verification/pass-2-v14_6.log"
+    },
+    {
+      "pass": 2,
+      "name": "v14_7",
+      "command": [
+        "python3",
+        "analysis/v14_7/verify_v14_7.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 254.102918541,
+      "lastLine": "VERIFY PASSED: v14.7 spring-core sensitivity, worked example, and eight-subject test-segment scan match inputs",
+      "log": "adopt_c/verification/pass-2-v14_7.log"
+    },
+    {
+      "pass": 2,
+      "name": "v14_8",
+      "command": [
+        "python3",
+        "analysis/v14_8/verify_v14_8.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 0.4965565420002349,
+      "lastLine": "PASS: v14.8 evidence verified; failures=3; eligible killer records=10",
+      "log": "adopt_c/verification/pass-2-v14_8.log"
+    },
+    {
+      "pass": 2,
+      "name": "v14_9",
+      "command": [
+        "python3",
+        "analysis/v14_9/verify_v14_9.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 0.1572674580002058,
+      "lastLine": "PASS: v14.9 failed-killer impact verified; k_miss=0, k_only=0, k_other=10",
+      "log": "adopt_c/verification/pass-2-v14_9.log"
+    },
+    {
+      "pass": 2,
+      "name": "v15",
+      "command": [
+        "python3",
+        "analysis/v15/verify_v15.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 5.006359375000102,
+      "lastLine": "PASS: v15 succeeding-tests audit verified; f=0, u_tests=1139, unresolved=0",
+      "log": "adopt_c/verification/pass-2-v15.log"
+    },
+    {
+      "pass": 2,
+      "name": "v17",
+      "command": [
+        "python3",
+        "analysis/v17/verify_v17.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/smart-test-picker-evaluation",
+      "exitCode": 0,
+      "elapsedSeconds": 132.97808325000005,
+      "lastLine": "PASS: v17 raw-input derivation, all C outputs, Java full sets, input preservation and adopted manifest verified",
+      "log": "adopt_c/verification/pass-2-v17.log"
+    },
+    {
+      "pass": 2,
+      "name": "historical-B",
+      "command": [
+        "python3",
+        "iterations/pit-unify/verify_unified.py",
+        "--verify"
+      ],
+      "cwd": "/Users/D061177/work/issta/adopt-c-work/historical-checks",
+      "exitCode": 0,
+      "elapsedSeconds": 130.67276683299997,
+      "lastLine": "VERIFY PASSED: unified raw-input re-derivation, all policies/statistics/diagnostics, Java full sets, unchanged six subjects and original-file hashes",
+      "log": "adopt_c/verification/pass-2-historical-B.log"
+    }
+  ],
+  "completed": true,
+  "allPassed": true
+}

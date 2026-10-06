@@ -137,11 +137,22 @@ python3 analysis/freeze_artifacts.py --verify
 # Historical four-subject recollection comparison
 python3 analysis/verify_recollection.py --verify
 
-# Current B2 policy: summaries and all selected-set IDs from frozen inputs
+# Earlier B2 snapshot: summaries and selected-set IDs from its frozen inputs
 python3 analysis/v14_4_rederivation/verify_b2.py --verify
+
+# Current adopted C matrices, unchanged policy and maps
+python3 analysis/v17/verify_v17.py --verify
 ```
 
 The current eight-subject results are
+[`results/v17-summary-tables.json`](results/v17-summary-tables.json): base
+3,912/3,931; constructor 3,919/3,931; class 3,930/3,931. Full selected-set
+comparison covers 1,349 unique pinned-Java inputs and 3,931 weighted
+occurrences, with zero mismatches. Identical-input recorded Java executions
+are reused, not claimed as new executions. See [`adopt_c/REPORT.md`](adopt_c/REPORT.md)
+for the C adoption, two diagnostic PIT replays, preservation checks and provenance limits.
+
+The earlier B2 snapshot is preserved in
 [`results/b2-summary-tables.json`](results/b2-summary-tables.json): the base
 policy is inclusive for 3,991/4,010 records, the constructor variant for
 3,998/4,010, and the class baseline for 4,009/4,010. The pinned Java selector

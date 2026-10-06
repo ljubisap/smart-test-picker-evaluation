@@ -1,0 +1,32 @@
+{
+  "commons-lang": {
+    "eligible": 772,
+    "fullSelectedSetsAndKillersIdentical": true,
+    "differences": []
+  },
+  "petclinic": {
+    "eligible": 94,
+    "fullSelectedSetsAndKillersIdentical": true,
+    "differences": []
+  },
+  "flink": {
+    "eligible": 349,
+    "fullSelectedSetsAndKillersIdentical": true,
+    "differences": []
+  },
+  "spring-security": {
+    "eligible": 340,
+    "fullSelectedSetsAndKillersIdentical": true,
+    "differences": []
+  },
+  "hibernate": {
+    "eligible": 401,
+    "fullSelectedSetsAndKillersIdentical": true,
+    "differences": []
+  },
+  "quarkus": {
+    "eligible": 1083,
+    "fullSelectedSetsAndKillersIdentical": true,
+    "differences": []
+  }
+}

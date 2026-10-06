@@ -1,0 +1,83 @@
+{
+  "completed": true,
+  "jobs": [
+    {
+      "subject": "jgrapht",
+      "targetClass": "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/D061177/work/issta/adopt-c-work/anon-final/rerun/run_pit.py",
+        "--subject",
+        "jgrapht",
+        "--class",
+        "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "--checkout",
+        "/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject",
+        "--output",
+        "/Users/D061177/work/issta/adopt-c-work/replays/jgrapht/output",
+        "--cpus",
+        "4",
+        "--mvn",
+        "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn"
+      ],
+      "sourceRevision": "093b0c5ea006ba5b1d8b7a0212676bf8850cac6b",
+      "checkout": "/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject",
+      "id": "replay",
+      "pitWorkers": 4,
+      "processorCountOverride": null,
+      "environment": {
+        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home",
+        "JAVA_TOOL_OPTIONS": null,
+        "_JAVA_OPTIONS": null,
+        "JDK_JAVA_OPTIONS": null,
+        "MAVEN_OPTS": "-Xmx2g -Xmx2g",
+        "GRADLE_OPTS": "-Dorg.gradle.workers.max=1 -Dorg.gradle.daemon=false -Dorg.gradle.workers.max=1 -Dorg.gradle.daemon=false",
+        "GRADLE_USER_HOME": null
+      },
+      "peakObservedCpuPercent": 602.4,
+      "exitCode": 0,
+      "elapsedSeconds": 1526.0334759999998,
+      "output": "/Users/D061177/work/issta/adopt-c-work/replays/jgrapht/output",
+      "log": "/Users/D061177/work/issta/adopt-c-work/replays/jgrapht/run.log"
+    },
+    {
+      "subject": "spring-core",
+      "targetClass": "org.springframework.core.convert.TypeDescriptor",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/D061177/work/issta/adopt-c-work/anon-final/rerun/run_pit.py",
+        "--subject",
+        "spring-core",
+        "--class",
+        "org.springframework.core.convert.TypeDescriptor",
+        "--checkout",
+        "/private/tmp/pit-unify-spring-core-nydoloo0/subject",
+        "--output",
+        "/Users/D061177/work/issta/adopt-c-work/replays/spring-core/output",
+        "--cpus",
+        "4",
+        "--mvn",
+        "/Users/D061177/Programs/apache-maven-3.9.15/bin/mvn"
+      ],
+      "sourceRevision": "25838a334c037b68e614f6b571af03a1f6bfec19",
+      "checkout": "/private/tmp/pit-unify-spring-core-nydoloo0/subject",
+      "id": "replay",
+      "pitWorkers": 4,
+      "processorCountOverride": null,
+      "environment": {
+        "JAVA_HOME": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home",
+        "JAVA_TOOL_OPTIONS": null,
+        "_JAVA_OPTIONS": null,
+        "JDK_JAVA_OPTIONS": null,
+        "MAVEN_OPTS": "-Xmx2g -Xmx2g",
+        "GRADLE_OPTS": "-Dorg.gradle.workers.max=1 -Dorg.gradle.daemon=false -Dorg.gradle.workers.max=1 -Dorg.gradle.daemon=false",
+        "GRADLE_USER_HOME": "/Users/D061177/work/issta/final-artifact-work/uniform-replay/spring-core/gradle-home-1"
+      },
+      "peakObservedCpuPercent": 262.2,
+      "exitCode": 0,
+      "elapsedSeconds": 99.20985825000002,
+      "output": "/Users/D061177/work/issta/adopt-c-work/replays/spring-core/output",
+      "log": "/Users/D061177/work/issta/adopt-c-work/replays/spring-core/run.log"
+    }
+  ]
+}

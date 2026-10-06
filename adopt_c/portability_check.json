@@ -1,0 +1,10 @@
+{
+  "exitCode": 0,
+  "elapsedSeconds": 138.57843520900002,
+  "root": "/Users/D061177/work/issta/adopt-c-work/relocated-verification",
+  "omittedRawDuplicates": [
+    "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/job-12-attempt-1/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml"
+  ],
+  "canonicalCompressedInputsUnchanged": true,
+  "lastLine": "PASS: v17 raw-input derivation, all C outputs, Java full sets, input preservation and adopted manifest verified"
+}

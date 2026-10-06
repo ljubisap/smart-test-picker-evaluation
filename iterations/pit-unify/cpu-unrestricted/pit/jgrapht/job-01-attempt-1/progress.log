@@ -1,0 +1,2 @@
+[23:13:56] [1/20] Starting: org.jgrapht.Graphs (LOC=614, tests=org.jgrapht.GraphsTest,org.jgrapht.GraphTestsTest,org.jgrapht.GraphMetricsTest)
+[23:14:07] [1/20] DONE: org.jgrapht.Graphs (11s, 60 mutations)

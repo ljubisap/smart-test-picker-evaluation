@@ -1,0 +1,128 @@
+{
+  "sampleIntervalSeconds": 1,
+  "scope": "Actual launched process and observed descendants only; short-lived processes can fall between samples. Environment inherited from recorded launcher.",
+  "commands": [
+    {
+      "pid": 62216,
+      "ppid": 61978,
+      "command": "/bin/sh /Users/D061177/Programs/apache-maven-3.9.15/bin/mvn org.pitest:pitest-maven:1.17.4:mutationCoverage -Ppitest -pl jgrapht-core -DtargetClasses=org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles -DtargetTests=org.jgrapht.alg.cycle.* -DfullMutationMatrix=true -Dthreads=4 -DtimestampedReports=false -DskipFailingTests=true -DoutputFormats=XML"
+    },
+    {
+      "pid": 62216,
+      "ppid": 61978,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java --enable-native-access=ALL-UNNAMED -Xmx2g -classpath /Users/D061177/Programs/apache-maven-3.9.15/boot/plexus-classworlds-2.9.0.jar -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.9.15/bin/m2.conf -Dmaven.home=/Users/D061177/Programs/apache-maven-3.9.15 -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.9.15/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject org.codehaus.plexus.classworlds.launcher.Launcher org.pitest:pitest-maven:1.17.4:mutationCoverage -Ppitest -pl jgrapht-core -DtargetClasses=org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles -DtargetTests=org.jgrapht.alg.cycle.* -DfullMutationMatrix=true -Dthreads=4 -DtimestampedReports=false -DskipFailingTests=true -DoutputFormats=XML"
+    },
+    {
+      "pid": 62238,
+      "ppid": 62216,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java -javaagent:/var/folders/b_/kfwtjnkn3b786hkqn6dxb56m0000gn/T/1791234885386032067083697838849713390753297315857.jar -Xmx2g --add-opens=org.jgrapht.core/org.jgrapht=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.clique=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.clustering=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.color=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.connectivity=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.cycle=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.drawing.model=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.flow=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.isomorphism=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.lca=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.linkprediction=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.matching.blossom.v5=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.scoring=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.shortestpath=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.spanning=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.tour=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.util=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.vertexcover=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.generate.netgen=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph.specifics=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.interfaces=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.util=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.matching=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.generate=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.event=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.traverse=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph.builder=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.util.extension=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.flow.mincost=ALL-UNNAMED -ea -Djava.awt.headless=true -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.9.15/bin/m2.conf -Dmaven.home=/Users/D061177/Programs/apache-maven-3.9.15 -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.9.15/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject org.pitest.coverage.execute.CoverageMinion 52927"
+    },
+    {
+      "pid": 62242,
+      "ppid": 62216,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java -javaagent:/var/folders/b_/kfwtjnkn3b786hkqn6dxb56m0000gn/T/1791234885386032067083697838849713390753297315857.jar -Xmx2g --add-opens=org.jgrapht.core/org.jgrapht=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.clique=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.clustering=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.color=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.connectivity=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.cycle=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.drawing.model=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.flow=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.isomorphism=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.lca=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.linkprediction=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.matching.blossom.v5=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.scoring=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.shortestpath=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.spanning=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.tour=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.util=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.vertexcover=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.generate.netgen=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph.specifics=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.interfaces=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.util=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.matching=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.generate=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.event=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.traverse=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.graph.builder=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.util.extension=ALL-UNNAMED --add-opens=org.jgrapht.core/org.jgrapht.alg.flow.mincost=ALL-UNNAMED -ea -Djava.awt.headless=true -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.9.15/bin/m2.conf -Dmaven.home=/Users/D061177/Programs/apache-maven-3.9.15 -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.9.15/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject org.pitest.mutationtest.execute.MutationTestMinion 52929"
+    }
+  ],
+  "samples": [
+    {
+      "elapsedSeconds": 0.04239558400000476,
+      "cpuPercent": 0.0,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 1.0854388750000084,
+      "cpuPercent": 80.5,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 2.1303560420000025,
+      "cpuPercent": 0.2,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 3.1765943750000076,
+      "cpuPercent": 221.7,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 4.224763959000001,
+      "cpuPercent": 176.4,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 5.278180584000012,
+      "cpuPercent": 253.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 6.326485667,
+      "cpuPercent": 290.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 7.375234917,
+      "cpuPercent": 269.59999999999997,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 8.425315792000006,
+      "cpuPercent": 74.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 9.50444558400001,
+      "cpuPercent": 224.79999999999998,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 10.553728042000003,
+      "cpuPercent": 153.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 11.598667459000012,
+      "cpuPercent": 90.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 12.644645542000006,
+      "cpuPercent": 184.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 13.696938625000001,
+      "cpuPercent": 167.79999999999998,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 14.743641875000009,
+      "cpuPercent": 115.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 15.790028250000006,
+      "cpuPercent": 142.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 16.837424125000013,
+      "cpuPercent": 125.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 17.880434667000003,
+      "cpuPercent": 104.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 18.930703167000004,
+      "cpuPercent": 133.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 19.97710291700001,
+      "cpuPercent": 88.3,
+      "processes": 2
+    }
+  ]
+}

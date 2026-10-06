@@ -1,0 +1,183 @@
+{
+  "sampleIntervalSeconds": 1,
+  "scope": "Actual launched process and observed descendants only; short-lived processes can fall between samples. Environment inherited from recorded launcher.",
+  "commands": [
+    {
+      "pid": 77455,
+      "ppid": 61978,
+      "command": "/bin/sh ./gradlew --no-daemon --max-workers=1 :spring-core:jar :spring-core:testFixturesJar :spring-jcl:jar :spring-core:pitClasspath"
+    },
+    {
+      "pid": 77455,
+      "ppid": 61978,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java -Xmx64m -Xms64m -Dorg.gradle.workers.max=1 -Dorg.gradle.daemon=false -Dorg.gradle.appname=gradlew -classpath /private/tmp/pit-unify-spring-core-nydoloo0/subject/gradle/wrapper/gradle-wrapper.jar org.gradle.wrapper.GradleWrapperMain --no-daemon --max-workers=1 :spring-core:jar :spring-core:testFixturesJar :spring-jcl:jar :spring-core:pitClasspath"
+    },
+    {
+      "pid": 77469,
+      "ppid": 77455,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -Xmx10g -Dfile.encoding=UTF-8 -Duser.country=DE -Duser.language=en -Duser.variant -cp /Users/D061177/.gradle/wrapper/dists/gradle-8.14.2-bin/2pb3mgt1p815evrl3weanttgr/gradle-8.14.2/lib/gradle-daemon-main-8.14.2.jar -javaagent:/Users/D061177/.gradle/wrapper/dists/gradle-8.14.2-bin/2pb3mgt1p815evrl3weanttgr/gradle-8.14.2/lib/agents/gradle-instrumentation-agent-8.14.2.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 8.14.2"
+    },
+    {
+      "pid": 77502,
+      "ppid": 77469,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-17.jdk/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe"
+    },
+    {
+      "pid": 77508,
+      "ppid": 77469,
+      "command": "/Users/D061177/.gradle/jdks/bellsoft-17-aarch64-os_x.2/bin/java -Xmx32m -Xms32m -cp . JavaProbe"
+    },
+    {
+      "pid": 77514,
+      "ppid": 77469,
+      "command": "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe"
+    },
+    {
+      "pid": 77524,
+      "ppid": 77469,
+      "command": "/Library/Java/JavaVirtualMachines/jdk1.8.0_333.jdk/Contents/Home/bin/java -Xmx32m -Xms32m -cp . JavaProbe"
+    }
+  ],
+  "samples": [
+    {
+      "elapsedSeconds": 0.04365749999988111,
+      "cpuPercent": 0.0,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 1.085674041999937,
+      "cpuPercent": 30.5,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 2.1392995829996835,
+      "cpuPercent": 162.10000000000002,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 3.1932589999996708,
+      "cpuPercent": 46.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 4.24899141700007,
+      "cpuPercent": 143.8,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 5.303722832999938,
+      "cpuPercent": 184.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 6.364568916999815,
+      "cpuPercent": 58.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 7.418146582999725,
+      "cpuPercent": 262.3,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 8.469188666999798,
+      "cpuPercent": 167.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 9.527109624999866,
+      "cpuPercent": 40.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 10.58396916699985,
+      "cpuPercent": 26.6,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 11.6331745829998,
+      "cpuPercent": 49.800000000000004,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 12.675596916999893,
+      "cpuPercent": 97.1,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 13.718085374999646,
+      "cpuPercent": 33.4,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 14.771967582999878,
+      "cpuPercent": 28.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 15.81930866699986,
+      "cpuPercent": 131.29999999999998,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 16.864484875000016,
+      "cpuPercent": 223.7,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 17.915650082999946,
+      "cpuPercent": 44.9,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 18.964242791999823,
+      "cpuPercent": 115.2,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 20.014225291999992,
+      "cpuPercent": 141.0,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 21.05766204199972,
+      "cpuPercent": 98.6,
+      "processes": 3
+    },
+    {
+      "elapsedSeconds": 22.11246320800001,
+      "cpuPercent": 2.3,
+      "processes": 3
+    },
+    {
+      "elapsedSeconds": 23.218482332999884,
+      "cpuPercent": 13.8,
+      "processes": 3
+    },
+    {
+      "elapsedSeconds": 24.267426583000088,
+      "cpuPercent": 8.2,
+      "processes": 3
+    },
+    {
+      "elapsedSeconds": 25.323003916999824,
+      "cpuPercent": 85.5,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 26.368128499999784,
+      "cpuPercent": 80.19999999999999,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 27.425793542000065,
+      "cpuPercent": 71.89999999999999,
+      "processes": 2
+    },
+    {
+      "elapsedSeconds": 28.485308457999963,
+      "cpuPercent": 91.0,
+      "processes": 2
+    }
+  ]
+}

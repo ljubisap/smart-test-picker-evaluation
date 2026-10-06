@@ -1,0 +1,28 @@
+{
+  "purpose": "Source identity for campaign and comparison adapters; source-of-truth B scripts remain unchanged.",
+  "files": {
+    "iterations/pit-unify/cpu-unrestricted/scripts/CpuProbe.java": "d89ab6867d8d7d27bee16896400693767331d106632d4d2680d748c6c04c9905",
+    "iterations/pit-unify/cpu-unrestricted/scripts/causal_c.py": "ae45338ffcec3a3349190ab975f8214d88327cbf74834bf723eb5c03e2e5849c",
+    "iterations/pit-unify/cpu-unrestricted/scripts/compare_abc.py": "ded00c4f70ed23db9d03404ddb8ddd77f6a44fea218c7d17a037dd86dd23d0bf",
+    "iterations/pit-unify/cpu-unrestricted/scripts/configuration_check.py": "d78b9fd491c8f6f714b2fa6f552ff0d7366e4bc978f6336be1723c2b12a86744",
+    "iterations/pit-unify/cpu-unrestricted/scripts/current_checks.py": "b7396ccc671de5dd6d46d759b740defad7a5cd53567910ccf9ba84077c877473",
+    "iterations/pit-unify/cpu-unrestricted/scripts/derive_c.py": "aa68c56949fbb550d8a5646c79436881b685befcf66f7312f52932a47f034422",
+    "iterations/pit-unify/cpu-unrestricted/scripts/environment.py": "105617f83bfb7bdb3f4f06b6e67d24b3e3a083037a93d75e46da96fe0017b5a4",
+    "iterations/pit-unify/cpu-unrestricted/scripts/failure_evidence.py": "516e25ed468cc6f018eca39024c0b1a7fb7c312682b8a9832ffb0d13ef45898f",
+    "iterations/pit-unify/cpu-unrestricted/scripts/java_c.py": "f595b50cf7fc3b150c6eb23b69c174d00325ee5f09945e4a96ed3f5462aff45d",
+    "iterations/pit-unify/cpu-unrestricted/scripts/manuscript_c.py": "6c9913d9bdda8f934ece33555cb536e4c9d5e7a6088df04e7372bfe6654a7658",
+    "iterations/pit-unify/cpu-unrestricted/scripts/package_results.py": "e4b584bcc749c7e3b969f3300b72228addbeaeb7349489c4f8ac37591474112e",
+    "iterations/pit-unify/cpu-unrestricted/scripts/preflight.py": "476c218e1e8d383d2c7712b7795ddf40e480e732baf292bdd5c5a96ceeaa5454",
+    "iterations/pit-unify/cpu-unrestricted/scripts/report_c.py": "84ff062eac8e011ad7fe961e3f2ccc9804a592ff73cee39a606d91cc5293ec7c",
+    "iterations/pit-unify/cpu-unrestricted/scripts/run_campaigns.py": "e808fb9ef30fb5335ff5b69ef74d41895bf139a122868c4c0f31a8af8def6f00",
+    "iterations/pit-unify/cpu-unrestricted/scripts/runtime_artifacts.py": "a3602d134edbc981d4d711171e58e0f9df33e611cf528d92dcfdddd43ee64949",
+    "iterations/pit-unify/cpu-unrestricted/scripts/test_comparison.py": "bd72fe5a5e9abb61d713655f442f345f8874b071ff48666bf8560f8d701959c2",
+    "iterations/pit-unify/cpu-unrestricted/scripts/test_environment.py": "475415af82e3528447956e7bc108a098f7b0fb14f322a71d49e971f9e5ae8656",
+    "iterations/pit-unify/cpu-unrestricted/scripts/verify_c.py": "acf0d97896e48bbc93c7e24e161cb2627c88a00b08cd874dbc860de59e030699",
+    "iterations/pit-unify/cpu-unrestricted/scripts/worker_environment.py": "8ec98177888ca454f0a7de74f4a4c56a5693ec079f00c6468c5767d37b82f54e"
+  },
+  "originalRunners": {
+    "jgrapht/scripts/02_run_pit.py": "58273c798a3c25762a9c26ea8081f000be772f31870a8ec8adb86808c899b7a5",
+    "spring-core/scripts/02_run_pit.py": "49b616d29508324f9e138c81376ec9d8dd7354dd06809fa458e2eadb17bbc471"
+  }
+}

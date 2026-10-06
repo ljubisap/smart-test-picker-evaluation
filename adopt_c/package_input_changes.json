@@ -1,0 +1,1610 @@
+{
+  "changedPitSubjects": [
+    "jgrapht",
+    "spring-core"
+  ],
+  "selectionFrozenBeforeReplay": {
+    "rule": "Exactly one recorded PIT job per subject. PetClinic: whole-project job already executed. Others: maximum raw stored KILLED count per target class; ties: lexicographically smallest FQN. Container-only exclusions do not alter this job-selection count.",
+    "frozenAtUtc": "2026-10-06T07:22:58.879880+00:00",
+    "inputArchiveSha256": "4f67f79ec05262e18b9fcd3cc5a0e8d79077b3535c7f3ec27e2a2706974b8bb0",
+    "subjects": [
+      {
+        "subject": "commons-lang",
+        "unit": "per-class",
+        "targetClass": "org.apache.commons.lang3.math.Fraction",
+        "selectedKilledCount": 196,
+        "selectedRecordCount": 262,
+        "candidateCounts": [
+          {
+            "class": "org.apache.commons.lang3.math.Fraction",
+            "killed": 196,
+            "total": 262,
+            "statuses": {
+              "SURVIVED": 48,
+              "KILLED": 196,
+              "NO_COVERAGE": 5,
+              "TIMED_OUT": 13
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.reflect.MethodUtils",
+            "killed": 121,
+            "total": 142,
+            "statuses": {
+              "KILLED": 121,
+              "SURVIVED": 18,
+              "NO_COVERAGE": 3
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.builder.HashCodeBuilder",
+            "killed": 103,
+            "total": 110,
+            "statuses": {
+              "KILLED": 103,
+              "SURVIVED": 3,
+              "NO_COVERAGE": 4
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.reflect.FieldUtils",
+            "killed": 61,
+            "total": 72,
+            "statuses": {
+              "KILLED": 61,
+              "NO_COVERAGE": 8,
+              "SURVIVED": 3
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.util.FluentBitSet",
+            "killed": 50,
+            "total": 71,
+            "statuses": {
+              "KILLED": 50,
+              "SURVIVED": 21
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.math.IEEE754rUtils",
+            "killed": 42,
+            "total": 44,
+            "statuses": {
+              "KILLED": 42,
+              "SURVIVED": 2
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.mutable.MutableFloat",
+            "killed": 35,
+            "total": 38,
+            "statuses": {
+              "KILLED": 35,
+              "SURVIVED": 3
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.stream.Streams",
+            "killed": 25,
+            "total": 26,
+            "statuses": {
+              "KILLED": 25,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.compare.ComparableUtils",
+            "killed": 23,
+            "total": 25,
+            "statuses": {
+              "KILLED": 23,
+              "SURVIVED": 2
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.tuple.Pair",
+            "killed": 19,
+            "total": 19,
+            "statuses": {
+              "KILLED": 19
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.text.translate.NumericEntityEscaper",
+            "killed": 18,
+            "total": 19,
+            "statuses": {
+              "KILLED": 18,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.text.FormattableUtils",
+            "killed": 17,
+            "total": 21,
+            "statuses": {
+              "KILLED": 17,
+              "SURVIVED": 3,
+              "NO_COVERAGE": 1
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.arch.Processor",
+            "killed": 14,
+            "total": 17,
+            "statuses": {
+              "NO_COVERAGE": 3,
+              "KILLED": 14
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.event.EventListenerSupport",
+            "killed": 12,
+            "total": 14,
+            "statuses": {
+              "SURVIVED": 2,
+              "KILLED": 12
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.tuple.ImmutablePair",
+            "killed": 11,
+            "total": 12,
+            "statuses": {
+              "KILLED": 11,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.mutable.MutableObject",
+            "killed": 10,
+            "total": 10,
+            "statuses": {
+              "KILLED": 10
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.concurrent.locks.LockingVisitors",
+            "killed": 5,
+            "total": 5,
+            "statuses": {
+              "KILLED": 5
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.util.IterableStringTokenizer",
+            "killed": 5,
+            "total": 5,
+            "statuses": {
+              "KILLED": 5
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.stream.LangCollectors",
+            "killed": 2,
+            "total": 6,
+            "statuses": {
+              "KILLED": 2,
+              "SURVIVED": 4
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.text.translate.EntityArrays",
+            "killed": 2,
+            "total": 13,
+            "statuses": {
+              "NO_COVERAGE": 8,
+              "KILLED": 2,
+              "SURVIVED": 3
+            }
+          },
+          {
+            "class": "org.apache.commons.lang3.event.EventUtils",
+            "killed": 1,
+            "total": 1,
+            "statuses": {
+              "KILLED": 1
+            }
+          }
+        ],
+        "inputXmlSha256": {
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.arch.Processor/mutations.xml": "5c6a6a1fa27af797a300dd7c48d3e06d58090df8c6379f4ec4631e46fa7ce713",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.builder.HashCodeBuilder/mutations.xml": "626e8f342f08ceeb9c6ae7978c252f2e39e1c6a162fdccdd4af4a4ae0d328af8",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.compare.ComparableUtils/mutations.xml": "456fe2b22eb1b8dd76b0444961ec4cd594f394408abc11212fc9bb0068a71670",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.concurrent.locks.LockingVisitors/mutations.xml": "3bf6abec0cdd96f78755e6c05b2c0f518f347d88ab5ea59227ebc68213e3ce5d",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.event.EventListenerSupport/mutations.xml": "776ce7ea03b8b548692aa9ed80dde9d8db09919adc39a3cc1f70ce078a9dde84",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.event.EventUtils/mutations.xml": "8cb7caea60499360834ee88e3f725aee40361f0764105ae19501fa520d79b7ec",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.math.Fraction/mutations.xml": "7b3decc14eafd58ef505b12061de0e937ad266f7fbb22beb5727e753417e59f7",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.math.IEEE754rUtils/mutations.xml": "9a7ee473a6a1b5e66de31fbecdde6e47bcf13a907958dfb7c46f858be556a656",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.mutable.MutableFloat/mutations.xml": "34bf840b924f9f6474184e6ec4fbbcae05096100b76f44c7275160f30eb9ef36",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.mutable.MutableObject/mutations.xml": "172b3355949b0671f71cbd3c489bb976ed8ca6c2ae5209773f432f462c051aac",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.reflect.FieldUtils/mutations.xml": "75eb6084a58554ba0d7993ecbd4b4116933f8d291efc965d785cc77fc2c7e876",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.reflect.MethodUtils/mutations.xml": "2d4e311266158651cdd8d04d56a19520fbde96904c615faa41d8a981b682cc0f",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.stream.LangCollectors/mutations.xml": "89c33d4ebe702e10c6d5de042e4dd0267b8935a3aaea4e1fc88a1fcf6a968794",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.stream.Streams/mutations.xml": "fe250df3b91d283686c167490ed6c5b2ee7e67a710cf6c06891850512ad7f2d9",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.text.FormattableUtils/mutations.xml": "774d601d800d84cfd9d48375780d16ea2cb13b95a0b4c65f30e6e09f3040d163",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.text.translate.EntityArrays/mutations.xml": "fb36b9fa08dfcb448678218a390202b56aa75700f07ae2f0bceaa35935881810",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.text.translate.NumericEntityEscaper/mutations.xml": "089058aea0a108040dff95f7f188712c634155d7b8eea557e656ae16b17427ad",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.tuple.ImmutablePair/mutations.xml": "e298669396b497e8b992c82c6ee43fedcdf08b1109e813676234c1368db5abbf",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.tuple.Pair/mutations.xml": "8ba74ec79b635779fa324e8b9b6a3b5938d1aab6670e47cb9b810e9bcee8ebbc",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.util.FluentBitSet/mutations.xml": "7a059f35d7d47960d92273bd3c5cfcb14e5a7b6d0fc0edc1c63f8c8f437dacda",
+          "data/pit/commons-lang/per-class/org.apache.commons.lang3.util.IterableStringTokenizer/mutations.xml": "2633a5bfc3fc404a299854527e5ba415c4c830eb7899526d40567640612a5014"
+        },
+        "reuseExistingRun": false
+      },
+      {
+        "subject": "jgrapht",
+        "unit": "per-class",
+        "targetClass": "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "selectedKilledCount": 146,
+        "selectedRecordCount": 245,
+        "candidateCounts": [
+          {
+            "class": "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+            "killed": 146,
+            "total": 245,
+            "statuses": {
+              "KILLED": 146,
+              "SURVIVED": 42,
+              "TIMED_OUT": 46,
+              "MEMORY_ERROR": 7,
+              "NO_COVERAGE": 4
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.flow.PushRelabelMFImpl",
+            "killed": 38,
+            "total": 86,
+            "statuses": {
+              "KILLED": 38,
+              "TIMED_OUT": 12,
+              "SURVIVED": 36
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.lca.BinaryLiftingLCAFinder",
+            "killed": 35,
+            "total": 47,
+            "statuses": {
+              "KILLED": 35,
+              "SURVIVED": 12
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.vertexcover.RecursiveExactVCImpl",
+            "killed": 30,
+            "total": 47,
+            "statuses": {
+              "KILLED": 30,
+              "SURVIVED": 14,
+              "TIMED_OUT": 2,
+              "NO_COVERAGE": 1
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation",
+            "killed": 27,
+            "total": 37,
+            "statuses": {
+              "KILLED": 27,
+              "SURVIVED": 6,
+              "TIMED_OUT": 3,
+              "NO_COVERAGE": 1
+            }
+          },
+          {
+            "class": "org.jgrapht.Graphs",
+            "killed": 23,
+            "total": 60,
+            "statuses": {
+              "NO_COVERAGE": 30,
+              "SURVIVED": 7,
+              "KILLED": 23
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles",
+            "killed": 21,
+            "total": 34,
+            "statuses": {
+              "KILLED": 21,
+              "SURVIVED": 10,
+              "NO_COVERAGE": 3
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree",
+            "killed": 19,
+            "total": 45,
+            "statuses": {
+              "KILLED": 19,
+              "SURVIVED": 14,
+              "TIMED_OUT": 11,
+              "NO_COVERAGE": 1
+            }
+          },
+          {
+            "class": "org.jgrapht.generate.netgen.Distributor",
+            "killed": 19,
+            "total": 22,
+            "statuses": {
+              "KILLED": 19,
+              "SURVIVED": 3
+            }
+          },
+          {
+            "class": "org.jgrapht.graph.specifics.UndirectedSpecifics",
+            "killed": 19,
+            "total": 48,
+            "statuses": {
+              "KILLED": 19,
+              "NO_COVERAGE": 25,
+              "TIMED_OUT": 3,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector",
+            "killed": 16,
+            "total": 18,
+            "statuses": {
+              "KILLED": 16,
+              "MEMORY_ERROR": 1,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.scoring.ClosenessCentrality",
+            "killed": 13,
+            "total": 19,
+            "statuses": {
+              "KILLED": 13,
+              "NO_COVERAGE": 3,
+              "SURVIVED": 3
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder",
+            "killed": 12,
+            "total": 13,
+            "statuses": {
+              "KILLED": 12,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector",
+            "killed": 12,
+            "total": 21,
+            "statuses": {
+              "SURVIVED": 4,
+              "KILLED": 12,
+              "NO_COVERAGE": 5
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.util.UnorderedPair",
+            "killed": 12,
+            "total": 19,
+            "statuses": {
+              "KILLED": 12,
+              "NO_COVERAGE": 3,
+              "SURVIVED": 4
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.drawing.model.ListenableLayoutModel2D",
+            "killed": 9,
+            "total": 15,
+            "statuses": {
+              "SURVIVED": 3,
+              "KILLED": 9,
+              "NO_COVERAGE": 3
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP",
+            "killed": 8,
+            "total": 10,
+            "statuses": {
+              "SURVIVED": 1,
+              "KILLED": 8,
+              "NO_COVERAGE": 1
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.color.GreedyColoring",
+            "killed": 7,
+            "total": 8,
+            "statuses": {
+              "KILLED": 7,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction",
+            "killed": 4,
+            "total": 5,
+            "statuses": {
+              "KILLED": 4,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.jgrapht.alg.clustering.LabelPropagationClustering",
+            "killed": 3,
+            "total": 4,
+            "statuses": {
+              "KILLED": 3,
+              "SURVIVED": 1
+            }
+          }
+        ],
+        "inputXmlSha256": {
+          "data/pit/jgrapht/per-class/org.jgrapht.Graphs/mutations.xml": "f344698e88f4e247b6c63042090d1eb271f0a02b11a1eb4701c7cefce9b602f7",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.clique.DegeneracyBronKerboschCliqueFinder/mutations.xml": "f08c63912ac0472dc72255a08cbe18c086607a0d1a2fb1afcc2dc01486a27aff",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.clustering.LabelPropagationClustering/mutations.xml": "e6c52161f9acb17f39856f16b1429f21c38c8506ad2b76db5acc8e3f4b11589c",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.color.GreedyColoring/mutations.xml": "7f08a041a1603013d65a065ceb129eaa85b47679556e88c26e6a2e7a9c5b202e",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector/mutations.xml": "3eda44dee99782008fe19ebfb1f2bf69202154be622cf543f910fb8b47d4e631",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles/mutations.xml": "aa74bf988b260927698173c2fd217a7b43c01aa39254a812701d823df1f2c702",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.drawing.model.ListenableLayoutModel2D/mutations.xml": "58ee5b99e039bf3de55ac0fecf25c133d3440f374ff43882c43f79b1eae7a4c7",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.flow.PushRelabelMFImpl/mutations.xml": "aa0177ba9550e014a52f5eff6378dd8082425c3526aada463f86103f3ec11bfe",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.isomorphism.AHUUnrootedTreeIsomorphismInspector/mutations.xml": "f7aa75fb91ba5951b81965d747cb508017066f2bd98aa55f4396dc9bd7e126c1",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.lca.BinaryLiftingLCAFinder/mutations.xml": "3d0bc1b969aaf4f20e5656ca5673bd8712ddd3c861d7724a0a4b754b06692946",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction/mutations.xml": "66a05b42f50c91ba7b253b27b2abf1c066446ec41a1a5e6b3a8e2f9a19757701",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.scoring.ClosenessCentrality/mutations.xml": "3677a5bf9d8bde4dce32d8c9d0cd506b0bbfb3c98c4ec57cd84c1a24bb74e60b",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.shortestpath.TransitNodeRoutingPrecomputation/mutations.xml": "cfeda573815f3893f2263405a6b5300cc5af3a2c66fb4c9fd6cb4974a755237b",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.spanning.EsauWilliamsCapacitatedMinimumSpanningTree/mutations.xml": "307b99d06fb49cebd9df0318833f43e80b97648c90440dfcab6e40ffa82741c1",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.tour.ChristofidesThreeHalvesApproxMetricTSP/mutations.xml": "df04c5b13bfdc5943b2800456207aaf86618345afd7ec8c1e55fdb95fc3746f4",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.util.UnorderedPair/mutations.xml": "15aba542e9c3e51fc37dd7725297724149c2f0f8c9e9322ec92aa42709eca2fb",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.vertexcover.RecursiveExactVCImpl/mutations.xml": "6d2c6564184b1d754a443b9bda81602eb442cfb9100bcec145e79b50046244e0",
+          "data/pit/jgrapht/per-class/org.jgrapht.generate.netgen.Distributor/mutations.xml": "76de04bef8c4e4da939a4c54461a7c9fb354a1d50c29c70e92d740464baed43b",
+          "data/pit/jgrapht/per-class/org.jgrapht.graph.specifics.UndirectedSpecifics/mutations.xml": "d2e15b3b2a9e8b0bfbb72a0e1334435e5b3f988f540691d7ae283b3f26a50eab",
+          "data/pit/jgrapht/per-class/org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater/mutations.xml.gz": "706efa686f6adef5358e192e225724593ff1e5e533a3d0d13dc4a573fb1b3cca"
+        },
+        "reuseExistingRun": false
+      },
+      {
+        "subject": "spring-core",
+        "unit": "per-class",
+        "targetClass": "org.springframework.core.convert.TypeDescriptor",
+        "selectedKilledCount": 98,
+        "selectedRecordCount": 125,
+        "candidateCounts": [
+          {
+            "class": "org.springframework.core.convert.TypeDescriptor",
+            "killed": 98,
+            "total": 125,
+            "statuses": {
+              "KILLED": 98,
+              "SURVIVED": 24,
+              "NO_COVERAGE": 3
+            }
+          },
+          {
+            "class": "org.springframework.util.Assert",
+            "killed": 55,
+            "total": 64,
+            "statuses": {
+              "KILLED": 55,
+              "SURVIVED": 6,
+              "NO_COVERAGE": 3
+            }
+          },
+          {
+            "class": "org.springframework.core.convert.support.GenericConversionService",
+            "killed": 47,
+            "total": 62,
+            "statuses": {
+              "KILLED": 47,
+              "SURVIVED": 10,
+              "NO_COVERAGE": 5
+            }
+          },
+          {
+            "class": "org.springframework.core.style.DefaultValueStyler",
+            "killed": 36,
+            "total": 37,
+            "statuses": {
+              "KILLED": 36,
+              "NO_COVERAGE": 1
+            }
+          },
+          {
+            "class": "org.springframework.core.type.classreading.SimpleAnnotationMetadata",
+            "killed": 31,
+            "total": 31,
+            "statuses": {
+              "KILLED": 31
+            }
+          },
+          {
+            "class": "org.springframework.core.type.StandardClassMetadata",
+            "killed": 27,
+            "total": 28,
+            "statuses": {
+              "SURVIVED": 1,
+              "KILLED": 27
+            }
+          },
+          {
+            "class": "org.springframework.util.unit.DataSize",
+            "killed": 23,
+            "total": 33,
+            "statuses": {
+              "NO_COVERAGE": 5,
+              "KILLED": 23,
+              "SURVIVED": 5
+            }
+          },
+          {
+            "class": "org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter",
+            "killed": 19,
+            "total": 26,
+            "statuses": {
+              "KILLED": 19,
+              "SURVIVED": 3,
+              "NO_COVERAGE": 4
+            }
+          },
+          {
+            "class": "org.springframework.util.xml.AbstractStaxXMLReader",
+            "killed": 18,
+            "total": 27,
+            "statuses": {
+              "KILLED": 18,
+              "NO_COVERAGE": 8,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.springframework.core.annotation.RepeatableContainers",
+            "killed": 12,
+            "total": 13,
+            "statuses": {
+              "KILLED": 12,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.springframework.core.task.SimpleAsyncTaskExecutor",
+            "killed": 10,
+            "total": 44,
+            "statuses": {
+              "SURVIVED": 8,
+              "NO_COVERAGE": 23,
+              "TIMED_OUT": 3,
+              "KILLED": 10
+            }
+          },
+          {
+            "class": "org.springframework.util.backoff.ExponentialBackOff",
+            "killed": 10,
+            "total": 13,
+            "statuses": {
+              "SURVIVED": 2,
+              "KILLED": 10,
+              "NO_COVERAGE": 1
+            }
+          },
+          {
+            "class": "org.springframework.core.log.LogMessage",
+            "killed": 8,
+            "total": 11,
+            "statuses": {
+              "NO_COVERAGE": 3,
+              "KILLED": 8
+            }
+          },
+          {
+            "class": "org.springframework.core.codec.AbstractDataBufferDecoder",
+            "killed": 6,
+            "total": 6,
+            "statuses": {
+              "KILLED": 6
+            }
+          },
+          {
+            "class": "org.springframework.core.env.PropertySource",
+            "killed": 6,
+            "total": 13,
+            "statuses": {
+              "SURVIVED": 4,
+              "NO_COVERAGE": 3,
+              "KILLED": 6
+            }
+          },
+          {
+            "class": "org.springframework.core.convert.converter.ConvertingComparator",
+            "killed": 5,
+            "total": 5,
+            "statuses": {
+              "KILLED": 5
+            }
+          },
+          {
+            "class": "org.springframework.util.concurrent.ListenableFutureCallbackRegistry",
+            "killed": 4,
+            "total": 14,
+            "statuses": {
+              "SURVIVED": 4,
+              "NO_COVERAGE": 2,
+              "TIMED_OUT": 4,
+              "KILLED": 4
+            }
+          },
+          {
+            "class": "org.springframework.util.function.ThrowingConsumer",
+            "killed": 4,
+            "total": 5,
+            "statuses": {
+              "KILLED": 4,
+              "NO_COVERAGE": 1
+            }
+          }
+        ],
+        "inputXmlSha256": {
+          "data/pit/spring-core/per-class/org.springframework.core.annotation.RepeatableContainers/mutations.xml": "c0455d81da44c93b6010b347d0b08a0157b8595b7ede9ade8186526d5d9a5fe5",
+          "data/pit/spring-core/per-class/org.springframework.core.codec.AbstractDataBufferDecoder/mutations.xml": "a3d8df85f74d2cf33c56e8e2991978435d927919c0b9bba00db2b15816314d6c",
+          "data/pit/spring-core/per-class/org.springframework.core.convert.TypeDescriptor/mutations.xml": "7283b0e6e6d56b4aa119fa4c9b1c547bd9f95cce192657de5b498b6c5315c13f",
+          "data/pit/spring-core/per-class/org.springframework.core.convert.converter.ConvertingComparator/mutations.xml": "9edde7ab1dd3cc67666182c0b3953dad98691e972be015da1429a0a265e02cf6",
+          "data/pit/spring-core/per-class/org.springframework.core.convert.support.GenericConversionService/mutations.xml": "f4a14aa5309d4c662083c599b1fcfb26d62253b5aa78164a91312e2602c1f4ee",
+          "data/pit/spring-core/per-class/org.springframework.core.env.PropertySource/mutations.xml": "8ae91ea8406fc63ea80d570e9567ecf9a4231b1d72bbf92ff4bafdc08f6c7bd8",
+          "data/pit/spring-core/per-class/org.springframework.core.log.LogMessage/mutations.xml": "71df125dec68c2138101d5d8457b93cc27c35ef2c8b75eba8c1aa9a05c1c7fdd",
+          "data/pit/spring-core/per-class/org.springframework.core.style.DefaultValueStyler/mutations.xml": "81f647bd2591f0dccb5b9fa4ed9f8db14f8beac9b4f9ebaca62f4a5c11488bf0",
+          "data/pit/spring-core/per-class/org.springframework.core.task.SimpleAsyncTaskExecutor/mutations.xml": "0b348ae58b43701fa54f0bf0e75c2e737e726525c6aeea5999e28f8f931afc00",
+          "data/pit/spring-core/per-class/org.springframework.core.type.StandardClassMetadata/mutations.xml": "faedd1cae313d694f522fb2939e438f236def61251abba684f5f279ba89235b6",
+          "data/pit/spring-core/per-class/org.springframework.core.type.classreading.SimpleAnnotationMetadata/mutations.xml": "1e76e868036770226fe50a2c25cb0746dc6e36bb8db043ae5407d3aa8f3d77ea",
+          "data/pit/spring-core/per-class/org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter/mutations.xml": "d258d152e8f0fd4c8c50d13fe27594b78c8c8f2b8465fe664874974486022a60",
+          "data/pit/spring-core/per-class/org.springframework.util.Assert/mutations.xml": "e10a8e4746a1610685f1058dac40419594033d4a13013f667701a5aad9f61414",
+          "data/pit/spring-core/per-class/org.springframework.util.backoff.ExponentialBackOff/mutations.xml": "3b69308eb9c1dc5a67695798409eb5af6952b4c181d9926cb71fff194b608780",
+          "data/pit/spring-core/per-class/org.springframework.util.concurrent.ListenableFutureCallbackRegistry/mutations.xml": "fd62f08a120ffeb095fb6967b0d5ecac4a04b51327f75e96ae328078fef31c5f",
+          "data/pit/spring-core/per-class/org.springframework.util.function.ThrowingConsumer/mutations.xml": "2a0f35e7164a806bb0ea97f26b7154cedc0a005e73cfa568c0e648ed932e519b",
+          "data/pit/spring-core/per-class/org.springframework.util.unit.DataSize/mutations.xml": "514243c9b548be66ff94b18c5172b00aabcbe7dd0e03736ca01058ea9d040901",
+          "data/pit/spring-core/per-class/org.springframework.util.xml.AbstractStaxXMLReader/mutations.xml": "53917b5a75de369d47e38ee58ec7b282fc37d92b8e29295c80e3af03880aafd4"
+        },
+        "reuseExistingRun": false
+      },
+      {
+        "subject": "petclinic",
+        "unit": "whole-project",
+        "targetClass": null,
+        "selectedKilledCount": 94,
+        "selectedRecordCount": 139,
+        "candidateCounts": [
+          {
+            "class": "org.springframework.samples.petclinic.owner.OwnerController",
+            "killed": 24,
+            "total": 30,
+            "statuses": {
+              "KILLED": 24,
+              "SURVIVED": 4,
+              "NO_COVERAGE": 2
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetController",
+            "killed": 20,
+            "total": 39,
+            "statuses": {
+              "KILLED": 20,
+              "SURVIVED": 14,
+              "NO_COVERAGE": 5
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.Owner",
+            "killed": 14,
+            "total": 19,
+            "statuses": {
+              "KILLED": 14,
+              "SURVIVED": 5
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetValidator",
+            "killed": 8,
+            "total": 9,
+            "statuses": {
+              "KILLED": 8,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.VisitController",
+            "killed": 5,
+            "total": 9,
+            "statuses": {
+              "KILLED": 5,
+              "NO_COVERAGE": 1,
+              "SURVIVED": 3
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.vet.Vet",
+            "killed": 4,
+            "total": 4,
+            "statuses": {
+              "KILLED": 4
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.vet.VetController",
+            "killed": 4,
+            "total": 5,
+            "statuses": {
+              "KILLED": 4,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.model.BaseEntity",
+            "killed": 3,
+            "total": 3,
+            "statuses": {
+              "KILLED": 3
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.Pet",
+            "killed": 3,
+            "total": 3,
+            "statuses": {
+              "KILLED": 3
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.PetTypeFormatter",
+            "killed": 3,
+            "total": 3,
+            "statuses": {
+              "KILLED": 3
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.model.Person",
+            "killed": 2,
+            "total": 2,
+            "statuses": {
+              "KILLED": 2
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.vet.Vets",
+            "killed": 2,
+            "total": 2,
+            "statuses": {
+              "KILLED": 2
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.model.NamedEntity",
+            "killed": 1,
+            "total": 2,
+            "statuses": {
+              "KILLED": 1,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.owner.Visit",
+            "killed": 1,
+            "total": 2,
+            "statuses": {
+              "KILLED": 1,
+              "SURVIVED": 1
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.system.CacheConfiguration",
+            "killed": 0,
+            "total": 2,
+            "statuses": {
+              "NO_COVERAGE": 2
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.system.WebConfiguration",
+            "killed": 0,
+            "total": 4,
+            "statuses": {
+              "SURVIVED": 4
+            }
+          },
+          {
+            "class": "org.springframework.samples.petclinic.system.WelcomeController",
+            "killed": 0,
+            "total": 1,
+            "statuses": {
+              "NO_COVERAGE": 1
+            }
+          }
+        ],
+        "inputXmlSha256": {
+          "data/pit/petclinic/mutations.xml": "752972e47c85b64c68f83e400eee9a2aed54b5b4e2ed1c48ca9418c8864047f4"
+        },
+        "reuseExistingRun": true
+      },
+      {
+        "subject": "flink",
+        "unit": "per-class",
+        "targetClass": "org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector",
+        "selectedKilledCount": 51,
+        "selectedRecordCount": 69,
+        "candidateCounts": [
+          {
+            "class": "org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector",
+            "killed": 51,
+            "total": 69,
+            "statuses": {
+              "SURVIVED": 16,
+              "KILLED": 51,
+              "NO_COVERAGE": 2
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy",
+            "killed": 51,
+            "total": 76,
+            "statuses": {
+              "KILLED": 51,
+              "SURVIVED": 18,
+              "NO_COVERAGE": 6,
+              "TIMED_OUT": 1
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider",
+            "killed": 39,
+            "total": 72,
+            "statuses": {
+              "SURVIVED": 30,
+              "KILLED": 39,
+              "NO_COVERAGE": 3
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer",
+            "killed": 39,
+            "total": 55,
+            "statuses": {
+              "KILLED": 39,
+              "SURVIVED": 12,
+              "NO_COVERAGE": 4
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology",
+            "killed": 36,
+            "total": 48,
+            "statuses": {
+              "KILLED": 36,
+              "SURVIVED": 10,
+              "NO_COVERAGE": 2
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler",
+            "killed": 31,
+            "total": 48,
+            "statuses": {
+              "KILLED": 31,
+              "SURVIVED": 12,
+              "RUN_ERROR": 1,
+              "TIMED_OUT": 1,
+              "NO_COVERAGE": 3
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator",
+            "killed": 30,
+            "total": 35,
+            "statuses": {
+              "KILLED": 30,
+              "SURVIVED": 1,
+              "NO_COVERAGE": 4
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.DefaultScheduler",
+            "killed": 17,
+            "total": 72,
+            "statuses": {
+              "SURVIVED": 26,
+              "KILLED": 17,
+              "TIMED_OUT": 17,
+              "RUN_ERROR": 9,
+              "NO_COVERAGE": 3
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator",
+            "killed": 12,
+            "total": 35,
+            "statuses": {
+              "KILLED": 12,
+              "RUN_ERROR": 15,
+              "SURVIVED": 4,
+              "TIMED_OUT": 4
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.adaptive.Executing",
+            "killed": 12,
+            "total": 56,
+            "statuses": {
+              "SURVIVED": 9,
+              "RUN_ERROR": 6,
+              "KILLED": 12,
+              "TIMED_OUT": 27,
+              "NO_COVERAGE": 2
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl",
+            "killed": 11,
+            "total": 13,
+            "statuses": {
+              "KILLED": 11,
+              "TIMED_OUT": 2
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint",
+            "killed": 10,
+            "total": 22,
+            "statuses": {
+              "SURVIVED": 8,
+              "KILLED": 10,
+              "RUN_ERROR": 3,
+              "TIMED_OUT": 1
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry",
+            "killed": 7,
+            "total": 10,
+            "statuses": {
+              "KILLED": 7,
+              "NO_COVERAGE": 1,
+              "SURVIVED": 2
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager",
+            "killed": 2,
+            "total": 26,
+            "statuses": {
+              "TIMED_OUT": 11,
+              "SURVIVED": 9,
+              "RUN_ERROR": 2,
+              "NO_COVERAGE": 2,
+              "KILLED": 2
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph",
+            "killed": 1,
+            "total": 18,
+            "statuses": {
+              "SURVIVED": 6,
+              "RUN_ERROR": 6,
+              "TIMED_OUT": 3,
+              "KILLED": 1,
+              "NO_COVERAGE": 2
+            }
+          },
+          {
+            "class": "org.apache.flink.runtime.scheduler.ExecutionGraphHandler",
+            "killed": 0,
+            "total": 26,
+            "statuses": {
+              "TIMED_OUT": 4,
+              "SURVIVED": 4,
+              "NO_COVERAGE": 18
+            }
+          }
+        ],
+        "inputXmlSha256": {
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.DefaultScheduler/mutations.xml": "8b9628d04d469dcad5615750aff7ceb0f91ac1be35f6a6f04d67b419af109712",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.ExecutionGraphHandler/mutations.xml": "ebe4f46564cd69e7287c924680007bb0fb2c224d648a982fe9ed02e85ba7006a",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.SlotSharingExecutionSlotAllocator/mutations.xml": "460bdd44efadfd90f2ed95e2175161469e49001d91c364a11f40ea5d4781d23f",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology/mutations.xml": "eff94c5d36d51f056bd5118dc2051a6a57c497d695bc35ac24950b1c67209e9f",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.CreatingExecutionGraph/mutations.xml": "35ea07856e87d92c12b100cd61ea6555f46046ad6290ec47e3bde6ebff35855a",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.DefaultStateTransitionManager/mutations.xml": "5082632f9bf3571d5c72261b280d3a0ecfbe7a87d4ee658a8a0f1582f4083a20",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.Executing/mutations.xml": "e1b7dd4c214cf55793009ee784bb974cb0918a7abd1fa2be4e26f61507c20339",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.StopWithSavepoint/mutations.xml": "eb30e0938a190d1c051a20153305cd464fb1ce9907b90f682b55a0a5985bf2fa",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptive.allocator.SlotSharingSlotAllocator/mutations.xml": "253e11140eac75807cd306a766362de8d83aa94f2703c5b92e1c210f4753b475",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultSpeculativeExecutionHandler/mutations.xml": "1c5da026b8e06384cc5e12ae88b636bd063052d6e599090a358dfd3568b6d455",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.DefaultVertexParallelismAndInputInfosDecider/mutations.xml": "72a09c92048b9a01608fcd124f5d715bda645e435528a91f2e3c4b521c539adc",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.adaptivebatch.util.AllToAllVertexInputInfoComputer/mutations.xml": "6a9b791f37817d45ff2e79c79d89cd0add0a293059446131885ea4af7276d575",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.exceptionhistory.ExceptionHistoryEntry/mutations.xml": "70344a5f51733f2df74e964e04cf448cd6d55630a7a14c557e0c7debfe4ff3eb",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.slowtaskdetector.ExecutionTimeBasedSlowTaskDetector/mutations.xml": "e703b8f1602ae5b9a0785ef33a29bc745fa4baa94740e2eaa8db1c35c3599510",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.stopwithsavepoint.StopWithSavepointTerminationHandlerImpl/mutations.xml": "fdcb96f92462cf1fcf28989c4389038e393aa2b48ae62d9d4a3293f512b8a9a2",
+          "data/pit/flink/per-class/org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy/mutations.xml": "0bba36f2ffa023a65c6eec96f886f74a03b6a0d45120056e74615092092293d2"
+        },
+        "reuseExistingRun": false
+      },
+      {
+        "subject": "spring-security",
+        "unit": "per-class",
+        "targetClass": "org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner",
+        "selectedKilledCount": 49,
+        "selectedRecordCount": 68,
+        "candidateCounts": [
+          {
+            "class": "org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner",
+            "killed": 49,
+            "total": 68,
+            "statuses": {
+              "SURVIVED": 15,
+              "NO_COVERAGE": 4,
+              "KILLED": 49
+            }
+          },
+          {
+            "class": "org.springframework.security.access.expression.SecurityExpressionRoot",
+            "killed": 40,
+            "total": 51,
+            "statuses": {
+              "SURVIVED": 5,
+              "KILLED": 40,
+              "NO_COVERAGE": 6
+            }
+          },
+          {
+            "class": "org.springframework.security.authorization.AuthorityAuthorizationManager",
+            "killed": 24,
+            "total": 25,
+            "statuses": {
+              "KILLED": 24,
+              "NO_COVERAGE": 1
+            }
+          },
+          {
+            "class": "org.springframework.security.authentication.ProviderManager",
+            "killed": 23,
+            "total": 37,
+            "statuses": {
+              "KILLED": 23,
+              "NO_COVERAGE": 4,
+              "SURVIVED": 10
+            }
+          },
+          {
+            "class": "org.springframework.security.core.userdetails.User",
+            "killed": 23,
+            "total": 32,
+            "statuses": {
+              "KILLED": 23,
+              "SURVIVED": 8,
+              "NO_COVERAGE": 1
+            }
+          },
+          {
+            "class": "org.springframework.security.authentication.DefaultAuthenticationEventPublisher",
+            "killed": 22,
+            "total": 27,
+            "statuses": {
+              "SURVIVED": 5,
+              "KILLED": 22
+            }
+          },
+          {
+            "class": "org.springframework.security.provisioning.InMemoryUserDetailsManager",
+            "killed": 21,
+            "total": 28,
+            "statuses": {
+              "NO_COVERAGE": 2,
+              "KILLED": 21,
+              "SURVIVED": 5
+            }
+          },
+          {
+            "class": "org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider",
+            "killed": 20,
+            "total": 35,
+            "statuses": {
+              "KILLED": 20,
+              "SURVIVED": 12,
+              "NO_COVERAGE": 3
+            }
+          },
+          {
+            "class": "org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl",
+            "killed": 19,
+            "total": 22,
+            "statuses": {
+              "KILLED": 19,
+              "SURVIVED": 3
+            }
+          },
+          {
+            "class": "org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper",
+            "killed": 19,
+            "total": 25,
+            "statuses": {
+              "KILLED": 19,
+              "SURVIVED": 2,
+              "NO_COVERAGE": 4
+            }
+          },
+          {
+            "class": "org.springframework.security.converter.RsaKeyConverters",
+            "killed": 17,
+            "total": 19,
+            "statuses": {
+              "KILLED": 17,
+              "SURVIVED": 2
+            }
+          },
+          {
+            "class": "org.springframework.security.core.session.SessionRegistryImpl",
+            "killed": 16,
+            "total": 27,
+            "statuses": {
+              "KILLED": 16,
+              "SURVIVED": 10,
+              "NO_COVERAGE": 1
+            }
+          },
+          {
+            "class": "org.springframework.security.core.token.KeyBasedPersistenceTokenService",
+            "killed": 14,
+            "total": 27,
+            "statuses": {
+              "SURVIVED": 12,
+              "KILLED": 14,
+              "NO_COVERAGE": 1
+            }
+          },
+          {
+            "class": "org.springframework.security.jackson2.SecurityJackson2Modules",
+            "killed": 10,
+            "total": 20,
+            "statuses": {
+              "KILLED": 10,
+              "SURVIVED": 5,
+              "NO_COVERAGE": 5
+            }
+          },
+          {
+            "class": "org.springframework.security.concurrent.DelegatingSecurityContextRunnable",
+            "killed": 9,
+            "total": 18,
+            "statuses": {
+              "KILLED": 9,
+              "SURVIVED": 8,
+              "TIMED_OUT": 1
+            }
+          },
+          {
+            "class": "org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor",
+            "killed": 7,
+            "total": 43,
+            "statuses": {
+              "KILLED": 7,
+              "SURVIVED": 7,
+              "NO_COVERAGE": 29
+            }
+          },
+          {
+            "class": "org.springframework.security.core.context.SecurityContextHolder",
+            "killed": 4,
+            "total": 12,
+            "statuses": {
+              "KILLED": 4,
+              "TIMED_OUT": 1,
+              "NO_COVERAGE": 4,
+              "SURVIVED": 3
+            }
+          },
+          {
+            "class": "org.springframework.security.util.matcher.InetAddressMatchers",
+            "killed": 3,
+            "total": 4,
+            "statuses": {
+              "KILLED": 3,
+              "NO_COVERAGE": 1
+            }
+          }
+        ],
+        "inputXmlSha256": {
+          "data/pit/spring-security/per-class/org.springframework.security.access.expression.SecurityExpressionRoot/mutations.xml": "e242716ac1f2b273be6087a036f5eac5909b43a2bfcd681dd51ab9261f6d19c8",
+          "data/pit/spring-security/per-class/org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl/mutations.xml": "6a08dac2b5a2869e3644a2a957b0f0c6e17671515e642566e57742d8f4f4e123",
+          "data/pit/spring-security/per-class/org.springframework.security.authentication.DefaultAuthenticationEventPublisher/mutations.xml": "b249a3b8ca03391a6472bec07d9b0416fe4c51dc1facff3511f04a43dd0164df",
+          "data/pit/spring-security/per-class/org.springframework.security.authentication.ProviderManager/mutations.xml": "c38ced06651f25fb5953d6022642c37ca84f803e4c4ebaf3f990671e693a6bb8",
+          "data/pit/spring-security/per-class/org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider/mutations.xml": "331205ade1496497a42d5bee1ddc5eba52a23299073d21da8de27278b32a2952",
+          "data/pit/spring-security/per-class/org.springframework.security.authorization.AuthorityAuthorizationManager/mutations.xml": "9ddd5d02e55c3d8ed90cd16b862bebb2e412136da24d38f81bbf2a0b835242b2",
+          "data/pit/spring-security/per-class/org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor/mutations.xml": "bb3f6ca96ed3dac652549eefc51728c214b1c0c0a1071f4258af35a66ffaff77",
+          "data/pit/spring-security/per-class/org.springframework.security.concurrent.DelegatingSecurityContextRunnable/mutations.xml": "d6cd0a8c3c2040669525415f7d783183591ef966a38c5858ad7cf285148e9112",
+          "data/pit/spring-security/per-class/org.springframework.security.converter.RsaKeyConverters/mutations.xml": "11ac631c71854bb04d71d8056ebf2591f04533b44f3335744aa62580f0003113",
+          "data/pit/spring-security/per-class/org.springframework.security.core.annotation.UniqueSecurityAnnotationScanner/mutations.xml": "2ec07ec69d13ea7c18a8a22c39fa8ae258fd9203213d049400db1e83568e3aa0",
+          "data/pit/spring-security/per-class/org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper/mutations.xml": "76f0d1ee39246dde685dc7066587ee2bb71986c4078994e44b43fec0c59d6e10",
+          "data/pit/spring-security/per-class/org.springframework.security.core.context.SecurityContextHolder/mutations.xml": "3c70a2f44b321cd7848d9c4550c5915f8797c174706dde5e92ba1f63d2d3d437",
+          "data/pit/spring-security/per-class/org.springframework.security.core.session.SessionRegistryImpl/mutations.xml": "a9d406941194e47f0ad559491ad89f1ab41296ca9aad9a6342b00490653b743f",
+          "data/pit/spring-security/per-class/org.springframework.security.core.token.KeyBasedPersistenceTokenService/mutations.xml": "525185e9c89692975165f62d5f40e294556b149a378caaaf73a2fe6b7d38ea93",
+          "data/pit/spring-security/per-class/org.springframework.security.core.userdetails.User/mutations.xml": "54b59e55bb9e294c739057384a6dbc38c6c91e0651a72a87183ae182bddf4754",
+          "data/pit/spring-security/per-class/org.springframework.security.jackson2.SecurityJackson2Modules/mutations.xml": "5ad8f8378a29105b5849b79fd9ec59caca01418d6529780110ce5cc7e8b7a046",
+          "data/pit/spring-security/per-class/org.springframework.security.provisioning.InMemoryUserDetailsManager/mutations.xml": "fdce8b8437ccf0c514b841485e82ce54cfc4923d560d7ed5fd56009ae65559b7",
+          "data/pit/spring-security/per-class/org.springframework.security.util.matcher.InetAddressMatchers/mutations.xml": "48b54f9e898ec15ebc40761ffa2898710dc42f8de7b43637d1abe626ec787b8a"
+        },
+        "reuseExistingRun": false
+      },
+      {
+        "subject": "hibernate",
+        "unit": "per-class",
+        "targetClass": "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+        "selectedKilledCount": 44,
+        "selectedRecordCount": 60,
+        "candidateCounts": [
+          {
+            "class": "org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer",
+            "killed": 44,
+            "total": 60,
+            "statuses": {
+              "KILLED": 44,
+              "SURVIVED": 9,
+              "NO_COVERAGE": 7
+            }
+          },
+          {
+            "class": "org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler",
+            "killed": 42,
+            "total": 78,
+            "statuses": {
+              "KILLED": 42,
+              "SURVIVED": 23,
+              "NO_COVERAGE": 13
+            }
+          },
+          {
+            "class": "org.hibernate.event.internal.DefaultDeleteEventListener",
+            "killed": 41,
+            "total": 123,
+            "statuses": {
+              "NO_COVERAGE": 72,
+              "KILLED": 41,
+              "SURVIVED": 10
+            }
+          },
+          {
+            "class": "org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor",
+            "killed": 37,
+            "total": 66,
+            "statuses": {
+              "KILLED": 37,
+              "NO_COVERAGE": 10,
+              "SURVIVED": 19
+            }
+          },
+          {
+            "class": "org.hibernate.proxy.AbstractLazyInitializer",
+            "killed": 36,
+            "total": 118,
+            "statuses": {
+              "SURVIVED": 48,
+              "KILLED": 36,
+              "NO_COVERAGE": 34
+            }
+          },
+          {
+            "class": "org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor",
+            "killed": 32,
+            "total": 53,
+            "statuses": {
+              "KILLED": 32,
+              "NO_COVERAGE": 14,
+              "SURVIVED": 7
+            }
+          },
+          {
+            "class": "org.hibernate.event.internal.DefaultLoadEventListener",
+            "killed": 31,
+            "total": 143,
+            "statuses": {
+              "MEMORY_ERROR": 1,
+              "NO_COVERAGE": 99,
+              "KILLED": 31,
+              "SURVIVED": 12
+            }
+          },
+          {
+            "class": "org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl",
+            "killed": 30,
+            "total": 46,
+            "statuses": {
+              "KILLED": 30,
+              "SURVIVED": 13,
+              "NO_COVERAGE": 3
+            }
+          },
+          {
+            "class": "org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl",
+            "killed": 30,
+            "total": 85,
+            "statuses": {
+              "KILLED": 30,
+              "SURVIVED": 26,
+              "NO_COVERAGE": 29
+            }
+          },
+          {
+            "class": "org.hibernate.event.internal.AbstractFlushingEventListener",
+            "killed": 26,
+            "total": 83,
+            "statuses": {
+              "KILLED": 26,
+              "SURVIVED": 46,
+              "TIMED_OUT": 8,
+              "NO_COVERAGE": 3
+            }
+          },
+          {
+            "class": "org.hibernate.jpa.event.internal.CallbackDefinitionResolver",
+            "killed": 26,
+            "total": 53,
+            "statuses": {
+              "KILLED": 26,
+              "NO_COVERAGE": 17,
+              "SURVIVED": 10
+            }
+          },
+          {
+            "class": "org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState",
+            "killed": 10,
+            "total": 23,
+            "statuses": {
+              "SURVIVED": 4,
+              "KILLED": 10,
+              "NO_COVERAGE": 9
+            }
+          },
+          {
+            "class": "org.hibernate.jpa.event.internal.CallbackRegistryImpl",
+            "killed": 7,
+            "total": 26,
+            "statuses": {
+              "KILLED": 7,
+              "SURVIVED": 12,
+              "NO_COVERAGE": 7
+            }
+          },
+          {
+            "class": "org.hibernate.event.internal.DefaultPersistEventListener",
+            "killed": 5,
+            "total": 29,
+            "statuses": {
+              "NO_COVERAGE": 12,
+              "SURVIVED": 12,
+              "KILLED": 5
+            }
+          },
+          {
+            "class": "org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory",
+            "killed": 5,
+            "total": 8,
+            "statuses": {
+              "SURVIVED": 3,
+              "KILLED": 5
+            }
+          },
+          {
+            "class": "org.hibernate.event.internal.DefaultRefreshEventListener",
+            "killed": 0,
+            "total": 67,
+            "statuses": {
+              "NO_COVERAGE": 67
+            }
+          }
+        ],
+        "inputXmlSha256": {
+          "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.BiDirectionalAssociationHandler/mutations.xml": "e12296cf9e0c139103f5b40e6caa0a39bd38a44ac9ffb8fd43d6f11b1c7249eb",
+          "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.internal.bytebuddy.PersistentAttributeTransformer/mutations.xml": "b7d8cd8050d960a901e12fd206dce5002e4b568fea25ff79cdc7b730470a6054",
+          "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.spi.interceptor.EnhancementAsProxyLazinessInterceptor/mutations.xml": "bc4d1ac42c61ee0c53e922f4da79184bb79f9fd884c445be28c31d163bcd6dc8",
+          "data/pit/hibernate/per-class/org.hibernate.bytecode.enhance.spi.interceptor.LazyAttributeLoadingInterceptor/mutations.xml": "07b55a78e2092b554fb645bd7627a934f27dae235b53aa735dcfbbce32b856cc",
+          "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.BytecodeEnhancementMetadataPojoImpl/mutations.xml": "bdf4fbdb67edb6164aaf09448d0a617ea194a3ff7a8f9c8292654616da1cb400",
+          "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.ByteBuddyState/mutations.xml": "8bc1cff1460297429591832ccc2a656568c41fa8c0495c3309d1b804d8812428",
+          "data/pit/hibernate/per-class/org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl/mutations.xml": "bd9f151d93cb2d60f6e924ed931a98e20b2ff81ec7d3228b9e7806b17fdce4e0",
+          "data/pit/hibernate/per-class/org.hibernate.event.internal.AbstractFlushingEventListener/mutations.xml": "1c4bc72d59aa4b7faf1db43fa7e0e31a7c50893a8d142a966a08beed3a46573c",
+          "data/pit/hibernate/per-class/org.hibernate.event.internal.DefaultDeleteEventListener/mutations.xml": "aab8ede32bc1d56ba3fb7c577012536e8152ed63a6da3facafb6d1162665deab",
+          "data/pit/hibernate/per-class/org.hibernate.event.internal.DefaultLoadEventListener/mutations.xml": "6b7e08732376ad76a9900c28cc570c4fdfc544ebf59e5c53c73919c148be75a5",
+          "data/pit/hibernate/per-class/org.hibernate.event.internal.DefaultPersistEventListener/mutations.xml": "07818644350ffb1db529a36ec46024d7a415c1726fe12d6df2c13fb9ab35fef8",
+          "data/pit/hibernate/per-class/org.hibernate.event.internal.DefaultRefreshEventListener/mutations.xml": "379ef82577f9a2d7a6007b7336a5add9d4b554929e2485335945272c2f9aebe7",
+          "data/pit/hibernate/per-class/org.hibernate.jpa.event.internal.CallbackDefinitionResolver/mutations.xml": "16128cbf907b1a0be05e95d6028336fedcf1c9a66f2b9417d5964aaab7e27040",
+          "data/pit/hibernate/per-class/org.hibernate.jpa.event.internal.CallbackRegistryImpl/mutations.xml": "66cd9990f7d3324ea194b4e36830cb93c91807b34260d5530f2b14ea9c4ae473",
+          "data/pit/hibernate/per-class/org.hibernate.proxy.AbstractLazyInitializer/mutations.xml": "de724fd1d9491cafbab62e06d904e1d5cc041332692c60fcdbd0c61fd5e250fc",
+          "data/pit/hibernate/per-class/org.hibernate.proxy.pojo.bytebuddy.ByteBuddyProxyFactory/mutations.xml": "7710b0517802e780e142eea06d9f24ab3d8a8e44fffa979d448f6e86863ba698"
+        },
+        "reuseExistingRun": false
+      },
+      {
+        "subject": "quarkus",
+        "unit": "per-class",
+        "targetClass": "io.quarkus.arc.processor.Injection",
+        "selectedKilledCount": 131,
+        "selectedRecordCount": 150,
+        "candidateCounts": [
+          {
+            "class": "io.quarkus.arc.processor.Injection",
+            "killed": 131,
+            "total": 150,
+            "statuses": {
+              "KILLED": 131,
+              "SURVIVED": 10,
+              "NO_COVERAGE": 9
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.Types",
+            "killed": 116,
+            "total": 205,
+            "statuses": {
+              "KILLED": 116,
+              "SURVIVED": 6,
+              "NO_COVERAGE": 83
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.ObserverGenerator",
+            "killed": 114,
+            "total": 143,
+            "statuses": {
+              "KILLED": 114,
+              "NO_COVERAGE": 26,
+              "SURVIVED": 3
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.BeanResolverImpl",
+            "killed": 98,
+            "total": 139,
+            "statuses": {
+              "KILLED": 98,
+              "SURVIVED": 13,
+              "NO_COVERAGE": 28
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.InterceptorGenerator",
+            "killed": 90,
+            "total": 94,
+            "statuses": {
+              "KILLED": 90,
+              "NO_COVERAGE": 1,
+              "SURVIVED": 3
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.InjectionPointInfo",
+            "killed": 85,
+            "total": 101,
+            "statuses": {
+              "KILLED": 85,
+              "NO_COVERAGE": 8,
+              "SURVIVED": 8
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint",
+            "killed": 72,
+            "total": 87,
+            "statuses": {
+              "KILLED": 72,
+              "SURVIVED": 8,
+              "NO_COVERAGE": 7
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.ComponentsProviderGenerator",
+            "killed": 71,
+            "total": 96,
+            "statuses": {
+              "KILLED": 71,
+              "TIMED_OUT": 3,
+              "SURVIVED": 22
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.ClientProxyGenerator",
+            "killed": 66,
+            "total": 84,
+            "statuses": {
+              "KILLED": 66,
+              "NO_COVERAGE": 13,
+              "SURVIVED": 5
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.DecoratorGenerator",
+            "killed": 64,
+            "total": 97,
+            "statuses": {
+              "KILLED": 64,
+              "NO_COVERAGE": 1,
+              "SURVIVED": 32
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.ObserverInfo",
+            "killed": 58,
+            "total": 70,
+            "statuses": {
+              "NO_COVERAGE": 8,
+              "KILLED": 58,
+              "SURVIVED": 4
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.Annotations",
+            "killed": 39,
+            "total": 101,
+            "statuses": {
+              "KILLED": 39,
+              "SURVIVED": 17,
+              "NO_COVERAGE": 45
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.ContextInstancesGenerator",
+            "killed": 30,
+            "total": 80,
+            "statuses": {
+              "SURVIVED": 50,
+              "KILLED": 30
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.AnnotationLiteralProcessor",
+            "killed": 24,
+            "total": 61,
+            "statuses": {
+              "NO_COVERAGE": 23,
+              "KILLED": 24,
+              "SURVIVED": 14
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.BeanArchives",
+            "killed": 14,
+            "total": 16,
+            "statuses": {
+              "KILLED": 14,
+              "NO_COVERAGE": 2
+            }
+          },
+          {
+            "class": "io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl",
+            "killed": 11,
+            "total": 115,
+            "statuses": {
+              "SURVIVED": 4,
+              "KILLED": 11,
+              "NO_COVERAGE": 100
+            }
+          }
+        ],
+        "inputXmlSha256": {
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.AnnotationLiteralProcessor/mutations.xml": "4fbbf379431f51a1318172a8aca572e92e5cfc82f2451e44d6ead9c4b7124b26",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.Annotations/mutations.xml": "805294913acb4f25ab4c811dd583e4f1a8671e3feaba5a56d952ad810b93f30a",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.BeanArchives/mutations.xml": "efd600bc5a983346ba9ae45857425b9162993e968d2fa06ebcb7893ab33d6c70",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.BeanResolverImpl/mutations.xml": "e9792b4b53d31a09f799448aa7f4c5c7b3e8bd27d19b3732b53a6b61e36d0535",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.ClientProxyGenerator/mutations.xml": "041870158fa3781099d210cd425b1ba03fb827b56017aa6b9f795224870a220a",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.ComponentsProviderGenerator/mutations.xml": "4d85dfdea4fc0aa68f43cfff4bab7b5bcd347ecb95b09a0cb991ec3ea467d610",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.ContextInstancesGenerator/mutations.xml": "ae525c85535b7cf4c2abc61e2fe230539f64a85674da5cd4fd5ebce1384dc6c9",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.DecoratorGenerator/mutations.xml": "c8a208bb134a57204516e83e40733c7e6e35edfbe7acb7f7b3bdd2a8eacb282c",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.Injection/mutations.xml": "2ae69c0864df72e4682edcfd437f8bc1fdc4e13c5f7541ee3e745aa41b83d365",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.InjectionPointInfo/mutations.xml": "8d928a679204d5b3c4a6887882be3c57005e376b45742d00fbf596a65909cba4",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.InterceptorGenerator/mutations.xml": "1a22d915e0a94a0f67028f0d25249f2c3d36d81357f0b903c0de51fcc704c4a8",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.ObserverGenerator/mutations.xml": "d61fa7a8d46fb09b3548859c215086446d0313ffe061d1be6008f627b77dea46",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.ObserverInfo/mutations.xml": "66041e83e28a15f9785fbe047b2003a35f78fc5c81c014cf76aac3b2109eba9e",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.Types/mutations.xml": "e8f255c380b2f1ced6f8b9894d36c79f7beb7b1e0db42c65910eb1b0a70b4e9d",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.bcextensions.AnnotationBuilderImpl/mutations.xml": "169cd52bcb1be809df07a654f3b5c56ebc1db07051767c5afe3101508872fd02",
+          "data/pit/quarkus/per-class/io.quarkus.arc.processor.bcextensions.ExtensionsEntryPoint/mutations.xml": "81e2c34cd0d74803ba245bcb713627f5e770b4766d104c424b0a1c1a8719620c"
+        },
+        "reuseExistingRun": false
+      }
+    ]
+  },
+  "canonicalInputs": "analysis/projects_v17.json"
+}

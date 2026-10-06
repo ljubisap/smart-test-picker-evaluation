@@ -1,0 +1,118 @@
+{
+  "sampleIntervalSeconds": 1,
+  "scope": "Actual launched process and observed descendants only; short-lived processes can fall between samples. Environment inherited from recorded launcher.",
+  "commands": [
+    {
+      "pid": 61989,
+      "ppid": 61978,
+      "command": "/bin/sh /Users/D061177/Programs/apache-maven-3.9.15/bin/mvn clean test-compile -Ppitest -pl jgrapht-core"
+    },
+    {
+      "pid": 61989,
+      "ppid": 61978,
+      "command": "/Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home/bin/java --enable-native-access=ALL-UNNAMED -Xmx2g -classpath /Users/D061177/Programs/apache-maven-3.9.15/boot/plexus-classworlds-2.9.0.jar -Dclassworlds.conf=/Users/D061177/Programs/apache-maven-3.9.15/bin/m2.conf -Dmaven.home=/Users/D061177/Programs/apache-maven-3.9.15 -Dlibrary.jansi.path=/Users/D061177/Programs/apache-maven-3.9.15/lib/jansi-native -Dmaven.multiModuleProjectDirectory=/private/tmp/pit-unify-jgrapht-mbk2ybzg/subject org.codehaus.plexus.classworlds.launcher.Launcher clean test-compile -Ppitest -pl jgrapht-core"
+    }
+  ],
+  "samples": [
+    {
+      "elapsedSeconds": 0.04279941699999999,
+      "cpuPercent": 0.0,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 1.091678167,
+      "cpuPercent": 76.3,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 2.1635597079999997,
+      "cpuPercent": 0.1,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 3.204830667,
+      "cpuPercent": 154.2,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 4.255271542,
+      "cpuPercent": 82.2,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 5.295396375,
+      "cpuPercent": 57.1,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 6.33735825,
+      "cpuPercent": 101.0,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 7.381270417,
+      "cpuPercent": 90.2,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 8.426244583,
+      "cpuPercent": 115.6,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 9.47201575,
+      "cpuPercent": 248.1,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 10.52111825,
+      "cpuPercent": 207.2,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 11.565934708,
+      "cpuPercent": 76.3,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 12.619282208,
+      "cpuPercent": 47.5,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 13.668883042,
+      "cpuPercent": 165.8,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 14.715335792,
+      "cpuPercent": 100.6,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 15.764606042,
+      "cpuPercent": 132.7,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 16.852971583,
+      "cpuPercent": 262.0,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 17.899398042,
+      "cpuPercent": 191.9,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 18.943543375,
+      "cpuPercent": 208.8,
+      "processes": 1
+    },
+    {
+      "elapsedSeconds": 19.984484458,
+      "cpuPercent": 198.7,
+      "processes": 1
+    }
+  ]
+}

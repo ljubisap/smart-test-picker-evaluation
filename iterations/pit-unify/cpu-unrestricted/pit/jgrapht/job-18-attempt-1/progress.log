@@ -1,0 +1,2 @@
+[23:57:36] [18/20] Starting: org.jgrapht.alg.vertexcover.RecursiveExactVCImpl (LOC=339, tests=org.jgrapht.alg.vertexcover.*)
+[23:58:33] [18/20] DONE: org.jgrapht.alg.vertexcover.RecursiveExactVCImpl (57s, 47 mutations)

@@ -1,0 +1,2 @@
+[23:14:19] [4/20] Starting: org.jgrapht.alg.color.GreedyColoring (LOC=106, tests=org.jgrapht.alg.color.*)
+[23:14:26] [4/20] DONE: org.jgrapht.alg.color.GreedyColoring (7s, 8 mutations)

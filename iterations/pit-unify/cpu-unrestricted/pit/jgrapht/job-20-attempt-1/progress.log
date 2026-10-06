@@ -1,0 +1,2 @@
+[23:58:51] [20/20] Starting: org.jgrapht.graph.specifics.UndirectedSpecifics (LOC=294, tests=org.jgrapht.graph.*)
+[23:59:32] [20/20] DONE: org.jgrapht.graph.specifics.UndirectedSpecifics (42s, 48 mutations)

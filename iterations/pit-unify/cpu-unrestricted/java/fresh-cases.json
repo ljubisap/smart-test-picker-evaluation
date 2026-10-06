@@ -1,0 +1,52 @@
+{
+  "maps": [
+    {
+      "project": "commons-lang",
+      "path": "/Users/D061177/work/issta/smart-test-picker-evaluation/recollection_2e0954/commons-lang/test-coverage-map.json",
+      "mapSha256": "3411f99ebf02fe18114e64df5aa77663f25a18cf18f52ac8a3cf5dea66e5f657",
+      "cases": []
+    },
+    {
+      "project": "jgrapht",
+      "path": "/Users/D061177/work/issta/smart-test-picker-evaluation/recollection_2e0954/jgrapht/test-coverage-map.json",
+      "mapSha256": "0f38d66f02a4ba1bf4b62fe4b6fde52df0a3b46208c2aa39cc6355a4dd741a43",
+      "cases": []
+    },
+    {
+      "project": "spring-core",
+      "path": "/Users/D061177/work/issta/smart-test-picker-evaluation/recollection_2e0954/spring-core/test-coverage-map.json",
+      "mapSha256": "bfeafc4bb2a7221243c1f7fb407938472b582462a8cad071cbc90152eb83e32d",
+      "cases": []
+    },
+    {
+      "project": "petclinic",
+      "path": "/Users/D061177/work/issta/smart-test-picker-evaluation/recollection_2e0954/petclinic/test-coverage-map.json",
+      "mapSha256": "d157cae04c617ef1c7632608a7e957794e9bb94bb8aeaf0123e01d6eebda6d82",
+      "cases": []
+    },
+    {
+      "project": "flink",
+      "path": "/Users/D061177/work/issta/smart-test-picker-evaluation/flink/results/test-coverage-map.json.gz",
+      "mapSha256": "766a16502d728157639fe9180cf1d226106e2ef185e7419d41ed0eb69c777a02",
+      "cases": []
+    },
+    {
+      "project": "spring-security",
+      "path": "/Users/D061177/work/issta/smart-test-picker-evaluation/spring-security/results/test-coverage-map.json.gz",
+      "mapSha256": "f63447db288566e5b3d86a9ffd1051843328cd3bb5d14c9c93aa1e14e7de86ac",
+      "cases": []
+    },
+    {
+      "project": "hibernate",
+      "path": "/Users/D061177/work/issta/smart-test-picker-evaluation/hibernate/results/test-coverage-map.json.gz",
+      "mapSha256": "ff735784a784662121d89f07e5493d937bc739f622bcce1aaef2ae79a618aa76",
+      "cases": []
+    },
+    {
+      "project": "quarkus",
+      "path": "/Users/D061177/work/issta/smart-test-picker-evaluation/quarkus/results/test-coverage-map.json.gz",
+      "mapSha256": "75a90982597df90940ad93995fe5e33a30011bcbddc85d46452a599dbea61717",
+      "cases": []
+    }
+  ]
+}

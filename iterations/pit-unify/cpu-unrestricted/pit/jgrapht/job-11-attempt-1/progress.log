@@ -1,0 +1,2 @@
+[23:21:05] [11/20] Starting: org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction (LOC=83, tests=org.jgrapht.alg.linkprediction.*)
+[23:21:12] [11/20] DONE: org.jgrapht.alg.linkprediction.LeichtHolmeNewmanIndexLinkPrediction (7s, 5 mutations)

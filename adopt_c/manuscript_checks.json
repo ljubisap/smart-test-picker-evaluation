@@ -1,0 +1,346 @@
+{
+  "passes": [
+    {
+      "status": "PASS",
+      "directDocumentClaimsChecked": 159,
+      "allComparisonEntries": 320,
+      "errors": [],
+      "formattingIdentical": true,
+      "unlistedChanges": 0,
+      "tables": 5,
+      "table5Rows": 7,
+      "references": 22,
+      "sha256": "70cba8c81a78700c7a131c8f2cbc75450ea5bdb750e6c4b84ea0ab261629af29"
+    },
+    {
+      "status": "PASS",
+      "directDocumentClaimsChecked": 159,
+      "allComparisonEntries": 320,
+      "errors": [],
+      "formattingIdentical": true,
+      "unlistedChanges": 0,
+      "tables": 5,
+      "table5Rows": 7,
+      "references": 22,
+      "sha256": "70cba8c81a78700c7a131c8f2cbc75450ea5bdb750e6c4b84ea0ab261629af29"
+    }
+  ],
+  "changedLocations": [
+    {
+      "location": "paragraph 2",
+      "sources": [
+        "TASK_ADOPT_C_v2.md"
+      ]
+    },
+    {
+      "location": "paragraph 4",
+      "sources": [
+        "results/v17-summary-tables.json"
+      ]
+    },
+    {
+      "location": "paragraph 67",
+      "sources": [
+        "results/v17-summary-tables.json"
+      ]
+    },
+    {
+      "location": "paragraph 108",
+      "sources": [
+        "results/v17-summary-tables.json"
+      ]
+    },
+    {
+      "location": "paragraph 109",
+      "sources": [
+        "results/v17-summary-tables.json"
+      ]
+    },
+    {
+      "location": "paragraph 9",
+      "sources": [
+        "results/v17-matrix-inventory.json",
+        "iterations/pit-unify/cpu-unrestricted/campaigns.json"
+      ]
+    },
+    {
+      "location": "paragraph 52",
+      "sources": [
+        "results/v17-matrix-inventory.json",
+        "iterations/pit-unify/cpu-unrestricted/runtime_artifacts.json",
+        "iterations/pit-unify/pit-default-resolution/",
+        "spring-core/scripts/02_run_pit.py",
+        "jgrapht/config/pit_profile.xml",
+        "adopt_c/provenance_review.json"
+      ]
+    },
+    {
+      "location": "paragraph 53",
+      "sources": [
+        "results/v17-method-kinds.json",
+        "results/v17-publication-metrics.json"
+      ]
+    },
+    {
+      "location": "paragraph 59",
+      "sources": [
+        "results/v17-java-comparison.json",
+        "results/v17-loader-content-equality.json",
+        "iterations/pit-unify/cpu-unrestricted/java/runtime.json"
+      ]
+    },
+    {
+      "location": "paragraph 67",
+      "sources": [
+        "results/v17-summary-tables.json"
+      ]
+    },
+    {
+      "location": "paragraph 79",
+      "sources": [
+        "results/v17-publication-metrics.json"
+      ]
+    },
+    {
+      "location": "paragraph 89",
+      "sources": [
+        "results/v17-springcore-run2-sensitivity.json",
+        "results/v17-summary-tables.json"
+      ]
+    },
+    {
+      "location": "paragraph 103",
+      "sources": [
+        "results/v17-java-comparison.json"
+      ]
+    },
+    {
+      "location": "paragraph 103",
+      "sources": [
+        "iterations/pit-unify/cpu-unrestricted/worker_environment.json",
+        "iterations/pit-unify/cpu-unrestricted/transit_watchlist.json",
+        "iterations/pit-unify/cpu_environment_evidence.json"
+      ]
+    },
+    {
+      "location": "paragraph 104",
+      "sources": [
+        "results/v17-method-kinds.json"
+      ]
+    },
+    {
+      "location": "paragraph 106",
+      "sources": [
+        "results/v17-confidence-intervals.json"
+      ]
+    },
+    {
+      "location": "Table 1 row 2 column 4",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 1 row 2 column 5",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 3 row 2 column 1",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 3 row 2 column 2",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 3 row 2 column 3",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 3 row 2 column 4",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 3 row 2 column 5",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 4 row 2 column 1",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 4 row 2 column 3",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 4 row 2 column 5",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 1 row 3 column 4",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 1 row 3 column 5",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 3 row 3 column 1",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 3 row 3 column 2",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 3 row 3 column 3",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 3 row 3 column 4",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 3 row 3 column 5",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 4 row 3 column 1",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 4 row 3 column 3",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 4 row 3 column 4",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 4 row 3 column 5",
+      "sources": [
+        "results/v17-table-i-counts.json",
+        "results/v17-summary-tables.json",
+        "results/v17-random-baseline.json"
+      ]
+    },
+    {
+      "location": "Table 3 aggregate column 1",
+      "sources": [
+        "results/v17-summary-tables.json"
+      ]
+    },
+    {
+      "location": "Table 3 aggregate column 2",
+      "sources": [
+        "results/v17-summary-tables.json"
+      ]
+    },
+    {
+      "location": "Table 3 aggregate column 3",
+      "sources": [
+        "results/v17-summary-tables.json"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "/Users/D061177/work/issta/rad1-v16/RAD1_v16.docx",
+      "sha256": "70cba8c81a78700c7a131c8f2cbc75450ea5bdb750e6c4b84ea0ab261629af29"
+    },
+    {
+      "path": "/Users/D061177/work/issta/rad1-v16/V16_CHANGES.md",
+      "sha256": "c552fd038a2bc40456032f2f8e74243c86eb9cc1d1810c173a4d5fcdc7b439d8"
+    },
+    {
+      "path": "/Users/D061177/work/issta/rad1-v16/plain-text.diff",
+      "sha256": "63813b8a77e9edc1e8fab412e7d2d242c6aeb1baded87bd95501d6c050f56829"
+    },
+    {
+      "path": "/Users/D061177/work/issta/rad1-v16/verification-1.json",
+      "sha256": "0d6a45c44c3f5293804dc46c53470e94994c87cf527c44b3684b4a3f9b2fb5f8"
+    },
+    {
+      "path": "/Users/D061177/work/issta/rad1-v16/verification-2.json",
+      "sha256": "0d6a45c44c3f5293804dc46c53470e94994c87cf527c44b3684b4a3f9b2fb5f8"
+    }
+  ]
+}

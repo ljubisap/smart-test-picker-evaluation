@@ -1,0 +1,15 @@
+{
+  "command": [
+    "./gradlew",
+    "--no-daemon",
+    "--version"
+  ],
+  "exitCode": 0,
+  "stdout": "\n------------------------------------------------------------\nGradle 8.14.2\n------------------------------------------------------------\n\nBuild time:    2025-06-05 13:32:01 UTC\nRevision:      30db2a3bdfffa9f8b40e798095675f9dab990a9a\n\nKotlin:        2.0.21\nGroovy:        3.0.24\nAnt:           Apache Ant(TM) version 1.10.15 compiled on August 25 2024\nLauncher JVM:  21.0.12.1 (SAP SE 21.0.12.1+1-LTS)\nDaemon JVM:    /Library/Java/JavaVirtualMachines/sapmachine-21.jdk/Contents/Home (no JDK specified, using current Java home)\nOS:            Mac OS X 26.6.2 aarch64\n\n",
+  "stderr": "",
+  "wrapperHashes": {
+    "/private/tmp/pit-unify-spring-core-nydoloo0/subject/gradlew": "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3",
+    "/private/tmp/pit-unify-spring-core-nydoloo0/subject/gradle/wrapper/gradle-wrapper.jar": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046",
+    "/private/tmp/pit-unify-spring-core-nydoloo0/subject/gradle/wrapper/gradle-wrapper.properties": "97e38c4092036e177d1d31ebb454332a61a1d1313fc76aefe34b35e88211715d"
+  }
+}

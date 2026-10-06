@@ -1,0 +1,7 @@
+{
+  "importedCalculation": "iterations/pit-unify/scripts/derive.py",
+  "sha256": "17b80ee5bcfa22eaf88a5af8669912b1f6fa2865bb4da487bf1aaf4a15447eb9",
+  "evaluator": "analysis/evaluation_core.py",
+  "evaluatorSha256": "82b989363bd1854d7aa4a507f0b9684affa0d8baf638bfba58c0c0ff39e82191",
+  "configurationChange": "Only JGraphT and spring-core PIT patterns point to C; all map and remaining subject inputs unchanged."
+}

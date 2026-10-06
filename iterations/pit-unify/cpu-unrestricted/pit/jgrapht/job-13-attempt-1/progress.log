@@ -1,0 +1,2 @@
+[23:45:50] [13/20] Starting: org.jgrapht.alg.scoring.ClosenessCentrality (LOC=201, tests=org.jgrapht.alg.scoring.*)
+[23:46:41] [13/20] DONE: org.jgrapht.alg.scoring.ClosenessCentrality (51s, 19 mutations)

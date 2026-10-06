@@ -1,0 +1,45 @@
+{
+  "commands": [
+    {
+      "name": "helpers",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "iterations/pit-unify/cpu-unrestricted/scripts",
+        "-p",
+        "test_*.py"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.11528675,
+      "log": "iterations/pit-unify/cpu-unrestricted/helper-tests.log",
+      "lastNonEmptyLine": "OK"
+    },
+    {
+      "name": "configuration",
+      "command": [
+        "python3",
+        "iterations/pit-unify/cpu-unrestricted/scripts/configuration_check.py"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.066220625,
+      "log": "iterations/pit-unify/cpu-unrestricted/verification/configuration.log",
+      "lastNonEmptyLine": "PIT command comparisons 42 unexpected 0"
+    },
+    {
+      "name": "C",
+      "command": [
+        "python3",
+        "iterations/pit-unify/cpu-unrestricted/scripts/verify_c.py",
+        "--verify"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 134.403029208,
+      "log": "iterations/pit-unify/cpu-unrestricted/verification/C.log",
+      "lastNonEmptyLine": "PASS: C raw-input re-derivation, Java full sets, loader, six-subject invariance, lossless matrices and all preserved hashes"
+    }
+  ],
+  "allPassed": true
+}

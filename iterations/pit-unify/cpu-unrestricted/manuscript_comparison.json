@@ -1,0 +1,4048 @@
+{
+  "manuscriptFilename": "RAD1_v15_final.docx",
+  "manuscriptSha256": "afd6010f04f58ab80741a6cc7ba224857dca162bffd8c472427860011cbbffd6",
+  "claims": [
+    {
+      "location": "Table I/commons-lang/logicalTests",
+      "currentValue": 4697,
+      "unifiedValue": 4697,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 4697
+    },
+    {
+      "location": "Table I/commons-lang/targetedClasses",
+      "currentValue": 21,
+      "unifiedValue": 21,
+      "changed": false,
+      "source": "commons-lang/config/sample_classes.json",
+      "numericEquivalent": 21
+    },
+    {
+      "location": "Table I/commons-lang/killedContributingClasses",
+      "currentValue": 21,
+      "unifiedValue": 21,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 21
+    },
+    {
+      "location": "Table I/commons-lang/pitMutations",
+      "currentValue": 932,
+      "unifiedValue": 932,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 932
+    },
+    {
+      "location": "Table I/commons-lang/eligibleKilled",
+      "currentValue": 772,
+      "unifiedValue": 772,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 772
+    },
+    {
+      "location": "Table III/commons-lang/Eligible KILLED",
+      "currentValue": "772",
+      "unifiedValue": "772",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/commons-lang/policies/base",
+      "numericEquivalent": "772"
+    },
+    {
+      "location": "Table III/commons-lang/Inclusive",
+      "currentValue": "771",
+      "unifiedValue": "771",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/commons-lang/policies/base",
+      "numericEquivalent": "771"
+    },
+    {
+      "location": "Table III/commons-lang/Inclusiveness",
+      "currentValue": "99.87%",
+      "unifiedValue": "99.87%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/commons-lang/policies/base",
+      "numericEquivalent": "99.87%"
+    },
+    {
+      "location": "Table III/commons-lang/Mean selected",
+      "currentValue": "22.01",
+      "unifiedValue": "22.01",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/commons-lang/policies/base",
+      "numericEquivalent": "22.01"
+    },
+    {
+      "location": "Table III/commons-lang/Selected fraction",
+      "currentValue": "0.47%",
+      "unifiedValue": "0.47%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/commons-lang/policies/base",
+      "numericEquivalent": "0.47%"
+    },
+    {
+      "location": "Table IV/commons-lang/Random incl.",
+      "currentValue": "2.39%",
+      "unifiedValue": "2.39%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "numericEquivalent": "2.39%"
+    },
+    {
+      "location": "Table IV/commons-lang/Class incl.",
+      "currentValue": "99.87%",
+      "unifiedValue": "99.87%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/commons-lang/policies",
+      "numericEquivalent": "99.87%"
+    },
+    {
+      "location": "Table IV/commons-lang/Class mean",
+      "currentValue": "55.12",
+      "unifiedValue": "55.12",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/commons-lang/policies",
+      "numericEquivalent": "55.12"
+    },
+    {
+      "location": "Table IV/commons-lang/Rule incl.",
+      "currentValue": "99.87%",
+      "unifiedValue": "99.87%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/commons-lang/policies",
+      "numericEquivalent": "99.87%"
+    },
+    {
+      "location": "Table IV/commons-lang/Rule mean",
+      "currentValue": "24.81",
+      "unifiedValue": "24.81",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/commons-lang/policies",
+      "numericEquivalent": "24.81"
+    },
+    {
+      "location": "Table I/jgrapht/logicalTests",
+      "currentValue": 2309,
+      "unifiedValue": 2309,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 2309
+    },
+    {
+      "location": "Table I/jgrapht/targetedClasses",
+      "currentValue": 20,
+      "unifiedValue": 20,
+      "changed": false,
+      "source": "jgrapht/config/sample_classes.json",
+      "numericEquivalent": 20
+    },
+    {
+      "location": "Table I/jgrapht/killedContributingClasses",
+      "currentValue": 20,
+      "unifiedValue": 20,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 20
+    },
+    {
+      "location": "Table I/jgrapht/pitMutations",
+      "currentValue": 804,
+      "unifiedValue": 803,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 804
+    },
+    {
+      "location": "Table I/jgrapht/eligibleKilled",
+      "currentValue": 517,
+      "unifiedValue": 473,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 517
+    },
+    {
+      "location": "Table III/jgrapht/Eligible KILLED",
+      "currentValue": "517",
+      "unifiedValue": "473",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/jgrapht/policies/base",
+      "numericEquivalent": "517"
+    },
+    {
+      "location": "Table III/jgrapht/Inclusive",
+      "currentValue": "516",
+      "unifiedValue": "472",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/jgrapht/policies/base",
+      "numericEquivalent": "516"
+    },
+    {
+      "location": "Table III/jgrapht/Inclusiveness",
+      "currentValue": "99.81%",
+      "unifiedValue": "99.79%",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/jgrapht/policies/base",
+      "numericEquivalent": "99.81%"
+    },
+    {
+      "location": "Table III/jgrapht/Mean selected",
+      "currentValue": "89.70",
+      "unifiedValue": "87.33",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/jgrapht/policies/base",
+      "numericEquivalent": "89.70"
+    },
+    {
+      "location": "Table III/jgrapht/Selected fraction",
+      "currentValue": "3.88%",
+      "unifiedValue": "3.78%",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/jgrapht/policies/base",
+      "numericEquivalent": "3.88%"
+    },
+    {
+      "location": "Table IV/jgrapht/Random incl.",
+      "currentValue": "34.25%",
+      "unifiedValue": "33.23%",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "numericEquivalent": "34.25%"
+    },
+    {
+      "location": "Table IV/jgrapht/Class incl.",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/jgrapht/policies",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table IV/jgrapht/Class mean",
+      "currentValue": "209.80",
+      "unifiedValue": "213.15",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/jgrapht/policies",
+      "numericEquivalent": "209.80"
+    },
+    {
+      "location": "Table IV/jgrapht/Rule incl.",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/jgrapht/policies",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table IV/jgrapht/Rule mean",
+      "currentValue": "98.94",
+      "unifiedValue": "96.56",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/jgrapht/policies",
+      "numericEquivalent": "98.94"
+    },
+    {
+      "location": "Table I/spring-core/logicalTests",
+      "currentValue": 3638,
+      "unifiedValue": 3638,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 3638
+    },
+    {
+      "location": "Table I/spring-core/targetedClasses",
+      "currentValue": 22,
+      "unifiedValue": 22,
+      "changed": false,
+      "source": "spring-core/config/sample_classes.json",
+      "numericEquivalent": 22
+    },
+    {
+      "location": "Table I/spring-core/killedContributingClasses",
+      "currentValue": 18,
+      "unifiedValue": 18,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 18
+    },
+    {
+      "location": "Table I/spring-core/pitMutations",
+      "currentValue": 563,
+      "unifiedValue": 557,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 563
+    },
+    {
+      "location": "Table I/spring-core/eligibleKilled",
+      "currentValue": 454,
+      "unifiedValue": 419,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 454
+    },
+    {
+      "location": "Table III/spring-core/Eligible KILLED",
+      "currentValue": "454",
+      "unifiedValue": "419",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-core/policies/base",
+      "numericEquivalent": "454"
+    },
+    {
+      "location": "Table III/spring-core/Inclusive",
+      "currentValue": "443",
+      "unifiedValue": "408",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-core/policies/base",
+      "numericEquivalent": "443"
+    },
+    {
+      "location": "Table III/spring-core/Inclusiveness",
+      "currentValue": "97.58%",
+      "unifiedValue": "97.37%",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-core/policies/base",
+      "numericEquivalent": "97.58%"
+    },
+    {
+      "location": "Table III/spring-core/Mean selected",
+      "currentValue": "94.61",
+      "unifiedValue": "96.01",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-core/policies/base",
+      "numericEquivalent": "94.61"
+    },
+    {
+      "location": "Table III/spring-core/Selected fraction",
+      "currentValue": "2.60%",
+      "unifiedValue": "2.64%",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-core/policies/base",
+      "numericEquivalent": "2.60%"
+    },
+    {
+      "location": "Table IV/spring-core/Random incl.",
+      "currentValue": "19.23%",
+      "unifiedValue": "15.49%",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "numericEquivalent": "19.23%"
+    },
+    {
+      "location": "Table IV/spring-core/Class incl.",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-core/policies",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table IV/spring-core/Class mean",
+      "currentValue": "543.18",
+      "unifiedValue": "536.49",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-core/policies",
+      "numericEquivalent": "543.18"
+    },
+    {
+      "location": "Table IV/spring-core/Rule incl.",
+      "currentValue": "98.46%",
+      "unifiedValue": "98.33%",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-core/policies",
+      "numericEquivalent": "98.46%"
+    },
+    {
+      "location": "Table IV/spring-core/Rule mean",
+      "currentValue": "98.92",
+      "unifiedValue": "100.28",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-core/policies",
+      "numericEquivalent": "98.92"
+    },
+    {
+      "location": "Table I/petclinic/logicalTests",
+      "currentValue": 56,
+      "unifiedValue": 56,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 56
+    },
+    {
+      "location": "Table I/petclinic/targetedClasses",
+      "currentValue": 17,
+      "unifiedValue": 17,
+      "changed": false,
+      "source": "petclinic/docs/METHODOLOGY.md",
+      "numericEquivalent": 17
+    },
+    {
+      "location": "Table I/petclinic/killedContributingClasses",
+      "currentValue": 14,
+      "unifiedValue": 14,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 14
+    },
+    {
+      "location": "Table I/petclinic/pitMutations",
+      "currentValue": 139,
+      "unifiedValue": 139,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 139
+    },
+    {
+      "location": "Table I/petclinic/eligibleKilled",
+      "currentValue": 94,
+      "unifiedValue": 94,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 94
+    },
+    {
+      "location": "Table III/petclinic/Eligible KILLED",
+      "currentValue": "94",
+      "unifiedValue": "94",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/petclinic/policies/base",
+      "numericEquivalent": "94"
+    },
+    {
+      "location": "Table III/petclinic/Inclusive",
+      "currentValue": "94",
+      "unifiedValue": "94",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/petclinic/policies/base",
+      "numericEquivalent": "94"
+    },
+    {
+      "location": "Table III/petclinic/Inclusiveness",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/petclinic/policies/base",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table III/petclinic/Mean selected",
+      "currentValue": "13.72",
+      "unifiedValue": "13.72",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/petclinic/policies/base",
+      "numericEquivalent": "13.72"
+    },
+    {
+      "location": "Table III/petclinic/Selected fraction",
+      "currentValue": "24.51%",
+      "unifiedValue": "24.51%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/petclinic/policies/base",
+      "numericEquivalent": "24.51%"
+    },
+    {
+      "location": "Table IV/petclinic/Random incl.",
+      "currentValue": "42.50%",
+      "unifiedValue": "42.50%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "numericEquivalent": "42.50%"
+    },
+    {
+      "location": "Table IV/petclinic/Class incl.",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/petclinic/policies",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table IV/petclinic/Class mean",
+      "currentValue": "22.35",
+      "unifiedValue": "22.35",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/petclinic/policies",
+      "numericEquivalent": "22.35"
+    },
+    {
+      "location": "Table IV/petclinic/Rule incl.",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/petclinic/policies",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table IV/petclinic/Rule mean",
+      "currentValue": "15.71",
+      "unifiedValue": "15.71",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/petclinic/policies",
+      "numericEquivalent": "15.71"
+    },
+    {
+      "location": "Table I/flink/logicalTests",
+      "currentValue": 665,
+      "unifiedValue": 665,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 665
+    },
+    {
+      "location": "Table I/flink/targetedClasses",
+      "currentValue": 16,
+      "unifiedValue": 16,
+      "changed": false,
+      "source": "flink/config/sample_classes.json",
+      "numericEquivalent": 16
+    },
+    {
+      "location": "Table I/flink/killedContributingClasses",
+      "currentValue": 15,
+      "unifiedValue": 15,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 15
+    },
+    {
+      "location": "Table I/flink/pitMutations",
+      "currentValue": 681,
+      "unifiedValue": 681,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 681
+    },
+    {
+      "location": "Table I/flink/eligibleKilled",
+      "currentValue": 349,
+      "unifiedValue": 349,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 349
+    },
+    {
+      "location": "Table III/flink/Eligible KILLED",
+      "currentValue": "349",
+      "unifiedValue": "349",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/flink/policies/base",
+      "numericEquivalent": "349"
+    },
+    {
+      "location": "Table III/flink/Inclusive",
+      "currentValue": "349",
+      "unifiedValue": "349",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/flink/policies/base",
+      "numericEquivalent": "349"
+    },
+    {
+      "location": "Table III/flink/Inclusiveness",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/flink/policies/base",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table III/flink/Mean selected",
+      "currentValue": "37.23",
+      "unifiedValue": "37.23",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/flink/policies/base",
+      "numericEquivalent": "37.23"
+    },
+    {
+      "location": "Table III/flink/Selected fraction",
+      "currentValue": "5.60%",
+      "unifiedValue": "5.60%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/flink/policies/base",
+      "numericEquivalent": "5.60%"
+    },
+    {
+      "location": "Table IV/flink/Random incl.",
+      "currentValue": "19.88%",
+      "unifiedValue": "19.88%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "numericEquivalent": "19.88%"
+    },
+    {
+      "location": "Table IV/flink/Class incl.",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/flink/policies",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table IV/flink/Class mean",
+      "currentValue": "65.93",
+      "unifiedValue": "65.93",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/flink/policies",
+      "numericEquivalent": "65.93"
+    },
+    {
+      "location": "Table IV/flink/Rule incl.",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/flink/policies",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table IV/flink/Rule mean",
+      "currentValue": "39.37",
+      "unifiedValue": "39.37",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/flink/policies",
+      "numericEquivalent": "39.37"
+    },
+    {
+      "location": "Table I/spring-security/logicalTests",
+      "currentValue": 1440,
+      "unifiedValue": 1440,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 1440
+    },
+    {
+      "location": "Table I/spring-security/targetedClasses",
+      "currentValue": 18,
+      "unifiedValue": 18,
+      "changed": false,
+      "source": "spring-security/config/sample_classes.json",
+      "numericEquivalent": 18
+    },
+    {
+      "location": "Table I/spring-security/killedContributingClasses",
+      "currentValue": 18,
+      "unifiedValue": 18,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 18
+    },
+    {
+      "location": "Table I/spring-security/pitMutations",
+      "currentValue": 520,
+      "unifiedValue": 520,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 520
+    },
+    {
+      "location": "Table I/spring-security/eligibleKilled",
+      "currentValue": 340,
+      "unifiedValue": 340,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 340
+    },
+    {
+      "location": "Table III/spring-security/Eligible KILLED",
+      "currentValue": "340",
+      "unifiedValue": "340",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-security/policies/base",
+      "numericEquivalent": "340"
+    },
+    {
+      "location": "Table III/spring-security/Inclusive",
+      "currentValue": "335",
+      "unifiedValue": "335",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-security/policies/base",
+      "numericEquivalent": "335"
+    },
+    {
+      "location": "Table III/spring-security/Inclusiveness",
+      "currentValue": "98.53%",
+      "unifiedValue": "98.53%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-security/policies/base",
+      "numericEquivalent": "98.53%"
+    },
+    {
+      "location": "Table III/spring-security/Mean selected",
+      "currentValue": "59.86",
+      "unifiedValue": "59.86",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-security/policies/base",
+      "numericEquivalent": "59.86"
+    },
+    {
+      "location": "Table III/spring-security/Selected fraction",
+      "currentValue": "4.16%",
+      "unifiedValue": "4.16%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-security/policies/base",
+      "numericEquivalent": "4.16%"
+    },
+    {
+      "location": "Table IV/spring-security/Random incl.",
+      "currentValue": "22.89%",
+      "unifiedValue": "22.89%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "numericEquivalent": "22.89%"
+    },
+    {
+      "location": "Table IV/spring-security/Class incl.",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-security/policies",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table IV/spring-security/Class mean",
+      "currentValue": "95.20",
+      "unifiedValue": "95.20",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-security/policies",
+      "numericEquivalent": "95.20"
+    },
+    {
+      "location": "Table IV/spring-security/Rule incl.",
+      "currentValue": "99.12%",
+      "unifiedValue": "99.12%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-security/policies",
+      "numericEquivalent": "99.12%"
+    },
+    {
+      "location": "Table IV/spring-security/Rule mean",
+      "currentValue": "60.34",
+      "unifiedValue": "60.34",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/spring-security/policies",
+      "numericEquivalent": "60.34"
+    },
+    {
+      "location": "Table I/hibernate/logicalTests",
+      "currentValue": 1099,
+      "unifiedValue": 1099,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 1099
+    },
+    {
+      "location": "Table I/hibernate/targetedClasses",
+      "currentValue": 16,
+      "unifiedValue": 16,
+      "changed": false,
+      "source": "hibernate/config/sample_classes.json",
+      "numericEquivalent": 16
+    },
+    {
+      "location": "Table I/hibernate/killedContributingClasses",
+      "currentValue": 15,
+      "unifiedValue": 15,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 15
+    },
+    {
+      "location": "Table I/hibernate/pitMutations",
+      "currentValue": 1061,
+      "unifiedValue": 1061,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 1061
+    },
+    {
+      "location": "Table I/hibernate/eligibleKilled",
+      "currentValue": 401,
+      "unifiedValue": 401,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 401
+    },
+    {
+      "location": "Table III/hibernate/Eligible KILLED",
+      "currentValue": "401",
+      "unifiedValue": "401",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/hibernate/policies/base",
+      "numericEquivalent": "401"
+    },
+    {
+      "location": "Table III/hibernate/Inclusive",
+      "currentValue": "400",
+      "unifiedValue": "400",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/hibernate/policies/base",
+      "numericEquivalent": "400"
+    },
+    {
+      "location": "Table III/hibernate/Inclusiveness",
+      "currentValue": "99.75%",
+      "unifiedValue": "99.75%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/hibernate/policies/base",
+      "numericEquivalent": "99.75%"
+    },
+    {
+      "location": "Table III/hibernate/Mean selected",
+      "currentValue": "297.25",
+      "unifiedValue": "297.25",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/hibernate/policies/base",
+      "numericEquivalent": "297.25"
+    },
+    {
+      "location": "Table III/hibernate/Selected fraction",
+      "currentValue": "27.05%",
+      "unifiedValue": "27.05%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/hibernate/policies/base",
+      "numericEquivalent": "27.05%"
+    },
+    {
+      "location": "Table IV/hibernate/Random incl.",
+      "currentValue": "71.30%",
+      "unifiedValue": "71.30%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "numericEquivalent": "71.30%"
+    },
+    {
+      "location": "Table IV/hibernate/Class incl.",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/hibernate/policies",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table IV/hibernate/Class mean",
+      "currentValue": "488.77",
+      "unifiedValue": "488.77",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/hibernate/policies",
+      "numericEquivalent": "488.77"
+    },
+    {
+      "location": "Table IV/hibernate/Rule incl.",
+      "currentValue": "99.75%",
+      "unifiedValue": "99.75%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/hibernate/policies",
+      "numericEquivalent": "99.75%"
+    },
+    {
+      "location": "Table IV/hibernate/Rule mean",
+      "currentValue": "303.16",
+      "unifiedValue": "303.16",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/hibernate/policies",
+      "numericEquivalent": "303.16"
+    },
+    {
+      "location": "Table I/quarkus/logicalTests",
+      "currentValue": 684,
+      "unifiedValue": 684,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 684
+    },
+    {
+      "location": "Table I/quarkus/targetedClasses",
+      "currentValue": 16,
+      "unifiedValue": 16,
+      "changed": false,
+      "source": "quarkus/config/sample_classes.json",
+      "numericEquivalent": 16
+    },
+    {
+      "location": "Table I/quarkus/killedContributingClasses",
+      "currentValue": 16,
+      "unifiedValue": 16,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 16
+    },
+    {
+      "location": "Table I/quarkus/pitMutations",
+      "currentValue": 1639,
+      "unifiedValue": 1639,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/matrix_inventory.json",
+      "numericEquivalent": 1639
+    },
+    {
+      "location": "Table I/quarkus/eligibleKilled",
+      "currentValue": 1083,
+      "unifiedValue": 1083,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 1083
+    },
+    {
+      "location": "Table III/quarkus/Eligible KILLED",
+      "currentValue": "1,083",
+      "unifiedValue": "1,083",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/quarkus/policies/base",
+      "numericEquivalent": "1,083"
+    },
+    {
+      "location": "Table III/quarkus/Inclusive",
+      "currentValue": "1,083",
+      "unifiedValue": "1,083",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/quarkus/policies/base",
+      "numericEquivalent": "1,083"
+    },
+    {
+      "location": "Table III/quarkus/Inclusiveness",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/quarkus/policies/base",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table III/quarkus/Mean selected",
+      "currentValue": "269.65",
+      "unifiedValue": "269.65",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/quarkus/policies/base",
+      "numericEquivalent": "269.65"
+    },
+    {
+      "location": "Table III/quarkus/Selected fraction",
+      "currentValue": "39.42%",
+      "unifiedValue": "39.42%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/quarkus/policies/base",
+      "numericEquivalent": "39.42%"
+    },
+    {
+      "location": "Table IV/quarkus/Random incl.",
+      "currentValue": "72.88%",
+      "unifiedValue": "72.88%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "numericEquivalent": "72.88%"
+    },
+    {
+      "location": "Table IV/quarkus/Class incl.",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/quarkus/policies",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table IV/quarkus/Class mean",
+      "currentValue": "548.93",
+      "unifiedValue": "548.93",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/quarkus/policies",
+      "numericEquivalent": "548.93"
+    },
+    {
+      "location": "Table IV/quarkus/Rule incl.",
+      "currentValue": "100.00%",
+      "unifiedValue": "100.00%",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/quarkus/policies",
+      "numericEquivalent": "100.00%"
+    },
+    {
+      "location": "Table IV/quarkus/Rule mean",
+      "currentValue": "392.60",
+      "unifiedValue": "392.60",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/projects/quarkus/policies",
+      "numericEquivalent": "392.60"
+    },
+    {
+      "location": "Table III/micro aggregate/1",
+      "currentValue": "4,010",
+      "unifiedValue": "3,931",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/aggregate/base",
+      "numericEquivalent": "4,010"
+    },
+    {
+      "location": "Table III/micro aggregate/2",
+      "currentValue": "3,991",
+      "unifiedValue": "3,912",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/aggregate/base",
+      "numericEquivalent": "3,991"
+    },
+    {
+      "location": "Table III/micro aggregate/3",
+      "currentValue": "99.53%",
+      "unifiedValue": "99.52%",
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/aggregate/base",
+      "numericEquivalent": "99.53%"
+    },
+    {
+      "location": "Table III/micro aggregate/4",
+      "currentValue": "\u2014",
+      "unifiedValue": "\u2014",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/aggregate/base",
+      "numericEquivalent": "\u2014"
+    },
+    {
+      "location": "Table III/micro aggregate/5",
+      "currentValue": "\u2014",
+      "unifiedValue": "\u2014",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/aggregate/base",
+      "numericEquivalent": "\u2014"
+    },
+    {
+      "location": "Table II/row 1/column 1",
+      "currentValue": "2e0954...",
+      "unifiedValue": "2e0954...",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "2e0954..."
+    },
+    {
+      "location": "Table II/row 1/column 2",
+      "currentValue": "0.8.13 / 0.8.13",
+      "unifiedValue": "0.8.13 / 0.8.13",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "0.8.13 / 0.8.13"
+    },
+    {
+      "location": "Table II/row 1/column 3",
+      "currentValue": "SapMachine 21, Maven 3.9.15",
+      "unifiedValue": "SapMachine 21, Maven 3.9.15",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "SapMachine 21, Maven 3.9.15"
+    },
+    {
+      "location": "Table II/row 1/column 4",
+      "currentValue": "collector run evidence; JaCoCo declared",
+      "unifiedValue": "collector run evidence; JaCoCo declared",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "collector run evidence; JaCoCo declared"
+    },
+    {
+      "location": "Table II/row 2/column 1",
+      "currentValue": "2e0954...",
+      "unifiedValue": "2e0954...",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "2e0954..."
+    },
+    {
+      "location": "Table II/row 2/column 2",
+      "currentValue": "0.8.13 / 0.8.13",
+      "unifiedValue": "0.8.13 / 0.8.13",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "0.8.13 / 0.8.13"
+    },
+    {
+      "location": "Table II/row 2/column 3",
+      "currentValue": "SapMachine 21, Maven 3.9.15",
+      "unifiedValue": "SapMachine 21, Maven 3.9.15",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "SapMachine 21, Maven 3.9.15"
+    },
+    {
+      "location": "Table II/row 2/column 4",
+      "currentValue": "collector run evidence; JaCoCo declared",
+      "unifiedValue": "collector run evidence; JaCoCo declared",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "collector run evidence; JaCoCo declared"
+    },
+    {
+      "location": "Table II/row 3/column 1",
+      "currentValue": "2e0954...",
+      "unifiedValue": "2e0954...",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "2e0954..."
+    },
+    {
+      "location": "Table II/row 3/column 2",
+      "currentValue": "0.8.13 / 0.8.13",
+      "unifiedValue": "0.8.13 / 0.8.13",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "0.8.13 / 0.8.13"
+    },
+    {
+      "location": "Table II/row 3/column 3",
+      "currentValue": "SapMachine 21, Gradle 8.14.2",
+      "unifiedValue": "SapMachine 21, Gradle 8.14.2",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "SapMachine 21, Gradle 8.14.2"
+    },
+    {
+      "location": "Table II/row 3/column 4",
+      "currentValue": "collector run evidence; JaCoCo declared",
+      "unifiedValue": "collector run evidence; JaCoCo declared",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "collector run evidence; JaCoCo declared"
+    },
+    {
+      "location": "Table II/row 4/column 1",
+      "currentValue": "2e0954...",
+      "unifiedValue": "2e0954...",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "2e0954..."
+    },
+    {
+      "location": "Table II/row 4/column 2",
+      "currentValue": "0.8.13 / 0.8.13",
+      "unifiedValue": "0.8.13 / 0.8.13",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "0.8.13 / 0.8.13"
+    },
+    {
+      "location": "Table II/row 4/column 3",
+      "currentValue": "SapMachine 21, Gradle 8.14.3",
+      "unifiedValue": "SapMachine 21, Gradle 8.14.3",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "SapMachine 21, Gradle 8.14.3"
+    },
+    {
+      "location": "Table II/row 4/column 4",
+      "currentValue": "collector run evidence; JaCoCo declared",
+      "unifiedValue": "collector run evidence; JaCoCo declared",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "collector run evidence; JaCoCo declared"
+    },
+    {
+      "location": "Table II/row 5/column 1",
+      "currentValue": "2e0954...",
+      "unifiedValue": "2e0954...",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "2e0954..."
+    },
+    {
+      "location": "Table II/row 5/column 2",
+      "currentValue": "0.8.13 / 0.8.13",
+      "unifiedValue": "0.8.13 / 0.8.13",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "0.8.13 / 0.8.13"
+    },
+    {
+      "location": "Table II/row 5/column 3",
+      "currentValue": "subject-specific JDK 21/build tool",
+      "unifiedValue": "subject-specific JDK 21/build tool",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "subject-specific JDK 21/build tool"
+    },
+    {
+      "location": "Table II/row 5/column 4",
+      "currentValue": "collector run evidence; JaCoCo declared",
+      "unifiedValue": "collector run evidence; JaCoCo declared",
+      "changed": false,
+      "source": "analysis/v14_7/provenance_v14_6.csv",
+      "interpretation": "Collection evidence unchanged; no map was recollected.",
+      "numericEquivalent": "collector run evidence; JaCoCo declared"
+    },
+    {
+      "location": "Table V/name-level hits",
+      "currentValue": 100,
+      "unifiedValue": 100,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "numericEquivalent": 100
+    },
+    {
+      "location": "Table V/selection/H/U",
+      "currentValue": [
+        114,
+        100,
+        14
+      ],
+      "unifiedValue": [
+        114,
+        100,
+        14
+      ],
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "numericEquivalent": [
+        114,
+        100,
+        14
+      ]
+    },
+    {
+      "location": "Table V/killingTests",
+      "currentValue": [
+        "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+        "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467"
+      ],
+      "unifiedValue": [
+        "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+        "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467"
+      ],
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "numericEquivalent": [
+        "GenericConversionServiceTests#canConvertFromClassSourceTypeToNullTargetType_2df1102",
+        "GenericConversionServiceTests#canConvertIllegalArgumentNullTargetTypeFromClass_4c65467"
+      ]
+    },
+    {
+      "location": "Table V/footprintType",
+      "currentValue": "A",
+      "unifiedValue": "A",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "numericEquivalent": "A"
+    },
+    {
+      "location": "Table V/baseInclusive",
+      "currentValue": false,
+      "unifiedValue": false,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "numericEquivalent": false
+    },
+    {
+      "location": "Table V/constructorRecovers",
+      "currentValue": true,
+      "unifiedValue": true,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "numericEquivalent": true
+    },
+    {
+      "location": "Abstract/eligible",
+      "currentValue": 4010.0,
+      "unifiedValue": 3931,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "paragraphIndex": 4,
+      "numericEquivalent": 4010.0
+    },
+    {
+      "location": "Abstract/inclusive",
+      "currentValue": 3991.0,
+      "unifiedValue": 3912,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "paragraphIndex": 4,
+      "numericEquivalent": 3991.0
+    },
+    {
+      "location": "Abstract/inclusiveness",
+      "currentValue": 99.53,
+      "unifiedValue": 99.52,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "paragraphIndex": 4,
+      "numericEquivalent": 99.53
+    },
+    {
+      "location": "Abstract/residual",
+      "currentValue": "nineteen",
+      "unifiedValue": 19,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "interpretation": "Spelled quantity compared numerically in numericEquivalent below.",
+      "numericEquivalent": 19
+    },
+    {
+      "location": "Abstract/early-exception",
+      "currentValue": "eighteen",
+      "unifiedValue": 18,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "interpretation": "Spelled quantity compared numerically in numericEquivalent below.",
+      "numericEquivalent": 18
+    },
+    {
+      "location": "Abstract/attribution",
+      "currentValue": "one",
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "interpretation": "Spelled quantity compared numerically in numericEquivalent below.",
+      "numericEquivalent": 1
+    },
+    {
+      "location": "Abstract/empty recovered",
+      "currentValue": "five",
+      "unifiedValue": 5,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "interpretation": "Spelled quantity compared numerically in numericEquivalent below.",
+      "numericEquivalent": 5
+    },
+    {
+      "location": "X/eligible",
+      "currentValue": 4010.0,
+      "unifiedValue": 3931,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "paragraphIndex": 108,
+      "numericEquivalent": 4010.0
+    },
+    {
+      "location": "X/inclusive",
+      "currentValue": 3991.0,
+      "unifiedValue": 3912,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "paragraphIndex": 108,
+      "numericEquivalent": 3991.0
+    },
+    {
+      "location": "X/inclusiveness",
+      "currentValue": 99.53,
+      "unifiedValue": 99.52,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "paragraphIndex": 108,
+      "numericEquivalent": 99.53
+    },
+    {
+      "location": "X/residual",
+      "currentValue": "nineteen",
+      "unifiedValue": 19,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "interpretation": "Spelled quantity compared numerically in numericEquivalent below.",
+      "numericEquivalent": 19
+    },
+    {
+      "location": "X/early-exception",
+      "currentValue": "eighteen",
+      "unifiedValue": 18,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "interpretation": "Spelled quantity compared numerically in numericEquivalent below.",
+      "numericEquivalent": 18
+    },
+    {
+      "location": "X/attribution",
+      "currentValue": "one",
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "interpretation": "Spelled quantity compared numerically in numericEquivalent below.",
+      "numericEquivalent": 1
+    },
+    {
+      "location": "X/empty recovered",
+      "currentValue": "five",
+      "unifiedValue": 5,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "interpretation": "Spelled quantity compared numerically in numericEquivalent below.",
+      "numericEquivalent": 5
+    },
+    {
+      "location": "Abstract/min selected fraction",
+      "currentValue": 0.47,
+      "unifiedValue": 0.47,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "paragraphIndex": 4,
+      "numericEquivalent": 0.47
+    },
+    {
+      "location": "Abstract/max selected fraction",
+      "currentValue": 39.42,
+      "unifiedValue": 39.42,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "paragraphIndex": 4,
+      "numericEquivalent": 39.42
+    },
+    {
+      "location": "III/empty total",
+      "currentValue": 58.0,
+      "unifiedValue": 58,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "paragraphIndex": 40,
+      "numericEquivalent": 58.0
+    },
+    {
+      "location": "III/empty/commons-lang",
+      "currentValue": 5,
+      "unifiedValue": 5,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 5
+    },
+    {
+      "location": "III/empty/jgrapht",
+      "currentValue": 2,
+      "unifiedValue": 2,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 2
+    },
+    {
+      "location": "III/empty/spring-core",
+      "currentValue": 14,
+      "unifiedValue": 14,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 14
+    },
+    {
+      "location": "III/empty/petclinic",
+      "currentValue": 4,
+      "unifiedValue": 4,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 4
+    },
+    {
+      "location": "III/empty/flink",
+      "currentValue": 1,
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 1
+    },
+    {
+      "location": "III/empty/spring-security",
+      "currentValue": 23,
+      "unifiedValue": 23,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 23
+    },
+    {
+      "location": "III/empty/hibernate",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "III/empty/quarkus",
+      "currentValue": 9,
+      "unifiedValue": 9,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 9
+    },
+    {
+      "location": "III/random trials",
+      "currentValue": 1000.0,
+      "unifiedValue": 1000,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "paragraphIndex": 43,
+      "numericEquivalent": 1000.0
+    },
+    {
+      "location": "III/random seed",
+      "currentValue": 42.0,
+      "unifiedValue": 42,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "paragraphIndex": 43,
+      "numericEquivalent": 42.0
+    },
+    {
+      "location": "III/random upper rounding",
+      "currentValue": 0.051,
+      "unifiedValue": 0.051,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/random_baseline.json",
+      "paragraphIndex": 43,
+      "numericEquivalent": 0.051
+    },
+    {
+      "location": "IV/method kinds/regular_method",
+      "currentValue": 3408.0,
+      "unifiedValue": 3333,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/methodKinds",
+      "paragraphIndex": 53,
+      "numericEquivalent": 3408.0
+    },
+    {
+      "location": "IV/method kinds/constructor",
+      "currentValue": 70.0,
+      "unifiedValue": 67,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/methodKinds",
+      "paragraphIndex": 53,
+      "numericEquivalent": 70.0
+    },
+    {
+      "location": "IV/method kinds/lambda",
+      "currentValue": 532.0,
+      "unifiedValue": 531,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/methodKinds",
+      "paragraphIndex": 53,
+      "numericEquivalent": 532.0
+    },
+    {
+      "location": "IV/method kinds/class_initializer",
+      "currentValue": 0.0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json#/methodKinds",
+      "paragraphIndex": 53,
+      "numericEquivalent": 0.0
+    },
+    {
+      "location": "IV/IX constructor inclusive",
+      "currentValue": 70,
+      "unifiedValue": 67,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/per_record_outcomes.json.gz",
+      "numericEquivalent": 70
+    },
+    {
+      "location": "IV/IX lambda inclusive",
+      "currentValue": 532,
+      "unifiedValue": 531,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/per_record_outcomes.json.gz",
+      "numericEquivalent": 532
+    },
+    {
+      "location": "IV/Java inputs",
+      "currentValue": 1351.0,
+      "unifiedValue": 1349,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/java_comparison.json",
+      "paragraphIndex": 59,
+      "numericEquivalent": 1351.0
+    },
+    {
+      "location": "IV/Java occurrences",
+      "currentValue": 4010.0,
+      "unifiedValue": 3931,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/java_comparison.json",
+      "paragraphIndex": 59,
+      "numericEquivalent": 4010.0
+    },
+    {
+      "location": "V/X base/eligible",
+      "currentValue": 4010,
+      "unifiedValue": 3931,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 4010
+    },
+    {
+      "location": "V/X base/inclusive",
+      "currentValue": 3991,
+      "unifiedValue": 3912,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 3991
+    },
+    {
+      "location": "V/X base/inclusivenessPct2dp",
+      "currentValue": 99.53,
+      "unifiedValue": 99.52,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 99.53
+    },
+    {
+      "location": "V/X constructor/eligible",
+      "currentValue": 4010,
+      "unifiedValue": 3931,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 4010
+    },
+    {
+      "location": "V/X constructor/inclusive",
+      "currentValue": 3998,
+      "unifiedValue": 3919,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 3998
+    },
+    {
+      "location": "V/X constructor/inclusivenessPct2dp",
+      "currentValue": 99.7,
+      "unifiedValue": 99.69,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 99.7
+    },
+    {
+      "location": "V/X class/eligible",
+      "currentValue": 4010,
+      "unifiedValue": 3931,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 4010
+    },
+    {
+      "location": "V/X class/inclusive",
+      "currentValue": 4009,
+      "unifiedValue": 3930,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 4009
+    },
+    {
+      "location": "V/X class/inclusivenessPct2dp",
+      "currentValue": 99.98,
+      "unifiedValue": 99.97,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 99.98
+    },
+    {
+      "location": "III/V/VII/X constructor recoveries",
+      "currentValue": 7,
+      "unifiedValue": 7,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 7
+    },
+    {
+      "location": "V class recoveries",
+      "currentValue": 18,
+      "unifiedValue": 18,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 18
+    },
+    {
+      "location": "V constructor residual",
+      "currentValue": 12,
+      "unifiedValue": 12,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 12
+    },
+    {
+      "location": "V class residual",
+      "currentValue": 1,
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 1
+    },
+    {
+      "location": "V mean/spring-core/base",
+      "currentValue": 94.61,
+      "unifiedValue": 96.01,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 94.61
+    },
+    {
+      "location": "V mean/spring-core/constructor",
+      "currentValue": 98.92,
+      "unifiedValue": 100.28,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 98.92
+    },
+    {
+      "location": "V mean/spring-core/class",
+      "currentValue": 543.18,
+      "unifiedValue": 536.49,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 543.18
+    },
+    {
+      "location": "V mean/quarkus/base",
+      "currentValue": 269.65,
+      "unifiedValue": 269.65,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 269.65
+    },
+    {
+      "location": "V mean/quarkus/constructor",
+      "currentValue": 392.6,
+      "unifiedValue": 392.6,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 392.6
+    },
+    {
+      "location": "V mean/quarkus/class",
+      "currentValue": 548.93,
+      "unifiedValue": 548.93,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 548.93
+    },
+    {
+      "location": "V mean/spring-security/base",
+      "currentValue": 59.86,
+      "unifiedValue": 59.86,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 59.86
+    },
+    {
+      "location": "V mean/spring-security/constructor",
+      "currentValue": 60.34,
+      "unifiedValue": 60.34,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 60.34
+    },
+    {
+      "location": "V mean/spring-security/class",
+      "currentValue": 95.2,
+      "unifiedValue": 95.2,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 95.2
+    },
+    {
+      "location": "VI footprint/A",
+      "currentValue": 7.0,
+      "unifiedValue": 7,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "paragraphIndex": 72,
+      "numericEquivalent": 7.0
+    },
+    {
+      "location": "VI footprint/B",
+      "currentValue": 10.0,
+      "unifiedValue": 10,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "paragraphIndex": 73,
+      "numericEquivalent": 10.0
+    },
+    {
+      "location": "VI footprint/C",
+      "currentValue": 1.0,
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "paragraphIndex": 74,
+      "numericEquivalent": 1.0
+    },
+    {
+      "location": "VI footprint/MIXED",
+      "currentValue": 1.0,
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "paragraphIndex": 75,
+      "numericEquivalent": 1.0
+    },
+    {
+      "location": "VI subject footprint/commons-lang/A",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/commons-lang/B",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/commons-lang/C",
+      "currentValue": 1,
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 1
+    },
+    {
+      "location": "VI subject footprint/commons-lang/MIXED",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/jgrapht/A",
+      "currentValue": 1,
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 1
+    },
+    {
+      "location": "VI subject footprint/jgrapht/B",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/jgrapht/C",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/jgrapht/MIXED",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/spring-core/A",
+      "currentValue": 4,
+      "unifiedValue": 4,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 4
+    },
+    {
+      "location": "VI subject footprint/spring-core/B",
+      "currentValue": 7,
+      "unifiedValue": 7,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 7
+    },
+    {
+      "location": "VI subject footprint/spring-core/C",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/spring-core/MIXED",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/petclinic/A",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/petclinic/B",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/petclinic/C",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/petclinic/MIXED",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/flink/A",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/flink/B",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/flink/C",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/flink/MIXED",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/spring-security/A",
+      "currentValue": 2,
+      "unifiedValue": 2,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 2
+    },
+    {
+      "location": "VI subject footprint/spring-security/B",
+      "currentValue": 3,
+      "unifiedValue": 3,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 3
+    },
+    {
+      "location": "VI subject footprint/spring-security/C",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/spring-security/MIXED",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/hibernate/A",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/hibernate/B",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/hibernate/C",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/hibernate/MIXED",
+      "currentValue": 1,
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 1
+    },
+    {
+      "location": "VI subject footprint/quarkus/A",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/quarkus/B",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/quarkus/C",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI subject footprint/quarkus/MIXED",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "VI early-exception footprint/A",
+      "currentValue": 7,
+      "unifiedValue": 7,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 7
+    },
+    {
+      "location": "VI early-exception footprint/B",
+      "currentValue": 10,
+      "unifiedValue": 10,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 10
+    },
+    {
+      "location": "VI early-exception footprint/C",
+      "currentValue": 1,
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 1
+    },
+    {
+      "location": "VI early-exception footprint/MIXED",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "IV/VI collection-failing killer records",
+      "currentValue": 10,
+      "unifiedValue": 10,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/failed_killer_impact.json",
+      "numericEquivalent": 10
+    },
+    {
+      "location": "IV/VI records with another selected killer/base",
+      "currentValue": 10,
+      "unifiedValue": 10,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/failed_killer_impact.json",
+      "numericEquivalent": 10
+    },
+    {
+      "location": "IV/VI records with another selected killer/constructor",
+      "currentValue": 10,
+      "unifiedValue": 10,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/failed_killer_impact.json",
+      "numericEquivalent": 10
+    },
+    {
+      "location": "IV/VI records with another selected killer/class",
+      "currentValue": 10,
+      "unifiedValue": 10,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/failed_killer_impact.json",
+      "numericEquivalent": 10
+    },
+    {
+      "location": "Abstract/VI/IX repeat differing sets/base",
+      "currentValue": 6,
+      "unifiedValue": 6,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "numericEquivalent": 6
+    },
+    {
+      "location": "VI repeat run2/base/inclusive",
+      "currentValue": 443,
+      "unifiedValue": 408,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "numericEquivalent": 443
+    },
+    {
+      "location": "VI repeat run2/base/meanSelected",
+      "currentValue": 94.58810572687224,
+      "unifiedValue": 95.97852028639618,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "numericEquivalent": 94.58810572687224
+    },
+    {
+      "location": "Abstract/VI/IX repeat differing sets/constructor",
+      "currentValue": 6,
+      "unifiedValue": 6,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "numericEquivalent": 6
+    },
+    {
+      "location": "VI repeat run2/constructor/inclusive",
+      "currentValue": 447,
+      "unifiedValue": 412,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "numericEquivalent": 447
+    },
+    {
+      "location": "VI repeat run2/constructor/meanSelected",
+      "currentValue": 98.8898678414097,
+      "unifiedValue": 100.25536992840095,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "numericEquivalent": 98.8898678414097
+    },
+    {
+      "location": "Abstract/VI/IX repeat differing sets/class",
+      "currentValue": 60,
+      "unifiedValue": 55,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "numericEquivalent": 60
+    },
+    {
+      "location": "VI repeat run2/class/inclusive",
+      "currentValue": 454,
+      "unifiedValue": 419,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "numericEquivalent": 454
+    },
+    {
+      "location": "VI repeat run2/class/meanSelected",
+      "currentValue": 542.9185022026431,
+      "unifiedValue": 536.2267303102625,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "numericEquivalent": 542.9185022026431
+    },
+    {
+      "location": "VI repeat denominator",
+      "currentValue": 454,
+      "unifiedValue": 419,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "numericEquivalent": 454
+    },
+    {
+      "location": "VI/IX repeat residual count",
+      "currentValue": 11,
+      "unifiedValue": 11,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/springcore_run2_sensitivity.json",
+      "numericEquivalent": 11
+    },
+    {
+      "location": "IX/selected total",
+      "currentValue": 1713,
+      "unifiedValue": 1713,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/succeeding_tests_check.json",
+      "numericEquivalent": 1713
+    },
+    {
+      "location": "IX/survived",
+      "currentValue": 574,
+      "unifiedValue": 574,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/succeeding_tests_check.json",
+      "numericEquivalent": 574
+    },
+    {
+      "location": "IX/not observed",
+      "currentValue": 1139,
+      "unifiedValue": 1139,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/succeeding_tests_check.json",
+      "numericEquivalent": 1139
+    },
+    {
+      "location": "IX/wilson95Pct",
+      "currentValue": [
+        99.26111939418347,
+        99.69645132080466
+      ],
+      "unifiedValue": [
+        99.24629496141162,
+        99.69034685100758
+      ],
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/confidence_intervals.json",
+      "numericEquivalent": [
+        99.26111939418347,
+        99.69645132080466
+      ]
+    },
+    {
+      "location": "IX/clusterBootstrap95Pct",
+      "currentValue": {
+        "seed": 20261103,
+        "trials": 10000,
+        "clusters": 137,
+        "lowerPct": 99.15824915824916,
+        "upperPct": 99.8047419804742
+      },
+      "unifiedValue": {
+        "seed": 20261103,
+        "trials": 10000,
+        "clusters": 137,
+        "lowerPct": 99.13814331445457,
+        "upperPct": 99.80124223602485
+      },
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/confidence_intervals.json",
+      "numericEquivalent": {
+        "seed": 20261103,
+        "trials": 10000,
+        "clusters": 137,
+        "lowerPct": 99.15824915824916,
+        "upperPct": 99.8047419804742
+      }
+    },
+    {
+      "location": "Abstract/VI/IX repeat footprints",
+      "currentValue": "262",
+      "unifiedValue": "262",
+      "changed": false,
+      "source": "recollection_2e0954/spring-core/run_to_run.json",
+      "interpretation": "Unchanged retained evidence; not rerun or pooled into this iteration.",
+      "numericEquivalent": "262"
+    },
+    {
+      "location": "VI repeat population",
+      "currentValue": "3,638",
+      "unifiedValue": "3,638",
+      "changed": false,
+      "source": "analysis/projects_v14_6.json",
+      "interpretation": "Unchanged retained evidence; not rerun or pooled into this iteration.",
+      "numericEquivalent": "3,638"
+    },
+    {
+      "location": "IV historical model counts",
+      "currentValue": "4,010/4,010",
+      "unifiedValue": "4,010/4,010",
+      "changed": false,
+      "source": "results/selector_equivalence.json",
+      "interpretation": "Unchanged retained evidence; not rerun or pooled into this iteration.",
+      "numericEquivalent": "4,010/4,010"
+    },
+    {
+      "location": "IV historical inclusive",
+      "currentValue": "3,986",
+      "unifiedValue": "3,986",
+      "changed": false,
+      "source": "results/eight-subject-summary.json",
+      "interpretation": "Unchanged retained evidence; not rerun or pooled into this iteration.",
+      "numericEquivalent": "3,986"
+    },
+    {
+      "location": "IV historical misses",
+      "currentValue": "24",
+      "unifiedValue": "24",
+      "changed": false,
+      "source": "results/eight-subject-summary.json",
+      "interpretation": "Unchanged retained evidence; not rerun or pooled into this iteration.",
+      "numericEquivalent": "24"
+    },
+    {
+      "location": "IV contract",
+      "currentValue": "21/21",
+      "unifiedValue": "21/21",
+      "changed": false,
+      "source": "results/contract_test.json",
+      "interpretation": "Unchanged retained evidence; not rerun or pooled into this iteration.",
+      "numericEquivalent": "21/21"
+    },
+    {
+      "location": "VIII Joda results",
+      "currentValue": "896/896",
+      "unifiedValue": "896/896",
+      "changed": false,
+      "source": "joda-time/results/aggregated/evaluation_summary.json",
+      "interpretation": "Unchanged retained evidence; not rerun or pooled into this iteration.",
+      "numericEquivalent": "896/896"
+    },
+    {
+      "location": "VIII Joda population",
+      "currentValue": "4,235",
+      "unifiedValue": "4,235",
+      "changed": false,
+      "source": "joda-time/results/aggregated/evaluation_summary.json",
+      "interpretation": "Unchanged retained evidence; not rerun or pooled into this iteration.",
+      "numericEquivalent": "4,235"
+    },
+    {
+      "location": "VIII stream results",
+      "currentValue": "419/419",
+      "unifiedValue": "419/419",
+      "changed": false,
+      "source": "lightweight-stream-api/results/aggregated/evaluation_summary.json",
+      "interpretation": "Unchanged retained evidence; not rerun or pooled into this iteration.",
+      "numericEquivalent": "419/419"
+    },
+    {
+      "location": "VIII stream scope",
+      "currentValue": "1,318",
+      "unifiedValue": "1,318",
+      "changed": false,
+      "source": "lightweight-stream-api/results/aggregated/evaluation_summary.json",
+      "interpretation": "Unchanged retained evidence; not rerun or pooled into this iteration.",
+      "numericEquivalent": "1,318"
+    },
+    {
+      "location": "III omitted empty identities/commons-lang",
+      "currentValue": 5,
+      "unifiedValue": 5,
+      "changed": false,
+      "source": "recollection_2e0954/gate_results_v14_6.json",
+      "numericEquivalent": 5
+    },
+    {
+      "location": "III omitted empty identities/jgrapht",
+      "currentValue": 1,
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "recollection_2e0954/gate_results_v14_6.json",
+      "numericEquivalent": 1
+    },
+    {
+      "location": "III omitted empty identities/spring-core",
+      "currentValue": 14,
+      "unifiedValue": 14,
+      "changed": false,
+      "source": "recollection_2e0954/gate_results_v14_6.json",
+      "numericEquivalent": 14
+    },
+    {
+      "location": "III omitted empty identities/petclinic",
+      "currentValue": 4,
+      "unifiedValue": 4,
+      "changed": false,
+      "source": "recollection_2e0954/gate_results_v14_6.json",
+      "numericEquivalent": 4
+    },
+    {
+      "location": "VI repeat run1/base/inclusive",
+      "currentValue": 443,
+      "unifiedValue": 408,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 443
+    },
+    {
+      "location": "VI repeat run1/base/mean",
+      "currentValue": 94.61,
+      "unifiedValue": 96.01,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 94.61
+    },
+    {
+      "location": "VI repeat run1/constructor/inclusive",
+      "currentValue": 447,
+      "unifiedValue": 412,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 447
+    },
+    {
+      "location": "VI repeat run1/constructor/mean",
+      "currentValue": 98.92,
+      "unifiedValue": 100.28,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 98.92
+    },
+    {
+      "location": "VI repeat run1/class/inclusive",
+      "currentValue": 454,
+      "unifiedValue": 419,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 454
+    },
+    {
+      "location": "VI repeat run1/class/mean",
+      "currentValue": 543.18,
+      "unifiedValue": 536.49,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 543.18
+    },
+    {
+      "location": "VI Flink + Quarkus eligible",
+      "currentValue": 1432,
+      "unifiedValue": 1432,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 1432
+    },
+    {
+      "location": "V policy added tests/commons-lang",
+      "currentValue": 5,
+      "unifiedValue": 5,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 5
+    },
+    {
+      "location": "V policy added tests/jgrapht",
+      "currentValue": 2,
+      "unifiedValue": 2,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 2
+    },
+    {
+      "location": "V policy added tests/spring-core",
+      "currentValue": 14,
+      "unifiedValue": 14,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 14
+    },
+    {
+      "location": "V policy added tests/petclinic",
+      "currentValue": 4,
+      "unifiedValue": 4,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 4
+    },
+    {
+      "location": "V policy added tests/flink",
+      "currentValue": 1,
+      "unifiedValue": 1,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 1
+    },
+    {
+      "location": "V policy added tests/spring-security",
+      "currentValue": 23,
+      "unifiedValue": 23,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 23
+    },
+    {
+      "location": "V edge-only mean/spring-security",
+      "currentValue": 36.86,
+      "unifiedValue": 36.86,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/per_record_outcomes.json.gz",
+      "numericEquivalent": 36.86
+    },
+    {
+      "location": "V edge-only inclusive/spring-security",
+      "currentValue": 330,
+      "unifiedValue": 330,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/per_record_outcomes.json.gz",
+      "numericEquivalent": 330
+    },
+    {
+      "location": "V policy added tests/hibernate",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "V policy added tests/quarkus",
+      "currentValue": 9,
+      "unifiedValue": 9,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "numericEquivalent": 9
+    },
+    {
+      "location": "VI distinct empty killers",
+      "currentValue": 6,
+      "unifiedValue": 6,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/residual_taxonomy.json",
+      "numericEquivalent": 6
+    },
+    {
+      "location": "VI worked example/baseSelectedCount",
+      "currentValue": 114,
+      "unifiedValue": 114,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "numericEquivalent": 114
+    },
+    {
+      "location": "VI worked example/nameLevelHitCount",
+      "currentValue": 100,
+      "unifiedValue": 100,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "numericEquivalent": 100
+    },
+    {
+      "location": "VI worked example/emptyFootprintCount",
+      "currentValue": 14,
+      "unifiedValue": 14,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "numericEquivalent": 14
+    },
+    {
+      "location": "VI worked example/footprintType",
+      "currentValue": "A",
+      "unifiedValue": "A",
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "numericEquivalent": "A"
+    },
+    {
+      "location": "VI worked example/constructorRecovers",
+      "currentValue": true,
+      "unifiedValue": true,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/worked_example.json",
+      "numericEquivalent": true
+    },
+    {
+      "location": "Paragraph 52/retained fact/(1\\.17\\.4)",
+      "currentValue": "1.17.4",
+      "unifiedValue": "1.17.4",
+      "changed": false,
+      "source": "jgrapht/scripts/02_run_pit.py; spring-core/scripts/02_run_pit.py",
+      "interpretation": "Unchanged configuration or previously retained observation, not a new measurement.",
+      "numericEquivalent": "1.17.4"
+    },
+    {
+      "location": "Paragraph 52/retained fact/(1\\.2\\.1)",
+      "currentValue": "1.2.1",
+      "unifiedValue": "1.2.1",
+      "changed": false,
+      "source": "jgrapht/config/pit_profile.xml; spring-core/scripts/02_run_pit.py",
+      "interpretation": "Unchanged configuration or previously retained observation, not a new measurement.",
+      "numericEquivalent": "1.2.1"
+    },
+    {
+      "location": "Paragraph 54/retained fact/(56)",
+      "currentValue": "56",
+      "unifiedValue": "56",
+      "changed": false,
+      "source": "recollection_2e0954/gate_results_v14_6.json",
+      "interpretation": "Unchanged configuration or previously retained observation, not a new measurement.",
+      "numericEquivalent": "56"
+    },
+    {
+      "location": "Paragraph 54/retained fact/(52)",
+      "currentValue": "52",
+      "unifiedValue": "52",
+      "changed": false,
+      "source": "recollection_2e0954/gate_results_v14_6.json",
+      "interpretation": "Unchanged configuration or previously retained observation, not a new measurement.",
+      "numericEquivalent": "52"
+    },
+    {
+      "location": "Paragraph 56/retained fact/(25)",
+      "currentValue": "25",
+      "unifiedValue": "25",
+      "changed": false,
+      "source": "spring-security/results/jdk25-blocked.json",
+      "interpretation": "Unchanged configuration or previously retained observation, not a new measurement.",
+      "numericEquivalent": "25"
+    },
+    {
+      "location": "Paragraph 56/retained fact/major-version-(69)",
+      "currentValue": "69",
+      "unifiedValue": "69",
+      "changed": false,
+      "source": "spring-security/results/jdk25-blocked.json",
+      "interpretation": "Unchanged configuration or previously retained observation, not a new measurement.",
+      "numericEquivalent": "69"
+    },
+    {
+      "location": "Paragraph 56/retained fact/(572) exact",
+      "currentValue": "572",
+      "unifiedValue": "572",
+      "changed": false,
+      "source": "quarkus/config/runnable-test-inventory.json",
+      "interpretation": "Unchanged configuration or previously retained observation, not a new measurement.",
+      "numericEquivalent": "572"
+    },
+    {
+      "location": "Paragraph 56/retained fact/(684) invocations",
+      "currentValue": "684",
+      "unifiedValue": "684",
+      "changed": false,
+      "source": "quarkus/results/pit-resolution.json",
+      "interpretation": "Unchanged configuration or previously retained observation, not a new measurement.",
+      "numericEquivalent": "684"
+    },
+    {
+      "location": "Paragraph 101/retained fact/(110) affected",
+      "currentValue": "110",
+      "unifiedValue": "110",
+      "changed": false,
+      "source": "lightweight-stream-api/PRODUCTION_FILTER_FIX_VALIDATION.md",
+      "interpretation": "Unchanged configuration or previously retained observation, not a new measurement.",
+      "numericEquivalent": "110"
+    },
+    {
+      "location": "Paragraph 100/retained fact/(1,428)",
+      "currentValue": "1,428",
+      "unifiedValue": "1,428",
+      "changed": false,
+      "source": "lightweight-stream-api/REPORT.md",
+      "interpretation": "Unchanged configuration or previously retained observation, not a new measurement.",
+      "numericEquivalent": "1,428"
+    },
+    {
+      "location": "Paragraph 103/retained fact/(262) logical",
+      "currentValue": "262",
+      "unifiedValue": "262",
+      "changed": false,
+      "source": "recollection_2e0954/spring-core/run_to_run.json",
+      "interpretation": "Unchanged configuration or previously retained observation, not a new measurement.",
+      "numericEquivalent": "262"
+    },
+    {
+      "location": "IV analysis regression tests",
+      "currentValue": 68.0,
+      "unifiedValue": 68,
+      "changed": false,
+      "source": "iterations/pit-unify/verification/current/unittest.log",
+      "paragraphIndex": 58,
+      "numericEquivalent": 68.0
+    },
+    {
+      "location": "IX Java mismatches",
+      "currentValue": 0,
+      "unifiedValue": 0,
+      "changed": false,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/java_comparison.json",
+      "numericEquivalent": 0
+    },
+    {
+      "location": "Abstract/constructor inclusiveness",
+      "currentValue": 99.7,
+      "unifiedValue": 99.69,
+      "changed": true,
+      "source": "iterations/pit-unify/cpu-unrestricted/results/summary_tables.json",
+      "paragraphIndex": 4,
+      "numericEquivalent": 99.7
+    }
+  ],
+  "numericOccurrenceInventory": [
+    {
+      "paragraphIndex": 4,
+      "token": "4,010",
+      "offset": 514,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 4,
+      "token": "3,991",
+      "offset": 573,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 4,
+      "token": "99.53%",
+      "offset": 588,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 4,
+      "token": "0.47%",
+      "offset": 631,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 4,
+      "token": "39.42%",
+      "offset": 640,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 4,
+      "token": "99.70%",
+      "offset": 1161,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 4,
+      "token": "262",
+      "offset": 1292,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 34,
+      "token": "3.",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 35,
+      "token": "3.1",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 36,
+      "token": "3.2",
+      "offset": 495,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 37,
+      "token": "3.2",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 39,
+      "token": "2",
+      "offset": 482,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "2",
+      "offset": 50,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "70",
+      "offset": 153,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "5,",
+      "offset": 272,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "1,",
+      "offset": 283,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "14,",
+      "offset": 298,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "4.",
+      "offset": 316,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "58",
+      "offset": 345,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "5,",
+      "offset": 396,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "2,",
+      "offset": 407,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "14,",
+      "offset": 422,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "4,",
+      "offset": 436,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "1,",
+      "offset": 445,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "23,",
+      "offset": 464,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "0,",
+      "offset": 478,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 40,
+      "token": "9.",
+      "offset": 493,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 41,
+      "token": "3.3",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 43,
+      "token": "1,000",
+      "offset": 417,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 43,
+      "token": "42,",
+      "offset": 448,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 43,
+      "token": "4",
+      "offset": 587,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 43,
+      "token": "0.051",
+      "offset": 674,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 45,
+      "token": "4.",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 46,
+      "token": "4.1",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 47,
+      "token": "1.",
+      "offset": 6,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 47,
+      "token": "17",
+      "offset": 99,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 47,
+      "token": "14",
+      "offset": 156,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 47,
+      "token": "402",
+      "offset": 403,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 47,
+      "token": "401",
+      "offset": 530,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 48,
+      "token": "70",
+      "offset": 350,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 48,
+      "token": "2",
+      "offset": 410,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 49,
+      "token": "2",
+      "offset": 140,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 50,
+      "token": "2.",
+      "offset": 6,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 50,
+      "token": "2",
+      "offset": 59,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 50,
+      "token": "21",
+      "offset": 275,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 51,
+      "token": "4.2",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 52,
+      "token": "1.17.4",
+      "offset": 37,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 52,
+      "token": "1.2.1,",
+      "offset": 88,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 52,
+      "token": "4,010",
+      "offset": 459,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 53,
+      "token": "3,408",
+      "offset": 44,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 53,
+      "token": "70",
+      "offset": 73,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 53,
+      "token": "532",
+      "offset": 97,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 53,
+      "token": "0",
+      "offset": 127,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 53,
+      "token": "70",
+      "offset": 160,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 53,
+      "token": "532",
+      "offset": 179,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 53,
+      "token": "19",
+      "offset": 254,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 54,
+      "token": "56",
+      "offset": 242,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 54,
+      "token": "52",
+      "offset": 333,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 55,
+      "token": "4.3",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 56,
+      "token": "25",
+      "offset": 295,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 56,
+      "token": "1.17.4",
+      "offset": 324,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 56,
+      "token": "69",
+      "offset": 356,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 56,
+      "token": "21",
+      "offset": 424,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 56,
+      "token": "21",
+      "offset": 579,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 56,
+      "token": "572",
+      "offset": 1084,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 56,
+      "token": "684",
+      "offset": 1153,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 56,
+      "token": "572",
+      "offset": 1190,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 57,
+      "token": "4.4",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 58,
+      "token": "4,010",
+      "offset": 93,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 58,
+      "token": "4,010",
+      "offset": 99,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 58,
+      "token": "3,986",
+      "offset": 217,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 58,
+      "token": "24",
+      "offset": 242,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 58,
+      "token": "2",
+      "offset": 402,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 58,
+      "token": "68",
+      "offset": 571,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 59,
+      "token": "3",
+      "offset": 22,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 59,
+      "token": "4",
+      "offset": 28,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 59,
+      "token": "2",
+      "offset": 128,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 59,
+      "token": "1,351",
+      "offset": 225,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 59,
+      "token": "4,010",
+      "offset": 291,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 60,
+      "token": "70",
+      "offset": 38,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 60,
+      "token": "0.1.0",
+      "offset": 60,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 60,
+      "token": "21",
+      "offset": 102,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 60,
+      "token": "21",
+      "offset": 105,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 62,
+      "token": "5.",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 63,
+      "token": "5.1",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 64,
+      "token": "3.",
+      "offset": 6,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 64,
+      "token": "2",
+      "offset": 25,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 64,
+      "token": "4.4.",
+      "offset": 282,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 65,
+      "token": "5.2",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 66,
+      "token": "4.",
+      "offset": 6,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "3,991",
+      "offset": 81,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "4,010",
+      "offset": 87,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "99.53%",
+      "offset": 94,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "3,998",
+      "offset": 103,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "4,010",
+      "offset": 109,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "99.70%",
+      "offset": 116,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "4,009",
+      "offset": 129,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "4,010",
+      "offset": 135,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "99.98%",
+      "offset": 142,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "94.61",
+      "offset": 463,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "543.18",
+      "offset": 472,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "269.65",
+      "offset": 526,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "548.93",
+      "offset": 536,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 67,
+      "token": "392.60",
+      "offset": 623,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 68,
+      "token": "36.86",
+      "offset": 341,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 68,
+      "token": "59.86",
+      "offset": 350,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 68,
+      "token": "330",
+      "offset": 399,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 68,
+      "token": "340",
+      "offset": 403,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 68,
+      "token": "335",
+      "offset": 410,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 68,
+      "token": "340.",
+      "offset": 414,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 69,
+      "token": "6.",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 70,
+      "token": "6.1",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 72,
+      "token": "7",
+      "offset": 8,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 73,
+      "token": "10",
+      "offset": 8,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 74,
+      "token": "1",
+      "offset": 8,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 75,
+      "token": "1",
+      "offset": 11,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 78,
+      "token": "6.2",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 80,
+      "token": "114",
+      "offset": 721,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 80,
+      "token": "100",
+      "offset": 732,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 80,
+      "token": "14",
+      "offset": 756,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 81,
+      "token": "5.",
+      "offset": 6,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 82,
+      "token": "3.3",
+      "offset": 203,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 82,
+      "token": "100",
+      "offset": 358,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 83,
+      "token": "6.3",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 84,
+      "token": "4.4",
+      "offset": 785,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 85,
+      "token": "6.4",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 87,
+      "token": "1,432",
+      "offset": 203,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 88,
+      "token": "6.5",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "262",
+      "offset": 86,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "3,638",
+      "offset": 93,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "454",
+      "offset": 173,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "443",
+      "offset": 317,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "454,",
+      "offset": 321,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "447",
+      "offset": 326,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "454,",
+      "offset": 330,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "454",
+      "offset": 339,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "454,",
+      "offset": 343,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "94.61",
+      "offset": 468,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "94.59",
+      "offset": 477,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "98.92",
+      "offset": 509,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "98.89",
+      "offset": 518,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "543.18",
+      "offset": 559,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 89,
+      "token": "542.92",
+      "offset": 569,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 90,
+      "token": "7.",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 91,
+      "token": "7.1",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 93,
+      "token": "7.2",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 95,
+      "token": "7.3",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 97,
+      "token": "7.4",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 99,
+      "token": "8.",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 100,
+      "token": "896",
+      "offset": 112,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 100,
+      "token": "896",
+      "offset": 116,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 100,
+      "token": "4,235",
+      "offset": 150,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 100,
+      "token": "3",
+      "offset": 181,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 100,
+      "token": "419",
+      "offset": 301,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 100,
+      "token": "419",
+      "offset": 305,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 100,
+      "token": "1,318",
+      "offset": 316,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 100,
+      "token": "1,428.",
+      "offset": 390,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 101,
+      "token": "110",
+      "offset": 238,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 101,
+      "token": "110",
+      "offset": 537,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 101,
+      "token": "419",
+      "offset": 655,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 101,
+      "token": "2017",
+      "offset": 1083,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 102,
+      "token": "9.",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 103,
+      "token": "1,351",
+      "offset": 248,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 103,
+      "token": "4,010",
+      "offset": 276,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 103,
+      "token": "4,010",
+      "offset": 340,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 103,
+      "token": "4,010",
+      "offset": 346,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 103,
+      "token": "262",
+      "offset": 618,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 103,
+      "token": "3.2",
+      "offset": 977,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 104,
+      "token": "1,713",
+      "offset": 336,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 104,
+      "token": "574",
+      "offset": 380,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 104,
+      "token": "1,139",
+      "offset": 450,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 104,
+      "token": "532",
+      "offset": 794,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 104,
+      "token": "532",
+      "offset": 898,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 104,
+      "token": "532",
+      "offset": 902,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 106,
+      "token": "4,010",
+      "offset": 45,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 106,
+      "token": "4,010",
+      "offset": 67,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 106,
+      "token": "95%",
+      "offset": 233,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 106,
+      "token": "99.26%",
+      "offset": 260,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 106,
+      "token": "99.70%",
+      "offset": 268,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 106,
+      "token": "137",
+      "offset": 424,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 106,
+      "token": "10,000",
+      "offset": 438,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 106,
+      "token": "99.16%",
+      "offset": 479,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 106,
+      "token": "99.80%",
+      "offset": 487,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 107,
+      "token": "10.",
+      "offset": 0,
+      "classification": "CITATION_OR_SECTION_REFERENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 108,
+      "token": "2",
+      "offset": 18,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 108,
+      "token": "3,991",
+      "offset": 87,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 108,
+      "token": "4,010",
+      "offset": 96,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 108,
+      "token": "99.53%",
+      "offset": 127,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 109,
+      "token": "3,998",
+      "offset": 83,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 109,
+      "token": "4,010",
+      "offset": 89,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 109,
+      "token": "99.70%",
+      "offset": 96,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 109,
+      "token": "4,009",
+      "offset": 147,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 109,
+      "token": "4,010",
+      "offset": 153,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    },
+    {
+      "paragraphIndex": 109,
+      "token": "99.98%",
+      "offset": 160,
+      "classification": "NUMERIC_OCCURRENCE",
+      "note": "Quantitative claims are enumerated above; tool versions, source identifiers and retained collection/supplementary facts are unchanged."
+    }
+  ],
+  "unmatchedClaimPatterns": []
+}

@@ -1,0 +1,9 @@
+commons-lang: 772 eligible records
+jgrapht: 473 eligible records
+spring-core: 419 eligible records
+petclinic: 94 eligible records
+flink: 349 eligible records
+spring-security: 340 eligible records
+hibernate: 401 eligible records
+quarkus: 1083 eligible records
+PASS: package derived from inputs; full outcomes, sets, statistics and taxonomy equal v17

@@ -1,0 +1,58 @@
+{
+  "commons-lang": {
+    "logicalTests": 4697,
+    "targetedClasses": 21,
+    "killedContributingClasses": 21,
+    "pitMutations": 932,
+    "eligibleKilled": 772
+  },
+  "jgrapht": {
+    "logicalTests": 2309,
+    "targetedClasses": 20,
+    "killedContributingClasses": 20,
+    "pitMutations": 803,
+    "eligibleKilled": 473
+  },
+  "spring-core": {
+    "logicalTests": 3638,
+    "targetedClasses": 22,
+    "killedContributingClasses": 18,
+    "pitMutations": 557,
+    "eligibleKilled": 419
+  },
+  "petclinic": {
+    "logicalTests": 56,
+    "targetedClasses": 17,
+    "killedContributingClasses": 14,
+    "pitMutations": 139,
+    "eligibleKilled": 94
+  },
+  "flink": {
+    "logicalTests": 665,
+    "targetedClasses": 16,
+    "killedContributingClasses": 15,
+    "pitMutations": 681,
+    "eligibleKilled": 349
+  },
+  "spring-security": {
+    "logicalTests": 1440,
+    "targetedClasses": 18,
+    "killedContributingClasses": 18,
+    "pitMutations": 520,
+    "eligibleKilled": 340
+  },
+  "hibernate": {
+    "logicalTests": 1099,
+    "targetedClasses": 16,
+    "killedContributingClasses": 15,
+    "pitMutations": 1061,
+    "eligibleKilled": 401
+  },
+  "quarkus": {
+    "logicalTests": 684,
+    "targetedClasses": 16,
+    "killedContributingClasses": 16,
+    "pitMutations": 1639,
+    "eligibleKilled": 1083
+  }
+}

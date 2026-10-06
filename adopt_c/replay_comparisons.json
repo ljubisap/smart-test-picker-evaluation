@@ -1,0 +1,406 @@
+{
+  "status": "PASS",
+  "subjects": [
+    {
+      "subject": "jgrapht",
+      "status": "EXECUTED",
+      "comparisonExitCode": 0,
+      "agreement": {
+        "recordedRecords": 245,
+        "freshRecords": 245,
+        "matchingIdentities": 245,
+        "matchingStatuses": 245,
+        "matchingKillingSets": 245,
+        "missingRecordedIdentities": 0,
+        "newFreshIdentities": 0,
+        "recordedEligible": 146,
+        "inclusivenessChanges": {
+          "base": 0,
+          "constructor": 0,
+          "class": 0
+        },
+        "inclusivenessNotComparable": {
+          "base": 0,
+          "constructor": 0,
+          "class": 0
+        },
+        "recordedStatusCounts": {
+          "KILLED": 146,
+          "SURVIVED": 42,
+          "TIMED_OUT": 46,
+          "MEMORY_ERROR": 7,
+          "NO_COVERAGE": 4
+        },
+        "freshStatusCounts": {
+          "KILLED": 146,
+          "TIMED_OUT": 46,
+          "SURVIVED": 42,
+          "MEMORY_ERROR": 7,
+          "NO_COVERAGE": 4
+        },
+        "recordedMutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 48,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 72,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 106,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator": 1
+        },
+        "freshMutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 5,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 72,
+          "org.pitest.mutationtest.engine.gregor.mutators.MathMutator": 48,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 106,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.IncrementsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 1,
+          "org.pitest.mutationtest.engine.gregor.mutators.InvertNegsMutator": 1
+        }
+      },
+      "comparison": {
+        "subject": "jgrapht",
+        "classScope": "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+        "recordedRecords": 245,
+        "freshRecords": 245,
+        "matchingRecords": 245,
+        "differences": [],
+        "unresolvedRecords": [],
+        "repeatedSemanticIdentities": [
+          {
+            "semanticIdentity": [
+              "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+              "augmentBranch",
+              "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;)V",
+              791,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+              "augmentBranch",
+              "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;)V",
+              806,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 3,
+            "freshOccurrences": 3
+          },
+          {
+            "semanticIdentity": [
+              "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+              "expand",
+              "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Z)V",
+              380,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+              "expandMinusNode",
+              "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;)V",
+              715,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+              "expandPlusNode",
+              "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;)Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;",
+              646,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+              "grow",
+              "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;ZZ)V",
+              143,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+              "processPlusNodeGrow",
+              "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;ZZ)V",
+              488,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+              "processPlusNodeGrow",
+              "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;ZZ)V",
+              500,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+              "shrink",
+              "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;Z)Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;",
+              277,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.jgrapht.alg.matching.blossom.v5.BlossomVPrimalUpdater",
+              "shrinkPlusNode",
+              "(Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;Lorg/jgrapht/alg/matching/blossom/v5/BlossomVNode;)Lorg/jgrapht/alg/matching/blossom/v5/BlossomVEdge;",
+              953,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          }
+        ],
+        "fullMatch": true
+      },
+      "elapsedSeconds": 1526.0334759999998
+    },
+    {
+      "subject": "spring-core",
+      "status": "EXECUTED",
+      "comparisonExitCode": 0,
+      "agreement": {
+        "recordedRecords": 125,
+        "freshRecords": 125,
+        "matchingIdentities": 125,
+        "matchingStatuses": 125,
+        "matchingKillingSets": 125,
+        "missingRecordedIdentities": 0,
+        "newFreshIdentities": 0,
+        "recordedEligible": 98,
+        "inclusivenessChanges": {
+          "base": 0,
+          "constructor": 0,
+          "class": 0
+        },
+        "inclusivenessNotComparable": {
+          "base": 0,
+          "constructor": 0,
+          "class": 0
+        },
+        "recordedStatusCounts": {
+          "KILLED": 98,
+          "SURVIVED": 24,
+          "NO_COVERAGE": 3
+        },
+        "freshStatusCounts": {
+          "KILLED": 98,
+          "SURVIVED": 24,
+          "NO_COVERAGE": 3
+        },
+        "recordedMutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 49,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 20,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 13,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 28,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        },
+        "freshMutatorCounts": {
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE": 49,
+          "org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator": 6,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanTrueReturnValsMutator": 20,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.BooleanFalseReturnValsMutator": 13,
+          "org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_ORDER_ELSE": 3,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator": 28,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.EmptyObjectReturnValsMutator": 2,
+          "org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator": 1
+        }
+      },
+      "comparison": {
+        "subject": "spring-core",
+        "classScope": "org.springframework.core.convert.TypeDescriptor",
+        "recordedRecords": 125,
+        "freshRecords": 125,
+        "matchingRecords": 125,
+        "differences": [],
+        "unresolvedRecords": [],
+        "repeatedSemanticIdentities": [
+          {
+            "semanticIdentity": [
+              "org.springframework.core.convert.TypeDescriptor",
+              "annotationEquals",
+              "(Ljava/lang/annotation/Annotation;Ljava/lang/annotation/Annotation;)Z",
+              536,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 3,
+            "freshOccurrences": 3
+          },
+          {
+            "semanticIdentity": [
+              "org.springframework.core.convert.TypeDescriptor",
+              "equals",
+              "(Ljava/lang/Object;)Z",
+              503,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.springframework.core.convert.TypeDescriptor",
+              "isAssignableTo",
+              "(Lorg/springframework/core/convert/TypeDescriptor;)Z",
+              312,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.springframework.core.convert.TypeDescriptor",
+              "isAssignableTo",
+              "(Lorg/springframework/core/convert/TypeDescriptor;)Z",
+              315,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.springframework.core.convert.TypeDescriptor",
+              "isAssignableTo",
+              "(Lorg/springframework/core/convert/TypeDescriptor;)Z",
+              318,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          },
+          {
+            "semanticIdentity": [
+              "org.springframework.core.convert.TypeDescriptor",
+              "isNestedAssignable",
+              "(Lorg/springframework/core/convert/TypeDescriptor;Lorg/springframework/core/convert/TypeDescriptor;)Z",
+              330,
+              "org.pitest.mutationtest.engine.gregor.mutators.RemoveConditionalMutator_EQUAL_ELSE",
+              null,
+              null,
+              "removed conditional - replaced equality check with false"
+            ],
+            "recordedOccurrences": 2,
+            "freshOccurrences": 2
+          }
+        ],
+        "fullMatch": true
+      },
+      "elapsedSeconds": 99.20985825000002
+    }
+  ],
+  "otherSixReplayFilesUnchanged": [
+    "evidence/pit_replay/quarkus/record_agreement.json",
+    "evidence/pit_replay/quarkus/run.log",
+    "evidence/pit_replay/quarkus/comparison.json",
+    "evidence/pit_replay/quarkus/environment.json",
+    "evidence/pit_replay/quarkus/mutations.xml",
+    "evidence/pit_replay/petclinic/record_agreement.json",
+    "evidence/pit_replay/petclinic/run.log",
+    "evidence/pit_replay/petclinic/comparison.json",
+    "evidence/pit_replay/petclinic/environment.json",
+    "evidence/pit_replay/petclinic/mutations.xml",
+    "evidence/pit_replay/flink/record_agreement.json",
+    "evidence/pit_replay/flink/run.log",
+    "evidence/pit_replay/flink/comparison.json",
+    "evidence/pit_replay/flink/environment.json",
+    "evidence/pit_replay/flink/mutations.xml",
+    "evidence/pit_replay/commons-lang/record_agreement.json",
+    "evidence/pit_replay/commons-lang/run.log",
+    "evidence/pit_replay/commons-lang/comparison.json",
+    "evidence/pit_replay/commons-lang/environment.json",
+    "evidence/pit_replay/commons-lang/mutations.xml",
+    "evidence/pit_replay/hibernate/record_agreement.json",
+    "evidence/pit_replay/hibernate/run.log",
+    "evidence/pit_replay/hibernate/comparison.json",
+    "evidence/pit_replay/hibernate/build-formatting-diff.patch",
+    "evidence/pit_replay/hibernate/environment.json",
+    "evidence/pit_replay/hibernate/mutations.xml",
+    "evidence/pit_replay/spring-security/record_agreement.json",
+    "evidence/pit_replay/spring-security/run.log",
+    "evidence/pit_replay/spring-security/comparison.json",
+    "evidence/pit_replay/spring-security/environment.json",
+    "evidence/pit_replay/spring-security/mutations.xml"
+  ]
+}

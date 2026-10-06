@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "name": "commons-lang",
+      "coverageMap": "recollection_2e0954/commons-lang/test-coverage-map.json",
+      "pitFiles": [
+        "commons-lang/results/per-class/*/mutations.xml"
+      ],
+      "mutationFormat": "per-class"
+    },
+    {
+      "name": "jgrapht",
+      "coverageMap": "recollection_2e0954/jgrapht/test-coverage-map.json",
+      "pitFiles": [
+        "iterations/pit-unify/cpu-unrestricted/pit/jgrapht/per-class/*/mutations.xml.gz"
+      ],
+      "mutationFormat": "per-class"
+    },
+    {
+      "name": "spring-core",
+      "coverageMap": "recollection_2e0954/spring-core/test-coverage-map.json",
+      "pitFiles": [
+        "iterations/pit-unify/cpu-unrestricted/pit/spring-core/per-class/*/mutations.xml.gz"
+      ],
+      "mutationFormat": "per-class"
+    },
+    {
+      "name": "petclinic",
+      "coverageMap": "recollection_2e0954/petclinic/test-coverage-map.json",
+      "pitFiles": [
+        "petclinic/results/mutations.xml"
+      ],
+      "mutationFormat": "single-file"
+    },
+    {
+      "name": "flink",
+      "coverageMap": "flink/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "flink/results/per-class/*/mutations.xml"
+      ],
+      "mutationFormat": "per-class"
+    },
+    {
+      "name": "spring-security",
+      "coverageMap": "spring-security/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "spring-security/results/per-class/*/mutations.xml"
+      ],
+      "mutationFormat": "per-class"
+    },
+    {
+      "name": "hibernate",
+      "coverageMap": "hibernate/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "hibernate/results/per-class/*/mutations.xml"
+      ],
+      "mutationFormat": "per-class"
+    },
+    {
+      "name": "quarkus",
+      "coverageMap": "quarkus/results/test-coverage-map.json.gz",
+      "pitFiles": [
+        "quarkus/results/per-class/*/mutations.xml"
+      ],
+      "mutationFormat": "per-class"
+    }
+  ]
+}
