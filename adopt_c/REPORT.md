@@ -101,4 +101,10 @@ The anonymous package is not added to this repository. A recoverable copy of the
 
 ## Publication
 
-Publication occurs only after this report’s gates pass. The exact adoption/merge/tag/push receipt is recorded in `publication.json` and the final handoff; no previous tag is moved.
+All gates passed before publication. Adoption branch tip: `8fabbcbe9929f0807e3eecc873686a71759fde05` (the scientific adoption commit is `064b7471370368e3e4cffe7cfb73416ca53805dd`). Non-rewriting merge into main: `924bfb6b3798dac651fbabb50ed5ee4821018a6e`.
+
+The new tag is `rad1-v17`; it identifies the commit containing this final receipt. Resolve its exact target with `git rev-parse rad1-v17^{commit}`. No earlier tag is moved. The authorized atomic publication command is `git push --atomic origin main rad1-v17`. Its actual output and remote ref confirmation are retained outside the repository in `/Users/D061177/work/issta/adopt-c-work/publication-receipt.json`, avoiding a self-referential commit hash in a committed report.
+
+Final delivery: `/Users/D061177/work/issta/final-artifact-work/anon-final.zip`, SHA-256 `22180edf00c2f396ec4daa1adcf1a3cab561751fe0b82a0bf55237803bbf55c8`. The original package directory and input archive remain recoverable at the paths in `delivery.json`. No Word/PDF/manuscript or anonymous archive was staged or published. The two remaining local untracked files are the author's pre-existing C ZIP and the losslessly packed oversized raw XML, not uncommitted scientific changes.
+
+Post-commit verification from a fresh clean clone passed (`committed_clone_check.json`, `verification/committed-clone.log`). Both exact-ZIP verification log sets are retained under `verification/package-1/` and `verification/package-2/`.

@@ -1,0 +1,14 @@
+{
+  "gates": "ALL_GATES_PASS",
+  "scientificAdoptionCommit": "064b7471370368e3e4cffe7cfb73416ca53805dd",
+  "adoptBranchTip": "8fabbcbe9929f0807e3eecc873686a71759fde05",
+  "mergeCommit": "924bfb6b3798dac651fbabb50ed5ee4821018a6e",
+  "targetBranch": "main",
+  "newTag": "rad1-v17",
+  "tagTarget": "commit containing this publication receipt",
+  "command": "git push --atomic origin main rad1-v17",
+  "executionReceipt": "/Users/D061177/work/issta/adopt-c-work/publication-receipt.json",
+  "pushStateAtReceiptCreation": "not executed yet; final remote confirmation in executionReceipt",
+  "existingTagsMoved": false,
+  "manuscriptAndAnonymousPackageIncludedInGit": false
+}
